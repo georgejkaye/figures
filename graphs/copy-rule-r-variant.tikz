@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-4.25, 2.25) {};
+		\node [style=none] (1) at (-4.25, -2.25) {};
+		\node [style=none] (2) at (4, -2.25) {};
+		\node [style=none] (4) at (4, 2.25) {};
+		\node [style=edge] (5) at (-0.25, -1) {$\alpha_2$};
+		\node [style=vertex, label={left: 0}] (11) at (-2.75, 0) {};
+		\node [style=port] (12) at (-0.75, -1) {};
+		\node [style=port] (14) at (0.25, -1) {};
+		\node [style=vertex, label={right: 2}] (15) at (2.25, -1) {};
+		\node [style=edge] (16) at (-0.25, 1) {$\alpha_1$};
+		\node [style=port] (17) at (-0.75, 1) {};
+		\node [style=port] (18) at (0.25, 1) {};
+		\node [style=vertex, label={right: 1}] (19) at (2.25, 1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (4.center)
+			 to (0.center)
+			 to (1.center)
+			 to (2.center)
+			 to cycle;
+		\draw [style=tentacle, in=180, out=-60] (11) to (12);
+		\draw [style=tentacle] (15) to (14);
+		\draw [style=tentacle, in=180, out=60] (11) to (17);
+		\draw [style=tentacle] (19) to (18);
+	\end{pgfonlayer}
+\end{tikzpicture}

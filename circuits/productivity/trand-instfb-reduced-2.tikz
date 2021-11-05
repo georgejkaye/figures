@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=port] (1) at (-0.25, 0.5) {};
+		\node [style=medium square box] (11) at (0.25, 0) {$\land$};
+		\node [style=port] (13) at (-0.25, -0.5) {};
+		\node [style=tiny box] (20) at (-2.25, -0.75) {$\mathsf{t}$};
+		\node [style=tiny box] (22) at (-2.25, 0.75) {$\bot$};
+		\node [style=port] (23) at (0.75, 0) {};
+		\node [style=none] (24) at (2, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [in=180, out=0] (20) to (13);
+		\draw [in=180, out=0] (22) to (1);
+		\draw (23) to (24.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

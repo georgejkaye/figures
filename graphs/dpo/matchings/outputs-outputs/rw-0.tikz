@@ -1,0 +1,39 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-6, 2.5) {};
+		\node [style=none] (1) at (-6, -2.5) {};
+		\node [style=none] (2) at (6, -2.5) {};
+		\node [style=none] (4) at (6, 2.5) {};
+		\node [style=edge] (15) at (2.25, -1) {$\gamma$};
+		\node [style=vertex, label={[yshift=0.5em]above:1,2}] (16) at (0, 0) {};
+		\node [style=vertex] (17) at (4.75, -1) {};
+		\node [style=port] (18) at (2.75, -1) {};
+		\node [style=port] (19) at (1.75, -1) {};
+		\node [style=edge] (20) at (2.25, 1) {$\beta$};
+		\node [style=vertex] (21) at (4.75, 1) {};
+		\node [style=port] (22) at (2.75, 1) {};
+		\node [style=port] (23) at (1.75, 1) {};
+		\node [style=vertex, label={above:0}] (24) at (-4.75, 0) {};
+		\node [style=edge] (25) at (-2.25, 1) {$\alpha_1$};
+		\node [style=port] (26) at (-1.75, 1) {};
+		\node [style=port] (27) at (-2.75, 1) {};
+		\node [style=edge] (28) at (-2.25, -1) {$\alpha_2$};
+		\node [style=port] (29) at (-1.75, -1) {};
+		\node [style=port] (30) at (-2.75, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (4.center)
+			 to (0.center)
+			 to (1.center)
+			 to (2.center)
+			 to cycle;
+		\draw [style=tentacle] (17) to (18);
+		\draw [style=tentacle, in=-60, out=-180] (19) to (16);
+		\draw [style=tentacle] (21) to (22);
+		\draw [style=tentacle, in=180, out=60] (16) to (23);
+		\draw [style=tentacle, in=-180, out=60] (24) to (27);
+		\draw [style=tentacle, in=-180, out=-60] (24) to (30);
+		\draw [style=tentacle, in=-120, out=0] (29) to (16);
+		\draw [style=tentacle, in=120, out=0] (26) to (16);
+	\end{pgfonlayer}
+\end{tikzpicture}

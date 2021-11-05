@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1.5, 1.25) {};
+		\node [style=none] (1) at (-1.5, -1.25) {};
+		\node [style=none] (2) at (1, -1.25) {};
+		\node [style=none] (4) at (1, 1.25) {};
+		\node [style=vertex, label={left: 0}] (9) at (0, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (4.center)
+			 to (0.center)
+			 to (1.center)
+			 to (2.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}

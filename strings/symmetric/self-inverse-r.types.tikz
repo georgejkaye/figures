@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (8) at (-1, -1) {};
+		\node [style=none] (13) at (-1, 1) {};
+		\node [style=none] (18) at (1, -1) {};
+		\node [style=none] (19) at (1, 1) {};
+		\node [style=type] (20) at (-1.5, 1) {$A$};
+		\node [style=type] (21) at (-1.5, -1) {$B$};
+		\node [style=type] (22) at (1.5, 1) {$A$};
+		\node [style=type] (23) at (1.5, -1) {$B$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (13.center) to (19.center);
+		\draw [style=wire] (8.center) to (18.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

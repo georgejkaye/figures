@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=port] (1) at (1, 0) {};
+		\node [style=tiny box] (22) at (-1, 0) {$\bot$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [in=180, out=0] (22) to (1);
+	\end{pgfonlayer}
+\end{tikzpicture}

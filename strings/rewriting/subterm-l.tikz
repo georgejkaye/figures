@@ -1,0 +1,41 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=small box] (0) at (1, 0.25) {$l$};
+		\node [style=large box] (1) at (-1.75, -0.5) {$\hat{f}$};
+		\node [style=port] (3) at (-1.25, 0.25) {};
+		\node [style=port] (4) at (-1.25, -1.5) {};
+		\node [style=port] (5) at (0.75, 0.25) {};
+		\node [style=port] (6) at (1.25, 0.25) {};
+		\node [style=port] (9) at (-2.25, 0.25) {};
+		\node [style=port] (10) at (-2.25, -1.5) {};
+		\node [style=none] (11) at (-3, 0.25) {};
+		\node [style=none] (12) at (-5.75, -1.5) {};
+		\node [style=none] (13) at (-3, 1.75) {};
+		\node [style=none] (16) at (2, 0.25) {};
+		\node [style=none] (17) at (2, 1.75) {};
+		\node [style=none] (20) at (2, -1) {};
+		\node [style=none] (21) at (4.5, -1.5) {};
+		\node [style=port] (22) at (-1.25, -1) {};
+		\node [style=none] (23) at (2, 2.5) {};
+		\node [style=none] (24) at (-3, 2.5) {};
+		\node [style=none] (25) at (-3, -1) {};
+		\node [style=port] (26) at (-2.25, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (6)
+			 to (16.center)
+			 to [bend right=90, looseness=1.75] (17.center)
+			 to (13.center)
+			 to [bend left=270, looseness=1.75] (11.center)
+			 to (9);
+		\draw (12.center) to (10);
+		\draw (26)
+			 to (25.center)
+			 to [bend left=90, looseness=1.75] (24.center)
+			 to (23.center)
+			 to [bend left=90, looseness=1.75] (20.center)
+			 to (22);
+		\draw (4) to (21.center);
+		\draw (5) to (3);
+	\end{pgfonlayer}
+\end{tikzpicture}

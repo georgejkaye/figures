@@ -1,0 +1,43 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-5.75, 3) {};
+		\node [style=none] (1) at (-5.75, -3) {};
+		\node [style=none] (2) at (5.25, -3) {};
+		\node [style=none] (4) at (5.25, 3) {};
+		\node [style=edge] (5) at (-2.25, 0.25) {$\psi$};
+		\node [style=port] (12) at (-2.75, 0.5) {};
+		\node [style=port] (13) at (-1.75, 0.25) {};
+		\node [style=port] (14) at (-2.75, 0) {};
+		\node [style=edge] (15) at (3, 0.25) {$\phi$};
+		\node [style=vertex, label={[xshift=2]right:4}] (16) at (0, 0.25) {};
+		\node [style=vertex] (18) at (0, 2) {};
+		\node [style=port] (19) at (3.5, 0.25) {};
+		\node [style=port] (20) at (2.5, 0.5) {};
+		\node [style=port] (21) at (2.5, 0) {};
+		\node [style=none] (28) at (4, 0.25) {};
+		\node [style=none] (29) at (4, 2) {};
+		\node [style=none] (30) at (-3.25, 0.5) {};
+		\node [style=none] (31) at (-3.25, 2) {};
+		\node [style=vertex, label={left:0}, label={[yshift=-0.25cm]right:2}] (33) at (-4.5, -0.5) {};
+		\node [style=vertex, label={left:1}, label={right:3}] (34) at (-1, -2) {};
+		\node [style=vertex] (35) at (1.25, -2) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (4.center)
+			 to (0.center)
+			 to (1.center)
+			 to (2.center)
+			 to cycle;
+		\draw [style=tentacle, bend left=330] (20) to (16);
+		\draw [style=tentacle] (19) to (28.center);
+		\draw [style=tentacle] (30.center)
+			 to [bend left=90, looseness=1.25] (31.center)
+			 to (18.center)
+			 to (29.center)
+			 to [bend left=90, looseness=1.25] (28.center);
+		\draw [style=tentacle] (12) to (30.center);
+		\draw [style=tentacle] (16) to (13);
+		\draw [style=tentacle, in=-180, out=30] (33) to (14);
+		\draw [style=tentacle, bend right] (16) to (21);
+	\end{pgfonlayer}
+\end{tikzpicture}

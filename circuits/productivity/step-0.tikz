@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=large square box] (0) at (-1.25, 0) {\scalebox{1.5}{$f$}};
+		\node [style=port] (3) at (-0.75, 0) {};
+		\node [style=none] (4) at (1.25, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (3) to (4.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

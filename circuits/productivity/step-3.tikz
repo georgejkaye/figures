@@ -1,0 +1,46 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=large square box] (0) at (-4.25, -0.25) {\scalebox{1.5}{$\tilde{f}$}};
+		\node [style=port] (2) at (-3.75, 0) {};
+		\node [style=port] (3) at (-3.75, -1.25) {};
+		\node [style=bproduct] (4) at (-1.75, -1.25) {};
+		\node [style=port] (8) at (-5, 0) {};
+		\node [style=delay] (11) at (-6.75, 0) {};
+		\node [style=bproduct] (14) at (-1.75, 0) {};
+		\node [style=none] (15) at (-0.75, 2) {};
+		\node [style=none] (16) at (-7, 2) {};
+		\node [style=none] (17) at (-7, 0) {};
+		\node [style=large square box] (18) at (3.5, -1) {\scalebox{1.5}{$\tilde{f}$}};
+		\node [style=port] (19) at (4, -0.75) {};
+		\node [style=port] (20) at (4, -2) {};
+		\node [style=delay] (21) at (1, -0.75) {};
+		\node [style=none] (22) at (-0.75, 0.75) {};
+		\node [style=none] (23) at (-0.75, -0.75) {};
+		\node [style=bproduct] (24) at (6, -0.75) {};
+		\node [style=none] (25) at (7, -2) {};
+		\node [style=port] (26) at (-5, -1.25) {};
+		\node [style=tiny box] (27) at (-6.75, -1.25) {$\mathbf{v}$};
+		\node [style=port] (28) at (2.75, -2) {};
+		\node [style=tiny box] (29) at (1, -2) {$\mathbf{v}$};
+		\node [style=port] (30) at (2.75, -0.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (3) to (4);
+		\draw [style=wire] (8) to (11);
+		\draw (2) to (14);
+		\draw (14)
+			 to [bend left] (22.center)
+			 to [bend right=90, looseness=2.00] (15.center)
+			 to (16.center)
+			 to [bend left=270, looseness=1.50] (17.center)
+			 to (11);
+		\draw (14)
+			 to [bend right] (23.center)
+			 to (21);
+		\draw (19) to (24);
+		\draw (20) to (25.center);
+		\draw (27) to (26);
+		\draw (29) to (28);
+		\draw (21) to (30);
+	\end{pgfonlayer}
+\end{tikzpicture}

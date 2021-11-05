@@ -1,0 +1,27 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=small box] (0) at (0, 2) {$f$};
+		\node [style=none] (1) at (-1.75, 2) {};
+		\node [style=port] (5) at (-0.25, 2) {};
+		\node [style=port] (6) at (0.25, 2) {};
+		\node [style=none] (7) at (1.75, 2) {};
+		\node [style=small box] (8) at (0, 0) {$g$};
+		\node [style=none] (9) at (-1.75, 0) {};
+		\node [style=port] (12) at (-0.25, 0) {};
+		\node [style=port] (13) at (0.25, 0) {};
+		\node [style=none] (14) at (1.75, 0) {};
+		\node [style=small box] (15) at (0, -2) {$h$};
+		\node [style=none] (16) at (-1.75, -2) {};
+		\node [style=port] (19) at (-0.25, -2) {};
+		\node [style=port] (20) at (0.25, -2) {};
+		\node [style=none] (21) at (1.75, -2) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (7.center) to (6);
+		\draw [style=wire] (1.center) to (5);
+		\draw [style=wire] (14.center) to (13);
+		\draw [style=wire] (9.center) to (12);
+		\draw [style=wire] (21.center) to (20);
+		\draw [style=wire] (16.center) to (19);
+	\end{pgfonlayer}
+\end{tikzpicture}

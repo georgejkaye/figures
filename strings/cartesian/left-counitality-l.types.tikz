@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-2, 0) {};
+		\node [style=product] (1) at (1, 1) {};
+		\node [style=none] (4) at (1, -1) {};
+		\node [style=product] (5) at (-1, 0) {};
+		\node [style=none] (6) at (2, -1) {};
+		\node [style=type] (7) at (-2.5, 0) {$A$};
+		\node [style=type] (8) at (2.5, -1) {$A$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (0.center) to (5);
+		\draw [style=wire, in=-180, out=60] (5) to (1);
+		\draw (5)
+			 to [in=180, out=-60] (4.center)
+			 to [in=180, out=0] (6.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

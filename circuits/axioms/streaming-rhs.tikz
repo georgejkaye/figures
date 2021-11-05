@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium box] (0) at (-1, 1) {$g$};
+		\node [style=port] (2) at (-1.25, 1) {};
+		\node [style=port] (3) at (-0.75, 1) {};
+		\node [style=tiny box] (4) at (-3.25, 1) {$\mathbf{v}$};
+		\node [style=bproduct] (5) at (2.75, -0.25) {};
+		\node [style=none] (7) at (-4.5, -1.5) {};
+		\node [style=none] (8) at (-2.5, 1) {};
+		\node [style=port] (9) at (-3, 1) {};
+		\node [style=medium box] (11) at (-1, -1.5) {$g$};
+		\node [style=port] (12) at (-1.25, -1.5) {};
+		\node [style=port] (13) at (-0.75, -1.5) {};
+		\node [style=delay] (14) at (0.75, -1.5) {};
+		\node [style=none] (16) at (1.5, -1.5) {};
+		\node [style=none] (17) at (1.5, 1) {};
+		\node [style=none] (18) at (4.25, -0.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (9) to (8.center);
+		\draw (8.center) to (2);
+		\draw (7.center) to (12);
+		\draw (13) to (14);
+		\draw (3)
+			 to (17.center)
+			 to [in=105, out=0] (5);
+		\draw (14)
+			 to (16.center)
+			 to [in=-105, out=0] (5);
+		\draw (5) to (18.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

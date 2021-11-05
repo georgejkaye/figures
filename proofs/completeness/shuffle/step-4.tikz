@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=small box] (0) at (1.25, 0) {\scalebox{0.75}{$\tau(k)$}};
+		\node [style=small box] (1) at (1.25, 1.75) {\scalebox{0.75}{$\tau(0)$}};
+		\node [style=small box] (2) at (1.25, -1.75) {\scalebox{0.75}{$\tau(k+1)$}};
+		\node [style=port] (4) at (1.5, 1.75) {};
+		\node [style=port] (5) at (1.5, 0) {};
+		\node [style=port] (6) at (1.5, -1.75) {};
+		\node [style=none] (10) at (4, 1.75) {};
+		\node [style=none] (14) at (4, 0) {};
+		\node [style=none] (16) at (4, -1.75) {};
+		\node [style=none] (17) at (3.25, 1) {\raisebox{0.25em}{$\vdots$}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (4) to (10.center);
+		\draw (5) to (14.center);
+		\draw [in=180, out=0] (6) to (16.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,63 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-7.75, 5.75) {};
+		\node [style=none] (1) at (-7.75, -5.5) {};
+		\node [style=none] (2) at (7.75, -5.75) {};
+		\node [style=none] (4) at (7.75, 5.75) {};
+		\node [style=edge] (5) at (1.75, 1.25) {$\phi$};
+		\node [style=port] (12) at (1.25, 1.25) {};
+		\node [style=port] (13) at (2.25, 1.5) {};
+		\node [style=port] (14) at (2.25, 1) {};
+		\node [style=edge] (15) at (1.75, -0.75) {$\psi$};
+		\node [style=vertex] (18) at (-2.5, 0.25) {};
+		\node [style=port] (19) at (2.25, -0.75) {};
+		\node [style=port] (20) at (1.25, -0.5) {};
+		\node [style=port] (21) at (1.25, -1) {};
+		\node [style=edge] (22) at (1.75, -2.75) {$\psi$};
+		\node [style=port] (23) at (2.25, -2.75) {};
+		\node [style=port] (24) at (1.25, -2.5) {};
+		\node [style=port] (25) at (1.25, -3) {};
+		\node [style=none] (28) at (2.75, -0.75) {};
+		\node [style=none] (29) at (2.75, 4.25) {};
+		\node [style=none] (31) at (-2.5, 4.25) {};
+		\node [style=none] (35) at (2.75, 1) {};
+		\node [style=none] (36) at (2.75, 1.5) {};
+		\node [style=none] (37) at (2.75, -2.75) {};
+		\node [style=vertex] (38) at (-2.5, -1) {};
+		\node [style=none] (39) at (2.75, 3.5) {};
+		\node [style=none] (40) at (-2.5, 3.5) {};
+		\node [style=vertex, label={right:2}] (41) at (-2.5, -2.25) {};
+		\node [style=none] (42) at (2.75, 2.75) {};
+		\node [style=none] (43) at (-2.5, 2.75) {};
+		\node [style=vertex] (44) at (-2.5, 1.5) {};
+		\node [style=none] (45) at (2.75, 5) {};
+		\node [style=none] (46) at (-2.5, 5) {};
+		\node [style=vertex, label={left:1}, label={right:4}] (48) at (-2.5, -4.75) {};
+		\node [style=vertex, label={left:0}, label={[yshift=-0.25cm]right:3}] (49) at (-2.5, -3.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (4.center)
+			 to (0.center)
+			 to (1.center)
+			 to (2.center)
+			 to cycle;
+		\draw [style=tentacle] (19) to (28.center);
+		\draw [style=tentacle, bend right=90, looseness=2.00] (28.center) to (29.center);
+		\draw [style=tentacle, bend left=90, looseness=2.00] (42.center) to (36.center);
+		\draw [style=tentacle, bend right=90, looseness=2.00] (35.center) to (39.center);
+		\draw [style=tentacle, bend right=90, looseness=1.75] (37.center) to (45.center);
+		\draw [style=tentacle, in=180, out=0] (44) to (20);
+		\draw [style=tentacle, in=180, out=30, looseness=0.75] (18) to (21);
+		\draw [style=tentacle, in=180, out=-30, looseness=0.75] (18) to (24);
+		\draw [style=tentacle, in=-180, out=0] (38) to (12);
+		\draw [style=tentacle, in=180, out=180, looseness=2.50] (43.center) to (44);
+		\draw [style=tentacle, bend left=270, looseness=2.25] (40.center) to (18);
+		\draw [style=tentacle, bend right=90, looseness=2.00] (31.center) to (38);
+		\draw [style=tentacle, bend left=90, looseness=2.00] (41) to (46.center);
+		\draw [style=tentacle] (39.center) to (40.center);
+		\draw [style=tentacle] (43.center) to (42.center);
+		\draw [style=tentacle] (29.center) to (31.center);
+		\draw [style=tentacle] (46.center) to (45.center);
+		\draw [style=tentacle, in=180, out=30] (49) to (25);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (1) at (-3.5, 1) {};
+		\node [style=none] (3) at (-3.5, -1) {};
+		\node [style=none] (8) at (-0.5, -1) {};
+		\node [style=none] (13) at (-0.5, 1) {};
+		\node [style=none] (14) at (-4.5, -1) {};
+		\node [style=none] (15) at (-4.5, 1) {};
+		\node [style=none] (16) at (2.5, 1) {};
+		\node [style=none] (17) at (2.5, -1) {};
+		\node [style=none] (18) at (-0.5, -1) {};
+		\node [style=none] (19) at (-0.5, 1) {};
+		\node [style=none] (20) at (3.5, -1) {};
+		\node [style=none] (21) at (3.5, 1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire, in=0, out=-180] (8.center) to (1.center);
+		\draw [style=wire, in=-180, out=0, looseness=0.75] (3.center) to (13.center);
+		\draw (1.center) to (15.center);
+		\draw [style=wire, in=0, out=-180] (3.center) to (14.center);
+		\draw [style=wire, in=180, out=0] (18.center) to (16.center);
+		\draw [style=wire, in=0, out=180, looseness=0.75] (17.center) to (19.center);
+		\draw (16.center) to (21.center);
+		\draw [style=wire, in=180, out=0] (17.center) to (20.center);
+		\draw [style=wire] (13.center) to (19.center);
+		\draw [style=wire] (8.center) to (18.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1, 1.5) {};
+		\node [style=none] (1) at (1, 1.5) {};
+		\node [style=none] (2) at (1, -0.5) {};
+		\node [style=none] (3) at (-1, -0.5) {};
+		\node [style=product] (4) at (0, -0.5) {};
+		\node [style=product] (5) at (2, -1.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (3.center)
+			 to [bend left=90, looseness=1.75] (0.center)
+			 to (1.center)
+			 to [bend left=90, looseness=1.75] (2.center)
+			 to (4.center)
+			 to cycle;
+		\draw [in=180, out=-60] (4) to (5);
+	\end{pgfonlayer}
+\end{tikzpicture}

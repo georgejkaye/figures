@@ -1,0 +1,71 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=small box] (0) at (13.5, 2) {$\textbf{v}_0$};
+		\node [style=bproduct] (2) at (15.5, 1) {};
+		\node [style=port] (3) at (13.75, 2) {};
+		\node [style=port] (4) at (17.25, 1) {};
+		\node [style=small box] (5) at (9.75, 1) {$\textbf{v}_1$};
+		\node [style=delay] (6) at (9.75, -1) {};
+		\node [style=bproduct] (7) at (11.75, 0) {};
+		\node [style=port] (8) at (10, 1) {};
+		\node [style=delay] (9) at (13.5, 0) {};
+		\node [style=port] (10) at (7.5, -1) {};
+		\node [style=port] (11) at (6.5, -1) {$\cdots$};
+		\node [style=none] (14) at (-1.5, 0) {};
+		\node [style=small box] (15) at (-7.25, 0) {$\textbf{v}_p$};
+		\node [style=bproduct] (16) at (-5.25, -1) {};
+		\node [style=port] (17) at (-7, 0) {};
+		\node [style=bproduct] (18) at (-3.5, -1) {};
+		\node [style=small box] (19) at (-11, -1) {$\textbf{v}_{p+1}$};
+		\node [style=delay] (20) at (-11, -3) {};
+		\node [style=bproduct] (21) at (-9, -2) {};
+		\node [style=port] (22) at (-10.75, -1) {};
+		\node [style=delay] (23) at (-7.25, -2) {};
+		\node [style=none] (30) at (-12.5, -3) {};
+		\node [style=port] (31) at (-13.5, -3) {$\cdots$};
+		\node [style=small box] (33) at (-18.25, -2) {$\textbf{v}_{p+r-1}$};
+		\node [style=delay] (34) at (-18.25, -4) {};
+		\node [style=bproduct] (35) at (-16.25, -3) {};
+		\node [style=port] (36) at (-18, -2) {};
+		\node [style=none] (37) at (-14.5, -3) {};
+		\node [style=none] (38) at (-19.5, -4) {};
+		\node [style=none] (39) at (-19.5, 2) {};
+		\node [style=none] (40) at (-1.5, 2) {};
+		\node [style=small box] (41) at (1.75, 0) {$\textbf{v}_{p-1}$};
+		\node [style=delay] (42) at (1.75, -2) {};
+		\node [style=bproduct] (43) at (3.75, -1) {};
+		\node [style=port] (44) at (2, 0) {};
+		\node [style=port] (45) at (5.5, -1) {};
+		\node [style=none] (46) at (-1.5, -2) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [in=120, out=0] (3) to (2);
+		\draw (2) to (4);
+		\draw [in=120, out=0] (8) to (7);
+		\draw [in=-120, out=0] (6) to (7);
+		\draw (7) to (9);
+		\draw [in=-120, out=0] (9) to (2);
+		\draw (10) to (6);
+		\draw [in=120, out=0] (17) to (16);
+		\draw (16) to (18);
+		\draw [in=120, out=0] (22) to (21);
+		\draw [in=-120, out=0] (20) to (21);
+		\draw (21) to (23);
+		\draw [in=-120, out=0] (23) to (16);
+		\draw (18)
+			 to [in=180, out=60] (14.center)
+			 to [bend right=90, looseness=1.75] (40.center)
+			 to (39.center)
+			 to [in=180, out=-180, looseness=1.50] (38.center)
+			 to (34);
+		\draw (30.center) to (20);
+		\draw [in=120, out=0] (36) to (35);
+		\draw [in=-120, out=0] (34) to (35);
+		\draw (35) to (37.center);
+		\draw [in=120, out=0] (44) to (43);
+		\draw [in=-120, out=0] (42) to (43);
+		\draw (43) to (45);
+		\draw (46.center) to (42);
+		\draw [in=-180, out=-60] (18) to (46.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,34 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (8) at (-1, -1) {};
+		\node [style=none] (13) at (-1, 1) {};
+		\node [style=none] (18) at (0.5, -1) {};
+		\node [style=none] (19) at (0.5, 1) {};
+		\node [style=none] (24) at (-1, -3) {};
+		\node [style=none] (25) at (1, -3) {};
+		\node [style=none] (28) at (4, -3) {};
+		\node [style=none] (29) at (3.5, 1) {};
+		\node [style=none] (30) at (4, -1) {};
+		\node [style=none] (31) at (5, 1) {};
+		\node [style=none] (32) at (5, -1) {};
+		\node [style=none] (33) at (5, -3) {};
+		\node [style=type] (34) at (-1.5, 1) {$A$};
+		\node [style=type] (35) at (-1.5, -1) {$B$};
+		\node [style=type] (36) at (-1.5, -3) {$C$};
+		\node [style=type] (37) at (5.5, 1) {$B$};
+		\node [style=type] (38) at (5.5, -1) {$C$};
+		\node [style=type] (39) at (5.5, -3) {$A$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (13.center) to (19.center);
+		\draw [style=wire, in=-180, out=0] (19.center) to (28.center);
+		\draw [style=wire] (8.center) to (18.center);
+		\draw [style=wire, in=-180, out=0] (18.center) to (29.center);
+		\draw [style=wire] (24.center)
+			 to (25.center)
+			 to [in=-180, out=0] (30.center);
+		\draw [style=wire] (28.center) to (33.center);
+		\draw [style=wire] (30.center) to (32.center);
+		\draw [style=wire] (29.center) to (31.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

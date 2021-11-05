@@ -1,0 +1,38 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box] (0) at (-1.25, 0.25) {$f$};
+		\node [style=bproduct] (1) at (0.5, 0.25) {};
+		\node [style=port] (2) at (-0.75, 0.25) {};
+		\node [style=none] (3) at (1.75, 0.75) {};
+		\node [style=none] (4) at (1.75, -0.5) {};
+		\node [style=port] (5) at (3.25, -0.5) {};
+		\node [style=none] (6) at (1.75, 2) {};
+		\node [style=none] (7) at (-3, 2) {};
+		\node [style=none] (8) at (-3, 0.75) {};
+		\node [style=port] (9) at (-1.75, 0.75) {};
+		\node [style=port] (10) at (-1.75, -0.25) {};
+		\node [style=none] (11) at (-4.5, -0.25) {};
+		\node [style=port] (12) at (3.25, -1.5) {};
+		\node [style=medium square box] (13) at (3.75, -1) {$f$};
+		\node [style=bproduct] (14) at (-3.25, -0.25) {};
+		\node [style=none] (15) at (-1.75, -1.5) {};
+		\node [style=port] (16) at (4.25, -1) {};
+		\node [style=none] (17) at (5.5, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (2) to (1);
+		\draw (1)
+			 to [in=-180, out=60] (3.center)
+			 to [in=0, out=0, looseness=1.75] (6.center)
+			 to (7.center)
+			 to [in=-180, out=-180, looseness=1.75] (8.center)
+			 to (9);
+		\draw (10) to (11.center);
+		\draw [in=180, out=-75] (1) to (4.center);
+		\draw (4.center) to (5);
+		\draw (14)
+			 to [in=180, out=-75, looseness=1.25] (15.center)
+			 to (12);
+		\draw (16) to (17.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

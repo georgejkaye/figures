@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=large box] (0) at (0, 0) {$g$};
+		\node [style=port] (3) at (-0.25, 0.75) {};
+		\node [style=port] (4) at (-0.25, -1) {};
+		\node [style=bproduct] (5) at (-1.75, 0.75) {};
+		\node [style=tiny box] (6) at (-3.25, 1.5) {$v$};
+		\node [style=delay] (7) at (-3.25, 0) {};
+		\node [style=port] (8) at (-3, 1.5) {};
+		\node [style=none] (9) at (-4.25, -1) {};
+		\node [style=none] (10) at (-4.25, 0) {};
+		\node [style=none] (11) at (2, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (5) to (3);
+		\draw (10.center)
+			 to (7.center)
+			 to [in=-105, out=0] (5);
+		\draw [in=105, out=0] (8) to (5);
+		\draw (9.center) to (4);
+		\draw (0) to (11.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

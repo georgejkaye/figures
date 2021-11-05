@@ -1,0 +1,26 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=small box] (0) at (0, 1.75) {};
+		\node [style=small box] (1) at (0, 0) {};
+		\node [style=small box] (2) at (0, -1.75) {};
+		\node [style=port] (4) at (0.25, 0) {};
+		\node [style=port] (5) at (0.25, 1.75) {};
+		\node [style=port] (6) at (0.25, -1.75) {};
+		\node [style=port] (7) at (3, 1.25) {};
+		\node [style=port] (8) at (3, -1.25) {};
+		\node [style=port] (12) at (3, 0) {};
+		\node [style=large box] (13) at (3.5, 0) {$sh_{k}$};
+		\node [style=none] (15) at (5.25, 0.75) {};
+		\node [style=none] (16) at (5.25, -0.75) {};
+		\node [style=port] (18) at (4, -0.75) {};
+		\node [style=port] (19) at (4, 0.75) {};
+		\node [style=none] (20) at (5, 0.25) {$\vdots$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [in=0, out=180] (7) to (5);
+		\draw [in=180, out=0] (6) to (8);
+		\draw (19) to (15.center);
+		\draw (18) to (16.center);
+		\draw (4) to (12);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=bproduct] (2) at (0.5, 0) {};
+		\node [style=none] (9) at (-0.5, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (9.center) to (2);
+	\end{pgfonlayer}
+\end{tikzpicture}

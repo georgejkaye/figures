@@ -1,0 +1,52 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box] (0) at (-4.75, 1.25) {$f$};
+		\node [style=port] (1) at (-5.25, 1.75) {};
+		\node [style=port] (2) at (-5.25, 0.75) {};
+		\node [style=port] (3) at (-4.25, 1.75) {};
+		\node [style=tiny box] (8) at (-7.5, 2) {$\bot$};
+		\node [style=bproduct] (10) at (-2.75, 0.75) {};
+		\node [style=none] (11) at (-8.75, 0.75) {};
+		\node [style=port] (12) at (-4.25, 0.75) {};
+		\node [style=medium square box] (13) at (0, 0) {$f$};
+		\node [style=port] (14) at (-0.5, 0.5) {};
+		\node [style=port] (15) at (-0.5, -0.5) {};
+		\node [style=port] (16) at (0.5, 0.5) {};
+		\node [style=port] (17) at (0.5, -0.5) {};
+		\node [style=none] (18) at (-2.75, 1.75) {};
+		\node [style=bproduct] (19) at (-7.5, 0.75) {};
+		\node [style=none] (20) at (-6.25, -0.5) {};
+		\node [style=bproduct] (21) at (-2.75, -0.5) {};
+		\node [style=none] (23) at (2, 0.5) {};
+		\node [style=bproduct] (24) at (2, -0.5) {};
+		\node [style=medium square box] (25) at (4.75, -1.25) {$f$};
+		\node [style=port] (26) at (4.25, -0.75) {};
+		\node [style=port] (27) at (4.25, -1.75) {};
+		\node [style=port] (28) at (5.25, -0.75) {};
+		\node [style=port] (29) at (5.25, -1.75) {};
+		\node [style=bproduct] (30) at (6.75, -0.75) {};
+		\node [style=none] (31) at (7.75, -1.75) {};
+		\node [style=none] (35) at (-1, -1.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (11.center) to (2);
+		\draw (12) to (10);
+		\draw [in=180, out=0, looseness=1.25] (8) to (1);
+		\draw (3)
+			 to (18.center)
+			 to [in=-180, out=0, looseness=1.25] (14);
+		\draw (19)
+			 to [in=180, out=-75] (20.center)
+			 to (21.center)
+			 to [in=180, out=0, looseness=1.25] (15);
+		\draw (16)
+			 to (23.center)
+			 to [in=-180, out=0] (26);
+		\draw (17) to (24);
+		\draw (28) to (30);
+		\draw (29) to (31.center);
+		\draw (21)
+			 to [in=-180, out=-75] (35.center)
+			 to (27);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=bproduct] (1) at (0.75, 0) {};
+		\node [style=none] (2) at (2, 0) {};
+		\node [style=port] (3) at (-1.25, 1) {};
+		\node [style=port] (4) at (-1.25, -1) {};
+		\node [style=tiny box] (5) at (-1.5, 1) {$v$};
+		\node [style=tiny box] (6) at (-1.5, -1) {$w$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (2.center) to (1);
+		\draw [in=0, out=120] (1) to (3);
+		\draw [in=0, out=-120] (1) to (4);
+	\end{pgfonlayer}
+\end{tikzpicture}

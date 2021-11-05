@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny box] (0) at (-2, 0) {$\mathbf{v}$};
+		\node [style=medium box] (1) at (0.25, 0) {$g$};
+		\node [style=port] (2) at (-1.75, 0) {};
+		\node [style=none] (3) at (1.75, 0) {};
+		\node [style=port] (4) at (0, 0) {};
+		\node [style=port] (5) at (0.5, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (2) to (4);
+		\draw [style=wire] (5) to (3.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

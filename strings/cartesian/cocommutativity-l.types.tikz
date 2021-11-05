@@ -1,0 +1,20 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1.5, 0) {};
+		\node [style=none] (1) at (1.5, 1) {};
+		\node [style=none] (2) at (1.5, -1) {};
+		\node [style=product] (5) at (0, 0) {};
+		\node [style=type] (6) at (-2, 0) {$A$};
+		\node [style=type] (7) at (4.5, 1) {$A$};
+		\node [style=type] (8) at (4.5, -1) {$A$};
+		\node [style=none] (9) at (4, -1) {};
+		\node [style=none] (10) at (4, 1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (0.center) to (5);
+		\draw [style=wire, in=-180, out=60] (5) to (1.center);
+		\draw [style=wire, in=180, out=-60] (5) to (2.center);
+		\draw [in=180, out=0, looseness=0.75] (1.center) to (9.center);
+		\draw [in=-180, out=0, looseness=0.75] (2.center) to (10.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

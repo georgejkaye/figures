@@ -1,0 +1,57 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=small box] (0) at (-3, 1) {$\psi$};
+		\node [style=small box] (1) at (2.5, -1) {$\phi$};
+		\node [style=product] (2) at (-1.25, 1) {};
+		\node [style=product] (3) at (-0.5, 0.25) {};
+		\node [style=port] (4) at (-2.75, 1) {};
+		\node [style=port] (5) at (-3.25, 1.25) {};
+		\node [style=port] (6) at (-3.25, 0.75) {};
+		\node [style=port] (7) at (2.25, -1.5) {};
+		\node [style=port] (8) at (2.25, -0.5) {};
+		\node [style=port] (9) at (2.75, -1) {};
+		\node [style=none] (11) at (-5.5, 0) {};
+		\node [style=product] (12) at (-4.75, 0) {};
+		\node [style=none] (14) at (-3, -1.5) {};
+		\node [style=none] (15) at (4, -1) {};
+		\node [style=none] (17) at (-4, 2.25) {};
+		\node [style=none] (18) at (-4, 1.25) {};
+		\node [style=none] (20) at (-5.5, -2.5) {};
+		\node [style=none] (22) at (2.25, 1.5) {};
+		\node [style=none] (23) at (2.25, 2.25) {};
+		\node [style=none] (24) at (2.75, 2.25) {};
+		\node [style=none] (25) at (2.75, 1.5) {};
+		\node [style=none] (31) at (-0.25, 1.5) {};
+		\node [style=none] (32) at (-0.25, 2.25) {};
+		\node [style=none] (33) at (4, 0.75) {};
+		\node [style=none] (34) at (0.5, 0.75) {};
+		\node [style=none] (35) at (0.25, -1.5) {};
+		\node [style=none] (36) at (0.25, -0.5) {};
+		\node [style=none] (37) at (4, -2.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (4) to (2);
+		\draw [style=wire, in=165, out=-75] (2) to (3);
+		\draw [style=wire] (11.center) to (12);
+		\draw [style=wire, in=-180, out=60] (12) to (6);
+		\draw [style=wire, in=180, out=-75] (12) to (14.center);
+		\draw [style=wire] (5) to (18.center);
+		\draw [style=wire, bend left=90, looseness=1.75] (18.center) to (17.center);
+		\draw [style=wire] (15.center) to (9);
+		\draw [style=wire] (24.center) to (23.center);
+		\draw [style=wire, bend right=90, looseness=1.50] (25.center) to (24.center);
+		\draw [style=wire] (25.center) to (22.center);
+		\draw [style=wire, bend left=90, looseness=1.50] (22.center) to (23.center);
+		\draw [in=180, out=60] (2) to (31.center);
+		\draw [bend right=90, looseness=2.00] (31.center) to (32.center);
+		\draw (17.center) to (32.center);
+		\draw (3)
+			 to [in=180, out=60] (34.center)
+			 to (33.center);
+		\draw (14.center) to (35.center);
+		\draw [in=180, out=0] (35.center) to (8);
+		\draw [in=-180, out=-75] (3) to (36.center);
+		\draw [in=-180, out=0] (36.center) to (7);
+		\draw (37.center) to (20.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
