@@ -10,8 +10,8 @@
 		\node [style=bproduct] (9) at (-0.5, -1.275) {};
 		\node [style=bproduct] (10) at (-0.5, -3.5) {};
 		\node [style=none] (11) at (-9, -3.5) {};
-		\node [style=large box] (12) at (3, 1) {$T$};
-		\node [style=large box] (13) at (3, -3.25) {$O$};
+		\node [style=large box] (12) at (3, 1) {$\ftom{T}$};
+		\node [style=large box] (13) at (3, -3.25) {$\ftom{O}$};
 		\node [style=bport] (14) at (2.5, 2) {};
 		\node [style=bport] (15) at (2.5, 1) {};
 		\node [style=bport] (16) at (2.5, 0) {};
