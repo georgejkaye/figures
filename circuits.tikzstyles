@@ -26,6 +26,7 @@
 \tikzstyle{bport}=[minimum size=2.5mm, fill=none, draw=none, shape=circle, tikzit draw={rgb,255: red,154; green,154; blue,154}, anchor=center, tikzit fill=white, tikzit category=string diagram]
 \tikzstyle{mux}=[fill=white, draw=black, shape=trapezium, tikzit category=circuits, rotate=-90, minimum height=0.9em]
 \tikzstyle{fork}=[fill=black, draw=black, shape=circle, tikzit category=circuits, scale=0.25]
+\tikzstyle{box}=[fill=white, draw=black, shape=rectangle, tikzit category=circuits]
 
 % Edge styles
 \tikzstyle{interface}=[-, fill={rgb,255: red,238; green,238; blue,255}, dashed, draw={rgb,255: red,170; green,170; blue,225}, ultra thick]
