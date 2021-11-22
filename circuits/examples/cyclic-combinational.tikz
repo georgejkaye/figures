@@ -1,0 +1,71 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=mux] (0) at (0, -1.25) {};
+		\node [style=none] (2) at (-1.25, -1) {};
+		\node [style=none] (3) at (-0.25, -1.5) {{\hspace{0em} \scalebox{0.5}{$1$}}};
+		\node [style=none] (4) at (-1.25, -1.5) {};
+		\node [style=none] (5) at (0, -1.75) {};
+		\node [style=none] (6) at (0, -2.25) {};
+		\node [style=none] (7) at (-0.25, -1) {\hspace{0em} \scalebox{0.5}{$0$}};
+		\node [style=none] (8) at (3, 1.5) {$c$};
+		\node [style=mux] (10) at (0, 1.75) {};
+		\node [style=none] (11) at (-1.25, 1.5) {};
+		\node [style=none] (12) at (-0.25, 2) {{\hspace{0em} \scalebox{0.5}{$1$}}};
+		\node [style=none] (13) at (-1.25, 2) {};
+		\node [style=none] (16) at (-0.25, 1.5) {\hspace{0em} \scalebox{0.5}{$0$}};
+		\node [style=none] (23) at (-1.25, -1.5) {};
+		\node [style=fork] (27) at (1.25, -1.25) {};
+		\node [style=fork] (28) at (1.25, 1.75) {};
+		\node [style=none] (29) at (-1.25, 1) {};
+		\node [style=none] (30) at (-1.25, 1.5) {};
+		\node [style=none] (31) at (1.25, -0.5) {};
+		\node [style=none] (32) at (1.25, 1) {};
+		\node [style=none] (33) at (-1.25, -0.5) {};
+		\node [style=none] (34) at (-1.25, -1) {};
+		\node [style=mux] (35) at (3, 0.25) {};
+		\node [style=none] (36) at (2.75, 0.5) {{\hspace{0em} \scalebox{0.5}{$1$}}};
+		\node [style=none] (37) at (3, 0.75) {};
+		\node [style=none] (38) at (3, 1.25) {};
+		\node [style=none] (39) at (2.75, 0) {\hspace{0em} \scalebox{0.5}{$0$}};
+		\node [style=none] (40) at (2, 1.75) {};
+		\node [style=none] (41) at (2, 0.5) {};
+		\node [style=none] (42) at (2, 0) {};
+		\node [style=none] (43) at (2, -1.25) {};
+		\node [style=none] (45) at (3.75, 0.25) {};
+		\node [style=none] (46) at (0, 3) {$c$};
+		\node [style=none] (47) at (0, 2.25) {};
+		\node [style=none] (48) at (0, 2.75) {};
+		\node [style=none] (49) at (-1.5, 2) {$x$};
+		\node [style=none] (50) at (0, -2.5) {$c$};
+		\node [style=none] (51) at (-1.5, -1.5) {$x$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (4.center) to (3.center);
+		\draw (6.center) to (5.center);
+		\draw (2.center) to (7.center);
+		\draw (13.center) to (12.center);
+		\draw (11.center) to (16.center);
+		\draw (23.center) to (4.center);
+		\draw (28) to (10);
+		\draw (0) to (27);
+		\draw (27)
+			 to (31.center)
+			 to (29.center)
+			 to (30.center);
+		\draw (11.center) to (30.center);
+		\draw (2.center) to (34.center);
+		\draw (34.center)
+			 to (33.center)
+			 to (32.center);
+		\draw (32.center) to (28);
+		\draw (38.center) to (37.center);
+		\draw (36.center) to (41.center);
+		\draw (41.center) to (40.center);
+		\draw (40.center) to (28);
+		\draw (27) to (43.center);
+		\draw (43.center) to (42.center);
+		\draw (42.center) to (39.center);
+		\draw (35) to (45.center);
+		\draw (48.center) to (47.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
