@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box] (0) at (-1, 0) {$\land$};
+		\node [style=port] (1) at (-1.5, 0.5) {};
+		\node [style=port] (2) at (-1.5, -0.5) {};
+		\node [style=port] (3) at (-0.5, 0) {};
+		\node [style=bproduct] (4) at (1, 0) {};
+		\node [style=none] (5) at (2, 0.5) {};
+		\node [style=none] (6) at (2, 1.5) {};
+		\node [style=none] (7) at (-3.25, 1.5) {};
+		\node [style=none] (8) at (-3.25, 0.5) {};
+		\node [style=none] (10) at (3, -0.75) {};
+		\node [style=delay] (11) at (-2.75, 0.5) {};
+		\node [style=none] (12) at (-3.75, -0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (3) to (4);
+		\draw (4)
+			 to [in=180, out=45] (5.center)
+			 to [bend right=90, looseness=1.50] (6.center)
+			 to (7.center)
+			 to [bend right=90, looseness=1.50] (8.center)
+			 to (11);
+		\draw [in=180, out=-60] (4) to (10.center);
+		\draw (11) to (1);
+		\draw (2) to (12.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
