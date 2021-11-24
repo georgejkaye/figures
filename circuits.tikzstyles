@@ -39,3 +39,4 @@
 \tikzstyle{transition}=[->]
 \tikzstyle{output}=[->, decorate, decoration=zigzag]
 \tikzstyle{gate}=[-, fill=white]
+\tikzstyle{thicc}=[-, line width=1]
