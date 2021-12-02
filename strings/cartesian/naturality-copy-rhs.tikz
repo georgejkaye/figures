@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-2.75, 0) {};
+		\node [style=none] (1) at (0.25, 1.25) {};
+		\node [style=none] (2) at (0.25, -1.25) {};
+		\node [style=bproduct] (5) at (-1.25, 0) {};
+		\node [style=none] (9) at (1.75, 1.25) {};
+		\node [style=medium box] (10) at (1.25, 1.25) {$f$};
+		\node [style=none] (11) at (0.75, 1.25) {};
+		\node [style=none] (12) at (1.75, -1.25) {};
+		\node [style=medium box] (13) at (1.25, -1.25) {$f$};
+		\node [style=none] (14) at (0.75, -1.25) {};
+		\node [style=none] (15) at (2.75, 1.25) {};
+		\node [style=none] (16) at (2.75, -1.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (0.center) to (5);
+		\draw [style=wire, in=-180, out=75] (5) to (1.center);
+		\draw [style=wire, in=180, out=-75] (5) to (2.center);
+		\draw (1.center) to (11.center);
+		\draw (14.center) to (2.center);
+		\draw (9.center) to (15.center);
+		\draw (12.center) to (16.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
