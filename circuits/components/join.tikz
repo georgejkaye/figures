@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (2) at (-1, 1) {};
+		\node [style=fork] (8) at (0, 0) {};
+		\node [style=none] (9) at (1, 0) {};
+		\node [style=none] (10) at (-1, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [in=0, out=105] (8) to (2.center);
+		\draw (9.center) to (8);
+		\draw [in=-105, out=0] (10.center) to (8);
+	\end{pgfonlayer}
+\end{tikzpicture}
