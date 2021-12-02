@@ -40,3 +40,6 @@
 \tikzstyle{output}=[->, decorate, decoration=zigzag]
 \tikzstyle{gate}=[-, fill=white]
 \tikzstyle{thicc}=[-, line width=1]
+\tikzstyle{strikethrough}=[-, decoration={markings, mark=at position 0.5 with {
+        \draw [blue, thick, - ] (-0.15,-0.15);
+    }}, postaction=decorate]
