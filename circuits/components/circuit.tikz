@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (10) at (2, 0) {};
+		\node [style=medium box] (11) at (0, 0) {$f$};
+		\node [style=none] (13) at (-0.5, 0) {};
+		\node [style=none] (14) at (-2, 0) {};
+		\node [style=none] (15) at (0.5, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (13.center) to (14.center);
+		\draw (15.center) to (10.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
