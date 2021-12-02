@@ -1,11 +1,11 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (9) at (-2, 0.25) {};
+		\node [style=none] (9) at (-2, 0.5) {};
 		\node [style=none] (10) at (2, 0) {};
-		\node [style=box] (11) at (0, 0) {$\mathsf{AND}$};
-		\node [style=none] (12) at (-0.5, 0.25) {};
-		\node [style=none] (13) at (-0.5, -0.25) {};
-		\node [style=none] (14) at (-2, -0.25) {};
+		\node [style=medium box] (11) at (0, 0) {$\mathsf{AND}$};
+		\node [style=none] (12) at (-0.5, 0.5) {};
+		\node [style=none] (13) at (-0.5, -0.5) {};
+		\node [style=none] (14) at (-2, -0.5) {};
 		\node [style=none] (15) at (0.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
