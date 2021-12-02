@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (9) at (-0.75, 1.25) {};
-		\node [style=bproduct] (15) at (0.75, 1.25) {};
+		\node [style=none] (9) at (-0.75, 0) {};
+		\node [style=bproduct] (15) at (0.75, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw (9.center) to (15);
