@@ -1,17 +1,17 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (9) at (-2, 0.5) {};
-		\node [style=none] (10) at (2, 0) {};
+		\node [style=dangling] (9) at (-2, 0.5) {};
+		\node [style=dangling] (10) at (2, 0) {};
 		\node [style=medium box] (11) at (0, 0) {$g$};
 		\node [style=none] (12) at (-0.5, 0.5) {};
 		\node [style=none] (13) at (-0.5, -0.5) {};
-		\node [style=none] (14) at (-2, -0.5) {};
+		\node [style=dangling] (14) at (-2, -0.5) {};
 		\node [style=none] (15) at (0.5, 0) {};
 		\node [style=none] (16) at (-1.5, 0) {\raisebox{0.4em}{\scalebox{0.75}{$\vdots$}}};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw (9.center) to (12.center);
-		\draw (13.center) to (14.center);
-		\draw (15.center) to (10.center);
+		\draw (9) to (12.center);
+		\draw (13.center) to (14);
+		\draw (15.center) to (10);
 	\end{pgfonlayer}
 \end{tikzpicture}
