@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=fork] (8) at (0.5, 0) {};
-		\node [style=none] (9) at (-0.5, 0) {};
+		\node [style=fork] (8) at (0.25, 0) {};
+		\node [style=none] (9) at (-0.25, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw (9.center) to (8);
