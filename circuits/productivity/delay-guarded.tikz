@@ -1,17 +1,17 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=large square box] (0) at (0, -0.5) {\scalebox{1.5}{$\hat{f}$}};
-		\node [style=port] (2) at (0.5, 0.25) {};
-		\node [style=port] (3) at (0.5, -1.5) {};
-		\node [style=none] (4) at (3.75, -1.5) {};
-		\node [style=port] (8) at (-0.75, 0.25) {};
-		\node [style=delay] (11) at (-2.5, 0.25) {};
-		\node [style=none] (14) at (2.25, 0.25) {};
-		\node [style=none] (15) at (2.25, 1.5) {};
-		\node [style=none] (16) at (-3.25, 1.5) {};
-		\node [style=none] (17) at (-3.25, 0.25) {};
-		\node [style=port] (18) at (-0.75, -1.5) {};
-		\node [style=tiny box] (19) at (-2.5, -1.5) {$\mathbf{v}$};
+		\node [style=large square box] (0) at (0, 0) {\scalebox{1.5}{$\hat{f}$}};
+		\node [style=port] (2) at (0.5, 0.75) {};
+		\node [style=port] (3) at (0.5, -1) {};
+		\node [style=none] (4) at (3.75, -1) {};
+		\node [style=port] (8) at (-0.75, 0.75) {};
+		\node [style=delay] (11) at (-2.5, 0.75) {};
+		\node [style=none] (14) at (2.25, 0.75) {};
+		\node [style=none] (15) at (2.25, 2) {};
+		\node [style=none] (16) at (-3.25, 2) {};
+		\node [style=none] (17) at (-3.25, 0.75) {};
+		\node [style=port] (18) at (-0.75, -1) {};
+		\node [style=tiny box] (19) at (-2.5, -1) {$\mathbf{v}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw (3) to (4.center);

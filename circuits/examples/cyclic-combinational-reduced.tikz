@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=box] (52) at (-1, 0) {$F$};
+		\node [style=box] (53) at (1, 0) {$G$};
+		\node [style=none] (54) at (-2, 0) {};
+		\node [style=none] (55) at (0, 0) {};
+		\node [style=none] (56) at (2, 0) {};
+		\node [style=port] (57) at (1, 0) {};
+		\node [style=port] (58) at (1, 0) {};
+		\node [style=port] (59) at (-1, 0) {};
+		\node [style=port] (60) at (-1, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (54.center) to (60);
+		\draw (59) to (55.center);
+		\draw (55.center) to (58);
+		\draw (56.center) to (57);
+	\end{pgfonlayer}
+\end{tikzpicture}

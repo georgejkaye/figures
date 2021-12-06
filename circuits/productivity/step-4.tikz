@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=large square box] (0) at (-5, -0.5) {\scalebox{1.5}{$\tilde{f}$}};
+		\node [style=large square box] (0) at (-5, -0.5) {\scalebox{1.5}{$\tilde{F}$}};
 		\node [style=port] (2) at (-4.5, -0.25) {};
 		\node [style=port] (3) at (-4.5, -1.5) {};
 		\node [style=bproduct] (4) at (-2.5, -1.5) {};
@@ -10,7 +10,7 @@
 		\node [style=none] (15) at (-1.5, 1.75) {};
 		\node [style=none] (16) at (-7.75, 1.75) {};
 		\node [style=none] (17) at (-7.75, -0.25) {};
-		\node [style=large square box] (18) at (4.25, -1.25) {\scalebox{1.5}{$\tilde{f}$}};
+		\node [style=large square box] (18) at (4.25, -1.25) {\scalebox{1.5}{$\tilde{F}$}};
 		\node [style=port] (19) at (4.75, -1) {};
 		\node [style=port] (20) at (4.75, -2.25) {};
 		\node [style=none] (22) at (-1.5, 0.5) {};
@@ -22,7 +22,7 @@
 		\node [style=port] (28) at (3.5, -2.25) {};
 		\node [style=tiny box] (29) at (1, -2.25) {$\bot$};
 		\node [style=port] (30) at (3.5, -1) {};
-		\node [style=large square box] (31) at (4.25, 2.25) {\scalebox{1.5}{$\tilde{f}$}};
+		\node [style=large square box] (31) at (4.25, 2.25) {\scalebox{1.5}{$\tilde{F}$}};
 		\node [style=port] (32) at (4.75, 2.5) {};
 		\node [style=port] (33) at (4.75, 1.25) {};
 		\node [style=bproduct] (35) at (6.75, 2.5) {};
