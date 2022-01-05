@@ -11,7 +11,6 @@
 \tikzstyle{every picture}=[baseline=-0.25em, scale=0.5]
 \tikzstyle{product}=[fill=white, draw=black, shape=circle, scale=0.66, tikzit category=string diagram]
 \tikzstyle{type}=[fill=none, draw=none, shape=circle, font={\large}, tikzit fill={rgb,255: red,37; green,193; blue,141}, inner sep=0, anchor=center, tikzit category=string diagram]
-
 \tikzstyle{small box}=[rounded corners, fill=white, draw=black, shape=rectangle, minimum height=7.5mm, minimum width=7.5mm, tikzit category=string diagram, anchor=center, line width=0.33mm]
 \tikzstyle{medium box}=[rounded corners, fill=white, draw=black, shape=rectangle, tikzit category=string diagram, minimum height=10mm, minimum width=7.5mm, anchor=center, line width=0.33mm]
 \tikzstyle{large box}=[rounded corners, fill=white, draw=black, shape=rectangle, tikzit category=string diagram, minimum height=15mm, minimum width=10mm, anchor=center, line width=0.33mm]
@@ -19,7 +18,6 @@
 \tikzstyle{medium square box}=[rounded corners, fill=white, draw=black, shape=rectangle, tikzit category=string diagram, minimum height=10mm, minimum width=10mm, line width=0.33mm]
 \tikzstyle{tiny box}=[rounded corners, fill=white, draw=black, shape=rectangle, tikzit category=string diagram, minimum width=6mm, minimum height=6mm, anchor=center, line width=0.33mm]
 \tikzstyle{large square box}=[rounded corners, fill=white, draw=black, shape=rectangle, tikzit category=string diagram, minimum width=15mm, minimum height=15mm, line width=0.33mm]
-
 \tikzstyle{input-node}=[fill=white, draw=black, shape=circle, tikzit category=hypergraph, inner sep=0.5, anchor=east]
 \tikzstyle{output-node}=[fill=white, draw=black, shape=circle, anchor=west, inner sep=0.5]
 \tikzstyle{state}=[fill=white, draw=none, shape=rectangle, minimum height=10mm, minimum width=10mm]
@@ -30,6 +28,7 @@
 \tikzstyle{fork}=[fill=black, draw=black, shape=circle, tikzit category=circuits, scale=0.25]
 \tikzstyle{box}=[fill=white, draw=black, shape=rectangle, tikzit category=circuits]
 \tikzstyle{dangling}=[fill=none, draw=none, shape=circle, anchor=east, scale=0.01, tikzit category=string diagram, tikzit draw=black]
+\tikzstyle{and}=[fill=white, draw=black, shape=and gate, line width=0.33mm]
 
 % Edge styles
 \tikzstyle{interface}=[-, fill={rgb,255: red,238; green,238; blue,255}, dashed, draw={rgb,255: red,170; green,170; blue,225}, ultra thick]

@@ -1,0 +1,2 @@
+\usetikzlibrary{circuits.logic.US}
+\newcommand{\hello}{ellllolo}

@@ -1,7 +1,7 @@
 \usepackage{tikz}
 \usetikzlibrary{backgrounds}
 \usetikzlibrary{arrows}
-\usetikzlibrary{shapes,shapes.geometric,shapes.misc}
+\usetikzlibrary{shapes,shapes.geometric,shapes.misc,circuits.logic.US}
 
 % this style is applied by default to any tikzpicture included via \tikzfig
 \tikzstyle{tikzfig}=[baseline=-0.25em,scale=0.5]
@@ -30,7 +30,7 @@
       {\input{./figures/#1.tikz}}
       {\tikz[baseline=-0.5em]{\node[draw=red,font=\color{red},fill=red!10!white] {\textit{#1}};}}%
   }}%
-}
+}t
 
 % the same as \tikzfig, but in a {center} environment
 \newcommand{\ctikzfig}[1]{%
