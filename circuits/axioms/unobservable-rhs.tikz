@@ -4,6 +4,6 @@
 		\node [style=dangling] (9) at (-0.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw (9) to (2);
+		\draw [style=wire] (9) to (2);
 	\end{pgfonlayer}
 \end{tikzpicture}
