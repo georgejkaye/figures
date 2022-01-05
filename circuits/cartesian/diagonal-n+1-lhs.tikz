@@ -1,25 +1,25 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (2) at (-2, 0.5) {};
+		\node [style=dangling] (2) at (-1.75, 0.5) {};
 		\node [style=medium square box] (3) at (0, 0) {$\Delta_{n+1}$};
 		\node [style=bport] (4) at (-0.5, 0.5) {};
 		\node [style=bport] (8) at (0.5, 0.75) {};
-		\node [style=none] (12) at (2, 0.75) {};
-		\node [style=none] (35) at (-2, -0.5) {};
+		\node [style=dangling] (12) at (1.75, 0.75) {};
+		\node [style=dangling] (35) at (-1.75, -0.5) {};
 		\node [style=bport] (36) at (-0.5, -0.5) {};
 		\node [style=bport] (37) at (0.5, 0.25) {};
-		\node [style=none] (38) at (2, 0.25) {};
+		\node [style=dangling] (38) at (1.75, 0.25) {};
 		\node [style=bport] (41) at (0.5, -0.25) {};
-		\node [style=none] (42) at (2, -0.25) {};
+		\node [style=dangling] (42) at (1.75, -0.25) {};
 		\node [style=bport] (45) at (0.5, -0.75) {};
-		\node [style=none] (46) at (2, -0.75) {};
+		\node [style=dangling] (46) at (1.75, -0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=thicc] (2.center) to (4);
-		\draw [style=thicc] (8) to (12.center);
-		\draw (35.center) to (36);
-		\draw [in=180, out=0] (37) to (38.center);
-		\draw [style=thicc] (41) to (42.center);
-		\draw (45) to (46.center);
+		\draw [style=wire] (2) to (4);
+		\draw [style=wire] (8) to (12);
+		\draw [style=wire] (35) to (36);
+		\draw [style=wire, in=180, out=0] (37) to (38);
+		\draw [style=wire] (41) to (42);
+		\draw [style=wire] (45) to (46);
 	\end{pgfonlayer}
 \end{tikzpicture}
