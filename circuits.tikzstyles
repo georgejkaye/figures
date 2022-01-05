@@ -28,7 +28,9 @@
 \tikzstyle{fork}=[fill=black, draw=black, shape=circle, tikzit category=circuits, scale=0.25]
 \tikzstyle{box}=[fill=white, draw=black, shape=rectangle, tikzit category=circuits]
 \tikzstyle{dangling}=[fill=none, draw=none, shape=circle, anchor=east, scale=0.01, tikzit category=string diagram, tikzit draw=black]
-\tikzstyle{and}=[fill=white, draw=black, shape=and gate, line width=0.33mm]
+\tikzstyle{and}=[fill=white, draw=black, shape=and gate, line width=0.33mm, and gate, scale=2.5]
+\tikzstyle{or}=[fill=white, draw=black, or gate, scale=2.5, line width=0.33mm]
+\tikzstyle{not}=[fill=white, draw=black, not gate, scale=2.5, line width=0.33mm]
 
 % Edge styles
 \tikzstyle{interface}=[-, fill={rgb,255: red,238; green,238; blue,255}, dashed, draw={rgb,255: red,170; green,170; blue,225}, ultra thick]
