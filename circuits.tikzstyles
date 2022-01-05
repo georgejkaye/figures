@@ -23,7 +23,7 @@
 \tikzstyle{input-node}=[fill=white, draw=black, shape=circle, tikzit category=hypergraph, inner sep=0.5, anchor=east]
 \tikzstyle{output-node}=[fill=white, draw=black, shape=circle, anchor=west, inner sep=0.5]
 \tikzstyle{state}=[fill=white, draw=none, shape=rectangle, minimum height=10mm, minimum width=10mm]
-\tikzstyle{delay}=[fill=white, draw=black, shape=circle, tikzit category=string diagram, line width=0.33mm]
+\tikzstyle{delay}=[fill=white, draw=black, shape=circle, tikzit category=string diagram, line width=0.33mm, inner sep=0.33mm, minimum width=2.5mm]
 \tikzstyle{bproduct}=[fill=black, draw=black, shape=circle, scale=0.5, tikzit category=string diagram]
 \tikzstyle{bport}=[minimum size=2.5mm, fill=none, draw=none, shape=circle, tikzit draw={rgb,255: red,154; green,154; blue,154}, anchor=center, tikzit fill=white, tikzit category=string diagram]
 \tikzstyle{mux}=[fill=white, draw=black, shape=trapezium, tikzit category=circuits, rotate=-90, minimum height=0.9em]
