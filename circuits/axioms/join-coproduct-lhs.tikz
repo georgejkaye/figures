@@ -6,11 +6,10 @@
 		\node [style=port] (3) at (1, 0) {};
 		\node [style=tiny box] (4) at (-2.25, 0.75) {$\mathbf{v}$};
 		\node [style=dangling] (5) at (2, 0) {};
-		\node [style=delay] (6) at (-2.25, -0.75) {};
 		\node [style=none] (8) at (-1.5, 0.75) {};
 		\node [style=port] (9) at (-2, 0.75) {};
-		\node [style=dangling] (10) at (-3.25, -0.75) {};
-		\node [style=none] (11) at (-1.5, -0.75) {};
+		\node [style=tiny box] (10) at (-2.25, -0.75) {$\mathbf{w}$};
+		\node [style=port] (11) at (-2, -0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (1) to (2);
@@ -18,8 +17,6 @@
 		\draw [style=wire] (9)
 			 to (8.center)
 			 to [in=105, out=0] (1);
-		\draw [style=wire] (6) to (10);
-		\draw [style=wire] (11.center) to (6);
-		\draw [style=wire, bend right] (11.center) to (1);
+		\draw [style=wire, bend left=45] (1) to (11);
 	\end{pgfonlayer}
 \end{tikzpicture}

@@ -1,2 +1,1 @@
-\usetikzlibrary{circuits.logic.US}
-\newcommand{\hello}{ellllolo}
+\usetikzlibrary{circuits.logic.US, patterns}
