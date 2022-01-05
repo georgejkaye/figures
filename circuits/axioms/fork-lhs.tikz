@@ -1,14 +1,14 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny box] (0) at (-1.25, 0) {$v$};
-		\node [style=bproduct] (1) at (0.25, 0) {};
-		\node [style=port] (2) at (-1, 0) {};
-		\node [style=none] (3) at (2.25, 1) {};
-		\node [style=none] (4) at (2.25, -1) {};
+		\node [style=tiny box] (0) at (-0.75, 0) {$v$};
+		\node [style=dangling] (3) at (0.75, 0.5) {};
+		\node [style=fork] (4) at (0.25, 0) {};
+		\node [style=port] (5) at (-0.5, 0) {};
+		\node [style=dangling] (6) at (0.75, -0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw (2) to (1);
-		\draw [in=-180, out=60] (1) to (3.center);
-		\draw [in=-180, out=-60] (1) to (4.center);
+		\draw [style=wire, in=-180, out=75] (4) to (3);
+		\draw [style=wire] (5) to (4);
+		\draw [style=wire, in=-75, out=180] (6) to (4);
 	\end{pgfonlayer}
 \end{tikzpicture}

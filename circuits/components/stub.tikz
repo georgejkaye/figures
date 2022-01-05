@@ -1,9 +1,9 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=fork] (8) at (0.25, 0) {};
+		\node [style=fork] (8) at (0, 0) {};
 		\node [style=dangling] (9) at (-0.25, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw (9) to (8);
+		\draw [style=wire] (9) to (8);
 	\end{pgfonlayer}
 \end{tikzpicture}
