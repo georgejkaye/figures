@@ -3,25 +3,25 @@
 		\node [style=large square box] (0) at (0, 0) {\scalebox{1.5}{$\hat{F}$}};
 		\node [style=port] (2) at (0.5, 0.75) {};
 		\node [style=port] (3) at (0.5, -1) {};
-		\node [style=none] (4) at (3.75, -1) {};
+		\node [style=dangling] (4) at (3.25, -1) {};
 		\node [style=port] (8) at (-0.75, 0.75) {};
-		\node [style=delay] (11) at (-2.5, 0.75) {};
+		\node [style=delay] (11) at (-2.75, 0.75) {};
 		\node [style=none] (14) at (2.25, 0.75) {};
 		\node [style=none] (15) at (2.25, 2) {};
-		\node [style=none] (16) at (-3.25, 2) {};
-		\node [style=none] (17) at (-3.25, 0.75) {};
+		\node [style=none] (16) at (-3.5, 2) {};
+		\node [style=none] (17) at (-3.5, 0.75) {};
 		\node [style=port] (18) at (-0.75, -1) {};
-		\node [style=tiny box] (19) at (-2.5, -1) {$\mathbf{v}$};
+		\node [style=tiny box] (19) at (-2.75, -1) {$\mathbf{v}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw (3) to (4.center);
+		\draw [style=wire] (3) to (4);
 		\draw [style=wire] (8) to (11);
-		\draw (2)
+		\draw [style=wire] (2)
 			 to (14.center)
 			 to [bend right=90, looseness=1.50] (15.center)
 			 to (16.center)
 			 to [bend right=90, looseness=1.50] (17.center)
 			 to (11);
-		\draw (19) to (18);
+		\draw [style=wire] (19) to (18);
 	\end{pgfonlayer}
 \end{tikzpicture}
