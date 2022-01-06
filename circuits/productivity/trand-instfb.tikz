@@ -1,17 +1,17 @@
-\begin{tikzpicture}
+\begin{tikzpicture}[circuit logic US]
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box] (0) at (-4.25, 1.5) {$\land$};
+		\node [style=and] (0) at (-4.25, 1.5) {};
 		\node [style=port] (1) at (-4.75, 2) {};
 		\node [style=port] (2) at (-4.75, 1) {};
 		\node [style=port] (3) at (-3.75, 1.5) {};
-		\node [style=medium square box] (11) at (0.25, 0) {$\land$};
+		\node [style=and] (11) at (0.25, 0) {};
 		\node [style=port] (12) at (-0.25, 0.5) {};
 		\node [style=port] (13) at (-0.25, -0.5) {};
 		\node [style=tiny box] (20) at (-2, -0.5) {$\mathsf{t}$};
 		\node [style=tiny box] (21) at (-6.75, 0.75) {$\mathsf{t}$};
 		\node [style=tiny box] (22) at (-6.75, 2.25) {$\bot$};
 		\node [style=port] (23) at (0.75, 0) {};
-		\node [style=medium square box] (24) at (4.75, -1.5) {$\land$};
+		\node [style=and] (24) at (4.75, -1.5) {};
 		\node [style=port] (25) at (4.25, -1) {};
 		\node [style=port] (26) at (4.25, -2) {};
 		\node [style=port] (27) at (5.25, -1.5) {};
@@ -19,12 +19,12 @@
 		\node [style=tiny box] (29) at (2.5, -2) {$\mathsf{t}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw (20) to (13);
-		\draw [in=180, out=0] (21) to (2);
-		\draw [in=180, out=0] (22) to (1);
-		\draw [in=0, out=180, looseness=1.25] (12) to (3);
-		\draw (27) to (28.center);
-		\draw (29) to (26);
-		\draw [in=0, out=180, looseness=1.25] (25) to (23);
+		\draw [style=wire] (20) to (13);
+		\draw [style=wire, in=180, out=0] (21) to (2);
+		\draw [style=wire, in=180, out=0] (22) to (1);
+		\draw [style=wire, in=0, out=180, looseness=1.25] (12) to (3);
+		\draw [style=wire] (27) to (28.center);
+		\draw [style=wire] (29) to (26);
+		\draw [style=wire, in=0, out=180, looseness=1.25] (25) to (23);
 	\end{pgfonlayer}
 \end{tikzpicture}

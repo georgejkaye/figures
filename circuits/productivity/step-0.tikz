@@ -1,10 +1,10 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=large square box] (0) at (-1.25, 0) {\scalebox{1.5}{$F$}};
+		\node [style=medium square trace box] (0) at (-1.25, 0) {\scalebox{1.5}{$F$}};
 		\node [style=port] (3) at (-0.75, 0) {};
-		\node [style=none] (4) at (1.25, 0) {};
+		\node [style=dangling] (4) at (0.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw (3) to (4.center);
+		\draw [style=wire] (3) to (4);
 	\end{pgfonlayer}
 \end{tikzpicture}

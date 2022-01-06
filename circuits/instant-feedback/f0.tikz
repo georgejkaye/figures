@@ -1,19 +1,19 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=large box] (0) at (0, 0) {$f$};
-		\node [style=none] (1) at (-3.25, -0.5) {};
+		\node [style=medium square box] (0) at (0, 0) {$f$};
+		\node [style=dangling] (1) at (-3.25, -0.5) {};
 		\node [style=tiny box] (2) at (-2.25, 0.5) {$\bot$};
 		\node [style=bport] (3) at (-0.25, 0.5) {};
 		\node [style=bport] (4) at (-0.25, -0.5) {};
-		\node [style=none] (5) at (2, 0.5) {};
+		\node [style=dangling] (5) at (1.5, 0.5) {};
 		\node [style=bport] (6) at (0.25, 0.5) {};
 		\node [style=bport] (7) at (0.25, -0.5) {};
-		\node [style=none] (8) at (2, -0.5) {};
+		\node [style=dangling] (8) at (1.5, -0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw (3) to (2);
-		\draw (1.center) to (4);
-		\draw (6) to (5.center);
-		\draw (7) to (8.center);
+		\draw [style=wire] (3) to (2);
+		\draw [style=wire] (1) to (4);
+		\draw [style=wire] (6) to (5);
+		\draw [style=wire] (7) to (8);
 	\end{pgfonlayer}
 \end{tikzpicture}

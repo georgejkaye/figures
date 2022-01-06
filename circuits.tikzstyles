@@ -16,6 +16,7 @@
 \tikzstyle{medium noncomb box}=[rounded corners, draw=black, shape=rectangle, tikzit category=string diagram, minimum height=10mm, minimum width=7.5mm, anchor=center, line width=0.33mm, preaction={fill, white}, pattern=north east lines, pattern color=lightgray]
 \tikzstyle{medium square box}=[rounded corners, fill=white, draw=black, shape=rectangle, tikzit category=string diagram, minimum height=10mm, minimum width=10mm, line width=0.33mm]
 \tikzstyle{medium square noncomb box}=[rounded corners, draw=black, shape=rectangle, tikzit category=string diagram, minimum height=10mm, minimum width=10mm, line width=0.33mm, preaction={fill, white}, pattern=north east lines, pattern color=lightgray]
+\tikzstyle{medium square trace box}=[rounded corners, draw=black, shape=rectangle, tikzit category=string diagram, minimum height=10mm, minimum width=10mm, line width=0.33mm, preaction={fill, white}, pattern=crosshatch, pattern color=lightgray]
 \tikzstyle{large box}=[rounded corners, fill=white, draw=black, shape=rectangle, tikzit category=string diagram, minimum height=15mm, minimum width=10mm, anchor=center, line width=0.33mm]
 \tikzstyle{huge box}=[rounded corners, fill=white, draw=black, shape=rectangle, minimum height=40mm, minimum width=15mm, anchor=center, tikzit category=string diagram, line width=0.33mm]
 \tikzstyle{tiny box}=[rounded corners, fill=white, draw=black, shape=rectangle, tikzit category=string diagram, minimum width=6mm, minimum height=6mm, anchor=center, line width=0.33mm]

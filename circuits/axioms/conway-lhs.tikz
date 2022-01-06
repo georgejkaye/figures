@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square noncomb box] (0) at (0, 0) {$F$};
+		\node [style=dangling] (1) at (1.5, 0) {};
+		\node [style=port] (2) at (0.5, 0) {};
+		\node [style=dangling] (8) at (-1.5, 0.5) {};
+		\node [style=port] (9) at (-0.5, 0.5) {};
+		\node [style=port] (10) at (-0.5, -0.5) {};
+		\node [style=dangling] (11) at (-1.5, -0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (2) to (1);
+		\draw [style=wire] (8) to (9);
+		\draw [style=wire] (10) to (11);
+	\end{pgfonlayer}
+\end{tikzpicture}

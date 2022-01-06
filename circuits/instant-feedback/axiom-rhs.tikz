@@ -1,16 +1,16 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=large box] (0) at (0, 0) {$f_c$};
-		\node [style=none] (1) at (-2, 0) {};
-		\node [style=bport] (4) at (-0.25, 0) {};
-		\node [style=bproduct] (5) at (2, 0.5) {};
-		\node [style=bport] (6) at (0.25, 0.5) {};
-		\node [style=bport] (7) at (0.25, -0.5) {};
-		\node [style=none] (8) at (3, -0.5) {};
+		\node [style=medium square box] (0) at (-0.25, 0) {$f_c$};
+		\node [style=dangling] (1) at (-2, 0) {};
+		\node [style=bport] (4) at (-0.5, 0) {};
+		\node [style=bproduct] (5) at (1.5, 0.5) {};
+		\node [style=bport] (6) at (0, 0.5) {};
+		\node [style=bport] (7) at (0, -0.5) {};
+		\node [style=dangling] (8) at (2.25, -0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw (1.center) to (4);
-		\draw (6) to (5);
-		\draw (7) to (8.center);
+		\draw [style=wire] (1) to (4);
+		\draw [style=wire] (6) to (5);
+		\draw [style=wire] (7) to (8);
 	\end{pgfonlayer}
 \end{tikzpicture}

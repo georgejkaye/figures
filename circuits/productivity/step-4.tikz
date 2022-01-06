@@ -5,11 +5,11 @@
 		\node [style=port] (3) at (-4.5, -1.5) {};
 		\node [style=bproduct] (4) at (-2.5, -1.5) {};
 		\node [style=port] (8) at (-5.75, -0.25) {};
-		\node [style=delay] (11) at (-7.5, -0.25) {};
+		\node [style=delay] (11) at (-7.75, -0.25) {};
 		\node [style=bproduct] (14) at (-2.5, -0.25) {};
 		\node [style=none] (15) at (-1.5, 1.75) {};
 		\node [style=none] (16) at (-7.75, 1.75) {};
-		\node [style=none] (17) at (-7.75, -0.25) {};
+		\node [style=none] (17) at (-8, -0.25) {};
 		\node [style=large square box] (18) at (4.25, -1.25) {\scalebox{1.5}{$\tilde{F}$}};
 		\node [style=port] (19) at (4.75, -1) {};
 		\node [style=port] (20) at (4.75, -2.25) {};
@@ -18,7 +18,7 @@
 		\node [style=bproduct] (24) at (6.75, -1) {};
 		\node [style=delay] (25) at (6.75, -2.25) {};
 		\node [style=port] (26) at (-5.75, -1.5) {};
-		\node [style=tiny box] (27) at (-7.5, -1.5) {$\mathbf{v}$};
+		\node [style=tiny box] (27) at (-7.75, -1.5) {$\mathbf{v}$};
 		\node [style=port] (28) at (3.5, -2.25) {};
 		\node [style=tiny box] (29) at (1, -2.25) {$\bot$};
 		\node [style=port] (30) at (3.5, -1) {};
@@ -28,35 +28,36 @@
 		\node [style=bproduct] (35) at (6.75, 2.5) {};
 		\node [style=none] (36) at (6.75, 1.25) {};
 		\node [style=port] (37) at (3.25, 1.25) {};
-		\node [style=tiny box] (38) at (1, 1) {$\mathbf{v}$};
-		\node [style=tiny box] (40) at (1, 2.75) {$\bot$};
-		\node [style=port] (41) at (3.25, 2.5) {};
+		\node [style=tiny box] (38) at (1, 1.25) {$\mathbf{v}$};
+		\node [style=tiny box] (40) at (1, 3) {$\bot$};
+		\node [style=port] (41) at (3.25, 3) {};
 		\node [style=bproduct] (42) at (9, -0.5) {};
 		\node [style=none] (44) at (10, -0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw (3) to (4);
+		\draw [style=wire] (3) to (4);
 		\draw [style=wire] (8) to (11);
-		\draw (2) to (14);
-		\draw (14)
+		\draw [style=wire] (2) to (14);
+		\draw [style=wire] (14)
 			 to [bend left] (22.center)
 			 to [bend right=90, looseness=2.00] (15.center)
 			 to (16.center)
 			 to [bend left=270, looseness=1.50] (17.center)
 			 to (11);
-		\draw [bend right] (14) to (23.center);
-		\draw (19) to (24);
-		\draw (20) to (25);
-		\draw (27) to (26);
-		\draw (29) to (28);
-		\draw (32) to (35);
-		\draw (33)
+		\draw [style=wire] (14)
+			 to [bend right] (23.center)
+			 to (30);
+		\draw [style=wire] (20) to (25);
+		\draw [style=wire] (27) to (26);
+		\draw [style=wire] (29) to (28);
+		\draw [style=wire] (32) to (35);
+		\draw [style=wire] (33)
 			 to (36.center)
 			 to [in=105, out=0] (42);
-		\draw [in=180, out=0] (38) to (37);
-		\draw [in=0, out=180] (41) to (40);
-		\draw (23.center) to (30);
-		\draw (42) to (44.center);
-		\draw [in=-105, out=0] (25) to (42);
+		\draw [style=wire, in=180, out=0] (38) to (37);
+		\draw [style=wire, in=0, out=180] (41) to (40);
+		\draw [style=wire] (42) to (44.center);
+		\draw [style=wire, in=-105, out=0] (25) to (42);
+		\draw [style=wire] (19) to (24);
 	\end{pgfonlayer}
 \end{tikzpicture}

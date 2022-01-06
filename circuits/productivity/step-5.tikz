@@ -25,28 +25,28 @@
 		\node [style=tiny box] (33) at (4.5, 2.25) {$\mathbf{w}$};
 		\node [style=none] (36) at (6.75, 2.25) {};
 		\node [style=bproduct] (42) at (9.25, 0) {};
-		\node [style=none] (44) at (10.25, 0) {};
+		\node [style=dangling] (44) at (10.25, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw (3) to (4);
+		\draw [style=wire] (3) to (4);
 		\draw [style=wire] (8) to (11);
-		\draw (2) to (14);
-		\draw (14)
+		\draw [style=wire] (2) to (14);
+		\draw [style=wire] (14)
 			 to [bend left] (22.center)
 			 to [bend right=90, looseness=2.00] (15.center)
 			 to (16.center)
 			 to [bend left=270, looseness=1.50] (17.center)
 			 to (11);
-		\draw [bend right] (14) to (23.center);
-		\draw (19) to (24);
-		\draw (20) to (25);
-		\draw (27) to (26);
-		\draw (29) to (28);
-		\draw (33)
+		\draw [style=wire, bend right] (14) to (23.center);
+		\draw [style=wire] (19) to (24);
+		\draw [style=wire] (20) to (25);
+		\draw [style=wire] (27) to (26);
+		\draw [style=wire] (29) to (28);
+		\draw [style=wire] (33)
 			 to (36.center)
 			 to [in=105, out=0] (42);
-		\draw (23.center) to (30);
-		\draw (42) to (44.center);
-		\draw [in=0, out=-105] (42) to (25);
+		\draw [style=wire] (23.center) to (30);
+		\draw [style=wire] (42) to (44);
+		\draw [style=wire, in=0, out=-105] (42) to (25);
 	\end{pgfonlayer}
 \end{tikzpicture}

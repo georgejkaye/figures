@@ -1,30 +1,30 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=large box] (0) at (0, 0.25) {$f$};
-		\node [style=none] (1) at (-3.25, -0.75) {};
-		\node [style=medium square box] (2) at (-3.75, 1) {$f_k$};
-		\node [style=bport] (3) at (-0.5, 1) {};
-		\node [style=bport] (4) at (-0.5, -0.75) {};
-		\node [style=none] (5) at (2, 0.75) {};
-		\node [style=bport] (6) at (0.5, 0.75) {};
-		\node [style=bport] (7) at (0.5, -0.5) {};
-		\node [style=none] (8) at (2, -0.5) {};
-		\node [style=bproduct] (9) at (-5.75, 0.25) {};
-		\node [style=bport] (10) at (-4.25, 1) {};
-		\node [style=none] (11) at (-7, 0.25) {};
-		\node [style=bport] (12) at (-3.25, 1.5) {};
-		\node [style=bport] (13) at (-3.25, 0.5) {};
-		\node [style=bproduct] (15) at (-2, 0.5) {};
+		\node [style=medium square box] (0) at (0.75, -0.5) {$f$};
+		\node [style=none] (1) at (-3.25, -1) {};
+		\node [style=medium square box] (2) at (-3.75, 0.75) {$f_k$};
+		\node [style=bport] (3) at (0.25, 0) {};
+		\node [style=bport] (4) at (0.25, -1) {};
+		\node [style=dangling] (5) at (2.5, 0) {};
+		\node [style=bport] (6) at (1.25, 0) {};
+		\node [style=bport] (7) at (1.25, -1) {};
+		\node [style=dangling] (8) at (2.5, -1) {};
+		\node [style=bproduct] (9) at (-5.75, 0) {};
+		\node [style=bport] (10) at (-4.25, 0.75) {};
+		\node [style=dangling] (11) at (-6.5, 0) {};
+		\node [style=bport] (12) at (-3.25, 1.25) {};
+		\node [style=bport] (13) at (-3.25, 0.25) {};
+		\node [style=bproduct] (15) at (-2.25, 0.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw (9)
+		\draw [style=wire] (9)
 			 to [in=-180, out=-75] (1.center)
 			 to (4);
-		\draw (6) to (5.center);
-		\draw (7) to (8.center);
-		\draw [in=-180, out=75] (9) to (10);
-		\draw (9) to (11.center);
-		\draw [in=180, out=0, looseness=1.25] (12) to (3);
-		\draw (13) to (15);
+		\draw [style=wire] (6) to (5);
+		\draw [style=wire] (7) to (8);
+		\draw [style=wire, in=-180, out=75] (9) to (10);
+		\draw [style=wire] (9) to (11);
+		\draw [style=wire, in=180, out=0, looseness=1.25] (12) to (3);
+		\draw [style=wire] (13) to (15);
 	\end{pgfonlayer}
 \end{tikzpicture}
