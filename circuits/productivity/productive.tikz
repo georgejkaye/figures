@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box] (18) at (5, -1) {$G$};
+		\node [style=medium square trace box] (18) at (5, -1) {$G$};
 		\node [style=port] (19) at (5.25, -0.5) {};
 		\node [style=port] (20) at (5.25, -1.5) {};
 		\node [style=bproduct] (24) at (7.25, -0.5) {};
