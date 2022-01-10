@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dangling] (10) at (1.5, 0) {};
+		\node [style=tiny noncomb box] (11) at (0, 0) {$\sigma$};
+		\node [style=none] (15) at (0.5, 0) {};
+		\node [style=none] (16) at (-0.5, 0) {};
+		\node [style=dangling] (17) at (-1.5, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (15.center) to (10);
+		\draw [style=wire] (17) to (16.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
