@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny box] (11) at (-0.25, 0.75) {$t(\mathbf{v})$};
+		\node [style=none] (15) at (0.25, 0.75) {};
+		\node [style=dangling] (16) at (1.25, 0.75) {};
+		\node [style=tiny box] (17) at (-0.25, -0.75) {$\bot$};
+		\node [style=dangling] (18) at (1.25, -0.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (18) to (17);
+		\draw [style=wire] (15.center) to (16);
+	\end{pgfonlayer}
+\end{tikzpicture}

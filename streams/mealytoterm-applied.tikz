@@ -1,0 +1,26 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny box] (8) at (-2.25, -0.775) {$\mathbf{v}$};
+		\node [style=bproduct] (9) at (-0.75, -0.775) {};
+		\node [style=medium square box] (12) at (1.5, 0.5) {$\langle{T}\rangle$};
+		\node [style=medium square box] (13) at (1.5, -2.25) {$\langle{O}\rangle$};
+		\node [style=bport] (14) at (1, 1.25) {};
+		\node [style=bport] (15) at (1, 0.5) {};
+		\node [style=bport] (16) at (1, -0.25) {};
+		\node [style=bport] (18) at (1, -2.25) {};
+		\node [style=bport] (22) at (2, 0) {};
+		\node [style=bproduct] (24) at (3.25, 0) {};
+		\node [style=bport] (33) at (2, -2.25) {};
+		\node [style=dangling] (34) at (4, -2.25) {};
+		\node [style=dangling] (35) at (4, 1.25) {};
+		\node [style=port] (36) at (2, 1.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire, in=180, out=0, looseness=0.75] (8) to (9);
+		\draw [style=wire, in=-180, out=75] (9) to (15);
+		\draw [style=wire, in=-180, out=-75] (9) to (18);
+		\draw [style=wire] (22) to (24);
+		\draw [style=wire] (33) to (34);
+		\draw [style=wire] (35) to (36);
+	\end{pgfonlayer}
+\end{tikzpicture}

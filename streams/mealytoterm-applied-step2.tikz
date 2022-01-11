@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny box] (37) at (0, -1.5) {$o(\mathbf{v})$};
+		\node [style=none] (38) at (0.5, -1.5) {};
+		\node [style=dangling] (39) at (2.25, -1.5) {};
+		\node [style=tiny box] (40) at (0, 1.5) {$t(\mathbf{v})$};
+		\node [style=none] (41) at (0.5, 1.5) {};
+		\node [style=dangling] (42) at (2.25, 1.5) {};
+		\node [style=tiny box] (43) at (0, 0) {$\bot$};
+		\node [style=bproduct] (44) at (1.5, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (38.center) to (39);
+		\draw [style=wire] (44) to (43);
+		\draw [style=wire] (41.center) to (42);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny box] (37) at (0, -0.75) {$o(\mathbf{v})$};
+		\node [style=none] (38) at (0.5, -0.75) {};
+		\node [style=dangling] (39) at (1.75, -0.75) {};
+		\node [style=tiny box] (40) at (0, 0.75) {$t(\mathbf{v})$};
+		\node [style=none] (41) at (0.5, 0.75) {};
+		\node [style=dangling] (42) at (1.75, 0.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (38.center) to (39);
+		\draw [style=wire] (41.center) to (42);
+	\end{pgfonlayer}
+\end{tikzpicture}
