@@ -40,3 +40,7 @@
 
 % fix strange self-loops, which are PGF/TikZ default
 \tikzstyle{every loop}=[]
+
+% some custom macros 
+\newcommand{\iltikzfig}[1]{\scalebox{0.66}{\tikzfig{#1}}}
+\newcommand{\sbtikzfig}[2]{\scalebox{#2}{\tikzfig{#1}}}
