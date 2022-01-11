@@ -1,0 +1,31 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box] (0) at (-0.75, 1.25) {$F$};
+		\node [style=port] (2) at (-1, 1.25) {};
+		\node [style=port] (3) at (-0.5, 1.25) {};
+		\node [style=bproduct] (5) at (2.5, 0) {};
+		\node [style=dangling] (7) at (-2.5, -1.25) {};
+		\node [style=none] (8) at (-2.25, 1.25) {};
+		\node [style=dangling] (9) at (-2.5, 1.25) {};
+		\node [style=medium square box] (11) at (-0.75, -1.25) {$F$};
+		\node [style=port] (12) at (-1, -1.25) {};
+		\node [style=port] (13) at (-0.5, -1.25) {};
+		\node [style=delay] (14) at (1, -1.25) {};
+		\node [style=none] (16) at (1.25, -1.25) {};
+		\node [style=none] (17) at (1.25, 1.25) {};
+		\node [style=dangling] (18) at (3.5, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (9) to (8.center);
+		\draw [style=wire] (8.center) to (2);
+		\draw [style=wire] (7) to (12);
+		\draw [style=wire] (13) to (14);
+		\draw [style=wire] (3)
+			 to (17.center)
+			 to [in=105, out=0] (5);
+		\draw [style=wire] (14)
+			 to (16.center)
+			 to [in=-105, out=0] (5);
+		\draw [style=wire] (5) to (18);
+	\end{pgfonlayer}
+\end{tikzpicture}
