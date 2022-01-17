@@ -1,9 +1,9 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=port] (1) at (1, 0) {};
-		\node [style=tiny box] (22) at (-1, 0) {$\bot$};
+		\node [style=dangling] (1) at (0.75, 0) {};
+		\node [style=bproduct] (22) at (-0.75, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [in=180, out=0] (22) to (1);
+		\draw [style=wire, in=180, out=0] (22) to (1);
 	\end{pgfonlayer}
 \end{tikzpicture}
