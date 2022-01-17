@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dangling] (15) at (-2, -1.25) {};
+		\node [style=medium square trace box] (17) at (0, -1.25) {$G$};
+		\node [style=dangling] (18) at (2, -1.25) {};
+		\node [style=dangling] (19) at (-2, 1.25) {};
+		\node [style=medium square trace box] (20) at (0, 1.25) {$F$};
+		\node [style=dangling] (21) at (2, 1.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (17) to (18);
+		\draw [style=wire] (15) to (17);
+		\draw [style=wire] (20) to (21);
+		\draw [style=wire] (19) to (20);
+	\end{pgfonlayer}
+\end{tikzpicture}
