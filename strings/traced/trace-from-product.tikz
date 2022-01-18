@@ -1,0 +1,35 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1.25, 0.5) {};
+		\node [style=medium square box] (1) at (0, 0) {$F$};
+		\node [style=dangling] (2) at (-3.25, -0.5) {};
+		\node [style=port] (3) at (-0.25, 0.5) {};
+		\node [style=port] (4) at (-0.25, -0.5) {};
+		\node [style=port] (5) at (0.25, 0.5) {};
+		\node [style=port] (6) at (0.25, -0.5) {};
+		\node [style=none] (7) at (1.25, 0.5) {};
+		\node [style=dangling] (8) at (3.25, -0.5) {};
+		\node [style=none] (9) at (-1.25, 1.5) {};
+		\node [style=none] (10) at (1.25, 1.5) {};
+		\node [style=bproduct] (11) at (-2, 1) {};
+		\node [style=bproduct] (12) at (2, 1) {};
+		\node [style=bproduct] (13) at (2.75, 1) {};
+		\node [style=bproduct] (14) at (-2.75, 1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (4) to (2);
+		\draw [style=wire] (11)
+			 to [in=-180, out=-60] (0.center)
+			 to (3);
+		\draw [style=wire] (6) to (8);
+		\draw [style=wire] (12)
+			 to [bend left] (7.center)
+			 to (5);
+		\draw [style=wire] (11)
+			 to [bend left] (9.center)
+			 to (10.center)
+			 to [bend left] (12);
+		\draw [style=wire] (14) to (11);
+		\draw [style=wire] (12) to (13);
+	\end{pgfonlayer}
+\end{tikzpicture}
