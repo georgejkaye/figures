@@ -53,3 +53,4 @@
 \tikzstyle{strikethrough}=[-, decoration={markings, mark=at position 0.5 with {
         \draw [blue, thick, - ] (-0.15,-0.15);
     }}, postaction=decorate]
+\tikzstyle{traced}=[-, densely dashed, draw=gray]
