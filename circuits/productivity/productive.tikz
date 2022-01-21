@@ -1,17 +1,14 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square trace box] (18) at (5, -1) {$G$};
-		\node [style=port] (19) at (5.25, -0.5) {};
-		\node [style=port] (20) at (5.25, -1.5) {};
-		\node [style=bproduct] (24) at (7.25, -0.5) {};
-		\node [style=delay] (25) at (7.25, -1.5) {};
-		\node [style=tiny box] (33) at (5, 1.5) {$\mathbf{v}$};
-		\node [style=none] (36) at (7.25, 1.5) {};
-		\node [style=bproduct] (42) at (9, 0) {};
-		\node [style=dangling] (44) at (10, 0) {};
+		\node [style=medium square trace box] (18) at (5.25, -1) {$G$};
+		\node [style=port] (20) at (5.5, -1) {};
+		\node [style=delay] (25) at (7, -1) {};
+		\node [style=tiny box] (33) at (5.25, 1) {$\mathbf{v}$};
+		\node [style=none] (36) at (7.25, 1) {};
+		\node [style=bproduct] (42) at (8.5, 0) {};
+		\node [style=dangling] (44) at (9.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire] (19) to (24);
 		\draw [style=wire] (20) to (25);
 		\draw [style=wire] (33)
 			 to (36.center)

@@ -60,3 +60,4 @@
 \tikzstyle{arrow}=[<-]
 \tikzstyle{arrow up}=[->]
 \tikzstyle{dashed arrow}=[<-, dashed]
+\tikzstyle{unit wire}=[-, fill=none, draw={rgb,255: red,191; green,191; blue,191}, line width=0.33mm]
