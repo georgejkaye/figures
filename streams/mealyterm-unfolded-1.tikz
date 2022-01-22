@@ -4,8 +4,8 @@
 		\node [style=bproduct] (9) at (-0.5, 0.475) {};
 		\node [style=bproduct] (10) at (-0.5, -1) {};
 		\node [style=dangling] (11) at (-4.5, -1) {};
-		\node [style=medium square box] (12) at (1.75, 1.25) {T};
-		\node [style=medium square box] (13) at (1.75, -1.75) {O};
+		\node [style=medium square box] (12) at (1.75, 1.25) {\llangleT\rrangle};
+		\node [style=medium square box] (13) at (1.75, -1.75) {\llangleO\rrangle};
 		\node [style=bport] (15) at (1.25, 1.75) {};
 		\node [style=bport] (16) at (1.25, 0.75) {};
 		\node [style=bport] (18) at (1.25, -1.25) {};
@@ -18,24 +18,28 @@
 		\node [style=bproduct] (34) at (3.5, -2) {};
 		\node [style=none] (35) at (-3, 0.5) {};
 		\node [style=none] (36) at (4.5, 2.25) {};
-		\node [style=delay] (37) at (5, -0.275) {$s_0$};
-		\node [style=bproduct] (38) at (6.5, -0.275) {};
-		\node [style=bproduct] (39) at (6.5, -1.75) {};
-		\node [style=medium square box] (40) at (9.25, 0.5) {T};
-		\node [style=medium square box] (41) at (9.25, -2.5) {O};
-		\node [style=bport] (42) at (8.75, 1) {};
-		\node [style=bport] (43) at (8.75, 0) {};
-		\node [style=bport] (44) at (8.75, -2) {};
-		\node [style=bport] (45) at (8.75, -3) {};
-		\node [style=bport] (46) at (9.75, 0.5) {};
-		\node [style=bproduct] (47) at (11, 0.5) {};
-		\node [style=bport] (48) at (9.75, -2.75) {};
+		\node [style=delay] (37) at (5.25, -0.275) {$s_0$};
+		\node [style=bproduct] (38) at (6.75, -0.275) {};
+		\node [style=bproduct] (39) at (6.75, -1.75) {};
+		\node [style=medium square box] (40) at (9.5, 0.5) {\llangleT\rrangle};
+		\node [style=medium square box] (41) at (9.5, -2.5) {\llangleO\rrangle};
+		\node [style=bport] (42) at (9, 1) {};
+		\node [style=bport] (43) at (9, 0) {};
+		\node [style=bport] (44) at (9, -2) {};
+		\node [style=bport] (45) at (9, -3) {};
+		\node [style=bport] (46) at (10, 0.5) {};
+		\node [style=bproduct] (47) at (11.25, 0.5) {};
+		\node [style=bport] (48) at (10, -2.75) {};
 		\node [style=bproduct] (50) at (-2.5, -1) {};
 		\node [style=none] (51) at (0.25, -3.5) {};
-		\node [style=none] (52) at (4.25, -3.5) {};
-		\node [style=dangling] (53) at (11.5, -2.75) {};
+		\node [style=none] (52) at (3.5, -3.5) {};
+		\node [style=dangling] (53) at (11.75, -2.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (50)
+			 to [in=-180, out=-75] (51.center)
+			 to (52.center)
+			 to [in=180, out=0, looseness=1.25] (39);
 		\draw [style=wire, in=180, out=0] (11) to (10);
 		\draw [style=wire, in=-180, out=75] (9) to (15);
 		\draw [style=wire, in=-180, out=75] (10) to (16);
@@ -57,9 +61,6 @@
 		\draw [style=wire] (47) to (46);
 		\draw [style=wire] (37) to (38);
 		\draw [style=wire, in=180, out=-75] (24) to (37);
-		\draw [style=wire, in=-180, out=-75] (50) to (51.center);
-		\draw [style=wire, in=0, out=180, looseness=1.25] (39) to (52.center);
-		\draw [style=wire] (51.center) to (52.center);
 		\draw [style=wire] (53) to (48);
 	\end{pgfonlayer}
 \end{tikzpicture}

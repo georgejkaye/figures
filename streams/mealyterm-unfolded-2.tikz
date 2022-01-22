@@ -2,7 +2,7 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=delay] (6) at (-2, 0.475) {$s_0$};
 		\node [style=dangling] (11) at (-4.5, -0.5) {};
-		\node [style=medium square box] (12) at (0.25, 0) {T};
+		\node [style=medium square box] (12) at (0.25, 0) {\llangleT\rrangle};
 		\node [style=bport] (15) at (-0.25, 0.5) {};
 		\node [style=bport] (16) at (-0.25, -0.5) {};
 		\node [style=bport] (22) at (0.75, 0) {};
@@ -11,15 +11,15 @@
 		\node [style=none] (30) at (-3, 2.25) {};
 		\node [style=none] (35) at (-3, 0.5) {};
 		\node [style=none] (36) at (3, 1) {};
-		\node [style=delay] (37) at (3.5, -1.525) {$s_0$};
-		\node [style=none] (39) at (3.75, -2.5) {};
-		\node [style=medium square box] (41) at (5.5, -2) {O};
-		\node [style=bport] (44) at (5, -1.5) {};
-		\node [style=bport] (45) at (5, -2.5) {};
-		\node [style=bport] (48) at (6, -2) {};
+		\node [style=delay] (37) at (3.75, -1.525) {$s_0$};
+		\node [style=none] (39) at (4, -2.5) {};
+		\node [style=medium square box] (41) at (5.75, -2) {\llangleO\rrangle};
+		\node [style=bport] (44) at (5.25, -1.5) {};
+		\node [style=bport] (45) at (5.25, -2.5) {};
+		\node [style=bport] (48) at (6.25, -2) {};
 		\node [style=bproduct] (50) at (-2.5, -0.5) {};
 		\node [style=none] (51) at (0.25, -2.5) {};
-		\node [style=dangling] (53) at (7.75, -2) {};
+		\node [style=dangling] (53) at (8, -2) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (6) to (35.center);
