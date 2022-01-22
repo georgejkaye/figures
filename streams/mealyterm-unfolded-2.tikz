@@ -2,7 +2,7 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=delay] (6) at (-2, 0.475) {$s_0$};
 		\node [style=dangling] (11) at (-4.5, -0.5) {};
-		\node [style=medium square box] (12) at (0.25, 0) {\llangleT\rrangle};
+		\node [style=medium square box] (12) at (0.25, 0) {$\llangle T\rrangle$};
 		\node [style=bport] (15) at (-0.25, 0.5) {};
 		\node [style=bport] (16) at (-0.25, -0.5) {};
 		\node [style=bport] (22) at (0.75, 0) {};
@@ -13,7 +13,7 @@
 		\node [style=none] (36) at (3, 1) {};
 		\node [style=delay] (37) at (3.75, -1.525) {$s_0$};
 		\node [style=none] (39) at (4, -2.5) {};
-		\node [style=medium square box] (41) at (5.75, -2) {\llangleO\rrangle};
+		\node [style=medium square box] (41) at (5.75, -2) {$\llangle O\rrangle$};
 		\node [style=bport] (44) at (5.25, -1.5) {};
 		\node [style=bport] (45) at (5.25, -2.5) {};
 		\node [style=bport] (48) at (6.25, -2) {};
