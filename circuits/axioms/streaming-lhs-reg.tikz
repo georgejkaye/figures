@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium box] (0) at (1, 0) {$g$};
+		\node [style=delay] (1) at (-1, 0) {$\mathbf{V}$};
+		\node [style=port] (2) at (0.75, 0) {};
+		\node [style=port] (3) at (1.25, 0) {};
+		\node [style=dangling] (5) at (2.25, 0) {};
+		\node [style=dangling] (10) at (-2, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (1) to (2);
+		\draw [style=wire] (3) to (5);
+		\draw [style=wire] (10) to (1);
+	\end{pgfonlayer}
+\end{tikzpicture}
