@@ -38,7 +38,7 @@
 		\node [style=none] (40) at (-3.75, 0) {$\llbracket-\rrbracket$};
 		\node [style=none] (41) at (-7.25, 0) {$\llangle-\rrangle$};
 		\node [style=small label] (42) at (0, -1) {final homomorphism};
-		\node [style=small label] (43) at (0, -3.25) {mealy synthesis};
+		\node [style=small label] (43) at (0, -3.5) {mealy synthesis};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=curved rectangle] (4.center)
