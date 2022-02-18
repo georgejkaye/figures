@@ -1,0 +1,12 @@
+% \definecolor{comb}{HTML}{f8f8f2}
+% \definecolor{delay}{HTML}{ff79c6}
+% \definecolor{trace}{HTML}{50fa7b}
+% \newcommand{0.5mm}{0.5mm}
+
+\tikzstyle{every picture}=[baseline=-0.25em, scale=0.5]
+
+\tikzstyle{medium square box}=[rounded corners,draw=black,text=black, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=0.5mm]
+\tikzstyle{medium square noncomb box}=[rounded corners, draw=black, text=black, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=0.5mm]
+\tikzstyle{medium square trace box}=[rounded corners, draw=black, text=black, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=0.5mm]
+\tikzstyle{dangling}=[fill=none, draw=none, shape=circle, anchor=east, scale=0.01]
+\tikzstyle{wire}=[-, draw=black, line width=0.5mm]
