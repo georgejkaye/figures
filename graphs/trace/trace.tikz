@@ -1,0 +1,36 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-4, 2.25) {};
+		\node [style=none] (1) at (-4, -2.25) {};
+		\node [style=none] (2) at (4, -2.25) {};
+		\node [style=none] (4) at (4, 2.25) {};
+		\node [style=edge] (5) at (0, -0.5) {$\phi$};
+		\node [style=port] (13) at (0.25, -0.25) {};
+		\node [style=port] (14) at (0.25, -0.75) {};
+		\node [style=none] (18) at (1.5, 0.75) {};
+		\node [style=none] (20) at (1.5, 0) {};
+		\node [style=port] (22) at (-0.25, -0.25) {};
+		\node [style=none] (23) at (-1.5, 0.75) {};
+		\node [style=none] (24) at (-1.5, 0) {};
+		\node [style=vertex] (25) at (0, 1.25) {};
+		\node [style=vertex] (26) at (3, -1) {};
+		\node [style=vertex] (27) at (-3, -1) {};
+		\node [style=port] (28) at (-0.25, -0.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (4.center)
+			 to (0.center)
+			 to (1.center)
+			 to (2.center)
+			 to cycle;
+		\draw [style=tentacle, in=-135, out=0] (13) to (20.center);
+		\draw [style=tentacle, in=-60, out=45] (20.center) to (18.center);
+		\draw [style=tentacle] (22)
+			 to [in=-45, out=180] (24.center)
+			 to [in=-120, out=135] (23.center)
+			 to [in=180, out=60] (25);
+		\draw [style=tentacle, in=0, out=120] (18.center) to (25);
+		\draw [style=tentacle, in=180, out=0] (14) to (26);
+		\draw [style=tentacle, in=0, out=-180] (28) to (27);
+	\end{pgfonlayer}
+\end{tikzpicture}
