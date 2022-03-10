@@ -1,0 +1,60 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-3.25, 1.75) {};
+		\node [style=none] (1) at (-3.25, -1.75) {};
+		\node [style=none] (2) at (3.25, -1.75) {};
+		\node [style=none] (4) at (3.25, 1.75) {};
+		\node [style=none] (29) at (-6, 1) {};
+		\node [style=none] (30) at (-4, 1) {};
+		\node [style=none] (31) at (-4, -1) {};
+		\node [style=none] (32) at (-6, -1) {};
+		\node [style=none] (33) at (-4, 1) {};
+		\node [style=vertex] (36) at (-5, 0) {};
+		\node [style=none] (37) at (4, 1) {};
+		\node [style=none] (38) at (6, 1) {};
+		\node [style=none] (39) at (6, -1) {};
+		\node [style=none] (40) at (4, -1) {};
+		\node [style=none] (41) at (6, 1) {};
+		\node [style=vertex] (43) at (5, 0) {};
+		\node [style=edge] (44) at (0, -0.5) {$\phi$};
+		\node [style=port] (45) at (0.25, -0.25) {};
+		\node [style=port] (46) at (0.25, -0.75) {};
+		\node [style=none] (47) at (1.5, 0.75) {};
+		\node [style=none] (48) at (1.5, 0) {};
+		\node [style=port] (49) at (-0.25, -0.25) {};
+		\node [style=none] (50) at (-1.5, 0.75) {};
+		\node [style=none] (51) at (-1.5, 0) {};
+		\node [style=vertex] (52) at (0, 1.25) {};
+		\node [style=vertex] (53) at (2.5, -1) {};
+		\node [style=vertex] (54) at (-2.5, -1) {};
+		\node [style=port] (55) at (-0.25, -0.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (4.center)
+			 to (0.center)
+			 to (1.center)
+			 to (2.center)
+			 to cycle;
+		\draw [style=interface] (32.center)
+			 to (29.center)
+			 to (33.center)
+			 to (31.center)
+			 to cycle;
+		\draw [style=interface] (40.center)
+			 to (37.center)
+			 to (41.center)
+			 to (39.center)
+			 to cycle;
+		\draw [style=tentacle, in=-135, out=0] (45) to (48.center);
+		\draw [style=tentacle, in=-60, out=45] (48.center) to (47.center);
+		\draw [style=tentacle] (49)
+			 to [in=-45, out=180] (51.center)
+			 to [in=-120, out=135] (50.center)
+			 to [in=180, out=60] (52);
+		\draw [style=tentacle, in=0, out=120] (47.center) to (52);
+		\draw [style=tentacle, in=180, out=0] (46) to (53);
+		\draw [style=tentacle, in=0, out=-180] (55) to (54);
+		\draw [style=interfacearrow] (43) to (53);
+		\draw [style=interfacearrow] (36) to (54);
+	\end{pgfonlayer}
+\end{tikzpicture}
