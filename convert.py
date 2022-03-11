@@ -6,14 +6,15 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
 
-if len(sys.argv) > 2:
+if len(sys.argv) > 3:
     root = sys.argv[1]
-    output = sys.argv[2]
+    posts = sys.argv[2]
+    output = sys.argv[3]
 else:
     print("No file or output provided")
 
-if len(sys.argv) == 4:
-    if sys.argv[3] == "--watch":
+if len(sys.argv) == 5:
+    if sys.argv[-1] == "--watch":
         watch = True
     else:
         watch = False
