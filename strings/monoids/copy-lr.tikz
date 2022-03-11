@@ -10,6 +10,8 @@
 		\node [style=none] (8) at (1, 1) {};
 		\node [style=dangling] (9) at (1.5, 0.5) {};
 		\node [style=dangling] (10) at (1.5, -0.5) {};
+		\node [style=none] (11) at (-1, 0) {};
+		\node [style=none] (12) at (-1, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (0)
@@ -19,10 +21,11 @@
 		\draw [style=wire] (0)
 			 to [in=180, out=-75] (2.center)
 			 to (10);
-		\draw [style=wire] (5.center)
-			 to (8.center)
-			 to (7.center)
+		\draw [style=tile] (12.center)
 			 to (6.center)
-			 to cycle;
+			 to (7.center)
+			 to (8.center)
+			 to (5.center)
+			 to (11.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
