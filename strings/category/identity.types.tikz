@@ -1,11 +1,11 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (0) at (-1, 0) {};
-		\node [style=none] (1) at (1, 0) {};
-		\node [style=type] (2) at (-1.5, 0) {$A$};
-		\node [style=type] (3) at (1.5, 0) {$A$};
+		\node [style=dangling] (0) at (-0.5, 0) {};
+		\node [style=dangling] (1) at (0.5, 0) {};
+		\node [style=label] (2) at (-1, 0) {$X$};
+		\node [style=label] (3) at (1, 0) {$X$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire] (0.center) to (1.center);
+		\draw [style=wire] (1) to (0);
 	\end{pgfonlayer}
 \end{tikzpicture}
