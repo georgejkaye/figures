@@ -58,3 +58,4 @@
 \tikzstyle{unit wire}=[-, fill=none, draw={rgb,255: red,191; green,191; blue,191}, line width=0.33mm]
 \tikzstyle{interfacearrow}=[->, very thick, dashed]
 \tikzstyle{tile}=[-, rounded corners, thick]
+\tikzstyle{commute}=[->]
