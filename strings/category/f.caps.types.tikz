@@ -1,15 +1,13 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=small box] (0) at (0, 0) {$F$};
-		\node [style=none] (1) at (-1.75, 0) {};
-		\node [style=type] (3) at (-2.25, 0) {$X$};
-		\node [style=type] (4) at (2.25, 0) {$Y$};
-		\node [style=port] (5) at (-0.25, 0) {};
-		\node [style=port] (6) at (0.25, 0) {};
-		\node [style=none] (7) at (1.75, 0) {};
+		\node [style=medium square box] (0) at (0, 0) {$F$};
+		\node [style=dangling] (1) at (-1.75, 0) {};
+		\node [style=label] (3) at (-2.25, 0) {$X$};
+		\node [style=label] (4) at (2.25, 0) {$Y$};
+		\node [style=dangling] (7) at (1.75, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire] (7.center) to (6);
-		\draw [style=wire] (1.center) to (5);
+		\draw [style=wire] (1) to (0);
+		\draw [style=wire] (7) to (0);
 	\end{pgfonlayer}
 \end{tikzpicture}

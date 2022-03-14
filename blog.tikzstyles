@@ -2,6 +2,7 @@
 \definecolor{delay}{HTML}{ff79c6}
 \definecolor{trace}{HTML}{50fa7b}
 \definecolor{white}{HTML}{f8f8f2}
+\definecolor{bg}{HTML}{282a36}
 \newcommand{\thickness}{0.5mm}
 
 % Node styles
@@ -10,14 +11,23 @@
 \tikzstyle{label}=[fill=none, draw=none, shape=circle, text=white]
 
 % morphisms
-\tikzstyle{medium square box}=[rounded corners, draw=white, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=0.5mm]
-\tikzstyle{medium square noncomb box}=[rounded corners, draw=white, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=0.5mm]
-\tikzstyle{medium square trace box}=[rounded corners, draw=white, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=0.5mm]
+\tikzstyle{medium square box}=[rounded corners, draw=white, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=\thickness]
+\tikzstyle{medium square noncomb box}=[rounded corners, draw=white, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=\thickness]
+\tikzstyle{medium square trace box}=[rounded corners, draw=white, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=\thickness]
 
 % monoids
 \tikzstyle{bproduct}=[fill=black, draw=black, shape=circle, scale=0.75, tikzit category=string diagram]
-\tikzstyle{wproduct}=[fill=white, draw=black, shape=circle, scale=0.75, line width=0.75, tikzit category=string diagram]
+\tikzstyle{wproduct}=[fill=white, draw=black, shape=circle, scale=0.75, line width=\thickness, tikzit category=string diagram]
+
+% gates
+\tikzstyle{and}=[draw=white, fill=bg, shape=and gate, line width=\thickness, and gate, scale=1.5, tikzit category=circuits]
+\tikzstyle{or}=[draw=white, fill=bg, or gate, scale=1.5, line width=\thickness, tikzit category=circuits]
+\tikzstyle{not}=[draw=white, fill=bg, not gate, scale=1.5, line width=\thickness, tikzit category=circuits]
+\tikzstyle{nor}=[draw=white, fill=bg, nor gate, scale=1.5, line width=\thickness, tikzit category=circuits]
+\tikzstyle{nand}=[draw=white, fill=bg, nand gate, scale=1.5, line width=\thickness, tikzit category=circuits]
+\tikzstyle{xor}=[draw=white, fill=bg, xor gate, scale=1.5, line width=\thickness, tikzit category=circuits]
+\tikzstyle{xnor}=[draw=white, fill=bg, xnor gate, scale=1.5, line width=\thickness, tikzit category=circuits]
 
 % Edge styles
-\tikzstyle{wire}=[-, draw=white, line width=0.5mm]
-\tikzstyle{tile}=[-, rounded corners, thick]
+\tikzstyle{wire}=[-, draw=white, line width=\thickness]
+\tikzstyle{tile}=[-, draw=white, rounded corners, line width=\thickness]
