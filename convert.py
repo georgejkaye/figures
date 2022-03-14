@@ -12,7 +12,7 @@ tikz_libraries = ["automata", "positioning",
 tikz_regex = re.compile(r"{% tikz \"([a-z\-\.\/]*)\" %}")
 
 
-def get_used_tikz(src_dir, tikz_dir):
+def get_used_tikz(src_dir):
     tikz_files = []
     for current_root, subdirs, files in os.walk(src_dir):
         for file in files:
@@ -29,7 +29,7 @@ def get_used_tikz(src_dir, tikz_dir):
 
 
 def compile_file(tikz_file, tikz_dir, output_dir, style_file):
-    with open(tikz_file, "r") as f:
+    with open(os.path.join(tikz_dir, tikz_file), "r") as f:
         tikz = f.read()
 
     file_name = os.path.basename(tikz_file)
@@ -42,8 +42,7 @@ def compile_file(tikz_file, tikz_dir, output_dir, style_file):
     with open(tex, "w") as f:
         f.write("\\documentclass{standalone}\n")
         f.write("\\usepackage{" + tikz_dir + "/tikzit}\n")
-        f.write("\\input{" + tikz_dir +
-                "/" + style_file + "}\n")
+        f.write("\\input{" + style_file + "}\n")
         f.write(
             "\\usetikzlibrary{" + ",".join(tikz_libraries) + "}\n\n")
         f.write("\\begin{document}\n")
@@ -107,7 +106,7 @@ class SourceHandler(FileSystemEventHandler):
         self.tikz_handler = tikz_handler
 
     def update_build(self, event):
-        new_tikz_files = get_used_tikz(self.build_dir, self.tikz_dir)
+        new_tikz_files = get_used_tikz(self.build_dir)
         diff_files = list(set(new_tikz_files).difference(self.tikz_files))
         for file in diff_files:
             compile_file(file, self.tikz_dir, self.output_dir, self.style_file)
@@ -149,7 +148,7 @@ def main():
 
     print(
         f"[tikz] Compiling tikz from {tikz_dir} and putting them in {output_dir}")
-    tikz_files = get_used_tikz(src_dir, tikz_dir)
+    tikz_files = get_used_tikz(src_dir)
     compile_all_files(tikz_dir, tikz_files, output_dir, style_file)
 
     if not watch:
