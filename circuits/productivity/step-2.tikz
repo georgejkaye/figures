@@ -11,7 +11,7 @@
 		\node [style=none] (16) at (-2.75, 1.5) {};
 		\node [style=none] (17) at (-2.75, -0.5) {};
 		\node [style=port] (18) at (-0.25, -1.75) {};
-		\node [style=tiny box] (19) at (-2.25, -1.75) {$\mathbf{v}$};
+		\node [style=tiny comb box] (19) at (-2.25, -1.75) {$\mathbf{v}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (3) to (4);

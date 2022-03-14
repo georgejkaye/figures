@@ -1,1 +1,6 @@
 \usetikzlibrary{circuits.logic.US, patterns}
+\definecolor{comb}{HTML}{C9E8E8}
+\definecolor{delay}{HTML}{EA62D8}
+\definecolor{trace}{HTML}{4EA428}
+\definecolor{white}{HTML}{f8f8f2}
+\newcommand{\thickness}{0.5mm}

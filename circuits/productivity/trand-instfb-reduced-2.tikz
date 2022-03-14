@@ -1,9 +1,9 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=port] (1) at (0.25, 0.5) {};
-		\node [style=medium square box] (11) at (0.75, 0) {$\land$};
+		\node [style=medium square comb box] (11) at (0.75, 0) {$\land$};
 		\node [style=port] (13) at (0.25, -0.5) {};
-		\node [style=tiny box] (20) at (-2.25, -0.5) {$\mathsf{t}$};
+		\node [style=tiny comb box] (20) at (-2.25, -0.5) {$\mathsf{t}$};
 		\node [style=bproduct] (22) at (-1, 0.5) {};
 		\node [style=port] (23) at (1.25, 0) {};
 		\node [style=none] (24) at (2.5, 0) {};

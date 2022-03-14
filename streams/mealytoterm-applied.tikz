@@ -2,8 +2,8 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=tiny box] (8) at (-2.25, -0.275) {$\mathbf{v}$};
 		\node [style=bproduct] (9) at (-0.75, -0.275) {};
-		\node [style=medium square box] (12) at (1.5, 1) {$\langle{T}\rangle$};
-		\node [style=medium square box] (13) at (1.5, -1.75) {$\langle{O}\rangle$};
+		\node [style=medium square comb box] (12) at (1.5, 1) {$\langle{T}\rangle$};
+		\node [style=medium square comb box] (13) at (1.5, -1.75) {$\langle{O}\rangle$};
 		\node [style=bport] (14) at (1, 1.75) {};
 		\node [style=bport] (15) at (1, 1) {};
 		\node [style=bport] (16) at (1, 0.25) {};

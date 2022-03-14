@@ -18,11 +18,11 @@
 		\node [style=bproduct] (24) at (4.75, -1) {};
 		\node [style=delay] (25) at (4.75, -2.25) {};
 		\node [style=port] (26) at (-5.25, -1.5) {};
-		\node [style=tiny box] (27) at (-7, -1.5) {$\mathbf{v}$};
+		\node [style=tiny comb box] (27) at (-7, -1.5) {$\mathbf{v}$};
 		\node [style=port] (28) at (1.5, -2.25) {};
 		\node [style=bproduct] (29) at (-0.25, -2.25) {};
 		\node [style=port] (30) at (1.5, -1) {};
-		\node [style=tiny box] (33) at (2.25, 2.25) {$\mathbf{w}$};
+		\node [style=tiny comb box] (33) at (2.25, 2.25) {$\mathbf{w}$};
 		\node [style=none] (36) at (4.5, 2.25) {};
 		\node [style=bproduct] (42) at (7, 0) {};
 		\node [style=dangling] (44) at (8, 0) {};

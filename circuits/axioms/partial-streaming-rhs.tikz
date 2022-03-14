@@ -3,7 +3,7 @@
 		\node [style=large box] (0) at (0, -1.75) {$g$};
 		\node [style=port] (3) at (-0.25, -1) {};
 		\node [style=port] (4) at (-0.25, -2.5) {};
-		\node [style=tiny box] (6) at (-3.5, 2.5) {$v$};
+		\node [style=tiny comb box] (6) at (-3.5, 2.5) {$v$};
 		\node [style=port] (8) at (-3.25, 2.5) {};
 		\node [style=none] (9) at (-4.25, -0.75) {};
 		\node [style=large box] (11) at (0, 1.75) {$g$};

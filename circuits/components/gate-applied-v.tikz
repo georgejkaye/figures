@@ -1,8 +1,8 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny box] (9) at (-1.75, 0) {$\mathbf{v}$};
+		\node [style=tiny comb box] (9) at (-1.75, 0) {$\mathbf{v}$};
 		\node [style=dangling] (10) at (1.5, 0) {};
-		\node [style=medium box] (11) at (0.25, 0) {$g$};
+		\node [style=medium comb box] (11) at (0.25, 0) {$g$};
 		\node [style=none] (12) at (-0.25, 0) {};
 		\node [style=none] (15) at (0.75, 0) {};
 	\end{pgfonlayer}

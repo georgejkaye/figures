@@ -15,8 +15,8 @@
 		\node [style=port] (14) at (3.75, -0.5) {};
 		\node [style=dangling] (15) at (5, -0.5) {};
 		\node [style=none] (19) at (1.5, 0) {};
-		\node [style=tiny box] (20) at (1, -1) {$\mathsf{t}$};
-		\node [style=tiny box] (21) at (-4.75, 0.25) {$\mathsf{t}$};
+		\node [style=tiny comb box] (20) at (1, -1) {$\mathsf{t}$};
+		\node [style=tiny comb box] (21) at (-4.75, 0.25) {$\mathsf{t}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (3) to (4);

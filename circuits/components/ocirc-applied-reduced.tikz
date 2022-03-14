@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny box] (0) at (-0.75, 0) {$O(\mathbf{s})(\mathbf{v})$};
+		\node [style=tiny comb box] (0) at (-0.75, 0) {$O(\mathbf{s})(\mathbf{v})$};
 		\node [style=port] (2) at (-0.5, 0) {};
 		\node [style=dangling] (4) at (1.25, 0) {};
 	\end{pgfonlayer}

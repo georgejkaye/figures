@@ -10,12 +10,12 @@
 		\node [style=none] (14) at (1, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire] (0) to (3);
 		\draw [style=tile] (14.center)
 			 to (10.center)
 			 to (11.center)
 			 to (12.center)
 			 to (9.center)
 			 to (13.center);
+		\draw [style=wire] (0) to (3);
 	\end{pgfonlayer}
 \end{tikzpicture}

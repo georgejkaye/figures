@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny box] (0) at (-0.75, 0) {$v$};
+		\node [style=tiny comb box] (0) at (-0.75, 0) {$v$};
 		\node [style=dangling] (3) at (0.75, 0.5) {};
 		\node [style=fork] (4) at (0.25, 0) {};
 		\node [style=port] (5) at (-0.5, 0) {};

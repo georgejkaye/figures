@@ -1,8 +1,8 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box] (10) at (-1.5, 0) {$G$};
+		\node [style=medium square comb box] (10) at (-1.5, 0) {$G$};
 		\node [style=dangling] (15) at (-3, 0) {};
-		\node [style=medium square box] (17) at (1.5, 0) {$F$};
+		\node [style=medium square comb box] (17) at (1.5, 0) {$F$};
 		\node [style=dangling] (18) at (3, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

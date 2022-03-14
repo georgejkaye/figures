@@ -1,13 +1,13 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny box] (1) at (-0.75, 4.75) {$\mathsf{f}$};
+		\node [style=tiny comb box] (1) at (-0.75, 4.75) {$\mathsf{f}$};
 		\node [style=bproduct] (2) at (0.75, 4) {};
 		\node [style=delay] (3) at (-0.75, 3.25) {};
 		\node [style=none] (4) at (-3, -1) {};
 		\node [style=none] (9) at (6, 5) {};
 		\node [style=none] (11) at (-2.25, 3.25) {};
 		\node [style=bproduct] (14) at (2.75, -1) {};
-		\node [style=tiny box] (16) at (-0.75, 1.75) {$\bot$};
+		\node [style=tiny comb box] (16) at (-0.75, 1.75) {$\bot$};
 		\node [style=bproduct] (17) at (0.75, 1) {};
 		\node [style=delay] (18) at (-0.75, 0.25) {};
 		\node [style=none] (19) at (-2.25, 0.25) {};
@@ -15,10 +15,10 @@
 		\node [style=bproduct] (21) at (2.75, 4) {};
 		\node [style=none] (22) at (6, 4) {};
 		\node [style=bproduct] (27) at (7, 4.5) {};
-		\node [style=medium square box] (28) at (9.25, 4) {$\mathsf{XOR}$};
+		\node [style=medium square comb box] (28) at (9.25, 4) {$\mathsf{XOR}$};
 		\node [style=port] (29) at (8.75, 4.5) {};
 		\node [style=port] (30) at (8.75, 3.5) {};
-		\node [style=tiny box] (31) at (9.25, 6) {$\bot$};
+		\node [style=tiny comb box] (31) at (9.25, 6) {$\bot$};
 		\node [style=none] (32) at (12, 6) {};
 		\node [style=none] (33) at (12, 4) {};
 		\node [style=port] (34) at (9.75, 4) {};
@@ -27,7 +27,7 @@
 		\node [style=none] (37) at (-2.25, 9) {};
 		\node [style=none] (38) at (12, 9) {};
 		\node [style=bproduct] (41) at (6.75, -1.25) {};
-		\node [style=medium square box] (42) at (9.25, -1.75) {$\mathsf{XOR}$};
+		\node [style=medium square comb box] (42) at (9.25, -1.75) {$\mathsf{XOR}$};
 		\node [style=port] (43) at (8.75, -1.25) {};
 		\node [style=port] (44) at (8.75, -2.25) {};
 		\node [style=port] (45) at (9.75, -1.75) {};
