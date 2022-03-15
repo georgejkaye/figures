@@ -38,6 +38,7 @@
 \tikzstyle{label}=[fill=none, draw=none, shape=circle, align=center]
 \tikzstyle{small label}=[fill=none, draw=none, shape=circle, font={\scriptsize}]
 \tikzstyle{tile}=[fill=white, draw=black, shape=rectangle, tikzit category=string diagram, rounded corners, minimum height=5mm, minimum width=5mm]
+\tikzstyle{commuting label}=[fill=none, draw=none, shape=circle, scale=0.5]
 
 % Edge styles
 \tikzstyle{interface}=[-, fill={rgb,255: red,238; green,238; blue,255}, dashed, draw={rgb,255: red,170; green,170; blue,225}, ultra thick]
