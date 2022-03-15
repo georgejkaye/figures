@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square comb box] (10) at (0.25, 0) {$G$};
+		\node [style=medium square box] (10) at (0.25, 0) {$G$};
 		\node [style=tiny comb box] (11) at (-1.75, 0) {$\textbf{v}$};
 		\node [style=none] (15) at (-1.25, 0) {};
 		\node [style=dangling] (16) at (1.75, 0) {};

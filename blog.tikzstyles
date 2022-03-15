@@ -11,13 +11,14 @@
 \tikzstyle{label}=[fill=none, draw=none, shape=circle, text=white]
 
 % morphisms
+\tikzstyle{tiny box}=[rounded corners, draw=white, fill=bg, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=\thickness]
 \tikzstyle{medium square box}=[rounded corners, draw=white, fill=bg, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=\thickness]
-\tikzstyle{medium square noncomb box}=[rounded corners, draw=white, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=\thickness]
+\tikzstyle{medium square delay box}=[rounded corners, draw=white, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=\thickness]
 \tikzstyle{medium square trace box}=[rounded corners, draw=white, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=\thickness]
 
 % monoids
-\tikzstyle{bproduct}=[fill=black, draw=black, shape=circle, scale=0.75, tikzit category=string diagram]
-\tikzstyle{wproduct}=[fill=white, draw=black, shape=circle, scale=0.75, line width=\thickness, tikzit category=string diagram]
+\tikzstyle{bproduct}=[fill=white, draw=white, shape=circle, scale=0.75, tikzit category=string diagram]
+\tikzstyle{wproduct}=[fill=bg, draw=white, shape=circle, scale=0.75, line width=\thickness, tikzit category=string diagram]
 
 % gates
 \tikzstyle{and}=[draw=white, fill=bg, shape=and gate, line width=\thickness, and gate, scale=1.5, tikzit category=circuits]

@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square comb box] (0) at (0, 0) {$F$};
+		\node [style=medium square box] (0) at (0, 0) {$F$};
 		\node [style=dangling] (1) at (-2.75, -0.5) {};
 		\node [style=bproduct] (2) at (-2, 0.5) {};
 		\node [style=bport] (3) at (-0.25, 0.5) {};
