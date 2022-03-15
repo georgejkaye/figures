@@ -37,6 +37,7 @@
 \tikzstyle{waveform}=[fill=white, draw=black, shape=circle, rotate=180, and gate, minimum width=10mm, line width=0.33mm, scale=1.25]
 \tikzstyle{label}=[fill=none, draw=none, shape=circle, align=center]
 \tikzstyle{small label}=[fill=none, draw=none, shape=circle, font={\scriptsize}]
+\tikzstyle{tile}=[fill=white, draw=black, shape=rectangle, tikzit category=string diagram, rounded corners, minimum height=5mm, minimum width=5mm]
 
 % Edge styles
 \tikzstyle{interface}=[-, fill={rgb,255: red,238; green,238; blue,255}, dashed, draw={rgb,255: red,170; green,170; blue,225}, ultra thick]
@@ -57,6 +58,6 @@
 \tikzstyle{dashed arrow}=[<-, dashed]
 \tikzstyle{unit wire}=[-, fill=none, draw={rgb,255: red,191; green,191; blue,191}, line width=0.33mm]
 \tikzstyle{interfacearrow}=[->, very thick, dashed]
-\tikzstyle{tile}=[-, rounded corners, thick, fill=comb]
+\tikzstyle{tile}=[-, rounded corners, fill=comb, line width=0.33mm]
 \tikzstyle{commute}=[->]
 \tikzstyle{curved rectangle}=[-, rounded corners]
