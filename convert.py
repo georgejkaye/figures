@@ -29,8 +29,13 @@ def get_used_tikz(src_dir):
 
 
 def compile_file(tikz_file, tikz_dir, output_dir, style_file):
-    with open(os.path.join(tikz_dir, tikz_file), "r") as f:
-        tikz = f.read()
+
+    try:
+        with open(os.path.join(tikz_dir, tikz_file), "r") as f:
+            tikz = f.read()
+    except:
+        print(f"[tikz] Could not open file {tikz_file}")
+        return
 
     file_name = os.path.basename(tikz_file)
     file_dir = os.path.dirname(tikz_file)
