@@ -28,6 +28,7 @@
 \tikzstyle{nand}=[draw=white, fill=bg, nand gate, scale=1.5, line width=\thickness, tikzit category=circuits]
 \tikzstyle{xor}=[draw=white, fill=bg, xor gate, scale=1.5, line width=\thickness, tikzit category=circuits]
 \tikzstyle{xnor}=[draw=white, fill=bg, xnor gate, scale=1.5, line width=\thickness, tikzit category=circuits]
+\tikzstyle{delay}=[draw=white, fill=bg, shape=circle, line width=0.33mm, inner sep=0.2mm, minimum width=4mm, tikzit category=circuits]
 
 % Edge styles
 \tikzstyle{wire}=[-, draw=white, line width=\thickness]
