@@ -11,7 +11,7 @@
 \tikzstyle{label}=[fill=none, draw=none, shape=circle, text=white]
 
 % morphisms
-\tikzstyle{medium square box}=[rounded corners, draw=white, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=\thickness]
+\tikzstyle{medium square box}=[rounded corners, draw=white, fill=bg, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=\thickness]
 \tikzstyle{medium square noncomb box}=[rounded corners, draw=white, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=\thickness]
 \tikzstyle{medium square trace box}=[rounded corners, draw=white, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=\thickness]
 
