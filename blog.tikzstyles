@@ -11,7 +11,7 @@
 \tikzstyle{label}=[fill=none, draw=none, shape=circle, text=white]
 
 % morphisms
-\tikzstyle{tiny box}=[rounded corners, draw=white, fill=bg, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=\thickness]
+\tikzstyle{tiny box}=[rounded corners, draw=white, fill=bg, text=white, shape=rectangle, minimum height=5mm, minimum width=5mm, line width=\thickness]
 \tikzstyle{medium square box}=[rounded corners, draw=white, fill=bg, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=\thickness]
 \tikzstyle{medium square delay box}=[rounded corners, draw=white, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=\thickness]
 \tikzstyle{medium square trace box}=[rounded corners, draw=white, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=\thickness]
