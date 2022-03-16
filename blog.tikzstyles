@@ -33,3 +33,5 @@
 % Edge styles
 \tikzstyle{wire}=[-, draw=white, line width=\thickness]
 \tikzstyle{tile}=[-, draw=white, rounded corners, line width=\thickness]
+\tikzstyle{hasse}=[-, draw=white]
+\tikzstyle{commute}=[->, draw=white]

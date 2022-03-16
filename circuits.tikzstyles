@@ -60,3 +60,4 @@
 \tikzstyle{tile}=[-, rounded corners, fill=comb, line width=0.33mm]
 \tikzstyle{commute}=[->]
 \tikzstyle{curved rectangle}=[-, rounded corners]
+\tikzstyle{hasse}=[-]

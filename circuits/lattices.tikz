@@ -1,0 +1,29 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=label] (0) at (0, 2) {$\top$};
+		\node [style=label] (1) at (2, 0) {$\mathsf{t}$};
+		\node [style=label] (2) at (0, -2) {$\bot$};
+		\node [style=label] (3) at (-2, 0) {$\mathsf{f}$};
+		\node [style=none] (4) at (-0.5, -1.5) {};
+		\node [style=none] (5) at (-1.5, -0.5) {};
+		\node [style=none] (6) at (0.5, -1.5) {};
+		\node [style=none] (7) at (1.5, -0.5) {};
+		\node [style=none] (8) at (1.5, 0.5) {};
+		\node [style=none] (9) at (0.5, 1.5) {};
+		\node [style=none] (10) at (-1.5, 0.5) {};
+		\node [style=none] (11) at (-0.5, 1.5) {};
+		\node [style=none] (12) at (-3, 3) {};
+		\node [style=none] (13) at (-3, -3) {};
+		\node [style=none] (14) at (3, -3) {};
+		\node [style=none] (17) at (-3.75, 0) {\textbf{A4}};
+		\node [style=none] (18) at (0, -3.5) {\textbf{L4}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=hasse] (4.center) to (5.center);
+		\draw [style=hasse, in=225, out=45] (6.center) to (7.center);
+		\draw [style=hasse] (8.center) to (9.center);
+		\draw [style=hasse] (10.center) to (11.center);
+		\draw [style=commute] (13.center) to (14.center);
+		\draw [style=commute] (13.center) to (12.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
