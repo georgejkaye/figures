@@ -15,8 +15,8 @@
 		\node [style=none] (12) at (-3, 3) {};
 		\node [style=none] (13) at (-3, -3) {};
 		\node [style=none] (14) at (3, -3) {};
-		\node [style=none] (17) at (-3.75, 0) {\textbf{A4}};
-		\node [style=none] (18) at (0, -3.5) {\textbf{L4}};
+		\node [style=label] (17) at (-3.75, 0) {\textbf{A4}};
+		\node [style=label] (18) at (0, -3.5) {\textbf{L4}};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=hasse] (4.center) to (5.center);
