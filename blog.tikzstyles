@@ -35,3 +35,4 @@
 \tikzstyle{tile}=[-, draw=white, rounded corners, line width=\thickness]
 \tikzstyle{hasse}=[-, draw=white]
 \tikzstyle{commute}=[->, draw=white]
+\tikzstyle{traced}=[-, densely dashed, draw=white]
