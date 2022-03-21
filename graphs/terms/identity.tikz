@@ -1,0 +1,48 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1, 2) {};
+		\node [style=none] (1) at (-1, -2) {};
+		\node [style=none] (2) at (1, -2) {};
+		\node [style=none] (4) at (1, 2) {};
+		\node [style=vertex] (11) at (0, 1) {};
+		\node [style=none] (15) at (-5, 2) {};
+		\node [style=none] (16) at (-3, 2) {};
+		\node [style=vertex] (17) at (0, -1) {};
+		\node [style=none] (23) at (0, 0.25) {$\vdots$};
+		\node [style=none] (25) at (-3, -2) {};
+		\node [style=none] (26) at (-5, -2) {};
+		\node [style=vertex] (27) at (-4, 1) {};
+		\node [style=vertex] (28) at (-4, -1) {};
+		\node [style=none] (29) at (-4, 0.25) {$\vdots$};
+		\node [style=none] (30) at (-2.75, 0) {};
+		\node [style=none] (31) at (-1.25, 0) {};
+		\node [style=none] (32) at (5, 2) {};
+		\node [style=none] (33) at (3, 2) {};
+		\node [style=none] (34) at (3, -2) {};
+		\node [style=none] (35) at (5, -2) {};
+		\node [style=vertex] (36) at (4, 1) {};
+		\node [style=vertex] (37) at (4, -1) {};
+		\node [style=none] (38) at (4, 0.25) {$\vdots$};
+		\node [style=none] (39) at (2.75, 0) {};
+		\node [style=none] (40) at (1.25, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (4.center)
+			 to (0.center)
+			 to (1.center)
+			 to (2.center)
+			 to cycle;
+		\draw [style=interface] (25.center)
+			 to (26.center)
+			 to (15.center)
+			 to (16.center)
+			 to cycle;
+		\draw [style=commute] (30.center) to (31.center);
+		\draw [style=interface] (34.center)
+			 to (35.center)
+			 to (32.center)
+			 to (33.center)
+			 to cycle;
+		\draw [style=commute] (39.center) to (40.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
