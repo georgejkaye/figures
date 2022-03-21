@@ -7,7 +7,7 @@
 		\node [style=edge] (5) at (0, 0) {$\phi$};
 		\node [style=vertex] (11) at (-2, 1) {};
 		\node [style=port] (12) at (-0.5, 0) {};
-		\node [style=none] (15) at (-7, 2) {};
+		\node [style=none] (15) at (-7.25, 2) {};
 		\node [style=none] (16) at (-5, 2) {};
 		\node [style=vertex] (17) at (-2, -1) {};
 		\node [style=port] (18) at (-0.5, 0) {};
@@ -18,21 +18,25 @@
 		\node [style=none] (23) at (-2, 0.25) {$\vdots$};
 		\node [style=none] (24) at (2, 0.25) {$\vdots$};
 		\node [style=none] (25) at (-5, -2) {};
-		\node [style=none] (26) at (-7, -2) {};
-		\node [style=vertex] (27) at (-6, 1) {};
-		\node [style=vertex] (28) at (-6, -1) {};
-		\node [style=none] (29) at (-6, 0.25) {$\vdots$};
+		\node [style=none] (26) at (-7.25, -2) {};
+		\node [style=vertex] (27) at (-6.25, 1) {};
+		\node [style=vertex] (28) at (-6.25, -1) {};
+		\node [style=none] (29) at (-6.25, 0.25) {$\vdots$};
 		\node [style=none] (30) at (-4.75, 0) {};
 		\node [style=none] (31) at (-3.25, 0) {};
-		\node [style=none] (32) at (7, 2) {};
+		\node [style=none] (32) at (7.25, 2) {};
 		\node [style=none] (33) at (5, 2) {};
 		\node [style=none] (34) at (5, -2) {};
-		\node [style=none] (35) at (7, -2) {};
-		\node [style=vertex] (36) at (6, 1) {};
-		\node [style=vertex] (37) at (6, -1) {};
-		\node [style=none] (38) at (6, 0.25) {$\vdots$};
+		\node [style=none] (35) at (7.25, -2) {};
+		\node [style=vertex] (36) at (6.25, 1) {};
+		\node [style=vertex] (37) at (6.25, -1) {};
+		\node [style=none] (38) at (6.25, 0.25) {$\vdots$};
 		\node [style=none] (39) at (4.75, 0) {};
 		\node [style=none] (40) at (3.25, 0) {};
+		\node [style=none] (41) at (-1.5, 0) {$m$};
+		\node [style=none] (42) at (-5.75, 0) {$m$};
+		\node [style=none] (43) at (1.5, 0) {$n$};
+		\node [style=none] (44) at (5.75, 0) {$n$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=graph] (4.center)
