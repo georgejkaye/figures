@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box] (0) at (0, 0) {$f$};
+		\node [style=dangling] (1) at (-1.5, -0.5) {};
+		\node [style=port] (5) at (-0.25, -0.5) {};
+		\node [style=port] (6) at (0.25, 0.5) {};
+		\node [style=dangling] (7) at (1.5, 0.5) {};
+		\node [style=dangling] (8) at (-1.5, 0.5) {};
+		\node [style=port] (9) at (-0.25, 0.5) {};
+		\node [style=label] (10) at (-2, 0.5) {$\tilde{n}$};
+		\node [style=label] (11) at (-2, -0.5) {$m$};
+		\node [style=port] (12) at (0.25, -0.5) {};
+		\node [style=dangling] (13) at (1.5, -0.5) {};
+		\node [style=label] (14) at (2, 0.5) {$\tilde{m}$};
+		\node [style=label] (15) at (2, -0.5) {$n$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (7) to (6);
+		\draw [style=wire] (1) to (5);
+		\draw [style=wire] (8) to (9);
+		\draw [style=wire] (13) to (12);
+	\end{pgfonlayer}
+\end{tikzpicture}
