@@ -66,8 +66,7 @@ def compile_file(tikz_file, tikz_dir, output_dir, style_file):
     subprocess.run(["pdf2svg", pdf, output_svg_path])
     subprocess.run(["rm", tex])
     subprocess.run(["rm", pdf])
-    subprocess.run(["rm", "-f", f"{file_name}.log", f"{file_name}.aux",
-                    f"{file_name}.fls", f"{file_name}.fdb_latexmk"])
+    subprocess.run(["latexmk", "-c", tex])
 
 
 def compile_all_files(tikz_dir, tikz_files, output_dir, style_file):
