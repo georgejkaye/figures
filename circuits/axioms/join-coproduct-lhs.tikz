@@ -4,11 +4,11 @@
 		\node [style=bproduct] (1) at (-0.75, 0) {};
 		\node [style=port] (2) at (0.5, 0) {};
 		\node [style=port] (3) at (1, 0) {};
-		\node [style=tiny comb box] (4) at (-2.25, 0.75) {$\mathbf{v}$};
+		\node [style=tiny box] (4) at (-2.25, 0.75) {$\mathbf{v}$};
 		\node [style=dangling] (5) at (2, 0) {};
 		\node [style=none] (8) at (-1.5, 0.75) {};
 		\node [style=port] (9) at (-2, 0.75) {};
-		\node [style=tiny comb box] (10) at (-2.25, -0.75) {$\mathbf{w}$};
+		\node [style=tiny box] (10) at (-2.25, -0.75) {$\mathbf{w}$};
 		\node [style=port] (11) at (-2, -0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

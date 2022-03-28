@@ -3,7 +3,7 @@
 		\node [style=medium square trace box] (18) at (5.25, -1) {$G$};
 		\node [style=port] (20) at (5.5, -1) {};
 		\node [style=delay] (25) at (7, -1) {};
-		\node [style=tiny comb box] (33) at (5.25, 1) {$\mathbf{v}$};
+		\node [style=tiny box] (33) at (5.25, 1) {$\mathbf{v}$};
 		\node [style=none] (36) at (7.25, 1) {};
 		\node [style=bproduct] (42) at (8.5, 0) {};
 		\node [style=dangling] (44) at (9.5, 0) {};

@@ -3,7 +3,7 @@
 		\node [style=medium comb box] (0) at (-1, 1.25) {$g$};
 		\node [style=port] (2) at (-1.25, 1.25) {};
 		\node [style=port] (3) at (-0.75, 1.25) {};
-		\node [style=tiny comb box] (4) at (-3, 1.25) {$\mathbf{v}$};
+		\node [style=tiny box] (4) at (-3, 1.25) {$\mathbf{v}$};
 		\node [style=bproduct] (5) at (1, 0) {};
 		\node [style=none] (8) at (-2.25, 1.25) {};
 		\node [style=port] (9) at (-2.75, 1.25) {};
@@ -13,7 +13,7 @@
 		\node [style=none] (16) at (-0.25, -1.25) {};
 		\node [style=none] (17) at (-0.25, 1.25) {};
 		\node [style=dangling] (18) at (2, 0) {};
-		\node [style=tiny comb box] (19) at (-3, -1.25) {$\mathbf{w}$};
+		\node [style=tiny box] (19) at (-3, -1.25) {$\mathbf{w}$};
 		\node [style=none] (20) at (-2.25, -1.25) {};
 		\node [style=port] (21) at (-2.75, -1.25) {};
 	\end{pgfonlayer}

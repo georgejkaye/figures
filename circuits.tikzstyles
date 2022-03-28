@@ -32,11 +32,19 @@
 \tikzstyle{fork}=[fill=black, draw=black, shape=circle, tikzit category=circuits, scale=0.25]
 \tikzstyle{box}=[fill=white, draw=black, shape=rectangle, tikzit category=circuits]
 \tikzstyle{dangling}=[fill=none, draw=none, shape=circle, anchor=east, scale=0.01, tikzit category=string diagram, tikzit draw=black]
-\tikzstyle{waveform}=[fill=white, draw=black, shape=circle, rotate=180, and gate, minimum width=10mm, line width=0.33mm, scale=1.25]
 \tikzstyle{label}=[fill=none, draw=none, shape=circle, align=center]
 \tikzstyle{small label}=[fill=none, draw=none, shape=circle, font={\scriptsize}]
 \tikzstyle{tile}=[fill=white, draw=black, shape=rectangle, tikzit category=string diagram, rounded corners, minimum height=5mm, minimum width=5mm]
 \tikzstyle{commuting label}=[fill=none, draw=none, shape=circle, scale=0.5]
+\tikzstyle{and}=[fill=white, draw=black, shape=and gate, line width=0.33mm, and gate, scale=1.5, tikzit category=circuits]
+\tikzstyle{or}=[fill=white, draw=black, or gate, scale=1.5, line width=0.33mm, tikzit category=circuits]
+\tikzstyle{not}=[fill=white, draw=black, not gate, scale=1.5, line width=0.33mm, tikzit category=circuits]
+\tikzstyle{nor}=[fill=white, draw=black, nor gate, scale=1.5, line width=0.33mm, tikzit category=circuits]
+\tikzstyle{nand}=[fill=white, draw=black, nand gate, scale=1.5, line width=0.33mm, tikzit category=circuits]
+\tikzstyle{xor}=[fill=white, draw=black, xor gate, scale=1.5, line width=0.33mm, tikzit category=circuits]
+\tikzstyle{xnor}=[fill=white, draw=black, xnor gate, scale=1.5, line width=0.33mm, tikzit category=circuits]
+
+
 
 % Edge styles
 \tikzstyle{interface}=[-, fill={rgb,255: red,238; green,238; blue,255}, dashed, draw={rgb,255: red,170; green,170; blue,225}, ultra thick]
