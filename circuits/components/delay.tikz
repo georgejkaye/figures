@@ -11,7 +11,7 @@
 		\node [style=dangling] (15) at (-1.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=tile] (14.center)
+		\draw [style=delay tile] (14.center)
 			 to (10.center)
 			 to (11.center)
 			 to (12.center)
