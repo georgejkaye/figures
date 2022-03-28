@@ -30,7 +30,7 @@
 			 to [bend left=270, looseness=1.25] (3.center)
 			 to (1);
 		\draw [style=wire] (1) to (0);
-		\draw [style=wire, in=180, out=-60] (2) to (10);
+		\draw [style=wire, in=180, out=-75] (2) to (10);
 		\draw [style=wire] (9) to (8);
 		\draw [style=wire] (11) to (12);
 		\draw [style=wire] (13) to (14);
