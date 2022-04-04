@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny box] (11) at (-0.25, 0) {$\mealytransition{s}{v}$};
+		\node [style=none] (15) at (0.25, 0) {};
+		\node [style=dangling] (16) at (1.25, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (15.center) to (16);
+	\end{pgfonlayer}
+\end{tikzpicture}
