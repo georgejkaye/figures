@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=large square box] (0) at (0.5, -0.75) {\scalebox{1.5}{$\tilde{F}$}};
+		\node [style=large square comb box] (0) at (0.5, -0.75) {\scalebox{1.5}{$\tilde{F}$}};
 		\node [style=port] (2) at (1, -0.5) {};
 		\node [style=port] (3) at (1, -1.75) {};
 		\node [style=dangling] (4) at (4.5, -1.75) {};
