@@ -5,10 +5,10 @@
 		\node [style=none] (2) at (0.25, -1.25) {};
 		\node [style=bproduct] (5) at (-1.25, 0) {};
 		\node [style=none] (9) at (1.75, 1.25) {};
-		\node [style=medium box] (10) at (1.25, 1.25) {$f$};
+		\node [style=medium square trace box] (10) at (1.25, 1.25) {$F$};
 		\node [style=none] (11) at (0.75, 1.25) {};
 		\node [style=none] (12) at (1.75, -1.25) {};
-		\node [style=medium box] (13) at (1.25, -1.25) {$f$};
+		\node [style=medium square trace box] (13) at (1.25, -1.25) {$F$};
 		\node [style=none] (14) at (0.75, -1.25) {};
 		\node [style=none] (15) at (2.75, 1.25) {};
 		\node [style=none] (16) at (2.75, -1.25) {};
@@ -19,7 +19,7 @@
 		\draw [style=wire, in=180, out=-75] (5) to (2.center);
 		\draw (1.center) to (11.center);
 		\draw (14.center) to (2.center);
-		\draw (9.center) to (15.center);
-		\draw (12.center) to (16.center);
+		\draw [style=wire] (9.center) to (15.center);
+		\draw [style=wire] (12.center) to (16.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

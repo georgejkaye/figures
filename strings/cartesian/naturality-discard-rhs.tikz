@@ -4,6 +4,6 @@
 		\node [style=bproduct] (15) at (0.75, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw (9.center) to (15);
+		\draw [style=wire] (9.center) to (15);
 	\end{pgfonlayer}
 \end{tikzpicture}

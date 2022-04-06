@@ -2,12 +2,12 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (1) at (-1.75, 0) {};
 		\node [style=none] (9) at (0.5, 0) {};
-		\node [style=medium box] (10) at (0, 0) {$f$};
+		\node [style=medium square trace box] (10) at (0, 0) {$F$};
 		\node [style=none] (11) at (-0.5, 0) {};
 		\node [style=bproduct] (15) at (1.75, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw (1.center) to (11.center);
-		\draw (9.center) to (15);
+		\draw [style=wire] (1.center) to (11.center);
+		\draw [style=wire, in=180, out=0] (9.center) to (15);
 	\end{pgfonlayer}
 \end{tikzpicture}
