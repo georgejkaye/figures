@@ -1,3 +1,4 @@
+\usepackage{stmaryrd}
 \usetikzlibrary{circuits.logic.US, patterns}
 \definecolor{comb}{HTML}{88ccee}
 \definecolor{delay}{HTML}{cc6677}
