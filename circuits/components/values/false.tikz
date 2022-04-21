@@ -11,7 +11,7 @@
 		\node [style=none] (15) at (0, 0) {$\mathsf{f}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=tile] (14.center)
+		\draw [style=tile comb] (14.center)
 			 to (10.center)
 			 to (11.center)
 			 to (12.center)

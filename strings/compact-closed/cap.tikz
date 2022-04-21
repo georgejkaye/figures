@@ -13,7 +13,7 @@
 		\node [style=none] (13) at (-0.25, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=tile] (12.center)
+		\draw [style=tile comb] (12.center)
 			 to (6.center)
 			 to (7.center)
 			 to (8.center)

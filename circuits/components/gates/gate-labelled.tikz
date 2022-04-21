@@ -7,9 +7,12 @@
 		\node [style=none] (15) at (0.5, 0) {};
 		\node [style=label] (16) at (1.75, 0) {$1$};
 		\node [style=label] (17) at (-1.9, 0) {$m$};
+		\node [style=none] (18) at (-1.25, -0.25) {};
+		\node [style=none] (19) at (-1.25, 0.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire, in=180, out=0] (9) to (12.center);
 		\draw [style=wire] (15.center) to (10);
+		\draw [style=wiredash] (19.center) to (18.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

@@ -3,6 +3,7 @@
 \definecolor{comb}{HTML}{88ccee}
 \definecolor{delay}{HTML}{cc6677}
 \definecolor{trace}{HTML}{44aa99}
+\definecolor{seq}{HTML}{44aa99}
 \definecolor{white}{HTML}{f8f8f2}
 \newcommand{\thickness}{0.5mm}
 \newcommand{\stringwidth}{0.33mm}
