@@ -1,0 +1,38 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-0.25, 0) {};
+		\node [style=none] (1) at (2, 0.75) {};
+		\node [style=none] (2) at (2, -0.75) {};
+		\node [style=bproduct] (5) at (1, 0) {};
+		\node [style=medium square box] (6) at (-0.75, 0) {$f$};
+		\node [style=none] (7) at (-2.5, 0) {};
+		\node [style=none] (8) at (-1.25, 0) {};
+		\node [style=none] (22) at (-2.25, 0.25) {};
+		\node [style=none] (23) at (-2.25, -0.25) {};
+		\node [style=none] (24) at (2.5, -0.75) {};
+		\node [style=none] (25) at (2.5, 0.75) {};
+		\node [style=none] (26) at (2.25, 1) {};
+		\node [style=none] (27) at (2.25, 0.5) {};
+		\node [style=none] (28) at (2.25, -0.5) {};
+		\node [style=none] (29) at (2.25, -1) {};
+		\node [style=none] (36) at (2.1, 1) {};
+		\node [style=none] (37) at (2.1, 0.5) {};
+		\node [style=none] (38) at (2.1, -0.5) {};
+		\node [style=none] (39) at (2.1, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (0.center) to (5);
+		\draw [style=wire] (5)
+			 to [in=-180, out=75] (1.center)
+			 to (25.center);
+		\draw [style=wire] (24.center)
+			 to (2.center)
+			 to [in=-75, out=180] (5);
+		\draw [style=wire] (8.center) to (7.center);
+		\draw [style=wiredash] (22.center) to (23.center);
+		\draw [style=wiredash] (26.center) to (27.center);
+		\draw [style=wiredash] (28.center) to (29.center);
+		\draw [style=wiredash] (36.center) to (37.center);
+		\draw [style=wiredash] (38.center) to (39.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

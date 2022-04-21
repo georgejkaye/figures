@@ -2,7 +2,7 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=dangling] (0) at (-4, -1) {};
 		\node [style=dangling] (2) at (-4, 1) {};
-		\node [style=medium square box] (3) at (-2.5, 1) {$\Delta_{n}$};
+		\node [style=medium square comb box] (3) at (-2.5, 1) {$\Delta_{n}$};
 		\node [style=bport] (4) at (-3, 1) {};
 		\node [style=bproduct] (6) at (-2.5, -1) {};
 		\node [style=bport] (8) at (-2, 1.5) {};

@@ -1,0 +1,29 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dangling] (1) at (-3.5, 0) {};
+		\node [style=none] (9) at (-1.25, 0) {};
+		\node [style=medium square box] (10) at (-1.75, 0) {$f$};
+		\node [style=none] (11) at (-2.25, 0) {};
+		\node [style=bproduct] (15) at (0.25, 0) {};
+		\node [style=dangling] (16) at (2.5, 0) {};
+		\node [style=bproduct] (17) at (3.5, 0) {};
+		\node [style=none] (18) at (1.5, 0) {$=$};
+		\node [style=none] (19) at (-3.25, 0.25) {};
+		\node [style=none] (20) at (-3.25, -0.25) {};
+		\node [style=none] (21) at (3, 0.25) {};
+		\node [style=none] (22) at (3, -0.25) {};
+		\node [style=none] (23) at (-0.35, 0.25) {};
+		\node [style=none] (24) at (-0.35, -0.25) {};
+		\node [style=none] (25) at (-0.5, 0.25) {};
+		\node [style=none] (26) at (-0.5, -0.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (1) to (11.center);
+		\draw [style=wire, in=180, out=0] (9.center) to (15);
+		\draw [style=wire] (16) to (17);
+		\draw [style=wiredash] (20.center) to (19.center);
+		\draw [style=wiredash] (22.center) to (21.center);
+		\draw [style=wiredash] (23.center) to (24.center);
+		\draw [style=wiredash] (25.center) to (26.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
