@@ -1,10 +1,15 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny box] (11) at (-0.25, 0) {$\mealytransition{s}{v}$};
+		\node [style=tiny comb box] (11) at (-0.25, 0) {$\mealytransition{s}{v}$};
 		\node [style=none] (15) at (0.25, 0) {};
 		\node [style=dangling] (16) at (1.25, 0) {};
+		\node [style=none] (17) at (1, 0) {};
+		\node [style=small label] (18) at (1, 0.5) {$r$};
+		\node [style=none] (19) at (1, 0.25) {};
+		\node [style=none] (20) at (1, -0.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (15.center) to (16);
+		\draw [style=wiredash] (20.center) to (19.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
