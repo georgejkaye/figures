@@ -4,22 +4,38 @@
 		\node [style=none] (1) at (0.25, 1.25) {};
 		\node [style=none] (2) at (0.25, -1.25) {};
 		\node [style=bproduct] (5) at (-1.25, 0) {};
-		\node [style=none] (9) at (1.75, 1.25) {};
-		\node [style=medium square trace box] (10) at (1.25, 1.25) {$F$};
-		\node [style=none] (11) at (0.75, 1.25) {};
-		\node [style=none] (12) at (1.75, -1.25) {};
-		\node [style=medium square trace box] (13) at (1.25, -1.25) {$F$};
-		\node [style=none] (14) at (0.75, -1.25) {};
-		\node [style=none] (15) at (2.75, 1.25) {};
-		\node [style=none] (16) at (2.75, -1.25) {};
+		\node [style=none] (9) at (2.25, 1.25) {};
+		\node [style=medium square trace box] (10) at (1.75, 1.25) {$F$};
+		\node [style=none] (11) at (1.25, 1.25) {};
+		\node [style=none] (12) at (2.25, -1.25) {};
+		\node [style=medium square trace box] (13) at (1.75, -1.25) {$F$};
+		\node [style=none] (14) at (1.25, -1.25) {};
+		\node [style=none] (15) at (3.75, 1.25) {};
+		\node [style=none] (16) at (3.75, -1.25) {};
+		\node [style=none] (17) at (0.25, 1.5) {};
+		\node [style=none] (18) at (0.25, 1) {};
+		\node [style=small label] (19) at (0.25, 1.75) {$m$};
+		\node [style=none] (20) at (3.25, 1.5) {};
+		\node [style=none] (21) at (3.25, 1) {};
+		\node [style=small label] (22) at (3.25, 1.75) {$n$};
+		\node [style=none] (23) at (0.25, -1) {};
+		\node [style=none] (24) at (0.25, -1.5) {};
+		\node [style=small label] (25) at (0.25, -0.75) {$m$};
+		\node [style=none] (26) at (3.25, -1) {};
+		\node [style=none] (27) at (3.25, -1.5) {};
+		\node [style=small label] (28) at (3.25, -0.75) {$n$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (0.center) to (5);
 		\draw [style=wire, in=-180, out=75] (5) to (1.center);
 		\draw [style=wire, in=180, out=-75] (5) to (2.center);
-		\draw (1.center) to (11.center);
-		\draw (14.center) to (2.center);
+		\draw [style=wire] (1.center) to (11.center);
+		\draw [style=wire] (14.center) to (2.center);
 		\draw [style=wire] (9.center) to (15.center);
 		\draw [style=wire] (12.center) to (16.center);
+		\draw [style=wiredash] (17.center) to (18.center);
+		\draw [style=wiredash] (20.center) to (21.center);
+		\draw [style=wiredash] (23.center) to (24.center);
+		\draw [style=wiredash] (26.center) to (27.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

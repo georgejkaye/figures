@@ -7,11 +7,19 @@
 		\node [style=medium square trace box] (6) at (-1.25, 0) {$F$};
 		\node [style=none] (7) at (-3.25, 0) {};
 		\node [style=none] (8) at (-1.75, 0) {};
+		\node [style=none] (9) at (-2.75, 0.25) {};
+		\node [style=none] (10) at (-2.75, -0.25) {};
+		\node [style=small label] (11) at (-2.75, 0.5) {$m$};
+		\node [style=none] (12) at (0.25, 0.25) {};
+		\node [style=none] (13) at (0.25, -0.25) {};
+		\node [style=small label] (14) at (0.25, 0.5) {$n$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (0.center) to (5);
 		\draw [style=wire, in=-180, out=60] (5) to (1.center);
 		\draw [style=wire, in=180, out=-60] (5) to (2.center);
 		\draw [style=wire] (8.center) to (7.center);
+		\draw [style=wiredash] (9.center) to (10.center);
+		\draw [style=wiredash] (12.center) to (13.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
