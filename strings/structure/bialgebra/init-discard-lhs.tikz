@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=bproduct] (13) at (0.5, 0) {};
+		\node [style=bproduct] (20) at (-0.5, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (13) to (20);
+	\end{pgfonlayer}
+\end{tikzpicture}

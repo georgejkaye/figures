@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dangling] (8) at (2, 0.75) {};
+		\node [style=dangling] (9) at (-2, 0.75) {};
+		\node [style=dangling] (10) at (-2, -0.75) {};
+		\node [style=dangling] (15) at (2, -0.75) {};
+		\node [style=bproduct] (16) at (-1, 0.75) {};
+		\node [style=bproduct] (17) at (-1, -0.75) {};
+		\node [style=bproduct] (18) at (1, -0.75) {};
+		\node [style=bproduct] (19) at (1, 0.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (9) to (16);
+		\draw [style=wire, in=120, out=60, looseness=1.25] (16) to (19);
+		\draw [style=wire, in=120, out=-60] (16) to (18);
+		\draw [style=wire, in=-120, out=60] (17) to (19);
+		\draw [style=wire, in=-120, out=-60, looseness=1.25] (17) to (18);
+		\draw [style=wire] (17) to (10);
+		\draw [style=wire] (18) to (15);
+		\draw [style=wire] (19) to (8);
+	\end{pgfonlayer}
+\end{tikzpicture}

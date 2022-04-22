@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 0) {$\approx_{\mathcal{I}}$};
+		\node [style=bproduct] (1) at (-2.5, 0) {};
+		\node [style=bproduct] (2) at (-1.5, -0.75) {};
+		\node [style=dangling] (3) at (-1, 0.75) {};
+		\node [style=dangling] (4) at (-3.5, 0) {};
+		\node [style=dangling] (5) at (1, 0) {};
+		\node [style=dangling] (6) at (2.5, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (4) to (1);
+		\draw [style=wire, in=-180, out=-75] (1) to (2);
+		\draw [style=wire, in=-180, out=75] (1) to (3);
+		\draw [style=wire] (6) to (5);
+	\end{pgfonlayer}
+\end{tikzpicture}

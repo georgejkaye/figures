@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 0) {$\approx_{\mathcal{I}}$};
+		\node [style=bproduct] (13) at (-1, 0) {};
+		\node [style=bproduct] (20) at (-2, 0) {};
+		\node [style=none] (21) at (1, 0.5) {};
+		\node [style=none] (22) at (1, -0.5) {};
+		\node [style=none] (23) at (2, 0.5) {};
+		\node [style=none] (24) at (2, -0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (13) to (20);
+		\draw [style=empty] (22.center)
+			 to (21.center)
+			 to (23.center)
+			 to (24.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}

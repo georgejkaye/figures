@@ -1,38 +1,38 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=delay] (6) at (-2, 0.475) {$\mealyinitial$};
-		\node [style=bproduct] (9) at (-0.5, 0.475) {};
-		\node [style=bproduct] (10) at (-0.5, -1) {};
-		\node [style=dangling] (11) at (-4.5, -1) {};
-		\node [style=medium square comb box] (12) at (2.25, 1.25) {$T$};
-		\node [style=medium square comb box] (13) at (2.25, -1.75) {$O$};
-		\node [style=bport] (15) at (1.75, 1.75) {};
-		\node [style=bport] (16) at (1.75, 0.75) {};
-		\node [style=bport] (18) at (1.75, -1.25) {};
-		\node [style=bport] (20) at (1.75, -2.25) {};
-		\node [style=bport] (22) at (2.75, 1.25) {};
-		\node [style=none] (24) at (3.75, 1.25) {};
-		\node [style=none] (26) at (3.75, 3.5) {};
-		\node [style=none] (30) at (-3, 3.5) {};
-		\node [style=bport] (33) at (2.75, -2) {};
-		\node [style=dangling] (34) at (5, -2) {};
-		\node [style=none] (35) at (-3, 0.5) {};
-		\node [style=none] (36) at (-4, -1) {};
-		\node [style=small label] (37) at (-4, -0.5) {$m$};
-		\node [style=none] (38) at (-4, -0.75) {};
-		\node [style=none] (39) at (-4, -1.25) {};
-		\node [style=none] (40) at (-2, 0.5) {};
-		\node [style=small label] (42) at (-1.25, 1) {$r$};
-		\node [style=none] (43) at (-1.25, 0.75) {};
-		\node [style=none] (44) at (-1.25, 0.25) {};
-		\node [style=none] (45) at (4.5, -2) {};
-		\node [style=none] (46) at (4.5, -2) {};
-		\node [style=small label] (47) at (4.5, -1.5) {$n$};
-		\node [style=none] (48) at (4.5, -1.75) {};
-		\node [style=none] (49) at (4.5, -2.25) {};
-		\node [style=small label] (50) at (3.75, 1.75) {$r$};
-		\node [style=none] (51) at (3.75, 1.5) {};
-		\node [style=none] (52) at (3.75, 1) {};
+		\node [style=delay] (6) at (-2.5, 0.475) {$\mealyinitial$};
+		\node [style=bproduct] (9) at (-0.75, 0.475) {};
+		\node [style=bproduct] (10) at (-0.75, -1) {};
+		\node [style=dangling] (11) at (-4.75, -1) {};
+		\node [style=medium square comb box] (12) at (2, 1.25) {$T$};
+		\node [style=medium square comb box] (13) at (2, -1.75) {$O$};
+		\node [style=bport] (15) at (1.5, 1.75) {};
+		\node [style=bport] (16) at (1.5, 0.75) {};
+		\node [style=bport] (18) at (1.5, -1.25) {};
+		\node [style=bport] (20) at (1.5, -2.25) {};
+		\node [style=bport] (22) at (2.5, 1.25) {};
+		\node [style=none] (24) at (4.25, 1.25) {};
+		\node [style=none] (26) at (4.25, 2.75) {};
+		\node [style=none] (30) at (-3.25, 2.75) {};
+		\node [style=bport] (33) at (2.5, -2) {};
+		\node [style=dangling] (34) at (4.75, -2) {};
+		\node [style=none] (35) at (-3.25, 0.5) {};
+		\node [style=none] (36) at (-1.5, -1) {};
+		\node [style=small label] (37) at (-1.5, -0.5) {$m$};
+		\node [style=none] (38) at (-1.5, -0.75) {};
+		\node [style=none] (39) at (-1.5, -1.25) {};
+		\node [style=none] (40) at (-2.5, 0.5) {};
+		\node [style=small label] (42) at (-1.5, 1) {$r$};
+		\node [style=none] (43) at (-1.5, 0.75) {};
+		\node [style=none] (44) at (-1.5, 0.25) {};
+		\node [style=none] (45) at (3.5, -2) {};
+		\node [style=none] (46) at (3.5, -2) {};
+		\node [style=small label] (47) at (3.5, -1.5) {$n$};
+		\node [style=none] (48) at (3.5, -1.75) {};
+		\node [style=none] (49) at (3.5, -2.25) {};
+		\node [style=small label] (50) at (3.5, 1.75) {$r$};
+		\node [style=none] (51) at (3.5, 1.5) {};
+		\node [style=none] (52) at (3.5, 1) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire, in=180, out=0] (11) to (10);
@@ -40,15 +40,15 @@
 		\draw [style=wire, in=-180, out=75] (10) to (16);
 		\draw [style=wire, in=180, out=-75] (10) to (20);
 		\draw [style=wire, in=-180, out=-75] (9) to (18);
-		\draw [style=wire] (40.center)
-			 to (35.center)
-			 to [bend left=90, looseness=1.25] (30.center)
-			 to (26.center)
-			 to [bend left=90, looseness=1.50] (24.center)
-			 to (22);
+		\draw [style=wire] (22)
+			 to (24.center)
+			 to [bend right=90, looseness=1.25] (26.center)
+			 to (30.center)
+			 to [bend right=90, looseness=1.25] (35.center)
+			 to (40.center)
+			 to (9);
 		\draw [style=wire] (33) to (34);
 		\draw [style=wiredash] (39.center) to (38.center);
-		\draw [style=wire] (40.center) to (9);
 		\draw [style=wiredash] (44.center) to (43.center);
 		\draw [style=wiredash] (49.center) to (48.center);
 		\draw [style=wiredash] (52.center) to (51.center);
