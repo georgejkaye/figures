@@ -13,29 +13,28 @@
 		\node [style=port] (10) at (1.25, -0.5) {};
 		\node [style=port] (11) at (1.75, -0.75) {};
 		\node [style=delay] (12) at (3.25, -0.75) {};
-		\node [style=tiny box] (13) at (3.25, 0.5) {$\mathsf{t}$};
+		\node [style=tiny comb box] (13) at (3.25, 0.5) {$\mathsf{t}$};
 		\node [style=dangling] (14) at (4.25, 0.5) {};
-		\node [style=tiny box] (15) at (-4.25, 1.5) {$\mathsf{f}$};
-		\node [style=tiny box] (16) at (-2, 1.5) {$\mathsf{t}$};
+		\node [style=tiny comb box] (15) at (-4.25, 1.5) {$\mathsf{f}$};
+		\node [style=tiny comb box] (16) at (-2, 1.5) {$\mathsf{t}$};
 		\node [style=bproduct] (17) at (-3, 0.25) {};
 		\node [style=bproduct] (18) at (-0.75, 0.25) {};
 		\node [style=dangling] (19) at (4.25, -0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire] (0) to (2);
 		\draw [style=wire] (2)
 			 to [in=180, out=60] (4.center)
 			 to [bend right=90, looseness=1.75] (6.center)
 			 to (5.center)
 			 to [bend left=270, looseness=1.25] (3.center)
 			 to (1);
-		\draw [style=wire] (1) to (0);
 		\draw [style=wire, in=180, out=-75] (2) to (10);
 		\draw [style=wire] (9) to (8);
-		\draw [style=wire] (11) to (12);
 		\draw [style=wire] (13) to (14);
 		\draw [style=wire, in=105, out=0, looseness=0.75] (15) to (17);
 		\draw [style=wire, in=105, out=0, looseness=0.75] (16) to (18);
-		\draw [style=wire] (12) to (19);
+		\draw [style=wire] (17) to (3.center);
+		\draw [style=wire] (2) to (17);
+		\draw [style=wire] (19) to (11);
 	\end{pgfonlayer}
 \end{tikzpicture}
