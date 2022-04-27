@@ -1,0 +1,35 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square comb box] (0) at (0, 0) {$F$};
+		\node [style=port] (1) at (-0.25, 0.5) {};
+		\node [style=port] (2) at (-0.25, -0.5) {};
+		\node [style=port] (3) at (0.25, 0.5) {};
+		\node [style=port] (4) at (0.25, -0.5) {};
+		\node [style=dangling] (5) at (1.75, 0.5) {};
+		\node [style=dangling] (8) at (-1.75, 0.5) {};
+		\node [style=dangling] (9) at (-1.75, -0.5) {};
+		\node [style=dangling] (10) at (1.75, -0.5) {};
+		\node [style=none] (11) at (-1.5, 0.75) {};
+		\node [style=none] (12) at (-1.5, 0.25) {};
+		\node [style=none] (13) at (-1.5, -0.25) {};
+		\node [style=none] (14) at (-1.5, -0.75) {};
+		\node [style=small label] (15) at (-1.5, 1) {$x$};
+		\node [style=small label] (16) at (-1.5, -1) {$m$};
+		\node [style=none] (17) at (1.5, 0.75) {};
+		\node [style=none] (18) at (1.5, 0.25) {};
+		\node [style=none] (19) at (1.5, -0.25) {};
+		\node [style=none] (20) at (1.5, -0.75) {};
+		\node [style=small label] (21) at (1.5, 1) {$x$};
+		\node [style=small label] (22) at (1.5, -1) {$n$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (1) to (8);
+		\draw [style=wire] (5) to (3);
+		\draw [style=wire] (9) to (2);
+		\draw [style=wire] (4) to (10);
+		\draw [style=wiredash] (11.center) to (12.center);
+		\draw [style=wiredash] (13.center) to (14.center);
+		\draw [style=wiredash] (17.center) to (18.center);
+		\draw [style=wiredash] (19.center) to (20.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
