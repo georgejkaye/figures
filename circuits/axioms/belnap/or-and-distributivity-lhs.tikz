@@ -1,0 +1,27 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=and] (2) at (0.25, -0.5) {};
+		\node [style=dangling] (8) at (-1, -0.25) {};
+		\node [style=dangling] (11) at (-1, -0.75) {};
+		\node [style=none] (12) at (-0.25, -0.75) {};
+		\node [style=none] (13) at (-0.25, -0.25) {};
+		\node [style=or] (14) at (2.75, 0) {};
+		\node [style=none] (15) at (2.25, 0.25) {};
+		\node [style=none] (16) at (1.25, -0.5) {};
+		\node [style=none] (17) at (2.25, -0.25) {};
+		\node [style=none] (18) at (0.5, 0.5) {};
+		\node [style=dangling] (19) at (4, 0) {};
+		\node [style=dangling] (20) at (-1, 0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (20)
+			 to (18.center)
+			 to [in=180, out=0] (15.center);
+		\draw [style=wire] (11) to (12.center);
+		\draw [style=wire] (17.center)
+			 to [in=0, out=180] (16.center)
+			 to (2);
+		\draw [style=wire] (19) to (14);
+		\draw [style=wire] (13.center) to (8);
+	\end{pgfonlayer}
+\end{tikzpicture}

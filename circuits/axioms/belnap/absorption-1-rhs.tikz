@@ -1,0 +1,12 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dangling] (8) at (-1, 0.25) {};
+		\node [style=dangling] (11) at (-1, -0.25) {};
+		\node [style=dangling] (19) at (1, 0.25) {};
+		\node [style=bproduct] (20) at (0, -0.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (11) to (20);
+		\draw [style=wire] (8) to (19);
+	\end{pgfonlayer}
+\end{tikzpicture}
