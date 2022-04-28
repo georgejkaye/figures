@@ -1,0 +1,15 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dangling] (0) at (-1.25, 0.33) {};
+		\node [style=and] (2) at (0, 0) {};
+		\node [style=none] (3) at (-0.5, 0.33) {};
+		\node [style=none] (4) at (-0.5, -0.33) {};
+		\node [style=dangling] (5) at (1.25, 0) {};
+		\node [style=dangling] (6) at (-1.25, -0.33) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (2) to (5);
+		\draw [style=wire] (0) to (3.center);
+		\draw [style=wire] (6) to (4.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
