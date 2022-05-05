@@ -5,7 +5,7 @@
 		\node [style=none] (4) at (-2.75, -1.75) {};
 		\node [style=none] (5) at (-1.25, -2) {};
 		\node [style=none] (6) at (-1.25, -2.5) {};
-		\node [style=none] (8) at (3.25, 1.25) {$c$};
+		\node [style=small label] (8) at (3.25, 1.25) {$c$};
 		\node [style=mux] (10) at (-1.25, 1.5) {};
 		\node [style=none] (11) at (-2.5, 1.25) {};
 		\node [style=none] (12) at (-1.5, 1.75) {{\hspace{0em} \scalebox{0.5}{$0$}}};
@@ -28,11 +28,11 @@
 		\node [style=none] (42) at (2.25, -0.25) {};
 		\node [style=none] (43) at (2.25, -1.5) {};
 		\node [style=none] (45) at (4.25, 0) {};
-		\node [style=none] (46) at (-1.25, 2.75) {$c$};
+		\node [style=small label] (46) at (-1.25, 2.75) {$c$};
 		\node [style=none] (47) at (-1.25, 2) {};
 		\node [style=none] (48) at (-1.25, 2.5) {};
 		\node [style=none] (49) at (-3, 1.75) {$x$};
-		\node [style=none] (50) at (-1.25, -2.75) {$c$};
+		\node [style=small label] (50) at (-1.25, -2.75) {$c$};
 		\node [style=none] (51) at (-3, -1.75) {$x$};
 		\node [style=tiny box] (52) at (0.5, 1.5) {$F$};
 		\node [style=tiny box] (53) at (0.5, -1.5) {$G$};

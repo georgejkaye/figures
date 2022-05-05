@@ -1,19 +1,19 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=bproduct] (1) at (0.5, -0.25) {};
-		\node [style=bproduct] (2) at (-0.5, 0.5) {};
-		\node [style=none] (3) at (-0.5, -1) {};
-		\node [style=dangling] (4) at (1.5, -0.25) {};
-		\node [style=dangling] (7) at (-1.5, 1) {};
+		\node [style=bproduct] (1) at (0.5, 0.25) {};
+		\node [style=bproduct] (2) at (-0.5, -0.5) {};
+		\node [style=none] (3) at (-0.5, 1) {};
+		\node [style=dangling] (4) at (1.5, 0.25) {};
+		\node [style=dangling] (7) at (-1.5, -1) {};
 		\node [style=dangling] (8) at (-1.5, 0) {};
-		\node [style=dangling] (9) at (-1.5, -1) {};
+		\node [style=dangling] (9) at (-1.5, 1) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (4) to (1);
-		\draw [style=wire, in=0, out=105] (1) to (2);
-		\draw [style=wire, in=0, out=-105] (1) to (3.center);
-		\draw [style=wire, in=0, out=120] (2) to (7);
-		\draw [style=wire, in=0, out=-120] (2) to (8);
+		\draw [style=wire, in=0, out=-105] (1) to (2);
+		\draw [style=wire, in=0, out=105] (1) to (3.center);
+		\draw [style=wire, in=0, out=-120] (2) to (7);
+		\draw [style=wire, in=0, out=120] (2) to (8);
 		\draw [style=wire] (3.center) to (9);
 	\end{pgfonlayer}
 \end{tikzpicture}

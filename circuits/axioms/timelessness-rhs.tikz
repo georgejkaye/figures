@@ -1,15 +1,19 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium comb box] (0) at (-0.5, 0) {$g$};
-		\node [style=delay] (1) at (1, 0) {};
-		\node [style=port] (2) at (-0.25, 0) {};
-		\node [style=port] (3) at (-0.75, 0) {};
-		\node [style=dangling] (4) at (1.75, 0) {};
-		\node [style=dangling] (5) at (-1.75, 0) {};
+		\node [style=medium comb box] (0) at (-0.25, 0) {$g$};
+		\node [style=delay] (1) at (1.25, 0) {};
+		\node [style=port] (2) at (0, 0) {};
+		\node [style=port] (3) at (-0.5, 0) {};
+		\node [style=dangling] (4) at (2, 0) {};
+		\node [style=dangling] (5) at (-2, 0) {};
+		\node [style=none] (6) at (-1.5, 0.25) {};
+		\node [style=none] (7) at (-1.5, -0.25) {};
+		\node [style=small label] (8) at (-1.5, 0.5) {$m$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (4) to (1);
 		\draw [style=wire] (1) to (2);
 		\draw [style=wire] (3) to (5);
+		\draw [style=wiredash] (6.center) to (7.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

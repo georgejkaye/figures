@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny box] (54) at (-0.75, 0) {$F$};
-		\node [style=tiny box] (55) at (0.75, 0) {$G$};
+		\node [style=tiny box] (54) at (-0.75, 0) {$G$};
+		\node [style=tiny box] (55) at (0.75, 0) {$F$};
 		\node [style=none] (56) at (-1.75, 0) {};
 		\node [style=none] (57) at (0, 0) {};
 		\node [style=none] (58) at (1.75, 0) {};
