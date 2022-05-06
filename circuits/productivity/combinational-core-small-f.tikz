@@ -1,0 +1,49 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dangling] (15) at (-1.75, -0.75) {};
+		\node [style=dangling] (16) at (1.75, -0.75) {};
+		\node [style=medium square comb box] (23) at (0, 0) {$\widehat{F}$};
+		\node [style=port] (24) at (0.5, 0.75) {};
+		\node [style=port] (25) at (0.5, 0.25) {};
+		\node [style=port] (26) at (0.5, -0.75) {};
+		\node [style=port] (27) at (-0.5, 0.75) {};
+		\node [style=port] (28) at (-0.5, 0.25) {};
+		\node [style=port] (29) at (-0.5, -0.75) {};
+		\node [style=port] (30) at (-0.5, -0.25) {};
+		\node [style=dangling] (31) at (-1.75, -0.25) {};
+		\node [style=dangling] (35) at (-1.75, 0.25) {};
+		\node [style=dangling] (39) at (-1.75, 0.75) {};
+		\node [style=dangling] (43) at (1.75, 0.25) {};
+		\node [style=dangling] (47) at (1.75, 0.75) {};
+		\node [style=none] (48) at (-1.25, 1) {};
+		\node [style=none] (49) at (-1.25, 0.5) {};
+		\node [style=none] (50) at (-1.5, 0.5) {};
+		\node [style=none] (51) at (-1.5, 0) {};
+		\node [style=none] (52) at (-1.25, 0) {};
+		\node [style=none] (53) at (-1.25, -0.5) {};
+		\node [style=none] (54) at (-1.5, -0.5) {};
+		\node [style=none] (55) at (-1.5, -1) {};
+		\node [style=none] (56) at (1.5, 1) {};
+		\node [style=none] (57) at (1.5, 0.5) {};
+		\node [style=none] (58) at (1.25, 0.5) {};
+		\node [style=none] (59) at (1.25, 0) {};
+		\node [style=none] (60) at (1.5, -0.5) {};
+		\node [style=none] (61) at (1.5, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (15) to (29);
+		\draw [style=wire] (31) to (30);
+		\draw [style=wire] (35) to (28);
+		\draw [style=wire] (39) to (27);
+		\draw [style=wire] (16) to (26);
+		\draw [style=wire] (47) to (24);
+		\draw [style=wire] (43) to (25);
+		\draw [style=wiredash] (48.center) to (49.center);
+		\draw [style=wiredash] (50.center) to (51.center);
+		\draw [style=wiredash] (52.center) to (53.center);
+		\draw [style=wiredash] (54.center) to (55.center);
+		\draw [style=wiredash] (56.center) to (57.center);
+		\draw [style=wiredash] (58.center) to (59.center);
+		\draw [style=wiredash] (60.center) to (61.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

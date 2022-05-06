@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dangling] (28) at (1.5, 0) {};
+		\node [style=dangling] (35) at (-1.5, 0) {};
+		\node [style=none] (50) at (1, 0.25) {};
+		\node [style=none] (51) at (1, -0.25) {};
+		\node [style=tiny comb box] (62) at (0, 0) {$s$};
+		\node [style=small label] (63) at (1, 0.5) {$y$};
+		\node [style=none] (64) at (-1, 0.25) {};
+		\node [style=none] (65) at (-1, -0.25) {};
+		\node [style=small label] (66) at (-1, 0.5) {$y$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (35) to (28);
+		\draw [style=wiredash] (50.center) to (51.center);
+		\draw [style=wiredash] (64.center) to (65.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

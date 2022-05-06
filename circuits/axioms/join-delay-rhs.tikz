@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dangling] (0) at (-2, 1) {};
+		\node [style=dangling] (1) at (-2, -1) {};
+		\node [style=bproduct] (2) at (-0.5, 0) {};
+		\node [style=delay] (5) at (0.75, 0) {};
+		\node [style=dangling] (6) at (2, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire, in=-105, out=0] (1) to (2);
+		\draw [style=wire, in=105, out=0] (0) to (2);
+		\draw [style=wire] (2) to (5);
+		\draw [style=wire] (6) to (5);
+	\end{pgfonlayer}
+\end{tikzpicture}
