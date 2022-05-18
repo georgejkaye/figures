@@ -1,0 +1,86 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=small label] (0) at (0, -2) {$A \cup B$};
+		\node [style=small label] (1) at (-3, 0.25) {$A$};
+		\node [style=small label] (2) at (3, 0.25) {$B$};
+		\node [style=none] (3) at (-2.5, 0) {};
+		\node [style=none] (4) at (-0.75, -1.5) {};
+		\node [style=none] (5) at (1, -1.75) {};
+		\node [style=none] (6) at (2.75, -0.25) {};
+		\node [style=small label] (7) at (0, 2.75) {$A \cap B$};
+		\node [style=none] (8) at (-1, 2.25) {};
+		\node [style=none] (9) at (-2.75, 0.75) {};
+		\node [style=none] (10) at (1, 2.25) {};
+		\node [style=none] (11) at (2.75, 0.75) {};
+		\node [style=none] (12) at (-0.25, -1.25) {};
+		\node [style=none] (13) at (0, -1) {};
+		\node [style=none] (14) at (0.25, -1.25) {};
+		\node [style=small label] (15) at (0, 1) {$A^\prime \cup B^\prime$};
+		\node [style=none] (16) at (0, -1.5) {};
+		\node [style=none] (17) at (0, 0.5) {};
+		\node [style=small label] (18) at (0.25, -0.25) {$f$};
+		\node [style=small label] (19) at (-3, 2.75) {$A^\prime$};
+		\node [style=none] (20) at (-2.5, 2.5) {};
+		\node [style=none] (21) at (-0.75, 1.25) {};
+		\node [style=none] (22) at (-3, 0.75) {};
+		\node [style=none] (23) at (-3, 2.25) {};
+		\node [style=none] (24) at (3, 0.75) {};
+		\node [style=none] (25) at (3, 2.25) {};
+		\node [style=small label] (26) at (3, 2.75) {$B^\prime$};
+		\node [style=none] (27) at (2.5, 2.5) {};
+		\node [style=none] (28) at (0.75, 1.25) {};
+		\node [style=small label] (29) at (-3.5, 1.5) {$f_A$};
+		\node [style=small label] (30) at (3.5, 1.75) {$f_B$};
+		\node [style=small label] (31) at (0, 5) {$A^\prime \cap B^\prime$};
+		\node [style=none] (32) at (-0.75, 4.5) {};
+		\node [style=none] (33) at (-2.5, 3) {};
+		\node [style=none] (34) at (0.75, 4.5) {};
+		\node [style=none] (35) at (2.5, 3) {};
+		\node [style=none] (36) at (0, 4.5) {};
+		\node [style=none] (37) at (0, 3.25) {};
+		\node [style=none] (38) at (-0.5, 4.25) {};
+		\node [style=none] (39) at (-0.5, 4) {};
+		\node [style=none] (40) at (-0.25, 4) {};
+		\node [style=none] (41) at (0.5, 4.25) {};
+		\node [style=none] (42) at (0.5, 4) {};
+		\node [style=none] (43) at (0.25, 4) {};
+		\node [style=none] (44) at (-2.5, 2) {};
+		\node [style=none] (45) at (-2.5, 1.75) {};
+		\node [style=none] (46) at (-2.75, 1.75) {};
+		\node [style=none] (47) at (2.5, 2) {};
+		\node [style=none] (48) at (2.5, 1.75) {};
+		\node [style=none] (49) at (2.75, 1.75) {};
+		\node [style=none] (50) at (-0.25, 1.5) {};
+		\node [style=none] (51) at (0, 1.75) {};
+		\node [style=none] (52) at (0.25, 1.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=commute] (3.center) to (4.center);
+		\draw [style=commute] (6.center) to (5.center);
+		\draw [style=commute] (8.center) to (9.center);
+		\draw [style=commute] (10.center) to (11.center);
+		\draw (12.center)
+			 to (13.center)
+			 to (14.center);
+		\draw [style=commute] (17.center) to (16.center);
+		\draw [style=commute] (20.center) to (21.center);
+		\draw [style=commute] (23.center) to (22.center);
+		\draw [style=commute] (25.center) to (24.center);
+		\draw [style=commute] (27.center) to (28.center);
+		\draw [style=commute] (32.center) to (33.center);
+		\draw [style=commute] (34.center) to (35.center);
+		\draw [style=commute] (36.center) to (37.center);
+		\draw (38.center)
+			 to (39.center)
+			 to (40.center);
+		\draw (41.center) to (42.center);
+		\draw (42.center) to (43.center);
+		\draw (44.center) to (45.center);
+		\draw (45.center) to (46.center);
+		\draw (47.center) to (48.center);
+		\draw (48.center) to (49.center);
+		\draw (50.center)
+			 to (51.center)
+			 to (52.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

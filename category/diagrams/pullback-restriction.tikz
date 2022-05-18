@@ -1,0 +1,31 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=small label] (0) at (0, -2) {$C \cup D$};
+		\node [style=small label] (1) at (-2.75, 0.5) {$B$};
+		\node [style=small label] (2) at (2.75, 0.5) {$C$};
+		\node [style=none] (3) at (-2.5, 0) {};
+		\node [style=none] (4) at (-0.75, -1.5) {};
+		\node [style=none] (5) at (0.75, -1.5) {};
+		\node [style=none] (6) at (2.5, 0) {};
+		\node [style=small label] (7) at (0, 2.75) {$A$};
+		\node [style=none] (8) at (-1, 2.25) {};
+		\node [style=none] (9) at (-2.5, 1) {};
+		\node [style=none] (10) at (1, 2.25) {};
+		\node [style=none] (11) at (2.5, 1) {};
+		\node [style=none] (12) at (-0.25, 2) {};
+		\node [style=none] (13) at (0, 1.75) {};
+		\node [style=none] (14) at (0.25, 2) {};
+		\node [style=none] (16) at (0, -1.5) {};
+		\node [style=small label] (17) at (-2, -1) {$f$};
+		\node [style=small label] (18) at (2.25, 2) {$f | C$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=commute] (3.center) to (4.center);
+		\draw [style=commute] (6.center) to (5.center);
+		\draw [style=commute] (8.center) to (9.center);
+		\draw [style=commute] (10.center) to (11.center);
+		\draw (12.center)
+			 to (13.center)
+			 to (14.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
