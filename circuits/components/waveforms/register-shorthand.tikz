@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dangling] (2) at (0.75, 0) {};
+		\node [style=delay] (8) at (0, 0) {$v$};
+		\node [style=dangling] (9) at (-0.75, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (9)
+			 to (8.center)
+			 to (2);
+	\end{pgfonlayer}
+\end{tikzpicture}
