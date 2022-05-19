@@ -7,3 +7,6 @@
 \definecolor{white}{HTML}{f8f8f2}
 \newcommand{\thickness}{0.5mm}
 \newcommand{\stringwidth}{0.33mm}
+\newcommand{\mediumwidth}{7.5mm}
+\newcommand{\smallwidth}{6mm}
+\newcommand{\tinywidth}{5mm}
