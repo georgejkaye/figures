@@ -33,7 +33,7 @@
 \tikzstyle{bproduct}=[fill=black, draw=black, shape=circle, scale=0.5, tikzit category=string diagram]
 \tikzstyle{wproduct}=[fill=white, draw=black, shape=circle, scale=0.5, line width=0.75, tikzit category=string diagram]
 \tikzstyle{bport}=[minimum size=2.5mm, fill=none, draw=none, shape=circle, tikzit draw={rgb,255: red,154; green,154; blue,154}, anchor=center, tikzit fill=white, tikzit category=string diagram]
-\tikzstyle{mux}=[fill=white, draw=black, shape=trapezium, tikzit category=circuits, rotate=-90, minimum height=0.9em, line width={\stringwidth}]
+\tikzstyle{mux}=[fill=white, draw=black, shape=trapezium, tikzit category=circuits, rotate=-90, minimum height=0.9em, line width={\stringwidth}, scale=1.25]
 \tikzstyle{fork}=[fill=black, draw=black, shape=circle, tikzit category=circuits, scale=0.25]
 \tikzstyle{box}=[fill=white, draw=black, shape=rectangle, tikzit category=circuits]
 \tikzstyle{dangling}=[fill=none, draw=none, shape=circle, anchor=east, scale=0.01, tikzit category=string diagram, tikzit fill={rgb,255: red,162; green,76; blue,77}]

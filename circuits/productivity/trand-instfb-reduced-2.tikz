@@ -1,16 +1,16 @@
-\begin{tikzpicture}
+\begin{tikzpicture}[circuit logic US]
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=port] (1) at (0.25, 0.5) {};
-		\node [style=medium square box] (11) at (0.75, 0) {$\land$};
-		\node [style=port] (13) at (0.25, -0.5) {};
-		\node [style=tiny box] (20) at (-2.25, -0.5) {$\mathsf{t}$};
-		\node [style=bproduct] (22) at (-1, 0.5) {};
-		\node [style=port] (23) at (1.25, 0) {};
-		\node [style=none] (24) at (2.5, 0) {};
+		\node [style=port] (1) at (0.5, 0.25) {};
+		\node [style=and] (11) at (0.75, 0) {};
+		\node [style=port] (13) at (0.5, -0.25) {};
+		\node [style=tiny box] (20) at (-1.75, -0.25) {$\mathsf{t}$};
+		\node [style=bproduct] (22) at (-0.75, 0.25) {};
+		\node [style=port] (23) at (1, 0) {};
+		\node [style=dangling] (24) at (2, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire, in=180, out=0] (20) to (13);
 		\draw [style=wire, in=180, out=0] (22) to (1);
-		\draw [style=wire] (23) to (24.center);
+		\draw [style=wire] (23) to (24);
 	\end{pgfonlayer}
 \end{tikzpicture}
