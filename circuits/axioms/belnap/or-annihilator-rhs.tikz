@@ -1,12 +1,13 @@
 \begin{tikzpicture}[circuit logic US]
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny comb box] (2) at (0.5, 0) {$\mathsf{t}$};
+		\node [style=tiny seq sector] (2) at (0.25, 0) {$\mathsf{t}$};
 		\node [style=bproduct] (3) at (-0.5, 0) {};
-		\node [style=dangling] (5) at (1.5, 0) {};
-		\node [style=dangling] (8) at (-1.5, 0) {};
+		\node [style=dangling] (5) at (1.25, 0) {};
+		\node [style=dangling] (8) at (-1.25, 0) {};
+		\node [style=none] (9) at (0.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire] (2) to (5);
 		\draw [style=wire] (3) to (8);
+		\draw [style=wire] (5) to (9.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
