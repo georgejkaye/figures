@@ -11,7 +11,7 @@
 \tikzstyle{product}=[fill=white, draw=black, shape=circle, scale=0.66, tikzit category=string diagram]
 \tikzstyle{type}=[fill=none, draw=none, shape=circle, font={\large}, tikzit fill={rgb,255: red,37; green,193; blue,141}, inner sep=0, anchor=center, tikzit category=string diagram]
 \tikzstyle{small box}=[rounded corners, fill=white, draw=black, shape=rectangle, minimum height=7.5mm, minimum width=7.5mm, tikzit category=string diagram, anchor=center, line width={\stringwidth}]
-\tikzstyle{tiny box}=[rounded corners, fill=comb, draw=black, shape=rectangle, tikzit category=string diagram, minimum width={\tinywidth}, minimum height={\tinywidth}, anchor=center, line width={\stringwidth}, tikzit fill=white]
+\tikzstyle{tiny box}=[rounded corners, fill=white, draw=black, shape=rectangle, tikzit category=string diagram, minimum width={\tinywidth}, minimum height={\tinywidth}, anchor=center, line width={\stringwidth}, tikzit fill=white]
 \tikzstyle{tiny comb box}=[rounded corners, fill=comb, draw=black, shape=rectangle, tikzit category=string diagram, minimum width={\tinywidth}, minimum height={\tinywidth}, anchor=center, line width={\stringwidth}, tikzit fill=comb, inner sep=0.75mm]
 \tikzstyle{tiny delay box}=[rounded corners, fill=delay, draw=black, shape=rectangle, tikzit category=string diagram, minimum width={\tinywidth}, minimum height={\tinywidth}, anchor=center, line width={\stringwidth}, tikzit fill=delay, inner sep=0.75mm]
 \tikzstyle{tiny seq box}=[rounded corners, fill=seq, draw=black, shape=rectangle, tikzit category=string diagram, minimum width={\tinywidth}, minimum height={\tinywidth}, anchor=center, line width={\stringwidth}, inner sep=0.75mm]

@@ -13,10 +13,10 @@
 		\node [style=port] (10) at (1.25, -0.5) {};
 		\node [style=port] (11) at (1.75, -0.75) {};
 		\node [style=delay] (12) at (3.25, -0.75) {};
-		\node [style=tiny comb box] (13) at (3.25, 0.5) {$\mathsf{t}$};
+		\node [style=tiny seq box] (13) at (3.25, 0.5) {$\mathsf{t}$};
 		\node [style=dangling] (14) at (4.25, 0.5) {};
-		\node [style=tiny comb box] (15) at (-4.25, 1.5) {$\mathsf{f}$};
-		\node [style=tiny comb box] (16) at (-2, 1.5) {$\mathsf{t}$};
+		\node [style=tiny seq box] (15) at (-4.25, 1.5) {$\mathsf{f}$};
+		\node [style=tiny seq box] (16) at (-2, 1.5) {$\mathsf{t}$};
 		\node [style=bproduct] (17) at (-3, 0.25) {};
 		\node [style=bproduct] (18) at (-0.75, 0.25) {};
 		\node [style=dangling] (19) at (4.25, -0.75) {};

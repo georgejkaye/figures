@@ -4,11 +4,11 @@
 		\node [style=bproduct] (1) at (-0.75, 0) {};
 		\node [style=port] (2) at (1, 0) {};
 		\node [style=port] (3) at (1.5, 0) {};
-		\node [style=tiny box] (4) at (-2.75, 0.75) {$\mathbf{v}$};
+		\node [style=tiny seq box] (4) at (-2.75, 0.75) {$\mathbf{v}$};
 		\node [style=dangling] (5) at (2.5, 0) {};
 		\node [style=none] (8) at (-1.5, 0.75) {};
 		\node [style=port] (9) at (-2.75, 0.75) {};
-		\node [style=tiny box] (10) at (-2.75, -0.75) {$\mathbf{w}$};
+		\node [style=tiny seq box] (10) at (-2.75, -0.75) {$\mathbf{w}$};
 		\node [style=port] (11) at (-2.75, -0.75) {};
 		\node [style=none] (12) at (-1.5, -0.75) {};
 		\node [style=none] (13) at (-1.75, 1) {};

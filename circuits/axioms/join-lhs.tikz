@@ -3,9 +3,9 @@
 		\node [style=none] (3) at (-1.25, 0.75) {};
 		\node [style=fork] (4) at (-0.25, 0) {};
 		\node [style=none] (6) at (-1.25, -0.75) {};
-		\node [style=tiny comb box] (7) at (-1.5, 0.75) {$v$};
+		\node [style=tiny seq box] (7) at (-1.5, 0.75) {$v$};
 		\node [style=port] (8) at (-1.25, 0.75) {};
-		\node [style=tiny comb box] (9) at (-1.5, -0.75) {$w$};
+		\node [style=tiny seq box] (9) at (-1.5, -0.75) {$w$};
 		\node [style=port] (10) at (-1.25, -0.75) {};
 		\node [style=dangling] (11) at (0.75, 0) {};
 	\end{pgfonlayer}
