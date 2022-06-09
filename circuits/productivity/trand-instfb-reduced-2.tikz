@@ -3,8 +3,8 @@
 		\node [style=port] (1) at (0.5, 0.25) {};
 		\node [style=and] (11) at (0.75, 0) {};
 		\node [style=port] (13) at (0.5, -0.25) {};
-		\node [style=tiny box] (20) at (-1.75, -0.25) {$\mathsf{t}$};
-		\node [style=bproduct] (22) at (-0.75, 0.25) {};
+		\node [style=tiny box] (20) at (-1.25, -0.25) {$\mathsf{t}$};
+		\node [style=bproduct] (22) at (-0.5, 0.25) {};
 		\node [style=port] (23) at (1, 0) {};
 		\node [style=dangling] (24) at (2, 0) {};
 	\end{pgfonlayer}
