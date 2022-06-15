@@ -1,10 +1,10 @@
 \begin{tikzpicture}[circuit logic US]
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny seq sector] (2) at (0.25, 0) {$\mathsf{f}$};
+		\node [style=tiny seq signal] (2) at (0.5, 0) {$\mathsf{f}$};
 		\node [style=bproduct] (3) at (-0.5, 0) {};
-		\node [style=dangling] (5) at (1.25, 0) {};
+		\node [style=dangling] (5) at (1.5, 0) {};
 		\node [style=dangling] (8) at (-1.25, 0) {};
-		\node [style=none] (9) at (0.5, 0) {};
+		\node [style=none] (9) at (0.75, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (3) to (8);

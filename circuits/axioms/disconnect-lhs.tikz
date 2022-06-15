@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=dangling] (2) at (0.75, 0) {};
-		\node [style=tiny seq sector] (8) at (-0.5, 0) {$\bullet$};
+		\node [style=tiny seq signal] (8) at (-0.5, 0) {$\bullet$};
 		\node [style=bproduct] (9) at (-0.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

@@ -3,7 +3,7 @@
 		\node [style=medium square comb box] (0) at (-0.75, 1) {$F$};
 		\node [style=port] (2) at (-1, 1) {};
 		\node [style=port] (3) at (-0.5, 1) {};
-		\node [style=tiny box] (4) at (-3.25, 1) {$\mathbf{v}$};
+		\node [style=tiny seq box] (4) at (-3.25, 1) {$\mathbf{v}$};
 		\node [style=bproduct] (5) at (3, 0) {};
 		\node [style=dangling] (7) at (-4, -1) {};
 		\node [style=none] (8) at (-2.25, 1) {};
