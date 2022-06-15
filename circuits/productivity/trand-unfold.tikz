@@ -15,8 +15,8 @@
 		\node [style=port] (14) at (2.5, -0.5) {};
 		\node [style=dangling] (15) at (3.75, -0.5) {};
 		\node [style=none] (19) at (0.25, 0.25) {};
-		\node [style=tiny box] (20) at (0, -0.75) {$\mathsf{t}$};
-		\node [style=tiny box] (21) at (-4.75, 0.5) {$\mathsf{t}$};
+		\node [style=tiny seq box] (20) at (0, -0.75) {$\mathsf{t}$};
+		\node [style=tiny seq box] (21) at (-4.75, 0.5) {$\mathsf{t}$};
 		\node [style=none] (23) at (1.5, -0.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

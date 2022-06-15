@@ -1,11 +1,10 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=dangling] (2) at (1.25, 0) {};
-		\node [style=delay] (8) at (0.25, 0) {};
-		\node [style=bproduct] (9) at (-0.75, 0) {};
+		\node [style=dangling] (2) at (0.75, 0) {};
+		\node [style=tiny seq sector] (8) at (-0.5, 0) {$\bullet$};
+		\node [style=bproduct] (9) at (-0.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire] (9) to (8);
-		\draw [style=wire] (8) to (2);
+		\draw [style=wire] (9) to (2);
 	\end{pgfonlayer}
 \end{tikzpicture}

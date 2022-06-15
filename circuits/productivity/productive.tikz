@@ -1,12 +1,19 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square trace box] (18) at (5.25, -1) {$G$};
-		\node [style=port] (20) at (5.5, -1) {};
-		\node [style=delay] (25) at (7, -1) {};
-		\node [style=tiny seq box] (33) at (5.25, 1) {$\mathbf{v}$};
-		\node [style=none] (36) at (7.25, 1) {};
-		\node [style=bproduct] (42) at (8.5, 0) {};
-		\node [style=dangling] (44) at (9.5, 0) {};
+		\node [style=medium square trace box] (18) at (-1.5, -0.75) {$G$};
+		\node [style=port] (20) at (-1.25, -0.75) {};
+		\node [style=delay] (25) at (0.5, -0.75) {};
+		\node [style=tiny seq box] (33) at (-1.5, 0.75) {$\mathbf{v}$};
+		\node [style=none] (36) at (0.75, 0.75) {};
+		\node [style=bproduct] (42) at (1.5, 0) {};
+		\node [style=dangling] (44) at (2.5, 0) {};
+		\node [style=none] (45) at (-0.25, 1) {};
+		\node [style=none] (46) at (-0.25, 0.5) {};
+		\node [style=small label] (47) at (-0.25, 1.25) {$n$};
+		\node [style=none] (48) at (-0.25, -0.5) {};
+		\node [style=none] (49) at (-0.25, -1) {};
+		\node [style=small label] (50) at (-0.25, -0.25) {$n$};
+		\node [style=none] (51) at (0.75, -0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (20) to (25);
@@ -14,6 +21,8 @@
 			 to (36.center)
 			 to [in=105, out=0] (42);
 		\draw [style=wire] (42) to (44);
-		\draw [style=wire, in=0, out=-105] (42) to (25);
+		\draw [style=wiredash] (45.center) to (46.center);
+		\draw [style=wiredash] (48.center) to (49.center);
+		\draw [style=wiredash, in=-105, out=0] (51.center) to (42);
 	\end{pgfonlayer}
 \end{tikzpicture}

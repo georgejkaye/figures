@@ -1,0 +1,40 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square comb box] (0) at (0, 0) {$F$};
+		\node [style=delay] (1) at (-2, 0.5) {};
+		\node [style=none] (2) at (1, 0.5) {};
+		\node [style=none] (3) at (-0.25, 0.5) {};
+		\node [style=tiny seq box] (4) at (-2, -0.5) {$\mathbf{v}$};
+		\node [style=none] (5) at (-0.25, -0.5) {};
+		\node [style=none] (6) at (-1.75, -0.5) {};
+		\node [style=none] (7) at (-2.5, 0.5) {};
+		\node [style=none] (8) at (1, 1.25) {};
+		\node [style=none] (9) at (-2.5, 1.25) {};
+		\node [style=none] (10) at (0.25, 0.5) {};
+		\node [style=none] (11) at (0.25, -0.5) {};
+		\node [style=dangling] (12) at (1.75, -0.5) {};
+		\node [style=none] (13) at (-1.25, 0.75) {};
+		\node [style=none] (14) at (-1.25, 0.25) {};
+		\node [style=small label] (15) at (-1.25, 1) {$x$};
+		\node [style=none] (16) at (-1.25, -0.75) {};
+		\node [style=none] (17) at (-1.25, -0.25) {};
+		\node [style=small label] (18) at (-1.25, -1) {$m$};
+		\node [style=none] (19) at (1.25, -0.75) {};
+		\node [style=none] (20) at (1.25, -0.25) {};
+		\node [style=small label] (21) at (1.25, -1) {$n$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire, in=0, out=-180] (3.center) to (1);
+		\draw [style=wire, in=180, out=0, looseness=1.50] (6.center) to (5.center);
+		\draw [style=wire] (1)
+			 to (7.center)
+			 to [bend right=270, looseness=1.50] (9.center)
+			 to (8.center)
+			 to [bend left=90, looseness=1.50] (2.center)
+			 to (10.center);
+		\draw [style=wire] (12) to (11.center);
+		\draw [style=wiredash] (13.center) to (14.center);
+		\draw [style=wiredash] (16.center) to (17.center);
+		\draw [style=wiredash] (19.center) to (20.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

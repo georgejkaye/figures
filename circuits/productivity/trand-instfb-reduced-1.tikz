@@ -3,7 +3,7 @@
 		\node [style=port] (1) at (0, 0.25) {};
 		\node [style=and] (11) at (0.25, 0) {};
 		\node [style=port] (13) at (0, -0.25) {};
-		\node [style=tiny box] (20) at (-1.75, -0.25) {$\mathsf{t}$};
+		\node [style=tiny seq box] (20) at (-1.75, -0.25) {$\mathsf{t}$};
 		\node [style=bproduct] (22) at (-1, 0.25) {};
 		\node [style=port] (23) at (0.5, 0) {};
 		\node [style=and] (24) at (3.25, -1.25) {};
@@ -11,7 +11,7 @@
 		\node [style=port] (26) at (3, -1.5) {};
 		\node [style=port] (27) at (3.5, -1.25) {};
 		\node [style=dangling] (28) at (4.5, -1.25) {};
-		\node [style=tiny box] (29) at (1.75, -1.5) {$\mathsf{t}$};
+		\node [style=tiny seq box] (29) at (1.75, -1.5) {$\mathsf{t}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire, in=180, out=0] (20) to (13);
