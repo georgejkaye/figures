@@ -27,7 +27,7 @@
 \tikzstyle{medium square seq box}=[rounded corners, draw=black, fill=trace, shape=rectangle, tikzit category=string diagram, minimum height={\mediumwidth}, minimum width={\mediumwidth}, line width={\stringwidth}, tikzit fill=seq]
 \tikzstyle{large box}=[rounded corners, fill=white, draw=black, shape=rectangle, tikzit category=string diagram, minimum height=15mm, minimum width=10mm, anchor=center, line width={\stringwidth}, tikzit fill=white]
 \tikzstyle{large square box}=[rounded corners, fill=white, draw=black, shape=rectangle, tikzit category=string diagram, minimum width=15mm, minimum height=15mm, line width={\stringwidth}, tikzit fill=white]
-\tikzstyle{large square comb box}=[rounded corners, fill=comb, draw=black, shape=rectangle, tikzit category=string diagram, minimum width=15mm, minimum height=15mm, line width={\stringwidth}, tikzit fill=comb]
+\tikzstyle{large square comb box}=[rounded corners, fill=comb, draw=black, shape=rectangle, tikzit category=string diagram, minimum width=12mm, minimum height=12mm, line width={\stringwidth}, tikzit fill=comb]
 \tikzstyle{huge box}=[rounded corners, fill=white, draw=black, shape=rectangle, minimum height=40mm, minimum width=15mm, anchor=center, tikzit category=string diagram, line width={\stringwidth}, tikzit fill=white]
 \tikzstyle{output-node}=[fill=white, draw=black, shape=circle, anchor=west, inner sep=0.5]
 \tikzstyle{state}=[fill=white, draw=none, shape=rectangle, minimum height=10mm, minimum width=10mm]
