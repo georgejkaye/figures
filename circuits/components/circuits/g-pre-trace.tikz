@@ -1,0 +1,35 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square comb box] (10) at (0, 0) {$G$};
+		\node [style=dangling] (15) at (-1.5, -0.5) {};
+		\node [style=dangling] (16) at (1.5, -0.5) {};
+		\node [style=none] (19) at (-1.25, -0.7) {};
+		\node [style=none] (20) at (-1.25, -0.3) {};
+		\node [style=none] (23) at (-0.25, 0.5) {};
+		\node [style=none] (24) at (-0.25, -0.5) {};
+		\node [style=none] (25) at (0.25, -0.5) {};
+		\node [style=none] (26) at (0.25, 0.5) {};
+		\node [style=dangling] (27) at (1.5, 0.5) {};
+		\node [style=dangling] (28) at (-1.5, 0.5) {};
+		\node [style=none] (29) at (-1.25, 0.3) {};
+		\node [style=none] (30) at (-1.25, 0.7) {};
+		\node [style=none] (31) at (1.25, -0.7) {};
+		\node [style=none] (32) at (1.25, -0.3) {};
+		\node [style=none] (33) at (1.25, 0.3) {};
+		\node [style=none] (34) at (1.25, 0.7) {};
+		\node [style=small label] (35) at (-1.25, 1) {$y$};
+		\node [style=small label] (36) at (-1.25, -1) {$m$};
+		\node [style=small label] (37) at (1.25, 1) {$y$};
+		\node [style=small label] (38) at (1.25, -1) {$n$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wiredash] (20.center) to (19.center);
+		\draw [style=wire] (15) to (24.center);
+		\draw [style=wire] (25.center) to (16);
+		\draw [style=wire] (26.center) to (27);
+		\draw [style=wire] (23.center) to (28);
+		\draw [style=wiredash] (30.center) to (29.center);
+		\draw [style=wiredash] (32.center) to (31.center);
+		\draw [style=wiredash] (34.center) to (33.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

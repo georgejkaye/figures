@@ -10,7 +10,7 @@
 		\node [style=none] (15) at (2.75, 2) {};
 		\node [style=none] (16) at (-2.75, 2) {};
 		\node [style=none] (17) at (-2.75, 0) {};
-		\node [style=tiny seq box] (19) at (-2.25, 1) {$\mathbf{v}$};
+		\node [style=tiny seq box] (19) at (-2.25, 1) {$\mathbf{s}$};
 		\node [style=port] (20) at (0, -1) {};
 		\node [style=dangling] (21) at (-3.75, -1) {};
 		\node [style=port] (22) at (0, -0.25) {};

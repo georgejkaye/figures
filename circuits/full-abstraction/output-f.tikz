@@ -1,0 +1,38 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1.25, 0.5) {};
+		\node [style=none] (13) at (-1.25, 0.5) {};
+		\node [style=none] (14) at (-1.25, 0.5) {};
+		\node [style=tiny seq signal] (15) at (-1.5, 0.5) {$\mathbf{s}$};
+		\node [style=medium square comb box] (16) at (0.25, 0) {$F$};
+		\node [style=port] (17) at (0, 0.5) {};
+		\node [style=port] (18) at (0, -0.5) {};
+		\node [style=dangling] (22) at (-2, -0.5) {};
+		\node [style=port] (23) at (0.5, 0.5) {};
+		\node [style=bproduct] (24) at (1.75, 0.5) {};
+		\node [style=port] (25) at (0.5, -0.5) {};
+		\node [style=dangling] (26) at (2, -0.5) {};
+		\node [style=none] (27) at (-0.75, 0.75) {};
+		\node [style=none] (28) at (-0.75, 0.25) {};
+		\node [style=small label] (29) at (-0.75, 1) {$x$};
+		\node [style=none] (30) at (-0.75, -0.75) {};
+		\node [style=none] (31) at (-0.75, -0.25) {};
+		\node [style=small label] (32) at (-0.75, -1) {$m$};
+		\node [style=none] (33) at (1.25, 0.75) {};
+		\node [style=none] (34) at (1.25, 0.25) {};
+		\node [style=small label] (35) at (1.25, 1) {$x$};
+		\node [style=none] (36) at (1.25, -0.75) {};
+		\node [style=none] (37) at (1.25, -0.25) {};
+		\node [style=small label] (38) at (1.25, -1) {$n$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (14.center) to (17);
+		\draw [style=wire] (24) to (23);
+		\draw [style=wire] (26) to (25);
+		\draw [style=wiredash] (27.center) to (28.center);
+		\draw [style=wiredash] (30.center) to (31.center);
+		\draw [style=wiredash] (33.center) to (34.center);
+		\draw [style=wiredash] (36.center) to (37.center);
+		\draw [style=wiredash] (18) to (22);
+	\end{pgfonlayer}
+\end{tikzpicture}
