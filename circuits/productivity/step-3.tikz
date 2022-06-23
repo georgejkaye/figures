@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=large square comb box] (0) at (-4.25, -0.25) {\scalebox{1.5}{$\tilde{F}$}};
+		\node [style=large square comb box] (0) at (-4.25, -0.25) {$\tilde{F}$};
 		\node [style=port] (2) at (-3.75, 0) {};
 		\node [style=port] (3) at (-3.75, -1.25) {};
 		\node [style=bproduct] (4) at (-1.75, -1.25) {};
@@ -10,7 +10,7 @@
 		\node [style=none] (15) at (-0.75, 2) {};
 		\node [style=none] (16) at (-7.25, 2) {};
 		\node [style=none] (17) at (-7.25, 0) {};
-		\node [style=large square comb box] (18) at (3.75, -1) {\scalebox{1.5}{$\tilde{F}$}};
+		\node [style=large square comb box] (18) at (3.75, -1) {$\tilde{F}$};
 		\node [style=port] (19) at (4.25, -0.75) {};
 		\node [style=port] (20) at (4.25, -2) {};
 		\node [style=delay] (21) at (1, -0.75) {};
