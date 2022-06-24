@@ -1,27 +1,27 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium comb box] (0) at (-1, 1.25) {$g$};
-		\node [style=port] (2) at (-1, 1.25) {};
-		\node [style=port] (3) at (-0.75, 1.25) {};
-		\node [style=tiny seq box] (4) at (-3.25, 1.25) {$\mathbf{v}$};
-		\node [style=bproduct] (5) at (1, 0) {};
-		\node [style=none] (8) at (-3, 1.25) {};
-		\node [style=port] (9) at (-3.25, 1.25) {};
-		\node [style=medium comb box] (11) at (-1, -1.25) {$g$};
-		\node [style=port] (12) at (-1.25, -1.25) {};
-		\node [style=port] (13) at (-0.75, -1.25) {};
-		\node [style=none] (16) at (-0.25, -1.25) {};
-		\node [style=none] (17) at (-0.25, 1.25) {};
-		\node [style=dangling] (18) at (2, 0) {};
-		\node [style=tiny seq box] (19) at (-3.25, -1.25) {$\mathbf{w}$};
-		\node [style=none] (20) at (-2.75, -1.25) {};
-		\node [style=port] (21) at (-3, -1.25) {};
-		\node [style=none] (22) at (-2.25, 1.5) {};
-		\node [style=none] (23) at (-2.25, 1) {};
-		\node [style=small label] (24) at (-2.25, 1.75) {$m$};
-		\node [style=none] (25) at (-2.25, -1) {};
-		\node [style=none] (26) at (-2.25, -1.5) {};
-		\node [style=small label] (27) at (-2.25, -0.75) {$m$};
+		\node [style=medium comb box] (0) at (0.25, 1) {$g$};
+		\node [style=port] (2) at (0.25, 1) {};
+		\node [style=port] (3) at (0.5, 1) {};
+		\node [style=tiny seq box] (4) at (-1.75, 1) {$\mathbf{v}$};
+		\node [style=bproduct] (5) at (2, 0) {};
+		\node [style=none] (8) at (-1.75, 1) {};
+		\node [style=port] (9) at (-1.75, 1) {};
+		\node [style=medium comb box] (11) at (0.25, -1) {$g$};
+		\node [style=port] (12) at (0, -1) {};
+		\node [style=port] (13) at (0.5, -1) {};
+		\node [style=none] (16) at (1, -1) {};
+		\node [style=none] (17) at (1, 1) {};
+		\node [style=dangling] (18) at (2.75, 0) {};
+		\node [style=tiny seq box] (19) at (-1.75, -1) {$\mathbf{w}$};
+		\node [style=none] (20) at (-1.5, -1) {};
+		\node [style=port] (21) at (-1.75, -1) {};
+		\node [style=none] (22) at (-1, 1.25) {};
+		\node [style=none] (23) at (-1, 0.75) {};
+		\node [style=small label] (24) at (-1, 1.5) {$m$};
+		\node [style=none] (25) at (-1, -0.75) {};
+		\node [style=none] (26) at (-1, -1.25) {};
+		\node [style=small label] (27) at (-1, -0.5) {$m$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (9) to (8.center);
