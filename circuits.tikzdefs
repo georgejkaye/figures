@@ -1,9 +1,7 @@
 % \usepackage{stmaryrd}
 \usetikzlibrary{circuits.logic.US, patterns, shapes}
-\definecolor{comb}{HTML}{aee4ff}
-\definecolor{delay}{HTML}{cc6677}
-\definecolor{trace}{HTML}{76C4B7}
-\definecolor{seq}{HTML}{76C4B7}
+\definecolor{comb}{HTML}{D3ECF8}
+\definecolor{seq}{HTML}{53A77B}
 \definecolor{white}{HTML}{f8f8f2}
 \newcommand{\thickness}{0.5mm}
 \newcommand{\stringwidth}{0.33mm}

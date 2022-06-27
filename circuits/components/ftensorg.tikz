@@ -1,10 +1,10 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=dangling] (15) at (-2, -1.25) {};
-		\node [style=medium square trace box] (17) at (0, -1.25) {$G$};
+		\node [style=medium square seq box] (17) at (0, -1.25) {$G$};
 		\node [style=dangling] (18) at (2, -1.25) {};
 		\node [style=dangling] (19) at (-2, 1.25) {};
-		\node [style=medium square trace box] (20) at (0, 1.25) {$F$};
+		\node [style=medium square seq box] (20) at (0, 1.25) {$F$};
 		\node [style=dangling] (21) at (2, 1.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

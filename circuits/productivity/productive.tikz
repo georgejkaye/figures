@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square trace box] (18) at (-1.5, -0.75) {$G$};
+		\node [style=medium square seq box] (18) at (-1.5, -0.75) {$G$};
 		\node [style=port] (20) at (-1.25, -0.75) {};
 		\node [style=delay] (25) at (0.5, -0.75) {};
 		\node [style=tiny seq box] (33) at (-1.5, 0.75) {$\mathbf{v}$};
