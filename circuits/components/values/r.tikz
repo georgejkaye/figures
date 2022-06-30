@@ -5,7 +5,7 @@
 		\node [style=tiny seq box] (15) at (-0.5, 0) {$\mathbf{r}$};
 		\node [style=none] (16) at (0.25, 0.25) {};
 		\node [style=none] (17) at (0.25, -0.25) {};
-		\node [style=small label] (18) at (0.25, 0.5) {$y$};
+		\node [style=small label] (18) at (0.25, 0.5) {$w$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (0.center) to (3);

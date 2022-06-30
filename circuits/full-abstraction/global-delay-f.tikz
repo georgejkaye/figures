@@ -11,13 +11,13 @@
 		\node [style=none] (16) at (-1.25, 1) {};
 		\node [style=none] (17) at (-1.25, 0.25) {};
 		\node [style=none] (18) at (-1, -0.25) {};
-		\node [style=tiny seq box] (19) at (-2.75, 0.25) {$\mathbf{v}$};
+		\node [style=tiny seq box] (19) at (-2.75, 0.25) {$\mathbf{s}$};
 		\node [style=port] (20) at (0.5, -0.75) {};
 		\node [style=dangling] (21) at (-3.25, -0.75) {};
 		\node [style=port] (22) at (0.5, -0.25) {};
 		\node [style=none] (23) at (2.25, 0.5) {};
 		\node [style=none] (24) at (2.25, 0) {};
-		\node [style=small label] (25) at (2.25, -0.25) {$r$};
+		\node [style=small label] (25) at (2.25, -0.25) {$x$};
 		\node [style=none] (26) at (-2, 0.5) {};
 		\node [style=none] (27) at (-2, 0) {};
 		\node [style=small label] (28) at (-2, 0.75) {$z$};
