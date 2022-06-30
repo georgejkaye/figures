@@ -2,8 +2,12 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=dangling] (0) at (-1, 0) {};
 		\node [style=dangling] (1) at (1, 0) {};
+		\node [style=none] (2) at (0, 0.25) {};
+		\node [style=none] (3) at (0, -0.25) {};
+		\node [style=small label] (4) at (0, 0.5) {$X$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (0) to (1);
+		\draw [style=wiredash] (3.center) to (2.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
