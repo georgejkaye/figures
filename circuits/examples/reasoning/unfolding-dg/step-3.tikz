@@ -1,0 +1,50 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square comb box] (10) at (0.75, -0.25) {$F$};
+		\node [style=none] (15) at (-1.75, 0.25) {};
+		\node [style=none] (23) at (0.5, 0.25) {};
+		\node [style=none] (24) at (0.5, -0.75) {};
+		\node [style=tiny seq box] (27) at (-1.25, -0.75) {$\mathbf{v}$};
+		\node [style=none] (31) at (3, 0.75) {};
+		\node [style=none] (35) at (1, 0.25) {};
+		\node [style=none] (36) at (1, -0.75) {};
+		\node [style=bproduct] (37) at (2.25, -0.75) {};
+		\node [style=none] (41) at (-1.75, 2) {};
+		\node [style=none] (42) at (4.25, 2) {};
+		\node [style=delay] (43) at (-1.25, 0.25) {};
+		\node [style=none] (44) at (-3, 3) {};
+		\node [style=none] (45) at (-3, -3) {};
+		\node [style=none] (46) at (12, -3) {};
+		\node [style=none] (47) at (12, 3) {};
+		\node [style=bproduct] (48) at (2.25, 0.25) {};
+		\node [style=none] (49) at (3, -0.5) {};
+		\node [style=none] (50) at (3, 0) {};
+		\node [style=none] (51) at (3, -1.25) {};
+		\node [style=bproduct] (52) at (3, 0) {};
+		\node [style=bproduct] (53) at (3, -0.5) {};
+		\node [style=dangling] (54) at (4.75, -1.25) {};
+		\node [style=none] (55) at (4.25, 0.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (48)
+			 to [bend left] (31.center)
+			 to (55.center)
+			 to [bend right=90, looseness=1.25] (42.center)
+			 to (41.center)
+			 to [bend right=90, looseness=1.25] (15.center)
+			 to (43);
+		\draw [style=wire] (48) to (35.center);
+		\draw [style=wire] (24.center) to (27);
+		\draw [style=wire] (36.center) to (37);
+		\draw [style=wire] (43) to (23.center);
+		\draw [style=wire] (53)
+			 to (49.center)
+			 to [in=-75, out=180] (48);
+		\draw [style=wire] (52)
+			 to (50.center)
+			 to [in=75, out=-180] (37);
+		\draw [style=wire] (54)
+			 to (51.center)
+			 to [in=300, out=180] (37);
+	\end{pgfonlayer}
+\end{tikzpicture}
