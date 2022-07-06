@@ -1,6 +1,6 @@
 \begin{tikzpicture}[circuit logic US]
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny seq box] (0) at (0, -0.75) {$w \land v$};
+		\node [style=tiny seq box] (0) at (0, -0.75) {$v \land w$};
 		\node [style=dangling] (15) at (1.5, -0.75) {};
 		\node [style=none] (23) at (1.75, 1) {};
 		\node [style=none] (24) at (-3, 1) {};

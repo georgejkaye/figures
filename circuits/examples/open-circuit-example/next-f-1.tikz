@@ -2,9 +2,9 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=and] (0) at (0, -0.75) {};
 		\node [style=none] (1) at (-0.25, -0.5) {};
-		\node [style=tiny seq box] (10) at (-1.75, -1.25) {$v$};
+		\node [style=tiny seq box] (10) at (-1.75, -1.25) {$w$};
 		\node [style=dangling] (15) at (1.5, -0.75) {};
-		\node [style=tiny seq box] (19) at (-1.75, -0.25) {$w$};
+		\node [style=tiny seq box] (19) at (-1.75, -0.25) {$v$};
 		\node [style=none] (20) at (-0.5, -1) {};
 		\node [style=none] (23) at (1.75, 1) {};
 		\node [style=none] (24) at (-3, 1) {};
