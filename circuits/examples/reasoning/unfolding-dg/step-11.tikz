@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square comb box] (10) at (2.25, 0.75) {$F$};
+		\node [style=medium square comb box] (10) at (2.25, 0.75) {$\tilde{F}$};
 		\node [style=none] (15) at (-1.75, 1.25) {};
 		\node [style=none] (23) at (2.5, 1.25) {};
 		\node [style=none] (24) at (2.5, 0.25) {};
@@ -18,7 +18,7 @@
 		\node [style=delay] (51) at (9.25, -1.5) {};
 		\node [style=bproduct] (52) at (3.75, 0.25) {};
 		\node [style=bproduct] (53) at (9.25, -0.5) {};
-		\node [style=medium square comb box] (55) at (7.75, -1) {$F$};
+		\node [style=medium square comb box] (55) at (7.75, -1) {$\tilde{F}$};
 		\node [style=none] (56) at (8, -0.5) {};
 		\node [style=none] (57) at (8, -1.5) {};
 		\node [style=none] (58) at (7, -0.5) {};
@@ -29,7 +29,7 @@
 		\node [style=bproduct] (63) at (6, -1.5) {};
 		\node [style=none] (65) at (5.5, -0.5) {};
 		\node [style=none] (70) at (7, -1.5) {};
-		\node [style=medium square comb box] (73) at (7.75, 1.25) {$F$};
+		\node [style=medium square comb box] (73) at (7.75, 1.25) {$\tilde{F}$};
 		\node [style=none] (74) at (8, 1.75) {};
 		\node [style=none] (75) at (8, 0.75) {};
 		\node [style=none] (76) at (7, 1.75) {};

@@ -1,0 +1,27 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=and] (11) at (0.5, 0.75) {};
+		\node [style=port] (12) at (0.25, 1) {};
+		\node [style=port] (13) at (0.25, 0.5) {};
+		\node [style=tiny seq box] (20) at (-1.25, 0.5) {$\mathsf{t}$};
+		\node [style=port] (23) at (0.75, 0.75) {};
+		\node [style=and] (24) at (3.25, -0.25) {};
+		\node [style=port] (25) at (3, 0) {};
+		\node [style=port] (26) at (3, -0.5) {};
+		\node [style=port] (27) at (3.5, -0.25) {};
+		\node [style=none] (28) at (4.5, -0.25) {};
+		\node [style=tiny seq box] (29) at (1.5, -0.5) {$\mathsf{t}$};
+		\node [style=none] (30) at (-5, 3) {};
+		\node [style=none] (31) at (-5, -1) {};
+		\node [style=none] (32) at (5, -1) {};
+		\node [style=none] (33) at (5, 3) {};
+		\node [style=bproduct] (34) at (-1.25, 1.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (20) to (13);
+		\draw [style=wire] (27) to (28.center);
+		\draw [style=wire] (29) to (26);
+		\draw [style=wire, in=0, out=180, looseness=1.25] (25) to (23);
+		\draw [style=wire, in=-180, out=0] (34) to (12);
+	\end{pgfonlayer}
+\end{tikzpicture}

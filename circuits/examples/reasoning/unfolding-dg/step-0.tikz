@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square seq box] (10) at (0.75, -0.25) {$F$};
+		\node [style=none] (36) at (1, -0.25) {};
+		\node [style=dangling] (37) at (2.75, -0.25) {};
+		\node [style=none] (44) at (-3, 3) {};
+		\node [style=none] (45) at (-3, -3) {};
+		\node [style=none] (46) at (12, -3) {};
+		\node [style=none] (47) at (12, 3) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (36.center) to (37);
+	\end{pgfonlayer}
+\end{tikzpicture}
