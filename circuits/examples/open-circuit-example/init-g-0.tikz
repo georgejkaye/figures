@@ -1,0 +1,35 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=or] (0) at (0, 0.25) {};
+		\node [style=none] (1) at (-0.5, 0.5) {};
+		\node [style=not] (2) at (-1.75, -0.25) {};
+		\node [style=tiny seq box] (10) at (-3.25, -0.25) {$v$};
+		\node [style=none] (20) at (-0.5, 0) {};
+		\node [style=not] (21) at (1.5, 0.25) {};
+		\node [style=none] (23) at (3.75, 2) {};
+		\node [style=none] (24) at (-3.75, 2) {};
+		\node [style=none] (25) at (-3.75, -1.25) {};
+		\node [style=none] (26) at (3.75, -1.25) {};
+		\node [style=not] (27) at (-1.75, 0.75) {};
+		\node [style=tiny seq box] (28) at (-3.25, 1.5) {$\mathsf{t}$};
+		\node [style=bproduct] (29) at (-2.5, 0.75) {};
+		\node [style=bproduct] (30) at (-3.25, 0.75) {};
+		\node [style=bproduct] (31) at (2.75, 0.25) {};
+		\node [style=dangling] (32) at (3.5, 0.75) {};
+		\node [style=dangling] (33) at (3.5, -0.25) {};
+		\node [style=west] (34) at (3.75, 0.75) {next state};
+		\node [style=west] (35) at (3.75, -0.25) {output};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire, in=0, out=-180] (2) to (10);
+		\draw [style=wire, in=180, out=0] (2) to (20.center);
+		\draw [style=wire] (0) to (21);
+		\draw [style=wire, in=180, out=0] (27) to (1.center);
+		\draw [style=wire, in=90, out=0] (28) to (29);
+		\draw [style=wire] (29) to (30);
+		\draw [style=wire] (29) to (27);
+		\draw [style=wire, in=285, out=-180] (33) to (31);
+		\draw [style=wire, in=-180, out=75] (31) to (32);
+		\draw [style=wire] (21) to (31);
+	\end{pgfonlayer}
+\end{tikzpicture}

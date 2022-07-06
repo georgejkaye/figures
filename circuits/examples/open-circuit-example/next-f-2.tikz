@@ -1,0 +1,13 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny seq box] (0) at (0, -0.75) {$w \land v$};
+		\node [style=dangling] (15) at (1.5, -0.75) {};
+		\node [style=none] (23) at (1.75, 1) {};
+		\node [style=none] (24) at (-3, 1) {};
+		\node [style=none] (25) at (-3, -2) {};
+		\node [style=none] (26) at (1.75, -2) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (0) to (15);
+	\end{pgfonlayer}
+\end{tikzpicture}

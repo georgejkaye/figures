@@ -41,11 +41,12 @@
 \tikzstyle{commuting label}=[fill=none, draw=none, shape=circle, scale=0.5]
 \tikzstyle{and}=[fill=white, draw=black, shape=and gate, line width={\stringwidth}, and gate, scale=1.75, tikzit category=circuits]
 \tikzstyle{or}=[fill=white, draw=black, or gate, scale=1.75, line width={\stringwidth}, tikzit category=circuits]
-\tikzstyle{not}=[fill=white, draw=black, not gate, scale=1.75, line width={\stringwidth}, tikzit category=circuits]
+\tikzstyle{not}=[fill=white, draw=black, not gate, scale=1, line width={\stringwidth}, tikzit category=circuits]
 \tikzstyle{nor}=[fill=white, draw=black, nor gate, scale=1.75, line width={\stringwidth}, tikzit category=circuits]
 \tikzstyle{nand}=[fill=white, draw=black, nand gate, scale=1.75, line width={\stringwidth}, tikzit category=circuits]
 \tikzstyle{xor}=[fill=white, draw=black, xor gate, scale=1.75, line width={\stringwidth}, tikzit category=circuits]
 \tikzstyle{xnor}=[fill=white, draw=black, xnor gate, scale=1.75, line width={\stringwidth}, tikzit category=circuits]
+\tikzstyle{west}=[fill=none, draw=none, shape=circle, anchor=west]
 
 % Edge styles
 \tikzstyle{interface}=[-, fill={rgb,255: red,238; green,238; blue,255}, dashed, draw={rgb,255: red,170; green,170; blue,225}, ultra thick]

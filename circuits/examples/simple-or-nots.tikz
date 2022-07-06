@@ -1,0 +1,40 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=or] (0) at (0.25, -0.75) {};
+		\node [style=none] (1) at (-0.25, -0.5) {};
+		\node [style=not] (2) at (-1.75, -1.25) {};
+		\node [style=delay] (9) at (-4, -0.25) {};
+		\node [style=dangling] (10) at (-5, -1.25) {};
+		\node [style=dangling] (11) at (4, -1.25) {};
+		\node [style=bproduct] (12) at (2.75, -0.75) {};
+		\node [style=none] (13) at (3.5, 1.5) {};
+		\node [style=none] (14) at (-4.5, 1.5) {};
+		\node [style=none] (15) at (3.5, -0.25) {};
+		\node [style=none] (16) at (-4.5, -0.25) {};
+		\node [style=none] (17) at (3.5, -1.25) {};
+		\node [style=tiny seq box] (18) at (-4, 0.75) {$\mathsf{t}$};
+		\node [style=bproduct] (19) at (-2.75, -0.25) {};
+		\node [style=none] (20) at (-0.25, -1) {};
+		\node [style=not] (21) at (1.75, -0.75) {};
+		\node [style=not] (22) at (-1.75, -0.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (9)
+			 to (16.center)
+			 to [bend left=90, looseness=1.25] (14.center)
+			 to (13.center)
+			 to [bend left=90, looseness=1.50] (15.center)
+			 to [in=60, out=180] (12);
+		\draw [style=wire, in=0, out=-180] (2) to (10);
+		\draw [style=wire] (12)
+			 to [bend right] (17.center)
+			 to (11);
+		\draw [style=wire, in=105, out=0] (18) to (19);
+		\draw [style=wire, in=180, out=0] (2) to (20.center);
+		\draw [style=wire] (0) to (21);
+		\draw [style=wire] (21) to (12);
+		\draw [style=wire, in=0, out=180] (1.center) to (22);
+		\draw [style=wire] (19) to (9);
+		\draw [style=wire] (19) to (22);
+	\end{pgfonlayer}
+\end{tikzpicture}
