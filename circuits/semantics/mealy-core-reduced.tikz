@@ -1,0 +1,24 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny seq box] (11) at (-0.25, 0.75) {$\mealytransition{\mathbf{s}}{\mathbf{v}}$};
+		\node [style=none] (15) at (0, 0.75) {};
+		\node [style=dangling] (16) at (1, 0.75) {};
+		\node [style=none] (17) at (0.75, 0.75) {};
+		\node [style=small label] (18) at (0.75, 1.25) {$r$};
+		\node [style=none] (19) at (0.75, 1) {};
+		\node [style=none] (20) at (0.75, 0.5) {};
+		\node [style=tiny seq box] (21) at (-0.25, -0.75) {$\mealyoutput{\mathbf{s}}{\mathbf{v}}$};
+		\node [style=none] (22) at (0, -0.75) {};
+		\node [style=dangling] (23) at (1, -0.75) {};
+		\node [style=none] (24) at (0.75, -0.75) {};
+		\node [style=small label] (25) at (0.75, -0.25) {$r$};
+		\node [style=none] (26) at (0.75, -0.5) {};
+		\node [style=none] (27) at (0.75, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (15.center) to (16);
+		\draw [style=wiredash] (20.center) to (19.center);
+		\draw [style=wire] (22.center) to (23);
+		\draw [style=wiredash] (27.center) to (26.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
