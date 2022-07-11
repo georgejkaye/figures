@@ -11,7 +11,7 @@
 		\node [style=none] (22) at (0, -0.75) {};
 		\node [style=dangling] (23) at (1, -0.75) {};
 		\node [style=none] (24) at (0.75, -0.75) {};
-		\node [style=small label] (25) at (0.75, -0.25) {$r$};
+		\node [style=small label] (25) at (0.75, -0.25) {$n$};
 		\node [style=none] (26) at (0.75, -0.5) {};
 		\node [style=none] (27) at (0.75, -1) {};
 	\end{pgfonlayer}
