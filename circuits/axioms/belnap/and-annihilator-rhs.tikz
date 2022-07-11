@@ -1,13 +1,28 @@
 \begin{tikzpicture}[circuit logic US]
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny seq signal] (2) at (0.5, 0) {$\mathsf{f}$};
 		\node [style=bproduct] (3) at (-0.5, 0) {};
-		\node [style=dangling] (5) at (1.5, 0) {};
 		\node [style=dangling] (8) at (-1.25, 0) {};
-		\node [style=none] (9) at (0.75, 0) {};
+		\node [style=tiny seq signal] (10) at (1.5, -0.25) {$\mathsf{f}$};
+		\node [style=none] (11) at (3.25, -0.75) {};
+		\node [style=dangling] (12) at (4.5, 0) {};
+		\node [style=none] (13) at (0.5, -0.25) {};
+		\node [style=bproduct] (14) at (2.5, -0.25) {};
+		\node [style=none] (15) at (3, 0.25) {};
+		\node [style=none] (16) at (3, 0.75) {};
+		\node [style=none] (17) at (0.5, 0.75) {};
+		\node [style=none] (18) at (1.5, -0.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (3) to (8);
-		\draw [style=wire] (5) to (9.center);
+		\draw [style=wire] (12)
+			 to [in=0, out=180, looseness=1.25] (11.center)
+			 to [bend left] (14);
+		\draw [style=wire] (14)
+			 to [in=-180, out=75] (15.center)
+			 to [bend right=90, looseness=1.50] (16.center)
+			 to (17.center)
+			 to [bend left=270, looseness=1.25] (13.center)
+			 to (18.center);
+		\draw [style=wire] (10) to (14);
 	\end{pgfonlayer}
 \end{tikzpicture}
