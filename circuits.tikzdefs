@@ -8,3 +8,4 @@
 \newcommand{\mediumwidth}{7.5mm}
 \newcommand{\smallwidth}{6mm}
 \newcommand{\tinywidth}{4mm}
+\newcommand{\boxsize}{\large}
