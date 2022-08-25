@@ -1,0 +1,56 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-2.75, 1.5) {};
+		\node [style=none] (4) at (1.75, 1.5) {};
+		\node [style=none] (15) at (-7, 1) {};
+		\node [style=none] (16) at (-4.75, 1) {};
+		\node [style=none] (42) at (-2.75, -1.5) {};
+		\node [style=none] (43) at (1.75, -1.5) {};
+		\node [style=vertex] (48) at (-2, 0) {};
+		\node [style=none] (50) at (-4.75, -1.25) {};
+		\node [style=none] (51) at (-7, -1.25) {};
+		\node [style=vertex] (52) at (-6.25, -0.25) {};
+		\node [style=none] (55) at (-4.5, 0) {};
+		\node [style=none] (56) at (-3, 0) {};
+		\node [style=edge] (72) at (-0.5, 0) {$e$};
+		\node [style=vertex] (73) at (1, 0) {};
+		\node [style=vertex] (74) at (-5.5, -0.25) {};
+		\node [style=small label] (75) at (-6.25, 0.25) {$0$};
+		\node [style=small label] (76) at (-5.5, 0.25) {$1$};
+		\node [style=small label] (77) at (-2, 0.5) {$0$};
+		\node [style=small label] (78) at (1, 0.5) {$1$};
+		\node [style=none] (79) at (3.75, 2.25) {};
+		\node [style=none] (80) at (8.25, 2.25) {};
+		\node [style=none] (81) at (3.75, -2.25) {};
+		\node [style=none] (82) at (8.25, -2.25) {};
+		\node [style=none] (84) at (2, 0) {};
+		\node [style=none] (85) at (3.5, 0) {};
+		\node [style=edge] (86) at (6, -0.5) {$e$};
+		\node [style=vertex] (87) at (6, 1.25) {};
+		\node [style=small label] (88) at (6, 1.75) {$0,1$};
+		\node [style=none] (89) at (2.75, 0.25) {$m$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (43.center)
+			 to (42.center)
+			 to (0.center)
+			 to (4.center)
+			 to cycle;
+		\draw [style=interface] (50.center)
+			 to (51.center)
+			 to (15.center)
+			 to (16.center)
+			 to cycle;
+		\draw [style=commute] (55.center) to (56.center);
+		\draw [style=tentacle] (48) to (72);
+		\draw [style=tentacle] (72) to (73);
+		\draw [style=graph] (82.center)
+			 to (81.center)
+			 to (79.center)
+			 to (80.center)
+			 to cycle;
+		\draw [style=commute] (84.center) to (85.center);
+		\draw [style=tentacle, in=360, out=0, looseness=2.50] (86) to (87);
+		\draw [style=tentacle, in=-180, out=-180, looseness=2.25] (87) to (86);
+	\end{pgfonlayer}
+\end{tikzpicture}
