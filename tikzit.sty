@@ -41,8 +41,9 @@
 % fix strange self-loops, which are PGF/TikZ default
 \tikzstyle{every loop}=[]
 
-% some custom macros 
+% some custom macros
 \newcommand{\iltikzfig}[1]{\raisebox{0.1em}{\scalebox{0.5}{\tikzfig{#1}}}}
+\newcommand{\dsptikzfig}[1]{\raisebox{0.1em}{\scalebox{0.6}{\tikzfig{#1}}}}
 \newcommand{\sbtikzfig}[2]{\scalebox{#2}{\tikzfig{#1}}}
 
 \newcommand{\stringtikz}[1]{\iltikzfig{strings/#1}}
