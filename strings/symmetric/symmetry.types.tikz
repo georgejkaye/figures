@@ -20,7 +20,7 @@
 		\node [style=label] (22) at (1.75, 0.5) {$Y$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=tile comb] (12.center)
+		\draw [style=tile white] (12.center)
 			 to (6.center)
 			 to (7.center)
 			 to (8.center)

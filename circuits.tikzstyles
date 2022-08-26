@@ -54,7 +54,7 @@
 \tikzstyle{graph}=[-, fill={rgb,255: red,238; green,238; blue,238}, draw={rgb,255: red,191; green,191; blue,191}, dashed, ultra thick, anchor=center]
 \tikzstyle{tentacle}=[-, very thick]
 \tikzstyle{wire}=[-, tikzit category=string diagram, line width={\stringwidth}]
-\tikzstyle{empty}=[-, dashed]
+\tikzstyle{empty}=[-, densely dashed, rounded corners, dash pattern=on 0pt off 1.25pt on 1.25pt, line width={\stringwidth}]
 \tikzstyle{transition}=[->]
 \tikzstyle{output}=[->, decorate, decoration=zigzag]
 \tikzstyle{gate}=[-, fill=white]
