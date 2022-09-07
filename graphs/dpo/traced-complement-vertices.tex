@@ -1,0 +1,11 @@
+\documentclass{standalone}
+
+\usepackage{tikz-cd}
+\input{macros/graphs}
+
+\begin{document}
+    \begin{tikzcd}
+        l + x             \arrow{d}{\vertices{f}} & \arrow{l}{\vertices{a}} i + j \arrow{d}{\vertices{c}} \\
+        l^\prime + x + y                          & \arrow{l}{\vertices{g}} \pushoutcomplement{l} + y
+    \end{tikzcd}
+\end{document}
