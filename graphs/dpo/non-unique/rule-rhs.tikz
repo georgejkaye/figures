@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dangling] (0) at (-1.5, 0.5) {};
+		\node [style=small square box] (1) at (0, 0.75) {$e_1$};
+		\node [style=small square box] (2) at (0, -0.75) {$e_2$};
+		\node [style=dangling] (3) at (-1.5, -0.5) {};
+		\node [style=dangling] (4) at (1.5, 0.5) {};
+		\node [style=dangling] (5) at (1.5, -0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire, in=-180, out=0] (0) to (1);
+		\draw [style=wire, in=-180, out=0] (3) to (2);
+		\draw [style=wire, in=0, out=180] (4) to (1);
+		\draw [style=wire, in=0, out=180] (5) to (2);
+	\end{pgfonlayer}
+\end{tikzpicture}
