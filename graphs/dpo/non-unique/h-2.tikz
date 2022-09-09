@@ -11,7 +11,7 @@
 		\node [style=vertex] (9) at (0, 0) {};
 		\node [style=small label] (10) at (-3, 0.5) {$2$};
 		\node [style=edge] (12) at (-1.5, 0) {$e_2$};
-		\node [style=edge] (13) at (1.5, 0) {$e_2$};
+		\node [style=edge] (13) at (1.5, 0) {$e_1$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=graph] (1.center)

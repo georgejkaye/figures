@@ -1,0 +1,34 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+\usepackage{tikzit}
+\input{figures/circuits.tikzstyles}
+\input{figures/circuits.tikzdefs}
+
+\begin{document}
+    \begin{tikzcd}[column sep = small]
+        \dsptikzfig{graphs/dpo/non-unique/l}
+        \arrow{d}
+        &
+        \arrow{l}
+        \dsptikzfig{graphs/dpo/non-unique/k}
+        \arrow{d}
+        \arrow{r}
+        &
+        \dsptikzfig{graphs/dpo/non-unique/r}
+        \arrow{d}
+        \\
+        \dsptikzfig{graphs/dpo/non-unique/g}
+        &
+        \arrow{l}
+        \dsptikzfig{graphs/dpo/non-unique/c-2}
+        \arrow{r}
+        &
+        \dsptikzfig{graphs/dpo/non-unique/h-2}
+        \\
+        &
+        \arrow{ul}
+        \dsptikzfig{graphs/dpo/non-unique/j-2}
+        \arrow{u}
+        \arrow{ur}
+    \end{tikzcd}
+\end{document}

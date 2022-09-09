@@ -1,0 +1,14 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+\usepackage{tikzit}
+\input{figures/circuits.tikzstyles}
+\input{figures/circuits.tikzdefs}
+
+\begin{document}
+    \begin{tikzcd}[column sep = small]
+        \dsptikzfig{graphs/dpo/non-unique/g-unlabelled}
+        &
+        \arrow{l}
+        \dsptikzfig{graphs/dpo/non-unique/j-unlabelled}
+    \end{tikzcd}
+\end{document}

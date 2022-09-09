@@ -1,0 +1,17 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+\usepackage{tikzit}
+\input{figures/circuits.tikzstyles}
+\input{figures/circuits.tikzdefs}
+
+\begin{document}
+    \begin{tikzcd}[column sep = small]
+        \dsptikzfig{graphs/dpo/non-unique/l}
+        &
+        \arrow{l}
+        \dsptikzfig{graphs/dpo/non-unique/k}
+        \arrow{r}
+        &
+        \dsptikzfig{graphs/dpo/non-unique/r}
+    \end{tikzcd}
+\end{document}
