@@ -1,0 +1,15 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+\usepackage{amsmath}
+\input{macros/letters}
+\input{macros/category}
+
+\begin{document}
+    \begin{tikzcd}[row sep = small, column sep = small]
+        &&j \arrow{dr} && \\
+        & j+j \arrow[swap]{dr}{[c_2 \seq g^\prime, a_2 \seq f^\prime]} \arrow{ur} & (\dagger) & H^\prime \\
+        && H \arrow{ur}{f^{\prime\prime}} && \\
+        & C \arrow{ur}{g^\prime} & (\ddagger) & L + n \arrow{ul}{f^\prime} & \\
+        j+m \arrow{ur}{[c_2,d_1]} & & i+n \arrow{ul}{[c_1,d_2]}\arrow[swap]{ur}{[a_1,\id]} & & j+n \arrow[swap]{ul}{[a_2,\id]}
+    \end{tikzcd}
+\end{document}

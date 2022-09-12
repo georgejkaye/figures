@@ -1,0 +1,13 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+\usepackage{amsmath}
+\input{macros/letters}
+\input{macros/category}
+
+\begin{document}
+    \begin{tikzcd}[row sep = small]
+        & & G & & \\
+        & L \arrow{ur}{f} & (\dagger\dagger) & C \arrow[swap]{ul}{g} & \\
+        0 \arrow{ur}{!} & & i+j \arrow{ul}{[a_1,a_2]}\arrow[swap]{ur}{[c_1,c_2]} & & m+n \arrow[swap]{ul}{[d_1,d_2]}
+    \end{tikzcd}
+\end{document}
