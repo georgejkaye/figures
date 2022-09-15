@@ -1,0 +1,13 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+\usepackage{amsmath}
+\input{macros/letters}
+\input{macros/category}
+
+\begin{document}
+    \begin{tikzcd}[row sep = small, column sep = small]
+        L \arrow{d} & i + j \arrow{l}\arrow{r}\arrow{d} & R \arrow{d} \\
+        G & C \arrow{l}\arrow{r} & H \\
+        & m + n \arrow{ul}\arrow{u}\arrow{ur}
+    \end{tikzcd}
+\end{document}
