@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box] (0) at (0, 0) {$\tilde{L}$};
+		\node [style=port] (6) at (0.25, 0) {};
+		\node [style=dangling] (21) at (1.5, 0.25) {};
+		\node [style=port] (22) at (0.25, 0.25) {};
+		\node [style=none] (23) at (1.25, 0.1) {};
+		\node [style=none] (24) at (1.25, 0.4) {};
+		\node [style=small label] (25) at (1.25, 0.75) {$i$};
+		\node [style=dangling] (26) at (1.5, -0.25) {};
+		\node [style=small label] (27) at (1.25, -0.75) {$j$};
+		\node [style=port] (28) at (0.25, -0.25) {};
+		\node [style=none] (29) at (1.25, -0.4) {};
+		\node [style=none] (30) at (1.25, -0.1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (21) to (22);
+		\draw [style=wiredash] (23.center) to (24.center);
+		\draw [style=wire] (28) to (26);
+		\draw [style=wiredash] (29.center) to (30.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
