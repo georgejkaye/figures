@@ -1,0 +1,10 @@
+\documentclass{standalone}
+\usepackage{ tikz-cd }
+
+\begin{document}
+    \begin{tikzcd}[row sep = small, column sep = small]
+        & & A +_{f,g} B & & \\
+        & A \arrow{ur} & & B \arrow{ul} & \\
+        X \arrow{ur} & & Y \arrow[]{ul}{f}\arrow[swap]{ur}{g} & & Z \arrow{ul}
+    \end{tikzcd}
+\end{document}
