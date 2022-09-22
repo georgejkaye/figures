@@ -9,3 +9,4 @@
 \newcommand{\smallwidth}{6mm}
 \newcommand{\tinywidth}{4mm}
 \newcommand{\boxsize}{\LARGE}
+\newcommand{\corners}{}
