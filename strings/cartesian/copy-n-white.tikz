@@ -3,27 +3,21 @@
 		\node [style=bproduct] (0) at (0, 0) {};
 		\node [style=none] (1) at (0.75, 0.5) {};
 		\node [style=none] (2) at (0.75, -0.5) {};
-		\node [style=dangling] (3) at (-1.5, 0) {};
+		\node [style=dangling] (3) at (-1.25, 0) {};
 		\node [style=none] (5) at (-0.75, 0.75) {};
 		\node [style=none] (6) at (-0.75, -0.75) {};
 		\node [style=none] (7) at (0.75, -0.75) {};
 		\node [style=none] (8) at (0.75, 0.75) {};
-		\node [style=dangling] (9) at (1.5, 0.5) {};
-		\node [style=dangling] (10) at (1.5, -0.5) {};
+		\node [style=dangling] (9) at (1.25, 0.5) {};
+		\node [style=dangling] (10) at (1.25, -0.5) {};
 		\node [style=none] (11) at (-0.75, 0) {};
 		\node [style=none] (12) at (-0.75, 0) {};
-		\node [style=none] (17) at (-1.25, 0.25) {};
-		\node [style=none] (18) at (-1.25, -0.25) {};
-		\node [style=none] (30) at (1.25, 0.75) {};
-		\node [style=none] (31) at (1.25, 0.25) {};
-		\node [style=none] (32) at (1.25, -0.25) {};
-		\node [style=none] (33) at (1.25, -0.75) {};
-		\node [style=small label] (34) at (-1.25, 0.5) {$n$};
-		\node [style=small label] (35) at (1.25, 1) {$n$};
-		\node [style=small label] (36) at (1.25, -1) {$n$};
+		\node [style=small label] (13) at (-1.5, 0) {$n$};
+		\node [style=small label] (14) at (1.5, 0.5) {$n$};
+		\node [style=small label] (15) at (1.5, -0.5) {$n$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=tile comb] (12.center)
+		\draw [style=tile white] (12.center)
 			 to (6.center)
 			 to (7.center)
 			 to (8.center)
@@ -36,8 +30,5 @@
 		\draw [style=wire] (0)
 			 to [in=180, out=-75] (2.center)
 			 to (10);
-		\draw [style=wiredash] (17.center) to (18.center);
-		\draw [style=wiredash] (31.center) to (30.center);
-		\draw [style=wiredash] (32.center) to (33.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

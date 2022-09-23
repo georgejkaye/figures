@@ -1,14 +1,13 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=dangling] (9) at (-1.25, 0) {};
+		\node [style=dangling] (9) at (-1.5, 0) {};
 		\node [style=dangling] (10) at (1, 0) {};
 		\node [style=medium comb box] (11) at (0, 0) {$g$};
 		\node [style=none] (12) at (-0.5, 0) {};
 		\node [style=none] (15) at (0.5, 0) {};
-		\node [style=none] (18) at (-1, -0.25) {};
-		\node [style=none] (19) at (-1, 0.25) {};
-		\node [style=none] (21) at (-1, -0.5) {};
-		\node [style=small label] (22) at (-1, 0.5) {$m$};
+		\node [style=none] (18) at (-1.25, -0.25) {};
+		\node [style=none] (19) at (-1.25, 0.25) {};
+		\node [style=small label] (22) at (-1.25, 0.5) {$m$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire, in=180, out=0] (9) to (12.center);

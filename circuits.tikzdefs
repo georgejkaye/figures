@@ -3,10 +3,12 @@
 \definecolor{comb}{HTML}{D3ECF8}
 \definecolor{seq}{HTML}{66B38A}
 \definecolor{white}{HTML}{f8f8f2}
+\definecolor{unit}{HTML}{b9b9b9}
 \newcommand{\thickness}{0.5mm}
 \newcommand{\stringwidth}{0.4mm}
 \newcommand{\mediumwidth}{7.5mm}
 \newcommand{\smallwidth}{6mm}
-\newcommand{\tinywidth}{4mm}
-\newcommand{\boxsize}{\LARGE}
+\newcommand{\tinywidth}{5mm}
+\newcommand{\boxsize}{\Large}
 \newcommand{\corners}{}
+\newcommand{\innersep}{1mm}
