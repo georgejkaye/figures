@@ -6,14 +6,14 @@
 		\node [style=port] (3) at (-2.25, 0.75) {};
 		\node [style=bproduct] (4) at (-1, 0.75) {};
 		\node [style=none] (5) at (-0.25, 1.25) {};
-		\node [style=none] (6) at (-0.25, 2.25) {};
-		\node [style=none] (7) at (-3.5, 2.25) {};
+		\node [style=none] (6) at (-0.25, 1.75) {};
+		\node [style=none] (7) at (-3.5, 1.75) {};
 		\node [style=none] (8) at (-3.5, 1) {};
 		\node [style=and] (11) at (2.25, -0.5) {};
 		\node [style=port] (12) at (2, -0.25) {};
 		\node [style=port] (13) at (2, -0.75) {};
 		\node [style=port] (14) at (2.5, -0.5) {};
-		\node [style=dangling] (15) at (3.75, -0.5) {};
+		\node [style=dangling] (15) at (3.5, -0.5) {};
 		\node [style=none] (19) at (0.25, 0.25) {};
 		\node [style=tiny seq box] (20) at (0, -0.75) {$\mathsf{t}$};
 		\node [style=tiny seq box] (21) at (-4.75, 0.5) {$\mathsf{t}$};

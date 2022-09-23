@@ -1,36 +1,22 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square comb box] (0) at (0.5, -0.5) {$F$};
-		\node [style=none] (1) at (-3.25, -1) {};
-		\node [style=medium square comb box] (2) at (-3.75, 0.75) {$F^k$};
-		\node [style=bport] (3) at (0.25, 0) {};
-		\node [style=bport] (4) at (0.25, -1) {};
-		\node [style=dangling] (5) at (2, 0) {};
-		\node [style=bport] (6) at (0.75, 0) {};
-		\node [style=bport] (7) at (0.75, -1) {};
-		\node [style=dangling] (8) at (2, -1) {};
-		\node [style=bproduct] (9) at (-6, 0) {};
-		\node [style=bport] (10) at (-4, 0.75) {};
-		\node [style=dangling] (11) at (-6.75, 0) {};
-		\node [style=bport] (12) at (-3.5, 1.25) {};
-		\node [style=bport] (13) at (-3.5, 0.25) {};
-		\node [style=bproduct] (15) at (-2.5, 0.25) {};
-		\node [style=none] (16) at (-0.75, 0.25) {};
-		\node [style=none] (17) at (-0.75, -0.25) {};
-		\node [style=small label] (18) at (-0.75, 0.5) {$x$};
-		\node [style=none] (19) at (-0.75, -1.25) {};
-		\node [style=none] (20) at (-0.75, -0.75) {};
-		\node [style=small label] (21) at (-0.75, -1.5) {$m$};
-		\node [style=none] (22) at (1.75, 0.25) {};
-		\node [style=none] (23) at (1.75, -0.25) {};
-		\node [style=small label] (24) at (1.75, 0.5) {$x$};
-		\node [style=none] (25) at (1.75, -1.25) {};
-		\node [style=none] (26) at (1.75, -0.75) {};
-		\node [style=small label] (27) at (1.75, -1.5) {$n$};
-		\node [style=none] (28) at (-0.75, 0) {};
-		\node [style=none] (29) at (-5, 0.5) {};
-		\node [style=none] (30) at (-5, 1) {};
-		\node [style=small label] (31) at (-5, 0.25) {$m$};
+		\node [style=medium square comb box] (0) at (3, -0.5) {$F$};
+		\node [style=none] (1) at (-0.25, -1) {};
+		\node [style=medium square comb box] (2) at (-0.75, 0.75) {$F^k$};
+		\node [style=bport] (3) at (2.75, 0) {};
+		\node [style=bport] (4) at (2.75, -1) {};
+		\node [style=dangling] (5) at (4.25, 0) {};
+		\node [style=bport] (6) at (3.25, 0) {};
+		\node [style=bport] (7) at (3.25, -1) {};
+		\node [style=dangling] (8) at (4.25, -1) {};
+		\node [style=bproduct] (9) at (-2.5, 0) {};
+		\node [style=bport] (10) at (-1, 0.75) {};
+		\node [style=dangling] (11) at (-3.25, 0) {};
+		\node [style=none] (12) at (0.25, 1.25) {};
+		\node [style=bport] (13) at (-0.5, 0.25) {};
+		\node [style=bproduct] (15) at (0.5, 0.25) {};
+		\node [style=none] (28) at (2, 0) {};
+		\node [style=port] (29) at (-0.5, 1.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (9)
@@ -41,12 +27,9 @@
 		\draw [style=wire, in=-180, out=75] (9) to (10);
 		\draw [style=wire] (9) to (11);
 		\draw [style=wire] (13) to (15);
-		\draw [style=wiredash] (16.center) to (17.center);
-		\draw [style=wiredash] (19.center) to (20.center);
-		\draw [style=wiredash] (22.center) to (23.center);
-		\draw [style=wiredash] (25.center) to (26.center);
-		\draw [style=wire] (3) to (28.center);
-		\draw [style=wire, in=0, out=180] (28.center) to (12);
-		\draw [style=wiredash] (29.center) to (30.center);
+		\draw [style=wire] (29)
+			 to (12.center)
+			 to [in=180, out=0] (28.center)
+			 to (3);
 	\end{pgfonlayer}
 \end{tikzpicture}

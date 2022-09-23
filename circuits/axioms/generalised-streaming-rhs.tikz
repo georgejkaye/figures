@@ -3,37 +3,22 @@
 		\node [style=medium square comb box] (0) at (-0.75, 1) {$F$};
 		\node [style=port] (2) at (-1, 1) {};
 		\node [style=port] (3) at (-0.5, 1) {};
-		\node [style=tiny seq box] (4) at (-3.25, 1) {$\mathbf{v}$};
-		\node [style=bproduct] (5) at (3, 0) {};
-		\node [style=dangling] (7) at (-4, -1) {};
-		\node [style=none] (8) at (-2.25, 1) {};
-		\node [style=port] (9) at (-3.25, 1) {};
+		\node [style=tiny seq box] (4) at (-2.75, 1) {$\mathbf{v}$};
+		\node [style=bproduct] (5) at (2.5, 0) {};
+		\node [style=dangling] (7) at (-3.5, -1) {};
+		\node [style=none] (8) at (-1.75, 1) {};
+		\node [style=port] (9) at (-2.75, 1) {};
 		\node [style=medium square comb box] (11) at (-0.75, -1) {$F$};
 		\node [style=port] (12) at (-1, -1) {};
 		\node [style=port] (13) at (-0.5, -1) {};
-		\node [style=delay] (14) at (1.5, -1) {};
-		\node [style=none] (16) at (2, -1) {};
-		\node [style=none] (17) at (2, 1) {};
-		\node [style=dangling] (18) at (4, 0) {};
-		\node [style=none] (19) at (-2.25, 1.25) {};
-		\node [style=none] (20) at (-2.25, 0.75) {};
-		\node [style=small label] (21) at (-2.25, 1.5) {$m$};
-		\node [style=none] (22) at (-2.25, -1) {};
-		\node [style=none] (23) at (-2.25, -0.75) {};
-		\node [style=none] (24) at (-2.25, -1.25) {};
-		\node [style=small label] (25) at (-2.25, -0.5) {$m$};
-		\node [style=none] (26) at (0.75, 1) {};
-		\node [style=none] (27) at (0.75, 1.25) {};
-		\node [style=none] (28) at (0.75, 0.75) {};
-		\node [style=small label] (29) at (0.75, 1.5) {$n$};
-		\node [style=none] (30) at (0.75, -1) {};
-		\node [style=none] (31) at (0.75, -0.75) {};
-		\node [style=none] (32) at (0.75, -1.25) {};
-		\node [style=small label] (33) at (0.75, -0.5) {$n$};
-		\node [style=none] (34) at (3.5, 0) {};
-		\node [style=none] (35) at (3.5, 0.25) {};
-		\node [style=none] (36) at (3.5, -0.25) {};
-		\node [style=small label] (37) at (3.5, 0.5) {$n$};
+		\node [style=delay] (14) at (1, -1) {};
+		\node [style=none] (16) at (1.5, -1) {};
+		\node [style=none] (17) at (1.5, 1) {};
+		\node [style=dangling] (18) at (3.5, 0) {};
+		\node [style=none] (22) at (-1.75, -1) {};
+		\node [style=none] (26) at (0.25, 1) {};
+		\node [style=none] (30) at (0.25, -1) {};
+		\node [style=none] (34) at (3, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (9) to (8.center);
@@ -47,10 +32,5 @@
 			 to (16.center)
 			 to [in=-90, out=0] (5);
 		\draw [style=wire] (5) to (18);
-		\draw [style=wiredash] (19.center) to (20.center);
-		\draw [style=wiredash] (23.center) to (24.center);
-		\draw [style=wiredash] (27.center) to (28.center);
-		\draw [style=wiredash] (31.center) to (32.center);
-		\draw [style=wiredash] (35.center) to (36.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

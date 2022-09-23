@@ -1,23 +1,15 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny seq signal] (1) at (-0.5, 0) {$\sigma_t$};
-		\node [style=port] (3) at (-0.5, 0) {};
-		\node [style=port] (4) at (-0.75, 0) {};
-		\node [style=dangling] (7) at (1.75, 0) {};
-		\node [style=delay] (8) at (0.75, 0) {$\mathbf{v}$};
-		\node [style=dangling] (9) at (-1.75, 0) {};
-		\node [style=none] (11) at (-1.5, 0.25) {};
-		\node [style=none] (12) at (-1.5, -0.25) {};
-		\node [style=small label] (13) at (-1.5, 0.5) {$n$};
-		\node [style=none] (19) at (1.5, 0.25) {};
-		\node [style=none] (20) at (1.5, -0.25) {};
-		\node [style=small label] (21) at (1.5, 0.5) {$n$};
+		\node [style=tiny seq signal] (1) at (-0.75, 0) {$\sigma_t$};
+		\node [style=port] (3) at (-0.75, 0) {};
+		\node [style=port] (4) at (-1, 0) {};
+		\node [style=dangling] (7) at (2.25, 0) {};
+		\node [style=delay] (8) at (1, 0) {$\mathbf{v}$};
+		\node [style=dangling] (9) at (-2, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (3) to (8);
 		\draw [style=wire] (9) to (4);
-		\draw [style=wiredash] (11.center) to (12.center);
-		\draw [style=wiredash] (19.center) to (20.center);
 		\draw [style=wire] (8) to (7);
 	\end{pgfonlayer}
 \end{tikzpicture}

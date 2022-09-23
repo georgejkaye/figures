@@ -1,28 +1,16 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square comb box] (0) at (-0.25, 0) {$F^\dagger$};
-		\node [style=dangling] (1) at (-1.75, 0) {};
+		\node [style=dangling] (1) at (-1.5, 0) {};
 		\node [style=bport] (4) at (-0.5, 0) {};
 		\node [style=bport] (7) at (0, -0.5) {};
-		\node [style=dangling] (8) at (1.25, -0.5) {};
-		\node [style=none] (9) at (-1.5, 0.25) {};
-		\node [style=none] (11) at (-1.5, -0.25) {};
-		\node [style=small label] (12) at (-1.5, 0.5) {$m$};
-		\node [style=none] (16) at (1, -0.25) {};
-		\node [style=none] (17) at (1, -0.75) {};
-		\node [style=small label] (18) at (1, -1) {$n$};
+		\node [style=dangling] (8) at (1, -0.5) {};
 		\node [style=bport] (19) at (0, 0.5) {};
-		\node [style=dangling] (20) at (1.25, 0.5) {};
-		\node [style=none] (21) at (1, 0.75) {};
-		\node [style=none] (22) at (1, 0.25) {};
-		\node [style=small label] (23) at (1, 1) {$x$};
+		\node [style=dangling] (20) at (1, 0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (1) to (4);
 		\draw [style=wire] (7) to (8);
-		\draw [style=wiredash] (11.center) to (9.center);
-		\draw [style=wiredash] (17.center) to (16.center);
 		\draw [style=wire] (19) to (20);
-		\draw [style=wiredash] (22.center) to (21.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

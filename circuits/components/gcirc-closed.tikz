@@ -1,9 +1,0 @@
-\begin{tikzpicture}
-	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box] (10) at (-0.75, 0) {$G$};
-		\node [style=dangling] (16) at (0.75, 0) {};
-	\end{pgfonlayer}
-	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire] (10) to (16);
-	\end{pgfonlayer}
-\end{tikzpicture}

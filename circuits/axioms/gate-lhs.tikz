@@ -1,17 +1,13 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny seq box] (0) at (-2, 0) {$\mathbf{v}$};
-		\node [style=medium comb box] (1) at (0.25, 0) {$g$};
-		\node [style=none] (3) at (1.75, 0) {};
-		\node [style=port] (4) at (0, 0) {};
-		\node [style=port] (5) at (0.5, 0) {};
-		\node [style=none] (6) at (-1, 0.25) {};
-		\node [style=none] (7) at (-1, -0.25) {};
-		\node [style=small label] (8) at (-1, 0.5) {$m$};
+		\node [style=tiny seq box] (0) at (-1.25, 0) {$\mathbf{v}$};
+		\node [style=medium comb box] (1) at (0.5, 0) {$g$};
+		\node [style=dangling] (3) at (1.5, 0) {};
+		\node [style=port] (4) at (0.25, 0) {};
+		\node [style=port] (5) at (0.75, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire] (5) to (3.center);
-		\draw [style=wiredash] (6.center) to (7.center);
+		\draw [style=wire] (5) to (3);
 		\draw [style=wire] (4) to (0);
 	\end{pgfonlayer}
 \end{tikzpicture}

@@ -3,30 +3,15 @@
 		\node [style=delay] (6) at (-2, -0.525) {};
 		\node [style=port] (9) at (0.75, -0.525) {};
 		\node [style=port] (10) at (0.75, -1.5) {};
-		\node [style=dangling] (11) at (-3, -1.5) {};
+		\node [style=dangling] (11) at (-3.25, -1.5) {};
 		\node [style=medium square comb box] (13) at (1, -1) {$H$};
 		\node [style=bport] (22) at (1.25, -0.5) {};
-		\node [style=none] (24) at (2.5, -0.5) {};
-		\node [style=none] (26) at (2.5, 1.25) {};
-		\node [style=none] (30) at (-2.5, 1.25) {};
+		\node [style=none] (24) at (2, -0.5) {};
+		\node [style=none] (26) at (2, 1.5) {};
+		\node [style=none] (30) at (-2.5, 1.5) {};
 		\node [style=bport] (33) at (1.25, -1.5) {};
-		\node [style=dangling] (34) at (3.25, -1.5) {};
+		\node [style=dangling] (34) at (3, -1.5) {};
 		\node [style=none] (35) at (-2.5, -0.5) {};
-		\node [style=none] (36) at (-0.25, -1.5) {};
-		\node [style=small label] (37) at (-0.25, -2) {$m$};
-		\node [style=none] (38) at (-0.25, -1.25) {};
-		\node [style=none] (39) at (-0.25, -1.75) {};
-		\node [style=small label] (42) at (-0.25, 0) {$r$};
-		\node [style=none] (43) at (-0.25, -0.25) {};
-		\node [style=none] (44) at (-0.25, -0.75) {};
-		\node [style=none] (45) at (2.25, -1.5) {};
-		\node [style=none] (46) at (2.25, -1.5) {};
-		\node [style=small label] (47) at (2.25, -2) {$n$};
-		\node [style=none] (48) at (2.25, -1.75) {};
-		\node [style=none] (49) at (2.25, -1.25) {};
-		\node [style=small label] (50) at (2.25, 0) {$r$};
-		\node [style=none] (51) at (2.25, -0.25) {};
-		\node [style=none] (52) at (2.25, -0.75) {};
 		\node [style=tiny seq box] (53) at (-2, 0.5) {$\mealyinitial$};
 		\node [style=bproduct] (54) at (-0.75, -0.5) {};
 	\end{pgfonlayer}
@@ -39,10 +24,6 @@
 			 to [bend right=90, looseness=1.25] (35.center)
 			 to (6);
 		\draw [style=wire] (33) to (34);
-		\draw [style=wiredash] (39.center) to (38.center);
-		\draw [style=wiredash] (44.center) to (43.center);
-		\draw [style=wiredash] (49.center) to (48.center);
-		\draw [style=wiredash] (52.center) to (51.center);
 		\draw [style=wire] (6) to (9);
 		\draw [style=wire, in=105, out=0, looseness=0.75] (53) to (54);
 	\end{pgfonlayer}

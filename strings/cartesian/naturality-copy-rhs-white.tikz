@@ -1,0 +1,27 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dangling] (0) at (-2.5, 0) {};
+		\node [style=none] (1) at (-0.75, 1) {};
+		\node [style=none] (2) at (-0.75, -1) {};
+		\node [style=bproduct] (5) at (-1.75, 0) {};
+		\node [style=none] (9) at (0.75, 1) {};
+		\node [style=medium square box] (10) at (0.25, 1) {$F$};
+		\node [style=none] (11) at (-0.25, 1) {};
+		\node [style=none] (12) at (0.75, -1) {};
+		\node [style=medium square box] (13) at (0.25, -1) {$F$};
+		\node [style=none] (14) at (-0.25, -1) {};
+		\node [style=dangling] (15) at (1.5, 1) {};
+		\node [style=dangling] (16) at (1.5, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (0) to (5);
+		\draw [style=wire] (5)
+			 to [in=-180, out=75] (1.center)
+			 to (11.center);
+		\draw [style=wire] (14.center)
+			 to (2.center)
+			 to [in=-75, out=180] (5);
+		\draw [style=wire] (9.center) to (15);
+		\draw [style=wire] (12.center) to (16);
+	\end{pgfonlayer}
+\end{tikzpicture}

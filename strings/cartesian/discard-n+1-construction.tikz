@@ -2,15 +2,12 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=bproduct] (0) at (0, 0.5) {};
 		\node [style=dangling] (3) at (-1.25, 0.5) {};
-		\node [style=none] (15) at (-1, 0.75) {};
-		\node [style=none] (16) at (-1, 0.25) {};
-		\node [style=small label] (17) at (-1, 1) {$n$};
+		\node [style=small label] (17) at (-1.5, 0.5) {$n$};
 		\node [style=bproduct] (18) at (0, -0.5) {};
 		\node [style=dangling] (19) at (-1.25, -0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (0) to (3);
-		\draw [style=wiredash] (16.center) to (15.center);
 		\draw [style=wire] (18) to (19);
 	\end{pgfonlayer}
 \end{tikzpicture}

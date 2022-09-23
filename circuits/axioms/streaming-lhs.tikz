@@ -5,15 +5,11 @@
 		\node [style=port] (3) at (1, 0) {};
 		\node [style=dangling] (5) at (1.75, 0) {};
 		\node [style=delay] (6) at (-1, 0) {$\mathbf{v}$};
-		\node [style=dangling] (10) at (-1.75, 0) {};
-		\node [style=none] (15) at (-0.25, 0.25) {};
-		\node [style=none] (16) at (-0.25, -0.25) {};
-		\node [style=small label] (17) at (-0.25, 0.5) {$m$};
+		\node [style=dangling] (10) at (-2, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (3) to (5);
 		\draw [style=wire] (6) to (10);
-		\draw [style=wiredash] (15.center) to (16.center);
 		\draw [style=wire] (6) to (2);
 	\end{pgfonlayer}
 \end{tikzpicture}

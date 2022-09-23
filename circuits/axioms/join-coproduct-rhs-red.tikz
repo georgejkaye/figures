@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=dangling] (10) at (1.75, 0) {};
+		\node [style=dangling] (10) at (2.25, 0) {};
 		\node [style=tiny seq box] (11) at (-1, 0) {$\bar{g}(\mathbf{v}) \sqcup \bar{g}(\mathbf{w})$};
 		\node [style=none] (15) at (1, 0) {};
 	\end{pgfonlayer}

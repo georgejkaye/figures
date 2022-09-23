@@ -1,19 +1,15 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=dangling] (3) at (-1.5, 0) {};
+		\node [style=dangling] (3) at (-1.25, 0) {};
 		\node [style=none] (5) at (-0.75, 0.75) {};
 		\node [style=none] (6) at (-0.75, -0.75) {};
 		\node [style=none] (7) at (0.75, -0.75) {};
 		\node [style=none] (8) at (0.75, 0.75) {};
-		\node [style=dangling] (10) at (1.5, 0) {};
+		\node [style=dangling] (10) at (1.25, 0) {};
 		\node [style=none] (11) at (-0.75, 0) {};
 		\node [style=none] (12) at (-0.75, 0) {};
-		\node [style=none] (13) at (-1.25, 0.25) {};
-		\node [style=none] (14) at (-1.25, -0.25) {};
-		\node [style=small label] (15) at (-1.25, 0.5) {$n$};
-		\node [style=none] (16) at (1.25, 0.25) {};
-		\node [style=none] (17) at (1.25, -0.25) {};
-		\node [style=small label] (18) at (1.25, 0.5) {$n$};
+		\node [style=small label] (15) at (-1.5, 0) {$n$};
+		\node [style=small label] (18) at (1.5, 0) {$n$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=tile white] (12.center)
@@ -23,7 +19,5 @@
 			 to (5.center)
 			 to (11.center);
 		\draw [style=wire] (3) to (10);
-		\draw [style=wiredash] (13.center) to (14.center);
-		\draw [style=wiredash] (16.center) to (17.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

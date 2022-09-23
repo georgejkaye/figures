@@ -5,7 +5,7 @@
 		\node [style=port] (3) at (-1, 0.875) {};
 		\node [style=tiny seq box] (4) at (-3, 0.875) {$\mathbf{v}$};
 		\node [style=bproduct] (5) at (1.25, 0) {};
-		\node [style=dangling] (7) at (-3.75, -0.875) {};
+		\node [style=dangling] (7) at (-4, -0.875) {};
 		\node [style=none] (8) at (-2.5, 0.875) {};
 		\node [style=port] (9) at (-3, 0.875) {};
 		\node [style=medium comb box] (11) at (-1.25, -0.875) {$g$};
@@ -15,12 +15,6 @@
 		\node [style=none] (16) at (0.5, -0.875) {};
 		\node [style=none] (17) at (0.5, 0.875) {};
 		\node [style=dangling] (18) at (2, 0) {};
-		\node [style=none] (19) at (-2.25, 1.125) {};
-		\node [style=none] (20) at (-2.25, 0.625) {};
-		\node [style=small label] (21) at (-2.25, 1.375) {$m$};
-		\node [style=none] (22) at (-2.25, -0.625) {};
-		\node [style=none] (23) at (-2.25, -1.125) {};
-		\node [style=small label] (24) at (-2.25, -0.375) {$m$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (9) to (8.center);
@@ -34,7 +28,5 @@
 			 to (16.center)
 			 to [in=-105, out=0] (5);
 		\draw [style=wire] (5) to (18);
-		\draw [style=wiredash] (19.center) to (20.center);
-		\draw [style=wiredash] (22.center) to (23.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
