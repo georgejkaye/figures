@@ -12,6 +12,9 @@
 		\node [style=none] (14) at (-0.25, -1) {};
 		\node [style=dangling] (15) at (1.5, 1) {};
 		\node [style=dangling] (16) at (1.5, -1) {};
+		\node [style=small label] (17) at (1.75, 1) {$n$};
+		\node [style=small label] (18) at (1.75, -1) {$n$};
+		\node [style=small label] (19) at (-3, 0) {$m$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (0) to (5);

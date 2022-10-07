@@ -1,19 +1,20 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=delay] (6) at (-2, -0.525) {};
-		\node [style=port] (9) at (0.75, -0.525) {};
+		\node [style=delay] (6) at (-2, -0.775) {};
 		\node [style=port] (10) at (0.75, -1.5) {};
-		\node [style=dangling] (11) at (-3.25, -1.5) {};
+		\node [style=dangling] (11) at (-3.5, -1.5) {};
 		\node [style=medium square comb box] (13) at (1, -1) {$H$};
 		\node [style=bport] (22) at (1.25, -0.5) {};
 		\node [style=none] (24) at (2, -0.5) {};
 		\node [style=none] (26) at (2, 1.5) {};
-		\node [style=none] (30) at (-2.5, 1.5) {};
+		\node [style=none] (30) at (-2.75, 1.5) {};
 		\node [style=bport] (33) at (1.25, -1.5) {};
 		\node [style=dangling] (34) at (3, -1.5) {};
-		\node [style=none] (35) at (-2.5, -0.5) {};
-		\node [style=tiny seq box] (53) at (-2, 0.5) {$\mealyinitial$};
-		\node [style=bproduct] (54) at (-0.75, -0.5) {};
+		\node [style=none] (35) at (-2.75, -0.75) {};
+		\node [style=tiny seq box] (53) at (-2, 0.5) {$\overline{s}$};
+		\node [style=bproduct] (54) at (-0.75, -0.25) {};
+		\node [style=bport] (55) at (0.75, -0.5) {};
+		\node [style=none] (56) at (-2, 0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire, in=180, out=0] (11) to (10);
@@ -24,7 +25,8 @@
 			 to [bend right=90, looseness=1.25] (35.center)
 			 to (6);
 		\draw [style=wire] (33) to (34);
-		\draw [style=wire] (6) to (9);
-		\draw [style=wire, in=105, out=0, looseness=0.75] (53) to (54);
+		\draw [style=wire, in=180, out=0, looseness=1.25] (54) to (55);
+		\draw [style=wire, bend left=45] (56.center) to (54);
+		\draw [style=wire, in=-120, out=0, looseness=0.75] (6) to (54);
 	\end{pgfonlayer}
 \end{tikzpicture}
