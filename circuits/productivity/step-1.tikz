@@ -17,7 +17,7 @@
 		\node [style=none] (16) at (-2.5, 1) {};
 		\node [style=none] (17) at (-2.5, -0.5) {};
 		\node [style=port] (18) at (-0.25, -1.25) {};
-		\node [style=tiny seq box] (19) at (-3.5, -1.25) {$\mathbf{v}$};
+		\node [style=tiny seq box] (19) at (-3.5, -1.25) {$\overline{v}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (3) to (4);

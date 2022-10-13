@@ -3,7 +3,7 @@
 		\node [style=none] (0) at (-0.25, 0) {};
 		\node [style=dangling] (3) at (0.5, 0) {};
 		\node [style=tiny seq box] (15) at (-0.5, 0) {$\overline{r^\prime}$};
-		\node [style=small label] (18) at (0.75, 0) {$w$};
+		\node [style=small label] (18) at (0.85, 0) {$y$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (0.center) to (3);

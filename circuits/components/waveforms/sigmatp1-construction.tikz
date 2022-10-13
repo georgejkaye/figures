@@ -4,7 +4,7 @@
 		\node [style=port] (3) at (-0.75, 0) {};
 		\node [style=port] (4) at (-1, 0) {};
 		\node [style=dangling] (7) at (2.25, 0) {};
-		\node [style=delay] (8) at (1, 0) {$\mathbf{v}$};
+		\node [style=delay] (8) at (1, 0) {$\overline{v}$};
 		\node [style=dangling] (9) at (-2, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

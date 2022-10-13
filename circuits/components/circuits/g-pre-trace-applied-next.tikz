@@ -26,7 +26,7 @@
 		\node [style=none] (47) at (-1.75, -0.55) {};
 		\node [style=none] (48) at (-0.75, 0.5) {};
 		\node [style=none] (49) at (-1.25, -0.75) {};
-		\node [style=tiny seq box] (50) at (-2.5, -0.75) {$\mathbf{v}$};
+		\node [style=tiny seq box] (50) at (-2.5, -0.75) {$\overline{v}$};
 		\node [style=none] (51) at (-0.75, -0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

@@ -9,7 +9,7 @@
 		\node [style=none] (16) at (-2.5, 0.75) {};
 		\node [style=none] (17) at (-2.5, -0.25) {};
 		\node [style=port] (18) at (-0.25, -1.25) {};
-		\node [style=tiny seq box] (19) at (-3, -1.25) {$\mathbf{v}$};
+		\node [style=tiny seq box] (19) at (-3, -1.25) {$\overline{v}$};
 		\node [style=medium square comb box] (32) at (5, -1.25) {$\tilde{F}$};
 		\node [style=port] (33) at (5.25, -1) {};
 		\node [style=port] (34) at (5.25, -1.75) {};
@@ -21,7 +21,7 @@
 		\node [style=none] (47) at (2.5, -0.75) {};
 		\node [style=none] (48) at (2.5, 0.75) {};
 		\node [style=bproduct] (61) at (6.25, -1) {};
-		\node [style=tiny seq box] (65) at (2.25, -1.75) {$\mathbf{v}$};
+		\node [style=tiny seq box] (65) at (2.25, -1.75) {$\overline{v}$};
 		\node [style=port] (66) at (4.75, -1.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

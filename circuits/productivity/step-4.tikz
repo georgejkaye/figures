@@ -9,7 +9,7 @@
 		\node [style=none] (16) at (-2.5, 1) {};
 		\node [style=none] (17) at (-2.5, 0) {};
 		\node [style=port] (18) at (-0.25, -1) {};
-		\node [style=tiny seq box] (19) at (-3, -1) {$\mathbf{v}$};
+		\node [style=tiny seq box] (19) at (-3, -1) {$\overline{v}$};
 		\node [style=medium square comb box] (32) at (5.5, -1) {$\tilde{F}$};
 		\node [style=port] (33) at (5.75, -0.5) {};
 		\node [style=port] (34) at (5.75, -1.5) {};
@@ -29,7 +29,7 @@
 		\node [style=none] (70) at (7.5, 1) {};
 		\node [style=port] (71) at (5.25, 2) {};
 		\node [style=bproduct] (83) at (6.75, 2) {};
-		\node [style=tiny seq box] (87) at (3.75, 1) {$\mathbf{v}$};
+		\node [style=tiny seq box] (87) at (3.75, 1) {$\overline{v}$};
 		\node [style=port] (88) at (5.25, 1) {};
 		\node [style=bproduct] (89) at (3.75, 2) {};
 		\node [style=bproduct] (90) at (8.75, -0.25) {};

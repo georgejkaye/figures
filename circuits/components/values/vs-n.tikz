@@ -2,8 +2,8 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (0) at (-0.25, 0) {};
 		\node [style=dangling] (3) at (0.5, 0) {};
-		\node [style=tiny seq box] (15) at (-0.5, 0) {$\mathbf{v}$};
-		\node [style=small label] (18) at (0.75, 0) {$n$};
+		\node [style=tiny seq box] (15) at (-0.5, 0) {$\overline{v}$};
+		\node [style=small label] (18) at (0.85, 0) {$n$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (0.center) to (3);

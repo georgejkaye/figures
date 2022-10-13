@@ -1,35 +1,35 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=dangling] (15) at (-1.25, -0.66) {};
+		\node [style=dangling] (15) at (-1.75, -0.91) {};
 		\node [style=medium square comb box] (23) at (0, 0) {$\hat{F}$};
 		\node [style=port] (27) at (-0.25, 0.66) {};
 		\node [style=port] (28) at (-0.25, 0.25) {};
 		\node [style=port] (29) at (-0.25, -0.66) {};
 		\node [style=port] (30) at (-0.25, -0.25) {};
-		\node [style=dangling] (31) at (-1.25, -0.25) {};
-		\node [style=dangling] (35) at (-1.25, 0.25) {};
-		\node [style=dangling] (39) at (-1.25, 0.66) {};
-		\node [style=small label] (71) at (-1.5, 0.75) {$x$};
-		\node [style=small label] (72) at (-1.5, 0.25) {$y$};
-		\node [style=small label] (73) at (-1.5, -0.25) {$z$};
-		\node [style=small label] (74) at (-1.66, -0.75) {$m$};
+		\node [style=dangling] (31) at (-1.75, -0.35) {};
+		\node [style=dangling] (35) at (-1.75, 0.35) {};
+		\node [style=dangling] (39) at (-1.75, 0.91) {};
+		\node [style=small label] (71) at (-2, 1) {$x$};
+		\node [style=small label] (72) at (-2, 0.35) {$y$};
+		\node [style=small label] (73) at (-2, -0.35) {$z$};
+		\node [style=small label] (74) at (-2.16, -1) {$m$};
 		\node [style=port] (75) at (0.25, 0.66) {};
 		\node [style=dangling] (76) at (1.25, 0.66) {};
 		\node [style=small label] (77) at (1.5, 0.75) {$x$};
-		\node [style=port] (78) at (0.25, 0.25) {};
-		\node [style=dangling] (79) at (1.25, 0.25) {};
-		\node [style=small label] (81) at (1.5, 0.25) {$y$};
+		\node [style=port] (78) at (0.25, 0) {};
+		\node [style=dangling] (79) at (1.25, 0) {};
+		\node [style=small label] (81) at (1.5, 0) {$y$};
 		\node [style=dangling] (82) at (1.25, -0.66) {};
 		\node [style=port] (83) at (0.25, -0.66) {};
 		\node [style=small label] (84) at (1.5, -0.66) {$n$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire] (29) to (15);
-		\draw [style=wire] (27) to (39);
+		\draw [style=wire, in=0, out=-180] (29) to (15);
+		\draw [style=wire, in=0, out=180] (27) to (39);
 		\draw [style=wire] (75) to (76);
 		\draw [style=wire] (83) to (82);
-		\draw [style=wire] (35) to (28);
-		\draw [style=wire] (30) to (31);
+		\draw [style=wire, in=-180, out=0, looseness=0.75] (35) to (28);
+		\draw [style=wire, in=0, out=-180] (30) to (31);
 		\draw [style=wire] (79) to (78);
 	\end{pgfonlayer}
 \end{tikzpicture}
