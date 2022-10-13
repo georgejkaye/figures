@@ -1,0 +1,26 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square comb box] (10) at (0, 0) {$\hat{G}$};
+		\node [style=dangling] (15) at (-1.5, 0) {};
+		\node [style=dangling] (16) at (1.25, 0.5) {};
+		\node [style=dangling] (17) at (-1.5, 0.75) {};
+		\node [style=dangling] (18) at (-1.5, -0.75) {};
+		\node [style=port] (19) at (-0.25, 0.5) {};
+		\node [style=port] (21) at (-0.25, -0.5) {};
+		\node [style=port] (22) at (0.25, -0.5) {};
+		\node [style=port] (23) at (0.25, 0.5) {};
+		\node [style=dangling] (24) at (1.25, -0.5) {};
+		\node [style=small label] (25) at (-1.85, 0.75) {$y$};
+		\node [style=small label] (26) at (-2, 0) {$w$};
+		\node [style=small label] (27) at (-2, -0.75) {$m$};
+		\node [style=small label] (28) at (1.6, 0.5) {$y$};
+		\node [style=small label] (29) at (1.6, -0.5) {$n$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (15) to (10);
+		\draw [style=wire, in=-180, out=0] (17) to (19);
+		\draw [style=wire, in=180, out=0] (18) to (21);
+		\draw [style=wire, in=180, out=0] (23) to (16);
+		\draw [style=wire] (22) to (24);
+	\end{pgfonlayer}
+\end{tikzpicture}

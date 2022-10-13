@@ -1,14 +1,11 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (0) at (-0.25, 0) {};
-		\node [style=dangling] (3) at (0.75, 0) {};
-		\node [style=tiny seq box] (15) at (-0.5, 0) {$\mathbf{r}^\prime$};
-		\node [style=none] (16) at (0.25, 0.25) {};
-		\node [style=none] (17) at (0.25, -0.25) {};
-		\node [style=small label] (18) at (0.25, 0.5) {$y$};
+		\node [style=dangling] (3) at (0.5, 0) {};
+		\node [style=tiny seq box] (15) at (-0.5, 0) {$\overline{r^\prime}$};
+		\node [style=small label] (18) at (0.75, 0) {$w$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (0.center) to (3);
-		\draw [style=wiredash] (17.center) to (16.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

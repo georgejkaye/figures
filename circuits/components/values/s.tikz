@@ -2,7 +2,7 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (0) at (-0.25, 0) {};
 		\node [style=dangling] (3) at (0.5, 0) {};
-		\node [style=tiny seq box] (15) at (-0.5, 0) {$\mathbf{s}$};
+		\node [style=tiny seq box] (15) at (-0.5, 0) {$\overline{s}$};
 		\node [style=small label] (18) at (0.75, 0) {$z$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

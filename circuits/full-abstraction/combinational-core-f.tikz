@@ -1,0 +1,27 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square comb box] (10) at (0, 0) {$\hat{F}$};
+		\node [style=dangling] (15) at (-1.5, -0.75) {};
+		\node [style=dangling] (16) at (1.25, -0.5) {};
+		\node [style=none] (23) at (-0.5, 0.5) {};
+		\node [style=none] (24) at (-0.5, -0.5) {};
+		\node [style=none] (25) at (0.25, -0.5) {};
+		\node [style=none] (26) at (0.25, 0.5) {};
+		\node [style=dangling] (27) at (1.25, 0.5) {};
+		\node [style=dangling] (28) at (-1.5, 0.75) {};
+		\node [style=small label] (35) at (-1.75, 0.75) {$x$};
+		\node [style=small label] (36) at (-1.91, -0.75) {$m$};
+		\node [style=small label] (37) at (1.5, 0.5) {$x$};
+		\node [style=small label] (38) at (1.5, -0.5) {$n$};
+		\node [style=dangling] (39) at (-1.5, 0) {};
+		\node [style=small label] (42) at (-1.75, 0) {$z$};
+		\node [style=none] (43) at (-0.5, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire, in=-180, out=0, looseness=1.25] (15) to (24.center);
+		\draw [style=wire] (25.center) to (16);
+		\draw [style=wire, in=180, out=0] (26.center) to (27);
+		\draw [style=wire, in=0, out=-180, looseness=1.50] (23.center) to (28);
+		\draw [style=wire] (39) to (43.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
