@@ -14,7 +14,7 @@
 		\node [style=small label] (37) at (1.5, 0.5) {$y$};
 		\node [style=small label] (38) at (1.5, -0.5) {$n$};
 		\node [style=dangling] (39) at (-1.5, 0) {};
-		\node [style=small label] (42) at (-1.91, 0) {$w$};
+		\node [style=small label] (42) at (-1.85, 0) {$w$};
 		\node [style=none] (43) at (-0.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

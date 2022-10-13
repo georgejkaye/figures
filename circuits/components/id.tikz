@@ -1,9 +1,0 @@
-\begin{tikzpicture}
-	\begin{pgfonlayer}{nodelayer}
-		\node [style=dangling] (0) at (-0.5, 0) {};
-		\node [style=dangling] (1) at (0.5, 0) {};
-	\end{pgfonlayer}
-	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire] (1) to (0);
-	\end{pgfonlayer}
-\end{tikzpicture}
