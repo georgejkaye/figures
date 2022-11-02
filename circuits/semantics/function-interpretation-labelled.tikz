@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square comb box] (10) at (0, 0) {$\mealytocircuit[f]{}$};
+		\node [style=dangling] (15) at (-1.5, 0) {};
+		\node [style=dangling] (16) at (1.5, 0) {};
+		\node [style=small label] (17) at (-1.91, 0) {$m$};
+		\node [style=small label] (18) at (1.75, 0) {$n$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (15) to (10);
+		\draw [style=wire] (10) to (16);
+	\end{pgfonlayer}
+\end{tikzpicture}
