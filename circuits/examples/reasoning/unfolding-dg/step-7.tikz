@@ -4,7 +4,7 @@
 		\node [style=none] (15) at (-1.75, 1.25) {};
 		\node [style=none] (23) at (2.5, 1.25) {};
 		\node [style=none] (24) at (2.5, 0.25) {};
-		\node [style=tiny seq box] (27) at (-2.25, -0.75) {$\mathbf{v}$};
+		\node [style=tiny seq box] (27) at (-2.25, -0.75) {$\\overline{v}$};
 		\node [style=bproduct] (31) at (4.5, 1.25) {};
 		\node [style=none] (35) at (2, 1.25) {};
 		\node [style=none] (36) at (2, 0.25) {};

@@ -24,7 +24,7 @@
 		\node [style=none] (58) at (7, -0.5) {};
 		\node [style=none] (59) at (7.5, -1.5) {};
 		\node [style=delay] (60) at (0.25, 1.25) {};
-		\node [style=tiny seq box] (61) at (0.25, 0.25) {$\mathbf{v}$};
+		\node [style=tiny seq box] (61) at (0.25, 0.25) {$\\overline{v}$};
 		\node [style=none] (62) at (6, -0.5) {};
 		\node [style=bproduct] (63) at (6, -1.5) {};
 		\node [style=none] (65) at (5.5, -0.5) {};
@@ -35,7 +35,7 @@
 		\node [style=none] (76) at (7, 1.75) {};
 		\node [style=none] (77) at (7.5, 0.75) {};
 		\node [style=none] (78) at (7, 0.75) {};
-		\node [style=tiny seq box] (79) at (6, 0.75) {$\mathbf{v}$};
+		\node [style=tiny seq box] (79) at (6, 0.75) {$\\overline{v}$};
 		\node [style=bproduct] (80) at (6, 1.75) {};
 		\node [style=bproduct] (81) at (10.5, -0.25) {};
 		\node [style=dangling] (82) at (11.25, -0.25) {};

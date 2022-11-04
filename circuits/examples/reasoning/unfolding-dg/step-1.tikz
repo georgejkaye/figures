@@ -4,7 +4,7 @@
 		\node [style=none] (15) at (-1.75, 0.25) {};
 		\node [style=none] (23) at (0.5, 0.25) {};
 		\node [style=none] (24) at (0.5, -0.75) {};
-		\node [style=tiny seq box] (27) at (-1.25, -0.75) {$\mathbf{v}$};
+		\node [style=tiny seq box] (27) at (-1.25, -0.75) {$\\overline{v}$};
 		\node [style=none] (31) at (2.25, 0.25) {};
 		\node [style=none] (35) at (1, 0.25) {};
 		\node [style=none] (36) at (1, -0.75) {};

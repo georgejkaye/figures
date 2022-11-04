@@ -11,7 +11,7 @@
 		\node [style=none] (16) at (-5, 4.25) {};
 		\node [style=none] (17) at (-5, -0.75) {};
 		\node [style=bproduct] (18) at (-3.25, -2.75) {};
-		\node [style=tiny seq box] (19) at (-4.25, -1.75) {$\mathbf{v}$};
+		\node [style=tiny seq box] (19) at (-4.25, -1.75) {$\\overline{v}$};
 		\node [style=port] (20) at (0, -4) {};
 		\node [style=dangling] (21) at (-5.25, -4) {};
 		\node [style=port] (22) at (0, -3.25) {};

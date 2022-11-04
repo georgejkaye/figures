@@ -1,9 +1,9 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny box] (37) at (0, -1.5) {$o(\mathbf{v})$};
+		\node [style=tiny box] (37) at (0, -1.5) {$o(\\overline{v})$};
 		\node [style=none] (38) at (0.5, -1.5) {};
 		\node [style=dangling] (39) at (2.25, -1.5) {};
-		\node [style=tiny box] (40) at (0, 1.5) {$t(\mathbf{v})$};
+		\node [style=tiny box] (40) at (0, 1.5) {$t(\\overline{v})$};
 		\node [style=none] (41) at (0.5, 1.5) {};
 		\node [style=dangling] (42) at (2.25, 1.5) {};
 		\node [style=tiny box] (43) at (0, 0) {$\bot$};
