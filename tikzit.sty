@@ -41,10 +41,31 @@
 % fix strange self-loops, which are PGF/TikZ default
 \tikzstyle{every loop}=[]
 
-% some custom macros
-\newcommand{\iltikzfig}[1]{\raisebox{0.15em}{\scalebox{0.5}{\tikzfig{#1}}}}
-\newcommand{\dsptikzfig}[1]{\raisebox{0.15em}{\scalebox{0.6}{\tikzfig{#1}}}}
-\newcommand{\sbtikzfig}[2]{\scalebox{#2}{\tikzfig{#1}}}
-
-\newcommand{\stringtikz}[1]{\iltikzfig{strings/#1}}
-\newcommand{\graphtikz}[1]{\iltikzfig{graphs/#1}}
+% inline tikzfig command with optional arguments
+\newcommand{\vara}{}
+\newcommand{\varb}{}
+\newcommand{\varc}{}
+\newcommand{\vard}{}
+\newcommand{\vare}{}
+\newcommand{\varf}{}
+\newcommand{\varg}{}
+\newcommand{\varh}{}
+\NewDocumentCommand\iltikzfig{moooooooo}{%
+  \IfValueT{#2}{\renewcommand{\vara}{#2}}%
+  \IfValueT{#3}{\renewcommand{\varb}{#3}}%
+  \IfValueT{#4}{\renewcommand{\varc}{#4}}%
+  \IfValueT{#5}{\renewcommand{\vard}{#5}}%
+  \IfValueT{#6}{\renewcommand{\vare}{#6}}%
+  \IfValueT{#7}{\renewcommand{\varf}{#7}}%
+  \IfValueT{#8}{\renewcommand{\varg}{#8}}%
+  \IfValueT{#9}{\renewcommand{\varh}{#9}}%
+  \raisebox{0.15em}{\scalebox{0.5}{\tikzfig{#1}}}%
+  \IfValueT{#2}{\renewcommand{\vara}{}}%
+  \IfValueT{#3}{\renewcommand{\varb}{}}%
+  \IfValueT{#4}{\renewcommand{\varc}{}}%
+  \IfValueT{#5}{\renewcommand{\vard}{}}%
+  \IfValueT{#6}{\renewcommand{\vare}{}}%
+  \IfValueT{#7}{\renewcommand{\varf}{}}%
+  \IfValueT{#8}{\renewcommand{\varg}{}}%
+  \IfValueT{#9}{\renewcommand{\varh}{}}%
+}
