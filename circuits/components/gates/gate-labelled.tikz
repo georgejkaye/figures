@@ -5,7 +5,8 @@
 		\node [style=medium comb box] (11) at (0, 0) {$g$};
 		\node [style=none] (12) at (-0.5, 0) {};
 		\node [style=none] (15) at (0.5, 0) {};
-		\node [style=label] (17) at (-1.4, 0) {$m$};
+		\node [style=label] (17) at (-1.4, 0) {$\circuitsignaturearity{g}$};
+		\node [style=small label] (18) at (1.25, 0) {$1$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire, in=180, out=0] (9) to (12.center);
