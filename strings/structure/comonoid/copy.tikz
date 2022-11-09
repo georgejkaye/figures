@@ -14,7 +14,7 @@
 		\node [style=none] (12) at (-0.75, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=tile white] (12.center)
+		\draw [style=tile \vara] (12.center)
 			 to (6.center)
 			 to (7.center)
 			 to (8.center)
