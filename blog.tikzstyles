@@ -14,7 +14,7 @@
 \tikzstyle{tiny box}=[rounded corners, draw=white, fill=bg, text=white, shape=rectangle, minimum height=5mm, minimum width=5mm, line width=\thickness]
 \tikzstyle{medium square box}=[rounded corners, draw=white, fill=bg, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=\thickness]
 \tikzstyle{medium square delay box}=[rounded corners, draw=white, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=\thickness]
-\tikzstyle{medium square seq box}=[rounded corners, draw=white, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=\thickness]
+\tikzstyle{medium square box seq}=[rounded corners, draw=white, text=white, shape=rectangle, minimum height=10mm, minimum width=10mm, line width=\thickness]
 
 % monoids
 \tikzstyle{bproduct}=[fill=white, draw=white, shape=circle, scale=0.75, tikzit category=string diagram]

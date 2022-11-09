@@ -1,14 +1,14 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium comb box] (0) at (-1.25, 0.875) {$g$};
+		\node [style=medium box comb] (0) at (-1.25, 0.875) {$g$};
 		\node [style=port] (2) at (-1.5, 0.875) {};
 		\node [style=port] (3) at (-1, 0.875) {};
-		\node [style=tiny seq box] (4) at (-3, 0.875) {$\overline{v}$};
+		\node [style=tiny box seq] (4) at (-3, 0.875) {$\overline{v}$};
 		\node [style=bproduct] (5) at (1.25, 0) {};
 		\node [style=dangling] (7) at (-4, -0.875) {};
 		\node [style=none] (8) at (-2.5, 0.875) {};
 		\node [style=port] (9) at (-3, 0.875) {};
-		\node [style=medium comb box] (11) at (-1.25, -0.875) {$g$};
+		\node [style=medium box comb] (11) at (-1.25, -0.875) {$g$};
 		\node [style=port] (12) at (-1.5, -0.875) {};
 		\node [style=port] (13) at (-1, -0.875) {};
 		\node [style=delay] (14) at (0, -0.875) {};

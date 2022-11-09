@@ -4,7 +4,7 @@
 		\node [style=delay] (8) at (0.25, -0.75) {};
 		\node [style=dangling] (9) at (-0.75, -0.75) {};
 		\node [style=dangling] (10) at (2.75, 0) {};
-		\node [style=tiny seq box] (11) at (0.25, 0.75) {$v$};
+		\node [style=tiny box seq] (11) at (0.25, 0.75) {$v$};
 		\node [style=bport] (12) at (0.25, 0.75) {};
 		\node [style=none] (13) at (0.75, -0.75) {};
 		\node [style=none] (14) at (0.25, -0.75) {};

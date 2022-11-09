@@ -1,13 +1,13 @@
 \begin{tikzpicture}[circuit logic US]
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny seq box] (0) at (1.5, 0.75) {$v$};
+		\node [style=tiny box seq] (0) at (1.5, 0.75) {$v$};
 		\node [style=none] (23) at (2.75, 1.75) {};
 		\node [style=none] (24) at (-2.75, 1.75) {};
 		\node [style=none] (25) at (-2.75, -1) {};
 		\node [style=none] (26) at (2.75, -1) {};
 		\node [style=dangling] (28) at (2.5, 0.75) {};
 		\node [style=dangling] (29) at (2.5, -0.25) {};
-		\node [style=tiny seq box] (30) at (1.5, -0.25) {$v$};
+		\node [style=tiny box seq] (30) at (1.5, -0.25) {$v$};
 		\node [style=west] (31) at (2.75, 0.75) {next state};
 		\node [style=west] (32) at (2.75, -0.25) {output};
 	\end{pgfonlayer}

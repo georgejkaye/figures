@@ -3,11 +3,11 @@
 		\node [style=or] (0) at (0, -0.75) {};
 		\node [style=none] (1) at (-0.5, -0.5) {};
 		\node [style=not] (2) at (-1.75, -1.25) {};
-		\node [style=tiny seq box] (10) at (-3, -1.25) {$w$};
+		\node [style=tiny box seq] (10) at (-3, -1.25) {$w$};
 		\node [style=dangling] (15) at (3, -0.75) {};
 		\node [style=none] (20) at (-0.5, -1) {};
 		\node [style=not] (21) at (1.5, -0.75) {};
-		\node [style=tiny seq box] (22) at (-3, -0.25) {$v$};
+		\node [style=tiny box seq] (22) at (-3, -0.25) {$v$};
 		\node [style=none] (23) at (3.75, 1) {};
 		\node [style=none] (24) at (-4.25, 1) {};
 		\node [style=none] (25) at (-4.25, -2) {};

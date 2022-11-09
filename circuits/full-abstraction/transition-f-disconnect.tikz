@@ -3,14 +3,14 @@
 		\node [style=none] (0) at (-2, 1) {};
 		\node [style=none] (13) at (-2, 1) {};
 		\node [style=none] (14) at (-2, 1) {};
-		\node [style=tiny seq box] (15) at (-2.25, 1) {$\mathbf{s^\prime}$};
-		\node [style=medium square comb box] (16) at (0, 0) {$\hat{F}$};
+		\node [style=tiny box seq] (15) at (-2.25, 1) {$\mathbf{s^\prime}$};
+		\node [style=medium square box comb] (16) at (0, 0) {$\hat{F}$};
 		\node [style=none] (17) at (-1.25, 1) {};
 		\node [style=none] (18) at (-1.25, -1) {};
 		\node [style=none] (19) at (-2, -1) {};
 		\node [style=none] (20) at (-2, -1) {};
 		\node [style=none] (21) at (-2, -1) {};
-		\node [style=tiny seq box] (22) at (-2.25, -1) {$\\overline{v}$};
+		\node [style=tiny box seq] (22) at (-2.25, -1) {$\\overline{v}$};
 		\node [style=port] (23) at (0.25, 0.5) {};
 		\node [style=none] (24) at (1.5, 1) {};
 		\node [style=port] (25) at (0.25, -0.5) {};
@@ -31,7 +31,7 @@
 		\node [style=none] (40) at (-2, 0) {};
 		\node [style=none] (41) at (-2, 0) {};
 		\node [style=none] (42) at (-2, 0) {};
-		\node [style=tiny seq box] (43) at (-2.25, 0) {$\mathbf{s}$};
+		\node [style=tiny box seq] (43) at (-2.25, 0) {$\mathbf{s}$};
 		\node [style=none] (44) at (-1.5, -0.25) {};
 		\node [style=none] (45) at (-1.5, 0.25) {};
 		\node [style=small label] (46) at (-1.5, -0.5) {$z$};

@@ -12,7 +12,7 @@
 		\node [style=none] (15) at (2.25, -0.25) {};
 		\node [style=none] (16) at (-2.75, -0.5) {};
 		\node [style=none] (17) at (2.25, -1.25) {};
-		\node [style=tiny seq box] (18) at (-2.25, 0.5) {$\belnaptrue$};
+		\node [style=tiny box seq] (18) at (-2.25, 0.5) {$\belnaptrue$};
 		\node [style=bproduct] (19) at (-1, -0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

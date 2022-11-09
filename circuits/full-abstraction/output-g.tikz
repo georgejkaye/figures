@@ -3,14 +3,14 @@
 		\node [style=none] (0) at (-3.5, 1) {};
 		\node [style=none] (13) at (-3.5, 1) {};
 		\node [style=none] (14) at (-3.75, 1) {};
-		\node [style=tiny seq box] (15) at (-3.75, 1) {$\overline{r^\prime}$};
-		\node [style=medium square comb box] (16) at (0, 0) {$\hat{F}$};
+		\node [style=tiny box seq] (15) at (-3.75, 1) {$\overline{r^\prime}$};
+		\node [style=medium square box comb] (16) at (0, 0) {$\hat{F}$};
 		\node [style=none] (17) at (-1.75, 1) {};
 		\node [style=none] (18) at (-1.75, -1) {};
 		\node [style=none] (19) at (-3.75, -1) {};
 		\node [style=none] (20) at (-3.75, -1) {};
 		\node [style=none] (21) at (-3.75, -1) {};
-		\node [style=tiny seq box] (22) at (-3.75, -1) {$\overline{v}$};
+		\node [style=tiny box seq] (22) at (-3.75, -1) {$\overline{v}$};
 		\node [style=port] (23) at (0.25, -0.5) {};
 		\node [style=dangling] (24) at (1.75, -0.5) {};
 		\node [style=port] (25) at (0.25, 0.5) {};
@@ -19,7 +19,7 @@
 		\node [style=none] (40) at (-2, 0) {};
 		\node [style=none] (41) at (-2, 0) {};
 		\node [style=none] (42) at (-2, 0) {};
-		\node [style=tiny seq box] (43) at (-2.25, 0) {$\overline{r}$};
+		\node [style=tiny box seq] (43) at (-2.25, 0) {$\overline{r}$};
 		\node [style=none] (47) at (-0.75, 0.5) {};
 		\node [style=none] (48) at (-0.75, -0.5) {};
 	\end{pgfonlayer}

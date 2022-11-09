@@ -3,7 +3,7 @@
 		\node [style=port] (1) at (0.5, 0.25) {};
 		\node [style=and] (11) at (0.75, 0) {};
 		\node [style=port] (13) at (0.5, -0.25) {};
-		\node [style=tiny seq box] (20) at (-1.75, -0.25) {$\belnaptrue$};
+		\node [style=tiny box seq] (20) at (-1.75, -0.25) {$\belnaptrue$};
 		\node [style=bproduct] (22) at (-0.5, 0.25) {};
 		\node [style=port] (23) at (1, 0) {};
 		\node [style=dangling] (24) at (2, 0) {};

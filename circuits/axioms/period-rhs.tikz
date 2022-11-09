@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny seq signal] (12) at (0, 0) {$\sigma$};
+		\node [style=tiny signal seq] (12) at (0, 0) {$\sigma$};
 		\node [style=none] (22) at (1.75, -0.5) {};
 		\node [style=dangling] (23) at (2.25, -0.5) {};
 		\node [style=none] (24) at (-1, 0) {};

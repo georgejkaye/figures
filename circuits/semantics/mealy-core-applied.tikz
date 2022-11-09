@@ -1,11 +1,11 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square comb box] (10) at (0.5, 0) {$H$};
-		\node [style=tiny seq box] (15) at (-1.5, 0.66) {$\overline{s}$};
+		\node [style=medium square box comb] (10) at (0.5, 0) {$H$};
+		\node [style=tiny box seq] (15) at (-1.5, 0.66) {$\overline{s}$};
 		\node [style=dangling] (16) at (1.75, -0.5) {};
 		\node [style=port] (18) at (0.25, 0.5) {};
 		\node [style=port] (19) at (0.25, -0.5) {};
-		\node [style=tiny seq box] (20) at (-1.5, -0.66) {$\overline{v}$};
+		\node [style=tiny box seq] (20) at (-1.5, -0.66) {$\overline{v}$};
 		\node [style=dangling] (31) at (1.75, 0.5) {};
 		\node [style=port] (35) at (0.75, 0.5) {};
 		\node [style=port] (36) at (0.75, -0.5) {};

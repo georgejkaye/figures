@@ -6,10 +6,10 @@
 		\node [style=none] (16) at (-2.75, 1.5) {};
 		\node [style=none] (17) at (-2.5, 0.25) {};
 		\node [style=none] (18) at (-2, -0.75) {};
-		\node [style=tiny seq box] (19) at (-4, -0.25) {$\overline{v}$};
+		\node [style=tiny box seq] (19) at (-4, -0.25) {$\overline{v}$};
 		\node [style=none] (38) at (2, 1) {};
 		\node [style=none] (39) at (0, 1) {};
-		\node [style=medium square comb box] (41) at (1, -0.5) {$\hat{F}$};
+		\node [style=medium square box comb] (41) at (1, -0.5) {$\hat{F}$};
 		\node [style=port] (42) at (0.75, 0.16) {};
 		\node [style=port] (43) at (0.75, -0.25) {};
 		\node [style=port] (44) at (0.75, -1.16) {};

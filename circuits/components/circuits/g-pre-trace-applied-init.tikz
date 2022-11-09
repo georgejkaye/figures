@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square comb box] (10) at (0, 0) {$\hat{G}$};
+		\node [style=medium square box comb] (10) at (0, 0) {$\hat{G}$};
 		\node [style=dangling] (16) at (1.25, -0.5) {};
 		\node [style=none] (23) at (-1.25, 1) {};
 		\node [style=none] (25) at (0.25, -0.5) {};
@@ -15,7 +15,7 @@
 		\node [style=small label] (36) at (-1.75, -1.25) {$m$};
 		\node [style=small label] (37) at (1, 1) {$y$};
 		\node [style=small label] (38) at (1, -1) {$n$};
-		\node [style=tiny seq box] (39) at (-2.5, 0.25) {$\mathbf{r}$};
+		\node [style=tiny box seq] (39) at (-2.5, 0.25) {$\mathbf{r}$};
 		\node [style=none] (40) at (-1.5, 0.05) {};
 		\node [style=none] (41) at (-1.5, 0.45) {};
 		\node [style=small label] (42) at (-1.5, 0.75) {$w$};
@@ -26,7 +26,7 @@
 		\node [style=none] (47) at (-1.75, -0.55) {};
 		\node [style=none] (48) at (-0.75, 0.5) {};
 		\node [style=none] (49) at (-1.25, -0.75) {};
-		\node [style=tiny seq box] (50) at (-2.5, -0.75) {$\overline{v}$};
+		\node [style=tiny box seq] (50) at (-2.5, -0.75) {$\overline{v}$};
 		\node [style=none] (51) at (-0.75, -0.5) {};
 		\node [style=none] (52) at (-1.25, 0.25) {};
 	\end{pgfonlayer}

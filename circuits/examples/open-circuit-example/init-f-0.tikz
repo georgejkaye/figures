@@ -2,13 +2,13 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=and] (0) at (0.25, -0.25) {};
 		\node [style=none] (1) at (0, 0) {};
-		\node [style=tiny seq box] (10) at (-2, -0.75) {$v$};
+		\node [style=tiny box seq] (10) at (-2, -0.75) {$v$};
 		\node [style=none] (20) at (-0.25, -0.5) {};
 		\node [style=none] (23) at (2.75, 1.25) {};
 		\node [style=none] (24) at (-2.75, 1.25) {};
 		\node [style=none] (25) at (-2.75, -1.5) {};
 		\node [style=none] (26) at (2.75, -1.5) {};
-		\node [style=tiny seq box] (27) at (-2, 0.75) {$\belnaptrue$};
+		\node [style=tiny box seq] (27) at (-2, 0.75) {$\belnaptrue$};
 		\node [style=bproduct] (28) at (-2, 0) {};
 		\node [style=bproduct] (29) at (-1, 0) {};
 		\node [style=bproduct] (30) at (1.75, -0.25) {};

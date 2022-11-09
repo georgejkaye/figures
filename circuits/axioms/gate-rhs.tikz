@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny seq box] (0) at (-1, 0) {$\overline{g}(\overline{v})$};
+		\node [style=tiny box seq] (0) at (-1, 0) {$\overline{g}(\overline{v})$};
 		\node [style=port] (2) at (-0.75, 0) {};
 		\node [style=dangling] (4) at (0.75, 0) {};
 	\end{pgfonlayer}

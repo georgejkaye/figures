@@ -1,16 +1,16 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square comb box] (0) at (-3.5, 0.75) {$F$};
+		\node [style=medium square box comb] (0) at (-3.5, 0.75) {$F$};
 		\node [style=none] (1) at (-3.75, 1.25) {};
 		\node [style=none] (2) at (-3.75, 0.25) {};
 		\node [style=none] (3) at (-3.25, 1.25) {};
 		\node [style=none] (4) at (-3.25, 0.25) {};
 		\node [style=bproduct] (5) at (-5.25, 1.25) {};
 		\node [style=dangling] (6) at (-6.5, 0.25) {};
-		\node [style=medium square comb box] (7) at (0.25, -0.25) {$F$};
+		\node [style=medium square box comb] (7) at (0.25, -0.25) {$F$};
 		\node [style=none] (8) at (-1.25, 0.25) {};
 		\node [style=none] (9) at (0, -0.75) {};
-		\node [style=medium square comb box] (12) at (4, -1.25) {$F$};
+		\node [style=medium square box comb] (12) at (4, -1.25) {$F$};
 		\node [style=none] (15) at (4.25, -0.75) {};
 		\node [style=none] (16) at (4.25, -1.75) {};
 		\node [style=bproduct] (17) at (-2.25, 0.25) {};

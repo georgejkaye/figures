@@ -1,13 +1,13 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square seq box] (0) at (-1.25, 0.5) {$F$};
+		\node [style=medium square box seq] (0) at (-1.25, 0.5) {$F$};
 		\node [style=none] (1) at (-1.5, 0) {};
 		\node [style=none] (2) at (-0.5, 0) {};
 		\node [style=bproduct] (3) at (0.25, 0) {};
 		\node [style=none] (4) at (-0.5, 1) {};
 		\node [style=none] (5) at (1.75, 2.25) {};
 		\node [style=none] (6) at (0.25, 1) {};
-		\node [style=medium square seq box] (7) at (2.75, -0.75) {$F$};
+		\node [style=medium square box seq] (7) at (2.75, -0.75) {$F$};
 		\node [style=none] (8) at (2.5, -1.25) {};
 		\node [style=none] (9) at (2.5, -0.25) {};
 		\node [style=none] (10) at (3.5, -1.25) {};

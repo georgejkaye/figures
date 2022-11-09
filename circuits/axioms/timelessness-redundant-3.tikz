@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium comb box] (0) at (-1, -1) {$g$};
+		\node [style=medium box comb] (0) at (-1, -1) {$g$};
 		\node [style=port] (2) at (-1.25, -1) {};
 		\node [style=port] (3) at (-0.75, -1) {};
 		\node [style=dangling] (4) at (-3.25, -1) {};

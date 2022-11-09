@@ -6,8 +6,8 @@
 		\node [style=none] (16) at (-1.5, 1.25) {};
 		\node [style=none] (17) at (-1.5, 0.25) {};
 		\node [style=none] (18) at (-1.25, -0.75) {};
-		\node [style=tiny seq box] (19) at (-3, -0.25) {$\overline{v}$};
-		\node [style=medium square comb box] (41) at (1, -0.5) {$\hat{F}$};
+		\node [style=tiny box seq] (19) at (-3, -0.25) {$\overline{v}$};
+		\node [style=medium square box comb] (41) at (1, -0.5) {$\hat{F}$};
 		\node [style=port] (43) at (0.75, -0.25) {};
 		\node [style=port] (44) at (0.75, -1.16) {};
 		\node [style=port] (45) at (0.75, -0.75) {};

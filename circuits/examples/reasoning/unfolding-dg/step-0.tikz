@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square seq box] (10) at (0.75, -0.25) {$F$};
+		\node [style=medium square box seq] (10) at (0.75, -0.25) {$F$};
 		\node [style=none] (36) at (1, -0.25) {};
 		\node [style=dangling] (37) at (2.75, -0.25) {};
 		\node [style=none] (44) at (-3, 3) {};

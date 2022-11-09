@@ -2,7 +2,7 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=delay] (6) at (-1, -0.525) {};
 		\node [style=dangling] (35) at (-2, -0.5) {};
-		\node [style=tiny seq box] (53) at (-1, 1) {$\overline{v}$};
+		\node [style=tiny box seq] (53) at (-1, 1) {$\overline{v}$};
 		\node [style=bproduct] (54) at (0.5, 0) {};
 		\node [style=none] (56) at (-0.5, 1) {};
 		\node [style=none] (59) at (0.75, 0) {};

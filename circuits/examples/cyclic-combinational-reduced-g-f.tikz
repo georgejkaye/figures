@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square comb box] (54) at (-1, 0) {$G$};
-		\node [style=medium square comb box] (55) at (1, 0) {$F$};
+		\node [style=medium square box comb] (54) at (-1, 0) {$G$};
+		\node [style=medium square box comb] (55) at (1, 0) {$F$};
 		\node [style=none] (56) at (-2.25, 0) {};
 		\node [style=none] (57) at (0, 0) {};
 		\node [style=none] (58) at (2.25, 0) {};

@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium comb box] (0) at (1, 0) {$g$};
+		\node [style=medium box comb] (0) at (1, 0) {$g$};
 		\node [style=port] (2) at (0.75, 0) {};
 		\node [style=port] (3) at (1.25, 0) {};
 		\node [style=dangling] (5) at (2, 0) {};
@@ -9,7 +9,7 @@
 		\node [style=none] (15) at (-0.25, 0.25) {};
 		\node [style=none] (16) at (-0.25, -0.25) {};
 		\node [style=small label] (17) at (-0.25, 0.5) {$m$};
-		\node [style=tiny seq box] (18) at (-2.25, 1) {$\overline{v}$};
+		\node [style=tiny box seq] (18) at (-2.25, 1) {$\overline{v}$};
 		\node [style=bproduct] (19) at (-1, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

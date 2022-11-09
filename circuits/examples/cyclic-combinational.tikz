@@ -34,8 +34,8 @@
 		\node [style=none] (49) at (-3.25, 2) {$x$};
 		\node [style=small label] (50) at (-1.25, -3) {$c$};
 		\node [style=none] (51) at (-3.25, -2) {$x$};
-		\node [style=medium square comb box] (52) at (0.5, 1.75) {$F$};
-		\node [style=medium square comb box] (53) at (0.5, -1.75) {$G$};
+		\node [style=medium square box comb] (52) at (0.5, 1.75) {$F$};
+		\node [style=medium square box comb] (53) at (0.5, -1.75) {$G$};
 		\node [style=none] (63) at (-1.5, -1.5) {{\hspace{0em} \scalebox{0.5}{$0$}}};
 		\node [style=none] (64) at (-2.5, -1.5) {};
 		\node [style=none] (65) at (4, 0) {};

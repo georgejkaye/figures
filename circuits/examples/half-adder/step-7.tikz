@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (1) at (2, 1.25) {};
-		\node [style=medium comb box] (2) at (2, -1.25) {AND};
+		\node [style=medium box comb] (2) at (2, -1.25) {AND};
 		\node [style=port] (7) at (1.75, -0.75) {};
 		\node [style=port] (8) at (1.75, -1.75) {};
 		\node [style=none] (18) at (4, 1.25) {};

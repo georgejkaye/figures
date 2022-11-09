@@ -4,8 +4,8 @@
 		\node [style=bproduct] (9) at (-5.5, 0.475) {};
 		\node [style=bproduct] (10) at (-5.5, -1) {};
 		\node [style=dangling] (11) at (-10, -1) {};
-		\node [style=medium square comb box] (12) at (-2.75, 1.25) {$T$};
-		\node [style=medium square comb box] (13) at (-2.75, -1.75) {$O$};
+		\node [style=medium square box comb] (12) at (-2.75, 1.25) {$T$};
+		\node [style=medium square box comb] (13) at (-2.75, -1.75) {$O$};
 		\node [style=bport] (15) at (-3.25, 1.75) {};
 		\node [style=bport] (16) at (-3.25, 0.75) {};
 		\node [style=bport] (18) at (-3.25, -1.25) {};
@@ -35,8 +35,8 @@
 		\node [style=none] (54) at (0.75, 2) {};
 		\node [style=bproduct] (55) at (3.25, 0.475) {};
 		\node [style=bproduct] (56) at (3.25, -1) {};
-		\node [style=medium square comb box] (57) at (6, 1.25) {$T$};
-		\node [style=medium square comb box] (58) at (6, -1.75) {$O$};
+		\node [style=medium square box comb] (57) at (6, 1.25) {$T$};
+		\node [style=medium square box comb] (58) at (6, -1.75) {$O$};
 		\node [style=bport] (59) at (5.5, 1.75) {};
 		\node [style=bport] (60) at (5.5, 0.75) {};
 		\node [style=bport] (61) at (5.5, -1.25) {};
