@@ -7,8 +7,8 @@
 		\node [style=and] (11) at (0, 0.75) {};
 		\node [style=port] (12) at (-0.25, 1) {};
 		\node [style=port] (13) at (-0.25, 0.5) {};
-		\node [style=tiny seq box] (20) at (-2.25, 0.5) {$\mathsf{t}$};
-		\node [style=tiny seq box] (21) at (-5.5, 1.75) {$\mathsf{t}$};
+		\node [style=tiny seq box] (20) at (-2.25, 0.5) {$\belnaptrue$};
+		\node [style=tiny seq box] (21) at (-5.5, 1.75) {$\belnaptrue$};
 		\node [style=bproduct] (22) at (-4.5, 2.25) {};
 		\node [style=port] (23) at (0.25, 0.75) {};
 		\node [style=and] (24) at (3.25, -0.5) {};
@@ -16,7 +16,7 @@
 		\node [style=port] (26) at (3, -0.75) {};
 		\node [style=port] (27) at (3.5, -0.5) {};
 		\node [style=none] (28) at (4.5, -0.5) {};
-		\node [style=tiny seq box] (29) at (1, -0.75) {$\mathsf{t}$};
+		\node [style=tiny seq box] (29) at (1, -0.75) {$\belnaptrue$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (20) to (13);

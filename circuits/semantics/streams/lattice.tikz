@@ -1,8 +1,8 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (0) at (0, 1.5) {$\top$};
-		\node [style=none] (1) at (-1.25, 0) {$\mathsf{t}$};
-		\node [style=none] (2) at (1.25, 0) {$\mathsf{f}$};
+		\node [style=none] (1) at (-1.25, 0) {$\belnaptrue$};
+		\node [style=none] (2) at (1.25, 0) {$\belnapfalse$};
 		\node [style=none] (3) at (0, -1.5) {$\bot$};
 		\node [style=none] (4) at (-1, 0.5) {};
 		\node [style=none] (5) at (-1, -0.5) {};

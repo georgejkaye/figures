@@ -5,7 +5,7 @@
 		\node [style=port] (26) at (3, -0.5) {};
 		\node [style=port] (27) at (3.5, -0.25) {};
 		\node [style=none] (28) at (4.5, -0.25) {};
-		\node [style=tiny seq box] (29) at (1.5, -0.5) {$\mathsf{t}$};
+		\node [style=tiny seq box] (29) at (1.5, -0.5) {$\belnaptrue$};
 		\node [style=none] (30) at (-5, 3) {};
 		\node [style=none] (31) at (-5, -1) {};
 		\node [style=none] (32) at (5, -1) {};

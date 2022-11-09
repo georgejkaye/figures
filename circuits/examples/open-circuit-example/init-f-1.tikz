@@ -3,7 +3,7 @@
 		\node [style=and] (0) at (0.25, 0.25) {};
 		\node [style=none] (1) at (-0.25, 0.5) {};
 		\node [style=tiny seq box] (10) at (-2, -0.25) {$v$};
-		\node [style=tiny seq box] (19) at (-2, 0.75) {$\mathsf{t}$};
+		\node [style=tiny seq box] (19) at (-2, 0.75) {$\belnaptrue$};
 		\node [style=none] (20) at (-0.25, 0) {};
 		\node [style=none] (23) at (2.75, 1.75) {};
 		\node [style=none] (24) at (-2.75, 1.75) {};

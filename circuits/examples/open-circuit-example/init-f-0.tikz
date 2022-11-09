@@ -8,7 +8,7 @@
 		\node [style=none] (24) at (-2.75, 1.25) {};
 		\node [style=none] (25) at (-2.75, -1.5) {};
 		\node [style=none] (26) at (2.75, -1.5) {};
-		\node [style=tiny seq box] (27) at (-2, 0.75) {$\mathsf{t}$};
+		\node [style=tiny seq box] (27) at (-2, 0.75) {$\belnaptrue$};
 		\node [style=bproduct] (28) at (-2, 0) {};
 		\node [style=bproduct] (29) at (-1, 0) {};
 		\node [style=bproduct] (30) at (1.75, -0.25) {};
