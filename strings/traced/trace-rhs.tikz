@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box] (0) at (0, 0) {$F$};
+		\node [style={medium square box \varb}] (0) at (0, 0) {$\vara$};
 		\node [style=dangling] (1) at (-2, -0.5) {};
 		\node [style=none] (2) at (-0.25, -0.5) {};
 		\node [style=none] (4) at (-1.25, 0.5) {};
