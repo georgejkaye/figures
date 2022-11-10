@@ -51,14 +51,14 @@
 \newcommand{\varg}{}
 \newcommand{\varh}{}
 \NewDocumentCommand\iltikzfig{moooooooo}{%
-  \IfValueT{#2}{\renewcommand{\vara}{#2}}%
-  \IfValueT{#3}{\renewcommand{\varb}{#3}}%
-  \IfValueT{#4}{\renewcommand{\varc}{#4}}%
-  \IfValueT{#5}{\renewcommand{\vard}{#5}}%
-  \IfValueT{#6}{\renewcommand{\vare}{#6}}%
-  \IfValueT{#7}{\renewcommand{\varf}{#7}}%
-  \IfValueT{#8}{\renewcommand{\varg}{#8}}%
-  \IfValueT{#9}{\renewcommand{\varh}{#9}}%
+  \renewcommand{\vara}{\IfValueTF{#2}{#2}{}}%
+  \renewcommand{\varb}{\IfValueTF{#3}{#3}{}}%
+  \renewcommand{\varc}{\IfValueTF{#4}{#4}{}}%
+  \renewcommand{\vard}{\IfValueTF{#5}{#5}{}}%
+  \renewcommand{\vare}{\IfValueTF{#6}{#6}{}}%
+  \renewcommand{\varf}{\IfValueTF{#7}{#7}{}}%
+  \renewcommand{\varg}{\IfValueTF{#8}{#8}{}}%
+  \renewcommand{\varh}{\IfValueTF{#9}{#9}{}}%
   \raisebox{0.15em}{\scalebox{0.5}{\tikzfig{#1}}}%
   \IfValueT{#2}{\renewcommand{\vara}{}}%
   \IfValueT{#3}{\renewcommand{\varb}{}}%
