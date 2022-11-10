@@ -1,32 +1,21 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box] (0) at (0, 0) {$F$};
-		\node [style=port] (3) at (0.25, -0.5) {};
-		\node [style=dangling] (4) at (3.25, -0.5) {};
-		\node [style=port] (9) at (-0.25, -0.5) {};
-		\node [style=dangling] (11) at (-3.25, -0.5) {};
-		\node [style=port] (12) at (0.25, 0.5) {};
-		\node [style=port] (13) at (-0.25, 0.5) {};
-		\node [style=none] (14) at (-1.75, 0.5) {};
-		\node [style=none] (15) at (1.75, 0.5) {};
-		\node [style=none] (16) at (1.75, 1.5) {};
-		\node [style=none] (17) at (-1.75, 1.5) {};
+		\node [style=medium square box] (0) at (0, -0.75) {$F$};
+		\node [style=port] (3) at (0.25, -1.25) {};
+		\node [style=dangling] (4) at (3.25, -1.25) {};
+		\node [style=port] (9) at (-0.25, -1.25) {};
+		\node [style=dangling] (11) at (-3.25, -1.25) {};
+		\node [style=port] (12) at (0.25, -0.25) {};
+		\node [style=port] (13) at (-0.25, -0.25) {};
+		\node [style=none] (14) at (-1.75, -0.25) {};
+		\node [style=none] (15) at (1.75, -0.25) {};
+		\node [style=none] (16) at (1.75, 0.75) {};
+		\node [style=none] (17) at (-1.75, 0.75) {};
 		\node [style=none] (22) at (-2.75, 1.75) {};
-		\node [style=none] (23) at (-2.75, -1.5) {};
-		\node [style=none] (24) at (2.75, -1.5) {};
+		\node [style=none] (23) at (-2.75, -2) {};
+		\node [style=none] (24) at (2.75, -2) {};
 		\node [style=none] (25) at (2.75, 1.75) {};
-		\node [style=none] (26) at (-1.25, 0.75) {};
-		\node [style=none] (27) at (-1.25, 0.25) {};
-		\node [style=small label] (28) at (-1.25, 1) {$X \otimes Y$};
-		\node [style=none] (32) at (1.25, -0.75) {};
-		\node [style=none] (33) at (1.25, -0.25) {};
-		\node [style=small label] (34) at (1.25, -1) {$B$};
-		\node [style=none] (35) at (-1.25, -0.75) {};
-		\node [style=none] (36) at (-1.25, -0.25) {};
-		\node [style=small label] (37) at (-1.25, -1) {$A$};
-		\node [style=none] (44) at (1.25, 0.75) {};
-		\node [style=none] (45) at (1.25, 0.25) {};
-		\node [style=small label] (46) at (1.25, 1) {$X\otimes Y$};
+		\node [style=none] (26) at (0, 1.25) {$X \otimes Y$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (3) to (4);
@@ -41,9 +30,5 @@
 		\draw [style=traced] (22.center) to (23.center);
 		\draw [style=traced] (23.center) to (24.center);
 		\draw [style=traced] (24.center) to (25.center);
-		\draw [style=wiredash] (27.center) to (26.center);
-		\draw [style=wiredash] (33.center) to (32.center);
-		\draw [style=wiredash] (36.center) to (35.center);
-		\draw [style=wiredash] (45.center) to (44.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

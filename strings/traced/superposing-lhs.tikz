@@ -18,24 +18,6 @@
 		\node [style=none] (16) at (-2.25, -1.5) {};
 		\node [style=none] (17) at (2.25, -1.5) {};
 		\node [style=none] (18) at (2.25, 2) {};
-		\node [style=none] (21) at (-1.25, 0.75) {};
-		\node [style=none] (22) at (-1.25, 0.25) {};
-		\node [style=small label] (23) at (-1.25, 1) {$X$};
-		\node [style=none] (24) at (1.25, 0.75) {};
-		\node [style=none] (25) at (1.25, 0.25) {};
-		\node [style=small label] (26) at (1.25, 1) {$X$};
-		\node [style=none] (27) at (1.25, -0.75) {};
-		\node [style=none] (28) at (1.25, -0.25) {};
-		\node [style=small label] (29) at (1.25, -1) {$B$};
-		\node [style=none] (30) at (-1.25, -0.75) {};
-		\node [style=none] (31) at (-1.25, -0.25) {};
-		\node [style=small label] (32) at (-1.25, -1) {$A$};
-		\node [style=none] (33) at (1.25, -2.75) {};
-		\node [style=none] (34) at (1.25, -2.25) {};
-		\node [style=small label] (35) at (1.25, -3) {$D$};
-		\node [style=none] (36) at (-1.25, -2.75) {};
-		\node [style=none] (37) at (-1.25, -2.25) {};
-		\node [style=small label] (38) at (-1.25, -3) {$C$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (8) to (10.center);
@@ -52,11 +34,5 @@
 			 to (16.center)
 			 to (15.center)
 			 to cycle;
-		\draw [style=wiredash] (22.center) to (21.center);
-		\draw [style=wiredash] (25.center) to (24.center);
-		\draw [style=wiredash] (28.center) to (27.center);
-		\draw [style=wiredash] (31.center) to (30.center);
-		\draw [style=wiredash] (34.center) to (33.center);
-		\draw [style=wiredash] (37.center) to (36.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
