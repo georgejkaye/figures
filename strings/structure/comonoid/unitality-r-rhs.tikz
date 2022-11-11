@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=dangling] (5) at (-0.5, 0) {};
-		\node [style=dangling] (6) at (0.5, 0) {};
+		\node [style=dangling] (5) at (-0.75, 0) {};
+		\node [style=dangling] (6) at (0.75, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (6) to (5);
