@@ -1,26 +1,15 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box comb] (0) at (0.75, 0) {$F$};
-		\node [style=bproduct] (1) at (-0.75, 0) {};
-		\node [style=port] (2) at (0.5, 0) {};
-		\node [style=port] (3) at (1, 0) {};
-		\node [style=tiny box seq] (4) at (-2.25, 0.75) {$\overline{v}$};
-		\node [style=dangling] (5) at (2, 0) {};
-		\node [style=delay] (6) at (-2.25, -0.75) {};
-		\node [style=none] (8) at (-1.5, 0.75) {};
-		\node [style=port] (9) at (-2.25, 0.75) {};
-		\node [style=dangling] (10) at (-3.25, -0.75) {};
-		\node [style=none] (11) at (-1.5, -0.75) {};
+		\node [style=medium square box comb] (0) at (1, 0) {$F$};
+		\node [style=delay] (1) at (-1, 0) {$\overline{v}$};
+		\node [style=port] (2) at (0.75, 0) {};
+		\node [style=port] (3) at (1.25, 0) {};
+		\node [style=dangling] (5) at (2.25, 0) {};
+		\node [style=dangling] (10) at (-2.25, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (1) to (2);
 		\draw [style=wire] (3) to (5);
-		\draw [style=wire] (9)
-			 to (8.center)
-			 to [in=105, out=0] (1);
-		\draw [style=wire] (6) to (10);
-		\draw [style=wire] (6)
-			 to (11.center)
-			 to [in=-105, out=0] (1);
+		\draw [style=wire] (10) to (1);
 	\end{pgfonlayer}
 \end{tikzpicture}
