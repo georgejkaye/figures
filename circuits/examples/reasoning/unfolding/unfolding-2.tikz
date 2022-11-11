@@ -18,7 +18,7 @@
 		\node [style=none] (22) at (0.25, 1.25) {};
 		\node [style=none] (27) at (-0.75, 1.25) {};
 		\node [style=none] (28) at (-0.75, -1) {};
-		\node [style=none] (29) at (-3.75, -1) {};
+		\node [style=dangling] (29) at (-3.75, -1) {};
 		\node [style=bproduct] (30) at (-1.75, -1) {};
 		\node [style=none] (31) at (-0.5, 0.25) {};
 		\node [style=none] (32) at (-0.75, -2) {};
@@ -28,6 +28,8 @@
 		\node [style=none] (54) at (-0.5, 0.25) {};
 		\node [style=none] (58) at (-0.5, -1) {};
 		\node [style=none] (62) at (-0.5, -2) {};
+		\node [style=wire label left] (63) at (-4, -1) {$m$};
+		\node [style=wire label right] (64) at (3.25, -2) {$n$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wiredash] (8.center)
@@ -44,7 +46,7 @@
 		\draw [style=wiredash] (28.center) to (19.center);
 		\draw [style=wiredash, in=-180, out=75] (30) to (31.center);
 		\draw [style=wiredash] (31.center) to (2.center);
-		\draw [style=wiredash] (30) to (29.center);
+		\draw [style=wiredash] (30) to (29);
 		\draw [style=wiredash] (30)
 			 to [in=180, out=-75] (32.center)
 			 to (18.center);

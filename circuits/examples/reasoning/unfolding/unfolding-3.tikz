@@ -25,6 +25,8 @@
 		\node [style=none] (52) at (1.75, 1.5) {};
 		\node [style=dangling] (53) at (-4.25, -0.5) {};
 		\node [style=bproduct] (54) at (-3.25, -0.5) {};
+		\node [style=wire label left] (55) at (-4.5, -0.5) {$m$};
+		\node [style=wire label right] (56) at (5, -1.25) {$n$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wiredash] (4.center) to (6.center);
