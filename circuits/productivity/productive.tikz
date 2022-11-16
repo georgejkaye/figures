@@ -1,13 +1,14 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (18) at (-1.75, -0.75) {$G$};
-		\node [style=port] (20) at (-1.5, -0.75) {};
-		\node [style=delay] (25) at (0, -0.75) {};
-		\node [style=tiny box seq] (33) at (-1.75, 0.75) {$\overline{v}$};
-		\node [style=none] (36) at (0.75, 0.75) {};
+		\node [style=medium square box seq] (18) at (-2, -1) {$G$};
+		\node [style=port] (20) at (-1.75, -1) {};
+		\node [style=delay] (25) at (-0.25, -1) {};
+		\node [style=tiny box seq] (33) at (-2, 1) {$\overline{v}$};
+		\node [style=none] (36) at (0.5, 1) {};
 		\node [style=bproduct] (42) at (1.5, 0) {};
 		\node [style=dangling] (44) at (2.25, 0) {};
-		\node [style=none] (51) at (0, -0.75) {};
+		\node [style=none] (51) at (0.5, -1) {};
+		\node [style=tiny box seq] (52) at (-3.75, -1) {$\overline{u}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (20) to (25);
@@ -15,6 +16,8 @@
 			 to (36.center)
 			 to [in=105, out=0] (42);
 		\draw [style=wire] (42) to (44);
-		\draw [style=wiredash, in=-105, out=0, looseness=1.25] (51.center) to (42);
+		\draw [style=wiredash, in=-105, out=0] (51.center) to (42);
+		\draw [style=wire] (52) to (20);
+		\draw [style=wire] (51.center) to (25);
 	\end{pgfonlayer}
 \end{tikzpicture}
