@@ -1,0 +1,50 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box comb] (261) at (-2.25, -1) {$G$};
+		\node [style=mux] (264) at (3.25, -1) {};
+		\node [style=none] (282) at (-1.5, -1) {};
+		\node [style=none] (283) at (-1.75, -1) {};
+		\node [style=bproduct] (284) at (-0.75, -1) {};
+		\node [style=none] (285) at (-0.25, -0.5) {};
+		\node [style=none] (286) at (-0.25, -1.5) {};
+		\node [style=none] (287) at (0, -0.5) {};
+		\node [style=none] (288) at (1.5, 2) {};
+		\node [style=none] (289) at (0.75, -2.75) {};
+		\node [style=none] (290) at (2.25, -1.5) {};
+		\node [style=none] (291) at (3, -0.5) {};
+		\node [style=none] (292) at (3, -1.5) {};
+		\node [style=none] (293) at (3.25, -0.5) {};
+		\node [style=none] (294) at (2.75, 0.75) {};
+		\node [style=none] (295) at (3.25, 0.25) {};
+		\node [style=none] (298) at (4.25, -1) {};
+		\node [style=none] (299) at (0.25, -1.5) {};
+		\node [style=none] (300) at (2, -0.5) {};
+		\node [style=bproduct] (301) at (3.5, 2) {};
+		\node [style=tiny box seq] (303) at (2, 0.75) {$\mathsf{f}$};
+		\node [style=tiny box seq] (304) at (-4.75, -1) {$F(0)$};
+		\node [style=tiny box seq] (306) at (-0.5, -2.75) {$F(0)$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire, in=180, out=90] (284) to (285.center);
+		\draw [style=wire] (285.center) to (287.center);
+		\draw [style=wire, in=180, out=0, looseness=0.75] (287.center) to (288.center);
+		\draw [style=wire, in=180, out=0, looseness=0.75] (289.center) to (290.center);
+		\draw [style=wire] (290.center) to (292.center);
+		\draw [style=wire] (261) to (283.center);
+		\draw [style=wire] (283.center) to (282.center);
+		\draw [style=wire] (282.center) to (284);
+		\draw [style=wire] (284)
+			 to [in=180, out=-90] (286.center)
+			 to (299.center)
+			 to [in=180, out=0] (300.center)
+			 to (291.center);
+		\draw [style=wire] (293.center)
+			 to (295.center)
+			 to [in=0, out=90] (294.center)
+			 to (303);
+		\draw [style=wire] (298.center) to (264);
+		\draw [style=wire] (288.center) to (301);
+		\draw [style=wire] (289.center) to (306);
+		\draw [style=wire] (261) to (304);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,271 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny box seq] (0) at (2, 0.75) {$\mathsf{f}$};
+		\node [style=medium square box comb] (1) at (5.25, -0.5) {$G$};
+		\node [style=mux] (2) at (-3.5, 1.25) {};
+		\node [style=mux] (3) at (3.25, -1) {};
+		\node [style=mux] (4) at (10.75, -0.5) {};
+		\node [style=medium square box comb] (5) at (-1.5, 1.25) {$F$};
+		\node [style=none] (6) at (-3.5, 1.75) {};
+		\node [style=none] (8) at (-3.75, 0.75) {};
+		\node [style=none] (9) at (-3.5, 2.5) {};
+		\node [style=bproduct] (17) at (-4.5, 0.75) {};
+		\node [style=none] (21) at (-3.75, 1.75) {};
+		\node [style=none] (22) at (-3.5, 1.25) {};
+		\node [style=none] (23) at (3.25, -1) {};
+		\node [style=bproduct] (24) at (-0.25, 1.25) {};
+		\node [style=none] (25) at (0.25, 1.75) {};
+		\node [style=none] (26) at (0.25, 0.75) {};
+		\node [style=none] (27) at (3, -0.5) {};
+		\node [style=none] (28) at (0.5, 0.75) {};
+		\node [style=none] (31) at (3.25, 0.25) {};
+		\node [style=none] (34) at (3.25, -0.5) {};
+		\node [style=none] (35) at (2.75, 0.75) {};
+		\node [style=none] (38) at (3, -1.5) {};
+		\node [style=none] (41) at (6, -0.5) {};
+		\node [style=none] (42) at (5.75, -0.5) {};
+		\node [style=bproduct] (43) at (6.75, -0.5) {};
+		\node [style=none] (44) at (7.25, 0) {};
+		\node [style=none] (45) at (7.25, -1) {};
+		\node [style=none] (50) at (7.5, 0) {};
+		\node [style=none] (51) at (9, 2.5) {};
+		\node [style=none] (52) at (7.25, 1.75) {};
+		\node [style=none] (54) at (9.5, -1) {};
+		\node [style=none] (59) at (10.5, 0) {};
+		\node [style=none] (60) at (10.5, -1) {};
+		\node [style=none] (63) at (10.75, 0) {};
+		\node [style=none] (65) at (10.25, 1.25) {};
+		\node [style=none] (66) at (10.75, 0.75) {};
+		\node [style=none] (68) at (-4, 3) {};
+		\node [style=none] (69) at (1.5, -0.5) {};
+		\node [style=bproduct] (73) at (11.75, -0.5) {};
+		\node [style=none] (74) at (7.75, -1) {};
+		\node [style=none] (75) at (9.5, 0) {};
+		\node [style=none] (119) at (11, 2.5) {};
+		\node [style=tiny box seq] (210) at (-4.75, 3) {$\mathsf{f}$};
+		\node [style=tiny box seq] (211) at (9.5, 1.25) {$\mathsf{f}$};
+		\node [style=tiny box seq] (212) at (-6.25, 1.75) {$\mathsf{t}$};
+		\node [style=tiny box seq] (213) at (1.75, -1.5) {$\mathsf{t}$};
+		\node [style=tiny box seq] (214) at (21.5, 0.75) {$\mathsf{f}$};
+		\node [style=medium square box comb] (215) at (24.75, -0.5) {$G$};
+		\node [style=mux] (216) at (16, 1.25) {};
+		\node [style=mux] (217) at (22.75, -1) {};
+		\node [style=mux] (218) at (30.25, -0.5) {};
+		\node [style=medium square box comb] (219) at (18, 1.25) {$F$};
+		\node [style=none] (220) at (16, 1.75) {};
+		\node [style=none] (221) at (15.75, 0.75) {};
+		\node [style=none] (222) at (16, 2.5) {};
+		\node [style=none] (223) at (12.5, 0.75) {};
+		\node [style=none] (224) at (15.75, 1.75) {};
+		\node [style=none] (225) at (16, 1.25) {};
+		\node [style=none] (226) at (22.75, -1) {};
+		\node [style=bproduct] (227) at (19.25, 1.25) {};
+		\node [style=none] (228) at (19.75, 1.75) {};
+		\node [style=none] (229) at (19.75, 0.75) {};
+		\node [style=none] (230) at (22.5, -0.5) {};
+		\node [style=none] (231) at (20, 0.75) {};
+		\node [style=none] (232) at (22.75, 0.25) {};
+		\node [style=none] (233) at (22.75, -0.5) {};
+		\node [style=none] (234) at (22.25, 0.75) {};
+		\node [style=none] (235) at (22.5, -1.5) {};
+		\node [style=none] (236) at (25.5, -0.5) {};
+		\node [style=none] (237) at (25.25, -0.5) {};
+		\node [style=bproduct] (238) at (26.25, -0.5) {};
+		\node [style=none] (239) at (26.75, 0) {};
+		\node [style=none] (240) at (26.75, -1) {};
+		\node [style=none] (241) at (27, 0) {};
+		\node [style=none] (242) at (28.5, 2.5) {};
+		\node [style=none] (243) at (26.75, 1.75) {};
+		\node [style=none] (244) at (29, -1) {};
+		\node [style=none] (245) at (30, 0) {};
+		\node [style=none] (246) at (30, -1) {};
+		\node [style=none] (247) at (30.25, 0) {};
+		\node [style=none] (248) at (29.75, 1.25) {};
+		\node [style=none] (249) at (30.25, 0.75) {};
+		\node [style=none] (250) at (15.5, 3) {};
+		\node [style=none] (251) at (21, -0.5) {};
+		\node [style=bproduct] (252) at (31.25, -0.5) {};
+		\node [style=none] (253) at (27.25, -1) {};
+		\node [style=none] (254) at (29, 0) {};
+		\node [style=none] (255) at (30, 2.5) {};
+		\node [style=tiny box seq] (256) at (14.75, 3) {$\mathsf{f}$};
+		\node [style=tiny box seq] (257) at (29, 1.25) {$\mathsf{f}$};
+		\node [style=tiny box seq] (258) at (13.25, 1.75) {$\mathsf{t}$};
+		\node [style=tiny box seq] (259) at (21.25, -1.5) {$\mathsf{t}$};
+		\node [style=tiny box seq] (260) at (41, 0.75) {$\mathsf{f}$};
+		\node [style=medium square box comb] (261) at (44.25, -0.5) {$G$};
+		\node [style=mux] (262) at (35.5, 1.25) {};
+		\node [style=mux] (263) at (42.25, -1) {};
+		\node [style=mux] (264) at (49.75, -0.5) {};
+		\node [style=medium square box comb] (265) at (37.5, 1.25) {$F$};
+		\node [style=none] (266) at (35.5, 1.75) {};
+		\node [style=none] (267) at (35.25, 0.75) {};
+		\node [style=none] (268) at (35.5, 2.5) {};
+		\node [style=none] (269) at (31.5, 0.75) {};
+		\node [style=none] (270) at (35.25, 1.75) {};
+		\node [style=none] (271) at (35.5, 1.25) {};
+		\node [style=none] (272) at (42.25, -1) {};
+		\node [style=bproduct] (273) at (38.75, 1.25) {};
+		\node [style=none] (274) at (39.25, 1.75) {};
+		\node [style=none] (275) at (39.25, 0.75) {};
+		\node [style=none] (276) at (42, -0.5) {};
+		\node [style=none] (277) at (39.5, 0.75) {};
+		\node [style=none] (278) at (42.25, 0.25) {};
+		\node [style=none] (279) at (42.25, -0.5) {};
+		\node [style=none] (280) at (41.75, 0.75) {};
+		\node [style=none] (281) at (42, -1.5) {};
+		\node [style=none] (282) at (45, -0.5) {};
+		\node [style=none] (283) at (44.75, -0.5) {};
+		\node [style=bproduct] (284) at (45.75, -0.5) {};
+		\node [style=none] (285) at (46.25, 0) {};
+		\node [style=none] (286) at (46.25, -1) {};
+		\node [style=none] (287) at (46.5, 0) {};
+		\node [style=none] (288) at (48, 2.5) {};
+		\node [style=none] (289) at (46.25, 1.75) {};
+		\node [style=none] (290) at (48.5, -1) {};
+		\node [style=none] (291) at (49.5, 0) {};
+		\node [style=none] (292) at (49.5, -1) {};
+		\node [style=none] (293) at (49.75, 0) {};
+		\node [style=none] (294) at (49.25, 1.25) {};
+		\node [style=none] (295) at (49.75, 0.75) {};
+		\node [style=none] (296) at (35, 3) {};
+		\node [style=none] (297) at (40.5, -0.5) {};
+		\node [style=none] (298) at (50.75, -0.5) {};
+		\node [style=none] (299) at (46.75, -1) {};
+		\node [style=none] (300) at (48.5, 0) {};
+		\node [style=bproduct] (301) at (50, 2.5) {};
+		\node [style=tiny box seq] (302) at (34.25, 3) {$\mathsf{f}$};
+		\node [style=tiny box seq] (303) at (48.5, 1.25) {$\mathsf{f}$};
+		\node [style=tiny box seq] (304) at (32.75, 1.75) {$\mathsf{t}$};
+		\node [style=tiny box seq] (305) at (40.75, -1.5) {$\mathsf{t}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (17) to (8.center);
+		\draw [style=wire] (210)
+			 to (68.center)
+			 to [in=90, out=0, looseness=1.25] (9.center)
+			 to (6.center);
+		\draw [style=wire] (43)
+			 to [in=180, out=90] (44.center)
+			 to (50.center)
+			 to [in=180, out=0, looseness=0.75] (51.center)
+			 to (119.center)
+			 to [in=-180, out=0] (223.center)
+			 to (221.center);
+		\draw [style=wire] (22.center) to (5);
+		\draw [style=wire] (1) to (23.center);
+		\draw [style=wire] (24) to (5);
+		\draw [style=wire] (24)
+			 to [in=180, out=75] (25.center)
+			 to (52.center)
+			 to [in=180, out=0, looseness=0.75] (54.center)
+			 to (60.center);
+		\draw [style=wire] (24)
+			 to [in=-180, out=-75] (26.center)
+			 to (28.center)
+			 to [in=180, out=0] (69.center)
+			 to (27.center);
+		\draw [style=wire] (0)
+			 to (35.center)
+			 to [in=90, out=0] (31.center)
+			 to (34.center);
+		\draw [style=wire] (1) to (42.center);
+		\draw [style=wire] (42.center) to (41.center);
+		\draw [style=wire] (41.center) to (43);
+		\draw [style=wire] (43)
+			 to [in=180, out=-90] (45.center)
+			 to (74.center)
+			 to [in=180, out=0] (75.center)
+			 to (59.center);
+		\draw [style=wire] (63.center)
+			 to (66.center)
+			 to [in=0, out=90] (65.center)
+			 to (211);
+		\draw [style=wire] (73) to (4);
+		\draw [style=wire] (21.center) to (212);
+		\draw [style=wire] (213) to (38.center);
+		\draw [style=wire] (256)
+			 to (250.center)
+			 to [in=90, out=0, looseness=1.25] (222.center)
+			 to (220.center);
+		\draw [style=wire] (238)
+			 to [in=180, out=90] (239.center)
+			 to (241.center)
+			 to [in=180, out=0, looseness=0.75] (242.center)
+			 to (255.center)
+			 to [in=-180, out=0, looseness=0.75] (269.center)
+			 to (267.center);
+		\draw [style=wire] (225.center) to (219);
+		\draw [style=wire] (215) to (226.center);
+		\draw [style=wire] (227) to (219);
+		\draw [style=wire] (227)
+			 to [in=180, out=75] (228.center)
+			 to (243.center)
+			 to [in=180, out=0, looseness=0.75] (244.center)
+			 to (246.center);
+		\draw [style=wire] (227)
+			 to [in=-180, out=-75] (229.center)
+			 to (231.center)
+			 to [in=180, out=0] (251.center)
+			 to (230.center);
+		\draw [style=wire] (214)
+			 to (234.center)
+			 to [in=90, out=0] (232.center)
+			 to (233.center);
+		\draw [style=wire] (215) to (237.center);
+		\draw [style=wire] (237.center) to (236.center);
+		\draw [style=wire] (236.center) to (238);
+		\draw [style=wire] (238)
+			 to [in=180, out=-90] (240.center)
+			 to (253.center)
+			 to [in=180, out=0] (254.center)
+			 to (245.center);
+		\draw [style=wire] (247.center)
+			 to (249.center)
+			 to [in=0, out=90] (248.center)
+			 to (257);
+		\draw [style=wire] (252) to (218);
+		\draw [style=wire] (224.center) to (258);
+		\draw [style=wire] (259) to (235.center);
+		\draw [style=wire] (302)
+			 to (296.center)
+			 to [in=90, out=0, looseness=1.25] (268.center)
+			 to (266.center);
+		\draw [style=wire, in=180, out=90] (284) to (285.center);
+		\draw [style=wire] (285.center) to (287.center);
+		\draw [style=wire, in=180, out=0, looseness=0.75] (287.center) to (288.center);
+		\draw [style=wire] (271.center) to (265);
+		\draw [style=wire] (261) to (272.center);
+		\draw [style=wire] (273) to (265);
+		\draw [style=wire] (273)
+			 to [in=180, out=75] (274.center)
+			 to (289.center)
+			 to [in=180, out=0, looseness=0.75] (290.center)
+			 to (292.center);
+		\draw [style=wire] (273)
+			 to [in=-180, out=-75] (275.center)
+			 to (277.center)
+			 to [in=180, out=0] (297.center)
+			 to (276.center);
+		\draw [style=wire] (260)
+			 to (280.center)
+			 to [in=90, out=0] (278.center)
+			 to (279.center);
+		\draw [style=wire] (261) to (283.center);
+		\draw [style=wire] (283.center) to (282.center);
+		\draw [style=wire] (282.center) to (284);
+		\draw [style=wire] (284)
+			 to [in=180, out=-90] (286.center)
+			 to (299.center)
+			 to [in=180, out=0] (300.center)
+			 to (291.center);
+		\draw [style=wire] (293.center)
+			 to (295.center)
+			 to [in=0, out=90] (294.center)
+			 to (303);
+		\draw [style=wire] (298.center) to (264);
+		\draw [style=wire] (288.center) to (301);
+		\draw [style=wire] (270.center) to (304);
+		\draw [style=wire] (305) to (281.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (298) at (1.25, 0) {};
+		\node [style=tiny box seq] (307) at (-1.25, 0) {$G(F(1))$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (298.center) to (307);
+	\end{pgfonlayer}
+\end{tikzpicture}
