@@ -5,8 +5,8 @@
 		\node [style=bport] (4) at (-0.25, 0) {};
 		\node [style=bport] (6) at (0.25, 0.5) {};
 		\node [style=bport] (7) at (0.25, -0.5) {};
-		\node [style=dangling] (8) at (1.5, -0.5) {};
-		\node [style=dangling] (18) at (1.5, 0.5) {};
+		\node [style=dangling] (8) at (1.75, -0.5) {};
+		\node [style=dangling] (18) at (1.75, 0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (1) to (4);

@@ -7,9 +7,9 @@
 		\node [style=bport] (6) at (0.25, 0.5) {};
 		\node [style=bport] (7) at (0.25, -0.5) {};
 		\node [style=dangling] (8) at (1.75, -0.5) {};
-		\node [style=small label] (11) at (-2.09, 0) {$m$};
-		\node [style=small label] (14) at (2, 0.5) {$x$};
-		\node [style=small label] (17) at (2, -0.5) {$n$};
+		\node [style=wire label right] (9) at (2, 0.5) {$x$};
+		\node [style=wire label right] (10) at (2, -0.5) {$n$};
+		\node [style=wire label left] (11) at (-2, 0) {$m$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (1) to (4);
