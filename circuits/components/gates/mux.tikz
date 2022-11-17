@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=mux] (72) at (0, 0) {};
+		\node [style=port] (73) at (0, 0.5) {};
+		\node [style=port] (74) at (0, -0.5) {};
+		\node [style=port] (75) at (0, 0) {};
+		\node [style=none] (76) at (0, 0.75) {};
+		\node [style=none] (77) at (-1.75, 0.5) {};
+		\node [style=none] (78) at (-1.75, -0.5) {};
+		\node [style=none] (79) at (-0.75, 1.5) {};
+		\node [style=none] (80) at (-1.75, 1.5) {};
+		\node [style=none] (81) at (-1.25, 2) {};
+		\node [style=none] (82) at (-1.25, -1.25) {};
+		\node [style=none] (83) at (0.75, -1.25) {};
+		\node [style=none] (84) at (0.75, 2) {};
+		\node [style=none] (85) at (1.25, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=tile comb] (84.center)
+			 to (81.center)
+			 to (82.center)
+			 to (83.center)
+			 to cycle;
+		\draw [style=wire] (75)
+			 to (76.center)
+			 to [bend right=45] (79.center)
+			 to (80.center);
+		\draw [style=wire] (73) to (77.center);
+		\draw [style=wire] (74) to (78.center);
+		\draw [style=tile comb] (85.center) to (75);
+	\end{pgfonlayer}
+\end{tikzpicture}
