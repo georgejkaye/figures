@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box comb] (298) at (-1, 0) {$F$};
-		\node [style=tiny box seq] (307) at (-3, 0) {$\mathsf{f}$};
+		\node [style=tiny box seq] (307) at (-3, 0) {$\belnaptrue$};
 		\node [style=medium square box comb] (308) at (1.25, 0) {$G$};
 		\node [style=none] (309) at (2.5, 0) {};
 	\end{pgfonlayer}

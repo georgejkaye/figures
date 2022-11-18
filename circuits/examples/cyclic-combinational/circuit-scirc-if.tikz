@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny box seq] (0) at (-8.75, 1.25) {$\mathsf{t}$};
+		\node [style=tiny box seq] (0) at (-8.75, 1.25) {$\belnaptrue$};
 		\node [style=medium square box comb] (1) at (5.25, -0.5) {$G$};
 		\node [style=mux] (2) at (-2.75, 1.25) {};
 		\node [style=mux] (3) at (3.25, -0.5) {};
@@ -19,7 +19,7 @@
 		\node [style=none] (16) at (-6.5, 3) {};
 		\node [style=none] (17) at (-4.75, 0.75) {};
 		\node [style=none] (18) at (-7, 0) {};
-		\node [style=tiny box seq] (19) at (-8.75, -0.5) {$\mathsf{f}$};
+		\node [style=tiny box seq] (19) at (-8.75, -0.5) {$\belnapfalse$};
 		\node [style=none] (21) at (-3, 1.75) {};
 		\node [style=none] (22) at (-2.75, 1.25) {};
 		\node [style=none] (23) at (3.25, -0.5) {};

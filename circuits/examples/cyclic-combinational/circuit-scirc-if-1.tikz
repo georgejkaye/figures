@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny box seq] (0) at (-8.75, 1.25) {$\mathsf{f}$};
+		\node [style=tiny box seq] (0) at (-8.75, 1.25) {$\belnapfalse$};
 		\node [style=medium square box comb] (1) at (4.5, -0.5) {$G$};
 		\node [style=mux] (2) at (-3, 1.25) {};
 		\node [style=mux] (3) at (2.75, -0.5) {};
@@ -19,7 +19,7 @@
 		\node [style=none] (16) at (-6.5, 3) {};
 		\node [style=none] (17) at (-5, 0.75) {};
 		\node [style=none] (18) at (-7, 0) {};
-		\node [style=tiny box seq] (19) at (-8.75, -0.5) {$\mathsf{t}$};
+		\node [style=tiny box seq] (19) at (-8.75, -0.5) {$\belnaptrue$};
 		\node [style=none] (21) at (-3.25, 1.75) {};
 		\node [style=none] (22) at (-3, 1.25) {};
 		\node [style=none] (23) at (2.75, -0.5) {};
@@ -65,7 +65,7 @@
 		\node [style=bproduct] (73) at (10.5, -0.5) {};
 		\node [style=none] (74) at (7, -1) {};
 		\node [style=none] (75) at (8.25, 0) {};
-		\node [style=tiny box seq] (76) at (11.75, 0.75) {$\mathsf{f}$};
+		\node [style=tiny box seq] (76) at (11.75, 0.75) {$\belnapfalse$};
 		\node [style=medium square box comb] (77) at (25, -1) {$G$};
 		\node [style=mux] (78) at (17.5, 0.75) {};
 		\node [style=mux] (79) at (23.25, -1) {};
@@ -84,7 +84,7 @@
 		\node [style=none] (92) at (13.75, 2.5) {};
 		\node [style=none] (93) at (15.5, 0.25) {};
 		\node [style=none] (94) at (13.5, -0.5) {};
-		\node [style=tiny box seq] (95) at (11.75, -1) {$\mathsf{t}$};
+		\node [style=tiny box seq] (95) at (11.75, -1) {$\belnaptrue$};
 		\node [style=none] (96) at (17.25, 1.25) {};
 		\node [style=none] (97) at (17.5, 0.75) {};
 		\node [style=none] (98) at (23.25, -1) {};
@@ -130,7 +130,7 @@
 		\node [style=bproduct] (140) at (31, -1) {};
 		\node [style=none] (141) at (27.5, -1.5) {};
 		\node [style=none] (142) at (28.75, -0.5) {};
-		\node [style=tiny box seq] (143) at (32, 0.25) {$\mathsf{f}$};
+		\node [style=tiny box seq] (143) at (32, 0.25) {$\belnapfalse$};
 		\node [style=medium square box comb] (144) at (45.25, -1.5) {$G$};
 		\node [style=mux] (145) at (37.75, 0.25) {};
 		\node [style=mux] (146) at (43.5, -1.5) {};
@@ -149,7 +149,7 @@
 		\node [style=none] (159) at (34, 2) {};
 		\node [style=none] (160) at (35.75, -0.25) {};
 		\node [style=none] (161) at (33.75, -1) {};
-		\node [style=tiny box seq] (162) at (32, -1.5) {$\mathsf{t}$};
+		\node [style=tiny box seq] (162) at (32, -1.5) {$\belnaptrue$};
 		\node [style=none] (163) at (37.5, 0.75) {};
 		\node [style=none] (164) at (37.75, 0.25) {};
 		\node [style=none] (165) at (43.5, -1.5) {};

@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny box seq] (0) at (2, 0.75) {$\mathsf{f}$};
+		\node [style=tiny box seq] (0) at (2, 0.75) {$\belnapfalse$};
 		\node [style=medium square box comb] (1) at (5.25, -0.5) {$G$};
 		\node [style=mux] (2) at (-3.5, 1.25) {};
 		\node [style=mux] (3) at (3.25, -1) {};
@@ -42,11 +42,11 @@
 		\node [style=none] (74) at (7.75, -1) {};
 		\node [style=none] (75) at (9.5, 0) {};
 		\node [style=none] (119) at (11, 2.5) {};
-		\node [style=tiny box seq] (210) at (-4.75, 3) {$\mathsf{f}$};
-		\node [style=tiny box seq] (211) at (9.5, 1.25) {$\mathsf{f}$};
-		\node [style=tiny box seq] (212) at (-6.25, 1.75) {$\mathsf{t}$};
-		\node [style=tiny box seq] (213) at (1.75, -1.5) {$\mathsf{t}$};
-		\node [style=tiny box seq] (214) at (21.5, 0.75) {$\mathsf{f}$};
+		\node [style=tiny box seq] (210) at (-4.75, 3) {$\belnapfalse$};
+		\node [style=tiny box seq] (211) at (9.5, 1.25) {$\belnapfalse$};
+		\node [style=tiny box seq] (212) at (-6.25, 1.75) {$\belnaptrue$};
+		\node [style=tiny box seq] (213) at (1.75, -1.5) {$\belnaptrue$};
+		\node [style=tiny box seq] (214) at (21.5, 0.75) {$\belnapfalse$};
 		\node [style=medium square box comb] (215) at (24.75, -0.5) {$G$};
 		\node [style=mux] (216) at (16, 1.25) {};
 		\node [style=mux] (217) at (22.75, -1) {};
@@ -88,11 +88,11 @@
 		\node [style=none] (253) at (27.25, -1) {};
 		\node [style=none] (254) at (29, 0) {};
 		\node [style=none] (255) at (30, 2.5) {};
-		\node [style=tiny box seq] (256) at (14.75, 3) {$\mathsf{f}$};
-		\node [style=tiny box seq] (257) at (29, 1.25) {$\mathsf{f}$};
-		\node [style=tiny box seq] (258) at (13.25, 1.75) {$\mathsf{t}$};
-		\node [style=tiny box seq] (259) at (21.25, -1.5) {$\mathsf{t}$};
-		\node [style=tiny box seq] (260) at (41, 0.75) {$\mathsf{f}$};
+		\node [style=tiny box seq] (256) at (14.75, 3) {$\belnapfalse$};
+		\node [style=tiny box seq] (257) at (29, 1.25) {$\belnapfalse$};
+		\node [style=tiny box seq] (258) at (13.25, 1.75) {$\belnaptrue$};
+		\node [style=tiny box seq] (259) at (21.25, -1.5) {$\belnaptrue$};
+		\node [style=tiny box seq] (260) at (41, 0.75) {$\belnapfalse$};
 		\node [style=medium square box comb] (261) at (44.25, -0.5) {$G$};
 		\node [style=mux] (262) at (35.5, 1.25) {};
 		\node [style=mux] (263) at (42.25, -1) {};
@@ -134,10 +134,10 @@
 		\node [style=none] (299) at (46.75, -1) {};
 		\node [style=none] (300) at (48.5, 0) {};
 		\node [style=bproduct] (301) at (50, 2.5) {};
-		\node [style=tiny box seq] (302) at (34.25, 3) {$\mathsf{f}$};
-		\node [style=tiny box seq] (303) at (48.5, 1.25) {$\mathsf{f}$};
-		\node [style=tiny box seq] (304) at (32.75, 1.75) {$\mathsf{t}$};
-		\node [style=tiny box seq] (305) at (40.75, -1.5) {$\mathsf{t}$};
+		\node [style=tiny box seq] (302) at (34.25, 3) {$\belnapfalse$};
+		\node [style=tiny box seq] (303) at (48.5, 1.25) {$\belnapfalse$};
+		\node [style=tiny box seq] (304) at (32.75, 1.75) {$\belnaptrue$};
+		\node [style=tiny box seq] (305) at (40.75, -1.5) {$\belnaptrue$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (17) to (8.center);

@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=tiny box seq] (223) at (-10.5, 0.25) {$G(F(1))$};
-		\node [style=tiny box seq] (260) at (0.5, 0.75) {$\mathsf{f}$};
+		\node [style=tiny box seq] (260) at (0.5, 0.75) {$\belnapfalse$};
 		\node [style=medium square box comb] (261) at (3.75, -1) {$G$};
 		\node [style=mux] (262) at (-5, 1.25) {};
 		\node [style=mux] (263) at (1.75, -1) {};
@@ -42,10 +42,10 @@
 		\node [style=none] (299) at (6.25, -1.5) {};
 		\node [style=none] (300) at (8, -0.5) {};
 		\node [style=bproduct] (301) at (9.5, 2) {};
-		\node [style=tiny box seq] (302) at (-6.25, 3) {$\mathsf{f}$};
-		\node [style=tiny box seq] (303) at (8, 0.75) {$\mathsf{f}$};
-		\node [style=tiny box seq] (304) at (-7.75, 1.75) {$\mathsf{t}$};
-		\node [style=tiny box seq] (305) at (0.25, -1.5) {$\mathsf{t}$};
+		\node [style=tiny box seq] (302) at (-6.25, 3) {$\belnapfalse$};
+		\node [style=tiny box seq] (303) at (8, 0.75) {$\belnapfalse$};
+		\node [style=tiny box seq] (304) at (-7.75, 1.75) {$\belnaptrue$};
+		\node [style=tiny box seq] (305) at (0.25, -1.5) {$\belnaptrue$};
 		\node [style=none] (306) at (-6.25, 0.75) {};
 		\node [style=none] (307) at (-8, 0.25) {};
 	\end{pgfonlayer}
