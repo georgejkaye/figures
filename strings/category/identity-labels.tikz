@@ -8,11 +8,11 @@
 		\node [style=dangling] (10) at (1.25, 0) {};
 		\node [style=none] (11) at (-0.75, 0) {};
 		\node [style=none] (12) at (-0.75, 0) {};
-		\node [style=small label] (15) at (-1.5, 0) {$n$};
-		\node [style=small label] (18) at (1.5, 0) {$n$};
+		\node [style=wire label left] (13) at (-1.5, 0) {$\varb$};
+		\node [style=wire label right] (14) at (1.5, 0) {$\varb$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=tile white] (12.center)
+		\draw [style={tile \vara}] (12.center)
 			 to (6.center)
 			 to (7.center)
 			 to (8.center)
