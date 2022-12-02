@@ -1,0 +1,24 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny box seq] (15) at (-2.25, 0.75) {$\overline{s}$};
+		\node [style=medium square box comb] (16) at (0, 0) {$\hat{F}$};
+		\node [style=none] (17) at (-1.75, 0.75) {};
+		\node [style=none] (18) at (-1.75, -0.75) {};
+		\node [style=tiny box seq] (22) at (-2.75, -0.75) {$\sigma(0)$};
+		\node [style=port] (23) at (0.25, -0.5) {};
+		\node [style=dangling] (24) at (2, -0.5) {};
+		\node [style=port] (25) at (0.25, 0.5) {};
+		\node [style=bproduct] (26) at (1.5, 0.5) {};
+		\node [style=none] (47) at (-0.75, 0.5) {};
+		\node [style=none] (48) at (-0.75, -0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire, in=-180, out=0, looseness=1.25] (17.center) to (47.center);
+		\draw [style=wire] (22)
+			 to (18.center)
+			 to [in=180, out=0, looseness=1.25] (48.center);
+		\draw [style=wire] (24) to (23);
+		\draw [style=wire] (26) to (25);
+		\draw [style=wire, in=180, out=0] (15) to (17.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

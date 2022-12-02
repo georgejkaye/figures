@@ -6,14 +6,13 @@
 		\node [style=none] (17) at (-1.25, 0) {};
 		\node [style=medium square box comb] (41) at (1.75, -0.5) {$\hat{\vara}$};
 		\node [style=port] (43) at (1.5, 0) {};
-		\node [style=port] (44) at (1.5, -1.16) {};
-		\node [style=port] (45) at (1.5, -0.75) {};
 		\node [style=port] (47) at (2, 0) {};
-		\node [style=port] (48) at (2, -1.16) {};
-		\node [style=dangling] (51) at (-2, -1.16) {};
 		\node [style=none] (52) at (0, 0) {};
-		\node [style=dangling] (53) at (3.25, -1.16) {};
 		\node [style=delay] (55) at (-0.5, 0) {$\overline{\varb}$};
+		\node [style=port] (56) at (1.5, -1) {};
+		\node [style=port] (57) at (2, -1) {};
+		\node [style=dangling] (58) at (-1.75, -1) {};
+		\node [style=dangling] (59) at (3.25, -1) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (47)
@@ -22,8 +21,8 @@
 			 to (16.center)
 			 to [bend left=270, looseness=1.50] (17.center)
 			 to (55);
-		\draw [style=wire] (44) to (51);
-		\draw [style=wire] (48) to (53);
 		\draw [style=wire, bend left=360] (43) to (55);
+		\draw (59) to (57);
+		\draw (56) to (58);
 	\end{pgfonlayer}
 \end{tikzpicture}

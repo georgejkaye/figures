@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box seq] (0) at (-0.75, 0) {$\hat{\vara}_{\sigma, i}$};
+		\node [style=dangling] (1) at (0.75, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (0) to (1);
+	\end{pgfonlayer}
+\end{tikzpicture}
