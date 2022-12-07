@@ -1,0 +1,39 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box seq] (15) at (-2.25, 0.5) {$\hat{F}_{\sigma, k}$};
+		\node [style=medium square box comb] (16) at (0, 0) {$\hat{F}$};
+		\node [style=none] (17) at (-1.25, 0.5) {};
+		\node [style=none] (18) at (-3.75, -0.5) {};
+		\node [style=tiny box seq] (22) at (-4.75, -0.5) {$\sigma(k)$};
+		\node [style=port] (23) at (0.25, 0.5) {};
+		\node [style=none] (24) at (4.75, 0.5) {};
+		\node [style=port] (25) at (0.25, -0.5) {};
+		\node [style=bproduct] (26) at (1.5, -0.5) {};
+		\node [style=none] (47) at (-0.75, 0.5) {};
+		\node [style=none] (48) at (-0.75, -0.5) {};
+		\node [style=medium square box comb] (49) at (5.25, 0) {$\hat{F}$};
+		\node [style=tiny box seq] (51) at (-0.25, -1.75) {$\sigma(k+1)$};
+		\node [style=none] (53) at (4.75, -0.5) {};
+		\node [style=none] (54) at (2.25, -1.75) {};
+		\node [style=none] (55) at (4.25, -0.5) {};
+		\node [style=none] (56) at (5.75, 0.5) {};
+		\node [style=none] (57) at (5.75, -0.5) {};
+		\node [style=dangling] (58) at (6.5, 0.5) {};
+		\node [style=dangling] (59) at (6.5, -0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire, in=-180, out=0, looseness=1.25] (17.center) to (47.center);
+		\draw [style=wire] (22)
+			 to (18.center)
+			 to [in=180, out=0, looseness=1.25] (48.center);
+		\draw [style=wire] (24.center) to (23);
+		\draw [style=wire] (26) to (25);
+		\draw [style=wire, in=180, out=0] (15) to (17.center);
+		\draw [style=wire] (51)
+			 to (54.center)
+			 to [in=-180, out=0, looseness=1.25] (55.center)
+			 to (53.center);
+		\draw [style=wire] (58) to (56.center);
+		\draw [style=wire] (57.center) to (59);
+	\end{pgfonlayer}
+\end{tikzpicture}
