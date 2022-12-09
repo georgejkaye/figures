@@ -1,28 +1,34 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=delay] (11) at (-2, 1.5) {$\bullet$};
-		\node [style=none] (14) at (2, 0) {};
-		\node [style=none] (15) at (2, 2.5) {};
-		\node [style=none] (16) at (-2.75, 2.5) {};
-		\node [style=none] (17) at (-2.75, 1.5) {};
-		\node [style=none] (18) at (0, -0.75) {};
-		\node [style=medium square box comb] (41) at (1, -0.5) {$\tilde{F}$};
-		\node [style=port] (43) at (0.75, 0) {};
+		\node [style=none] (14) at (2, -0.25) {};
+		\node [style=none] (15) at (2, 1.5) {};
+		\node [style=none] (16) at (-3.25, 1.5) {};
+		\node [style=none] (17) at (-3.25, 0.5) {};
+		\node [style=none] (18) at (-2.5, -0.75) {};
+		\node [style=none] (38) at (2, 1) {};
+		\node [style=none] (39) at (0, 1) {};
+		\node [style=medium square box comb] (41) at (1, -0.5) {$\hat{F}$};
+		\node [style=port] (42) at (0.75, 0.16) {};
+		\node [style=port] (43) at (0.75, -0.25) {};
 		\node [style=port] (44) at (0.75, -1.16) {};
 		\node [style=port] (45) at (0.75, -0.75) {};
-		\node [style=port] (47) at (1.25, 0) {};
+		\node [style=port] (46) at (1.25, 0.16) {};
+		\node [style=port] (47) at (1.25, -0.25) {};
 		\node [style=port] (48) at (1.25, -1.16) {};
-		\node [style=dangling] (51) at (-4.25, -1.16) {};
-		\node [style=none] (52) at (0.25, 0) {};
-		\node [style=dangling] (53) at (3, -1.16) {};
-		\node [style=none] (57) at (-1.25, 1.5) {};
-		\node [style=none] (61) at (-1.25, -0.25) {};
-		\node [style=delay] (63) at (-2, -0.25) {$\overline{s}$};
-		\node [style=none] (64) at (-2.75, -0.25) {};
-		\node [style=none] (65) at (-2.75, 3) {};
-		\node [style=none] (66) at (2.5, 3) {};
-		\node [style=none] (67) at (2.5, -0.5) {};
-		\node [style=bproduct] (68) at (2.25, -0.5) {};
+		\node [style=none] (49) at (0, 0.16) {};
+		\node [style=none] (50) at (2, 0.16) {};
+		\node [style=dangling] (51) at (-7, -1.16) {};
+		\node [style=none] (52) at (-0.25, -0.25) {};
+		\node [style=dangling] (53) at (3.5, -1.16) {};
+		\node [style=none] (54) at (-1.5, 0.5) {};
+		\node [style=none] (55) at (-3.75, 0) {};
+		\node [style=delay] (57) at (-2.25, 0.5) {$\bullet$};
+		\node [style=delay] (58) at (-4.75, 0) {$\overline{v}$};
+		\node [style=none] (65) at (-5.75, 0) {};
+		\node [style=none] (67) at (2, -0.75) {};
+		\node [style=none] (68) at (2, 2) {};
+		\node [style=none] (69) at (-5.75, 2) {};
+		\node [style=port] (70) at (1.25, -0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (47)
@@ -30,22 +36,28 @@
 			 to [bend right=90, looseness=1.50] (15.center)
 			 to (16.center)
 			 to [bend left=270, looseness=1.50] (17.center)
-			 to (11);
+			 to (57);
 		\draw [style=wire] (45)
 			 to (18.center)
-			 to [in=0, out=180] (61.center)
-			 to (63);
+			 to [in=0, out=180] (55.center)
+			 to (58);
+		\draw [style=wire] (42)
+			 to (49.center)
+			 to [bend left=90, looseness=1.75] (39.center)
+			 to (38.center)
+			 to [bend left=90, looseness=1.50] (50.center)
+			 to (46);
 		\draw [style=wire] (44) to (51);
-		\draw [style=wire] (11)
-			 to (57.center)
-			 to [in=-180, out=0, looseness=1.25] (52.center)
-			 to (43);
+		\draw [style=wire] (43)
+			 to (52.center)
+			 to [in=0, out=-180, looseness=1.25] (54.center)
+			 to (57);
 		\draw [style=wire] (48) to (53);
-		\draw [style=wire] (68)
+		\draw [style=wire] (70)
 			 to (67.center)
-			 to [bend right=90, looseness=1.25] (66.center)
-			 to (65.center)
-			 to [bend right=90, looseness=1.25] (64.center)
-			 to (63);
+			 to [bend right=90, looseness=1.50] (68.center)
+			 to (69.center)
+			 to [bend right=90, looseness=1.50] (65.center)
+			 to (58);
 	\end{pgfonlayer}
 \end{tikzpicture}

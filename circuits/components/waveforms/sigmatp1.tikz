@@ -1,11 +1,11 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=dangling] (10) at (1.25, 0) {};
-		\node [style=tiny signal seq] (11) at (-0.25, 0) {$\sigma_{t+1}$};
+		\node [style=dangling] (10) at (1.5, 0) {};
+		\node [style=tiny signal seq] (11) at (-0.25, 0) {$\overline{v} :: \overline{\underline{w}}$};
 		\node [style=none] (15) at (0, 0) {};
-		\node [style=dangling] (16) at (-2, 0) {};
-		\node [style=wire label left] (17) at (-2, 0) {$n$};
-		\node [style=wire label right] (18) at (1.25, 0) {$n$};
+		\node [style=dangling] (16) at (-2.25, 0) {};
+		\node [style=wire label left] (17) at (-2.25, 0) {$n$};
+		\node [style=wire label right] (18) at (1.5, 0) {$n$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (15.center) to (10);
