@@ -1,20 +1,21 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=bproduct] (2) at (1.5, 0) {};
-		\node [style=delay] (8) at (0.25, -0.75) {};
-		\node [style=dangling] (9) at (-0.75, -0.75) {};
-		\node [style=dangling] (10) at (2.75, 0) {};
-		\node [style=tiny box seq] (11) at (0.25, 0.75) {$v$};
-		\node [style=bport] (12) at (0.25, 0.75) {};
-		\node [style=none] (13) at (0.75, -0.75) {};
-		\node [style=none] (14) at (0.25, -0.75) {};
+		\node [style=bproduct] (2) at (1, 0) {};
+		\node [style=delay] (8) at (-0.75, -0.75) {};
+		\node [style=dangling] (9) at (-1.75, -0.75) {};
+		\node [style=dangling] (10) at (2, 0) {};
+		\node [style=tiny box seq] (11) at (-0.75, 0.75) {$\vara$};
+		\node [style=none] (12) at (0, 0.75) {};
+		\node [style=none] (13) at (0, -0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire, in=105, out=0] (12) to (2);
+		\draw [style=wire] (11)
+			 to (12.center)
+			 to [in=105, out=0] (2);
 		\draw [style=wire] (2) to (10);
 		\draw [style=wire] (2)
 			 to [in=0, out=-105] (13.center)
-			 to (14.center);
-		\draw [style=wire] (9) to (14.center);
+			 to (8);
+		\draw [style=wire] (8) to (9);
 	\end{pgfonlayer}
 \end{tikzpicture}
