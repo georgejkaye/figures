@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box seq] (0) at (1.25, 0) {$F$};
+		\node [style=none] (2) at (0.75, 0) {};
+		\node [style=delay] (4) at (-1, 0) {$\overline{v}$};
+		\node [style=wire label right] (10) at (2.5, 0) {$n$};
+		\node [style=wire label left] (11) at (-2.25, 0) {$m$};
+		\node [style=none] (12) at (1.75, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (2.center) to (4);
+		\draw [style=wire] (10) to (4);
+		\draw [style=wire] (12.center) to (11);
+	\end{pgfonlayer}
+\end{tikzpicture}
