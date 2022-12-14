@@ -1,0 +1,95 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box comb] (0) at (-1, 1.25) {$\tilde{F}$};
+		\node [style=port] (2) at (-0.75, 1.75) {};
+		\node [style=port] (3) at (-0.75, 0.75) {};
+		\node [style=bproduct] (4) at (0.25, 0.75) {};
+		\node [style=port] (8) at (-1.25, 1.75) {};
+		\node [style=bproduct] (45) at (-3.75, 0.75) {};
+		\node [style=wire label left] (62) at (-12.75, -1.25) {$m$};
+		\node [style=bproduct] (63) at (-3.75, -1.25) {};
+		\node [style=none] (64) at (-2, 0.75) {};
+		\node [style=none] (65) at (-2.25, -2) {};
+		\node [style=none] (69) at (-1.25, 0.75) {};
+		\node [style=medium square box comb] (82) at (-1, -1.5) {$\tilde{F}$};
+		\node [style=port] (83) at (-0.75, -1) {};
+		\node [style=port] (84) at (5.5, -0.5) {};
+		\node [style=port] (86) at (-1.25, -1) {};
+		\node [style=none] (87) at (-1.25, -2) {};
+		\node [style=medium square box comb] (88) at (5.25, 0) {$\tilde{F}$};
+		\node [style=port] (89) at (-0.75, -2) {};
+		\node [style=port] (90) at (5, 0.5) {};
+		\node [style=none] (91) at (5, -0.5) {};
+		\node [style=tiny box seq] (92) at (3.25, 0.5) {$\overline{s}$};
+		\node [style=tiny box seq] (93) at (1.75, -0.5) {$\overline{v}$};
+		\node [style=bproduct] (95) at (0.25, -1) {};
+		\node [style=delay] (96) at (5.25, -2) {};
+		\node [style=port] (97) at (5.5, 0.5) {};
+		\node [style=bproduct] (98) at (6.5, 0.5) {};
+		\node [style=none] (99) at (7, -2) {};
+		\node [style=bproduct] (102) at (8, -1.25) {};
+		\node [style=wire label right] (103) at (8.75, -1.25) {$n$};
+		\node [style=none] (104) at (7, -0.5) {};
+		\node [style=none] (107) at (0.75, 1.75) {};
+		\node [style=none] (113) at (-11, -0.25) {};
+		\node [style=none] (115) at (0.75, 3) {};
+		\node [style=none] (116) at (-11, 3) {};
+		\node [style=medium square box comb] (117) at (-7.25, 1.5) {$\tilde{F}$};
+		\node [style=port] (118) at (-7, 2) {};
+		\node [style=port] (119) at (-7, 1) {};
+		\node [style=port] (120) at (-7.5, 2) {};
+		\node [style=none] (121) at (-7.5, 1) {};
+		\node [style=tiny box seq] (122) at (-9.25, 2) {$\overline{s}$};
+		\node [style=tiny box seq] (123) at (-10.75, 1) {$\overline{v}$};
+		\node [style=bproduct] (124) at (-4.75, 0.75) {};
+		\node [style=none] (125) at (-6, 2) {};
+		\node [style=bproduct] (126) at (-6, 1) {};
+		\node [style=none] (127) at (-6, -0.25) {};
+		\node [style=delay] (128) at (-7.25, -0.25) {};
+		\node [style=none] (135) at (-2.25, 1.75) {};
+		\node [style=none] (136) at (-2, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (3) to (4);
+		\draw [style=wire] (45)
+			 to [in=-180, out=-75] (136.center)
+			 to (86);
+		\draw [style=wire] (63)
+			 to [in=180, out=-60] (65.center)
+			 to (87.center);
+		\draw [style=wire] (69.center)
+			 to (64.center)
+			 to [in=75, out=-180] (63);
+		\draw [style=wire] (63) to (62);
+		\draw [style=wire] (92) to (90);
+		\draw [style=wire] (91.center) to (93);
+		\draw [style=wire] (83) to (95);
+		\draw [style=wire] (96) to (89);
+		\draw [style=wire] (97) to (98);
+		\draw [style=wire] (96)
+			 to (99.center)
+			 to [in=-105, out=0] (102);
+		\draw [style=wire] (84)
+			 to (104.center)
+			 to [in=105, out=0] (102);
+		\draw [style=wire] (103) to (102);
+		\draw [style=wire] (2) to (107.center);
+		\draw [style=wire] (115.center) to (116.center);
+		\draw [style=wire, bend right=90, looseness=1.50] (116.center) to (113.center);
+		\draw [style=wire] (113.center) to (128);
+		\draw [style=wire] (122) to (120);
+		\draw [style=wire] (121.center) to (123);
+		\draw [style=wire] (118)
+			 to (125.center)
+			 to [in=105, out=0] (124);
+		\draw [style=wire] (126) to (119);
+		\draw [style=wire] (128)
+			 to (127.center)
+			 to [in=-105, out=0] (124);
+		\draw [style=wire] (45) to (124);
+		\draw [style=wire] (8)
+			 to (135.center)
+			 to [in=75, out=180] (45);
+		\draw [style=wire, bend right=90, looseness=1.50] (107.center) to (115.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,10 +1,10 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny box comb] (0) at (-0.5, 0.75) {$v$};
+		\node [style=tiny box seq] (0) at (-0.5, 0.75) {$\overline{v}$};
 		\node [style=port] (2) at (-0.25, 0.75) {};
-		\node [style=dangling] (3) at (0.5, 0.75) {};
-		\node [style=dangling] (4) at (0.5, -0.75) {};
-		\node [style=tiny box comb] (5) at (-0.5, -0.75) {$v$};
+		\node [style=wire label right] (3) at (0.75, 0.75) {$n$};
+		\node [style=wire label right] (4) at (0.75, -0.75) {$n$};
+		\node [style=tiny box seq] (5) at (-0.5, -0.75) {$\overline{v}$};
 		\node [style=port] (6) at (-0.25, -0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
