@@ -1,24 +1,24 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=delay] (6) at (-2.75, -0.525) {};
-		\node [style=port] (10) at (0.75, -1.5) {};
-		\node [style=none] (11) at (0, -1.5) {};
-		\node [style=medium square box comb] (13) at (1, -1) {$F$};
-		\node [style=bport] (22) at (1.25, -0.5) {};
-		\node [style=none] (24) at (2, -0.5) {};
-		\node [style=none] (26) at (2, 2) {};
-		\node [style=none] (30) at (-3.75, 2) {};
-		\node [style=bport] (33) at (1.25, -1.5) {};
-		\node [style=dangling] (34) at (3, -1.5) {};
-		\node [style=none] (35) at (-3.75, -0.5) {};
-		\node [style=tiny box seq] (53) at (-2.75, 1) {$\overline{v}$};
-		\node [style=bproduct] (54) at (-1.25, 0) {};
-		\node [style=bport] (55) at (0.75, -0.5) {};
-		\node [style=none] (56) at (-2.25, 1) {};
-		\node [style=dangling] (57) at (-4.5, -1.5) {};
-		\node [style=none] (58) at (-1, -1.5) {};
-		\node [style=none] (59) at (-1, 0) {};
-		\node [style=none] (60) at (0, -0.5) {};
+		\node [style=delay] (6) at (-2.75, -0.775) {};
+		\node [style=port] (10) at (0.75, -1.75) {};
+		\node [style=none] (11) at (0, -1.75) {};
+		\node [style=medium square box comb] (13) at (1, -1.25) {$F$};
+		\node [style=bport] (22) at (1.25, -0.75) {};
+		\node [style=none] (24) at (2, -0.75) {};
+		\node [style=none] (26) at (2, 1.75) {};
+		\node [style=none] (30) at (-3.75, 1.75) {};
+		\node [style=bport] (33) at (1.25, -1.75) {};
+		\node [style=dangling] (34) at (3, -1.75) {};
+		\node [style=none] (35) at (-3.75, -0.75) {};
+		\node [style=tiny box seq] (53) at (-2.75, 0.75) {$\overline{v}$};
+		\node [style=bproduct] (54) at (-1.25, -0.25) {};
+		\node [style=bport] (55) at (0.75, -0.75) {};
+		\node [style=none] (56) at (-2.25, 0.75) {};
+		\node [style=dangling] (57) at (-4.5, -1.75) {};
+		\node [style=none] (58) at (-1, -1.75) {};
+		\node [style=none] (59) at (-1, -0.25) {};
+		\node [style=none] (60) at (0, -0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (57)
