@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=bproduct] (0) at (0, 0) {};
-		\node [style=dangling] (3) at (-1, 0) {};
+		\node [style=dangling] (3) at (-1, 0) {$\varb$};
 		\node [style=none] (9) at (-0.5, 0.5) {};
 		\node [style=none] (10) at (-0.5, -0.5) {};
 		\node [style=none] (11) at (0.5, -0.5) {};

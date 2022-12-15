@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=dangling] (9) at (-0.5, 0) {};
+		\node [style=wire label left] (9) at (-0.5, 0) {$\vara$};
 		\node [style=bproduct] (15) at (0.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
