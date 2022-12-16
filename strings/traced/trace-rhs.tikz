@@ -1,16 +1,16 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style={medium square box \varb}] (0) at (0, 0) {$\vara$};
-		\node [style=dangling] (1) at (-2, -0.5) {};
-		\node [style=none] (2) at (-0.25, -0.5) {};
-		\node [style=none] (4) at (-1.25, 0.5) {};
-		\node [style=none] (5) at (-0.25, 0.5) {};
-		\node [style=none] (6) at (0.25, -0.5) {};
-		\node [style=dangling] (7) at (2, -0.5) {};
-		\node [style=none] (8) at (0.25, 0.5) {};
-		\node [style=none] (9) at (1.25, 0.5) {};
-		\node [style=none] (10) at (1.25, 1.5) {};
-		\node [style=none] (11) at (-1.25, 1.5) {};
+		\node [style={medium square box \varb}] (0) at (0, -0.5) {$\vara$};
+		\node [style=dangling] (1) at (-2, -1) {};
+		\node [style=none] (2) at (-0.25, -1) {};
+		\node [style=none] (4) at (-1.25, 0) {};
+		\node [style=none] (5) at (-0.25, 0) {};
+		\node [style=none] (6) at (0.25, -1) {};
+		\node [style=dangling] (7) at (2, -1) {};
+		\node [style=none] (8) at (0.25, 0) {};
+		\node [style=none] (9) at (1.25, 0) {};
+		\node [style=none] (10) at (1.25, 1) {};
+		\node [style=none] (11) at (-1.25, 1) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (2.center) to (1);
