@@ -16,7 +16,7 @@
 		\node [style=dangling] (20) at (-1.25, 0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=tile white] (12.center)
+		\draw [style=tile \vara] (12.center)
 			 to (6.center)
 			 to (7.center)
 			 to (8.center)
