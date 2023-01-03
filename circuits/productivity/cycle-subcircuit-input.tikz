@@ -4,14 +4,15 @@
 		\node [style=port] (2) at (1.5, 0) {};
 		\node [style=port] (3) at (1.5, -1) {};
 		\node [style=port] (8) at (1, 0) {};
-		\node [style=wire label left] (62) at (-2.5, -1) {$m$};
+		\node [style=delay] (62) at (-2.5, -1) {$\overline{v}$};
 		\node [style=none] (69) at (1, -1) {};
-		\node [style=wire label right] (96) at (3, -1) {$n$};
+		\node [style=wire label right] (96) at (3, -1) {};
 		\node [style=none] (107) at (2.25, 0) {};
 		\node [style=none] (113) at (-1.75, 0) {};
 		\node [style=none] (115) at (2.25, 1) {};
 		\node [style=none] (116) at (-1.75, 1) {};
-		\node [style=delay] (128) at (-0.75, 0) {$\overline{t}$};
+		\node [style=delay] (128) at (-0.75, 0) {$\overline{s}$};
+		\node [style=wire label left] (129) at (-3.75, -1) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (2)
@@ -23,5 +24,6 @@
 		\draw [style=wire] (96) to (3);
 		\draw [style=wire] (128) to (8);
 		\draw [style=wire] (69.center) to (62);
+		\draw [style=wire] (129) to (62);
 	\end{pgfonlayer}
 \end{tikzpicture}
