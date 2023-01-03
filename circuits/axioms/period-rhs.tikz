@@ -1,25 +1,29 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny signal seq] (12) at (0, -0.25) {$\overline{\underline{w}}$};
-		\node [style=none] (22) at (1.75, -0.75) {};
-		\node [style=dangling] (23) at (2.25, -0.75) {};
-		\node [style=none] (24) at (-1, -0.25) {};
-		\node [style=bproduct] (25) at (1, -0.25) {};
-		\node [style=none] (26) at (1.5, 0.25) {};
-		\node [style=none] (27) at (1.5, 0.75) {};
+		\node [style=tiny signal seq] (12) at (0, -0.5) {$\overline{\underline{\vara}}$};
+		\node [style=none] (22) at (1.75, -1) {};
+		\node [style=wire label right] (23) at (2.75, -1) {$\varb$};
+		\node [style=none] (24) at (-1, -0.5) {};
+		\node [style=bproduct] (25) at (1.25, -0.5) {};
+		\node [style=none] (26) at (1.75, 0) {};
+		\node [style=wire label mid] (27) at (0.5, 0.75) {$\varb$};
 		\node [style=none] (28) at (-1, 0.75) {};
-		\node [style=none] (29) at (0, -0.25) {};
+		\node [style=none] (29) at (0, -0.5) {};
+		\node [style=none] (30) at (2.25, 0) {};
+		\node [style=none] (31) at (2.25, 0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (23)
 			 to (22.center)
-			 to [bend left] (25);
+			 to [in=-75, out=-180] (25);
 		\draw [style=wire] (25)
 			 to [in=-180, out=75] (26.center)
-			 to [bend right=90, looseness=1.50] (27.center)
-			 to (28.center)
-			 to [bend left=270, looseness=1.25] (24.center)
-			 to (29.center);
+			 to (30.center)
+			 to [bend right=90, looseness=2.00] (31.center)
+			 to (27);
+		\draw [style=wire] (27) to (28.center);
+		\draw [style=wire, bend left=270, looseness=1.50] (28.center) to (24.center);
+		\draw [style=wire] (24.center) to (29.center);
 		\draw [style=wire] (12) to (25);
 	\end{pgfonlayer}
 \end{tikzpicture}
