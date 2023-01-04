@@ -39,8 +39,8 @@
 \tikzstyle{dangling}=[fill=none, draw=none, shape=circle, anchor=east, scale=0.01, tikzit category=string diagram, tikzit fill={rgb,255: red,162; green,76; blue,77}]
 \tikzstyle{label}=[fill=none, draw=none, shape=circle, align=center, inner sep=0, outer sep=0]
 \tikzstyle{small label}=[scale=1.25, fill=none, draw=none, shape=circle, outer sep=0, inner sep=0]
-\tikzstyle{wire label left}=[scale=1.25, fill=none, draw=none, shape=circle, outer sep=0, inner sep=0, anchor=east]
-\tikzstyle{wire label right}=[scale=1.25, fill=none, draw=none, shape=circle, outer sep=0, inner sep=0, anchor=west]
+\tikzstyle{wire label left}=[scale=1.25, fill=white, draw=none, shape=circle, outer sep=0, inner sep=0, anchor=east]
+\tikzstyle{wire label right}=[scale=1.25, fill=white, draw=none, shape=circle, outer sep=0, inner sep=0, anchor=west]
 \tikzstyle{tile}=[fill=white, draw=black, shape=rectangle, tikzit category=string diagram, {\corners}, minimum height=5mm, minimum width=5mm]
 \tikzstyle{commuting label}=[fill=none, draw=none, shape=circle, scale=0.5]
 \tikzstyle{and}=[fill=white, draw=black, shape=and gate, line width={\stringwidth}, and gate, scale=1.75, tikzit category=circuits]
@@ -51,7 +51,7 @@
 \tikzstyle{xor}=[fill=white, draw=black, xor gate, scale=1.75, line width={\stringwidth}, tikzit category=circuits]
 \tikzstyle{xnor}=[fill=white, draw=black, xnor gate, scale=1.75, line width={\stringwidth}, tikzit category=circuits]
 \tikzstyle{west}=[fill=none, draw=none, shape=circle, anchor=west]
-\tikzstyle{wire label mid}=[shape=circle, scale=1.25, inner sep=0, outer sep=0, inner xsep=0, outer xsep=0, fill=white, minimum size=0]
+\tikzstyle{wire label mid}=[shape=circle, scale=1.25, inner sep=0, outer sep=0, inner xsep=0, outer xsep=0, minimum size=0, fill=white]
 
 % Edge styles
 \tikzstyle{interface}=[-, fill={rgb,255: red,238; green,238; blue,255}, dashed, draw={rgb,255: red,170; green,170; blue,225}, ultra thick]
