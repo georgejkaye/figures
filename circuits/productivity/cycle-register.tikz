@@ -6,13 +6,13 @@
 		\node [style=port] (8) at (0, 0) {};
 		\node [style=wire label left] (62) at (-3.5, -1) {$m$};
 		\node [style=none] (69) at (0, -1) {};
-		\node [style=delay] (96) at (2.75, -1) {$\overline{u}$};
+		\node [style=register] (96) at (2.75, -1) {$\overline{u}$};
 		\node [style=wire label right] (99) at (4, -1) {$n$};
 		\node [style=none] (107) at (1.25, 0) {};
 		\node [style=none] (113) at (-2.75, 0) {};
 		\node [style=none] (115) at (1.25, 1) {};
 		\node [style=none] (116) at (-2.75, 1) {};
-		\node [style=delay] (128) at (-1.75, 0) {$\overline{t}$};
+		\node [style=register] (128) at (-1.75, 0) {$\overline{t}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (96) to (99);

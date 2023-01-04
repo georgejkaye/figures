@@ -3,7 +3,7 @@
 		\node [style=medium square box comb] (0) at (-2.25, 0.5) {$F$};
 		\node [style=none] (1) at (-2.75, 1) {};
 		\node [style=none] (2) at (-2.75, 0) {};
-		\node [style=delay] (3) at (-4.5, 1) {$\overline{s}$};
+		\node [style=register] (3) at (-4.5, 1) {$\overline{s}$};
 		\node [style=none] (5) at (-5.5, 1) {};
 		\node [style=none] (6) at (-5.5, 2.75) {};
 		\node [style=none] (9) at (-2, 1) {};

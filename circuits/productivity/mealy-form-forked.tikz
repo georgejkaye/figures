@@ -6,7 +6,7 @@
 		\node [style=port] (43) at (-0.5, 0) {};
 		\node [style=port] (47) at (0, 0) {};
 		\node [style=none] (52) at (-1.75, 0) {};
-		\node [style=delay] (55) at (-2.25, 0) {$\overline{s}$};
+		\node [style=register] (55) at (-2.25, 0) {$\overline{s}$};
 		\node [style=bproduct] (59) at (1.25, 0) {};
 		\node [style=none] (60) at (2, -0.5) {};
 		\node [style=dangling] (61) at (2.75, -0.5) {$\vare$};

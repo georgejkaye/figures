@@ -3,9 +3,9 @@
 		\node [style=and] (0) at (0.25, -0.25) {};
 		\node [style=none] (1) at (-1.75, 0.5) {};
 		\node [style=none] (2) at (0, -0.5) {};
-		\node [style=delay] (9) at (-3, 0.5) {$\belnaptrue$};
-		\node [style=delay] (10) at (-3, -1) {$\belnapfalse$};
-		\node [style=delay] (11) at (3.75, -0.75) {$\belnaptrue$};
+		\node [style=register] (9) at (-3, 0.5) {$\belnaptrue$};
+		\node [style=register] (10) at (-3, -1) {$\belnapfalse$};
+		\node [style=register] (11) at (3.75, -0.75) {$\belnaptrue$};
 		\node [style=bproduct] (12) at (1.5, -0.25) {};
 		\node [style=none] (13) at (2.5, 1.5) {};
 		\node [style=none] (14) at (-4, 1.5) {};

@@ -15,7 +15,7 @@
 		\node [style=port] (18) at (-0.5, -0.5) {};
 		\node [style=port] (19) at (-0.5, -1) {};
 		\node [style=port] (20) at (0, -0.75) {};
-		\node [style=delay] (21) at (1.75, -0.75) {$\bullet$};
+		\node [style=register] (21) at (1.75, -0.75) {$\bullet$};
 		\node [style=bproduct] (22) at (-7.25, -0.25) {};
 		\node [style=none] (23) at (-6.5, -1) {};
 		\node [style=bproduct] (25) at (-5.25, -1) {};

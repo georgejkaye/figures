@@ -2,7 +2,7 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box seq] (18) at (-1.5, 0) {$G$};
 		\node [style=port] (20) at (-1.25, 0) {};
-		\node [style=delay] (25) at (0.5, 0) {$\overline{w}$};
+		\node [style=register] (25) at (0.5, 0) {$\overline{w}$};
 		\node [style=dangling] (44) at (1.75, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

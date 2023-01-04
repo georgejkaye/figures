@@ -23,7 +23,7 @@
 		\node [style=bproduct] (61) at (5.5, -0.75) {};
 		\node [style=port] (66) at (4, -1.75) {};
 		\node [style=bproduct] (70) at (0.25, -2.25) {};
-		\node [style=delay] (72) at (1.5, -2.25) {$\overline{v}$};
+		\node [style=register] (72) at (1.5, -2.25) {$\overline{v}$};
 		\node [style=none] (73) at (2.5, -2.25) {};
 		\node [style=none] (74) at (3.5, -1.75) {};
 		\node [style=none] (75) at (3.5, -0.75) {};

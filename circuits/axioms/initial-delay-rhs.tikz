@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=delay] (0) at (0, 0) {$\bullet$};
+		\node [style=register] (0) at (0, 0) {$\bullet$};
 		\node [style=dangling] (3) at (0.75, 0) {};
 		\node [style=dangling] (15) at (-0.75, 0) {};
 	\end{pgfonlayer}

@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=delay] (6) at (-7.25, 0.475) {$\mealyinitial$};
+		\node [style=register] (6) at (-7.25, 0.475) {$\mealyinitial$};
 		\node [style=none] (9) at (-5.5, 0.475) {};
 		\node [style=none] (10) at (-5.5, -0.5) {};
 		\node [style=dangling] (11) at (-10, -0.5) {};
@@ -38,7 +38,7 @@
 		\node [style=none] (73) at (4, -1.25) {};
 		\node [style=none] (74) at (4, -1.75) {};
 		\node [style=none] (78) at (-1, -1) {};
-		\node [style=delay] (79) at (-0.25, -1.025) {$\mealyinitial$};
+		\node [style=register] (79) at (-0.25, -1.025) {$\mealyinitial$};
 		\node [style=bproduct] (80) at (-7.75, -0.5) {};
 		\node [style=none] (81) at (-5.75, -2) {};
 		\node [style=none] (82) at (-1.75, -2) {};

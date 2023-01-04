@@ -8,7 +8,7 @@
 		\node [style=port] (43) at (1.5, 0) {};
 		\node [style=port] (47) at (2, 0) {};
 		\node [style=none] (52) at (0, 0) {};
-		\node [style=delay] (55) at (-0.5, 0) {$\overline{\varb}$};
+		\node [style=register] (55) at (-0.5, 0) {$\overline{\varb}$};
 		\node [style=port] (56) at (1.5, -1) {};
 		\node [style=port] (57) at (2, -1) {};
 		\node [style=dangling] (59) at (3.5, -1) {};

@@ -18,7 +18,7 @@
 		\node [style=none] (28) at (3.75, 0) {};
 		\node [style=bproduct] (30) at (-5, 0.5) {};
 		\node [style=none] (31) at (-4.25, -0.25) {};
-		\node [style=delay] (34) at (-6.25, 0.5) {$\belnaptrue$};
+		\node [style=register] (34) at (-6.25, 0.5) {$\belnaptrue$};
 		\node [style=bproduct] (35) at (-3, -0.25) {};
 		\node [style=none] (36) at (-2.25, -1) {};
 		\node [style=bproduct] (37) at (-0.75, -1) {};

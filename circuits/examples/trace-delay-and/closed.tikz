@@ -3,9 +3,9 @@
 		\node [style=and] (0) at (0.25, -0.25) {};
 		\node [style=none] (1) at (-1.75, 0.5) {};
 		\node [style=none] (2) at (0, -0.5) {};
-		\node [style=delay] (9) at (-4, 0.5) {$\belnapfalse$};
+		\node [style=register] (9) at (-4, 0.5) {$\belnapfalse$};
 		\node [style=bproduct] (10) at (-2.25, -1) {};
-		\node [style=delay] (11) at (3.75, -0.75) {$\belnapfalse$};
+		\node [style=register] (11) at (3.75, -0.75) {$\belnapfalse$};
 		\node [style=bproduct] (12) at (1.5, -0.25) {};
 		\node [style=none] (13) at (2.5, 1.5) {};
 		\node [style=none] (14) at (-5, 1.5) {};
@@ -21,7 +21,7 @@
 		\node [style=none] (26) at (2.25, 1) {};
 		\node [style=none] (27) at (-1.75, -1) {};
 		\node [style=none] (28) at (-0.75, -0.5) {};
-		\node [style=delay] (29) at (5.5, -0.75) {$\belnaptrue$};
+		\node [style=register] (29) at (5.5, -0.75) {$\belnaptrue$};
 		\node [style=wire label right] (30) at (6.5, -0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

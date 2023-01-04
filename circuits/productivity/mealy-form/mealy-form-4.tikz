@@ -22,8 +22,8 @@
 		\node [style=dangling] (53) at (3.5, -1.16) {};
 		\node [style=none] (54) at (-1.5, 0.5) {};
 		\node [style=none] (55) at (-3.75, 0) {};
-		\node [style=delay] (57) at (-2.25, 0.5) {$\bullet$};
-		\node [style=delay] (58) at (-4.75, 0) {$\overline{v}$};
+		\node [style=register] (57) at (-2.25, 0.5) {$\bullet$};
+		\node [style=register] (58) at (-4.75, 0) {$\overline{v}$};
 		\node [style=none] (65) at (-5.75, 0) {};
 		\node [style=none] (67) at (2, -0.75) {};
 		\node [style=none] (68) at (2, 2) {};

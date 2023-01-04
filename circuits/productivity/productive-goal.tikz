@@ -3,8 +3,8 @@
 		\node [style=medium square box comb] (0) at (1.5, -0.5) {$F$};
 		\node [style=none] (1) at (1, 0) {};
 		\node [style=none] (2) at (1.75, -1) {};
-		\node [style=delay] (3) at (-0.75, 0) {$\overline{s}$};
-		\node [style=delay] (4) at (4, -1) {$\overline{w}$};
+		\node [style=register] (3) at (-0.75, 0) {$\overline{s}$};
+		\node [style=register] (4) at (4, -1) {$\overline{w}$};
 		\node [style=none] (5) at (-1.75, 0) {};
 		\node [style=none] (6) at (-1.75, 1) {};
 		\node [style=none] (7) at (2.5, 1) {};

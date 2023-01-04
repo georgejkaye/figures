@@ -15,8 +15,8 @@
 		\node [style=port] (14) at (3.75, -0.75) {};
 		\node [style=dangling] (15) at (4.75, -0.75) {};
 		\node [style=none] (19) at (1.5, -0.5) {};
-		\node [style=delay] (20) at (-0.25, -1) {$\belnaptrue$};
-		\node [style=delay] (21) at (-4.75, -0.5) {$\belnaptrue$};
+		\node [style=register] (20) at (-0.25, -1) {$\belnaptrue$};
+		\node [style=register] (21) at (-4.75, -0.5) {$\belnaptrue$};
 		\node [style=none] (23) at (2.75, -0.5) {};
 		\node [style=none] (24) at (-2.75, 0) {};
 		\node [style=bproduct] (25) at (-3.5, -0.5) {};

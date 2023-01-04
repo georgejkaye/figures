@@ -5,7 +5,7 @@
 		\node [style=port] (3) at (0.75, -0.75) {};
 		\node [style=dangling] (4) at (2.25, -0.75) {};
 		\node [style=port] (8) at (0.25, 0.25) {};
-		\node [style=delay] (11) at (-1.5, 0.25) {$\overline{v}$};
+		\node [style=register] (11) at (-1.5, 0.25) {$\overline{v}$};
 		\node [style=none] (14) at (1.5, 0.25) {};
 		\node [style=none] (15) at (1.5, 1.5) {};
 		\node [style=none] (16) at (-2.5, 1.5) {};

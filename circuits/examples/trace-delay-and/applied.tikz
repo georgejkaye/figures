@@ -3,8 +3,8 @@
 		\node [style=and] (0) at (0.25, -0.25) {};
 		\node [style=none] (1) at (-1.75, 0.5) {};
 		\node [style=none] (2) at (0, -0.5) {};
-		\node [style=delay] (9) at (-3, 0.5) {$\belnaptrue$};
-		\node [style=delay] (10) at (-3, -1) {$\belnaptrue$};
+		\node [style=register] (9) at (-3, 0.5) {$\belnaptrue$};
+		\node [style=register] (10) at (-3, -1) {$\belnaptrue$};
 		\node [style=wire label right] (11) at (3.25, -0.75) {};
 		\node [style=bproduct] (12) at (1.5, -0.25) {};
 		\node [style=none] (13) at (2.5, 1.5) {};
@@ -15,7 +15,7 @@
 		\node [style=none] (18) at (-0.75, 0) {};
 		\node [style=none] (19) at (0, 0) {};
 		\node [style=none] (20) at (2.5, 0.25) {};
-		\node [style=delay] (21) at (-4.75, -1) {$\belnapfalse$};
+		\node [style=register] (21) at (-4.75, -1) {$\belnapfalse$};
 		\node [style=wire label left] (22) at (-6, -1) {};
 		\node [style=none] (23) at (-2, 1) {};
 		\node [style=none] (24) at (-2, -1.5) {};

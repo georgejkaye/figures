@@ -5,7 +5,7 @@
 		\node [style=port] (3) at (0.25, -1.25) {};
 		\node [style=bproduct] (4) at (1.5, -1.25) {};
 		\node [style=port] (8) at (-0.25, -0.25) {};
-		\node [style=delay] (11) at (-2, -0.25) {$\overline{v}$};
+		\node [style=register] (11) at (-2, -0.25) {$\overline{v}$};
 		\node [style=none] (16) at (-2.75, 1) {};
 		\node [style=none] (17) at (-2.75, -0.25) {};
 		\node [style=port] (18) at (-0.25, -1.25) {};

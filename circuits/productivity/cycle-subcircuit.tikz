@@ -11,7 +11,7 @@
 		\node [style=none] (113) at (-1.75, 0) {};
 		\node [style=none] (115) at (2.25, 1) {};
 		\node [style=none] (116) at (-1.75, 1) {};
-		\node [style=delay] (128) at (-0.75, 0) {$\overline{t}$};
+		\node [style=register] (128) at (-0.75, 0) {$\overline{t}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (2)

@@ -5,7 +5,7 @@
 		\node [style=port] (3) at (-1.75, -0.5) {};
 		\node [style=bproduct] (4) at (-0.75, -0.5) {};
 		\node [style=port] (8) at (-2.25, 0.5) {};
-		\node [style=delay] (11) at (-4.5, 0.5) {$\overline{s}$};
+		\node [style=register] (11) at (-4.5, 0.5) {$\overline{s}$};
 		\node [style=none] (16) at (-5.5, 1.5) {};
 		\node [style=none] (17) at (-5.5, 0.5) {};
 		\node [style=medium square box comb] (32) at (4.25, -1) {$\tilde{F}$};
@@ -13,13 +13,13 @@
 		\node [style=port] (34) at (4.5, -1.5) {};
 		\node [style=wire label right] (35) at (6, -1.5) {$n$};
 		\node [style=port] (36) at (4, -0.5) {};
-		\node [style=delay] (37) at (2.25, -0.5) {$\overline{v}$};
+		\node [style=register] (37) at (2.25, -0.5) {$\overline{v}$};
 		\node [style=bproduct] (45) at (0.25, 0.5) {};
 		\node [style=none] (46) at (1, 1) {};
 		\node [style=none] (47) at (1.25, -0.5) {};
 		\node [style=none] (48) at (1, 1.5) {};
 		\node [style=bproduct] (61) at (5.5, -0.5) {};
-		\node [style=delay] (62) at (-5.75, -1) {$\overline{v}$};
+		\node [style=register] (62) at (-5.75, -1) {$\overline{v}$};
 		\node [style=bproduct] (63) at (-4, -1) {};
 		\node [style=none] (64) at (-3.25, -0.5) {};
 		\node [style=none] (65) at (-3.25, -1.5) {};
