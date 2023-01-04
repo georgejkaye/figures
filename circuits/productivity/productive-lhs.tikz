@@ -1,8 +1,8 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box comb] (0) at (1.5, -0.5) {$\vara$};
-		\node [style=none] (1) at (1, 0) {};
-		\node [style=none] (2) at (1, -1) {};
+		\node [style=none] (1) at (1.25, 0) {};
+		\node [style=none] (2) at (1.25, -1) {};
 		\node [style=register] (3) at (-0.75, 0) {$\overline{\varb}$};
 		\node [style=register] (4) at (-2.75, -1) {$\overline{\varc}$};
 		\node [style=none] (5) at (-1.75, 0) {};
@@ -13,12 +13,14 @@
 		\node [style=wire label left] (10) at (-4, -1) {$m$};
 		\node [style=wire label right] (11) at (3.5, -1) {$n$};
 		\node [style=none] (12) at (1.75, -1) {};
+		\node [style=wire label mid] (13) at (1.5, 1) {$x$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (1.center) to (3);
 		\draw [style=wire] (9.center)
 			 to (8.center)
 			 to [bend right=90, looseness=1.50] (7.center)
+			 to (13.center)
 			 to (6.center)
 			 to [bend right=90, looseness=1.50] (5.center)
 			 to (3);

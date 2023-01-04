@@ -38,6 +38,7 @@
 		\node [style=none] (129) at (0, -0.25) {};
 		\node [style=none] (130) at (-1.75, -2.5) {};
 		\node [style=none] (131) at (0.25, -1.25) {};
+		\node [style=wire label mid] (132) at (0.5, 2) {$x$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (92) to (90);
@@ -50,12 +51,13 @@
 			 to (104.center)
 			 to [in=105, out=0] (102);
 		\draw [style=wire] (103) to (102);
-		\draw [style=wire] (2)
-			 to (107.center)
-			 to [bend right=90, looseness=1.50] (115.center)
-			 to (116.center)
-			 to [bend right=90, looseness=1.50] (113.center)
-			 to (128);
+		\draw [style=wire] (128)
+			 to (113.center)
+			 to [bend left=90, looseness=1.50] (116.center)
+			 to (132.center)
+			 to (115.center)
+			 to [bend left=90, looseness=1.50] (107.center)
+			 to (2);
 		\draw [style=wire] (122) to (120);
 		\draw [style=wire] (121.center) to (123);
 		\draw [style=wire] (118)

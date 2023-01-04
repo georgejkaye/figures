@@ -1,32 +1,32 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (0) at (-1.25, 0.5) {$F$};
-		\node [style=none] (1) at (-1.5, 0) {};
-		\node [style=none] (2) at (-0.5, 0) {};
-		\node [style=bproduct] (3) at (0.25, 0) {};
-		\node [style=none] (4) at (-0.5, 1) {};
-		\node [style=none] (5) at (1.75, 2.25) {};
-		\node [style=none] (6) at (0.25, 1) {};
-		\node [style=medium square box seq] (7) at (2.75, -0.75) {$F$};
-		\node [style=none] (8) at (2.5, -1.25) {};
-		\node [style=none] (9) at (2.5, -0.25) {};
-		\node [style=none] (10) at (3.5, -1.25) {};
-		\node [style=none] (11) at (3.5, -0.25) {};
-		\node [style=none] (12) at (-1.5, 1) {};
-		\node [style=none] (17) at (-2.5, 1) {};
-		\node [style=none] (18) at (-1.75, -1.25) {};
-		\node [style=none] (19) at (1.75, -1.25) {};
-		\node [style=bproduct] (20) at (4.25, -0.25) {};
-		\node [style=dangling] (21) at (4.75, -1.25) {};
-		\node [style=none] (41) at (-2.5, 0) {};
-		\node [style=none] (45) at (1.75, -0.25) {};
-		\node [style=none] (50) at (-2.5, 2.25) {};
-		\node [style=bproduct] (51) at (0.75, 1) {};
-		\node [style=none] (52) at (1.75, 1.5) {};
-		\node [style=dangling] (53) at (-4.25, -0.5) {};
-		\node [style=bproduct] (54) at (-3.25, -0.5) {};
-		\node [style=wire label left] (55) at (-4.5, -0.5) {$m$};
-		\node [style=wire label right] (56) at (5, -1.25) {$n$};
+		\node [style=medium square box seq] (0) at (-1.25, 0) {$F$};
+		\node [style=none] (1) at (-1.5, -0.5) {};
+		\node [style=none] (2) at (-0.5, -0.5) {};
+		\node [style=bproduct] (3) at (0, -0.5) {};
+		\node [style=none] (4) at (-0.5, 0.5) {};
+		\node [style=wire label mid] (5) at (-0.25, 2) {$x$};
+		\node [style=none] (6) at (0.25, 0.5) {};
+		\node [style=medium square box seq] (7) at (2.75, -1) {$F$};
+		\node [style=none] (8) at (2.5, -1.5) {};
+		\node [style=none] (9) at (2.5, -0.5) {};
+		\node [style=none] (10) at (3.5, -1.5) {};
+		\node [style=none] (11) at (3.5, -0.5) {};
+		\node [style=none] (12) at (-1.5, 0.5) {};
+		\node [style=none] (17) at (-2.5, 0.5) {};
+		\node [style=none] (18) at (-2.5, -1.5) {};
+		\node [style=none] (19) at (1.75, -1.5) {};
+		\node [style=bproduct] (20) at (4, -0.5) {};
+		\node [style=none] (41) at (-2.5, -0.5) {};
+		\node [style=none] (45) at (1.75, -0.5) {};
+		\node [style=none] (50) at (-2.5, 2) {};
+		\node [style=bproduct] (51) at (0.75, 0.5) {};
+		\node [style=none] (52) at (1.5, 1.25) {};
+		\node [style=bproduct] (54) at (-3.25, -1) {};
+		\node [style=wire label left] (55) at (-4.25, -1) {$m$};
+		\node [style=wire label right] (56) at (4.75, -1.5) {$n$};
+		\node [style=none] (57) at (2, 1.25) {};
+		\node [style=none] (58) at (2, 2) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wiredash] (4.center) to (6.center);
@@ -35,21 +35,23 @@
 			 to (17.center)
 			 to [bend left=90, looseness=1.50] (50.center)
 			 to (5.center)
-			 to [bend left=90, looseness=2.00] (52.center)
-			 to [in=60, out=-180] (51);
+			 to (58.center)
+			 to [bend left=90, looseness=1.50] (57.center)
+			 to (52.center)
+			 to [in=75, out=-180] (51);
 		\draw [style=wiredash] (54)
 			 to [in=180, out=-75] (18.center)
 			 to [in=180, out=360] (19.center)
 			 to (8.center);
 		\draw [style=wiredash] (11.center) to (20);
-		\draw [style=wiredash] (21) to (10.center);
 		\draw [style=wiredash] (6.center) to (51);
-		\draw [style=wiredash] (53) to (54);
 		\draw [style=wiredash] (54)
 			 to [in=180, out=75] (41.center)
 			 to (1.center);
 		\draw [style=wiredash] (51)
 			 to [in=-180, out=-75] (45.center)
 			 to (9.center);
+		\draw [style=wiredash] (55) to (54);
+		\draw [style=wiredash] (56) to (10.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
