@@ -22,8 +22,8 @@
 		\node [style=none] (27) at (-1.75, -1) {};
 		\node [style=none] (28) at (-0.75, -0.5) {};
 		\node [style=register] (29) at (5.75, -0.75) {$\belnapfalse$};
-		\node [style=register] (30) at (7.5, -0.75) {$\belnaptrue$};
-		\node [style=wire label right] (31) at (8.5, -0.75) {};
+		\node [style=register] (30) at (7.75, -0.75) {$\belnaptrue$};
+		\node [style=wire label right] (31) at (8.75, -0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=tile comb] (25.center)

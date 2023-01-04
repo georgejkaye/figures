@@ -1,0 +1,38 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny signal seq] (12) at (-0.25, 0) {$\overline{\underline{w}}$};
+		\node [style=none] (22) at (1.5, -0.5) {};
+		\node [style=tiny signal seq] (23) at (2.75, -0.5) {$\underline{\overline{v}}$};
+		\node [style=none] (24) at (-3, 0) {};
+		\node [style=bproduct] (25) at (1, 0) {};
+		\node [style=none] (26) at (1.5, 0.5) {};
+		\node [style=none] (28) at (-3, 1.25) {};
+		\node [style=none] (29) at (-2.25, 0) {};
+		\node [style=none] (30) at (2.5, -0.5) {};
+		\node [style=wire label right] (31) at (5.5, -0.5) {$n$};
+		\node [style=none] (32) at (2, 0.5) {};
+		\node [style=none] (33) at (2, 1.25) {};
+		\node [style=wire label mid] (34) at (-1, 1.25) {$n$};
+		\node [style=tiny signal seq] (35) at (-2, 0) {$\underline{\overline{v}}$};
+		\node [style=none] (36) at (-0.5, 0) {};
+		\node [style=none] (37) at (4.25, -0.5) {};
+		\node [style=tiny signal seq] (38) at (4.5, -0.5) {$\overline{\underline{u}}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (30.center)
+			 to (22.center)
+			 to [in=285, out=180] (25);
+		\draw [style=wire] (12) to (25);
+		\draw [style=wire] (25)
+			 to [in=-180, out=75] (26.center)
+			 to (32.center)
+			 to [bend right=90, looseness=1.25] (33.center)
+			 to (34.center)
+			 to (28.center)
+			 to [bend left=270, looseness=1.25] (24.center)
+			 to (29.center);
+		\draw [style=wire] (36.center) to (35);
+		\draw [style=wire] (37.center) to (23);
+		\draw [style=wire] (38) to (31);
+	\end{pgfonlayer}
+\end{tikzpicture}
