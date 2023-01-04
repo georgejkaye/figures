@@ -4,7 +4,7 @@
 		\node [style=none] (1) at (-2, 0.75) {};
 		\node [style=none] (2) at (0, -0.25) {};
 		\node [style=tiny box seq] (9) at (-2.75, 0.75) {$\belnaptrue$};
-		\node [style=tiny box seq] (10) at (-2.75, -0.75) {$\belnaptrue$};
+		\node [style=bproduct] (10) at (-2.75, -0.75) {};
 		\node [style=wire label right] (11) at (2.5, -0.5) {};
 		\node [style=bproduct] (12) at (1.5, 0) {};
 		\node [style=none] (15) at (2, 0.5) {};

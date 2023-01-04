@@ -1,0 +1,30 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=bproduct] (12) at (1.5, -0.25) {};
+		\node [style=none] (13) at (2.5, 1.25) {};
+		\node [style=none] (15) at (2, 0.25) {};
+		\node [style=none] (17) at (2, -0.75) {};
+		\node [style=none] (20) at (2.5, 0.25) {};
+		\node [style=tiny signal seq] (29) at (4, -0.75) {$\belnapfalse$};
+		\node [style=tiny signal seq] (30) at (5.75, -0.75) {$\belnaptrue$};
+		\node [style=wire label right] (31) at (6.75, -0.75) {};
+		\node [style=tiny signal seq] (32) at (0, -0.25) {$\belnapfalse$};
+		\node [style=none] (33) at (-1.5, -0.25) {};
+		\node [style=none] (34) at (-1.5, 1.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (32)
+			 to (33.center)
+			 to [bend left=90, looseness=1.50] (34.center)
+			 to (13.center)
+			 to [bend left=90, looseness=1.75] (20.center)
+			 to (15.center)
+			 to [in=75, out=180, looseness=1.25] (12);
+		\draw [style=wire] (12)
+			 to [in=-180, out=-75, looseness=1.25] (17.center)
+			 to (29);
+		\draw (30) to (29);
+		\draw [style=wire] (31) to (30);
+		\draw [style=wire] (32) to (12);
+	\end{pgfonlayer}
+\end{tikzpicture}
