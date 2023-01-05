@@ -1,19 +1,16 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box comb] (10) at (0, 0) {$\hat{F}$};
-		\node [style=wire label left] (15) at (-1.25, 0.5) {};
-		\node [style=wire label right] (18) at (1.25, 0.5) {};
-		\node [style=wire label left] (21) at (-1.25, -0.5) {};
+		\node [style=wire label left] (15) at (-1.25, 0.5) {$n$};
+		\node [style=wire label right] (18) at (1.25, 0) {$n$};
+		\node [style=wire label left] (21) at (-1.25, -0.5) {$m$};
 		\node [style=port] (22) at (-0.25, 0.5) {};
 		\node [style=port] (23) at (-0.25, -0.5) {};
-		\node [style=port] (24) at (0.25, 0.5) {};
-		\node [style=port] (25) at (0.25, -0.5) {};
-		\node [style=wire label right] (26) at (1.25, -0.5) {};
+		\node [style=port] (24) at (0.25, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (22) to (15);
 		\draw [style=wire] (21) to (23);
-		\draw [style=wire] (26) to (25);
 		\draw [style=wire] (18) to (24);
 	\end{pgfonlayer}
 \end{tikzpicture}

@@ -1,22 +1,20 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=register] (6) at (-2, -0.525) {$\overline{s}$};
-		\node [style=port] (10) at (-0.25, -1.5) {};
-		\node [style=medium square box comb] (13) at (0, -1) {$F$};
+		\node [style=register] (6) at (-2, -0.025) {$\overline{s}$};
+		\node [style=port] (10) at (-0.25, -1) {};
+		\node [style=medium square box comb] (13) at (0, -0.5) {$F$};
 		\node [style=bport] (22) at (0.25, -0.5) {};
 		\node [style=bproduct] (24) at (1.5, -0.5) {};
-		\node [style=none] (26) at (2.5, 0.75) {};
-		\node [style=none] (30) at (-3, 0.75) {};
-		\node [style=bport] (33) at (0.25, -1.5) {};
-		\node [style=none] (35) at (-3, -0.5) {};
-		\node [style=bport] (55) at (-0.25, -0.5) {};
-		\node [style=wire label left] (57) at (-3.75, -1.5) {$m$};
+		\node [style=none] (26) at (2.25, 1) {};
+		\node [style=none] (30) at (-3, 1) {};
+		\node [style=none] (35) at (-3, 0) {};
+		\node [style=bport] (55) at (-0.25, 0) {};
+		\node [style=wire label left] (57) at (-3.75, -1) {$m$};
 		\node [style=none] (61) at (2.25, -1) {};
 		\node [style=none] (62) at (2.25, 0) {};
 		\node [style=none] (63) at (1, -0.5) {};
-		\node [style=none] (64) at (2.5, 0) {};
-		\node [style=wire label right] (65) at (3.25, -1) {$x$};
-		\node [style=wire label right] (66) at (3.25, -1.5) {$n$};
+		\node [style=none] (64) at (2.25, 0) {};
+		\node [style=wire label right] (65) at (3, -1) {$n$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (24)
@@ -33,6 +31,5 @@
 		\draw [style=wire, in=-180, out=0] (63.center) to (24);
 		\draw [style=wire] (55) to (6);
 		\draw [style=wire] (10) to (57);
-		\draw [style=wire] (33) to (66);
 	\end{pgfonlayer}
 \end{tikzpicture}
