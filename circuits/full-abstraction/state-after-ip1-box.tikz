@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (0) at (-1, 0) {$\hat{\vara}^{k+1}_{\sigma}$};
+		\node [style=medium square box seq] (0) at (-1, 0) {$\hat{\vara}^{i+1}_{\sigma}$};
 		\node [style=wire label right] (2) at (0.75, 0) {$\varb$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

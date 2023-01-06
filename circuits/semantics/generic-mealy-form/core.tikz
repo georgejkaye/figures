@@ -2,19 +2,18 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=port] (10) at (0.25, -0.75) {};
 		\node [style=medium square box comb] (13) at (0.5, -0.25) {$F$};
-		\node [style=bport] (22) at (0.75, -0.25) {};
-		\node [style=bproduct] (24) at (1.75, -0.25) {};
-		\node [style=wire label left] (35) at (-0.75, 0.25) {$n$};
+		\node [style=bport] (22) at (0.75, 0.25) {};
+		\node [style=wire label left] (35) at (-0.75, 0.25) {$x$};
 		\node [style=bport] (55) at (0.25, 0.25) {};
 		\node [style=wire label left] (57) at (-0.75, -0.75) {$m$};
-		\node [style=wire label right] (61) at (2.75, -0.75) {$n$};
-		\node [style=wire label right] (62) at (2.75, 0.25) {$n$};
+		\node [style=bproduct] (61) at (1.75, -0.75) {};
+		\node [style=wire label right] (62) at (2.25, 0.25) {$x$};
+		\node [style=bport] (63) at (0.75, -0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire, in=-180, out=60] (24) to (62);
-		\draw [style=wire, in=180, out=-60] (24) to (61);
 		\draw [style=wire] (10) to (57);
-		\draw [style=wire] (24) to (22);
 		\draw [style=wire] (35) to (55);
+		\draw [style=wire] (22) to (62);
+		\draw [style=wire] (63) to (61);
 	\end{pgfonlayer}
 \end{tikzpicture}

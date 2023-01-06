@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style={medium square box \varb}] (10) at (0, 0) {$\vara$};
+		\node [style=medium square box seq] (15) at (-2, 0) {$\varc$};
+		\node [style=wire label right] (16) at (1.25, 0) {$\vard$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (15) to (10);
+		\draw [style=wire] (10) to (16);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,10 +1,10 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (15) at (-3, 0.5) {$\hat{\vara}^{\varb}_{\varc}$};
-		\node [style=medium square box comb] (16) at (0, 0) {$\hat{\vara}$};
-		\node [style=tiny box seq] (22) at (-7.25, -0.5) {$\varc(\varb+1)$};
+		\node [style=medium square box seq] (15) at (-2.5, 0.5) {$F^{k+1}_{\sigma}$};
+		\node [style=medium square box comb] (16) at (0, 0) {$\hat{F}$};
+		\node [style=tiny box seq] (22) at (-6.25, -0.5) {$\sigma(k+1)$};
 		\node [style=port] (23) at (0.25, 0.5) {};
-		\node [style=wire label right] (24) at (2, 0.5) {$\vard$};
+		\node [style=wire label right] (24) at (2, 0.5) {$x$};
 		\node [style=port] (25) at (0.25, -0.5) {};
 		\node [style=bproduct] (26) at (1.5, -0.5) {};
 		\node [style=none] (47) at (-0.75, 0.5) {};

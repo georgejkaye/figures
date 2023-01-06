@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (15) at (-2.25, 0.5) {$\hat{\vara}_{\sigma, \varb}$};
+		\node [style=medium square box seq] (15) at (-2.25, 0.5) {$\hat{\vara}^{\varb}_{\sigma}$};
 		\node [style=medium square box comb] (16) at (0, 0) {$\hat{\vara}$};
 		\node [style=none] (17) at (-1.25, 0.5) {};
 		\node [style=none] (18) at (-3.75, -0.5) {};

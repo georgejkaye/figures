@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny box seq] (0) at (-1, 0) {$\mu_f(\sigma)$};
+		\node [style=wire label right] (1) at (1, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (1) to (0);
+	\end{pgfonlayer}
+\end{tikzpicture}
