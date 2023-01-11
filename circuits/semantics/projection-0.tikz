@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box comb] (10) at (0, 0) {$F$};
+		\node [style=medium square box seq] (10) at (0, 0) {$F$};
 		\node [style=wire label left] (15) at (-1.25, 0) {};
 		\node [style=wire label right] (16) at (1.75, 0.5) {};
 		\node [style=none] (17) at (-0.25, 0) {};

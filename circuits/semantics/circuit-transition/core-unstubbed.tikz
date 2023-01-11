@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box comb] (16) at (0, 0) {$\mealytocircuit[\gamma(f)]{}$};
+		\node [style=port] (23) at (0.25, 0.5) {};
+		\node [style=wire label right] (24) at (2.25, 0.5) {$x$};
+		\node [style=port] (25) at (0.25, -0.5) {};
+		\node [style=wire label right] (26) at (2.25, -0.5) {$n$};
+		\node [style=port] (47) at (-0.5, 0.5) {};
+		\node [style=port] (48) at (-0.5, -0.5) {};
+		\node [style=wire label left] (49) at (-2.5, 0.5) {$x$};
+		\node [style=wire label left] (50) at (-2.5, -0.5) {$m$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (24) to (23);
+		\draw [style=wire] (26) to (25);
+		\draw [style=wire] (48) to (50);
+		\draw [style=wire] (49) to (47);
+	\end{pgfonlayer}
+\end{tikzpicture}
