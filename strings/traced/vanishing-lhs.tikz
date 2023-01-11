@@ -15,8 +15,8 @@
 		\node [style=port] (13) at (-0.25, -1.25) {};
 		\node [style=none] (14) at (-2.75, -1.25) {};
 		\node [style=none] (15) at (2.75, -1.25) {};
-		\node [style=none] (16) at (2.75, 1.75) {};
-		\node [style=none] (17) at (-2.75, 1.75) {};
+		\node [style=none] (16) at (2.75, 2) {};
+		\node [style=none] (17) at (-2.75, 2) {};
 		\node [style=none] (18) at (2.25, 1.25) {};
 		\node [style=none] (19) at (-2.25, 1.25) {};
 		\node [style=none] (20) at (-2.25, -2.5) {};
@@ -25,21 +25,23 @@
 		\node [style=none] (23) at (-4.25, -2.75) {};
 		\node [style=none] (24) at (4.25, -2.75) {};
 		\node [style=none] (25) at (4.25, 2.75) {};
-		\node [style=none] (26) at (0, 0.75) {$X$};
-		\node [style=none] (27) at (0, 2.25) {$Y$};
+		\node [style=wire label mid] (26) at (0, 0.25) {$X$};
+		\node [style=wire label mid] (27) at (0, 2) {$Y$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (3) to (4);
-		\draw [style=wire] (8)
-			 to (10.center)
-			 to [bend left=90, looseness=1.50] (7.center)
-			 to (6.center)
-			 to [bend left=90, looseness=1.50] (5.center)
-			 to (2);
+		\draw [style=wire] (2)
+			 to (5.center)
+			 to [bend right=90, looseness=1.50] (6.center)
+			 to (26.center)
+			 to (7.center)
+			 to [bend right=90, looseness=1.50] (10.center)
+			 to (8);
 		\draw [style=wire] (11) to (9);
 		\draw [style=wire] (13)
 			 to (14.center)
 			 to [bend left=90, looseness=1.25] (17.center)
+			 to (27.center)
 			 to (16.center)
 			 to [bend left=90, looseness=1.25] (15.center)
 			 to (12);
