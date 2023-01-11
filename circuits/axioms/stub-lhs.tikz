@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny box seq] (0) at (-0.75, 0) {$\overline{v}$};
+		\node [style=tiny box seq] (0) at (-0.75, 0) {$\vara$};
 		\node [style=bproduct] (4) at (0.5, 0) {};
 		\node [style=port] (5) at (-0.5, 0) {};
 	\end{pgfonlayer}

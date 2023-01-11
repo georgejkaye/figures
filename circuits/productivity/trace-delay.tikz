@@ -1,11 +1,10 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=delay] (11) at (-1.75, 0.25) {};
 		\node [style=none] (14) at (2, -0.25) {};
 		\node [style=none] (15) at (2, 1.5) {};
-		\node [style=none] (16) at (-2.5, 1.5) {};
-		\node [style=none] (17) at (-2.25, 0.25) {};
-		\node [style=none] (18) at (-1.75, -0.75) {};
+		\node [style=none] (16) at (-1.5, 1.5) {};
+		\node [style=none] (17) at (-1.5, -0.25) {};
+		\node [style=none] (18) at (-2, -0.75) {};
 		\node [style=tiny box seq] (19) at (-3.75, -0.25) {$\overline{\varb}$};
 		\node [style=none] (38) at (2, 1) {};
 		\node [style=none] (39) at (0, 1) {};
@@ -19,11 +18,10 @@
 		\node [style=port] (48) at (1.25, -1.16) {};
 		\node [style=none] (49) at (0, 0.16) {};
 		\node [style=none] (50) at (2, 0.16) {};
-		\node [style=dangling] (51) at (-4.75, -1.16) {};
-		\node [style=none] (52) at (-0.25, -0.25) {};
-		\node [style=dangling] (53) at (3, -1.16) {};
-		\node [style=none] (54) at (-1.25, 0.25) {};
-		\node [style=none] (55) at (-2.75, -0.25) {};
+		\node [style=wire label left] (51) at (-4.75, -1.16) {$\varc$};
+		\node [style=wire label right] (53) at (3, -1.16) {$\vard$};
+		\node [style=none] (55) at (-3, -0.25) {};
+		\node [style=delay] (56) at (-1, -0.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (47)
@@ -31,7 +29,7 @@
 			 to [bend right=90, looseness=1.50] (15.center)
 			 to (16.center)
 			 to [bend left=270, looseness=1.50] (17.center)
-			 to (11);
+			 to (56);
 		\draw [style=wire] (45)
 			 to (18.center)
 			 to [in=0, out=180] (55.center)
@@ -43,10 +41,7 @@
 			 to [bend left=90, looseness=1.50] (50.center)
 			 to (46);
 		\draw [style=wire] (44) to (51);
-		\draw [style=wire] (11)
-			 to (54.center)
-			 to [in=-180, out=0, looseness=1.25] (52.center)
-			 to (43);
 		\draw [style=wire] (48) to (53);
+		\draw (56) to (43);
 	\end{pgfonlayer}
 \end{tikzpicture}

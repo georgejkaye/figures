@@ -1,13 +1,11 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=wire label left] (9) at (-1, 0) {$\varb$};
+		\node [style=tiny box seq] (9) at (-1.75, 0) {$\overline{\varb}$};
 		\node [style=wire label right] (10) at (1, 0) {};
 		\node [style=medium box comb] (11) at (0, 0) {$\vara$};
-		\node [style=none] (12) at (-0.5, 0) {};
-		\node [style=none] (15) at (0.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire, in=180, out=0] (9) to (12.center);
-		\draw [style=wire] (15.center) to (10);
+		\draw [style=wire, in=180, out=0] (9) to (11);
+		\draw [style=wire] (11) to (10);
 	\end{pgfonlayer}
 \end{tikzpicture}
