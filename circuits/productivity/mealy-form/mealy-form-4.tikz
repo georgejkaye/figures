@@ -1,36 +1,45 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (14) at (2, -0.25) {};
-		\node [style=none] (15) at (2, 1.5) {};
-		\node [style=none] (16) at (-3.25, 1.5) {};
-		\node [style=none] (17) at (-3.25, 0.5) {};
-		\node [style=none] (18) at (-2.5, -0.75) {};
-		\node [style=none] (38) at (2, 1) {};
-		\node [style=none] (39) at (0, 1) {};
-		\node [style=medium square box comb] (41) at (1, -0.5) {$\hat{F}$};
-		\node [style=port] (42) at (0.75, 0.16) {};
-		\node [style=port] (43) at (0.75, -0.25) {};
-		\node [style=port] (44) at (0.75, -1.16) {};
-		\node [style=port] (45) at (0.75, -0.75) {};
-		\node [style=port] (46) at (1.25, 0.16) {};
-		\node [style=port] (47) at (1.25, -0.25) {};
-		\node [style=port] (48) at (1.25, -1.16) {};
-		\node [style=none] (49) at (0, 0.16) {};
-		\node [style=none] (50) at (2, 0.16) {};
-		\node [style=dangling] (51) at (-7, -1.16) {};
-		\node [style=none] (52) at (-0.25, -0.25) {};
-		\node [style=dangling] (53) at (3.5, -1.16) {};
-		\node [style=none] (54) at (-1.5, 0.5) {};
-		\node [style=none] (55) at (-3.75, 0) {};
-		\node [style=register] (57) at (-2.25, 0.5) {$\bullet$};
-		\node [style=register] (58) at (-4.75, 0) {$\overline{v}$};
-		\node [style=none] (65) at (-5.75, 0) {};
-		\node [style=none] (67) at (2, -0.75) {};
-		\node [style=none] (68) at (2, 2) {};
-		\node [style=none] (69) at (-5.75, 2) {};
-		\node [style=port] (70) at (1.25, -0.75) {};
+		\node [style=none] (14) at (4.75, -0.5) {};
+		\node [style=none] (15) at (4.75, 1.75) {};
+		\node [style=none] (16) at (-2.75, 1.75) {};
+		\node [style=none] (17) at (-2.75, 0.25) {};
+		\node [style=none] (18) at (-2, -1) {};
+		\node [style=none] (38) at (4.5, 1) {};
+		\node [style=none] (39) at (0.5, 1) {};
+		\node [style=medium square box comb] (41) at (2, -0.75) {$\tilde{F}$};
+		\node [style=port] (42) at (1.75, -0.09) {};
+		\node [style=port] (43) at (1.75, -0.5) {};
+		\node [style=port] (44) at (1.75, -1.41) {};
+		\node [style=port] (45) at (1.75, -1) {};
+		\node [style=port] (46) at (2.25, -0.09) {};
+		\node [style=port] (47) at (2.25, -0.5) {};
+		\node [style=port] (48) at (2.25, -1.41) {};
+		\node [style=none] (49) at (0.5, -0.09) {};
+		\node [style=none] (50) at (4.5, -0.09) {};
+		\node [style=dangling] (51) at (-6.75, -1.41) {};
+		\node [style=none] (52) at (0.25, -0.5) {};
+		\node [style=dangling] (53) at (7, -1.41) {};
+		\node [style=none] (54) at (-1, 0.25) {};
+		\node [style=none] (55) at (-3.25, -0.25) {};
+		\node [style=register] (57) at (-1.75, 0.25) {$\bullet$};
+		\node [style=register] (58) at (-4.25, -0.25) {$\overline{v}$};
+		\node [style=none] (65) at (-5.25, -0.25) {};
+		\node [style=bproduct] (66) at (3.5, -1) {};
+		\node [style=none] (67) at (5, -1) {};
+		\node [style=none] (68) at (5, 2.25) {};
+		\node [style=none] (69) at (-5.25, 2.25) {};
+		\node [style=none] (70) at (0.75, -2) {};
+		\node [style=none] (71) at (0.75, 0.5) {};
+		\node [style=none] (72) at (4, 0.5) {};
+		\node [style=none] (73) at (4, -2) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
+		\draw [style=tile comb] (73.center)
+			 to (70.center)
+			 to (71.center)
+			 to (72.center)
+			 to cycle;
 		\draw [style=wire] (47)
 			 to (14.center)
 			 to [bend right=90, looseness=1.50] (15.center)
@@ -53,7 +62,7 @@
 			 to [in=0, out=-180, looseness=1.25] (54.center)
 			 to (57);
 		\draw [style=wire] (48) to (53);
-		\draw [style=wire] (70)
+		\draw [style=wire] (66)
 			 to (67.center)
 			 to [bend right=90, looseness=1.50] (68.center)
 			 to (69.center)

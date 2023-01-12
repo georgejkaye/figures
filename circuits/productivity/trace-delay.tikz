@@ -2,10 +2,10 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (14) at (2, -0.25) {};
 		\node [style=none] (15) at (2, 1.5) {};
-		\node [style=none] (16) at (-1.5, 1.5) {};
-		\node [style=none] (17) at (-1.5, -0.25) {};
-		\node [style=none] (18) at (-2, -0.75) {};
-		\node [style=tiny box seq] (19) at (-3.75, -0.25) {$\overline{\varb}$};
+		\node [style=none] (16) at (-2.5, 1.5) {};
+		\node [style=none] (17) at (-2.5, 0.25) {};
+		\node [style=none] (18) at (-2.25, -0.75) {};
+		\node [style=tiny box seq] (19) at (-4.25, -0.25) {$\overline{\varb}$};
 		\node [style=none] (38) at (2, 1) {};
 		\node [style=none] (39) at (0, 1) {};
 		\node [style=medium square box comb] (41) at (1, -0.5) {$\hat{\vara}$};
@@ -18,30 +18,41 @@
 		\node [style=port] (48) at (1.25, -1.16) {};
 		\node [style=none] (49) at (0, 0.16) {};
 		\node [style=none] (50) at (2, 0.16) {};
-		\node [style=wire label left] (51) at (-4.75, -1.16) {$\varc$};
+		\node [style=wire label left] (51) at (-5.25, -1.16) {$\varc$};
 		\node [style=wire label right] (53) at (3, -1.16) {$\vard$};
-		\node [style=none] (55) at (-3, -0.25) {};
-		\node [style=delay] (56) at (-1, -0.25) {};
+		\node [style=none] (55) at (-3.25, -0.25) {};
+		\node [style=delay] (56) at (-2, 0.25) {};
+		\node [style=wire label mid] (57) at (1, 1) {$\varf$};
+		\node [style=wire label mid] (58) at (-1, 1.5) {$\vare$};
+		\node [style=none] (60) at (-1.25, 0.25) {};
+		\node [style=none] (61) at (-0.25, -0.25) {};
+		\node [style=wire label mid] (62) at (-1.25, -0.75) {$\varg$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (47)
 			 to (14.center)
 			 to [bend right=90, looseness=1.50] (15.center)
+			 to (58.center)
 			 to (16.center)
 			 to [bend left=270, looseness=1.50] (17.center)
 			 to (56);
-		\draw [style=wire] (45)
-			 to (18.center)
-			 to [in=0, out=180] (55.center)
-			 to (19);
+		\draw [style=wire] (19)
+			 to (55.center)
+			 to [in=180, out=0] (18.center)
+			 to (62.center)
+			 to (45);
 		\draw [style=wire] (42)
 			 to (49.center)
 			 to [bend left=90, looseness=1.75] (39.center)
+			 to (57.center)
 			 to (38.center)
 			 to [bend left=90, looseness=1.50] (50.center)
 			 to (46);
 		\draw [style=wire] (44) to (51);
 		\draw [style=wire] (48) to (53);
-		\draw (56) to (43);
+		\draw [style=wire] (56)
+			 to (60.center)
+			 to [in=-180, out=0, looseness=1.25] (61.center)
+			 to (43);
 	\end{pgfonlayer}
 \end{tikzpicture}
