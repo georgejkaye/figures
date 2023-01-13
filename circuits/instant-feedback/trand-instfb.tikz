@@ -18,14 +18,13 @@
 		\node [style=none] (28) at (3.75, 0) {};
 		\node [style=bproduct] (30) at (-5, 0.5) {};
 		\node [style=none] (31) at (-4.25, -0.25) {};
-		\node [style=register] (34) at (-6.25, 0.5) {$\belnaptrue$};
+		\node [style=tiny box seq] (34) at (-6.25, 0.5) {$\belnaptrue$};
 		\node [style=bproduct] (35) at (-3, -0.25) {};
 		\node [style=none] (36) at (-2.25, -1) {};
 		\node [style=bproduct] (37) at (-0.75, -1) {};
 		\node [style=none] (38) at (0, -0.25) {};
 		\node [style=none] (39) at (0, -1.75) {};
 		\node [style=bproduct] (40) at (3.25, -1.75) {};
-		\node [style=none] (41) at (-7.5, 0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (13)
@@ -51,6 +50,5 @@
 		\draw [style=wire] (40)
 			 to (39.center)
 			 to [in=-75, out=180] (37);
-		\draw [style=wire] (41.center) to (34);
 	\end{pgfonlayer}
 \end{tikzpicture}
