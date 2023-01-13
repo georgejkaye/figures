@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny box seq] (0) at (-2.75, 0.5) {$\overline{r_0}$};
+		\node [style=tiny box seq] (1) at (-2.75, -1) {$\overline{v}$};
+		\node [style=medium box comb] (2) at (-0.5, 0.5) {$g$};
+		\node [style=none] (3) at (0.5, 0.5) {};
+		\node [style=none] (4) at (0.5, -1) {};
+		\node [style=none] (5) at (2.25, -1) {};
+		\node [style=none] (6) at (2.25, 0.5) {};
+		\node [style=bproduct] (7) at (3, 0.5) {};
+		\node [style=none] (11) at (3.5, -1) {};
+		\node [style=none] (12) at (-1.5, 1.5) {};
+		\node [style=none] (13) at (-1.5, -1.5) {};
+		\node [style=none] (14) at (2.5, -1.5) {};
+		\node [style=none] (15) at (2.5, 1.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=tile comb] (12.center)
+			 to (13.center)
+			 to (14.center)
+			 to (15.center)
+			 to cycle;
+		\draw [style=wire] (2)
+			 to (3.center)
+			 to [in=-180, out=0, looseness=0.75] (5.center)
+			 to (11.center);
+		\draw [style=wire] (7) to (6.center);
+		\draw [style=wire, in=0, out=-180, looseness=0.75] (6.center) to (4.center);
+		\draw [style=wire] (4.center) to (1);
+		\draw [style=tile comb] (2) to (0);
+	\end{pgfonlayer}
+\end{tikzpicture}

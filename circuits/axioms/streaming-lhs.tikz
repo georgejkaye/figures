@@ -4,8 +4,8 @@
 		\node [style=register] (1) at (-1, 0) {$\overline{v}$};
 		\node [style=port] (2) at (0.75, 0) {};
 		\node [style=port] (3) at (1.25, 0) {};
-		\node [style=dangling] (5) at (2.25, 0) {};
-		\node [style=dangling] (10) at (-2.25, 0) {};
+		\node [style=wire label right] (5) at (2.25, 0) {};
+		\node [style=wire label left] (10) at (-2.25, 0) {$m$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (1) to (2);

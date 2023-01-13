@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny box seq] (16) at (-0.75, 0) {$g(\overline{w})$};
+		\node [style=wire label right] (25) at (1, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (25) to (16);
+	\end{pgfonlayer}
+\end{tikzpicture}

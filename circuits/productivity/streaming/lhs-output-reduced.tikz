@@ -1,0 +1,20 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny box seq] (0) at (-2, 0) {$\overline{r_0}$};
+		\node [style=medium box comb] (2) at (0.25, 0) {$g$};
+		\node [style=none] (11) at (2, 0) {};
+		\node [style=none] (12) at (-0.75, 1.25) {};
+		\node [style=none] (13) at (-0.75, -1.25) {};
+		\node [style=none] (14) at (1.25, -1.25) {};
+		\node [style=none] (15) at (1.25, 1.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=tile comb] (12.center)
+			 to (13.center)
+			 to (14.center)
+			 to (15.center)
+			 to cycle;
+		\draw [style=tile comb] (2) to (0);
+		\draw [style=wire] (2) to (11.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
