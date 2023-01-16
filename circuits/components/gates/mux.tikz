@@ -1,19 +1,19 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=mux] (72) at (0, 0) {};
-		\node [style=port] (73) at (0, 0.5) {};
-		\node [style=port] (74) at (0, -0.5) {};
-		\node [style=port] (75) at (0, 0) {};
-		\node [style=none] (76) at (0, 0.75) {};
-		\node [style=none] (77) at (-1.75, 0.5) {};
-		\node [style=none] (78) at (-1.75, -0.5) {};
-		\node [style=none] (79) at (-0.75, 1.5) {};
-		\node [style=none] (80) at (-1.75, 1.5) {};
-		\node [style=none] (81) at (-1.25, 2) {};
-		\node [style=none] (82) at (-1.25, -1.25) {};
-		\node [style=none] (83) at (0.75, -1.25) {};
-		\node [style=none] (84) at (0.75, 2) {};
-		\node [style=none] (85) at (1.25, 0) {};
+		\node [style=mux] (72) at (0, -0.25) {};
+		\node [style=port] (73) at (0, 0.25) {};
+		\node [style=port] (74) at (0, -0.75) {};
+		\node [style=port] (75) at (0, -0.25) {};
+		\node [style=none] (76) at (0, 0.5) {};
+		\node [style=none] (77) at (-1.75, 0.25) {};
+		\node [style=none] (78) at (-1.75, -0.75) {};
+		\node [style=none] (79) at (-0.75, 1.25) {};
+		\node [style=none] (80) at (-1.75, 1.25) {};
+		\node [style=none] (81) at (-1.25, 1.5) {};
+		\node [style=none] (82) at (-1.25, -1.5) {};
+		\node [style=none] (83) at (0.75, -1.5) {};
+		\node [style=none] (84) at (0.75, 1.5) {};
+		\node [style=none] (85) at (1.25, -0.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=tile comb] (84.center)
