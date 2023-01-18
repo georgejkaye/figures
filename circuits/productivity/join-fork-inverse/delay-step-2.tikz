@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=delay] (0) at (-0.5, 0) {};
+		\node [style=bproduct] (7) at (0.5, 0) {};
+		\node [style=none] (8) at (1, 0.5) {};
+		\node [style=none] (9) at (1, -0.5) {};
+		\node [style=wire label right] (12) at (1.5, 0.5) {};
+		\node [style=wire label right] (13) at (1.5, -0.5) {};
+		\node [style=wire label left] (14) at (-1.25, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire, in=-180, out=75] (7) to (8.center);
+		\draw [style=wire, in=360, out=180] (12) to (8.center);
+		\draw [style=wire, in=180, out=-75] (7) to (9.center);
+		\draw [style=wire] (9.center) to (13);
+		\draw [style=wire] (14) to (0);
+		\draw [style=wire] (0) to (7);
+	\end{pgfonlayer}
+\end{tikzpicture}
