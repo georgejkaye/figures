@@ -3,9 +3,9 @@
 		\node [style=delay] (0) at (-0.5, 0.5) {};
 		\node [style=delay] (1) at (-0.5, -0.5) {};
 		\node [style=bproduct] (2) at (0.5, 0) {};
-		\node [style=dangling] (3) at (-1.25, 0.5) {};
-		\node [style=dangling] (4) at (-1.25, -0.5) {};
-		\node [style=dangling] (5) at (1.25, 0) {};
+		\node [style=wire label left] (3) at (-1.25, 0.5) {};
+		\node [style=wire label left] (4) at (-1.25, -0.5) {};
+		\node [style=wire label right] (5) at (1.25, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (3) to (0);
