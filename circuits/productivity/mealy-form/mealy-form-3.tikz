@@ -7,7 +7,7 @@
 		\node [style=none] (18) at (-1.5, -1) {};
 		\node [style=none] (38) at (3.25, 0.5) {};
 		\node [style=none] (39) at (1, 0.5) {};
-		\node [style=medium square box comb] (41) at (2, -0.75) {$\tilde{F}$};
+		\node [style=medium square box comb] (41) at (2, -0.75) {$\hat{F}$};
 		\node [style=port] (42) at (1.75, -0.09) {};
 		\node [style=port] (43) at (1.75, -0.5) {};
 		\node [style=port] (44) at (1.75, -1.41) {};
