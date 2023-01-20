@@ -2,8 +2,8 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (0) at (-1.75, 0.75) {};
 		\node [style=none] (1) at (-1.75, -0.75) {};
-		\node [style=small square box] (2) at (0.75, 0.75) {$e_4$};
-		\node [style=small square box] (3) at (0.75, -0.75) {$e_4$};
+		\node [style=small square box white] (2) at (0.75, 0.75) {$e_4$};
+		\node [style=small square box white] (3) at (0.75, -0.75) {$e_4$};
 		\node [style=none] (4) at (0.25, -0.75) {};
 		\node [style=none] (5) at (0.25, 0.75) {};
 		\node [style=none] (6) at (-1.25, 0.75) {};

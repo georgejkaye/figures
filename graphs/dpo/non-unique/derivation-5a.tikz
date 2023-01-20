@@ -1,8 +1,8 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (4) at (-0.5, 0) {};
-		\node [style=small square box] (14) at (-1.25, 0) {$e_1$};
-		\node [style=small square box] (15) at (1.25, 0) {$e_2$};
+		\node [style=small square box white] (14) at (-1.25, 0) {$e_1$};
+		\node [style=small square box white] (15) at (1.25, 0) {$e_2$};
 		\node [style=none] (18) at (-2, 0) {};
 		\node [style=none] (19) at (0.5, 0) {};
 		\node [style=none] (20) at (2, 0) {};

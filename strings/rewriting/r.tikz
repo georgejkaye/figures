@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box] (0) at (0, 0) {$r$};
+		\node [style=medium square box white] (0) at (0, 0) {$r$};
 		\node [style=dangling] (1) at (-1.5, 0) {};
 		\node [style=port] (5) at (-0.25, 0) {};
 		\node [style=port] (6) at (0.25, 0) {};

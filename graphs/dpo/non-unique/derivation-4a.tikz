@@ -14,8 +14,8 @@
 		\node [style=none] (11) at (1, -2) {};
 		\node [style=none] (12) at (3.5, -2) {};
 		\node [style=none] (13) at (3.5, 2) {};
-		\node [style=small square box] (14) at (2.25, 1) {$e_1$};
-		\node [style=small square box] (15) at (2.25, -1) {$e_2$};
+		\node [style=small square box white] (14) at (2.25, 1) {$e_1$};
+		\node [style=small square box white] (15) at (2.25, -1) {$e_2$};
 		\node [style=none] (16) at (1.5, 1) {};
 		\node [style=none] (17) at (1.5, -1) {};
 		\node [style=none] (18) at (3, 1) {};

@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=small square box] (2) at (-4.25, 1.25) {$e_3$};
+		\node [style=small square box white] (2) at (-4.25, 1.25) {$e_3$};
 		\node [style=none] (5) at (3.75, -0.5) {};
 		\node [style=none] (16) at (3, 1.25) {};
 		\node [style=none] (17) at (3, 2.5) {};
@@ -12,8 +12,8 @@
 		\node [style=none] (23) at (3, 2) {};
 		\node [style=none] (24) at (-2.25, 1.25) {};
 		\node [style=none] (25) at (-1.25, -0.5) {};
-		\node [style=small square box] (26) at (1.25, 1.25) {$e_4$};
-		\node [style=small square box] (27) at (1.25, -0.5) {$e_4$};
+		\node [style=small square box white] (26) at (1.25, 1.25) {$e_4$};
+		\node [style=small square box white] (27) at (1.25, -0.5) {$e_4$};
 		\node [style=none] (28) at (0.75, -0.5) {};
 		\node [style=none] (29) at (0.75, 1.25) {};
 		\node [style=none] (30) at (-0.75, 1.25) {};

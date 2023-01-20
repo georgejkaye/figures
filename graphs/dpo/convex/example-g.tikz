@@ -2,7 +2,7 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (0) at (-3, 0) {};
 		\node [style=medium box] (1) at (-2, 0) {$e_1$};
-		\node [style=small square box] (2) at (0, 0.5) {$e_3$};
+		\node [style=small square box white] (2) at (0, 0.5) {$e_3$};
 		\node [style=medium box] (3) at (2, 0) {$e_2$};
 		\node [style=none] (5) at (3, 0) {};
 		\node [style=none] (6) at (-1.75, 0.5) {};

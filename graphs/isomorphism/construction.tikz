@@ -1,13 +1,13 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box] (0) at (-2.5, -0.5) {$f$};
+		\node [style=medium square box white] (0) at (-2.5, -0.5) {$f$};
 		\node [style=dangling] (1) at (-5.5, -1) {};
 		\node [style=port] (5) at (-2.75, -1) {};
 		\node [style=port] (6) at (-2.25, 0) {};
 		\node [style=none] (8) at (-4.75, 0) {};
 		\node [style=port] (9) at (-2.75, 0) {};
 		\node [style=port] (12) at (-2.25, -1) {};
-		\node [style=medium square box] (16) at (1, 0) {$g$};
+		\node [style=medium square box white] (16) at (1, 0) {$g$};
 		\node [style=port] (19) at (1.25, 0) {};
 		\node [style=none] (20) at (3.5, 0) {};
 		\node [style=port] (22) at (0.75, 0) {};

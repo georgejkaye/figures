@@ -1,10 +1,10 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box] (0) at (0.5, 0) {$\tilde{L}$};
+		\node [style=medium square box white] (0) at (0.5, 0) {$\tilde{L}$};
 		\node [style=port] (6) at (0.75, 0) {};
 		\node [style=port] (22) at (0.75, 0.25) {};
 		\node [style=port] (28) at (0.75, -0.25) {};
-		\node [style=medium square box] (31) at (3, 0) {$\tilde{C}$};
+		\node [style=medium square box white] (31) at (3, 0) {$\tilde{C}$};
 		\node [style=none] (32) at (1.75, 0.25) {};
 		\node [style=port] (33) at (2.75, 0.25) {};
 		\node [style=port] (34) at (3.25, 0) {};

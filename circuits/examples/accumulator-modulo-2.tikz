@@ -4,7 +4,7 @@
 		\node [style=bproduct] (2) at (1.75, 0.5) {};
 		\node [style=delay] (3) at (0.25, -0.25) {};
 		\node [style=none] (4) at (-3, -2) {};
-		\node [style=medium square box] (5) at (4, -0.5) {$\mathsf{XOR}$};
+		\node [style=medium square box white] (5) at (4, -0.5) {$\mathsf{XOR}$};
 		\node [style=bproduct] (6) at (6, -0.5) {};
 		\node [style=none] (7) at (7, 0.25) {};
 		\node [style=none] (8) at (7, -1) {};
