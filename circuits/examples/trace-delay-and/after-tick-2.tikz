@@ -51,7 +51,7 @@
 			 to [in=0, out=-180] (27.center)
 			 to (10);
 		\draw [style=wire] (29) to (11);
-		\draw (30) to (29);
+		\draw [style=wire] (30) to (29);
 		\draw [style=wire] (31) to (30);
 	\end{pgfonlayer}
 \end{tikzpicture}

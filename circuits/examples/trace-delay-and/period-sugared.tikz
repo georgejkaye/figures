@@ -23,6 +23,6 @@
 			 to [in=-180, out=-75, looseness=1.25] (17.center)
 			 to (29);
 		\draw [style=wire] (32) to (12);
-		\draw (31) to (29);
+		\draw [style=wire] (31) to (29);
 	\end{pgfonlayer}
 \end{tikzpicture}

@@ -23,7 +23,7 @@
 		\draw [style=wire] (12)
 			 to [in=-180, out=-75, looseness=1.25] (17.center)
 			 to (29);
-		\draw (30) to (29);
+		\draw [style=wire] (30) to (29);
 		\draw [style=wire] (31) to (30);
 		\draw [style=wire] (32) to (12);
 	\end{pgfonlayer}
