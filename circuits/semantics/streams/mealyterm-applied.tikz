@@ -5,7 +5,7 @@
 		\node [style=register] (8) at (-2.5, -2.025) {$\\overline{v}$};
 		\node [style=bproduct] (9) at (-0.5, -2.025) {};
 		\node [style=bproduct] (10) at (-0.5, -3.5) {};
-		\node [style=tiny box] (11) at (-4.75, -3.5) {$\\overline{v}$};
+		\node [style=tiny box white] (11) at (-4.75, -3.5) {$\\overline{v}$};
 		\node [style=medium square box white] (12) at (3, -0.25) {$\langle{T}\rangle$};
 		\node [style=medium square box white] (13) at (3, -4) {$\langle{O}\rangle$};
 		\node [style=bport] (14) at (2.5, 0.5) {};

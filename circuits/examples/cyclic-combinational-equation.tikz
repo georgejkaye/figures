@@ -34,10 +34,10 @@
 		\node [style=none] (49) at (-8.25, 1.75) {$x$};
 		\node [style=none] (50) at (-6.5, -2.75) {$c$};
 		\node [style=none] (51) at (-8.25, -1.75) {$x$};
-		\node [style=tiny box] (52) at (-4.75, 1.5) {$F$};
-		\node [style=tiny box] (53) at (-4.75, -1.5) {$G$};
-		\node [style=tiny box] (54) at (2, 0) {$F$};
-		\node [style=tiny box] (55) at (4, 0) {$G$};
+		\node [style=tiny box white] (52) at (-4.75, 1.5) {$F$};
+		\node [style=tiny box white] (53) at (-4.75, -1.5) {$G$};
+		\node [style=tiny box white] (54) at (2, 0) {$F$};
+		\node [style=tiny box white] (55) at (4, 0) {$G$};
 		\node [style=none] (56) at (1, 0) {};
 		\node [style=none] (57) at (3, 0) {};
 		\node [style=none] (58) at (5, 0) {};

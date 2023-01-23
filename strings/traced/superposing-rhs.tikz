@@ -13,7 +13,7 @@
 		\node [style=dangling] (11) at (3, 0.25) {};
 		\node [style=dangling] (12) at (-2.75, -1.75) {};
 		\node [style=dangling] (13) at (3, -1.75) {};
-		\node [style=tiny box] (14) at (0, -1.75) {$G$};
+		\node [style=tiny box white] (14) at (0, -1.75) {$G$};
 		\node [style=none] (15) at (-2.25, 2.75) {};
 		\node [style=none] (16) at (-2.25, -2.75) {};
 		\node [style=none] (17) at (2.25, -2.75) {};

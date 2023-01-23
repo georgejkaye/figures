@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny box] (8) at (-2.25, -0.275) {$\\overline{v}$};
+		\node [style=tiny box white] (8) at (-2.25, -0.275) {$\\overline{v}$};
 		\node [style=bproduct] (9) at (-0.75, -0.275) {};
 		\node [style=medium square box white] (12) at (1.5, 1) {$\langle{T}\rangle$};
 		\node [style=medium square box white] (13) at (1.5, -1.75) {$\langle{O}\rangle$};

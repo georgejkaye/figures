@@ -9,10 +9,10 @@
 		\node [style=none] (7) at (3.25, 1.5) {};
 		\node [style=port] (8) at (0.25, 0.5) {};
 		\node [style=none] (10) at (3.25, 0.5) {};
-		\node [style=tiny box] (12) at (-2.25, -0.5) {$G$};
+		\node [style=tiny box white] (12) at (-2.25, -0.5) {$G$};
 		\node [style=port] (13) at (0.25, -0.5) {};
 		\node [style=dangling] (14) at (4.5, -0.5) {};
-		\node [style=tiny box] (15) at (2.25, -0.5) {$H$};
+		\node [style=tiny box white] (15) at (2.25, -0.5) {$H$};
 		\node [style=none] (16) at (-3.75, 2) {};
 		\node [style=none] (17) at (-3.75, -1.5) {};
 		\node [style=none] (18) at (4, -1.5) {};
