@@ -21,6 +21,9 @@
 \tikzstyle{medium square box white}=[{\corners}, font={\boxsize}, fill=white, draw=black, shape=rectangle, tikzit category=string diagram, minimum height={\mediumwidth}, minimum width={\mediumwidth}, line width={\stringwidth}, tikzit fill=white, inner sep={\innersep}]
 \tikzstyle{medium square box comb}=[{\corners}, font={\boxsize}, fill=comb, draw=black, shape=rectangle, tikzit category=string diagram, minimum height={\mediumwidth}, minimum width={\mediumwidth}, line width={\stringwidth}, tikzit fill=comb, inner sep={\innersep}]
 \tikzstyle{medium square box seq}=[{\corners}, draw=black, font={\boxsize}, fill=seq, shape=rectangle, tikzit category=string diagram, minimum height={\mediumwidth}, minimum width={\mediumwidth}, line width={\stringwidth}, tikzit fill=seq, inner sep={\innersep}]
+\tikzstyle{medium square rounded box white}=[rounded corners, font={\boxsize}, fill=white, draw=black, shape=rectangle, tikzit category=string diagram, minimum height={\mediumwidth}, minimum width={\mediumwidth}, line width={\stringwidth}, tikzit fill=white, inner sep={\innersep}]
+\tikzstyle{medium square rounded box comb}=[rounded corners, font={\boxsize}, fill=comb, draw=black, shape=rectangle, tikzit category=string diagram, minimum height={\mediumwidth}, minimum width={\mediumwidth}, line width={\stringwidth}, tikzit fill=comb, inner sep={\innersep}]
+\tikzstyle{medium square rounded box seq}=[rounded corners, draw=black, font={\boxsize}, fill=seq, shape=rectangle, tikzit category=string diagram, minimum height={\mediumwidth}, minimum width={\mediumwidth}, line width={\stringwidth}, tikzit fill=seq, inner sep={\innersep}]
 \tikzstyle{large box}=[{\corners}, font={\boxsize}, fill=white, draw=black, shape=rectangle, tikzit category=string diagram, minimum height=15mm, minimum width=10mm, anchor=center, line width={\stringwidth}, tikzit fill=white, inner sep={\innersep}]
 \tikzstyle{large square box white}=[{\corners}, font={\boxsize}, fill=white, draw=black, shape=rectangle, tikzit category=string diagram, minimum width=15mm, minimum height=15mm, line width={\stringwidth}, tikzit fill=white, inner sep={\innersep}]
 \tikzstyle{large square box comb}=[{\corners}, font={\boxsize}, fill=comb, draw=black, shape=rectangle, tikzit category=string diagram, minimum width=12mm, minimum height=12mm, line width={\stringwidth}, tikzit fill=comb, inner sep={\innersep}]
@@ -53,7 +56,7 @@
 \tikzstyle{xnor}=[fill=white, draw=black, xnor gate, scale=1.75, line width={\stringwidth}, tikzit category=circuits]
 \tikzstyle{west}=[fill=none, draw=none, shape=circle, anchor=west]
 \tikzstyle{bundler expand}=[fill=white, draw=black, trapezium, rotate=90, line width={\stringwidth}, scale=1.5]
-\tikzstyle{bundle collapse}=[fill=white, draw=black, trapezium, rotate=270, line width={\stringwidth}]
+\tikzstyle{bundler collapse}=[fill=white, draw=black, trapezium, rotate=270, line width={\stringwidth}, scale=1.5]
 
 % Edge styles
 \tikzstyle{interface}=[-, fill={rgb,255: red,238; green,238; blue,255}, dashed, draw={rgb,255: red,170; green,170; blue,225}, ultra thick]
