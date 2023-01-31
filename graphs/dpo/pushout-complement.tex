@@ -1,0 +1,24 @@
+\documentclass{standalone}
+
+\usepackage{tikz-cd}
+
+\begin{document}
+    \begin{tikzcd}[column sep=large]
+        L \arrow[swap]{d}{f}
+        &
+        i+j
+        \arrow[swap]{l}{a := [a_1, a_2]}
+        \arrow{d}{c := [c_1, c_2]}
+        \\
+        G
+        \arrow["\ulcorner"{anchor=center, pos=0.125, rotate=-90}, draw=none]{ur}
+        &
+        C
+        \arrow{l}{g}
+        \\
+        &
+        m+n
+        \arrow{ul}{[b_1,b_2]}
+        \arrow[swap]{u}{d := [d_1,d_2]}
+    \end{tikzcd}
+\end{document}

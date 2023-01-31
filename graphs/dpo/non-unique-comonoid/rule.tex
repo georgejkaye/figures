@@ -1,0 +1,17 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+\usepackage{tikzit}
+\input{figures/circuits.tikzstyles}
+\input{figures/circuits.tikzdefs}
+
+\begin{document}
+    \begin{tikzcd}[column sep = small]
+        \iltikzfig{graphs/dpo/non-unique-comonoid/l}
+        &
+        \arrow{l}
+        \iltikzfig{graphs/dpo/non-unique-comonoid/k}
+        \arrow{r}
+        &
+        \iltikzfig{graphs/dpo/non-unique-comonoid/r}
+    \end{tikzcd}
+\end{document}

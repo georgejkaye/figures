@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-2, 2.75) {};
+		\node [style=none] (1) at (3.5, 2.75) {};
+		\node [style=none] (2) at (3.5, -1.75) {};
+		\node [style=none] (3) at (-2, -1.75) {};
+		\node [style=vertex] (8) at (2, 0.5) {};
+		\node [style=small label] (9) at (2, 1.17) {$0\ 1$};
+		\node [style=vertex] (10) at (2, -1) {};
+		\node [style=small label] (11) at (2, -0.33) {$2\ 3$};
+		\node [style=edge] (12) at (0, -0.25) {$e$};
+		\node [style=none] (13) at (-0.25, -0.25) {};
+		\node [style=none] (14) at (0.5, 0) {};
+		\node [style=none] (15) at (0.5, -0.5) {};
+		\node [style=none] (17) at (-0.75, -0.25) {};
+		\node [style=none] (18) at (1.75, 2.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (1.center)
+			 to (2.center)
+			 to (3.center)
+			 to (0.center)
+			 to cycle;
+		\draw [style=tentacle, in=180, out=0, looseness=0.75] (14.center) to (8);
+		\draw [style=tentacle, in=165, out=0] (15.center) to (10);
+		\draw [style=tentacle] (13.center) to (17.center);
+		\draw [style=tentacle, in=180, out=-180, looseness=1.50] (18.center) to (17.center);
+		\draw [style=tentacle, in=0, out=0, looseness=2.00] (18.center) to (8);
+	\end{pgfonlayer}
+\end{tikzpicture}

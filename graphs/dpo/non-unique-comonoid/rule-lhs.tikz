@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=bproduct] (0) at (0, 0) {};
+		\node [style=none] (1) at (-0.75, 0) {};
+		\node [style=none] (2) at (0.75, 0.5) {};
+		\node [style=none] (3) at (0.75, -0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire, in=-75, out=-180] (3.center) to (0);
+		\draw [style=wire] (0) to (1.center);
+		\draw [style=wire, in=-180, out=75] (0) to (2.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
