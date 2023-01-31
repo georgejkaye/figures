@@ -4,8 +4,8 @@
 % \tikzstyle{NAME}=[PROPERTY LIST]
 
 % Node styles
-\tikzstyle{vertex}=[fill=black, draw=black, shape=circle, minimum size=2.5mm, tikzit category=hypergraph, inner sep=0, anchor=center]
-\tikzstyle{edge}=[fill=white, draw=black, shape=rectangle, font={\boxsize}, tikzit category=hypergraph, minimum width=8mm, minimum height=8mm, rounded corners=3mm, very thick, anchor=center]
+\tikzstyle{vertex}=[fill=black, draw=black, shape=circle, minimum size=2.5mm, tikzit category=hypergraph, inner sep=0]
+\tikzstyle{edge}=[fill=white, draw=black, shape=rectangle, font={\boxsize}, tikzit category=hypergraph, minimum width=8mm, minimum height=8mm, rounded corners=3mm, very thick]
 \tikzstyle{port}=[minimum size=2.5mm, fill=none, draw=none, shape=circle, tikzit draw={rgb,255: red,154; green,154; blue,154}, anchor=center, tikzit fill=white]
 \tikzstyle{every picture}=[baseline=-0.25em, scale=0.5]
 \tikzstyle{product}=[fill=white, draw=black, shape=circle, scale=0.66, tikzit category=string diagram]
