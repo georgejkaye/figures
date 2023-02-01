@@ -1,11 +1,11 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=small box] (0) at (0, 1) {$f$};
+		\node [style=medium square box \varc] (0) at (0, 1) {$\vara$};
 		\node [style=none] (1) at (-1.75, 1) {};
 		\node [style=port] (5) at (-0.25, 1) {};
 		\node [style=port] (6) at (0.25, 1) {};
 		\node [style=none] (7) at (1.75, 1) {};
-		\node [style=small box] (8) at (0, -1) {$g$};
+		\node [style=medium square box \varc] (8) at (0, -1) {$\varb$};
 		\node [style=none] (9) at (-1.75, -1) {};
 		\node [style=port] (12) at (-0.25, -1) {};
 		\node [style=port] (13) at (0.25, -1) {};
