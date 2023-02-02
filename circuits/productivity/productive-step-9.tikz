@@ -38,7 +38,7 @@
 		\node [style=none] (129) at (0, -0.25) {};
 		\node [style=none] (130) at (-1.75, -2.5) {};
 		\node [style=none] (131) at (0.25, -1.25) {};
-		\node [style=wire label mid] (132) at (0.5, 2) {$x$};
+		\node [style=wire label mid] (132) at (1.25, 2) {$x$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (92) to (90);
