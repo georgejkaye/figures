@@ -1,0 +1,32 @@
+\documentclass{standalone}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{etoolbox}
+\usepackage{stmaryrd}
+\usepackage{xparse}
+
+\usepackage{tikz-cd}
+
+\input{macros/sets}
+\input{macros/category}
+\input{macros/graphs}
+
+
+\begin{document}
+    \begin{tikzcd}[column sep = large]
+        \ccomon \arrow{d} \arrow{r}{\comonoidtofrob}
+        &
+        \frob \arrow{d}\arrow{dr}{\frobtohyp{\Sigma}}
+        \\
+        \stmc{\Sigma} + \ccomon \arrow{r}{\tracedandcomonoidtofrob{\Sigma}}
+        &
+        \smc{\Sigma} + \frob \arrow{r}{\termandfrobtohypsigma}
+        &
+        \cspdhyp
+        \\
+        \stmc{\Sigma} \arrow{u}\arrow{ur}[swap]{\tracedtosymandfrob{\Sigma}}
+        &
+        \smc{\Sigma} \arrow{u}\arrow{ur}[swap]{\termtohypsigma}
+    \end{tikzcd}
+\end{document}
