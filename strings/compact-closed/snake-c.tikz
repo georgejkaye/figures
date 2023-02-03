@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=wire label right] (0) at (0.75, 0) {$\vara$};
+		\node [style=wire label left] (5) at (-0.75, 0) {$\vara$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (5) to (0);
+	\end{pgfonlayer}
+\end{tikzpicture}
