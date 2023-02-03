@@ -1,22 +1,22 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (0) at (0, 1) {};
-		\node [style=none] (1) at (-1.5, -0.5) {};
-		\node [style=none] (3) at (1.5, 0.5) {};
+		\node [style=wire label left] (1) at (-1.5, -0.5) {$\vara$};
+		\node [style=wire label right] (3) at (1.5, 0.5) {$\varb$};
 		\node [style=none] (4) at (0, -1) {};
 		\node [style=bproduct] (6) at (-0.75, -0.5) {};
 		\node [style=bproduct] (7) at (0.75, 0.5) {};
-		\node [style=none] (8) at (-1.5, 1) {};
+		\node [style=wire label left] (8) at (-1.5, 1) {$\vara$};
 		\node [style=none] (9) at (0, 0) {};
-		\node [style=none] (10) at (1.5, -1) {};
+		\node [style=wire label right] (10) at (1.5, -1) {$\varb$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw (1.center) to (6);
-		\draw (7) to (3.center);
+		\draw (1) to (6);
+		\draw (7) to (3);
 		\draw (6)
 			 to [in=180, out=-60] (4.center)
-			 to (10.center);
-		\draw (8.center)
+			 to (10);
+		\draw (8)
 			 to (0.center)
 			 to [in=-240, out=0] (7);
 		\draw (6)

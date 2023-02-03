@@ -1,10 +1,10 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=dangling] (2) at (1.75, 0.75) {};
-		\node [style=dangling] (3) at (1.75, -0.75) {};
+		\node [style=wire label right] (2) at (1.25, 0.5) {$\vara$};
+		\node [style=wire label right] (3) at (1.25, -0.5) {$\vara$};
 		\node [style=bproduct] (11) at (-0.5, 0) {};
-		\node [style=dangling] (12) at (-1.75, 0.75) {};
-		\node [style=dangling] (13) at (-1.75, -0.75) {};
+		\node [style=wire label left] (12) at (-1.25, 0.5) {$\vara$};
+		\node [style=wire label left] (13) at (-1.25, -0.5) {$\vara$};
 		\node [style=bproduct] (14) at (0.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
