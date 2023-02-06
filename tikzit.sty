@@ -69,3 +69,22 @@
   \IfValueT{#8}{\renewcommand{\varg}{}}%
   \IfValueT{#9}{\renewcommand{\varh}{}}%
 }
+\NewDocumentCommand\dsptikzfig{moooooooo}{%
+  \renewcommand{\vara}{\IfValueTF{#2}{#2}{}}%
+  \renewcommand{\varb}{\IfValueTF{#3}{#3}{}}%
+  \renewcommand{\varc}{\IfValueTF{#4}{#4}{}}%
+  \renewcommand{\vard}{\IfValueTF{#5}{#5}{}}%
+  \renewcommand{\vare}{\IfValueTF{#6}{#6}{}}%
+  \renewcommand{\varf}{\IfValueTF{#7}{#7}{}}%
+  \renewcommand{\varg}{\IfValueTF{#8}{#8}{}}%
+  \renewcommand{\varh}{\IfValueTF{#9}{#9}{}}%
+  \tikzfig{#1}%
+  \IfValueT{#2}{\renewcommand{\vara}{}}%
+  \IfValueT{#3}{\renewcommand{\varb}{}}%
+  \IfValueT{#4}{\renewcommand{\varc}{}}%
+  \IfValueT{#5}{\renewcommand{\vard}{}}%
+  \IfValueT{#6}{\renewcommand{\vare}{}}%
+  \IfValueT{#7}{\renewcommand{\varf}{}}%
+  \IfValueT{#8}{\renewcommand{\varg}{}}%
+  \IfValueT{#9}{\renewcommand{\varh}{}}%
+}
