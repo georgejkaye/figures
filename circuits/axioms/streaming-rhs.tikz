@@ -1,14 +1,14 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium box comb] (0) at (-0.5, 0.875) {$g$};
+		\node [style=medium box comb] (0) at (-0.5, 0.875) {$\vara$};
 		\node [style=port] (2) at (-0.75, 0.875) {};
 		\node [style=port] (3) at (-0.25, 0.875) {};
-		\node [style=tiny box seq] (4) at (-2.25, 0.875) {$\overline{v}$};
+		\node [style=tiny box seq] (4) at (-2.25, 0.875) {$\overline{\varb}$};
 		\node [style=bproduct] (5) at (2.5, 0) {};
-		\node [style=wire label left] (7) at (-3.25, -0.875) {$m$};
+		\node [style=wire label left] (7) at (-3.25, -0.875) {$\varc$};
 		\node [style=none] (8) at (-1.75, 0.875) {};
 		\node [style=port] (9) at (-2.25, 0.875) {};
-		\node [style=medium box comb] (11) at (-0.5, -0.875) {$g$};
+		\node [style=medium box comb] (11) at (-0.5, -0.875) {$\vara$};
 		\node [style=port] (12) at (-0.75, -0.875) {};
 		\node [style=port] (13) at (-0.25, -0.875) {};
 		\node [style=delay] (14) at (1, -0.875) {};

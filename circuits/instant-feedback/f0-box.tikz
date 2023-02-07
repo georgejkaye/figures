@@ -4,9 +4,9 @@
 		\node [style=bport] (4) at (-0.25, 0) {};
 		\node [style=bport] (6) at (0.25, 0.5) {};
 		\node [style=bport] (7) at (0.25, -0.5) {};
-		\node [style=wire label right] (14) at (1.25, 0.5) {$x$};
-		\node [style=wire label right] (17) at (1.25, -0.5) {$n$};
-		\node [style=wire label left] (18) at (-1.25, 0) {$m$};
+		\node [style=wire label right] (14) at (1.25, 0.5) {$\varb$};
+		\node [style=wire label right] (17) at (1.25, -0.5) {$\varc$};
+		\node [style=wire label left] (18) at (-1.25, 0) {$\vara$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (18) to (4);

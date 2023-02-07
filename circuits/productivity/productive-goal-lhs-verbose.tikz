@@ -6,7 +6,7 @@
 		\node [style=bproduct] (12) at (-0.25, 0) {};
 		\node [style=none] (13) at (-1, -0.75) {};
 		\node [style=none] (14) at (-1, 0.75) {};
-		\node [style=tiny box seq] (15) at (-1.75, 0.75) {$\overline{v}$};
+		\node [style=tiny box seq] (15) at (-1.75, 0.75) {$\overline{\varb}$};
 		\node [style=delay] (16) at (-1.75, -0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
