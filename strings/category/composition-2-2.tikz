@@ -1,18 +1,18 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style={medium square box \varc}] (0) at (1, 0) {$\varb$};
-		\node [style=port] (5) at (0.75, -0.5) {};
-		\node [style=port] (6) at (1.25, -0.5) {};
+		\node [style=port] (5) at (1, -0.5) {};
+		\node [style=port] (6) at (1, -0.5) {};
 		\node [style=wire label right] (7) at (2.5, -0.5) {$\varg$};
 		\node [style={medium square box \varc}] (8) at (-1, 0) {$\vara$};
 		\node [style=wire label left] (9) at (-2.25, -0.5) {$\vare$};
-		\node [style=port] (10) at (-1.25, -0.5) {};
-		\node [style=port] (11) at (-0.75, -0.5) {};
+		\node [style=port] (10) at (-1, -0.5) {};
+		\node [style=port] (11) at (-1, -0.5) {};
 		\node [style=wire label left] (12) at (-2.25, 0.5) {$\vard$};
-		\node [style=port] (13) at (-1.25, 0.5) {};
-		\node [style=port] (14) at (0.75, 0.5) {};
-		\node [style=port] (15) at (-0.75, 0.5) {};
-		\node [style=port] (16) at (1.25, 0.5) {};
+		\node [style=port] (13) at (-1, 0.5) {};
+		\node [style=port] (14) at (1, 0.5) {};
+		\node [style=port] (15) at (-1, 0.5) {};
+		\node [style=port] (16) at (1, 0.5) {};
 		\node [style=wire label right] (17) at (2.5, 0.5) {$\varf$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

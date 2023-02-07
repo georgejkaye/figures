@@ -2,12 +2,12 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style={medium square box \varb}] (0) at (0, 0) {$\vara$};
 		\node [style=wire label left] (1) at (-1.25, 0.5) {$\varc$};
-		\node [style=port] (5) at (-0.25, 0.5) {};
-		\node [style=port] (6) at (0.25, 0.5) {};
+		\node [style=port] (5) at (0, 0.5) {};
+		\node [style=port] (6) at (0, 0.5) {};
 		\node [style=wire label right] (7) at (1.25, 0.5) {$\vare$};
 		\node [style=wire label left] (8) at (-1.25, -0.5) {$\vard$};
-		\node [style=port] (9) at (-0.25, -0.5) {};
-		\node [style=port] (10) at (0.25, -0.5) {};
+		\node [style=port] (9) at (0, -0.5) {};
+		\node [style=port] (10) at (0, -0.5) {};
 		\node [style=wire label right] (11) at (1.25, -0.5) {$\varf$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
