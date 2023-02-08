@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=bproduct] (0) at (0, 0) {};
+		\node [style=wire label left] (1) at (-0.75, 0.5) {$X \tensor Y$};
+		\node [style=wire label left] (2) at (-0.75, -0.5) {$X \tensor Y$};
+		\node [style=wire label right] (3) at (0.75, 0) {$X \tensor Y$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire, in=120, out=0] (1) to (0);
+		\draw [style=wire, in=-120, out=0] (2) to (0);
+		\draw [style=wire] (3) to (0);
+	\end{pgfonlayer}
+\end{tikzpicture}
