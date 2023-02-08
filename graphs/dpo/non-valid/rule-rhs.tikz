@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dangling] (0) at (-1, 0) {};
+		\node [style=medium box] (1) at (0, 0) {$e$};
+		\node [style=dangling] (4) at (1, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire, in=-180, out=0] (0) to (1);
+		\draw [style=wire, in=0, out=180] (4) to (1);
+	\end{pgfonlayer}
+\end{tikzpicture}

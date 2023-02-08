@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium box] (1) at (-1, 0) {$e_1$};
+		\node [style=medium box] (3) at (1, 0) {$e_2$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (1) to (3);
+	\end{pgfonlayer}
+\end{tikzpicture}
