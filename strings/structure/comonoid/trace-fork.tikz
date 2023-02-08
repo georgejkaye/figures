@@ -1,0 +1,24 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=bproduct] (0) at (0, -0.25) {};
+		\node [style=none] (1) at (0.5, -0.75) {};
+		\node [style=none] (2) at (0.5, 0.25) {};
+		\node [style=none] (3) at (1, 0.25) {};
+		\node [style=none] (4) at (1, 1) {};
+		\node [style=none] (5) at (-0.5, 1) {};
+		\node [style=none] (6) at (-0.5, -0.25) {};
+		\node [style=none] (7) at (1.75, -0.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (6.center)
+			 to [bend left=90, looseness=1.50] (5.center)
+			 to (4.center)
+			 to [bend left=90, looseness=1.50] (3.center)
+			 to (2.center)
+			 to [in=-285, out=-180] (0.center)
+			 to [in=360, out=180] cycle;
+		\draw [style=wire] (0)
+			 to [in=180, out=-75] (1.center)
+			 to (7.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
