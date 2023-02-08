@@ -79,6 +79,7 @@
 \tikzstyle{dashed arrow}=[<-, dashed]
 \tikzstyle{unit wire}=[-, fill=none, draw=unit, line width={\stringwidth}]
 \tikzstyle{interfacearrow}=[->, very thick, dashed]
+\tikzstyle{tile none}=[-, draw=none, {\corners}, fill=none, line width={\stringwidth}]
 \tikzstyle{tile white}=[-, {\corners}, fill=white, line width={\stringwidth}]
 \tikzstyle{tile comb}=[-, {\corners}, fill=comb, line width={\stringwidth}]
 \tikzstyle{tile seq}=[-, {\corners}, fill=seq, line width={\stringwidth}]
