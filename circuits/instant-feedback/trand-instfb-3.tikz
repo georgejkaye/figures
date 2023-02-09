@@ -1,0 +1,16 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=bproduct] (23) at (-0.75, 0.25) {};
+		\node [style=and] (24) at (0.75, 0) {};
+		\node [style=port] (25) at (0.5, 0.25) {};
+		\node [style=port] (26) at (0.5, -0.25) {};
+		\node [style=port] (27) at (1, 0) {};
+		\node [style=none] (28) at (2, 0) {};
+		\node [style=tiny box seq] (40) at (-2.25, -0.25) {$\belnaptrue$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (27) to (28.center);
+		\draw [style=wire, in=0, out=180, looseness=1.25] (25) to (23);
+		\draw [style=wire] (26) to (40);
+	\end{pgfonlayer}
+\end{tikzpicture}
