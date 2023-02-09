@@ -12,8 +12,8 @@
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (4)
 			 to [in=0, out=105] (3.center)
-			 to (8);
-		\draw [style=wire] (10)
+			 to (8.center);
+		\draw [style=wire] (10.center)
 			 to (6.center)
 			 to [in=-105, out=0] (4);
 		\draw [style=wire] (4) to (11);
