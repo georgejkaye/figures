@@ -1,0 +1,28 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+\usepackage{tikzit}
+\input{figures/circuits.tikzstyles}
+\input{figures/circuits.tikzdefs}
+
+\begin{document}
+    \begin{tikzcd}[column sep = small]
+        \iltikzfig{graphs/dpo/split-loop/l}
+        \arrow{d}
+        &
+        \arrow{l}
+        \iltikzfig{graphs/dpo/split-loop/k}
+        \arrow{d}
+        \arrow{r}
+        &
+        \iltikzfig{graphs/dpo/split-loop/r}
+        \arrow{d}
+        \\
+        \iltikzfig{graphs/dpo/split-loop/g}
+        &
+        \arrow{l}
+        \iltikzfig{graphs/dpo/split-loop/c}
+        \arrow{r}
+        &
+        \iltikzfig{graphs/dpo/split-loop/h}
+    \end{tikzcd}
+\end{document}

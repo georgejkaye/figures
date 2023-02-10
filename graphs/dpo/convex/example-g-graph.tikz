@@ -1,13 +1,13 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (0) at (-8.25, 1) {};
-		\node [style=none] (1) at (-6.25, 1) {};
-		\node [style=none] (2) at (-6.25, -0.75) {};
-		\node [style=none] (3) at (-8.25, -0.75) {};
-		\node [style=none] (4) at (-5, 1.5) {};
+		\node [style=none] (0) at (-8.25, 1.25) {};
+		\node [style=none] (1) at (-6.25, 1.25) {};
+		\node [style=none] (2) at (-6.25, -1) {};
+		\node [style=none] (3) at (-8.25, -1) {};
+		\node [style=none] (4) at (-5, 1.75) {};
 		\node [style=none] (9) at (-5, -1.5) {};
 		\node [style=none] (10) at (5, -1.5) {};
-		\node [style=none] (11) at (5, 1.5) {};
+		\node [style=none] (11) at (5, 1.75) {};
 		\node [style=edge] (12) at (-3, 0) {$e_1$};
 		\node [style=edge] (13) at (0, 0.5) {$e_3$};
 		\node [style=edge] (14) at (3, 0) {$e_2$};
@@ -22,20 +22,20 @@
 		\node [style=none] (24) at (0.25, 0.5) {};
 		\node [style=vertex] (25) at (-4.5, 0) {};
 		\node [style=vertex] (26) at (4.5, 0) {};
-		\node [style=vertex] (27) at (-7.25, 0) {};
+		\node [style=vertex] (27) at (-7.25, -0.25) {};
 		\node [style=small label] (28) at (-7.25, 0.5) {$0$};
-		\node [style=none] (29) at (6.25, 1) {};
-		\node [style=none] (30) at (8.25, 1) {};
-		\node [style=none] (31) at (8.25, -0.75) {};
-		\node [style=none] (32) at (6.25, -0.75) {};
-		\node [style=vertex] (33) at (7.25, 0) {};
+		\node [style=none] (29) at (6.25, 1.25) {};
+		\node [style=none] (30) at (8.25, 1.25) {};
+		\node [style=none] (31) at (8.25, -1) {};
+		\node [style=none] (32) at (6.25, -1) {};
+		\node [style=vertex] (33) at (7.25, -0.25) {};
 		\node [style=small label] (34) at (7.25, 0.5) {$1$};
 		\node [style=none] (35) at (-6, 0) {};
 		\node [style=none] (36) at (-5.25, 0) {};
 		\node [style=none] (37) at (5.25, 0) {};
 		\node [style=none] (38) at (6, 0) {};
-		\node [style=small label] (39) at (-4.5, 0.5) {$0$};
-		\node [style=small label] (40) at (4.5, 0.5) {$1$};
+		\node [style=small label] (39) at (-4.5, 0.75) {$0$};
+		\node [style=small label] (40) at (4.5, 0.75) {$1$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=interface] (1.center)

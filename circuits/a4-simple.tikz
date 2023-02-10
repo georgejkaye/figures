@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=label] (0) at (0, 2) {$\belnapboth$};
+		\node [style=label] (1) at (2, 0) {$\belnaptrue$};
+		\node [style=label] (2) at (0, -2) {$\bullet$};
+		\node [style=label] (3) at (-2, 0) {$\belnapfalse$};
+		\node [style=none] (4) at (-0.5, -1.5) {};
+		\node [style=none] (5) at (-1.5, -0.5) {};
+		\node [style=none] (6) at (0.5, -1.5) {};
+		\node [style=none] (7) at (1.5, -0.5) {};
+		\node [style=none] (8) at (1.5, 0.5) {};
+		\node [style=none] (9) at (0.5, 1.5) {};
+		\node [style=none] (10) at (-1.5, 0.5) {};
+		\node [style=none] (11) at (-0.5, 1.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=hasse] (4.center) to (5.center);
+		\draw [style=hasse, in=225, out=45] (6.center) to (7.center);
+		\draw [style=hasse] (8.center) to (9.center);
+		\draw [style=hasse] (10.center) to (11.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

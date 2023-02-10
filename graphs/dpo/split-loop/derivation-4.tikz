@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (3) at (-1.75, -0.5) {};
+		\node [style=medium box] (4) at (-0.75, -0.5) {$e_1$};
+		\node [style=none] (5) at (2, -0.5) {};
+		\node [style=none] (6) at (-1.75, 0.75) {};
+		\node [style=none] (7) at (2, 0.75) {};
+		\node [style=medium box] (8) at (1, -0.5) {$e_2$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (7.center)
+			 to (6.center)
+			 to [bend left=270, looseness=1.50] (3.center)
+			 to (4.center)
+			 to (8.center)
+			 to (5.center)
+			 to [bend right=90, looseness=1.75] cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}
