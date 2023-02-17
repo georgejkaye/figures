@@ -1,42 +1,22 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box white] (0) at (0.5, 0) {$\tilde{L}$};
+		\node [style=medium square box white] (0) at (0.5, 0) {$\hat{l}$};
 		\node [style=port] (6) at (0.75, 0) {};
-		\node [style=port] (22) at (0.75, 0.25) {};
-		\node [style=port] (28) at (0.75, -0.25) {};
-		\node [style=medium square box white] (31) at (3, 0) {$\tilde{C}$};
-		\node [style=none] (32) at (1.75, 0.25) {};
-		\node [style=port] (33) at (2.75, 0.25) {};
-		\node [style=port] (34) at (3.25, 0) {};
-		\node [style=none] (35) at (1.75, 0.1) {};
-		\node [style=none] (36) at (1.75, 0.4) {};
-		\node [style=small label] (37) at (1.75, 0.75) {$i$};
-		\node [style=none] (38) at (1.75, -0.25) {};
-		\node [style=small label] (39) at (1.75, -0.75) {$j$};
-		\node [style=port] (40) at (2.75, -0.25) {};
-		\node [style=none] (41) at (1.75, -0.4) {};
-		\node [style=none] (42) at (1.75, -0.1) {};
-		\node [style=dangling] (43) at (4.5, 0.25) {};
-		\node [style=port] (44) at (3.25, 0.25) {};
-		\node [style=none] (45) at (4.25, 0.1) {};
-		\node [style=none] (46) at (4.25, 0.4) {};
-		\node [style=small label] (47) at (4.25, 0.75) {$m$};
-		\node [style=dangling] (48) at (4.5, -0.25) {};
-		\node [style=small label] (49) at (4.25, -0.75) {$n$};
-		\node [style=port] (50) at (3.25, -0.25) {};
-		\node [style=none] (51) at (4.25, -0.4) {};
-		\node [style=none] (52) at (4.25, -0.1) {};
+		\node [style=port] (22) at (0.75, 0.5) {};
+		\node [style=port] (28) at (0.75, -0.5) {};
+		\node [style=medium square box white] (31) at (2.5, 0) {$c$};
+		\node [style=port] (33) at (2.25, 0.5) {};
+		\node [style=port] (34) at (2.75, 0) {};
+		\node [style=port] (40) at (2.25, -0.5) {};
+		\node [style=wire label right] (43) at (3.75, 0.5) {};
+		\node [style=port] (44) at (2.75, 0.5) {};
+		\node [style=wire label right] (48) at (3.75, -0.5) {};
+		\node [style=port] (50) at (2.75, -0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire] (32.center) to (33);
-		\draw [style=wiredash] (35.center) to (36.center);
-		\draw [style=wire] (40) to (38.center);
-		\draw [style=wiredash] (41.center) to (42.center);
 		\draw [style=wire] (43) to (44);
-		\draw [style=wiredash] (45.center) to (46.center);
 		\draw [style=wire] (50) to (48);
-		\draw [style=wiredash] (51.center) to (52.center);
-		\draw [style=wire] (32.center) to (22);
-		\draw [style=wire] (28) to (38.center);
+		\draw [style=wire] (40) to (28);
+		\draw [style=wire] (22) to (33);
 	\end{pgfonlayer}
 \end{tikzpicture}
