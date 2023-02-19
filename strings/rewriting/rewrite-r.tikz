@@ -4,10 +4,10 @@
 		\node [style=medium square box white] (1) at (-1, -0.5) {$c$};
 		\node [style=port] (3) at (-1.25, -1) {};
 		\node [style=port] (4) at (-1.25, 0) {};
-		\node [style=wire label left] (5) at (-4.5, -1) {};
+		\node [style=wire label left] (5) at (-4.5, -1) {$\vara$};
 		\node [style=port] (8) at (-2.75, 0) {};
 		\node [style=port] (10) at (-0.75, -1) {};
-		\node [style=wire label right] (12) at (0.5, -1) {};
+		\node [style=wire label right] (12) at (0.5, -1) {$\varb$};
 		\node [style=port] (25) at (-3.25, 0) {};
 		\node [style=none] (26) at (-4, 0) {};
 		\node [style=none] (27) at (-4, 1) {};

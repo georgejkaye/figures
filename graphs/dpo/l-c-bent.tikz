@@ -1,0 +1,38 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box white] (0) at (-0.75, 0) {$\hat{c}$};
+		\node [style=port] (5) at (-0.75, 0.5) {};
+		\node [style=port] (6) at (-0.75, 0.5) {};
+		\node [style=none] (7) at (0.25, 0.5) {};
+		\node [style=port] (9) at (-0.75, -0.5) {};
+		\node [style=port] (10) at (-0.75, -0.5) {};
+		\node [style=none] (11) at (0.25, -0.5) {};
+		\node [style=none] (12) at (0.25, 1.5) {};
+		\node [style=wire label left] (13) at (-5.75, 0) {$m$};
+		\node [style=none] (14) at (-5.25, 0) {};
+		\node [style=none] (15) at (-3.5, 1.5) {};
+		\node [style=none] (16) at (1.25, 0) {};
+		\node [style=wire label right] (17) at (1.75, 0) {$n$};
+		\node [style=medium square box white] (18) at (-2.75, 0) {$\hat{l}$};
+		\node [style=port] (19) at (-2.75, 0.5) {};
+		\node [style=port] (20) at (-2.75, 0.5) {};
+		\node [style=none] (21) at (-1.25, 0.5) {};
+		\node [style=port] (22) at (-2.75, -0.5) {};
+		\node [style=port] (23) at (-2.75, -0.5) {};
+		\node [style=none] (24) at (-1.25, -0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (13)
+			 to (14.center)
+			 to [in=-180, out=0, looseness=0.75] (15.center)
+			 to (12.center)
+			 to [bend left=90, looseness=1.50] (7.center)
+			 to (6);
+		\draw [style=wire] (10)
+			 to (11.center)
+			 to [in=-180, out=0, looseness=1.25] (16.center)
+			 to (17);
+		\draw [style=wire] (21.center) to (20);
+		\draw [style=wire] (23) to (24.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

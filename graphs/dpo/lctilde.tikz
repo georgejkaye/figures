@@ -4,13 +4,13 @@
 		\node [style=port] (6) at (0.75, 0) {};
 		\node [style=port] (22) at (0.75, 0.5) {};
 		\node [style=port] (28) at (0.75, -0.5) {};
-		\node [style=medium square box white] (31) at (2.5, 0) {$c$};
+		\node [style=medium square box white] (31) at (2.5, 0) {$\hat{c}$};
 		\node [style=port] (33) at (2.25, 0.5) {};
 		\node [style=port] (34) at (2.75, 0) {};
 		\node [style=port] (40) at (2.25, -0.5) {};
-		\node [style=wire label right] (43) at (3.75, 0.5) {};
+		\node [style=wire label right] (43) at (3.75, 0.5) {$m$};
 		\node [style=port] (44) at (2.75, 0.5) {};
-		\node [style=wire label right] (48) at (3.75, -0.5) {};
+		\node [style=wire label right] (48) at (3.75, -0.5) {$n$};
 		\node [style=port] (50) at (2.75, -0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
