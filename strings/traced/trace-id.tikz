@@ -6,9 +6,10 @@
 		\node [style=none] (3) at (-0.25, -0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire] (1.center) to (0.center);
-		\draw [style=wire, bend left=90, looseness=1.75] (0.center) to (2.center);
-		\draw [style=wire] (2.center) to (3.center);
-		\draw [style=wire, bend left=90, looseness=1.75] (3.center) to (1.center);
+		\draw [style=wire] (3.center)
+			 to [bend left=90, looseness=1.75] (1.center)
+			 to (0.center)
+			 to [bend left=90, looseness=1.75] (2.center)
+			 to cycle;
 	\end{pgfonlayer}
 \end{tikzpicture}
