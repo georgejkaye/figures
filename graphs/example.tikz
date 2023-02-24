@@ -1,27 +1,27 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (0) at (-6, 3.25) {};
-		\node [style=none] (1) at (-6, -3.25) {};
-		\node [style=none] (2) at (6, -3.25) {};
-		\node [style=none] (4) at (6, 3.25) {};
-		\node [style=edge] (5) at (-2.25, 0.5) {$\psi$};
-		\node [style=port] (12) at (-2.75, 0.75) {};
-		\node [style=port] (13) at (-1.75, 0.5) {};
-		\node [style=port] (14) at (-2.75, 0.25) {};
-		\node [style=edge] (15) at (2.5, -0.5) {$\phi$};
-		\node [style=vertex, label={[xshift=2]right:2}] (16) at (-0.25, 0.5) {};
-		\node [style=port] (19) at (3, -0.5) {};
-		\node [style=port] (20) at (2, -0.25) {};
-		\node [style=port] (21) at (2, -0.75) {};
-		\node [style=vertex, label={right:3}] (28) at (4.5, -0.5) {};
-		\node [style=none] (30) at (-3.5, 0.75) {};
-		\node [style=vertex, label={left:0}] (33) at (-4.5, -1) {};
-		\node [style=vertex, label={left:1}, label={right:4}] (34) at (2.5, -2.5) {};
-		\node [style=vertex] (35) at (2.5, 1.5) {};
-		\node [style=none] (37) at (0.25, 1.5) {};
-		\node [style=none] (40) at (-3.25, 2.25) {};
-		\node [style=none] (41) at (-3, -2) {};
-		\node [style=none] (43) at (-1, -2) {};
+		\node [style=none] (0) at (-5, 2.5) {};
+		\node [style=none] (1) at (-5, -2.5) {};
+		\node [style=none] (2) at (4.5, -2.5) {};
+		\node [style=none] (4) at (4.5, 2.5) {};
+		\node [style=edge] (5) at (-2, 0.5) {$\psi$};
+		\node [style=port] (12) at (-2.25, 1) {};
+		\node [style=port] (13) at (-1.5, 0.5) {};
+		\node [style=none] (14) at (-3, 0) {};
+		\node [style=edge] (15) at (1.5, -0.5) {$\phi$};
+		\node [style=vertex] (16) at (-0.5, 0.5) {};
+		\node [style=port] (19) at (2, -0.5) {};
+		\node [style=port] (20) at (1.25, 0) {};
+		\node [style=port] (21) at (1.25, -1) {};
+		\node [style=vertex] (28) at (3.5, -0.5) {};
+		\node [style=none] (30) at (-3.25, 1) {};
+		\node [style=vertex] (33) at (-4, -0.75) {};
+		\node [style=vertex] (34) at (-0.5, -1.75) {};
+		\node [style=vertex] (35) at (2, 1) {};
+		\node [style=none] (37) at (0, 1.25) {};
+		\node [style=none] (40) at (-3, 1.75) {};
+		\node [style=none] (41) at (-2.5, -1.5) {};
+		\node [style=none] (42) at (-2.25, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=graph] (4.center)
@@ -31,16 +31,17 @@
 			 to cycle;
 		\draw [style=tentacle] (19) to (28);
 		\draw [style=tentacle] (16)
-			 to [in=-90, out=60, looseness=0.75] (37.center)
+			 to [in=-90, out=30] (37.center)
 			 to [in=15, out=90, looseness=0.75] (40.center)
 			 to [in=180, out=-165, looseness=2.00] (30.center)
 			 to (12);
 		\draw [style=tentacle] (16) to (13);
-		\draw [style=tentacle, in=-180, out=75] (33) to (14);
+		\draw [style=tentacle] (42.center)
+			 to (14.center)
+			 to [in=75, out=-180] (33);
 		\draw [style=tentacle] (33)
 			 to [in=180, out=-60] (41.center)
-			 to [in=-180, out=0] (43.center)
-			 to [in=165, out=0, looseness=1.25] (20);
-		\draw [style=tentacle, bend right=45] (16) to (21);
+			 to [in=180, out=0, looseness=1.25] (20);
+		\draw [style=tentacle, bend right=45, looseness=1.25] (16) to (21);
 	\end{pgfonlayer}
 \end{tikzpicture}
