@@ -1,0 +1,11 @@
+\documentclass{standalone}
+\usepackage{ tikz-cd }
+
+\begin{document}
+    \begin{tikzcd}
+        A \arrow{r}{f} \arrow{d}[swap]{g \circ f} &
+        B \arrow{d}{h \circ g} \\
+        C \arrow{r}[swap]{h} &
+        D
+    \end{tikzcd}
+\end{document}

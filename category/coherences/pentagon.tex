@@ -1,0 +1,29 @@
+\documentclass{standalone}
+\usepackage{ tikz-cd }
+
+\begin{document}
+    \begin{tikzcd}[column sep=-2.25em]
+        &
+        (A \tensor (B \tensor C)) \tensor D
+        \arrow{rr}{\associator{A}{B \tensor C}{D}}
+        &
+        &
+        A \tensor ((B \tensor C) \tensor D)
+        \arrow{rd}{\id[A] \tensor \associator{B}{C}{D}}
+        &
+        \\
+        ((A \tensor B) \tensor C) \tensor D
+        \arrow{ur}{\associator{A}{B}{C} \tensor \id[D]}
+        \arrow{drr}{\associator{A \tensor B}{C}{D}}
+        &
+        &
+        &
+        &
+        A \tensor (B \tensor (C \tensor D))
+        \\
+        &
+        &
+        (A \tensor B) \tensor (C \tensor D)
+        \arrow{urr}{\associator{A}{B}{C \tensor D}}
+    \end{tikzcd}
+\end{document}

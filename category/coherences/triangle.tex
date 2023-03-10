@@ -1,0 +1,18 @@
+\documentclass{standalone}
+\usepackage{ tikz-cd }
+
+\begin{document}
+    \begin{tikzcd}
+        (A \tensor I) \tensor B
+        \arrow{rr}{\associator{A}{I}{B}}
+        \arrow{rd}{\rightunitor{A} \tensor \id[B]}
+        &
+        &
+        A \tensor (I \tensor B)
+        \arrow{dl}{\id[A] \tensor \leftunitor{B}}
+        \\
+        &
+        A \tensor B
+        &
+    \end{tikzcd}
+\end{document}

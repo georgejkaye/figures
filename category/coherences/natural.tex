@@ -1,0 +1,23 @@
+\documentclass{standalone}
+\usepackage{ tikz-cd }
+
+\begin{document}
+    \begin{tikzcd}
+        A
+        \arrow{d}{f}
+        &
+        FA
+        \arrow{r}{\eta_{A}}
+        \arrow{d}[swap]{Ff}
+        &
+        GA
+        \arrow{d}{Gf}
+        \\
+        B
+        &
+        FB
+        \arrow{r}{Gf}
+        &
+        GB
+    \end{tikzcd}
+\end{document}
