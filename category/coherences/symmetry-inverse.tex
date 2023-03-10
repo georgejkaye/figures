@@ -1,0 +1,18 @@
+\documentclass{standalone}
+\usepackage{ tikz-cd }
+
+\begin{document}
+    \begin{tikzcd}
+        &
+        B \tensor A
+        \arrow{dr}{\swap{B}{A}}
+        &
+        \\
+        A \tensor B
+        \arrow{ur}{\swap{A}{B}}
+        \arrow{rr}{\id[A \tensor B]}
+        &
+        &
+        A \tensor B
+    \end{tikzcd}
+\end{document}
