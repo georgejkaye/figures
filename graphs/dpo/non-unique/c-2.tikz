@@ -1,9 +1,9 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (0) at (-2, 1.25) {};
-		\node [style=none] (1) at (2, 1.25) {};
-		\node [style=none] (2) at (2, -1.5) {};
-		\node [style=none] (3) at (-2, -1.5) {};
+		\node [style=none] (0) at (-2.25, 1.5) {};
+		\node [style=none] (1) at (2.25, 1.5) {};
+		\node [style=none] (2) at (2.25, -1.5) {};
+		\node [style=none] (3) at (-2.25, -1.5) {};
 		\node [style=vertex] (4) at (-1.25, -0.25) {};
 		\node [style=small label] (6) at (-1.25, 0.41) {$2$};
 		\node [style=vertex] (7) at (0, -0.25) {};

@@ -1,19 +1,21 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (0) at (-3, 2) {};
-		\node [style=none] (1) at (3.25, 2) {};
-		\node [style=none] (2) at (3.25, -2) {};
-		\node [style=none] (3) at (-3, -2) {};
-		\node [style=vertex] (5) at (-2, -0.25) {};
-		\node [style=small label] (7) at (-2, 0.42) {$0$};
-		\node [style=vertex] (8) at (2.25, 0.75) {};
-		\node [style=small label] (9) at (2.25, 1.42) {$1$};
-		\node [style=vertex] (10) at (2.25, -1.25) {};
-		\node [style=small label] (11) at (2.25, -0.58) {$2$};
-		\node [style=edge] (12) at (0, -0.25) {$e$};
-		\node [style=none] (13) at (-0.25, -0.25) {};
+		\node [style=none] (0) at (-3, 2.25) {};
+		\node [style=none] (1) at (3.25, 2.25) {};
+		\node [style=none] (2) at (3.25, -2.25) {};
+		\node [style=none] (3) at (-3, -2.25) {};
+		\node [style=vertex] (5) at (-2, -0.5) {};
+		\node [style=small label] (7) at (-2, 0.17) {$0$};
+		\node [style=vertex] (8) at (2.25, 0.5) {};
+		\node [style=small label] (9) at (2.25, 1.17) {$1$};
+		\node [style=vertex] (10) at (2.25, -1.5) {};
+		\node [style=small label] (11) at (2.25, -0.83) {$2$};
+		\node [style=edge] (12) at (0, -0.5) {$e$};
+		\node [style=none] (13) at (-0.25, -0.5) {};
 		\node [style=none] (14) at (0.75, 0) {};
-		\node [style=none] (15) at (0.75, -0.5) {};
+		\node [style=none] (15) at (0.75, -1) {};
+		\node [style=none] (16) at (0.25, 0) {};
+		\node [style=none] (17) at (0.25, -1) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=graph] (1.center)
@@ -23,6 +25,9 @@
 			 to cycle;
 		\draw [style=tentacle] (5) to (13.center);
 		\draw [style=tentacle, in=180, out=0, looseness=0.75] (14.center) to (8);
-		\draw [style=tentacle, in=165, out=0] (15.center) to (10);
+		\draw [style=tentacle] (17.center)
+			 to (15.center)
+			 to [in=165, out=0] (10);
+		\draw (16.center) to (14.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
