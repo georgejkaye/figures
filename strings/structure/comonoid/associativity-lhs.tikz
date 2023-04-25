@@ -11,9 +11,10 @@
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (13) to (10);
 		\draw [style=wire, in=180, out=-75] (10) to (11);
-		\draw [style=wire, in=180, out=75] (10) to (12.center);
+		\draw [style=wire] (10)
+			 to [in=180, out=75] (12.center)
+			 to (16);
 		\draw [style=wire, in=180, out=-60] (11) to (14);
 		\draw [style=wire, in=180, out=60] (11) to (15);
-		\draw [style=wire] (12.center) to (16);
 	\end{pgfonlayer}
 \end{tikzpicture}
