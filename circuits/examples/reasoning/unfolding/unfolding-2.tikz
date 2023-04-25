@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (0) at (0.5, 0.75) {$F$};
+		\node [style=medium square box \varb] (0) at (0.5, 0.75) {$\vara$};
 		\node [style=none] (2) at (0.25, 0.25) {};
 		\node [style=none] (4) at (-2.5, 0.25) {};
 		\node [style=bproduct] (5) at (-1.75, 0.25) {};
@@ -10,7 +10,7 @@
 		\node [style=none] (10) at (1.75, 2) {};
 		\node [style=none] (11) at (-2.5, 2) {};
 		\node [style=none] (15) at (1.75, 1.25) {};
-		\node [style=medium square box seq] (17) at (0.5, -1.5) {$F$};
+		\node [style=medium square box \varb] (17) at (0.5, -1.5) {$\vara$};
 		\node [style=none] (18) at (0.25, -2) {};
 		\node [style=none] (19) at (0.25, -1) {};
 		\node [style=none] (20) at (1.25, -2) {};
@@ -26,9 +26,9 @@
 		\node [style=none] (54) at (-0.5, 0.25) {};
 		\node [style=none] (58) at (-0.5, -1) {};
 		\node [style=none] (62) at (-0.5, -2) {};
-		\node [style=wire label left] (63) at (-3.75, -1) {$m$};
-		\node [style=wire label right] (64) at (3, -2) {$n$};
-		\node [style=wire label mid] (65) at (-1.25, 2) {$x$};
+		\node [style=wire label left] (63) at (-3.75, -1) {$\varc$};
+		\node [style=wire label right] (64) at (3, -2) {$\vard$};
+		\node [style=wire label mid] (65) at (-1.25, 2) {$\vare$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wiredash] (8.center)
