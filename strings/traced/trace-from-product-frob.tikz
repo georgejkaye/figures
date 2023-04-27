@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (0) at (-1.25, 0.5) {};
-		\node [style=medium square box white] (1) at (0, 0) {$F$};
+		\node [style=medium square box white] (1) at (0, 0) {$f$};
 		\node [style=dangling] (2) at (-2, -0.5) {};
 		\node [style=port] (3) at (-0.25, 0.5) {};
 		\node [style=port] (4) at (-0.25, -0.5) {};
