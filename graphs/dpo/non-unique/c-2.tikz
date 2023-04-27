@@ -1,15 +1,15 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (0) at (-2.25, 1.5) {};
-		\node [style=none] (1) at (2.25, 1.5) {};
-		\node [style=none] (2) at (2.25, -1.5) {};
-		\node [style=none] (3) at (-2.25, -1.5) {};
-		\node [style=vertex] (4) at (-1.25, -0.25) {};
-		\node [style=small label] (6) at (-1.25, 0.41) {$2$};
+		\node [style=none] (0) at (-2.5, 1.75) {};
+		\node [style=none] (1) at (2.5, 1.75) {};
+		\node [style=none] (2) at (2.5, -1.75) {};
+		\node [style=none] (3) at (-2.5, -1.75) {};
+		\node [style=vertex] (4) at (-1.5, -0.25) {};
+		\node [style=small label] (6) at (-1.5, 0.66) {$2$};
 		\node [style=vertex] (7) at (0, -0.25) {};
-		\node [style=small label] (8) at (0, 0.41) {$3\ 0$};
-		\node [style=vertex] (9) at (1.25, -0.25) {};
-		\node [style=small label] (10) at (1.25, 0.41) {$1$};
+		\node [style=small label] (8) at (0, 0.66) {$3\ 0$};
+		\node [style=vertex] (9) at (1.5, -0.25) {};
+		\node [style=small label] (10) at (1.5, 0.66) {$1$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=graph] (1.center)
