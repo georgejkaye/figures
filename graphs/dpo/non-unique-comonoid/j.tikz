@@ -1,11 +1,11 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (0) at (-1, 1.25) {};
-		\node [style=none] (1) at (1, 1.25) {};
-		\node [style=none] (2) at (1, -1.25) {};
-		\node [style=none] (3) at (-1, -1.25) {};
+		\node [style=none] (0) at (-1, 1.5) {};
+		\node [style=none] (1) at (1, 1.5) {};
+		\node [style=none] (2) at (1, -1.5) {};
+		\node [style=none] (3) at (-1, -1.5) {};
 		\node [style=vertex] (5) at (0, -0.25) {};
-		\node [style=small label] (7) at (0, 0.42) {$3$};
+		\node [style=small label] (7) at (0, 0.67) {$3$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=interface] (1.center)
