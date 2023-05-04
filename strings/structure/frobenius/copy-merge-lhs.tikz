@@ -1,11 +1,11 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=bproduct] (0) at (-1, 0) {};
-		\node [style=wire label left] (1) at (-1.75, 0) {$\vara$};
+		\node [style=wire label left] (1) at (-1.75, 0) {$\tvara$};
 		\node [style=none] (2) at (0, 0.75) {};
 		\node [style=none] (3) at (0, -0.75) {};
 		\node [style=bproduct] (4) at (1, 0) {};
-		\node [style=wire label right] (5) at (1.75, 0) {$\vara$};
+		\node [style=wire label right] (5) at (1.75, 0) {$\tvara$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (1) to (0);

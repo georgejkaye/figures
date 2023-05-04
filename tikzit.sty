@@ -42,49 +42,49 @@
 \tikzstyle{every loop}=[]
 
 % inline tikzfig command with optional arguments
-\newcommand{\vara}{}
-\newcommand{\varb}{}
-\newcommand{\varc}{}
-\newcommand{\vard}{}
-\newcommand{\vare}{}
-\newcommand{\varf}{}
-\newcommand{\varg}{}
-\newcommand{\varh}{}
+\newcommand{\tvara}{}
+\newcommand{\tvarb}{}
+\newcommand{\tvarc}{}
+\newcommand{\tvard}{}
+\newcommand{\tvare}{}
+\newcommand{\tvarf}{}
+\newcommand{\tvarg}{}
+\newcommand{\tvarh}{}
 \NewDocumentCommand\iltikzfig{moooooooo}{%
-  \renewcommand{\vara}{\IfValueTF{#2}{#2}{}}%
-  \renewcommand{\varb}{\IfValueTF{#3}{#3}{}}%
-  \renewcommand{\varc}{\IfValueTF{#4}{#4}{}}%
-  \renewcommand{\vard}{\IfValueTF{#5}{#5}{}}%
-  \renewcommand{\vare}{\IfValueTF{#6}{#6}{}}%
-  \renewcommand{\varf}{\IfValueTF{#7}{#7}{}}%
-  \renewcommand{\varg}{\IfValueTF{#8}{#8}{}}%
-  \renewcommand{\varh}{\IfValueTF{#9}{#9}{}}%
+  \renewcommand{\tvara}{\IfValueTF{#2}{#2}{}}%
+  \renewcommand{\tvarb}{\IfValueTF{#3}{#3}{}}%
+  \renewcommand{\tvarc}{\IfValueTF{#4}{#4}{}}%
+  \renewcommand{\tvard}{\IfValueTF{#5}{#5}{}}%
+  \renewcommand{\tvare}{\IfValueTF{#6}{#6}{}}%
+  \renewcommand{\tvarf}{\IfValueTF{#7}{#7}{}}%
+  \renewcommand{\tvarg}{\IfValueTF{#8}{#8}{}}%
+  \renewcommand{\tvarh}{\IfValueTF{#9}{#9}{}}%
   \raisebox{0.15em}{\scalebox{0.5}{\tikzfig{#1}}}%
-  \IfValueT{#2}{\renewcommand{\vara}{}}%
-  \IfValueT{#3}{\renewcommand{\varb}{}}%
-  \IfValueT{#4}{\renewcommand{\varc}{}}%
-  \IfValueT{#5}{\renewcommand{\vard}{}}%
-  \IfValueT{#6}{\renewcommand{\vare}{}}%
-  \IfValueT{#7}{\renewcommand{\varf}{}}%
-  \IfValueT{#8}{\renewcommand{\varg}{}}%
-  \IfValueT{#9}{\renewcommand{\varh}{}}%
+  \IfValueT{#2}{\renewcommand{\tvara}{}}%
+  \IfValueT{#3}{\renewcommand{\tvarb}{}}%
+  \IfValueT{#4}{\renewcommand{\tvarc}{}}%
+  \IfValueT{#5}{\renewcommand{\tvard}{}}%
+  \IfValueT{#6}{\renewcommand{\tvare}{}}%
+  \IfValueT{#7}{\renewcommand{\tvarf}{}}%
+  \IfValueT{#8}{\renewcommand{\tvarg}{}}%
+  \IfValueT{#9}{\renewcommand{\tvarh}{}}%
 }
 \NewDocumentCommand\dsptikzfig{moooooooo}{%
-  \renewcommand{\vara}{\IfValueTF{#2}{#2}{}}%
-  \renewcommand{\varb}{\IfValueTF{#3}{#3}{}}%
-  \renewcommand{\varc}{\IfValueTF{#4}{#4}{}}%
-  \renewcommand{\vard}{\IfValueTF{#5}{#5}{}}%
-  \renewcommand{\vare}{\IfValueTF{#6}{#6}{}}%
-  \renewcommand{\varf}{\IfValueTF{#7}{#7}{}}%
-  \renewcommand{\varg}{\IfValueTF{#8}{#8}{}}%
-  \renewcommand{\varh}{\IfValueTF{#9}{#9}{}}%
+  \renewcommand{\tvara}{\IfValueTF{#2}{#2}{}}%
+  \renewcommand{\tvarb}{\IfValueTF{#3}{#3}{}}%
+  \renewcommand{\tvarc}{\IfValueTF{#4}{#4}{}}%
+  \renewcommand{\tvard}{\IfValueTF{#5}{#5}{}}%
+  \renewcommand{\tvare}{\IfValueTF{#6}{#6}{}}%
+  \renewcommand{\tvarf}{\IfValueTF{#7}{#7}{}}%
+  \renewcommand{\tvarg}{\IfValueTF{#8}{#8}{}}%
+  \renewcommand{\tvarh}{\IfValueTF{#9}{#9}{}}%
   \tikzfig{#1}%
-  \IfValueT{#2}{\renewcommand{\vara}{}}%
-  \IfValueT{#3}{\renewcommand{\varb}{}}%
-  \IfValueT{#4}{\renewcommand{\varc}{}}%
-  \IfValueT{#5}{\renewcommand{\vard}{}}%
-  \IfValueT{#6}{\renewcommand{\vare}{}}%
-  \IfValueT{#7}{\renewcommand{\varf}{}}%
-  \IfValueT{#8}{\renewcommand{\varg}{}}%
-  \IfValueT{#9}{\renewcommand{\varh}{}}%
+  \IfValueT{#2}{\renewcommand{\tvara}{}}%
+  \IfValueT{#3}{\renewcommand{\tvarb}{}}%
+  \IfValueT{#4}{\renewcommand{\tvarc}{}}%
+  \IfValueT{#5}{\renewcommand{\tvard}{}}%
+  \IfValueT{#6}{\renewcommand{\tvare}{}}%
+  \IfValueT{#7}{\renewcommand{\tvarf}{}}%
+  \IfValueT{#8}{\renewcommand{\tvarg}{}}%
+  \IfValueT{#9}{\renewcommand{\tvarh}{}}%
 }

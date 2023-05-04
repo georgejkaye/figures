@@ -1,11 +1,11 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=wire label left] (9) at (-1, 0.5) {$\varb$};
+		\node [style=wire label left] (9) at (-1, 0.5) {$\tvarb$};
 		\node [style=wire label right] (10) at (1, 0) {};
-		\node [style=medium box comb] (11) at (0, 0) {$\vara$};
+		\node [style=medium box comb] (11) at (0, 0) {$\tvara$};
 		\node [style=none] (12) at (-0.5, 0.5) {};
 		\node [style=none] (15) at (0.5, 0) {};
-		\node [style=wire label left] (16) at (-1, -0.5) {$\varc$};
+		\node [style=wire label left] (16) at (-1, -0.5) {$\tvarc$};
 		\node [style=none] (17) at (-0.5, -0.5) {};
 		\node [style=none] (18) at (-1, 0) {$\vdots$};
 	\end{pgfonlayer}

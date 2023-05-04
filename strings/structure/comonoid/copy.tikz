@@ -3,18 +3,18 @@
 		\node [style=bproduct] (0) at (0, 0) {};
 		\node [style=none] (1) at (0.5, 0.5) {};
 		\node [style=none] (2) at (0.5, -0.5) {};
-		\node [style=wire label left] (3) at (-1, 0) {$\varb$};
+		\node [style=wire label left] (3) at (-1, 0) {$\tvarb$};
 		\node [style=none] (5) at (-0.5, 0.75) {};
 		\node [style=none] (6) at (-0.5, -0.75) {};
 		\node [style=none] (7) at (0.5, -0.75) {};
 		\node [style=none] (8) at (0.5, 0.75) {};
-		\node [style=wire label right] (9) at (1, 0.5) {$\varb$};
-		\node [style=wire label right] (10) at (1, -0.5) {$\varb$};
+		\node [style=wire label right] (9) at (1, 0.5) {$\tvarb$};
+		\node [style=wire label right] (10) at (1, -0.5) {$\tvarb$};
 		\node [style=none] (11) at (-0.5, 0) {};
 		\node [style=none] (12) at (-0.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style={tile \vara}] (12.center)
+		\draw [style={tile \tvara}] (12.center)
 			 to (6.center)
 			 to (7.center)
 			 to (8.center)

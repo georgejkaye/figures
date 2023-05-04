@@ -1,14 +1,14 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (0) at (-1.25, -0.75) {$\vara$};
+		\node [style=medium square box seq] (0) at (-1.25, -0.75) {$\tvara$};
 		\node [style=none] (2) at (-0.75, -0.75) {};
-		\node [style=wire label right] (10) at (3.25, 0) {$\vard$};
-		\node [style=wire label left] (11) at (-2.5, -0.75) {$\varc$};
+		\node [style=wire label right] (10) at (3.25, 0) {$\tvard$};
+		\node [style=wire label left] (11) at (-2.5, -0.75) {$\tvarc$};
 		\node [style=none] (12) at (-1.75, -0.75) {};
 		\node [style=bproduct] (13) at (2.25, 0) {};
 		\node [style=none] (14) at (1.5, -0.75) {};
 		\node [style=none] (15) at (1.5, 0.75) {};
-		\node [style=tiny box seq] (16) at (0.75, 0.75) {$\overline{\varb}$};
+		\node [style=tiny box seq] (16) at (0.75, 0.75) {$\overline{\tvarb}$};
 		\node [style=delay] (17) at (0.75, -0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

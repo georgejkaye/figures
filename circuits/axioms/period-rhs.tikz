@@ -1,12 +1,12 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny signal seq] (12) at (0, -0.5) {$\overline{\underline{\vara}}$};
+		\node [style=tiny signal seq] (12) at (0, -0.5) {$\overline{\underline{\tvara}}$};
 		\node [style=none] (22) at (1.75, -1) {};
-		\node [style=wire label right] (23) at (2.75, -1) {$\varb$};
+		\node [style=wire label right] (23) at (2.75, -1) {$\tvarb$};
 		\node [style=none] (24) at (-1, -0.5) {};
 		\node [style=bproduct] (25) at (1.25, -0.5) {};
 		\node [style=none] (26) at (1.75, 0) {};
-		\node [style=wire label mid] (27) at (0.5, 0.75) {$\varb$};
+		\node [style=wire label mid] (27) at (0.5, 0.75) {$\tvarb$};
 		\node [style=none] (28) at (-1, 0.75) {};
 		\node [style=none] (29) at (0, -0.5) {};
 		\node [style=none] (30) at (2.25, 0) {};

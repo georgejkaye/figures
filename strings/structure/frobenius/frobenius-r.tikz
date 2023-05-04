@@ -1,14 +1,14 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (0) at (0, 1) {};
-		\node [style=wire label right] (1) at (1.5, -0.5) {$\vara$};
-		\node [style=wire label left] (3) at (-1.5, 0.5) {$\vara$};
+		\node [style=wire label right] (1) at (1.5, -0.5) {$\tvara$};
+		\node [style=wire label left] (3) at (-1.5, 0.5) {$\tvara$};
 		\node [style=none] (4) at (0, -1) {};
 		\node [style=bproduct] (6) at (0.75, -0.5) {};
 		\node [style=bproduct] (7) at (-0.75, 0.5) {};
-		\node [style=wire label right] (8) at (1.5, 1) {$\vara$};
+		\node [style=wire label right] (8) at (1.5, 1) {$\tvara$};
 		\node [style=none] (9) at (0, 0) {};
-		\node [style=wire label left] (10) at (-1.5, -1) {$\vara$};
+		\node [style=wire label left] (10) at (-1.5, -1) {$\tvara$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (1) to (6);

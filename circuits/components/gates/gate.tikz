@@ -1,8 +1,8 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=wire label left] (9) at (-1, 0) {$\varb$};
-		\node [style=wire label right] (10) at (1, 0) {$\varc$};
-		\node [style=medium box comb] (11) at (0, 0) {$\vara$};
+		\node [style=wire label left] (9) at (-1, 0) {$\tvarb$};
+		\node [style=wire label right] (10) at (1, 0) {$\tvarc$};
+		\node [style=medium box comb] (11) at (0, 0) {$\tvara$};
 		\node [style=none] (12) at (-0.5, 0) {};
 		\node [style=none] (15) at (0.5, 0) {};
 	\end{pgfonlayer}

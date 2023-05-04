@@ -1,8 +1,8 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=wire label right] (2) at (1.25, 0) {$\varb$};
-		\node [style=register] (8) at (0, 0) {$\vara$};
-		\node [style=wire label left] (9) at (-1.25, 0) {$\varb$};
+		\node [style=wire label right] (2) at (1.25, 0) {$\tvarb$};
+		\node [style=register] (8) at (0, 0) {$\tvara$};
+		\node [style=wire label left] (9) at (-1.25, 0) {$\tvarb$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (9)

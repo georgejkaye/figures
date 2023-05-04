@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny box seq] (15) at (-0.5, 0) {$\overline{\vara}$};
+		\node [style=tiny box seq] (15) at (-0.5, 0) {$\overline{\tvara}$};
 		\node [style=none] (17) at (0, 0) {};
 		\node [style=dangling] (47) at (0.5, 0) {};
 	\end{pgfonlayer}

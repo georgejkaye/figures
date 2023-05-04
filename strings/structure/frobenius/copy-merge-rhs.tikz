@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=wire label left] (1) at (-0.75, 0) {$\vara$};
-		\node [style=wire label right] (5) at (0.75, 0) {$\vara$};
+		\node [style=wire label left] (1) at (-0.75, 0) {$\tvara$};
+		\node [style=wire label right] (5) at (0.75, 0) {$\tvara$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (5) to (1);

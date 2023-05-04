@@ -1,11 +1,11 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (0) at (0, 0) {};
-		\node [style=wire label right] (1) at (1.5, 0.5) {$\vard$};
-		\node [style=wire label right] (2) at (1.5, -0.5) {$\vard$};
+		\node [style=wire label right] (1) at (1.5, 0.5) {$\tvard$};
+		\node [style=wire label right] (2) at (1.5, -0.5) {$\tvard$};
 		\node [style=bproduct] (5) at (0.75, 0) {};
-		\node [style={medium square box \varb}] (6) at (-0.5, 0) {$\vara$};
-		\node [style=wire label left] (7) at (-1.75, 0) {$\varc$};
+		\node [style={medium square box \tvarb}] (6) at (-0.5, 0) {$\tvara$};
+		\node [style=wire label left] (7) at (-1.75, 0) {$\tvarc$};
 		\node [style=none] (8) at (-1, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

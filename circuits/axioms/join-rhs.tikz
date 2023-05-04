@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny box seq] (0) at (-1, 0) {$\vara \sqcup \varb$};
-		\node [style=wire label right] (1) at (0.75, 0) {$\varc$};
+		\node [style=tiny box seq] (0) at (-1, 0) {$\tvara \sqcup \tvarb$};
+		\node [style=wire label right] (1) at (0.75, 0) {$\tvarc$};
 		\node [style=port] (2) at (-0.75, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

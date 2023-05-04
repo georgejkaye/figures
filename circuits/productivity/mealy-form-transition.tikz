@@ -2,20 +2,20 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (16) at (-3, 1.25) {};
 		\node [style=none] (17) at (-3, 0) {};
-		\node [style=medium square box comb] (41) at (-0.25, -0.5) {$\hat{\vara}$};
+		\node [style=medium square box comb] (41) at (-0.25, -0.5) {$\hat{\tvara}$};
 		\node [style=port] (43) at (-0.5, 0) {};
 		\node [style=port] (47) at (0, -0.5) {};
 		\node [style=none] (52) at (-1.75, 0) {};
 		\node [style=register] (55) at (-2.25, 0) {$\overline{s}$};
 		\node [style=bproduct] (59) at (1.25, -0.5) {};
 		\node [style=none] (60) at (2, -1) {};
-		\node [style=wire label right] (61) at (3.5, -1) {$\vare$};
+		\node [style=wire label right] (61) at (3.5, -1) {$\tvare$};
 		\node [style=none] (62) at (2, 0) {};
 		\node [style=port] (63) at (-0.5, -1) {};
-		\node [style=wire label left] (66) at (-3.75, -1) {$\varc$};
+		\node [style=wire label left] (66) at (-3.75, -1) {$\tvarc$};
 		\node [style=none] (67) at (2.25, 0) {};
 		\node [style=none] (68) at (2.25, 1.25) {};
-		\node [style=wire label mid] (69) at (-0.25, 1.25) {$\vare$};
+		\node [style=wire label mid] (69) at (-0.25, 1.25) {$\tvare$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (59)

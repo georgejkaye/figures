@@ -1,35 +1,35 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box comb] (0) at (1.25, -0.75) {$\tilde{\vara}$};
+		\node [style=medium square box comb] (0) at (1.25, -0.75) {$\tilde{\tvara}$};
 		\node [style=port] (2) at (1.5, -0.25) {};
 		\node [style=port] (3) at (1.5, -1.25) {};
 		\node [style=port] (8) at (1, -0.25) {};
-		\node [style=wire label left] (62) at (-9.25, -2.5) {$\vard$};
+		\node [style=wire label left] (62) at (-9.25, -2.5) {$\tvard$};
 		\node [style=none] (69) at (1, -1.25) {};
 		\node [style=port] (84) at (8.25, 0.25) {};
-		\node [style=medium square box comb] (88) at (8, 0.75) {$\tilde{\vara}$};
+		\node [style=medium square box comb] (88) at (8, 0.75) {$\tilde{\tvara}$};
 		\node [style=port] (90) at (7.75, 1.25) {};
 		\node [style=none] (91) at (7.75, 0.25) {};
-		\node [style=tiny box seq] (92) at (6, 1.25) {$\overline{\varb}$};
-		\node [style=tiny box seq] (93) at (4.5, 0.25) {$\overline{\varc}$};
+		\node [style=tiny box seq] (92) at (6, 1.25) {$\overline{\tvarb}$};
+		\node [style=tiny box seq] (93) at (4.5, 0.25) {$\overline{\tvarc}$};
 		\node [style=delay] (96) at (8, -1.25) {};
 		\node [style=port] (97) at (8.25, 1.25) {};
 		\node [style=bproduct] (98) at (9.25, 1.25) {};
 		\node [style=none] (99) at (9.25, -1.25) {};
 		\node [style=bproduct] (102) at (10, -0.5) {};
-		\node [style=wire label right] (103) at (10.75, -0.5) {$\vare$};
+		\node [style=wire label right] (103) at (10.75, -0.5) {$\tvare$};
 		\node [style=none] (104) at (9.25, 0.25) {};
 		\node [style=none] (107) at (2.25, -0.25) {};
 		\node [style=none] (113) at (-7.25, -1.5) {};
 		\node [style=none] (115) at (2.25, 2) {};
 		\node [style=none] (116) at (-7.25, 2) {};
-		\node [style=medium square box comb] (117) at (-3.5, 0.5) {$\tilde{\vara}$};
+		\node [style=medium square box comb] (117) at (-3.5, 0.5) {$\tilde{\tvara}$};
 		\node [style=port] (118) at (-3.25, 1) {};
 		\node [style=port] (119) at (-3.25, 0) {};
 		\node [style=port] (120) at (-3.75, 1) {};
 		\node [style=none] (121) at (-3.75, 0) {};
-		\node [style=tiny box seq] (122) at (-5.5, 1) {$\overline{\varb}$};
-		\node [style=tiny box seq] (123) at (-7, 0) {$\overline{\varc}$};
+		\node [style=tiny box seq] (122) at (-5.5, 1) {$\overline{\tvarb}$};
+		\node [style=tiny box seq] (123) at (-7, 0) {$\overline{\tvarc}$};
 		\node [style=bproduct] (124) at (-1, -0.25) {};
 		\node [style=none] (125) at (-2.25, 1) {};
 		\node [style=bproduct] (126) at (-2.25, 0) {};
@@ -38,7 +38,7 @@
 		\node [style=none] (129) at (0, -0.25) {};
 		\node [style=none] (130) at (-1.75, -2.5) {};
 		\node [style=none] (131) at (0.25, -1.25) {};
-		\node [style=wire label mid] (132) at (1.25, 2) {$\varf$};
+		\node [style=wire label mid] (132) at (1.25, 2) {$\tvarf$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (92) to (90);

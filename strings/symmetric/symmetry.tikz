@@ -10,13 +10,13 @@
 		\node [style=none] (12) at (-0.5, 0) {};
 		\node [style=none] (15) at (-0.75, -0.5) {};
 		\node [style=none] (16) at (0.75, 0.5) {};
-		\node [style=wire label right] (17) at (1, 0.5) {$\varc$};
-		\node [style=wire label right] (18) at (1, -0.5) {$\varb$};
-		\node [style=wire label left] (19) at (-1, -0.5) {$\varc$};
-		\node [style=wire label left] (20) at (-1, 0.5) {$\varb$};
+		\node [style=wire label right] (17) at (1, 0.5) {$\tvarc$};
+		\node [style=wire label right] (18) at (1, -0.5) {$\tvarb$};
+		\node [style=wire label left] (19) at (-1, -0.5) {$\tvarc$};
+		\node [style=wire label left] (20) at (-1, 0.5) {$\tvarb$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style={tile \vara}] (12.center)
+		\draw [style={tile \tvara}] (12.center)
 			 to (6.center)
 			 to (7.center)
 			 to (8.center)

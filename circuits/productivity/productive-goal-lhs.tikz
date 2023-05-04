@@ -1,10 +1,10 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (0) at (1.25, 0) {$\vara$};
+		\node [style=medium square box seq] (0) at (1.25, 0) {$\tvara$};
 		\node [style=none] (2) at (0.75, 0) {};
-		\node [style=register] (4) at (-1, 0) {$\overline{\varb}$};
-		\node [style=wire label right] (10) at (2.5, 0) {$\vard$};
-		\node [style=wire label left] (11) at (-2.25, 0) {$\varc$};
+		\node [style=register] (4) at (-1, 0) {$\overline{\tvarb}$};
+		\node [style=wire label right] (10) at (2.5, 0) {$\tvard$};
+		\node [style=wire label left] (11) at (-2.25, 0) {$\tvarc$};
 		\node [style=none] (12) at (1.75, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
