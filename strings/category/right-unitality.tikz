@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=small box] (0) at (-1, 0) {$f$};
+		\node [style=medium square box \tvarb] (0) at (-1, 0) {$\tvara$};
 		\node [style=none] (1) at (-2.75, 0) {};
 		\node [style=port] (5) at (-1.25, 0) {};
 		\node [style=port] (6) at (-0.75, 0) {};
