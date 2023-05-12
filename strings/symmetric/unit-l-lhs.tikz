@@ -1,0 +1,34 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (3) at (-0.75, 0.5) {};
+		\node [style=none] (5) at (-0.5, 0.75) {};
+		\node [style=none] (6) at (-0.5, -0.75) {};
+		\node [style=none] (7) at (0.5, -0.75) {};
+		\node [style=none] (8) at (0.5, 0.75) {};
+		\node [style=none] (10) at (0.75, -0.5) {};
+		\node [style=none] (11) at (-0.5, 0) {};
+		\node [style=none] (12) at (-0.5, 0) {};
+		\node [style=none] (15) at (-0.75, -0.5) {};
+		\node [style=none] (16) at (0.75, 0.5) {};
+		\node [style=wire label right] (17) at (1.25, 0.5) {$\tvarc$};
+		\node [style=wire label right] (18) at (1.25, -0.5) {$\tvarb$};
+		\node [style=wire label left] (19) at (-1, -0.5) {$\tvarc$};
+		\node [style=wire label left] (20) at (-1, 0.5) {$\tvarb$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style={tile \tvara}] (12.center)
+			 to (6.center)
+			 to (7.center)
+			 to (8.center)
+			 to (5.center)
+			 to (11.center);
+		\draw [style=unit wire] (20)
+			 to (3.center)
+			 to [in=180, out=0] (10.center)
+			 to (18);
+		\draw [style=wire] (19)
+			 to (15.center)
+			 to [in=-180, out=0] (16.center)
+			 to (17);
+	\end{pgfonlayer}
+\end{tikzpicture}

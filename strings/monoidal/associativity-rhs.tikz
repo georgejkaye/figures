@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style={medium square box \tvard}] (0) at (0, 2) {$\tvara$};
+		\node [style=wire label left] (1) at (-1.75, 2) {$\overline{m}$};
+		\node [style=port] (5) at (-0.25, 2) {};
+		\node [style=port] (6) at (0.25, 2) {};
+		\node [style=wire label right] (7) at (1.75, 2) {$\overline{n}$};
+		\node [style={medium square box \tvard}] (8) at (0, -0.5) {$\tvarb$};
+		\node [style=wire label left] (9) at (-1.75, -0.5) {$\overline{p}$};
+		\node [style=port] (12) at (-0.25, -0.5) {};
+		\node [style=port] (13) at (0.25, -0.5) {};
+		\node [style=wire label right] (14) at (1.75, -0.5) {$\overline{q}$};
+		\node [style={medium square box \tvard}] (15) at (0, -2.5) {$\tvarc$};
+		\node [style=wire label left] (16) at (-1.75, -2.5) {$\overline{r}$};
+		\node [style=port] (19) at (-0.25, -2.5) {};
+		\node [style=port] (20) at (0.25, -2.5) {};
+		\node [style=wire label right] (21) at (1.75, -2.5) {$\overline{s}$};
+		\node [style=none] (22) at (-3, 0.75) {};
+		\node [style=none] (23) at (3, 0.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (7) to (6);
+		\draw [style=wire] (1) to (5);
+		\draw [style=wire] (14) to (13);
+		\draw [style=wire] (9) to (12);
+		\draw [style=wire] (21) to (20);
+		\draw [style=wire] (16) to (19);
+		\draw [style=juxtaposition] (23.center) to (22.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

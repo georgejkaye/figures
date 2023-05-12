@@ -1,0 +1,46 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style={medium square box \tvarc}] (0) at (1.75, 1) {$\tvarb$};
+		\node [style=wire label right] (1) at (3, 1) {$\tvarg$};
+		\node [style=port] (5) at (2, 1) {};
+		\node [style=port] (6) at (1.5, 1) {};
+		\node [style=none] (7) at (0.25, 1) {};
+		\node [style={medium square box \tvarc}] (8) at (1.75, -1) {$\tvara$};
+		\node [style=wire label right] (9) at (3, -1) {$\tvare$};
+		\node [style=port] (12) at (2, -1) {};
+		\node [style=port] (13) at (1.5, -1) {};
+		\node [style=none] (14) at (0.25, -1) {};
+		\node [style=none] (15) at (0.25, 2) {};
+		\node [style=none] (16) at (0.25, -2) {};
+		\node [style=none] (17) at (-0.5, 1) {};
+		\node [style=none] (18) at (-0.5, -1) {};
+		\node [style=none] (19) at (-2.25, 1) {};
+		\node [style=none] (20) at (-2.25, -1) {};
+		\node [style=wire label left] (21) at (-3, -1) {$\tvarf$};
+		\node [style=wire label left] (22) at (-3, 1) {$\tvard$};
+		\node [style=none] (23) at (-0.5, 1.75) {};
+		\node [style=none] (24) at (-0.5, -1.75) {};
+		\node [style=none] (25) at (-2.25, -1.75) {};
+		\node [style=none] (26) at (-2.25, 1.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style={tile \tvarc}] (26.center)
+			 to (23.center)
+			 to (24.center)
+			 to (25.center)
+			 to cycle;
+		\draw [style=wire] (21)
+			 to (20.center)
+			 to [in=180, out=0, looseness=0.75] (17.center)
+			 to (7.center)
+			 to (6);
+		\draw [style=wire] (1) to (5);
+		\draw [style=wire] (13)
+			 to (14.center)
+			 to (18.center)
+			 to [in=0, out=180, looseness=0.75] (19.center)
+			 to (22);
+		\draw [style=wire] (9) to (12);
+		\draw [style=juxtaposition] (15.center) to (16.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
