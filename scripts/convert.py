@@ -28,7 +28,7 @@ def get_used_tikz(src_dir):
     return tikz_files
 
 
-def compile_file(tikz_file, tikz_dir, output_dir, style_file):
+def compile_file(tikz_file, tikz_dir, output_dir, style_file, defs_file):
 
     try:
         with open(os.path.join(tikz_dir, tikz_file), "r") as f:
@@ -37,6 +37,7 @@ def compile_file(tikz_file, tikz_dir, output_dir, style_file):
         print(f"[tikz] Could not open file {tikz_file}")
         return
 
+    print(f"[tikz] Opened file {tikz_file}")
     file_name = os.path.basename(tikz_file)
     file_dir = os.path.dirname(tikz_file)
     tex = f"{file_name}.tex"
@@ -44,17 +45,20 @@ def compile_file(tikz_file, tikz_dir, output_dir, style_file):
     svg = f"{file_name}.svg"
     full_output_dir = os.path.join(output_dir, file_dir)
     output_svg_path = os.path.join(full_output_dir, svg)
+    print(f"[tikz] Writing tex file {tex}")
+
     with open(tex, "w") as f:
         f.write("\\documentclass{standalone}\n")
         f.write("\\usepackage{" + tikz_dir + "/tikzit}\n")
         f.write("\\input{" + style_file + "}\n")
+        f.write("\\input{" + defs_file + "}\n")
         f.write(
             "\\usetikzlibrary{" + ",".join(tikz_libraries) + "}\n\n")
         f.write("\\begin{document}\n")
         f.write(tikz)
         f.write("\\end{document}\n")
 
-    print(f"[tikz] Compiling tikzfile {tex}")
+    print(f"[tikz] Compiling tex file {tex}")
     subprocess.run(["latexmk", "-pdf", "-quiet", tex],
                    stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     print(
@@ -69,26 +73,27 @@ def compile_file(tikz_file, tikz_dir, output_dir, style_file):
     subprocess.run(["latexmk", "-c", tex])
 
 
-def compile_all_files(tikz_dir, tikz_files, output_dir, style_file):
+def compile_all_files(tikz_dir, tikz_files, output_dir, style_file, defs_file):
     for file in tikz_files:
-        compile_file(file, tikz_dir, output_dir, style_file)
+        compile_file(file, tikz_dir, output_dir, style_file, defs_file)
 
 
 class TikzHandler(FileSystemEventHandler):
 
-    def __init__(self, tikz_dir, tikz_files, output_dir, style_file):
+    def __init__(self, tikz_dir, tikz_files, output_dir, style_file, defs_file):
         self.tikz_dir = tikz_dir
         self.tikz_files = tikz_files
         self.output_dir = output_dir
         self.style_file = style_file
+        self.defs_file = defs_file
 
     def update_tikz(self, event):
         path = event.src_path[(len(self.tikz_dir) + 1):]
         if len(path) > 5 and path[-5:] == ".tikz":
-            compile_file(path, self.tikz_dir, self.output_dir, self.style_file)
+            compile_file(path, self.tikz_dir, self.output_dir, self.style_file, self.defs_file)
         elif len(path) > 11 and path[-11:] == ".tikzstyles":
             compile_all_files(self.tikz_dir, self.tikz_files,
-                              self.output_dir, self.style_file)
+                              self.output_dir, self.style_file, self.defs_file)
         else:
             return
 
@@ -127,13 +132,14 @@ class SourceHandler(FileSystemEventHandler):
 
 def main():
 
-    mandatory_args = 4
+    mandatory_args = 5
 
     if len(sys.argv) > mandatory_args:
         tikz_dir = sys.argv[1]
         src_dir = sys.argv[2]
         output_dir = sys.argv[3]
         style_file = sys.argv[4]
+        defs_file = sys.argv[5]
     else:
         print("No file or output provided")
         exit(1)
@@ -159,7 +165,7 @@ def main():
         exit(0)
 
     tikz_observer = Observer()
-    tikz_handler = TikzHandler(tikz_dir, tikz_files, output_dir, style_file)
+    tikz_handler = TikzHandler(tikz_dir, tikz_files, output_dir, style_file, defs_file)
     tikz_observer.schedule(tikz_handler, tikz_dir, recursive=True)
     tikz_observer.start()
     source_observer = Observer()
