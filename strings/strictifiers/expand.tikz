@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=bundler] (0) at (0, 0) {};
+		\node [style=none] (1) at (-0.75, 1.25) {};
+		\node [style=none] (2) at (0.75, -1.25) {};
+		\node [style=none] (3) at (0.75, 1.25) {};
+		\node [style=none] (4) at (-0.75, -1.25) {};
+		\node [style=wire label left] (5) at (-1.25, 0) {$\tvarb \scalebox{0.75}{\vard} \tvarc$};
+		\node [style=none] (8) at (-0.25, 0) {};
+		\node [style=none] (9) at (0.25, 0.5) {};
+		\node [style=none] (10) at (0.25, -0.5) {};
+		\node [style=wire label right] (11) at (1.25, -0.5) {$\tvarc$};
+		\node [style=wire label right] (12) at (1.25, 0.5) {$\tvarb$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=tile comb] (1.center)
+			 to (3.center)
+			 to (2.center)
+			 to (4.center)
+			 to cycle;
+		\draw [style=wire, in=0, out=180] (8.center) to (5);
+		\draw [style=wire] (11) to (10.center);
+		\draw [style=wire] (12) to (9.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
