@@ -2,10 +2,10 @@
 \usepackage{ tikz-cd }
 
 \begin{document}
-    \begin{tikzcd}[column sep=large]
+    \begin{tikzcd}[column sep=large, background color=ShadeOfYellow]
         &
         (B \tensor A) \tensor C
-        \arrow{r}{\associator{B}{A}{C}}
+        \arrow[equal]{r}
         &
         B \tensor (A \tensor C)
         \arrow{rd}{\id[B] \tensor \swap{A}{C}}
@@ -13,7 +13,7 @@
         \\
         (A \tensor B) \tensor C
         \arrow{ur}{\swap{A}{B} \tensor \id[C]}
-        \arrow{dr}[swap]{\associator{A}{B}{C}}
+        \arrow[equal]{dr}
         &
         &
         &
@@ -24,6 +24,6 @@
         \arrow{r}[swap]{\swap{A}{B \tensor C}}
         &
         (B \tensor C) \tensor A
-        \arrow{ur}[swap]{\associator{B}{C}{A}}
+        \arrow[equal]{ur}
     \end{tikzcd}
 \end{document}

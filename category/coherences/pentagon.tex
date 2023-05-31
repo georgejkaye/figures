@@ -2,10 +2,10 @@
 \usepackage{ tikz-cd }
 
 \begin{document}
-    \begin{tikzcd}[column sep=-2.25em]
+    \begin{tikzcd}[column sep=-2.25em, background color=ShadeOfYellow]
         &
         (A \tensor (B \tensor C)) \tensor D
-        \arrow{rr}{\associator{A}{B \tensor C}{D}}
+        \arrow[equal]{rr}
         &
         &
         A \tensor ((B \tensor C) \tensor D)
@@ -13,8 +13,8 @@
         &
         \\
         ((A \tensor B) \tensor C) \tensor D
-        \arrow{ur}{\associator{A}{B}{C} \tensor \id[D]}
-        \arrow{drr}{\associator{A \tensor B}{C}{D}}
+        \arrow[equal]{ur}
+        \arrow[equal]{drr}
         &
         &
         &
@@ -24,6 +24,6 @@
         &
         &
         (A \tensor B) \tensor (C \tensor D)
-        \arrow{urr}{\associator{A}{B}{C \tensor D}}
+        \arrow[equal]{urr}
     \end{tikzcd}
 \end{document}
