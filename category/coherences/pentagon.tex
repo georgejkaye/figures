@@ -2,14 +2,14 @@
 \usepackage{ tikz-cd }
 
 \begin{document}
-    \begin{tikzcd}[column sep=-2.25em, background color=ShadeOfYellow]
+    \begin{tikzcd}[column sep=-2.25em]
         &
         (A \tensor (B \tensor C)) \tensor D
         \arrow[equal]{rr}
         &
         &
         A \tensor ((B \tensor C) \tensor D)
-        \arrow{rd}{\id[A] \tensor \associator{B}{C}{D}}
+        \arrow[equal]{rd}
         &
         \\
         ((A \tensor B) \tensor C) \tensor D
