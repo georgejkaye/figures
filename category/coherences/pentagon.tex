@@ -5,16 +5,16 @@
     \begin{tikzcd}[column sep=-2.25em]
         &
         (A \tensor (B \tensor C)) \tensor D
-        \arrow[equal]{rr}
+        \arrow{rr}{\associator{A}{B \tensor C}{D}}
         &
         &
         A \tensor ((B \tensor C) \tensor D)
-        \arrow[equal]{rd}
+        \arrow{rd}{\id[A] \tensor \associator{B}{C}{D}}
         &
         \\
         ((A \tensor B) \tensor C) \tensor D
-        \arrow[equal]{ur}
-        \arrow[equal]{drr}
+        \arrow{ur}{\associator{A}{B}{C} \tensor \id[D]}
+        \arrow{drr}{\associator{A \tensor B}{C}{D}}
         &
         &
         &
@@ -24,6 +24,6 @@
         &
         &
         (A \tensor B) \tensor (C \tensor D)
-        \arrow[equal]{urr}
+        \arrow{urr}{\associator{A}{B}{C \tensor D}}
     \end{tikzcd}
 \end{document}

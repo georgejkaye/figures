@@ -4,12 +4,12 @@
 \begin{document}
     \begin{tikzcd}
         (A \tensor I) \tensor B
-        \arrow[equal]{rr}
-        \arrow[equal]{rd}
+        \arrow{rr}{\associator{A}{I}{B}}
+        \arrow{rd}{\rightunitor{A} \tensor \id[B]}
         &
         &
         A \tensor (I \tensor B)
-        \arrow[equal]{dl}
+        \arrow{dl}{\id[A] \tensor \leftunitor{B}}
         \\
         &
         A \tensor B

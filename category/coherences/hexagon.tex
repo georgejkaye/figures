@@ -5,7 +5,7 @@
     \begin{tikzcd}[column sep=large]
         &
         (B \tensor A) \tensor C
-        \arrow[equal]{r}
+        \arrow{r}{\associator{B}{A}{C}}
         &
         B \tensor (A \tensor C)
         \arrow{rd}{\id[B] \tensor \swap{A}{C}}
@@ -13,7 +13,7 @@
         \\
         (A \tensor B) \tensor C
         \arrow{ur}{\swap{A}{B} \tensor \id[C]}
-        \arrow[equal]{dr}
+        \arrow{dr}[swap]{\associator{A}{B}{C}}
         &
         &
         &
@@ -24,6 +24,6 @@
         \arrow{r}[swap]{\swap{A}{B \tensor C}}
         &
         (B \tensor C) \tensor A
-        \arrow[equal]{ur}
+        \arrow{ur}[swap]{\associator{B}{C}{A}}
     \end{tikzcd}
 \end{document}
