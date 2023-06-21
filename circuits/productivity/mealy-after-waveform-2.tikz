@@ -13,8 +13,8 @@
 		\node [style=none] (12) at (1.75, -1) {};
 		\node [style=wire label mid] (13) at (1.5, 1) {$x$};
 		\node [style=tiny signal seq] (14) at (3.75, -1) {$\overline{\underline{\tvard}}$};
-		\node [style=wire label right] (15) at (7.25, -1) {$n$};
-		\node [style=tiny signal seq] (16) at (6, -1) {$\overline{\underline{\tvarc}}$};
+		\node [style=wire label right] (15) at (7, -1) {$n$};
+		\node [style=tiny signal seq] (16) at (5.75, -1) {$\overline{\underline{\tvarc}}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (1.center) to (3);
