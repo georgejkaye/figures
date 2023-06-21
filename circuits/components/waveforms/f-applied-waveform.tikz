@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style={medium square box \tvarb}] (10) at (1, 0) {$\tvara$};
+		\node [style=tiny signal seq] (15) at (-1, 0) {$\overline{\underline{\tvarc}}$};
+		\node [style=wire label right] (16) at (2.25, 0) {$\tvard$};
+		\node [style=bproduct] (17) at (-2.25, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (15) to (10);
+		\draw [style=wire] (10) to (16);
+		\draw (17) to (15);
+	\end{pgfonlayer}
+\end{tikzpicture}
