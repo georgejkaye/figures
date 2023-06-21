@@ -1,0 +1,50 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (14) at (2.75, -0.5) {};
+		\node [style=none] (15) at (2.75, 1.5) {};
+		\node [style=none] (16) at (-2.25, 1.5) {};
+		\node [style=none] (17) at (-2.25, 0.25) {};
+		\node [style=medium square box comb] (41) at (1.75, -0.5) {$\hat{\tvara}$};
+		\node [style=port] (43) at (1.5, -0.5) {};
+		\node [style=port] (47) at (2, -0.5) {};
+		\node [style=register] (55) at (-1.5, 0.25) {$\overline{\tvarb}$};
+		\node [style=port] (56) at (1.5, -1) {};
+		\node [style=port] (57) at (2, -1) {};
+		\node [style=dangling] (59) at (4, -1) {$\tvare$};
+		\node [style=wire label left] (61) at (-4.5, -1) {$\tvard$};
+		\node [style=port] (62) at (1.5, 0) {};
+		\node [style=port] (63) at (2, 0) {};
+		\node [style=none] (64) at (2.75, 0) {};
+		\node [style=none] (65) at (2.75, 1) {};
+		\node [style=none] (66) at (0.75, 0) {};
+		\node [style=none] (67) at (0.75, 1) {};
+		\node [style=none] (68) at (0.5, -0.5) {};
+		\node [style=none] (69) at (-0.75, 0.25) {};
+		\node [style=wire label mid] (70) at (-0.5, 1.5) {$\tvarg$};
+		\node [style=wire label mid] (71) at (1.75, 1) {$\tvarf$};
+		\node [style=register] (72) at (-3, -1) {$\overline{\tvarc}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (47)
+			 to (14.center)
+			 to [bend right=90, looseness=1.50] (15.center)
+			 to (70.center)
+			 to (16.center)
+			 to [bend left=270, looseness=1.50] (17.center)
+			 to (55);
+		\draw [style=wire] (59) to (57);
+		\draw [style=wire] (63)
+			 to (64.center)
+			 to [bend right=90, looseness=1.50] (65.center)
+			 to (71.center)
+			 to (67.center)
+			 to [bend right=90, looseness=1.75] (66.center)
+			 to (62);
+		\draw [style=wire] (55)
+			 to (69.center)
+			 to [in=-180, out=0] (68.center)
+			 to (43);
+		\draw [style=wire] (56) to (72);
+		\draw [style=wire] (72) to (61);
+	\end{pgfonlayer}
+\end{tikzpicture}
