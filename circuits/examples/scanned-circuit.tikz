@@ -1,0 +1,151 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box seq] (0) at (-6.5, 0) {$d$};
+		\node [style=none] (2) at (-8.75, 0) {};
+		\node [style=none] (5) at (-6, 0.5) {};
+		\node [style=none] (7) at (-10.75, 0) {};
+		\node [style=none] (8) at (-9.75, -1) {};
+		\node [style=none] (10) at (-8.75, 1.25) {};
+		\node [style=mux] (14) at (-8.5, 0.5) {};
+		\node [style=none] (15) at (-8.5, 1.25) {};
+		\node [style=none] (19) at (-9, 1.75) {};
+		\node [style=none] (20) at (-8.5, 0.75) {};
+		\node [style=none] (21) at (-9, -1) {};
+		\node [style=none] (22) at (-8.25, 0.5) {};
+		\node [style=none] (23) at (-7, 0.5) {};
+		\node [style=none] (24) at (-7, -0.5) {};
+		\node [style=none] (25) at (-7.75, -0.5) {};
+		\node [style=medium square box seq] (26) at (0.25, -1) {$d$};
+		\node [style=none] (27) at (-2, 0) {};
+		\node [style=none] (28) at (0.75, -0.5) {};
+		\node [style=none] (29) at (-2.5, 0) {};
+		\node [style=bproduct] (31) at (1.5, -0.5) {};
+		\node [style=none] (34) at (-2.5, 0.75) {};
+		\node [style=mux] (35) at (-1.75, -0.5) {};
+		\node [style=none] (36) at (-1.75, 0.25) {};
+		\node [style=none] (37) at (-2.25, 0.75) {};
+		\node [style=none] (38) at (-1.75, -0.25) {};
+		\node [style=none] (39) at (-2.25, -2.75) {};
+		\node [style=none] (40) at (-1.5, -0.5) {};
+		\node [style=none] (41) at (-0.25, -0.5) {};
+		\node [style=none] (42) at (-0.25, -1.5) {};
+		\node [style=none] (43) at (-0.5, -1.5) {};
+		\node [style=bproduct] (44) at (-11.5, -2.75) {};
+		\node [style=none] (53) at (-3, 1.75) {};
+		\node [style=bproduct] (54) at (-11, 1.75) {};
+		\node [style=none] (55) at (-10.25, 2.5) {};
+		\node [style=none] (56) at (-4, 2.5) {};
+		\node [style=none] (58) at (1.25, 1.75) {};
+		\node [style=wire label left] (59) at (-16.25, -2.75) {$\mathsf{Clk}$};
+		\node [style=none] (60) at (-12.5, 1.25) {};
+		\node [style=none] (61) at (-5, 1.75) {};
+		\node [style=none] (62) at (-5, 3) {};
+		\node [style=none] (63) at (10, 3) {};
+		\node [style=none] (64) at (-12.5, 3.5) {};
+		\node [style=none] (65) at (10, 3.5) {};
+		\node [style=medium square box seq] (66) at (8, -1.75) {$F$};
+		\node [style=none] (67) at (2.5, 0.25) {};
+		\node [style=none] (69) at (2.5, -1.75) {};
+		\node [style=none] (70) at (7.5, -1.75) {};
+		\node [style=none] (71) at (7.5, -1.25) {};
+		\node [style=none] (72) at (3.5, -1.25) {};
+		\node [style=wire label left] (74) at (-16.25, -3.5) {$\mathsf{A}$};
+		\node [style=none] (75) at (7.5, -2.25) {};
+		\node [style=none] (76) at (1.5, -3.5) {};
+		\node [style=none] (77) at (3.75, -2.25) {};
+		\node [style=none] (78) at (8.5, -1.75) {};
+		\node [style=none] (79) at (8.5, -1.25) {};
+		\node [style=none] (80) at (10, -1.25) {};
+		\node [style=none] (81) at (10, -1.75) {};
+		\node [style=wire label right] (83) at (3.75, 0.25) {$\mathsf{Scan}_\mathsf{out}$};
+		\node [style=none] (84) at (8.5, -2.25) {};
+		\node [style=wire label right] (85) at (13.25, -3) {$\mathsf{Z}$};
+		\node [style=none] (86) at (10.75, -3) {};
+		\node [style=none] (87) at (9, -2.25) {};
+		\node [style=wire label left] (88) at (-13.25, -1.25) {$\mathsf{Scan}_\mathsf{in}$};
+		\node [style=wire label left] (89) at (-13.25, -0.25) {$\mathsf{Scan}_\mathsf{en}$};
+		\node [style=none] (90) at (-12.5, -0.25) {};
+		\node [style=none] (91) at (-11.5, 1.75) {};
+		\node [style=none] (92) at (-12.5, -1.25) {};
+		\node [style=none] (93) at (-3, -1) {};
+		\node [style=none] (94) at (-2, -1) {};
+		\node [style=bproduct] (95) at (-4.5, 0.5) {};
+		\node [style=none] (96) at (-16.25, -1.75) {};
+		\node [style=none] (98) at (-16.25, 4.5) {};
+		\node [style=none] (100) at (6.75, -2) {};
+		\node [style=none] (101) at (6.75, 4.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (88)
+			 to (92.center)
+			 to [in=-180, out=0] (7.center)
+			 to (2.center);
+		\draw [style=wire] (10.center)
+			 to (60.center)
+			 to [bend right=270, looseness=1.25] (64.center)
+			 to (65.center)
+			 to [in=0, out=0, looseness=1.25] (81.center)
+			 to (78.center);
+		\draw [style=wire] (54)
+			 to (19.center)
+			 to [in=90, out=0, looseness=1.25] (15.center)
+			 to (20.center);
+		\draw [style=wire] (23.center) to (22.center);
+		\draw [style=wire] (44)
+			 to [in=-180, out=75, looseness=0.75] (8.center)
+			 to (21.center)
+			 to [in=-180, out=0] (25.center)
+			 to (24.center);
+		\draw [style=wire] (27.center)
+			 to (29.center)
+			 to [in=0, out=180, looseness=1.50] (61.center)
+			 to [bend right=270, looseness=1.75] (62.center)
+			 to (63.center)
+			 to [bend left=90] (80.center)
+			 to (79.center);
+		\draw [style=wire] (28.center) to (31);
+		\draw [style=wire] (34.center)
+			 to (37.center)
+			 to [in=90, out=0, looseness=1.25] (36.center)
+			 to (38.center);
+		\draw [style=wire] (41.center) to (40.center);
+		\draw [style=wire] (42.center)
+			 to (43.center)
+			 to [in=0, out=-180] (39.center)
+			 to (44);
+		\draw [style=wire] (95)
+			 to [in=-180, out=75] (53.center)
+			 to (58.center)
+			 to [in=180, out=0] (72.center)
+			 to (71.center);
+		\draw [style=wire, in=180, out=75] (54) to (55.center);
+		\draw [style=wire, in=0, out=-180, looseness=0.75] (34.center) to (56.center);
+		\draw [style=wire] (56.center) to (55.center);
+		\draw [style=wire] (59) to (44);
+		\draw [style=wire] (31)
+			 to [in=-180, out=60] (67.center)
+			 to (83);
+		\draw [style=wire, in=-75, out=-180] (69.center) to (31);
+		\draw [style=wire] (70.center) to (69.center);
+		\draw [style=wire] (75.center)
+			 to (77.center)
+			 to [in=0, out=-180] (76.center)
+			 to (74);
+		\draw [style=wire] (84.center)
+			 to (87.center)
+			 to [in=-180, out=0] (86.center)
+			 to (85);
+		\draw [style=wire] (54)
+			 to (91.center)
+			 to [in=0, out=-180, looseness=0.50] (90.center)
+			 to (89);
+		\draw [style=wire] (94.center)
+			 to (93.center)
+			 to [in=-75, out=-180] (95);
+		\draw [style=wire] (5.center) to (95);
+		\draw [style=juxtaposition] (100.center) to (96.center);
+		\draw [style=juxtaposition] (98.center) to (96.center);
+		\draw [style=juxtaposition] (98.center) to (101.center);
+		\draw [style=juxtaposition] (100.center) to (101.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
