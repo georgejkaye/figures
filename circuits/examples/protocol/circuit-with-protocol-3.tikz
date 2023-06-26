@@ -1,0 +1,12 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (3) at (-0.75, -0.5) {};
+		\node [style=none] (4) at (0.75, -0.5) {};
+		\node [style=bproduct] (26) at (0, 0.5) {};
+		\node [style=none] (28) at (-0.75, 0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (4.center) to (3.center);
+		\draw [style=wire] (28.center) to (26);
+	\end{pgfonlayer}
+\end{tikzpicture}
