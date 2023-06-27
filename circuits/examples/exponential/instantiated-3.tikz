@@ -1,0 +1,49 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=and] (14) at (4.75, -0.25) {};
+		\node [style=bproduct] (15) at (-0.25, -0.25) {};
+		\node [style=none] (16) at (-2, -0.25) {};
+		\node [style=none] (20) at (5.25, -0.25) {};
+		\node [style=none] (21) at (6.5, -0.25) {};
+		\node [style=none] (22) at (0, 1.5) {};
+		\node [style=none] (24) at (4.75, 1.5) {};
+		\node [style=medium square box comb] (26) at (1.5, 1) {$\mathsf{op}_{i}$};
+		\node [style=none] (28) at (0.75, 0.5) {};
+		\node [style=none] (29) at (1.25, 1.5) {};
+		\node [style=none] (30) at (1.25, 0.5) {};
+		\node [style=none] (31) at (1.25, 0.5) {};
+		\node [style=none] (32) at (2, 1.5) {};
+		\node [style=none] (33) at (2, 0.5) {};
+		\node [style=none] (42) at (2.75, 0.5) {};
+		\node [style=none] (43) at (0.5, -1) {};
+		\node [style=none] (44) at (2.5, -1) {};
+		\node [style=none] (53) at (4, -0.5) {};
+		\node [style=none] (54) at (4.5, -0.5) {};
+		\node [style=none] (55) at (4, 0) {};
+		\node [style=none] (56) at (4.5, 0) {};
+		\node [style=none] (57) at (-2, 0.5) {};
+		\node [style=none] (58) at (6.5, 0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (16.center) to (15);
+		\draw [style=wire] (56.center)
+			 to (55.center)
+			 to [in=0, out=-180] (42.center)
+			 to (33.center);
+		\draw [style=wire] (21.center) to (20.center);
+		\draw [style=wire] (15)
+			 to [in=-180, out=75] (28.center)
+			 to (31.center);
+		\draw [style=wire] (54.center)
+			 to (53.center)
+			 to [in=0, out=180, looseness=1.25] (44.center)
+			 to (43.center);
+		\draw [style=wire, in=-75, out=180] (43.center) to (15);
+		\draw [style=wire] (57.center)
+			 to [in=180, out=0, looseness=1.25] (22.center)
+			 to (29.center);
+		\draw [style=wire] (32.center)
+			 to (24.center)
+			 to [in=-180, out=0] (58.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -20,7 +20,7 @@
 		\draw [style=wire] (3) to (1);
 		\draw [style=wire] (13.center)
 			 to (11.center)
-			 to [in=0, out=-180, looseness=1.25] (7.center)
+			 to [in=0, out=-180] (7.center)
 			 to (4.center)
 			 to [in=-60, out=-180] (1);
 		\draw [style=wire] (1)
