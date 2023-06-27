@@ -88,3 +88,4 @@
 \tikzstyle{wiredash}=[-, line width={\stringwidth}]
 \tikzstyle{rewrite}=[-, dashed, line width={\stringwidth}]
 \tikzstyle{juxtaposition}=[-, draw={rgb,255: red,128; green,128; blue,128}, densely dashed, line width={\stringwidth}]
+\tikzstyle{functor box}=[-, thick, draw={rgb,255: red,83; green,83; blue,83}]

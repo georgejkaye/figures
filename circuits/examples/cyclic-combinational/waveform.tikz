@@ -1,0 +1,88 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box comb] (298) at (0, 0) {$G$};
+		\node [style=tiny box seq] (307) at (-2, 0) {$v_0$};
+		\node [style=medium square box comb] (308) at (2.25, 0) {$F$};
+		\node [style=none] (309) at (3.5, 0) {};
+		\node [style=delay] (310) at (1, -1.5) {};
+		\node [style=bproduct] (311) at (4.75, -0.75) {};
+		\node [style=none] (312) at (3.5, -1.5) {};
+		\node [style=none] (314) at (5.5, -0.75) {};
+		\node [style=medium square box comb] (315) at (-9, 0) {$F$};
+		\node [style=tiny box seq] (316) at (-11, 0) {$v_1$};
+		\node [style=medium square box comb] (317) at (-6.75, 0) {$G$};
+		\node [style=none] (318) at (-5.5, 0) {};
+		\node [style=bproduct] (320) at (-4.5, -0.75) {};
+		\node [style=none] (321) at (-5.5, -1.5) {};
+		\node [style=none] (325) at (-3.75, -0.75) {};
+		\node [style=none] (326) at (-2.25, -1.5) {};
+		\node [style=delay] (327) at (-8.5, -1.5) {};
+		\node [style=medium square box comb] (328) at (-18.5, 0) {$G$};
+		\node [style=tiny box seq] (329) at (-20.5, 0) {$v_2$};
+		\node [style=medium square box comb] (330) at (-16.25, 0) {$F$};
+		\node [style=none] (331) at (-15, 0) {};
+		\node [style=bproduct] (333) at (-14, -0.75) {};
+		\node [style=none] (334) at (-15, -1.5) {};
+		\node [style=none] (335) at (-13.25, -0.75) {};
+		\node [style=none] (336) at (-11.75, -1.5) {};
+		\node [style=delay] (337) at (-18, -1.5) {};
+		\node [style=medium square box comb] (338) at (-28, 0) {$F$};
+		\node [style=tiny box seq] (339) at (-30, 0) {$v_3$};
+		\node [style=medium square box comb] (340) at (-25.75, 0) {$G$};
+		\node [style=none] (341) at (-24.5, 0) {};
+		\node [style=delay] (342) at (-27.5, -1.5) {};
+		\node [style=bproduct] (343) at (-23.5, -0.75) {};
+		\node [style=none] (344) at (-24.5, -1.5) {};
+		\node [style=none] (345) at (-22.75, -0.75) {};
+		\node [style=none] (346) at (-21.25, -1.5) {};
+		\node [style=none] (347) at (-29.25, -1.5) {};
+		\node [style=none] (348) at (-30, -1.5) {$\cdots$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (298) to (307);
+		\draw [style=wire] (298) to (308);
+		\draw [style=wire] (308)
+			 to (309.center)
+			 to [in=120, out=0] (311);
+		\draw [style=wire] (311)
+			 to [in=0, out=-120] (312.center)
+			 to (310);
+		\draw (314.center) to (311);
+		\draw [style=wire] (315) to (316);
+		\draw [style=wire] (315) to (317);
+		\draw [style=wire] (317)
+			 to (318.center)
+			 to [in=120, out=0] (320);
+		\draw [style=wire] (320)
+			 to [in=0, out=-120] (321.center)
+			 to (327);
+		\draw [style=wire] (320)
+			 to (325.center)
+			 to [in=-180, out=0, looseness=0.75] (326.center)
+			 to (310);
+		\draw [style=wire] (328) to (329);
+		\draw [style=wire] (328) to (330);
+		\draw [style=wire] (330)
+			 to (331.center)
+			 to [in=120, out=0] (333);
+		\draw [style=wire] (333)
+			 to [in=0, out=-120] (334.center)
+			 to (337);
+		\draw [style=wire] (333)
+			 to (335.center)
+			 to [in=-180, out=0, looseness=0.75] (336.center)
+			 to (327);
+		\draw [style=wire] (338) to (339);
+		\draw [style=wire] (338) to (340);
+		\draw [style=wire] (340) to (341.center);
+		\draw [style=wire, in=120, out=0] (341.center) to (343);
+		\draw [style=wire] (343)
+			 to [in=0, out=-120] (344.center)
+			 to (342);
+		\draw [style=wire] (343)
+			 to [in=180, out=0] (345.center)
+			 to [in=-180, out=0, looseness=0.75] (346.center)
+			 to (337);
+		\draw (342) to (347.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

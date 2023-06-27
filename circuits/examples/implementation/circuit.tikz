@@ -1,0 +1,30 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium box comb] (0) at (-1, -0.25) {$+$};
+		\node [style=none] (1) at (-2.25, 0.25) {};
+		\node [style=none] (2) at (-2.25, -0.75) {};
+		\node [style=none] (3) at (-1.25, 0.25) {};
+		\node [style=none] (4) at (-1.25, -0.75) {};
+		\node [style=none] (6) at (1.25, 0.5) {};
+		\node [style=none] (7) at (-0.5, -0.25) {};
+		\node [style=medium box comb] (8) at (2, 0.5) {$?$};
+		\node [style=bproduct] (9) at (0.25, -0.25) {};
+		\node [style=none] (15) at (1.5, 0.5) {};
+		\node [style=none] (18) at (1.25, -0.75) {};
+		\node [style=none] (20) at (3, 0.5) {};
+		\node [style=none] (22) at (2.5, 0.5) {};
+		\node [style=none] (24) at (3, -0.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (1.center) to (3.center);
+		\draw [style=wire] (4.center) to (2.center);
+		\draw [style=wire] (15.center)
+			 to (6.center)
+			 to [in=75, out=-180] (9);
+		\draw [style=wire, in=0, out=-180] (9) to (7.center);
+		\draw [style=wire] (24.center)
+			 to (18.center)
+			 to [in=300, out=180] (9);
+		\draw [style=wire] (22.center) to (20.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
