@@ -6,7 +6,7 @@
 		\node [style=none] (4) at (-1.25, 0) {};
 		\node [style=none] (5) at (-0.25, 0) {};
 		\node [style=none] (6) at (1.5, -1) {};
-		\node [style=wire label right] (7) at (3.5, -1.75) {$\tvard$};
+		\node [style=wire label right] (7) at (3.75, -2) {$\tvard$};
 		\node [style=none] (8) at (0.25, 0) {};
 		\node [style=none] (9) at (2.75, 0) {};
 		\node [style=none] (10) at (2.75, 1.75) {};
@@ -17,7 +17,7 @@
 		\node [style=none] (15) at (-2.5, 3) {};
 		\node [style=none] (16) at (9.5, -3) {};
 		\node [style=none] (17) at (0.25, -1) {};
-		\node [style=none] (18) at (2.5, -1.75) {};
+		\node [style=none] (18) at (2.75, -2) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (2.center) to (1);

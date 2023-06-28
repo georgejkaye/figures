@@ -73,8 +73,8 @@
         \draw [blue, thick, - ] (-0.15,-0.15);
     }}, postaction=decorate]
 \tikzstyle{traced}=[-, densely dashed, draw=gray]
-\tikzstyle{arrow}=[<-]
-\tikzstyle{arrow up}=[->]
+\tikzstyle{arrow}=[<-, line width={\stringwidth}]
+\tikzstyle{arrow up}=[->, line width={\stringwidth}]
 \tikzstyle{dashed arrow}=[<-, dashed]
 \tikzstyle{unit wire}=[-, fill=none, draw=unit, line width={\stringwidth}]
 \tikzstyle{interfacearrow}=[->, very thick, dashed]
