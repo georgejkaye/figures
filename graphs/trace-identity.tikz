@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-0.75, 0.75) {};
+		\node [style=none] (1) at (0.75, 0.75) {};
+		\node [style=none] (2) at (0.75, -0.75) {};
+		\node [style=none] (6) at (-0.75, -0.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (2.center)
+			 to [bend right=90, looseness=1.25] (1.center)
+			 to (0.center)
+			 to [bend left=270, looseness=1.25] (6.center);
+		\draw [style=wire] (2.center) to (6.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

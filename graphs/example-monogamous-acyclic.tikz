@@ -35,8 +35,8 @@
 		\node [style=none] (78) at (-1.5, 0) {};
 		\node [style=vertex] (79) at (-7, -1.25) {};
 		\node [style=label] (80) at (-7, -0.5) {$1$};
-		\node [style=label] (81) at (0.5, -1.5) {$2$};
-		\node [style=label] (82) at (-0.5, -1.5) {$1$};
+		\node [style=label] (81) at (0.75, -1.5) {$2$};
+		\node [style=label] (82) at (-0.75, -1.5) {$1$};
 		\node [style=label] (83) at (-3.75, 1.25) {$0$};
 		\node [style=vertex] (84) at (7, -1.75) {};
 		\node [style=label] (85) at (7, -1) {$4$};

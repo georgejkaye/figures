@@ -1,0 +1,43 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (1, 1) {};
+		\node [style=none] (1) at (1, -1) {};
+		\node [style=none] (2) at (-1, -1) {};
+		\node [style=none] (4) at (-1, 1) {};
+		\node [style=none] (43) at (4.5, 1) {};
+		\node [style=none] (44) at (2.5, 1) {};
+		\node [style=none] (45) at (2.5, -1) {};
+		\node [style=none] (46) at (4.5, -1) {};
+		\node [style=none] (47) at (-2.5, 1) {};
+		\node [style=none] (48) at (-4.5, 1) {};
+		\node [style=none] (49) at (-4.5, -1) {};
+		\node [style=none] (50) at (-2.5, -1) {};
+		\node [style=none] (56) at (2.25, 0) {};
+		\node [style=none] (57) at (1.25, 0) {};
+		\node [style=none] (58) at (-2.25, 0) {};
+		\node [style=none] (59) at (-1.25, 0) {};
+		\node [style=vertex] (60) at (0, -0.25) {};
+		\node [style=vertex] (61) at (-3.5, -0.25) {};
+		\node [style=label] (62) at (0, 0.5) {$0$};
+		\node [style=label] (63) at (-3.5, 0.5) {$0$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (4.center)
+			 to (0.center)
+			 to (1.center)
+			 to (2.center)
+			 to cycle;
+		\draw [style=interface] (46.center)
+			 to (43.center)
+			 to (44.center)
+			 to (45.center)
+			 to cycle;
+		\draw [style=interface] (50.center)
+			 to (47.center)
+			 to (48.center)
+			 to (49.center)
+			 to cycle;
+		\draw [style=arrow up] (56.center) to (57.center);
+		\draw [style=arrow up] (58.center) to (59.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
