@@ -1,13 +1,16 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=bproduct] (1) at (-0.25, 0) {};
-		\node [style=bproduct] (2) at (0.5, -0.5) {};
-		\node [style=dangling] (3) at (0.75, 0.5) {};
-		\node [style=dangling] (4) at (-1, 0) {};
+		\node [style=bproduct] (1) at (-0.75, 0) {};
+		\node [style=bproduct] (2) at (0.5, -0.75) {};
+		\node [style=none] (3) at (0.5, 0.75) {};
+		\node [style=dangling] (4) at (-1.75, 0) {};
+		\node [style=wire label left] (5) at (1.75, 0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (4) to (1);
 		\draw [style=wire, in=-180, out=-75] (1) to (2);
-		\draw [style=wire, in=-180, out=75] (1) to (3);
+		\draw [style=wire] (5)
+			 to (3.center)
+			 to [in=75, out=-180] (1);
 	\end{pgfonlayer}
 \end{tikzpicture}

@@ -37,8 +37,8 @@
 		\node [style=label] (75) at (-3.5, -0.5) {$3$};
 		\node [style=vertex] (76) at (6.75, 0.75) {};
 		\node [style=vertex] (77) at (6.75, -1) {};
-		\node [style=label] (78) at (6.75, 1.5) {$3$};
-		\node [style=label] (79) at (6.75, -0.25) {$4$};
+		\node [style=label] (78) at (6.75, 1.5) {$2$};
+		\node [style=label] (79) at (6.75, -0.25) {$3$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=graph] (4.center)

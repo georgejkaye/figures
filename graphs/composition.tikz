@@ -1,0 +1,54 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (4.75, 1.5) {};
+		\node [style=none] (1) at (4.75, -1.5) {};
+		\node [style=none] (2) at (-5, -1.5) {};
+		\node [style=none] (4) at (-5, 1.5) {};
+		\node [style=none] (47) at (-6.5, 1) {};
+		\node [style=none] (48) at (-8.5, 1) {};
+		\node [style=none] (49) at (-8.5, -1) {};
+		\node [style=none] (50) at (-6.5, -1) {};
+		\node [style=none] (58) at (-6.25, 0) {};
+		\node [style=none] (59) at (-5.25, 0) {};
+		\node [style=vertex] (60) at (-3.5, 0) {};
+		\node [style=vertex] (61) at (-7.5, -0.25) {};
+		\node [style=label] (62) at (-4.25, 0) {$0$};
+		\node [style=label] (63) at (-7.5, 0.5) {$0$};
+		\node [style=edge] (68) at (-1.75, 0) {$\phi$};
+		\node [style=vertex] (72) at (0, 0) {};
+		\node [style=label] (73) at (4, 0) {$1$};
+		\node [style=none] (74) at (6.25, 1) {};
+		\node [style=none] (75) at (8.25, 1) {};
+		\node [style=none] (76) at (8.25, -1) {};
+		\node [style=none] (77) at (6.25, -1) {};
+		\node [style=none] (78) at (6, 0) {};
+		\node [style=none] (79) at (5, 0) {};
+		\node [style=vertex] (80) at (7.25, -0.25) {};
+		\node [style=label] (81) at (7.25, 0.5) {$1$};
+		\node [style=edge] (82) at (1.75, 0) {$\psi$};
+		\node [style=vertex] (83) at (3.25, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (4.center)
+			 to (0.center)
+			 to (1.center)
+			 to (2.center)
+			 to cycle;
+		\draw [style=interface] (50.center)
+			 to (47.center)
+			 to (48.center)
+			 to (49.center)
+			 to cycle;
+		\draw [style=arrow up] (58.center) to (59.center);
+		\draw [style=interface] (77.center)
+			 to (74.center)
+			 to (75.center)
+			 to (76.center)
+			 to cycle;
+		\draw [style=arrow up] (78.center) to (79.center);
+		\draw [style=tentacle] (68) to (72);
+		\draw [style=tentacle] (68) to (60);
+		\draw [style=tentacle] (82) to (83);
+		\draw [style=tentacle] (82) to (72);
+	\end{pgfonlayer}
+\end{tikzpicture}

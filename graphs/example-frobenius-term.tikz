@@ -23,6 +23,8 @@
 		\node [style=none] (30) at (0.5, -1.25) {};
 		\node [style=none] (31) at (4, -0.5) {};
 		\node [style=none] (32) at (3.25, -0.5) {};
+		\node [style=bproduct] (33) at (1.25, -1.25) {};
+		\node [style=bproduct] (34) at (2, -0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (1) to (0);
@@ -46,5 +48,6 @@
 			 to [in=0, out=-180, looseness=1.25] (29.center)
 			 to (30.center)
 			 to [in=-60, out=180] (28);
+		\draw [style=wire, in=75, out=180] (34) to (33);
 	\end{pgfonlayer}
 \end{tikzpicture}
