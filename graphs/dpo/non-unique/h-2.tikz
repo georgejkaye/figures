@@ -2,8 +2,8 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (0) at (-3.75, 1.5) {};
 		\node [style=none] (1) at (3.75, 1.5) {};
-		\node [style=none] (2) at (3.75, -1.5) {};
-		\node [style=none] (3) at (-3.75, -1.5) {};
+		\node [style=none] (2) at (3.75, -1.25) {};
+		\node [style=none] (3) at (-3.75, -1.25) {};
 		\node [style=vertex] (5) at (3, 0) {};
 		\node [style=small label] (6) at (0, 0.75) {$3\ 0$};
 		\node [style=small label] (7) at (3, 0.75) {$1$};
