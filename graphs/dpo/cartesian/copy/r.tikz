@@ -4,13 +4,13 @@
 		\node [style=none] (1) at (-2.75, -2.75) {};
 		\node [style=none] (2) at (2.75, -2.75) {};
 		\node [style=none] (3) at (2.75, 2.5) {};
-		\node [style=edge] (4) at (0, 1) {$e$};
+		\node [style=edge] (4) at (0, 1) {$\tvara$};
 		\node [style=vertex] (5) at (-1.75, -0.25) {};
 		\node [style=vertex] (7) at (1.75, 1) {};
 		\node [style=none] (9) at (0.25, 1) {};
 		\node [style=small label] (10) at (-2, 0.5) {$0$};
 		\node [style=small label] (11) at (1.75, 1.75) {$1$};
-		\node [style=edge] (12) at (0, -1.5) {$e$};
+		\node [style=edge] (12) at (0, -1.5) {$\tvara$};
 		\node [style=none] (13) at (-0.25, 1) {};
 		\node [style=none] (14) at (-0.5, -1.5) {};
 		\node [style=vertex] (15) at (1.75, -1.5) {};

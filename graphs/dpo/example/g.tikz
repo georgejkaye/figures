@@ -1,0 +1,41 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-2.5, 3.5) {};
+		\node [style=none] (1) at (9.75, 3.5) {};
+		\node [style=none] (2) at (9.75, -2.5) {};
+		\node [style=none] (3) at (-2.5, -2.5) {};
+		\node [style=edge] (4) at (0, 0.25) {$\phi$};
+		\node [style=none] (5) at (-1.25, 1.5) {};
+		\node [style=none] (6) at (-0.25, -0.25) {};
+		\node [style=none] (8) at (0.25, 0.25) {};
+		\node [style=vertex] (10) at (-1.5, -0.25) {};
+		\node [style=vertex] (12) at (1.75, 0.25) {};
+		\node [style=small label] (16) at (-1.5, -1.25) {$4$};
+		\node [style=edge] (18) at (3.5, 0.25) {$f$};
+		\node [style=vertex] (19) at (5.25, 0.25) {};
+		\node [style=none] (20) at (6, 1.25) {};
+		\node [style=none] (22) at (-0.5, 0.5) {};
+		\node [style=edge] (23) at (7.25, -0.75) {$\psi$};
+		\node [style=none] (24) at (6.75, -0.75) {};
+		\node [style=vertex] (25) at (8.75, -0.75) {};
+		\node [style=small label] (26) at (6, 0.25) {$1\ 2$};
+		\node [style=small label] (27) at (8.75, 0) {$4$};
+		\node [style=small label] (28) at (1.75, 1) {$0$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (1.center)
+			 to (2.center)
+			 to (3.center)
+			 to (0.center)
+			 to cycle;
+		\draw [style=wire] (10) to (6.center);
+		\draw [style=wire] (8.center) to (12);
+		\draw [style=tentacle] (18) to (12);
+		\draw [style=tentacle] (18) to (19);
+		\draw [style=tentacle, in=-120, out=60] (19) to (20.center);
+		\draw [style=tentacle, in=-180, out=-135, looseness=1.75] (5.center) to (22.center);
+		\draw [style=tentacle, in=45, out=60, looseness=0.75] (20.center) to (5.center);
+		\draw [style=tentacle, in=-75, out=-180] (24.center) to (19);
+		\draw [style=tentacle] (25) to (23);
+	\end{pgfonlayer}
+\end{tikzpicture}
