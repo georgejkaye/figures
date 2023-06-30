@@ -1,0 +1,20 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (8) at (-1.75, -1) {};
+		\node [style=none] (20) at (5.25, -1) {};
+		\node [style=none] (21) at (5.25, 3) {};
+		\node [style=none] (22) at (5.25, -2) {};
+		\node [style=none] (23) at (-1.75, -2) {};
+		\node [style=none] (24) at (-1.75, 3) {};
+		\node [style=medium box] (26) at (0.25, -1) {$e_1$};
+		\node [style=medium box] (27) at (3.25, -1) {$e_2$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (8.center) to (20.center);
+		\draw [style=boundary box] (24.center)
+			 to (21.center)
+			 to (22.center)
+			 to (23.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}

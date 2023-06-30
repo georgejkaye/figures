@@ -1,0 +1,41 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1.5, 0) {};
+		\node [style=bproduct] (1) at (-0.5, 0) {};
+		\node [style=none] (2) at (0, 0.5) {};
+		\node [style=none] (3) at (0, -0.5) {};
+		\node [style=none] (4) at (2.25, 0.5) {};
+		\node [style=none] (5) at (2.25, 1.25) {};
+		\node [style=none] (6) at (-1.5, 1.25) {};
+		\node [style=none] (7) at (1.75, -0.5) {};
+		\node [style=none] (8) at (0.75, 0.5) {};
+		\node [style=none] (9) at (0.75, -0.5) {};
+		\node [style=none] (10) at (1.75, 0.5) {};
+		\node [style=none] (11) at (3, -0.5) {};
+		\node [style=none] (12) at (-2.25, 1.5) {};
+		\node [style=none] (13) at (-2.25, -1) {};
+		\node [style=none] (14) at (3, -1) {};
+		\node [style=none] (15) at (3, 1.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (1.center)
+			 to (0.center)
+			 to [bend left=90, looseness=1.50] (6.center)
+			 to (5.center)
+			 to [bend left=90, looseness=1.75] (4.center)
+			 to (10.center)
+			 to [in=0, out=-180] (9.center)
+			 to (3.center)
+			 to [in=-75, out=-180] cycle;
+		\draw [style=wire] (1)
+			 to [in=180, out=75] (2.center)
+			 to (8.center)
+			 to [in=-180, out=0] (7.center)
+			 to (11.center);
+		\draw [style=boundary box] (14.center)
+			 to (15.center)
+			 to (12.center)
+			 to (13.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}
