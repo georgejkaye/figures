@@ -23,7 +23,7 @@
 		\node [style=none] (54) at (-1.5, 0.5) {};
 		\node [style=none] (55) at (-3.75, 0) {};
 		\node [style=register] (57) at (-2.25, 0.5) {$\bullet$};
-		\node [style=register] (58) at (-5.5, 0) {$\overline{v}$};
+		\node [style=register] (58) at (-5.5, 0) {$\overline{s}$};
 		\node [style=bproduct] (65) at (-6.75, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

@@ -23,7 +23,7 @@
 		\node [style=none] (54) at (-1, 0.25) {};
 		\node [style=none] (55) at (-3.25, -0.25) {};
 		\node [style=register] (57) at (-1.75, 0.25) {$\bullet$};
-		\node [style=register] (58) at (-4.25, -0.25) {$\overline{v}$};
+		\node [style=register] (58) at (-4.25, -0.25) {$\overline{s}$};
 		\node [style=none] (65) at (-5.25, -0.25) {};
 		\node [style=bproduct] (66) at (3.5, -1) {};
 		\node [style=none] (67) at (5, -1) {};
