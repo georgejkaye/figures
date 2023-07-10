@@ -18,7 +18,7 @@
 		\node [style=port] (26) at (1.5, -0.75) {};
 		\node [style=port] (27) at (2, -0.75) {};
 		\node [style=wire label right] (28) at (3.5, -0.75) {$\overline{s}$};
-		\node [style=none] (29) at (-5.5, 0.5) {};
+		\node [style=none] (29) at (-4.5, 0.5) {};
 		\node [style=none] (32) at (4.5, 0.5) {};
 		\node [style=none] (33) at (0, 0) {};
 		\node [style=none] (34) at (0, -1.5) {};

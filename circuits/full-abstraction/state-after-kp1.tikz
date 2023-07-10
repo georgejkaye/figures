@@ -1,8 +1,8 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (15) at (-2.25, 0.5) {$\hat{\tvara}^{\tvarb}_{\tvarc}$};
+		\node [style=medium square box seq] (15) at (-2, 0.5) {${\tvara}_{\,\listlistvar{u}}$};
 		\node [style=medium square box comb] (16) at (0, 0) {$\hat{\tvara}$};
-		\node [style=tiny box seq] (22) at (-4.5, -0.5) {$\tvarc(\tvarb)$};
+		\node [style=tiny box seq] (22) at (-3.75, -0.5) {$\listvar{a}$};
 		\node [style=port] (23) at (0.25, 0.5) {};
 		\node [style=wire label right] (24) at (2, 0.5) {$\tvard$};
 		\node [style=port] (25) at (0.25, -0.5) {};

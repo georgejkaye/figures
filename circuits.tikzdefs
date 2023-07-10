@@ -7,7 +7,7 @@
 \newcommand{\thickness}{0.5mm}
 \newcommand{\stringwidth}{0.4mm}
 \newcommand{\mediumwidth}{7.5mm}
-\newcommand{\smallwidth}{6mm}
+\newcommand{\smallwidth}{5mm}
 \newcommand{\tinywidth}{5.75mm}
 \newcommand{\boxsize}{\Large}
 \newcommand{\corners}{}

@@ -1,23 +1,23 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box white] (0) at (0, 0.75) {$f$};
-		\node [style=port] (2) at (-0.25, 1.25) {};
-		\node [style=port] (3) at (-0.25, 0.25) {};
-		\node [style=dangling] (4) at (-2.75, 0.25) {};
-		\node [style=none] (5) at (-1.5, 1.25) {};
-		\node [style=none] (6) at (-1.5, 2.25) {};
-		\node [style=none] (7) at (1.5, 2.25) {};
-		\node [style=port] (8) at (0.25, 1.25) {};
-		\node [style=port] (9) at (0.25, 0.25) {};
-		\node [style=none] (10) at (1.5, 1.25) {};
-		\node [style=dangling] (11) at (3, 0.25) {};
-		\node [style=dangling] (12) at (-2.75, -1.75) {};
-		\node [style=dangling] (13) at (3, -1.75) {};
-		\node [style=tiny box white] (14) at (0, -1.75) {$g$};
-		\node [style=none] (15) at (-2.25, 2.75) {};
-		\node [style=none] (16) at (-2.25, -2.75) {};
-		\node [style=none] (17) at (2.25, -2.75) {};
-		\node [style=none] (18) at (2.25, 2.75) {};
+		\node [style={medium square box \tvarc}] (0) at (0, 0.25) {$\tvara$};
+		\node [style=port] (2) at (-0.25, 0.75) {};
+		\node [style=port] (3) at (-0.25, -0.25) {};
+		\node [style=wire label left] (4) at (-2.75, -0.25) {$\tvard$};
+		\node [style=none] (5) at (-1.5, 0.75) {};
+		\node [style=none] (6) at (-1.5, 1.75) {};
+		\node [style=none] (7) at (1.5, 1.75) {};
+		\node [style=port] (8) at (0.25, 0.75) {};
+		\node [style=port] (9) at (0.25, -0.25) {};
+		\node [style=none] (10) at (1.5, 0.75) {};
+		\node [style=wire label right] (11) at (3, -0.25) {$\tvare$};
+		\node [style=wire label left] (12) at (-2.75, -2.25) {$\tvarf$};
+		\node [style=wire label right] (13) at (3, -2.25) {$\tvarg$};
+		\node [style={tiny box \tvarc}] (14) at (0, -2.25) {$\tvarb$};
+		\node [style=none] (15) at (-2.25, 2.25) {};
+		\node [style=none] (16) at (-2.25, -3.25) {};
+		\node [style=none] (17) at (2.25, -3.25) {};
+		\node [style=none] (18) at (2.25, 2.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (8) to (10.center);
