@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (0) at (-0.75, 0) {${\tvara}^{\,\tvarb}_{\,\tvarc}$};
+		\node [style=medium square box seq] (0) at (-1.5, 0) {${\tvara}_{\prefix{\tvarb}{\tvarc}}$};
 		\node [style=wire label right] (1) at (0.5, 0) {$\tvard$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box comb] (0) at (-2, 0) {$\tilde{F}$};
+		\node [style=medium square box comb] (0) at (-2, 0) {$\tvara$};
 		\node [style=port] (2) at (-1.75, 0.5) {};
 		\node [style=port] (3) at (-1.75, -0.5) {};
 		\node [style=bproduct] (4) at (-0.75, -0.5) {};
@@ -16,27 +16,27 @@
 		\node [style=none] (64) at (-5.25, -0.5) {};
 		\node [style=none] (65) at (-5.25, -1.5) {};
 		\node [style=none] (69) at (-2.25, -0.5) {};
-		\node [style=medium square box comb] (71) at (-2, 2) {$\tilde{F}$};
+		\node [style=medium square box comb] (71) at (-2, 2) {$\tvara$};
 		\node [style=port] (72) at (-1.75, 2.5) {};
 		\node [style=port] (73) at (-1.75, 1.5) {};
 		\node [style=port] (74) at (-2.25, 2.5) {};
 		\node [style=none] (75) at (-2.25, 1.5) {};
-		\node [style=tiny box seq] (76) at (-4, 2.5) {$\overline{s}$};
-		\node [style=tiny box seq] (77) at (-5.5, 1.5) {$\overline{v}$};
+		\node [style=tiny box seq] (76) at (-4, 2.5) {$\overline{\tvarb}$};
+		\node [style=tiny box seq] (77) at (-5.5, 1.5) {$\overline{\tvarc}$};
 		\node [style=bproduct] (78) at (1.5, 1.5) {};
 		\node [style=none] (79) at (0.5, 2.5) {};
 		\node [style=bproduct] (81) at (-0.75, 1.5) {};
-		\node [style=medium square box comb] (82) at (8, -1) {$\tilde{F}$};
+		\node [style=medium square box comb] (82) at (8, -1) {$\tvara$};
 		\node [style=port] (83) at (8.25, -0.5) {};
 		\node [style=port] (84) at (8.25, 0.5) {};
 		\node [style=port] (86) at (7.75, -0.5) {};
 		\node [style=none] (87) at (7.75, -1.5) {};
-		\node [style=medium square box comb] (88) at (8, 1) {$\tilde{F}$};
+		\node [style=medium square box comb] (88) at (8, 1) {$\tvara$};
 		\node [style=port] (89) at (8.25, -1.5) {};
 		\node [style=port] (90) at (7.75, 1.5) {};
 		\node [style=none] (91) at (7.75, 0.5) {};
-		\node [style=tiny box seq] (92) at (6, 1.5) {$\overline{s}$};
-		\node [style=tiny box seq] (93) at (4.5, 0.5) {$\overline{v}$};
+		\node [style=tiny box seq] (92) at (6, 1.5) {$\overline{\tvarb}$};
+		\node [style=tiny box seq] (93) at (4.5, 0.5) {$\overline{\tvarc}$};
 		\node [style=bproduct] (95) at (9.25, -0.5) {};
 		\node [style=delay] (96) at (9.75, -1.5) {};
 		\node [style=port] (97) at (8.25, 1.5) {};

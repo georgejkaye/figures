@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (0) at (-1, 0) {$\hat{\tvara}_{\prefix{\sigma}{i}}$};
-		\node [style=wire label right] (2) at (0.75, 0) {$\tvarb$};
+		\node [style=medium square box seq] (0) at (-1, 0) {$\tvara^{\,\tvarb}_{\,\prefix{\tvarc}{\tvard}}$};
+		\node [style=wire label right] (2) at (0.75, 0) {$\tvare$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (2) to (0);

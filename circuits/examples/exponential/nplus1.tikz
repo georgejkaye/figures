@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box comb] (1) at (0, 0.5) {$\mathsf{op}_{i}$};
+		\node [style=medium square box comb] (1) at (0, 0.5) {$\mathsf{op}_{n-2}$};
 		\node [style=none] (2) at (-1.25, 1) {};
 		\node [style=none] (3) at (-1.25, 0) {};
 		\node [style=none] (4) at (-0.25, 1) {};

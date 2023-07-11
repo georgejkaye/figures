@@ -10,7 +10,7 @@
 		\node [style=register] (55) at (-1.5, 0.25) {$\overline{\tvarb}$};
 		\node [style=port] (56) at (1.5, -1) {};
 		\node [style=port] (57) at (2, -1) {};
-		\node [style=dangling] (59) at (4, -1) {$\tvard$};
+		\node [style=wire label right] (59) at (4, -1) {$\tvard$};
 		\node [style=wire label left] (61) at (-3, -1) {$\tvarc$};
 		\node [style=port] (62) at (1.5, 0) {};
 		\node [style=port] (63) at (2, 0) {};

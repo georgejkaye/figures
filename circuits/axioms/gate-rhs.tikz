@@ -2,7 +2,7 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=tiny box seq] (0) at (-1.25, 0) {$\gateinterpretation[g](\overline{v})$};
 		\node [style=port] (2) at (-1, 0) {};
-		\node [style=dangling] (4) at (1.25, 0) {};
+		\node [style=wire label right] (4) at (1, 0) {$n$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (2) to (4);

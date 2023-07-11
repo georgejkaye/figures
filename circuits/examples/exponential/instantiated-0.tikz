@@ -10,7 +10,7 @@
 		\node [style=none] (21) at (7.75, -0.5) {};
 		\node [style=none] (22) at (-2, 0.5) {};
 		\node [style=none] (24) at (7.75, 0) {};
-		\node [style=medium square box comb] (26) at (1.5, 1) {$\mathsf{op}_{i}$};
+		\node [style=medium square box comb] (26) at (1.5, 1) {$\mathsf{op}_{n-2}$};
 		\node [style=none] (28) at (0.75, 0.5) {};
 		\node [style=none] (29) at (0.5, 1.5) {};
 		\node [style=none] (30) at (1.25, 0.5) {};
