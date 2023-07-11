@@ -1,11 +1,11 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium box comb] (0) at (1.25, 1) {$g$};
-		\node [style=medium box comb] (1) at (1.25, -1) {$g$};
+		\node [style=medium box comb] (0) at (1.25, 1) {$\tvara$};
+		\node [style=medium box comb] (1) at (1.25, -1) {$\tvara$};
 		\node [style=bproduct] (2) at (-0.5, 0) {};
-		\node [style=wire label left] (3) at (2.5, 1) {};
-		\node [style=wire label left] (4) at (2.5, -1) {};
-		\node [style=wire label right] (5) at (-1.25, 0) {};
+		\node [style=wire label right] (3) at (2.5, 1) {$\tvarc$};
+		\node [style=wire label right] (4) at (2.5, -1) {$\tvarc$};
+		\node [style=wire label left] (5) at (-1.25, 0) {$\tvarb$};
 		\node [style=none] (6) at (0.5, 1) {};
 		\node [style=none] (7) at (0.5, -1) {};
 	\end{pgfonlayer}

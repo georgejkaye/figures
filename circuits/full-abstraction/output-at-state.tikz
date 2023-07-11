@@ -1,11 +1,11 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (15) at (-2.25, 0.5) {$\hat{\tvara}_{\prefix{\sigma}{\tvarb}}$};
+		\node [style=medium square box seq] (15) at (-2.5, 0.5) {$\hat{\tvara}_{\prefix{\sigma}{\tvarb}}$};
 		\node [style=medium square box comb] (16) at (0, 0) {$\hat{\tvara}$};
 		\node [style=none] (17) at (-1.25, 0.5) {};
-		\node [style=tiny box seq] (22) at (-4.75, -0.5) {$\sigma(\tvarb)$};
+		\node [style=tiny box seq] (22) at (-5, -0.5) {$\sigma(\tvarb)$};
 		\node [style=port] (23) at (0.25, -0.5) {};
-		\node [style=dangling] (24) at (2, -0.5) {};
+		\node [style=wire label right] (24) at (2, -0.5) {$\tvarc$};
 		\node [style=port] (25) at (0.25, 0.5) {};
 		\node [style=bproduct] (26) at (1.5, 0.5) {};
 		\node [style=none] (47) at (-0.75, 0.5) {};

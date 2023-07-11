@@ -4,24 +4,14 @@
 		\node [style=none] (6) at (0, 0.75) {};
 		\node [style=none] (7) at (0, -0.75) {};
 		\node [style=dangling] (8) at (2, 0) {};
-		\node [style=dangling] (9) at (-2.25, 0.75) {};
-		\node [style=dangling] (10) at (-2.25, -0.75) {};
-		\node [style=none] (11) at (-0.25, 0.75) {};
-		\node [style=none] (12) at (-0.25, -0.75) {};
-		\node [style=none] (13) at (-1.75, -0.75) {};
-		\node [style=none] (14) at (-1.75, 0.75) {};
+		\node [style=dangling] (9) at (-2, 0.75) {};
+		\node [style=dangling] (10) at (-2, -0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (8) to (5);
-		\draw [style=wire] (10)
-			 to (13.center)
-			 to [in=180, out=0, looseness=0.75] (11.center)
-			 to (6.center)
-			 to [in=105, out=0] (5);
-		\draw [style=wire] (9)
-			 to (14.center)
-			 to [in=-180, out=0, looseness=0.75] (12.center)
-			 to (7.center)
-			 to [in=-105, out=0] (5);
+		\draw [style=wire, in=0, out=105] (5) to (6.center);
+		\draw [style=wire, in=0, out=-105] (5) to (7.center);
+		\draw [style=wire, in=0, out=180, looseness=0.75] (6.center) to (10);
+		\draw [style=wire, in=0, out=180, looseness=0.75] (7.center) to (9);
 	\end{pgfonlayer}
 \end{tikzpicture}
