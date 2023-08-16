@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (1) at (-1, 1.25) {};
+		\node [style=none] (2) at (-1, -1.25) {};
+		\node [style=none] (3) at (1, 1.25) {};
+		\node [style=none] (4) at (1, -1.25) {};
+		\node [style=wire label mid] (5) at (0, 2) {$\tvara$};
+		\node [style=wire label left] (6) at (-2, 0) {$\tvara\tvarb$};
+		\node [style=wire label right] (7) at (2, 0) {$\tvara\tvarb$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=functor box] (1.center)
+			 to (2.center)
+			 to (4.center)
+			 to (3.center)
+			 to cycle;
+		\draw [in=180, out=0] (6) to (7);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,26 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style={medium square box \tvarc}] (0) at (0, 0) {$\tvara$};
+		\node [style=none] (1) at (-2.75, 1.25) {};
+		\node [style=none] (2) at (-2.75, -1.25) {};
+		\node [style=none] (3) at (3, 1.25) {};
+		\node [style=none] (4) at (3, -1.25) {};
+		\node [style=wire label mid] (5) at (0, 2) {$\tvarb$};
+		\node [style=wire label left] (6) at (-4, 0) {$\tvarb\tvard$};
+		\node [style=wire label right] (7) at (3.5, 0) {$\tvarb\tvare$};
+		\node [style=wire label mid] (8) at (-1.75, 0) {$\tvard$};
+		\node [style=wire label mid] (9) at (1.75, 0) {$\tvare$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=functor box] (1.center)
+			 to (2.center)
+			 to (4.center)
+			 to (3.center)
+			 to cycle;
+		\draw [style=wire] (7)
+			 to (9.center)
+			 to (0.center)
+			 to (8.center)
+			 to (6);
+	\end{pgfonlayer}
+\end{tikzpicture}
