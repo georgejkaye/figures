@@ -4,6 +4,6 @@
 		\node [style=wire label right] (7) at (1, 0) {$\tvara\tvarb$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [in=180, out=0] (6) to (7);
+		\draw [style=wire, in=180, out=0] (6) to (7);
 	\end{pgfonlayer}
 \end{tikzpicture}

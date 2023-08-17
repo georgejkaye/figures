@@ -14,6 +14,6 @@
 			 to (4.center)
 			 to (3.center)
 			 to cycle;
-		\draw [in=180, out=0] (6) to (7);
+		\draw [style=wire, in=180, out=0] (6) to (7);
 	\end{pgfonlayer}
 \end{tikzpicture}
