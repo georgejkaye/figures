@@ -1,7 +1,10 @@
+\defvar{functor}%
+\defvar{object}%
+\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=wire label left] (6) at (-1, 0) {$\tvara\tvarb$};
-		\node [style=wire label right] (7) at (1, 0) {$\tvara\tvarb$};
+		\node [style=wire label left] (6) at (-1, 0) {$\getvar{functor}\getvar{object}$};
+		\node [style=wire label right] (7) at (1, 0) {$\getvar{functor}\getvar{object}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire, in=180, out=0] (6) to (7);

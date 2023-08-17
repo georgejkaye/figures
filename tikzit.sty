@@ -43,16 +43,15 @@
 
 % inline tikzfig command with optional arguments
 \NewDocumentCommand\defvar{mo}{%
-  \pgfkeyssetvalue{/tikzit/#1}{}
+  \pgfkeyssetvalue{/tikzit/#1}{}%
 }
 \newcommand{\setvars}[1]{%
-  \foreach \x in #1 {
-    \whereischar[q]{\x}{=}
+  \foreach \x in #1 {%
+    \whereischar[q]{\x}{=}%
     \StrSplit{\x}{\number\numexpr\theresult - 1\relax}{\strkey}{\strrest}%
     \StrSplit{\strrest}{1}{\streqs}{\strval}%
     \global\pgfkeyslet{/tikzit/\strkey}{\strval}%
-    \strkey=\getvar{\strkey}
-  }
+  }%
 }
 \newcommand{\getvar}[1]{\pgfkeysvalueof{/tikzit/#1}}
 \newcommand{\tikzitargs}{}

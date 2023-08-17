@@ -85,15 +85,15 @@ class TikzHandler(FileSystemEventHandler):
         self.tikz_files = tikz_files
         self.output_dir = output_dir
         self.style_file = style_file
-        self.defs_file = defs_file
+        self,defs_file = defs_file
 
     def update_tikz(self, event):
         path = event.src_path[(len(self.tikz_dir) + 1):]
         if len(path) > 5 and path[-5:] == ".tikz":
-            compile_file(path, self.tikz_dir, self.output_dir, self.style_file, self.defs_file)
+            compile_file(path, self.tikz_dir, self.output_dir, self.style_file, self,defs_file)
         elif len(path) > 11 and path[-11:] == ".tikzstyles":
             compile_all_files(self.tikz_dir, self.tikz_files,
-                              self.output_dir, self.style_file, self.defs_file)
+                              self.output_dir, self.style_file, self,defs_file)
         else:
             return
 

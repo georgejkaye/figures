@@ -1,10 +1,14 @@
+\defvar{gate}%
+\defvar{dom}%
+\defvar{cod}%
+\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=wire label right] (0) at (1.5, 0.5) {$\tvarb$};
-		\node [style=wire label right] (1) at (1.5, -0.5) {$\tvarb$};
+		\node [style=wire label right] (0) at (1.5, 0.5) {$\getvar{cod}$};
+		\node [style=wire label right] (1) at (1.5, -0.5) {$\getvar{cod}$};
 		\node [style=bproduct] (2) at (0.75, 0) {};
-		\node [style=medium box comb] (5) at (-0.5, 0) {$\tvara$};
-		\node [style=wire label right] (6) at (-1.75, 0) {$\tvarc$};
+		\node [style=medium box comb] (5) at (-0.5, 0) {$\getvar{gate}$};
+		\node [style=wire label left] (6) at (-1.75, 0) {$\getvar{dom}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire, in=-75, out=180] (1) to (2);

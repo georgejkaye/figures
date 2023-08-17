@@ -1,16 +1,23 @@
+\defvar{box1}%
+\defvar{box2}%
+\defvar{box3}%
+\defvar{colour}%
+\defvar{dom}%
+\defvar{cod}%
+\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style={medium square box \tvard}] (0) at (-0.5, 0) {$\tvarb$};
+		\node [style={medium square box \getvar{colour}}] (0) at (-0.5, 0) {$\getvar{box2}$};
 		\node [style=port] (5) at (-0.25, 0) {};
 		\node [style=port] (6) at (-0.75, 0) {};
-		\node [style={medium square box \tvard}] (8) at (2, 0) {$\tvarc$};
-		\node [style=wire label right] (9) at (3.25, 0) {$\tvarf$};
+		\node [style={medium square box \getvar{colour}}] (8) at (2, 0) {$\getvar{box3}$};
+		\node [style=wire label right] (9) at (3.25, 0) {$\getvar{cod}$};
 		\node [style=port] (10) at (2.25, 0) {};
 		\node [style=port] (11) at (1.75, 0) {};
-		\node [style={medium square box \tvard}] (12) at (-2.5, 0) {$\tvara$};
+		\node [style={medium square box \getvar{colour}}] (12) at (-2.5, 0) {$\getvar{box1}$};
 		\node [style=port] (13) at (-2.25, 0) {};
 		\node [style=port] (14) at (-2.75, 0) {};
-		\node [style=wire label left] (15) at (-3.75, 0) {$\tvare$};
+		\node [style=wire label left] (15) at (-3.75, 0) {$\getvar{dom}$};
 		\node [style=none] (16) at (0.75, 1) {};
 		\node [style=none] (17) at (0.75, -1) {};
 	\end{pgfonlayer}

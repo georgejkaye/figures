@@ -1,7 +1,10 @@
+\defvar{val}%
+\defvar{cod}%
+\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=wire label right] (2) at (1.25, 0) {$\tvarb$};
-		\node [style=register] (8) at (0, 0) {$\tvara$};
+		\node [style=wire label right] (2) at (1.25, 0) {$\getvar{cod}$};
+		\node [style=register] (8) at (0, 0) {$\getvar{val}$};
 		\node [style=bproduct] (9) at (-1.25, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

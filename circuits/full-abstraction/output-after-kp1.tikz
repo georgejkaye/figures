@@ -1,10 +1,16 @@
+\defvar{f}%
+\defvar{state}%
+\defvar{stream}%
+\defvar{prefix}%
+\defvar{cod}%
+\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (15) at (-2.5, 0.5) {$\tvara^{\,\tvarb}_{\,\prefix{\tvarc}{\tvard}}$};
-		\node [style=medium square box comb] (16) at (0, 0) {$\tvara$};
-		\node [style=tiny box seq] (22) at (-5, -0.5) {$\tvarc(\tvard)$};
+		\node [style=medium square box seq] (15) at (-2.5, 0.5) {$\getvar{f}^{\,\getvar{state}}_{\,\prefix{\getvar{stream}}{\getvar{prefix}}}$};
+		\node [style=medium square box comb] (16) at (0, 0) {$\getvar{f}$};
+		\node [style=tiny box seq] (22) at (-5, -0.5) {$\getvar{stream}(\getvar{prefix})$};
 		\node [style=port] (23) at (0.25, -0.5) {};
-		\node [style=wire label right] (24) at (2, -0.5) {$\tvard$};
+		\node [style=wire label right] (24) at (2, -0.5) {$\getvar{cod}$};
 		\node [style=port] (25) at (0.25, 0.5) {};
 		\node [style=bproduct] (26) at (1.5, 0.5) {};
 		\node [style=none] (47) at (-0.75, 0.5) {};

@@ -1,13 +1,19 @@
+\defvar{f}%
+\defvar{colour}%
+\defvar{cod}%
+\defvar{dom}%
+\defvar{trace}%
+\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box \tvarb] (0) at (-1.25, 0) {$\tvara$};
+		\node [style=medium square box \getvar{colour}] (0) at (-1.25, 0) {$\getvar{f}$};
 		\node [style=none] (1) at (-1.5, -0.5) {};
 		\node [style=none] (2) at (-0.5, -0.5) {};
 		\node [style=bproduct] (3) at (0, -0.5) {};
 		\node [style=none] (4) at (-0.5, 0.5) {};
-		\node [style=wire label mid] (5) at (-0.25, 2) {$\tvare$};
+		\node [style=wire label mid] (5) at (-0.25, 2) {$\getvar{trace}$};
 		\node [style=none] (6) at (0.25, 0.5) {};
-		\node [style=medium square box \tvarb] (7) at (2.75, -1) {$\tvara$};
+		\node [style=medium square box \getvar{colour}] (7) at (2.75, -1) {$\getvar{f}$};
 		\node [style=none] (8) at (2.5, -1.5) {};
 		\node [style=none] (9) at (2.5, -0.5) {};
 		\node [style=none] (10) at (3.5, -1.5) {};
@@ -23,8 +29,8 @@
 		\node [style=bproduct] (51) at (0.75, 0.5) {};
 		\node [style=none] (52) at (1.5, 1.25) {};
 		\node [style=bproduct] (54) at (-3.25, -1) {};
-		\node [style=wire label left] (55) at (-4.25, -1) {$\tvarc$};
-		\node [style=wire label right] (56) at (4.75, -1.5) {$\tvard$};
+		\node [style=wire label left] (55) at (-4.25, -1) {$\getvar{dom}$};
+		\node [style=wire label right] (56) at (4.75, -1.5) {$\getvar{cod}$};
 		\node [style=none] (57) at (2, 1.25) {};
 		\node [style=none] (58) at (2, 2) {};
 	\end{pgfonlayer}

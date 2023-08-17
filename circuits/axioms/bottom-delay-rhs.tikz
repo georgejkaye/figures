@@ -1,5 +1,5 @@
-\defvar{cod}[n]
-\setvars{\tikzitargs}
+\defvar{cod}[n]%
+\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=wire label right] (2) at (0.5, 0) {$\getvar{cod}$};

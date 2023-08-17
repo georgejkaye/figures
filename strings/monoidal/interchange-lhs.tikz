@@ -1,23 +1,33 @@
+\defvar{box1}%
+\defvar{box2}%
+\defvar{box3}%
+\defvar{box4}%
+\defvar{colour}%
+\defvar{dom1}%
+\defvar{dom2}%
+\defvar{cod1}%
+\defvar{cod2}%
+\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style={medium square box \tvare}] (0) at (-1.75, 1.75) {$\tvara$};
-		\node [style=wire label left] (1) at (-3.5, 1.75) {$\overline{m}$};
+		\node [style={medium square box \getvar{colour}}] (0) at (-1.75, 1.75) {$\getvar{box1}$};
+		\node [style=wire label left] (1) at (-3.5, 1.75) {$\getvar{dom1}$};
 		\node [style=port] (5) at (-2, 1.75) {};
 		\node [style=port] (6) at (-1.5, 1.75) {};
-		\node [style={medium square box \tvare}] (8) at (-1.75, -0.75) {$\tvarb$};
-		\node [style=wire label left] (9) at (-3.5, -0.75) {$\overline{p}$};
+		\node [style={medium square box \getvar{colour}}] (8) at (-1.75, -0.75) {$\getvar{box2}$};
+		\node [style=wire label left] (9) at (-3.5, -0.75) {$\getvar{cod1}$};
 		\node [style=port] (12) at (-2, -0.75) {};
 		\node [style=port] (13) at (-1.5, -0.75) {};
-		\node [style={medium square box \tvare}] (15) at (1.75, 1.75) {$\tvarc$};
+		\node [style={medium square box \getvar{colour}}] (15) at (1.75, 1.75) {$\getvar{box3}$};
 		\node [style=port] (19) at (1.5, 1.75) {};
 		\node [style=port] (20) at (2, 1.75) {};
-		\node [style=wire label right] (21) at (3.5, 1.75) {$\overline{s}$};
+		\node [style=wire label right] (21) at (3.5, 1.75) {$\getvar{dom1}$};
 		\node [style=none] (22) at (0, 2.75) {};
 		\node [style=none] (23) at (0, -1.75) {};
-		\node [style={medium square box \tvare}] (24) at (1.75, -0.75) {$\tvard$};
+		\node [style={medium square box \getvar{colour}}] (24) at (1.75, -0.75) {$\getvar{box4}$};
 		\node [style=port] (26) at (1.5, -0.75) {};
 		\node [style=port] (27) at (2, -0.75) {};
-		\node [style=wire label right] (28) at (3.5, -0.75) {$\overline{s}$};
+		\node [style=wire label right] (28) at (3.5, -0.75) {$\getvar{dom2}$};
 		\node [style=none] (29) at (-3, 0.5) {};
 		\node [style=none] (30) at (-0.5, 0.5) {};
 		\node [style=none] (31) at (0.5, 0.5) {};

@@ -1,8 +1,11 @@
+\defvar{val}%
+\defvar{width}%
+\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=wire label right] (2) at (1.25, 0) {$\tvarb$};
-		\node [style=register] (8) at (0, 0) {$\tvara$};
-		\node [style=wire label left] (9) at (-1.25, 0) {$\tvarb$};
+		\node [style=wire label right] (2) at (1.25, 0) {$\getvar{width}$};
+		\node [style=register] (8) at (0, 0) {$\getvar{val}$};
+		\node [style=wire label left] (9) at (-1.25, 0) {$\getvar{width}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (9)
