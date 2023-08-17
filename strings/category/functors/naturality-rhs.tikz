@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style={medium square box \tvarg}] (0) at (0, 0) {$\tvara$};
+		\node [style=none] (1) at (-2.75, 1.25) {};
+		\node [style=none] (2) at (-2.75, -1.25) {};
+		\node [style=none] (3) at (2.75, 1.25) {};
+		\node [style=none] (4) at (2.75, -1.25) {};
+		\node [style=wire label mid] (5) at (0, 2) {$\tvarb$};
+		\node [style=wire label mid] (8) at (-1.75, 0) {$\tvare$};
+		\node [style=wire label mid] (9) at (1.75, 0) {$\tvarf$};
+		\node [style=wire label left] (10) at (-3.5, 0) {$\tvarb\tvare$};
+		\node [style={medium square box \tvarg}] (11) at (5.75, 0) {$\tvard_\tvarf$};
+		\node [style=wire label right] (12) at (7, 0) {$\tvarc\tvarf$};
+		\node [style=wire label mid] (13) at (3.75, 0) {$\tvarb\tvarf$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=functor box] (1.center)
+			 to (2.center)
+			 to (4.center)
+			 to (3.center)
+			 to cycle;
+		\draw [style=wire] (9) to (0);
+		\draw [style=wire] (0) to (8);
+		\draw [style=wire, in=180, out=0] (10) to (8);
+		\draw [style=wire, in=180, out=0] (11) to (12);
+		\draw [style=wire] (9)
+			 to (13.center)
+			 to (11);
+	\end{pgfonlayer}
+\end{tikzpicture}
