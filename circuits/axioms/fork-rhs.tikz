@@ -1,10 +1,13 @@
+\defvar{val}[v]%
+\defvar{cod}%
+\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny box seq] (0) at (-0.5, 0.75) {$\tvara$};
+		\node [style=tiny box seq] (0) at (-0.5, 0.75) {$\getvar{var}$};
 		\node [style=port] (2) at (-0.25, 0.75) {};
-		\node [style=wire label right] (3) at (0.75, 0.75) {$\tvarb$};
-		\node [style=wire label right] (4) at (0.75, -0.75) {$\tvarb$};
-		\node [style=tiny box seq] (5) at (-0.5, -0.75) {$\tvara$};
+		\node [style=wire label right] (3) at (0.75, 0.75) {$\getvar{cod}$};
+		\node [style=wire label right] (4) at (0.75, -0.75) {$\getvar{cod}$};
+		\node [style=tiny box seq] (5) at (-0.5, -0.75) {$\getvar{var}$};
 		\node [style=port] (6) at (-0.25, -0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

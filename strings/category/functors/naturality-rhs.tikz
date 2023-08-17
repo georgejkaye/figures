@@ -1,17 +1,25 @@
+\defvar{box}%
+\defvar{functor1}%
+\defvar{functor2}%
+\defvar{nattrans}%
+\defvar{dom}%
+\defvar{cod}%
+\defvar{colour}%
+\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style={medium square box \tvarg}] (0) at (0, 0) {$\tvara$};
+		\node [style={medium square box \getvar{colour}}] (0) at (0, 0) {$\getvar{box}$};
 		\node [style=none] (1) at (-2.75, 1.25) {};
 		\node [style=none] (2) at (-2.75, -1.25) {};
 		\node [style=none] (3) at (2.75, 1.25) {};
 		\node [style=none] (4) at (2.75, -1.25) {};
-		\node [style=wire label mid] (5) at (0, 2) {$\tvarb$};
-		\node [style=wire label mid] (8) at (-1.75, 0) {$\tvare$};
-		\node [style=wire label mid] (9) at (1.75, 0) {$\tvarf$};
-		\node [style=wire label left] (10) at (-3.5, 0) {$\tvarb\tvare$};
-		\node [style={medium square box \tvarg}] (11) at (6.25, 0) {$\tvard_\tvarf$};
-		\node [style=wire label right] (12) at (7.5, 0) {$\tvarc\tvarf$};
-		\node [style=wire label mid] (13) at (4, 0) {$\tvarb\tvarf$};
+		\node [style=wire label mid] (5) at (0, 2) {$\getvar{functor2}$};
+		\node [style=wire label mid] (8) at (-1.75, 0) {$\getvar{dom}$};
+		\node [style=wire label mid] (9) at (1.75, 0) {$\getvar{cod}$};
+		\node [style=wire label left] (10) at (-3.5, 0) {$\getvar{functor2}\getvar{dom}$};
+		\node [style={medium square box \getvar{colour}}] (11) at (6.25, 0) {$\getvar{nattrans}_\getvar{cod}$};
+		\node [style=wire label right] (12) at (7.5, 0) {$\getvar{functor1}\getvar{cod}$};
+		\node [style=wire label mid] (13) at (4, 0) {$\getvar{functor2}\getvar{cod}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=functor box] (1.center)

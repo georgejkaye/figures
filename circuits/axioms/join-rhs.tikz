@@ -1,7 +1,10 @@
+\defvar{val1}[v]%
+\defvar{val2}[w]%
+\defvar{cod}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny box seq] (0) at (-1, 0) {$\tvara \sqcup \tvarb$};
-		\node [style=wire label right] (1) at (0.75, 0) {$\tvarc$};
+		\node [style=tiny box seq] (0) at (-1, 0) {$\getvar{val1} \sqcup \getvar{val2}$};
+		\node [style=wire label right] (1) at (0.75, 0) {$\getvar{cod}$};
 		\node [style=port] (2) at (-0.75, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

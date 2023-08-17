@@ -1,6 +1,8 @@
+\defvar{cod}[n]%
+\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=wire label right] (2) at (0.5, 0) {$\tvara$};
+		\node [style=wire label right] (2) at (0.5, 0) {$\getvar{cod}$};
 		\node [style=none] (8) at (0.25, 0) {};
 		\node [style=bproduct] (9) at (-0.5, 0) {};
 	\end{pgfonlayer}

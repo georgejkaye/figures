@@ -1,8 +1,12 @@
+\defvar{val}%
+\defvar{gate}%
+\defvar{cod}%
+\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny box seq] (9) at (-1.75, 0) {$\overline{\tvarb}$};
-		\node [style=wire label right] (10) at (1, 0) {};
-		\node [style=medium box comb] (11) at (0, 0) {$\tvara$};
+		\node [style=tiny box seq] (9) at (-1.75, 0) {$\overline{\getvar{val}}$};
+		\node [style=wire label right] (10) at (1, 0) {$\getvar{cod}$};
+		\node [style=medium box comb] (11) at (0, 0) {$\getvar{gate}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire, in=180, out=0] (9) to (11);

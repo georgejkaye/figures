@@ -1,7 +1,11 @@
+\defvar{state}%
+\defvar{cod}%
+\defvar{f}%
+\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (0) at (-0.5, 0) {$\tvara^{\,\tvarb}_{\,\varepsilon}$};
-		\node [style=wire label right] (2) at (0.75, 0) {$\tvarc$};
+		\node [style=medium square box seq] (0) at (-0.5, 0) {$\getvar{f}^{\,\getvar{state}}_{\,\varepsilon}$};
+		\node [style=wire label right] (2) at (0.75, 0) {$\getvar{cod}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (0) to (2);

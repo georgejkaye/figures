@@ -1,17 +1,23 @@
+\defvar{dom}%
+\defvar{cod}%
+\defvar{trace}%
+\defvar{colour}%
+\defvar{box}%
+\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style={medium square box \tvarb}] (0) at (0, -0.5) {$\tvara$};
-		\node [style=wire label left] (1) at (-2, -1) {$\tvarc$};
+		\node [style={medium square box \getvar{colour}}] (0) at (0, -0.5) {$\getvar{box}$};
+		\node [style=wire label left] (1) at (-2, -1) {$\getvar{dom}$};
 		\node [style=none] (2) at (-0.25, -1) {};
 		\node [style=none] (4) at (-1.25, 0) {};
 		\node [style=none] (5) at (-0.25, 0) {};
 		\node [style=none] (6) at (0.25, -1) {};
-		\node [style=wire label right] (7) at (2, -1) {$\tvard$};
+		\node [style=wire label right] (7) at (2, -1) {$\getvar{cod}$};
 		\node [style=none] (8) at (0.25, 0) {};
 		\node [style=none] (9) at (1.25, 0) {};
 		\node [style=none] (10) at (1.25, 1) {};
 		\node [style=none] (11) at (-1.25, 1) {};
-		\node [style=wire label mid] (12) at (0, 1) {$\tvare$};
+		\node [style=wire label mid] (12) at (0, 1) {$\getvar{trace}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (2.center) to (1);

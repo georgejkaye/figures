@@ -1,33 +1,37 @@
+\defvar{object1}%
+\defvar{object2}%
+\defvar{colour}%
+\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=wire label left] (3) at (-1, 1.25) {$\tvarb$};
+		\node [style=wire label left] (3) at (-1, 1.25) {$\getvar{object1}$};
 		\node [style=none] (5) at (-0.5, 2) {};
 		\node [style=none] (6) at (-0.5, 0.5) {};
 		\node [style=none] (7) at (0.5, 0.5) {};
 		\node [style=none] (8) at (0.5, 2) {};
-		\node [style=wire label right] (10) at (1, 1.25) {$\tvarb$};
+		\node [style=wire label right] (10) at (1, 1.25) {$\getvar{object1}$};
 		\node [style=none] (11) at (-0.5, 1.25) {};
 		\node [style=none] (12) at (-0.5, 1.25) {};
-		\node [style=wire label left] (13) at (-1, -1.25) {$\tvarc$};
+		\node [style=wire label left] (13) at (-1, -1.25) {$\getvar{object2}$};
 		\node [style=none] (14) at (-0.5, -0.5) {};
 		\node [style=none] (15) at (-0.5, -2) {};
 		\node [style=none] (16) at (0.5, -2) {};
 		\node [style=none] (17) at (0.5, -0.5) {};
-		\node [style=wire label right] (18) at (1, -1.25) {$\tvarc$};
+		\node [style=wire label right] (18) at (1, -1.25) {$\getvar{object2}$};
 		\node [style=none] (19) at (-0.5, -1.25) {};
 		\node [style=none] (20) at (-0.5, -1.25) {};
 		\node [style=none] (21) at (-1.75, 0) {};
 		\node [style=none] (22) at (1.75, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style={tile \tvara}] (12.center)
+		\draw [style={tile \getvar{colour}}] (12.center)
 			 to (6.center)
 			 to (7.center)
 			 to (8.center)
 			 to (5.center)
 			 to (11.center);
 		\draw [style=wire] (3) to (10);
-		\draw [style={tile \tvara}] (20.center)
+		\draw [style={tile \getvar{colour}}] (20.center)
 			 to (15.center)
 			 to (16.center)
 			 to (17.center)

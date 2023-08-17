@@ -1,8 +1,13 @@
+\defvar{f}%
+\defvar{colour}%
+\defvar{val}%
+\defvar{cod}%
+\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style={medium square box \tvarb}] (10) at (0, 0) {$\tvara$};
-		\node [style=medium square box seq] (15) at (-2, 0) {$\tvarc$};
-		\node [style=wire label right] (16) at (1.25, 0) {$\tvard$};
+		\node [style={medium square box \getvar{colour}}] (10) at (0, 0) {$\getvar{f}$};
+		\node [style=medium square box seq] (15) at (-2, 0) {$\getvar{val}$};
+		\node [style=wire label right] (16) at (1.25, 0) {$\getvar{cod}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (15) to (10);

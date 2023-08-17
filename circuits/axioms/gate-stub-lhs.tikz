@@ -1,8 +1,11 @@
+\defvar{dom}%
+\defvar{gate}[g]%
+\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=wire label left] (0) at (-1, 0) {$\tvarb$};
+		\node [style=wire label left] (0) at (-1, 0) {$\getvar{dom}$};
 		\node [style=bproduct] (1) at (1.25, 0) {};
-		\node [style=medium box comb] (2) at (0, 0) {$\tvara$};
+		\node [style=medium box comb] (2) at (0, 0) {$\getvar{gate}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (0) to (2);

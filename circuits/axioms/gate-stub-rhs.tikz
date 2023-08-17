@@ -1,6 +1,8 @@
+\defvar{dom}%
+\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=wire label left] (0) at (-0.5, 0) {$\tvara$};
+		\node [style=wire label left] (0) at (-0.5, 0) {$\getvar{dom}$};
 		\node [style=bproduct] (1) at (0.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

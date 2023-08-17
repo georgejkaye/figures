@@ -42,6 +42,19 @@
 \tikzstyle{every loop}=[]
 
 % inline tikzfig command with optional arguments
+\NewDocumentCommand\defvar{mo}{%
+  \pgfkeyssetvalue{/tikzit/#1}{}%
+}
+\newcommand{\setvars}[1]{%
+  \foreach \x in #1 {%
+    \whereischar[q]{\x}{=}%
+    \StrSplit{\x}{\number\numexpr\theresult - 1\relax}{\strkey}{\strrest}%
+    \StrSplit{\strrest}{1}{\streqs}{\strval}%
+    \global\pgfkeyslet{/tikzit/\strkey}{\strval}%
+  }%
+}
+\newcommand{\getvar}[1]{\pgfkeysvalueof{/tikzit/#1}}
+\newcommand{\tikzitargs}{}
 \newcommand{\tvara}{}
 \newcommand{\tvarb}{}
 \newcommand{\tvarc}{}
@@ -50,41 +63,11 @@
 \newcommand{\tvarf}{}
 \newcommand{\tvarg}{}
 \newcommand{\tvarh}{}
-\NewDocumentCommand\iltikzfig{moooooooo}{%
-  \renewcommand{\tvara}{\IfValueTF{#2}{#2}{}}%
-  \renewcommand{\tvarb}{\IfValueTF{#3}{#3}{}}%
-  \renewcommand{\tvarc}{\IfValueTF{#4}{#4}{}}%
-  \renewcommand{\tvard}{\IfValueTF{#5}{#5}{}}%
-  \renewcommand{\tvare}{\IfValueTF{#6}{#6}{}}%
-  \renewcommand{\tvarf}{\IfValueTF{#7}{#7}{}}%
-  \renewcommand{\tvarg}{\IfValueTF{#8}{#8}{}}%
-  \renewcommand{\tvarh}{\IfValueTF{#9}{#9}{}}%
+\NewDocumentCommand\iltikzfig{mo}{%}
+  \IfValueTF{#2}{\renewcommand{\tikzitargs}{#2}}{\renewcommand{\tikzitargs}{}}
   \raisebox{0.15em}{\scalebox{0.5}{\tikzfig{#1}}}%
-  \IfValueT{#2}{\renewcommand{\tvara}{}}%
-  \IfValueT{#3}{\renewcommand{\tvarb}{}}%
-  \IfValueT{#4}{\renewcommand{\tvarc}{}}%
-  \IfValueT{#5}{\renewcommand{\tvard}{}}%
-  \IfValueT{#6}{\renewcommand{\tvare}{}}%
-  \IfValueT{#7}{\renewcommand{\tvarf}{}}%
-  \IfValueT{#8}{\renewcommand{\tvarg}{}}%
-  \IfValueT{#9}{\renewcommand{\tvarh}{}}%
 }
-\NewDocumentCommand\dsptikzfig{moooooooo}{%
-  \renewcommand{\tvara}{\IfValueTF{#2}{#2}{}}%
-  \renewcommand{\tvarb}{\IfValueTF{#3}{#3}{}}%
-  \renewcommand{\tvarc}{\IfValueTF{#4}{#4}{}}%
-  \renewcommand{\tvard}{\IfValueTF{#5}{#5}{}}%
-  \renewcommand{\tvare}{\IfValueTF{#6}{#6}{}}%
-  \renewcommand{\tvarf}{\IfValueTF{#7}{#7}{}}%
-  \renewcommand{\tvarg}{\IfValueTF{#8}{#8}{}}%
-  \renewcommand{\tvarh}{\IfValueTF{#9}{#9}{}}%
+\NewDocumentCommand\dsptikzfig{mo}{%
+  \IfValueTF{#2}{\renewcommand{\tikzitargs}{#2}}{\renewcommand{\tikzitargs}{}}
   \tikzfig{#1}%
-  \IfValueT{#2}{\renewcommand{\tvara}{}}%
-  \IfValueT{#3}{\renewcommand{\tvarb}{}}%
-  \IfValueT{#4}{\renewcommand{\tvarc}{}}%
-  \IfValueT{#5}{\renewcommand{\tvard}{}}%
-  \IfValueT{#6}{\renewcommand{\tvare}{}}%
-  \IfValueT{#7}{\renewcommand{\tvarf}{}}%
-  \IfValueT{#8}{\renewcommand{\tvarg}{}}%
-  \IfValueT{#9}{\renewcommand{\tvarh}{}}%
 }
