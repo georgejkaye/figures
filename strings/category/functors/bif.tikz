@@ -2,23 +2,23 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style={medium square box \tvarc}] (0) at (0, -1.25) {$\tvarb$};
 		\node [style=none] (2) at (-2.75, -2.5) {};
-		\node [style=none] (4) at (3, -2.5) {};
+		\node [style=none] (4) at (2.75, -2.5) {};
 		\node [style=wire label left] (6) at (-4, 0) {$F(\tvare,\tvarg)$};
-		\node [style=wire label right] (7) at (4, 0) {$F(\tvarf,\tvarh)$};
+		\node [style=wire label right] (7) at (3.75, 0) {$F(\tvarf,\tvarh)$};
 		\node [style=wire label mid] (8) at (-1.75, -1.25) {$\tvarg$};
 		\node [style=wire label mid] (9) at (1.75, -1.25) {$\tvarh$};
 		\node [style={medium square box \tvarc}] (10) at (0, 1.25) {$\tvara$};
 		\node [style=none] (11) at (-2.75, 2.5) {};
 		\node [style=none] (12) at (-2.75, 0) {};
-		\node [style=none] (13) at (3, 2.5) {};
-		\node [style=none] (14) at (3, 0) {};
+		\node [style=none] (13) at (2.75, 2.5) {};
+		\node [style=none] (14) at (2.75, 0) {};
 		\node [style=wire label mid] (15) at (0, 3.25) {$\tvard$};
 		\node [style=wire label mid] (16) at (-1.75, 1.25) {$\tvare$};
 		\node [style=wire label mid] (17) at (1.75, 1.25) {$\tvarf$};
 		\node [style=none] (18) at (-2.75, 1.25) {};
-		\node [style=none] (19) at (3, 1.25) {};
+		\node [style=none] (19) at (2.75, 1.25) {};
 		\node [style=none] (20) at (-2.75, -1.25) {};
-		\node [style=none] (21) at (3, -1.25) {};
+		\node [style=none] (21) at (2.75, -1.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=functor box] (2.center)
@@ -28,12 +28,12 @@
 			 to (11.center)
 			 to (12.center)
 			 to cycle;
-		\draw (21.center)
+		\draw [style=wire] (21.center)
 			 to (9.center)
 			 to (0.center)
 			 to (8.center)
 			 to (20.center);
-		\draw (19.center)
+		\draw [style=wire] (19.center)
 			 to (17.center)
 			 to (10.center)
 			 to (16.center)
