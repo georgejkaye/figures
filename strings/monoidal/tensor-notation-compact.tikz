@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=wire label left] (0) at (-2, 0) {$\getvar{dom1} \tensor \getvar{dom2}$};
+		\node [style=wire label right] (1) at (2, 0) {$\getvar{cod1} \tensor \getvar{cod2}$};
+		\node [style=medium square box white] (2) at (0, 0) {$\getvar{box1} \tensor \getvar{box2}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (0) to (2);
+		\draw [style=wire] (2) to (1);
+	\end{pgfonlayer}
+\end{tikzpicture}

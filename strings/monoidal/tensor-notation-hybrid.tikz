@@ -1,0 +1,40 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style={medium square box \getvar{colour}}] (0) at (0, -1.25) {$\getvar{box2}$};
+		\node [style=none] (2) at (-2.75, -2.5) {};
+		\node [style=none] (4) at (3, -2.5) {};
+		\node [style=wire label mid] (8) at (-1.75, -1.25) {$\getvar{dom2}$};
+		\node [style=wire label mid] (9) at (1.75, -1.25) {$\getvar{cod2}$};
+		\node [style={medium square box \getvar{colour}}] (10) at (0, 1.25) {$\getvar{box1}$};
+		\node [style=none] (11) at (-2.75, 2.5) {};
+		\node [style=none] (12) at (-2.75, 0) {};
+		\node [style=none] (13) at (3, 2.5) {};
+		\node [style=none] (14) at (3, 0) {};
+		\node [style=wire label mid] (15) at (0, 3.25) {$\tensor$};
+		\node [style=wire label mid] (16) at (-1.75, 1.25) {$\getvar{dom1}$};
+		\node [style=wire label mid] (17) at (1.75, 1.25) {$\getvar{cod1}$};
+		\node [style=none] (18) at (-2.75, 1.25) {};
+		\node [style=none] (19) at (3, 1.25) {};
+		\node [style=none] (20) at (-2.75, -1.25) {};
+		\node [style=none] (21) at (3, -1.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=functor box] (2.center)
+			 to (4.center)
+			 to (14.center)
+			 to (13.center)
+			 to (11.center)
+			 to (12.center)
+			 to cycle;
+		\draw [style=wire] (21.center)
+			 to (9.center)
+			 to (0.center)
+			 to (8.center)
+			 to (20.center);
+		\draw [style=wire] (19.center)
+			 to (17.center)
+			 to (10.center)
+			 to (16.center)
+			 to (18.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
