@@ -36,5 +36,6 @@
 			 to (10.center)
 			 to (16.center)
 			 to (18.center);
+		\draw [style=functor box] (12.center) to (14.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
