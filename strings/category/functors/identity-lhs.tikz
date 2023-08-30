@@ -1,6 +1,3 @@
-\defvar{functor}%
-\defvar{object}%
-\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (1) at (-1, 1.25) {};

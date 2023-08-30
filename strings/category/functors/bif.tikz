@@ -1,12 +1,3 @@
-\defvar{box1}%
-\defvar{box2}%
-\defvar{colour}%
-\defvar{functor}%
-\defvar{dom1}%
-\defvar{dom2}%
-\defvar{cod1}%
-\defvar{cod2}%
-\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style={medium square box \getvar{colour}}] (0) at (0, -1.25) {$\getvar{box2}$};
@@ -25,9 +16,9 @@
 		\node [style=wire label mid] (16) at (-1.75, 1.25) {$\getvar{dom1}$};
 		\node [style=wire label mid] (17) at (1.75, 1.25) {$\getvar{cod1}$};
 		\node [style=none] (18) at (-2.75, 1.25) {};
-		\node [style=none] (19) at (2.75, 1.25) {};
+		\node [style=none] (19) at (3, 1.25) {};
 		\node [style=none] (20) at (-2.75, -1.25) {};
-		\node [style=none] (21) at (2.75, -1.25) {};
+		\node [style=none] (21) at (3, -1.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=functor box] (2.center)

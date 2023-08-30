@@ -1,9 +1,3 @@
-\defvar{f}%
-\defvar{stream}%
-\defvar{state}%
-\defvar{prefix}%
-\defvar{cod}%
-\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box seq] (0) at (-1.5, 0) {$\llangle\gamma(\getvar{f})\rrangle^{\,\getvar{state}}_{\,\prefix{\getvar{stream}}{\getvar{prefix}}}$};

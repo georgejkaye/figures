@@ -1,7 +1,5 @@
 \defvar{val1}[v]%
 \defvar{val2}[w]%
-\defvar{cod}%
-\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (3) at (-1.25, 0.75) {};

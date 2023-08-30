@@ -1,7 +1,3 @@
-\defvar{dom}%
-\defvar{cod}%
-\defvar{gate}%
-\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium box comb] (0) at (1.25, 1) {$\getvar{gate}$};

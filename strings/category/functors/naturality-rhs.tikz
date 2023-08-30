@@ -1,11 +1,3 @@
-\defvar{box}%
-\defvar{functor1}%
-\defvar{functor2}%
-\defvar{nattrans}%
-\defvar{dom}%
-\defvar{cod}%
-\defvar{colour}%
-\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style={medium square box \getvar{colour}}] (0) at (0, 0) {$\getvar{box}$};

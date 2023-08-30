@@ -1,11 +1,6 @@
-\defvar{f}%
-\defvar{colour}%
-\defvar{dom}%
-\defvar{cod}%
-\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style={medium square box \getvar{colour}}] (0) at (0, 0) {$\getvar{name}$};
+		\node [style={medium square box \getvar{colour}}] (0) at (0, 0) {$\getvar{box}$};
 		\node [style=wire label left] (1) at (-1.25, 0) {$\getvar{dom}$};
 		\node [style=port] (5) at (-0.25, 0) {};
 		\node [style=port] (6) at (0.25, 0) {};

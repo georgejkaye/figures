@@ -1,6 +1,5 @@
 \defvar{val1}[v]%
 \defvar{val2}[w]%
-\defvar{cod}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=tiny box seq] (0) at (-1, 0) {$\getvar{val1} \sqcup \getvar{val2}$};

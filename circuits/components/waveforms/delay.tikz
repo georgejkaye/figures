@@ -1,5 +1,3 @@
-\defvar{width}%
-\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=delay] (0) at (0, 0) {};

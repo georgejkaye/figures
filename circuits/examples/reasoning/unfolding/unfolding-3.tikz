@@ -1,9 +1,3 @@
-\defvar{f}%
-\defvar{colour}%
-\defvar{cod}%
-\defvar{dom}%
-\defvar{trace}%
-\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box \getvar{colour}] (0) at (-1.25, 0) {$\getvar{f}$};

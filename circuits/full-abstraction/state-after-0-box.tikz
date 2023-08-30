@@ -1,7 +1,3 @@
-\defvar{state}%
-\defvar{cod}%
-\defvar{f}%
-\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box seq] (0) at (-0.5, 0) {$\getvar{f}^{\,\getvar{state}}_{\,\varepsilon}$};

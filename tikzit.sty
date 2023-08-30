@@ -65,6 +65,7 @@
 \newcommand{\tvarh}{}
 \NewDocumentCommand\iltikzfig{mo}{%}
   \IfValueTF{#2}{\renewcommand{\tikzitargs}{#2}}{\renewcommand{\tikzitargs}{}}
+  \setvars{\tikzitargs}
   \raisebox{0.15em}{\scalebox{0.5}{\tikzfig{#1}}}%
 }
 \NewDocumentCommand\dsptikzfig{mo}{%

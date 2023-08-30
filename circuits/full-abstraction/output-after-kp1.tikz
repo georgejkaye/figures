@@ -1,9 +1,3 @@
-\defvar{f}%
-\defvar{state}%
-\defvar{stream}%
-\defvar{prefix}%
-\defvar{cod}%
-\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box seq] (15) at (-2.5, 0.5) {$\getvar{f}^{\,\getvar{state}}_{\,\prefix{\getvar{stream}}{\getvar{prefix}}}$};

@@ -1,8 +1,3 @@
-\defvar{f}%
-\defvar{colour}%
-\defvar{wave}%
-\defvar{cod}%
-\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style={medium square box \getvar{colour}}] (10) at (1, 0) {$\getvar{f}$};

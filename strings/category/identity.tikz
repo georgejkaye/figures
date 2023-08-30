@@ -1,6 +1,3 @@
-\defvar{obj}%
-\defvar{colour}%
-\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=wire label left] (3) at (-1, 0) {$\getvar{obj}$};

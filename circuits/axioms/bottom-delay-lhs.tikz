@@ -1,5 +1,4 @@
 \defvar{cod}[n]%
-\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=dangling] (2) at (1, 0) {$\getvar{cod}$};

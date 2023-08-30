@@ -1,8 +1,3 @@
-\defvar{obj1}%
-\defvar{obj2}%
-\defvar{obj3}%
-\defvar{colour}%
-\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (3) at (-1.25, 2) {};

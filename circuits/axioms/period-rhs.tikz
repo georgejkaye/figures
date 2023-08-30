@@ -1,6 +1,4 @@
 \defvar{sig}[v]%
-\defvar{cod}%
-\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=tiny signal seq] (12) at (0, -0.5) {$\overline{\underline{\getvar{sig}}}$};

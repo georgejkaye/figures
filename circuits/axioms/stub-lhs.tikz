@@ -1,5 +1,4 @@
 \defvar{val}[v]%
-\setvars{\tikzitargs}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=tiny box seq] (0) at (-0.75, 0) {$\getvar{val}$};
