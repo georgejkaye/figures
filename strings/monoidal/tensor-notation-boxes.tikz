@@ -38,8 +38,8 @@
 			 to (10.center)
 			 to (16.center)
 			 to (18.center);
-		\draw (7) to (14.center);
-		\draw (12.center) to (6);
+		\draw [style=wire] (7) to (14.center);
+		\draw [style=wire] (12.center) to (6);
 		\draw [style=functor box] (14.center) to (12.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
