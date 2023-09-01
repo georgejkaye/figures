@@ -1,0 +1,40 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=long bundler] (0) at (-0.25, 0) {};
+		\node [style=none] (1) at (0.5, 2.25) {};
+		\node [style=none] (2) at (-1, -2.25) {};
+		\node [style=none] (3) at (-1, 2.25) {};
+		\node [style=none] (4) at (0.5, -2.25) {};
+		\node [style=wire label right] (5) at (1.25, 1.25) {$1$};
+		\node [style=none] (8) at (0, 1.25) {};
+		\node [style=none] (9) at (-0.5, 1.5) {};
+		\node [style=wire label left] (12) at (-1.5, 1.5) {$1$};
+		\node [style=wire label right] (13) at (1.25, 0) {$3$};
+		\node [style=none] (14) at (0, 0) {};
+		\node [style=none] (15) at (-0.5, 0.75) {};
+		\node [style=wire label left] (16) at (-1.5, 0.75) {$1$};
+		\node [style=none] (17) at (-0.5, 0) {};
+		\node [style=wire label left] (18) at (-1.5, 0) {$1$};
+		\node [style=none] (19) at (-0.5, -0.75) {};
+		\node [style=wire label left] (20) at (-1.5, -0.75) {$1$};
+		\node [style=none] (21) at (-0.5, -1.5) {};
+		\node [style=wire label left] (22) at (-1.5, -1.5) {$1$};
+		\node [style=wire label right] (23) at (1.25, -1.25) {$1$};
+		\node [style=none] (24) at (0, -1.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=tile white] (1.center)
+			 to (3.center)
+			 to (2.center)
+			 to (4.center)
+			 to cycle;
+		\draw [style=wire, in=-180, out=0] (8.center) to (5);
+		\draw [style=wire] (12) to (9.center);
+		\draw [style=wire, in=-180, out=0] (14.center) to (13);
+		\draw [style=wire] (16) to (15.center);
+		\draw [style=wire] (18) to (17.center);
+		\draw [style=wire] (20) to (19.center);
+		\draw [style=wire] (22) to (21.center);
+		\draw [style=wire, in=-180, out=0] (24.center) to (23);
+	\end{pgfonlayer}
+\end{tikzpicture}
