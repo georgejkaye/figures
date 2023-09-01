@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=wire label left] (9) at (-0.75, 0) {$A$};
+		\node [style=wire label right] (15) at (0.75, 0) {$A$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (15) to (9);
+	\end{pgfonlayer}
+\end{tikzpicture}
