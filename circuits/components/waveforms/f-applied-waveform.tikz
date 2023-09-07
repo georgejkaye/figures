@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style={medium square box \getvar{colour}}] (10) at (1, 0) {$\getvar{f}$};
-		\node [style=tiny signal seq] (15) at (-0.75, 0) {$\overline{\underline{\getvar{wave}}}$};
+		\node [style={medium square box \getvar{colour}}] (10) at (1, 0) {$\getvar{box}$};
+		\node [style=tiny signal seq] (15) at (-0.75, 0) {$\getvar{wave}$};
 		\node [style=wire label right] (16) at (2.25, 0) {$\getvar{cod}$};
 		\node [style=bproduct] (17) at (-2, 0) {};
 	\end{pgfonlayer}

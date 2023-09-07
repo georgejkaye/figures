@@ -5,12 +5,12 @@
 		\node [style=none] (15) at (1.5, 0.25) {};
 		\node [style=none] (17) at (1.5, -0.75) {};
 		\node [style=none] (20) at (1.75, 0.25) {};
-		\node [style=wire label right] (30) at (3.5, -0.75) {$\tvard$};
-		\node [style=tiny signal seq] (32) at (0, -0.25) {$\overline{\underline{\tvarb}}$};
+		\node [style=wire label right] (30) at (3.5, -0.75) {$\getvar{cod}$};
+		\node [style=tiny signal seq] (32) at (0, -0.25) {$\getvar{common}$};
 		\node [style=none] (33) at (-3, -0.25) {};
 		\node [style=none] (34) at (-3, 1) {};
-		\node [style=tiny signal seq] (35) at (-1.75, -0.25) {$\overline{\underline{\tvarc}}$};
-		\node [style=tiny signal seq] (36) at (2.5, -0.75) {$\overline{\underline{\tvara}}$};
+		\node [style=tiny signal seq] (35) at (-1.75, -0.25) {$\getvar{period}$};
+		\node [style=tiny signal seq] (36) at (2.5, -0.75) {$\getvar{prefix}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (35)
