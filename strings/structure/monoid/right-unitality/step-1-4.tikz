@@ -12,6 +12,7 @@
 		\node [style=none] (13) at (-2.75, -0.75) {};
 		\node [style=none] (14) at (-1.25, -0.75) {};
 		\node [style=bproduct] (17) at (-0.75, 0.75) {};
+		\node [style=wire label left] (18) at (-3.25, 0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (4) to (1);
@@ -27,5 +28,6 @@
 			 to (14.center)
 			 to [in=0, out=-180] (13.center)
 			 to (5);
+		\draw [style=unit wire] (17) to (18);
 	\end{pgfonlayer}
 \end{tikzpicture}
