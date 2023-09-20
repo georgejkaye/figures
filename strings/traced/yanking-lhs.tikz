@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=dangling] (0) at (-2.25, -1) {};
-		\node [style=dangling] (1) at (2.5, -1) {};
+		\node [style=wire label left] (0) at (-2.25, -1) {$\getvar{obj}$};
+		\node [style=wire label right] (1) at (2.5, -1) {$\getvar{obj}$};
 		\node [style=none] (2) at (0.75, 0) {};
 		\node [style=none] (3) at (-0.75, 0) {};
 		\node [style=none] (4) at (-0.75, -1) {};

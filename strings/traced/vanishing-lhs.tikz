@@ -1,16 +1,16 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box \tvarb] (0) at (0, -1.25) {$\tvara$};
+		\node [style=medium square box \getvar{colour}] (0) at (0, -1.25) {$\getvar{box}$};
 		\node [style=port] (2) at (0.25, -0.75) {};
 		\node [style=port] (3) at (0.25, -1.75) {};
-		\node [style=wire label right] (4) at (4.75, -1.75) {$\tvard$};
+		\node [style=wire label right] (4) at (4.75, -1.75) {$\getvar{cod}$};
 		\node [style=none] (5) at (1.5, -0.75) {};
 		\node [style=none] (6) at (1.5, 0.25) {};
 		\node [style=none] (7) at (-1.5, 0.25) {};
 		\node [style=port] (8) at (-0.25, -0.75) {};
 		\node [style=port] (9) at (-0.25, -1.75) {};
 		\node [style=none] (10) at (-1.5, -0.75) {};
-		\node [style=wire label left] (11) at (-4.75, -1.75) {$\tvarc$};
+		\node [style=wire label left] (11) at (-4.75, -1.75) {$\getvar{dom}$};
 		\node [style=port] (12) at (0.25, -1.25) {};
 		\node [style=port] (13) at (-0.25, -1.25) {};
 		\node [style=none] (14) at (-2.75, -1.25) {};
@@ -25,8 +25,8 @@
 		\node [style=none] (23) at (-4.25, -2.75) {};
 		\node [style=none] (24) at (4.25, -2.75) {};
 		\node [style=none] (25) at (4.25, 2.75) {};
-		\node [style=wire label mid] (26) at (0, 0.25) {$\tvare$};
-		\node [style=wire label mid] (27) at (0, 2) {$\tvarf$};
+		\node [style=wire label mid] (26) at (0, 0.25) {$\getvar{trace2}$};
+		\node [style=wire label mid] (27) at (0, 2) {$\getvar{trace1}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (3) to (4);
