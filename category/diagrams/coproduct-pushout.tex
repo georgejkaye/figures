@@ -1,0 +1,19 @@
+\documentclass{standalone}
+\usepackage{amssymb}
+\usepackage{tikz-cd}
+\begin{document}
+    \begin{tikzcd}
+        0
+        \arrow{r}
+        \arrow{d}
+        &
+        A
+        \arrow{d}
+        \\
+        B
+        \arrow{r}
+        &
+        A + B
+        \arrow[pos=0.125, draw=none]{ul}[description]{\hspace{0.75em}\rotatebox{90}{\scalebox{1.5}{\(\urcorner\)}}}
+    \end{tikzcd}
+\end{document}
