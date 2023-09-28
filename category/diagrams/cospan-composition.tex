@@ -1,0 +1,34 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+\usepackage{amssymb}
+\begin{document}
+    \begin{tikzcd}[row sep = small, column sep = small]
+        &
+        &
+        D
+        \arrow[pos=0.125, draw=none]{dd}[description]{\hspace{-0.25em}\rotatebox{225}{\(\urcorner\)}}
+        &
+        &
+        \\
+        &
+        A
+        \arrow{ur}
+        &
+        &
+        B
+        \arrow{ul}
+        &
+        \\
+        X
+        \arrow{ur}
+        &
+        &
+        Y
+        \arrow{ul}{f}
+        \arrow[swap]{ur}{g}
+        &
+        &
+        Z
+        \arrow{ul}
+    \end{tikzcd}
+\end{document}
