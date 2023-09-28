@@ -1,0 +1,26 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+\begin{document}
+    \begin{tikzcd}
+        A
+        \arrow{r}{f}
+        \arrow[swap]{d}{g}
+        &
+        B
+        \arrow{d}{h}
+        \arrow[bend left=20]{rdd}{h^\prime}
+        &
+        \\
+        C
+        \arrow[swap]{r}{k}
+        \arrow[swap, bend right=20]{drr}{k^\prime}
+        &
+        D
+        \arrow[dashed]{rd}{u}
+        &
+        \\
+        &
+        &
+        Z
+    \end{tikzcd}
+\end{document}
