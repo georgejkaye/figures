@@ -1,5 +1,6 @@
 \documentclass{standalone}
 \usepackage{tikz-cd}
+\usepackage{amssymb}
 \begin{document}
     \begin{tikzcd}
         A
@@ -17,6 +18,7 @@
         &
         D
         \arrow[dashed]{rd}{u}
+        \arrow[pos=0.125, draw=none]{ul}[description]{\hspace{0.5em}\rotatebox{90}{\scalebox{1.5}{\(\urcorner\)}}}
         &
         \\
         &
