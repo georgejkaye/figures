@@ -1,0 +1,17 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+\usepackage{amsmath}
+\input{macros/category}
+\begin{document}
+    \begin{tikzcd}[column sep=huge]
+        A
+        \arrow{r}{\ccunit[A] \tensor \id[A]}
+        \arrow[swap]{rd}{\id[A]}
+        &
+        A \tensor \dual{A} \tensor A
+        \arrow{d}{\cccounit[A] \tensor \id[A]}
+        \\
+        &
+        A
+    \end{tikzcd}
+\end{document}
