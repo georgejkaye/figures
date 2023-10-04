@@ -1,0 +1,70 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (1) at (0.5, 1.5) {};
+		\node [style=none] (2) at (0.5, 0) {};
+		\node [style=none] (5) at (1.5, 1.75) {};
+		\node [style=none] (6) at (1.5, -0.25) {};
+		\node [style=none] (7) at (0.5, -0.25) {};
+		\node [style=none] (8) at (0.5, 1.75) {};
+		\node [style=wire label left] (9) at (-2.25, 1.5) {};
+		\node [style=none] (11) at (1.5, 0.5) {};
+		\node [style=none] (12) at (1.5, 0.5) {};
+		\node [style=none] (13) at (1.25, 0.75) {};
+		\node [style=none] (14) at (-0.5, 0) {};
+		\node [style=none] (15) at (-0.5, -1.5) {};
+		\node [style=none] (16) at (-1.5, 0.25) {};
+		\node [style=none] (17) at (-1.5, -1.75) {};
+		\node [style=none] (18) at (-0.5, -1.75) {};
+		\node [style=none] (19) at (-0.5, 0.25) {};
+		\node [style=wire label left] (21) at (2.25, -1.5) {};
+		\node [style=none] (22) at (-1.5, -0.75) {};
+		\node [style=none] (23) at (-1.5, -0.75) {};
+		\node [style=none] (24) at (-1.25, -0.75) {};
+		\node [style=none] (25) at (-1.5, 2.25) {};
+		\node [style=none] (26) at (-1.5, 0.75) {};
+		\node [style=none] (27) at (-0.5, 0.75) {};
+		\node [style=none] (28) at (-0.5, 2.25) {};
+		\node [style=none] (29) at (-1.5, 1.5) {};
+		\node [style=none] (30) at (-1.5, 1.5) {};
+		\node [style=none] (31) at (0.5, -0.75) {};
+		\node [style=none] (32) at (0.5, -2.25) {};
+		\node [style=none] (33) at (1.5, -2.25) {};
+		\node [style=none] (34) at (1.5, -0.75) {};
+		\node [style=none] (35) at (0.5, -1.5) {};
+		\node [style=none] (36) at (0.5, -1.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=tile white] (12.center)
+			 to (6.center)
+			 to (7.center)
+			 to (8.center)
+			 to (5.center)
+			 to (11.center);
+		\draw [style=tile white] (23.center)
+			 to (17.center)
+			 to (18.center)
+			 to (19.center)
+			 to (16.center)
+			 to (22.center);
+		\draw [style=tile white] (30.center)
+			 to (26.center)
+			 to (27.center)
+			 to (28.center)
+			 to (25.center)
+			 to (29.center);
+		\draw [style=tile white] (36.center)
+			 to (32.center)
+			 to (33.center)
+			 to (34.center)
+			 to (31.center)
+			 to (35.center);
+		\draw [style=wire] (21)
+			 to (15.center)
+			 to [in=-90, out=180] (24.center)
+			 to [in=180, out=90] (14.center)
+			 to (2.center)
+			 to [in=-90, out=0] (13.center)
+			 to [in=0, out=90] (1.center)
+			 to (9);
+	\end{pgfonlayer}
+\end{tikzpicture}
