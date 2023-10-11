@@ -1,0 +1,36 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=label] (1) at (-2, 2.5) {$0$};
+		\node [style=label] (2) at (-2, 1.25) {$1$};
+		\node [style=label] (3) at (-2, 0) {$2$};
+		\node [style=label] (4) at (0, 1) {$0$};
+		\node [style=label] (5) at (0, 0) {$1$};
+		\node [style=label] (6) at (0, -1) {$2$};
+		\node [style=label] (7) at (2, 2) {$0$};
+		\node [style=label] (8) at (2, 0.75) {$1$};
+		\node [style=label] (9) at (2, -0.75) {$2$};
+		\node [style=label] (10) at (2, -2) {$3$};
+		\node [style=none] (12) at (-0.25, 1.25) {};
+		\node [style=none] (13) at (-0.25, 0.75) {};
+		\node [style=none] (14) at (-0.25, -0.75) {};
+		\node [style=none] (15) at (0.25, 1.25) {};
+		\node [style=none] (16) at (0.25, -0.75) {};
+		\node [style=none] (18) at (0.25, -1.25) {};
+		\node [style=label] (20) at (-2, -1.25) {$3$};
+		\node [style=label] (21) at (-2, -2.5) {$4$};
+		\node [style=none] (22) at (0.25, 0.75) {};
+		\node [style=none] (23) at (-0.25, -1) {};
+		\node [style=none] (24) at (-0.25, -1.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=commute] (3) to (14.center);
+		\draw [style=commute] (1) to (12.center);
+		\draw [style=commute] (2) to (13.center);
+		\draw [style=commute] (7) to (15.center);
+		\draw [style=commute] (9) to (16.center);
+		\draw [style=commute] (10) to (18.center);
+		\draw [style=commute] (8) to (22.center);
+		\draw [style=commute] (20) to (23.center);
+		\draw [style=commute] (21) to (24.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
