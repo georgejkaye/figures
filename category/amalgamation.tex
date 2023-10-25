@@ -1,0 +1,20 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+\usepackage{amssymb}
+\input{../macros/letters}
+\begin{document}
+    \begin{tikzcd}
+        \mcc
+        \arrow{r}{F_\mcd}
+        \arrow[swap]{d}{F_\mce}
+        &
+        \mcd
+        \arrow{d}{G_\mcd}
+        \\
+        \mce
+        \arrow[swap]{r}{G_\mce}
+        &
+        \mcb
+        \arrow[pos=0.125, draw=none]{ul}[description]{\hspace{0.5em}\rotatebox{90}{\scalebox{1.5}{\(\urcorner\)}}}
+    \end{tikzcd}
+\end{document}
