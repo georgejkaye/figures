@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (20) at (-0.75, 0) {};
+		\node [style=none] (21) at (0.75, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (21.center) to (20.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
