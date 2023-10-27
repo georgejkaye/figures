@@ -1,6 +1,10 @@
 \documentclass{standalone}
 \usepackage{tikz-cd}
-\usepakcage{../macros/categories}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{stmaryrd}
+\input{../macros/category}
+\input{../macros/graphs}
 \begin{document}
     \begin{tikzcd}[column sep = large, row sep = large]
         \permspropwithnat
@@ -14,5 +18,6 @@
         \arrow[swap]{r}{\termtohypsigmac}
         &
         \smcsigmac + \frobc
+        \arrow[pos=0.125, draw=none]{ul}[description]{\hspace{1.5em}\scalebox{1.5}{\(\ulcorner\)}}
     \end{tikzcd}
 \end{document}
