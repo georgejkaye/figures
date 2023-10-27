@@ -1,0 +1,18 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+\usepakcage{../macros/categories}
+\begin{document}
+    \begin{tikzcd}[column sep = large, row sep = large]
+        \permspropwithnat
+        \arrow{r}{!_2}
+        \arrow[swap]{d}{!_1}
+        &
+        \frobc
+        \arrow{d}{\frobtohypsigmac}
+        \\
+        \smcsigmac
+        \arrow[swap]{r}{\termtohypsigmac}
+        &
+        \smcsigmac + \frobc
+    \end{tikzcd}
+\end{document}
