@@ -1,6 +1,14 @@
+\pgfkeys{%
+	/tikzit,%
+	box/.initial=f,%
+	colour/.initial=white,%
+	dom/.initial=,%
+	cod/.initial=,%
+	trace/.initial=%
+}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box \getvar{colour}] (0) at (0, -0.25) {$\getvar{f}$};
+		\node [style=medium square box \getvar{colour}] (0) at (0, -0.25) {$\getvar{box}$};
 		\node [style=none] (2) at (-0.25, -0.75) {};
 		\node [style=none] (4) at (-1, 0.25) {};
 		\node [style=none] (5) at (-0.25, 0.25) {};

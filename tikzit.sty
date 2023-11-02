@@ -56,12 +56,20 @@
     \global\pgfkeyslet{/tikzit/\strkey}{\strval}%
   }%
 }
-\newcommand{\clearvars}[1]{%
-  \foreach \x in #1 {%
-    \whereischar[q]{\x}{=}%
-    \StrSplit{\x}{\number\numexpr\theresult - 1\relax}{\strkey}{\strrest}%
-    \global\pgfkeyslet{/tikzit/\strkey}{}%
-  }%
+% \newcommand{\clearvars}[1]{%
+%   \foreach \x in #1 {%
+%     \whereischar[q]{\x}{=}%
+%     \StrSplit{\x}{\number\numexpr\theresult - 1\relax}{\strkey}{\strrest}%
+%     \global\pgfkeyslet{/tikzit/\strkey}{}%
+%   }%
+% }
+\pgfkeys{/tikzit/.is family}
+\newcommand{\settvars}[1]{%
+  \pgfkeys{/tikzit, #1}
+}
+\newcommand{\defvars}[1]{
+  \pgfkeys{/tikzit, #1}
+  \pgfkeys{\tikzitargs}
 }
 \newcommand{\getvar}[1]{\pgfkeysvalueof{/tikzit/#1}}
 \newcommand{\tikzitargs}{}
@@ -73,15 +81,21 @@
 \newcommand{\tvarf}{}
 \newcommand{\tvarg}{}
 \newcommand{\tvarh}{}
+\newcommand{\activateargs}{}
 \NewDocumentCommand\iltikzfig{mo}{%}
-  \IfValueTF{#2}{\renewcommand{\tikzitargs}{#2}}{\renewcommand{\tikzitargs}{}}
-  \setvars{\tikzitargs}%
-  \raisebox{0.15em}{\scalebox{0.5}{\tikzfig{#1}}}%
-  \clearvars{\tikzitargs}%
+  \begingroup
+    % \IfValueTF{#2}{\renewcommand{\tikzitargs}{#2}}{\renewcommand{\tikzitargs}{}}
+    % \setvars{\tikzitargs}%
+    \renewcommand{\activateargs}{%
+        \IfValueT{#2}{\pgfkeys{/tikzit, #2}}%
+    }%
+    \raisebox{0.15em}{\scalebox{0.5}{\tikzfig{#1}}}%
+    % \clearvars{\tikzitargs}%
+  \endgroup
 }
 \NewDocumentCommand\dsptikzfig{mo}{%
   \IfValueTF{#2}{\renewcommand{\tikzitargs}{#2}}{\renewcommand{\tikzitargs}{}}
   \setvars{\tikzitargs}%
   \tikzfig{#1}%
-  \clearvars{\tikzitargs}%
+  % \clearvars{\tikzitargs}%
 }

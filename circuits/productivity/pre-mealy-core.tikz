@@ -1,3 +1,4 @@
+\pgfkeys{/tikzit, core/.initial=\hat{F}, dom/.initial=m, cod/.initial=n, trace/.initial=x, delay/.initial=y, values/.initial=z}
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box comb] (10) at (0, 0) {$\hat{F}$};
@@ -5,16 +6,16 @@
 		\node [style=none] (18) at (0.75, 0.25) {};
 		\node [style=none] (19) at (-0.75, -0.6) {};
 		\node [style=none] (20) at (0.75, 0.6) {};
-		\node [style=wire label left] (23) at (-1.5, -0.75) {$m$};
-		\node [style=wire label left] (24) at (-1.5, 0.25) {$y$};
-		\node [style=wire label right] (25) at (1.5, 0.75) {$x$};
-		\node [style=wire label right] (26) at (1.5, 0.25) {$y$};
+		\node [style=wire label left] (23) at (-1.5, -0.75) {$\getvar{dom}$};
+		\node [style=wire label left] (24) at (-1.5, 0.25) {$\getvar{delay}$};
+		\node [style=wire label right] (25) at (1.5, 0.75) {$\getvar{trace}$};
+		\node [style=wire label right] (26) at (1.5, 0.25) {$\getvar{delay}$};
 		\node [style=none] (27) at (-0.75, -0.25) {};
-		\node [style=wire label left] (29) at (-1.5, -0.25) {$z$};
+		\node [style=wire label left] (29) at (-1.5, -0.25) {$\getvar{values}$};
 		\node [style=none] (30) at (0.75, -0.6) {};
-		\node [style=wire label right] (32) at (1.5, -0.75) {$n$};
+		\node [style=wire label right] (32) at (1.5, -0.75) {$\getvar{cod}$};
 		\node [style=none] (33) at (-0.75, 0.6) {};
-		\node [style=wire label left] (34) at (-1.5, 0.75) {$x$};
+		\node [style=wire label left] (34) at (-1.5, 0.75) {$\getvar{trace}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (29) to (27.center);

@@ -1,3 +1,9 @@
+\pgfkeys{%
+	/tikzit,%
+	dom/.initial=,%
+	cod/.initial=,%
+	trace/.initial=%
+}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box comb] (0) at (3, -0.75) {$F$};
@@ -5,13 +11,13 @@
 		\node [style=medium square box comb] (2) at (-0.75, 0.75) {$F^k$};
 		\node [style=bport] (3) at (2.75, -0.25) {};
 		\node [style=bport] (4) at (2.75, -1.25) {};
-		\node [style=wire label right] (5) at (4.25, -0.25) {$\tvarb$};
+		\node [style=wire label right] (5) at (4.25, -0.25) {$\getvar{trace}$};
 		\node [style=bport] (6) at (3.25, -0.25) {};
 		\node [style=bport] (7) at (3.25, -1.25) {};
-		\node [style=wire label right] (8) at (4.25, -1.25) {$\tvarc$};
+		\node [style=wire label right] (8) at (4.25, -1.25) {$\getvar{cod}$};
 		\node [style=bproduct] (9) at (-2.5, -0.25) {};
 		\node [style=none] (10) at (-1.5, 0.75) {};
-		\node [style=wire label left] (11) at (-3.25, -0.25) {$\tvara$};
+		\node [style=wire label left] (11) at (-3.25, -0.25) {$\getvar{dom}$};
 		\node [style=none] (12) at (0.25, 1.25) {};
 		\node [style=bport] (13) at (-0.5, 0.25) {};
 		\node [style=bproduct] (15) at (0.5, 0.25) {};

@@ -1,3 +1,10 @@
+\pgfkeys{%
+	/tikzit,%
+	box/.initial=F,%
+	dom/.initial=,%
+	cod/.initial=,%
+	colour/.initial=white%
+}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style={medium box \getvar{colour}}] (0) at (0, 0) {$\getvar{box}$};

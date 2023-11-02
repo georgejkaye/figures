@@ -1,15 +1,25 @@
+\pgfkeys{%
+	/tikzit,%
+	box1/.initial=f,%
+	box2/.initial=g,%
+	colour/.initial=white,%
+	dom1/.initial=,%
+	cod1/.initial=,%
+	dom2/.initial=,%
+	cod3/.initial=%
+}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style={medium square box \tvarc}] (0) at (0, 1) {$\tvara$};
-		\node [style=wire label left] (1) at (-1.25, 1) {$\tvard$};
+		\node [style={medium square box \getvar{colour}}] (0) at (0, 1) {$\getvar{box1}$};
+		\node [style=wire label left] (1) at (-1.25, 1) {$\getvar{dom1}$};
 		\node [style=port] (5) at (-0.25, 1) {};
 		\node [style=port] (6) at (0.25, 1) {};
-		\node [style=wire label right] (7) at (1.25, 1) {$\tvare$};
-		\node [style={medium square box \tvarc}] (8) at (0, -1) {$\tvarb$};
-		\node [style=wire label left] (9) at (-1.25, -1) {$\tvarf$};
+		\node [style=wire label right] (7) at (1.25, 1) {$\getvar{cod1}$};
+		\node [style={medium square box \getvar{colour}}] (8) at (0, -1) {$\getvar{box2}$};
+		\node [style=wire label left] (9) at (-1.25, -1) {$\getvar{dom2}$};
 		\node [style=port] (12) at (-0.25, -1) {};
 		\node [style=port] (13) at (0.25, -1) {};
-		\node [style=wire label right] (14) at (1.25, -1) {$\tvarg$};
+		\node [style=wire label right] (14) at (1.25, -1) {$\getvar{cod2}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (7) to (6);

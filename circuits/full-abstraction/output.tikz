@@ -1,10 +1,16 @@
+\pgfkeys{%
+	/tikzit,%
+	core/.initial=\hat{F}
+	state/.initial=\listvar{s},%
+	input/.initial=\listvar{v}%
+}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny box seq] (15) at (-2, 0.5) {$\overline{\getvar{state}}$};
-		\node [style=medium square box comb] (16) at (0, 0) {$\getvar{f}$};
+		\node [style=tiny box seq] (15) at (-2, 0.5) {$\getvar{state}$};
+		\node [style=medium square box comb] (16) at (0, 0) {$\getvar{core}$};
 		\node [style=none] (17) at (-1.5, 0.5) {};
 		\node [style=none] (18) at (-1.5, -0.5) {};
-		\node [style=tiny box seq] (22) at (-3.5, -0.5) {$\overline{\getvar{input}}$};
+		\node [style=tiny box seq] (22) at (-3.5, -0.5) {$\getvar{input}$};
 		\node [style=port] (23) at (0.25, -0.5) {};
 		\node [style=dangling] (24) at (2, -0.5) {};
 		\node [style=port] (25) at (0.25, 0.5) {};
