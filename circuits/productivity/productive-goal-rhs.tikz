@@ -1,3 +1,10 @@
+\pgfkeys{%
+	/tikzit,%
+	box/.initial=g,%
+	output/.initial=\listvar{w},%
+	dom/.initial=,%
+	cod/.initial=%
+}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box seq] (0) at (-1, 0) {$\getvar{box}$};

@@ -1,3 +1,8 @@
+\pgfkeys{%
+	/tikzit,%
+	val/.initial=\listvar{v},%
+	width/.initial=%
+}
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=wire label right] (2) at (1.25, 0) {$\getvar{width}$};

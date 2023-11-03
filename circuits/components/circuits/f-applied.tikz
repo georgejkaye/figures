@@ -1,4 +1,10 @@
-\pgfkeys{/tikzit, box/.initial=f, val/.initial=\listvar{v}, colour/.initial=white, cod/.initial=}
+\pgfkeys{%
+	/tikzit,%
+	box/.initial=f,%
+	val/.initial=\listvar{v},%
+	colour/.initial=white,%
+	cod/.initial=%
+}
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style={medium square box \getvar{colour}}] (10) at (0, 0) {$\getvar{box}$};

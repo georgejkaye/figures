@@ -1,19 +1,27 @@
+\pgfkeys{%
+	/tikzit,%
+	core/.initial=\hat{F},%
+	state/.initial=\listvar{s},%
+	wave/.initial=\listlistvar{v},%
+	cod/.initial=,%
+	delay/.initial=%
+}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box comb] (0) at (1.5, -0.5) {$\tvara$};
+		\node [style=medium square box comb] (0) at (1.5, -0.5) {$\getvar{core}$};
 		\node [style=none] (1) at (1.25, 0) {};
 		\node [style=none] (2) at (1.25, -1) {};
-		\node [style=register] (3) at (-0.75, 0) {$\overline{\tvarb}$};
-		\node [style=tiny signal seq] (4) at (-2.75, -1) {$\overline{\underline{\tvarc}}$};
+		\node [style=register] (3) at (-0.75, 0) {$\getvar{state}$};
+		\node [style=tiny signal seq] (4) at (-2.75, -1) {$\getvar{wave}$};
 		\node [style=none] (5) at (-1.75, 0) {};
 		\node [style=none] (6) at (-1.75, 1) {};
 		\node [style=none] (7) at (2.5, 1) {};
 		\node [style=none] (8) at (2.5, 0) {};
 		\node [style=none] (9) at (1.75, 0) {};
 		\node [style=bproduct] (10) at (-4, -1) {};
-		\node [style=wire label right] (11) at (3.5, -1) {$n$};
+		\node [style=wire label right] (11) at (3.5, -1) {$\getvar{cod}$};
 		\node [style=none] (12) at (1.75, -1) {};
-		\node [style=wire label mid] (13) at (1.5, 1) {$x$};
+		\node [style=wire label mid] (13) at (1.5, 1) {$\getvar{delay}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (1.center) to (3);

@@ -1,3 +1,13 @@
+\pgfkeys{%
+	/tikzit,%
+	box1/.initial=f,%
+	box2/.initial=g,%
+	colour/.initial=white,%
+	dom1/.initial=,%
+	cod1/.initial=,%
+	dom2/.initial=,%
+	cod2/.initial=%
+}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box \getvar{colour}] (0) at (0, 0.25) {$\getvar{box1}$};
@@ -10,7 +20,7 @@
 		\node [style=port] (8) at (0.25, 0.75) {};
 		\node [style=port] (9) at (0.25, -0.25) {};
 		\node [style=none] (10) at (1.5, 0.75) {};
-		\node [style=wire label right] (11) at (3, -0.25) {$\getvar{cod1}$};
+		\node [style=wire label right] (11) at (3, -0.25) {$\getvar#{cod1}$};
 		\node [style=wire label left] (12) at (-2.75, -2.25) {$\getvar{cod1}$};
 		\node [style=wire label right] (13) at (3, -2.25) {$\getvar{cod2}$};
 		\node [style=tiny box \getvar{colour}] (14) at (0, -2.25) {$\getvar{box2}$};

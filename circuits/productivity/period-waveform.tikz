@@ -1,3 +1,9 @@
+\pgfkeys{%
+	/tikzit,%
+	prefix/.initial=\listlistvar{w},%
+	period/.initial=\listlistvar{u},%
+	cod/.initial=%
+}%
 \begin{tikzpicture}[circuit logic US]
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=bproduct] (12) at (1, -0.25) {};

@@ -1,3 +1,16 @@
+\pgfkeys{%
+	/tikzit,%
+	box1/.initial=f,%
+	box2/.initial=g,%
+	box3/.initial=h,%
+	colour/.initial=white,%
+	dom1/.initial=,%
+	dom2/.initial=,%
+	dom3/.initial=,%
+	cod1/.initial=,%
+	cod2/.initial=,%
+	cod3/.initial=%
+}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style={medium square box \getvar{colour}}] (0) at (0, 2) {$\getvar{box1}$};
