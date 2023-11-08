@@ -1,7 +1,7 @@
 \pgfkeys{%
 	/tikzit,%
 	core/.initial=\hat{F},%
-	values/.initial=\listvar{v},%
+	state/.initial=\listvar{v},%
 	dom/.initial=,%
 	cod/.initial=,%
 	delay/.initial=,%
@@ -16,7 +16,7 @@
 		\node [style=none] (16) at (-2.5, 1.5) {};
 		\node [style=none] (17) at (-2.5, 0.25) {};
 		\node [style=none] (18) at (-2.25, -0.75) {};
-		\node [style=tiny box seq] (19) at (-4.25, -0.25) {$\getvar{values}$};
+		\node [style=tiny box seq] (19) at (-4.25, -0.25) {$\getvar{state}$};
 		\node [style=none] (38) at (2, 1) {};
 		\node [style=none] (39) at (0, 1) {};
 		\node [style=medium square box comb] (41) at (1, -0.5) {$\getvar{core}$};
