@@ -1,7 +1,15 @@
+\pgfkeys{%
+	/tikzit,%
+	core/.initial=\hat{F},%
+	state/.initial=\listvar{s},%
+	stream/.initial=\sigma,%
+	prefix/.initial=i,%
+	cod/.initial=%
+}%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (15) at (-2.5, 0.5) {$\getvar{f}^{\,\getvar{state}}_{\,\prefix{\getvar{stream}}{\getvar{prefix}}}$};
-		\node [style=medium square box comb] (16) at (0, 0) {$\getvar{f}$};
+		\node [style=medium square box seq] (15) at (-2.5, 0.5) {$\getvar{core}^{\,\getvar{state}}_{\,\prefix{\getvar{stream}}{\getvar{prefix}}}$};
+		\node [style=medium square box comb] (16) at (0, 0) {$\getvar{core}$};
 		\node [style=tiny box seq] (22) at (-5, -0.5) {$\getvar{stream}(\getvar{prefix})$};
 		\node [style=port] (23) at (0.25, -0.5) {};
 		\node [style=wire label right] (24) at (2, -0.5) {$\getvar{cod}$};

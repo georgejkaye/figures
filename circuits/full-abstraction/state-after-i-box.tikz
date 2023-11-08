@@ -1,7 +1,15 @@
+\pgfkeys{%
+	/tikzit,%
+	core/.initial=\hat{F},%
+	input/.initial=\sigma,%
+	state/.initial=\listvar{s},%
+	cod/.initial=%
+}%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (0) at (-0.75, 0) {${\tvara}^{\,\tvarb}_{\,\tvarc}$};
-		\node [style=wire label right] (1) at (0.5, 0) {$\tvard$};
+		\node [style=medium square box seq] (0) at (-0.75, 0) {${\getvar{core}}^{\,\getvar{input}}_{\,\getvar{index}}$};
+		\node [style=wire label right] (1) at (0.5, 0) {$\getvar{cod}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (0) to (1);

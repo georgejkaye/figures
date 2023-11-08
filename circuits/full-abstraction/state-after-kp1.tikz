@@ -1,10 +1,19 @@
+\pgfkeys{%
+	/tikzit,%
+	core/.initial=\hat{F},%
+	state/.initial=\listvar{s},%
+	head/.initial=\listvar{a},%
+	tail/.initial=\listlistvar{u},%
+	cod/.initial=%
+}%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (15) at (-2, 0.5) {${\tvara}^{\,\tvarb}_{\,\tvard}$};
-		\node [style=medium square box comb] (16) at (0, 0) {$\tvara$};
-		\node [style=tiny box seq] (22) at (-3.75, -0.5) {$\tvarc$};
+		\node [style=medium square box seq] (15) at (-2, 0.5) {${\getvar{core}}^{\,\getvar{state}}_{\,\getvar{tail}}$};
+		\node [style=medium square box comb] (16) at (0, 0) {$\getvar{core}$};
+		\node [style=tiny box seq] (22) at (-3.75, -0.5) {$\getvar{head}$};
 		\node [style=port] (23) at (0.25, 0.5) {};
-		\node [style=wire label right] (24) at (2, 0.5) {$\tvare$};
+		\node [style=wire label right] (24) at (2, 0.5) {$\getvar{cod}$};
 		\node [style=port] (25) at (0.25, -0.5) {};
 		\node [style=bproduct] (26) at (1.5, -0.5) {};
 		\node [style=none] (47) at (-0.75, 0.5) {};

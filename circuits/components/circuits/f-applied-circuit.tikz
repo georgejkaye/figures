@@ -1,6 +1,14 @@
+\pgfkeys{%
+	/tikzit,%
+	box/.initial=f,%
+	colour/.initial=white,%
+	val/.initial=\listvar{v},%
+	cod/.initial=%
+}%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style={medium square box \getvar{colour}}] (10) at (0, 0) {$\getvar{f}$};
+		\node [style={medium square box \getvar{colour}}] (10) at (0, 0) {$\getvar{box}$};
 		\node [style=medium square box seq] (15) at (-2, 0) {$\getvar{val}$};
 		\node [style=wire label right] (16) at (1.25, 0) {$\getvar{cod}$};
 	\end{pgfonlayer}

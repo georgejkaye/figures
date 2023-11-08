@@ -13,7 +13,7 @@
 		\node [style=none] (15) at (2.75, 1) {};
 		\node [style=none] (16) at (-1.25, 1) {};
 		\node [style=none] (17) at (-1.25, 0) {};
-		\node [style=medium square box comb] (41) at (1.75, -0.5) {$\getvar{box}$};
+		\node [style=medium square box comb] (41) at (1.75, -0.5) {$\getvar{core}$};
 		\node [style=port] (43) at (1.5, 0) {};
 		\node [style=port] (47) at (2, 0) {};
 		\node [style=register] (55) at (-0.25, 0) {$\getvar{state}$};

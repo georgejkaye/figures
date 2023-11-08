@@ -1,7 +1,16 @@
+\pgfkeys{%
+	/tikzit,%
+	core/.initial=\hat{F},%
+	state/.initial=\listvar{s},%
+	head/.initial=\listvar{a},%
+	tail/.initial=\listlistvar{u},%
+	cod/.initial=%
+}%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (0) at (-0.75, 0) {${\tvara}^{\,\tvarb}_{\,\tvard \streamcons \tvarc}$};
-		\node [style=wire label right] (2) at (0.66, 0) {$\tvare$};
+		\node [style=medium square box seq] (0) at (-0.75, 0) {${\getvar{core}}^{\,\getvar{state}}_{\,\getvar{tail} \streamcons \getvar{head}}$};
+		\node [style=wire label right] (2) at (0.66, 0) {$\getvar{cod}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (2) to (0);

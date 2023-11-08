@@ -1,6 +1,14 @@
+\pgfkeys{%
+	/tikzit,%
+	core/.initial=\hat{F},%
+	input/.initial=\sigma,%
+	state/.initial=\listvar{s},%
+	cod/.initial=%
+}%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (0) at (-0.5, 0) {$\getvar{f}^{\,\getvar{state}}_{\,\varepsilon}$};
+		\node [style=medium square box seq] (0) at (-0.5, 0) {$\getvar{core}^{\,\getvar{state}}_{\,\varepsilon}$};
 		\node [style=wire label right] (2) at (0.75, 0) {$\getvar{cod}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

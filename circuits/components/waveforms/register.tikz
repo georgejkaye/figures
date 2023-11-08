@@ -1,3 +1,9 @@
+\pgfkeys{%
+	/tikzit,%
+	val/.initial=\listvar{v},%
+	width/.initial=%
+}%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=bproduct] (2) at (1, 0) {};
