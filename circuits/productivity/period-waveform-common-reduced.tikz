@@ -2,7 +2,7 @@
 	/tikzit,%
 	prefix/.initial=\listlistvar{w},%
 	period/.initial=\listlistvar{u},%
-	shared/.initial=\listlistvar{c}
+	shared/.initial=\listlistvar{c},%
 	cod/.initial=%
 }%
 \activateargs%

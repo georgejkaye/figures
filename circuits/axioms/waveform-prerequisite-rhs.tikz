@@ -1,19 +1,27 @@
-\defvar{val}[v]%
+\pgfkeys{%
+	/tikzit,%
+	box/.initial=f,%
+	state/.initial=\listvar{s},%
+	delay/.initial=,%
+	cod/.initial=,%
+	wave/.initial=\listlistvar{v}%
+}%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (14) at (2.75, 0) {};
 		\node [style=none] (15) at (2.75, 1) {};
 		\node [style=none] (16) at (-1.25, 1) {};
 		\node [style=none] (17) at (-1.25, 0) {};
-		\node [style=medium square box comb] (41) at (1.75, -0.5) {$\getvar{f}$};
+		\node [style=medium square box comb] (41) at (1.75, -0.5) {$\getvar{box}$};
 		\node [style=port] (43) at (1.5, 0) {};
 		\node [style=port] (47) at (2, 0) {};
 		\node [style=none] (52) at (0.25, 0) {};
-		\node [style=register] (55) at (-0.25, 0) {$\overline{\getvar{val}}$};
+		\node [style=register] (55) at (-0.25, 0) {$\getvar{state}$};
 		\node [style=port] (56) at (1.5, -1) {};
 		\node [style=port] (57) at (2, -1) {};
-		\node [style=tiny signal seq] (59) at (4, -1) {$\overline{\underline{\getvar{wave}}}$};
-		\node [style=wire label mid] (62) at (1.75, 1) {$\getvar{dom}$};
+		\node [style=tiny signal seq] (59) at (4, -1) {$\getvar{wave}$};
+		\node [style=wire label mid] (62) at (1.75, 1) {$\getvar{delay}$};
 		\node [style=wire label right] (63) at (5, -1) {$\getvar{cod}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
