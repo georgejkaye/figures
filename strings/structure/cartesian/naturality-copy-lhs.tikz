@@ -5,6 +5,7 @@
 	dom/.initial=,%
 	cod/.initial=%
 }%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (0) at (0, 0) {};

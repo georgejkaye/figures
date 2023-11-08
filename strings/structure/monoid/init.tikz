@@ -2,7 +2,8 @@
 	/tikzit,%
 	colour/.initial=white,%
 	obj/.initial=%
-}
+}%
+\activateargs
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=bproduct] (0) at (0, 0) {};

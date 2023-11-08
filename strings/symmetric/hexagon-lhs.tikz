@@ -5,6 +5,7 @@
 	obj2/.initial=,%
 	obj3/.initial=%
 }%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (3) at (-1.25, 2) {};

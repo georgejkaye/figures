@@ -2,7 +2,8 @@
 	/tikzit,%
 	val/.initial=\listvar{v},%
 	width/.initial=%
-}
+}%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=wire label right] (2) at (1.25, 0) {$\getvar{width}$};

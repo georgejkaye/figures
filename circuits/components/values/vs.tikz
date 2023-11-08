@@ -1,8 +1,13 @@
-\pgfkeys{/tikzit, cod/.initial=, val/.initial=\listvar{v}}
+\pgfkeys{
+	/tikzit,%
+	width/.initial=,%
+	val/.initial=\listvar{v}%
+}%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (0) at (-0.25, 0) {};
-		\node [style=wire label right] (3) at (0.5, 0) {$\getvar{cod}$};
+		\node [style=wire label right] (3) at (0.5, 0) {$\getvar{width}$};
 		\node [style=tiny box seq] (15) at (-0.5, 0) {$\getvar{val}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

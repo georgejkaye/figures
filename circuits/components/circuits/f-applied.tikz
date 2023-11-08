@@ -4,7 +4,8 @@
 	val/.initial=\listvar{v},%
 	colour/.initial=white,%
 	cod/.initial=%
-}
+}%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style={medium square box \getvar{colour}}] (10) at (0, 0) {$\getvar{box}$};

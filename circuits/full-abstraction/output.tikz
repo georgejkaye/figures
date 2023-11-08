@@ -4,6 +4,7 @@
 	state/.initial=\listvar{s},%
 	input/.initial=\listvar{v}%
 }%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=tiny box seq] (15) at (-2, 0.5) {$\getvar{state}$};

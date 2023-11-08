@@ -5,6 +5,7 @@
 	dom/.initial=,%
 	cod/.initial=%
 }%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=wire label left] (0) at (-2.5, 0) {$\getvar{dom}$};

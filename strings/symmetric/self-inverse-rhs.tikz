@@ -4,6 +4,7 @@
 	obj1/.initial=,%
 	obj2/.initial=%
 }%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=wire label left] (3) at (-1, 0.5) {$\getvar{obj1}$};

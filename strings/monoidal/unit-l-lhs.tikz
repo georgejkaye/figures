@@ -5,6 +5,7 @@
 	dom/.initial=,%
 	cod/.initial=%
 }%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style={medium square box \getvar{colour}}] (0) at (0, 1.25) {$\getvar{box}$};

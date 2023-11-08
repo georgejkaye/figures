@@ -5,6 +5,7 @@
 	shared/.initial=\listlistvar{c}
 	cod/.initial=%
 }%
+\activateargs%
 \begin{tikzpicture}[circuit logic US]
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=bproduct] (12) at (1, -0.25) {};

@@ -2,6 +2,7 @@
 	/tikzit,%
 	obj/.initial=%
 }%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=wire label left] (0) at (-1, 0) {$\getvar{obj}$};

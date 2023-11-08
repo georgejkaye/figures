@@ -10,6 +10,7 @@
 	cod1/.initial=,%
 	cod2/.initial=%
 }%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style={medium square box \getvar{colour}}] (0) at (-1.75, 1.75) {$\getvar{box1}$};

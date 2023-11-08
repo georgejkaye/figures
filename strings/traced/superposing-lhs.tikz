@@ -8,6 +8,7 @@
 	dom2/.initial=,%
 	cod2/.initial=%
 }%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box \getvar{colour}] (0) at (0, 0.25) {$\getvar{box1}$};

@@ -6,6 +6,7 @@
 	index/.initial=i,%
 	cod/.initial=%
 }%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box seq] (0) at (-1, 0) {$\getvar{core}^{\,\getvar{state}}_{\,\prefix{\getvar{stream}}{\getvar{prefix}}}$};
