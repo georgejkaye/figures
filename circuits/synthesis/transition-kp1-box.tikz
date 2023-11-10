@@ -1,0 +1,18 @@
+\pgfkeys{%
+	/tikzit,%
+	core/.initial=\hat{F},%
+	input/.initial=\sigma,%
+	index/.initial=i,%
+	state/.initial=\listvar{s},%
+	cod/.initial=%
+}%
+\activateargs
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box seq] (0) at (-1.25, 0) {$\transitions{\getvar{core}}{\getvar{index}}{\getvar{state}}{\getvar{input}}$};
+		\node [style=wire label right] (1) at (1.25, 0) {$\getvar{cod}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (1) to (0);
+	\end{pgfonlayer}
+\end{tikzpicture}
