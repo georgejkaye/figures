@@ -1,3 +1,9 @@
+\pgfkeys{%
+	/tikzit,%
+	obj1/.initial=,%
+	obj2/.initial=%
+}%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=bproduct] (0) at (0.5, 0.5) {};

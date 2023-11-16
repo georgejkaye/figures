@@ -1,11 +1,17 @@
+\pgfkeys{%
+	/tikzit,%
+	obj1/.initial=,%
+	obj2/.initial=%
+}%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=bproduct] (0) at (0, 0) {};
 		\node [style=none] (1) at (0.5, 0.5) {};
 		\node [style=none] (2) at (0.5, -0.5) {};
 		\node [style=wire label left] (3) at (-1, 0) {$\getvar{obj1} \tensor \getvar{obj2}$};
-		\node [style=wire label right] (9) at (1, 0.5) {$\getvar{obj}$};
-		\node [style=wire label right] (10) at (1, -0.5) {$\getvar{obj}$};
+		\node [style=wire label right] (9) at (1, 0.5) {$\getvar{obj1} \tensor \getvar{obj2}$};
+		\node [style=wire label right] (10) at (1, -0.5) {$\getvar{obj1} \tensor \getvar{obj2}$};
 		\node [style=none] (11) at (-0.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
