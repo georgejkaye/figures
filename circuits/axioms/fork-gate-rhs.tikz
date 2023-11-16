@@ -1,3 +1,10 @@
+\pgfkeys{%
+	/tikzit,%
+	gate/.initial=p,%
+	dom/.initial=,%
+	cod/.initial=%
+}%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium box comb] (0) at (1.25, 1) {$\getvar{gate}$};
