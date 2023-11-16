@@ -1,3 +1,11 @@
+\pgfkeys{%
+	/tikzit,%
+	box/.initial=F,%
+	dom/.initial=,%
+	cod/.initial=,%
+	trace/.initial=,%
+}%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box comb] (0) at (0, -0.25) {$\getvar{box}$};
@@ -11,7 +19,7 @@
 		\node [style=none] (8) at (-1, 0.25) {};
 		\node [style=wire label left] (9) at (-1.75, -0.75) {$\getvar{dom}$};
 		\node [style=wire label right] (10) at (1.75, -0.75) {$\getvar{cod}$};
-		\node [style=wire label mid] (11) at (0, 1) {$\getvar{feedback}$};
+		\node [style=wire label mid] (11) at (0, 1) {$\getvar{trace}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (1)
