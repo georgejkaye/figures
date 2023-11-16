@@ -1,0 +1,24 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=bproduct] (20) at (-1.75, 0) {};
+		\node [style=none] (21) at (-1.25, 0.35) {};
+		\node [style=none] (22) at (-1.25, -0.35) {};
+		\node [style=and] (23) at (1.25, 0) {};
+		\node [style=not] (24) at (-0.75, 0.35) {};
+		\node [style=none] (25) at (0.75, -0.35) {};
+		\node [style=none] (32) at (2.5, 0) {};
+		\node [style=none] (37) at (0.75, 0.35) {};
+		\node [style=none] (38) at (-2.5, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (24)
+			 to [in=360, out=180] (21.center)
+			 to [in=75, out=-180] (20);
+		\draw [style=wire] (25.center)
+			 to (22.center)
+			 to [in=-75, out=-180] (20);
+		\draw [style=wire] (23) to (32.center);
+		\draw [style=wire] (24) to (37.center);
+		\draw [style=wire] (38.center) to (20);
+	\end{pgfonlayer}
+\end{tikzpicture}
