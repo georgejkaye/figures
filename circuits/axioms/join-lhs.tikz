@@ -1,5 +1,10 @@
-\defvar{val1}[v]%
-\defvar{val2}[w]%
+\pgfkeys{%
+	/tikzit,%
+	val1/.initial=v,%
+	val2/.initial=w,%
+	cod/.initial=%
+}%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (3) at (-1.25, 0.75) {};
