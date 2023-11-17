@@ -1,13 +1,13 @@
 \begin{tikzpicture}[circuit logic US]
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=dangling] (20) at (-2.75, 0.25) {};
-		\node [style=dangling] (24) at (-2.75, -0.25) {};
-		\node [style=or] (27) at (-1.5, 0) {};
-		\node [style=none] (28) at (-1.75, 0.25) {};
-		\node [style=none] (29) at (-1.75, -0.25) {};
-		\node [style=none] (30) at (-1.25, 0) {};
+		\node [style=dangling] (20) at (-2.25, 0.25) {};
+		\node [style=dangling] (24) at (-2.25, -0.25) {};
+		\node [style=or] (27) at (-1.25, 0) {};
+		\node [style=none] (28) at (-1.5, 0.25) {};
+		\node [style=none] (29) at (-1.5, -0.25) {};
+		\node [style=none] (30) at (-1, 0) {};
 		\node [style=not] (31) at (0.25, 0) {};
-		\node [style=dangling] (32) at (1.75, 0) {};
+		\node [style=dangling] (32) at (1.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (31) to (30.center);

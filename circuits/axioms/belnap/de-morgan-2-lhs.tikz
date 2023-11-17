@@ -1,20 +1,20 @@
 \begin{tikzpicture}[circuit logic US]
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=dangling] (20) at (-2.75, 0.75) {};
-		\node [style=dangling] (24) at (-2.75, -0.75) {};
+		\node [style=dangling] (20) at (-2.25, 0.75) {};
+		\node [style=dangling] (24) at (-2.25, -0.75) {};
 		\node [style=not] (25) at (-1.5, -0.75) {};
 		\node [style=not] (26) at (-1.5, 0.75) {};
-		\node [style=or] (27) at (1.5, 0) {};
-		\node [style=none] (28) at (1.25, 0.25) {};
-		\node [style=none] (29) at (1.25, -0.25) {};
-		\node [style=none] (30) at (1.75, 0) {};
-		\node [style=dangling] (31) at (2.75, 0) {};
+		\node [style=or] (27) at (1, 0) {};
+		\node [style=none] (28) at (0.5, 0.25) {};
+		\node [style=none] (29) at (0.5, -0.25) {};
+		\node [style=none] (30) at (1.25, 0) {};
+		\node [style=dangling] (31) at (2.15, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (20) to (26);
 		\draw [style=wire] (24) to (25);
-		\draw [style=wire, in=-180, out=0, looseness=1.25] (26) to (28.center);
-		\draw [style=wire, in=-180, out=0, looseness=1.25] (25) to (29.center);
+		\draw [style=wire, in=-180, out=0] (26) to (28.center);
+		\draw [style=wire, in=180, out=0] (25) to (29.center);
 		\draw [style=wire] (31) to (30.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
