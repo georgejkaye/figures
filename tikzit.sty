@@ -41,36 +41,7 @@
 % fix strange self-loops, which are PGF/TikZ default
 \tikzstyle{every loop}=[]
 
-% inline tikzfig command with optional arguments
-\NewDocumentCommand\defvar{mo}{%
-  \pgfkeyssetvalue{/tikzit/#1}{}%
-}
-\newcommand{\setvar}[2]{%
-  \global\pgfkeyslet{/tikzit/#1}{#2}%
-}
-\newcommand{\setvars}[1]{%
-  \foreach \x in #1 {%
-    \whereischar[q]{\x}{=}%
-    \StrSplit{\x}{\number\numexpr\theresult - 1\relax}{\strkey}{\strrest}%
-    \StrSplit{\strrest}{1}{\streqs}{\strval}%
-    \global\pgfkeyslet{/tikzit/\strkey}{\strval}%
-  }%
-}
-% \newcommand{\clearvars}[1]{%
-%   \foreach \x in #1 {%
-%     \whereischar[q]{\x}{=}%
-%     \StrSplit{\x}{\number\numexpr\theresult - 1\relax}{\strkey}{\strrest}%
-%     \global\pgfkeyslet{/tikzit/\strkey}{}%
-%   }%
-% }
 \pgfkeys{/tikzit/.is family}
-\newcommand{\settvars}[1]{%
-  \pgfkeys{/tikzit, #1}
-}
-\newcommand{\defvars}[1]{
-  \pgfkeys{/tikzit, #1}
-  \pgfkeys{\tikzitargs}
-}
 \newcommand{\getvar}[1]{\pgfkeysvalueof{/tikzit/#1}}
 \newcommand{\tikzitargs}{}
 \newcommand{\tvara}{}
@@ -84,18 +55,17 @@
 \newcommand{\activateargs}{}
 \NewDocumentCommand\iltikzfig{mo}{%}
   \begingroup
-    % \IfValueTF{#2}{\renewcommand{\tikzitargs}{#2}}{\renewcommand{\tikzitargs}{}}
-    % \setvars{\tikzitargs}%
     \renewcommand{\activateargs}{%
         \IfValueT{#2}{\pgfkeys{/tikzit, #2}}%
     }%
     \raisebox{0.15em}{\scalebox{0.5}{\tikzfig{#1}}}%
-    % \clearvars{\tikzitargs}%
   \endgroup
 }
 \NewDocumentCommand\dsptikzfig{mo}{%
-  \IfValueTF{#2}{\renewcommand{\tikzitargs}{#2}}{\renewcommand{\tikzitargs}{}}
-  \setvars{\tikzitargs}%
-  \tikzfig{#1}%
-  % \clearvars{\tikzitargs}%
+  \begingroup
+    \renewcommand{\activateargs}{%
+      \IfValueT{#2}{\pgfkeys{/tikzit, #2}}%
+    }%
+   \raisebox{0.15em}{\scalebox{1}{\tikzfig{#1}}}%
+  \endgroup
 }
