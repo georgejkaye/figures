@@ -1,9 +1,9 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=dangling] (2) at (1.25, 0.75) {};
+		\node [style=wire label right] (2) at (1.25, 0.75) {};
 		\node [style=bproduct] (13) at (-1.25, 0) {};
 		\node [style=bproduct] (20) at (0, 0) {};
-		\node [style=dangling] (21) at (1.25, -0.75) {};
+		\node [style=wire label right] (21) at (1.25, -0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (13) to (20);
