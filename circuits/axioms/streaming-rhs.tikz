@@ -1,18 +1,24 @@
-\defvar{gate}[g]%
-\defvar{val}[v]%
+\pgfkeys{%
+	/tikzit,%
+	gate/.initial=g,%
+	input/.initial=\listvar{v},%
+	dom/.initial=,%
+	cod/.initial=%
+}%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium box comb] (0) at (-0.5, 0.875) {$\getvar{gate}$};
-		\node [style=port] (2) at (-0.75, 0.875) {};
-		\node [style=port] (3) at (-0.25, 0.875) {};
-		\node [style=tiny box seq] (4) at (-2.25, 0.875) {$\overline{\getvar{val}}$};
+		\node [style=port] (2) at (-0.5, 0.875) {};
+		\node [style=port] (3) at (-0.5, 0.875) {};
+		\node [style=tiny box seq] (4) at (-2.25, 0.875) {$\getvar{input}$};
 		\node [style=bproduct] (5) at (2.5, 0) {};
 		\node [style=wire label left] (7) at (-3.25, -0.875) {$\getvar{dom}$};
 		\node [style=none] (8) at (-1.75, 0.875) {};
 		\node [style=port] (9) at (-2.25, 0.875) {};
 		\node [style=medium box comb] (11) at (-0.5, -0.875) {$\getvar{gate}$};
-		\node [style=port] (12) at (-0.75, -0.875) {};
-		\node [style=port] (13) at (-0.25, -0.875) {};
+		\node [style=port] (12) at (-0.5, -0.875) {};
+		\node [style=port] (13) at (-0.5, -0.875) {};
 		\node [style=delay] (14) at (1, -0.875) {};
 		\node [style=none] (16) at (1.75, -0.875) {};
 		\node [style=none] (17) at (1.75, 0.875) {};
