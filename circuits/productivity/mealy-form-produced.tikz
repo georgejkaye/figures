@@ -1,0 +1,40 @@
+\pgfkeys{%
+	/tikzit,%
+	core/.initial=\hat{F},%
+	transition/.initial=\listvar{t},%
+	output/.initial=\listvar{w},%
+	dom/.initial=,%
+	cod/.initial=,%
+	delay/.initial=%
+}%
+\activateargs%
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (15) at (-3.25, 1) {};
+		\node [style=none] (16) at (1, 1) {};
+		\node [style=none] (17) at (1, -0.75) {};
+		\node [style=medium square box comb] (41) at (0, -1.25) {$\getvar{core}$};
+		\node [style=port] (43) at (0.25, -0.75) {};
+		\node [style=port] (56) at (0.25, -1.75) {};
+		\node [style=wire label right] (59) at (4, -1.75) {$\getvar{cod}$};
+		\node [style=wire label mid] (62) at (-1, 1) {$\getvar{delay}$};
+		\node [style=wire label left] (64) at (-4.25, -1.75) {$\getvar{dom}$};
+		\node [style=none] (74) at (-3.5, -0.75) {};
+		\node [style=register] (77) at (-2.25, -0.75) {$\getvar{transition}$};
+		\node [style=register] (78) at (2.5, -1.75) {$\getvar{output}$};
+		\node [style=none] (79) at (-0.25, -0.75) {};
+		\node [style=none] (80) at (-0.25, -1.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (43) to (17.center);
+		\draw [style=wire, bend left=270, looseness=1.50] (17.center) to (16.center);
+		\draw [style=wire] (16.center) to (62);
+		\draw [style=wire] (62) to (15.center);
+		\draw [style=wire] (77) to (74.center);
+		\draw [style=wire] (78) to (80.center);
+		\draw [style=wire] (77) to (79.center);
+		\draw [style=wire] (56) to (64);
+		\draw [style=wire, bend right=90, looseness=1.50] (15.center) to (74.center);
+		\draw [style=wire] (78) to (59);
+	\end{pgfonlayer}
+\end{tikzpicture}
