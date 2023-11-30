@@ -1,4 +1,8 @@
-\defvar{cod}[n]%
+\pgfkeys{%
+	/tikzit,%
+	cod/.initial=%
+}%
+\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=dangling] (2) at (1, 0) {$\getvar{cod}$};
