@@ -2,8 +2,9 @@
 	/tikzit,%
 	box/.initial=F,%
 	colour/.initial=white,%
-	dom/.initial=m,%
-	cod/.initial=n%
+	dom/.initial=,%
+	cod1/.initial=,%
+	cod2/.initial=%
 }%
 \activateargs%
 \begin{tikzpicture}
@@ -13,12 +14,12 @@
 		\node [style=medium square box \getvar{colour}] (2) at (0.5, -1) {$\getvar{box}$};
 		\node [style=none] (3) at (-0.5, 1) {};
 		\node [style=none] (4) at (-0.5, -1) {};
-		\node [style=wire label right] (5) at (2.25, 1.5) {};
+		\node [style=wire label right] (5) at (2.25, 1.5) {$\getvar{cod1}$};
 		\node [style=wire label left] (7) at (-2.25, 0) {$\getvar{dom}$};
 		\node [style=none] (8) at (0.75, 1.5) {};
 		\node [style=none] (9) at (0.75, 0.5) {};
 		\node [style=bproduct] (10) at (1.75, 0.5) {};
-		\node [style=wire label right] (11) at (2.25, -1.5) {$\getvar{cod}$};
+		\node [style=wire label right] (11) at (2.25, -1.5) {$\getvar{cod2}$};
 		\node [style=none] (12) at (0.75, -1.5) {};
 		\node [style=none] (13) at (0.75, -0.5) {};
 		\node [style=bproduct] (14) at (1.75, -0.5) {};
