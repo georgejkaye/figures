@@ -4,7 +4,7 @@
 	colour/.initial=white,%
 	dom1/.initial=,%
 	dom2/.initial=,%
-	cod1/.initial=,%
+	cod/.initial=,%
 }%
 \activateargs%
 \begin{tikzpicture}
