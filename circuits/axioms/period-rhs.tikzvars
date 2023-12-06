@@ -1,0 +1,6 @@
+\pgfkeys{%
+	/tikzit,%
+	delay/.initial=,%
+	wave/.initial=\listlistvar{v},%
+	cod/.initial=%
+}%

@@ -1,0 +1,7 @@
+\pgfkeys{%
+	/tikzit,%
+	box/.initial=f,%
+	colour/.initial=white,%
+	val/.initial=\listvar{v},%
+	cod/.initial=%
+}%

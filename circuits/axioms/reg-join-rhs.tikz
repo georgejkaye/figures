@@ -1,10 +1,3 @@
-\pgfkeys{%
-	/tikzit,%
-	val1/.initial=v,%
-	val2/.initial=w,%
-	width/.initial=
-}%
-\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=register] (0) at (0.25, 0) {$\getvar{val1} \ljoin \getvar{val2}$};

@@ -1,12 +1,3 @@
-\pgfkeys{%
-	/tikzit,%
-	core/.initial=\hat{F},%
-	input/.initial=\sigma,%
-	index/.initial=i,%
-	state/.initial=\listvar{s},%
-	cod/.initial=%
-}%
-\activateargs
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box seq] (0) at (-1, 0) {$\transitions{\getvar{core}}{\getvar{index}}{\getvar{state}}{\getvar{input}}$};

@@ -1,0 +1,9 @@
+\pgfkeys{%
+	/tikzit,%
+	box/.initial=f,%
+	colour/.initial=white,%
+	trace1/.initial=X,%
+	trace2/.initial=Y,%
+	dom/.initial=,%
+	cod/.initial=%
+}%

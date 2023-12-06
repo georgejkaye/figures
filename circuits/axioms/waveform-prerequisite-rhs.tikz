@@ -1,12 +1,3 @@
-\pgfkeys{%
-	/tikzit,%
-	box/.initial=f,%
-	state/.initial=\listvar{s},%
-	delay/.initial=,%
-	cod/.initial=,%
-	wave/.initial=\listlistvar{v}%
-}%
-\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (14) at (2.75, 0) {};

@@ -1,0 +1,6 @@
+\pgfkeys{%
+	/tikzit,%
+	val1/.initial=v,%
+	val2/.initial=w,%
+	width/.initial=
+}%

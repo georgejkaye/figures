@@ -1,0 +1,4 @@
+\pgfkeys{%
+	/tikzit,%
+	obj/.initial=%
+}%

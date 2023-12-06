@@ -1,5 +1,3 @@
-\defvar{gate}[g]%
-\defvar{val}[v]%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium box comb] (0) at (0, 0) {$\getvar{gate}$};

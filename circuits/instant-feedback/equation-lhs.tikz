@@ -1,11 +1,3 @@
-\pgfkeys{%
-	/tikzit,%
-	box/.initial=F,%
-	dom/.initial=,%
-	cod/.initial=,%
-	trace/.initial=,%
-}%
-\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box comb] (0) at (0, -0.25) {$\getvar{box}$};

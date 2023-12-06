@@ -1,0 +1,7 @@
+\pgfkeys{%
+	/tikzit,%
+	box/.initial=F,%
+	colour/.initial=white,%
+	dom/.initial=m,%
+	cod/.initial=n%
+}%

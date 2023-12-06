@@ -1,9 +1,3 @@
-\pgfkeys{%
-	/tikzit,%
-	val/.initial=v%
-	width/.initial=%
-}%
-\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=register] (0) at (-1, 0) {$\getvar{val}$};

@@ -1,0 +1,1 @@
+\pgfkeys{/tikzit, core/.initial=\hat{F}, dom/.initial=m, cod/.initial=n, trace/.initial=x, delay/.initial=y, values/.initial=z}%

@@ -1,0 +1,6 @@
+\pgfkeys{%
+	/tikzit,%
+	obj/.initial=,%
+	unit/.initial=,%
+	colour/.initial=white%
+}%

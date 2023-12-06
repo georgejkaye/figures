@@ -1,0 +1,6 @@
+\pgfkeys{%
+	/tikzit,%
+	prefix/.initial=\listlistvar{w},%
+	period/.initial=\listlistvar{u},%
+	cod/.initial=%
+}%

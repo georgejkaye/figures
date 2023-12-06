@@ -1,12 +1,3 @@
-\pgfkeys{%
-	/tikzit,%
-	box/.initial=g,%
-	output/.initial=\listvar{w},%
-	colour/.initial=seq,%
-	dom/.initial=,%
-	cod/.initial=%
-}%
-\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box \getvar{colour}] (0) at (-1, 0) {$\getvar{box}$};

@@ -1,0 +1,8 @@
+\pgfkeys{%
+	/tikzit,%
+	core/.initial=\hat{F},%
+	state/.initial=\listvar{s},%
+	head/.initial=\listvar{a},%
+	tail/.initial=\listlistvar{u},%
+	cod/.initial=%
+}%

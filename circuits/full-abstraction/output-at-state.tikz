@@ -1,10 +1,3 @@
-\pgfkeys{%
-	/tikzit,%
-	box/.initial=F,%
-	index/.initial=i,%
-	cod/.initial=%
-}%
-\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box seq] (15) at (-2.5, 0.5) {$\hat{\getvar{box}}_{\prefix{\sigma}{\getvar{index}}}$};

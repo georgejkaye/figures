@@ -1,11 +1,3 @@
-\pgfkeys{%
-	/tikzit,
-	gate/.initial=g,%
-	input/.initial=\listvar{v},%
-	colour/.initial=comb,%
-	cod/.initial=%
-}%
-\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=tiny box seq] (0) at (-1, 0) {$\getvar{input}$};

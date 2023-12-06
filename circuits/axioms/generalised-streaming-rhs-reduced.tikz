@@ -1,4 +1,3 @@
-\defvar{val}[w]%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=tiny box seq] (4) at (1, 0.875) {$\overline{\getvar{val}}$};

@@ -1,14 +1,3 @@
-\pgfkeys{%
-	/tikzit,%
-	core/.initial=\hat{F},%
-	state/.initial=\listvar{v},%
-	dom/.initial=,%
-	cod/.initial=,%
-	delay/.initial=,%
-	trace/.initial=,%
-	valwidth/.initial=,%
-}%
-\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (14) at (2, -0.25) {};

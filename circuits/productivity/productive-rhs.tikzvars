@@ -1,0 +1,9 @@
+\pgfkeys{%
+	/tikzit,%
+	core/.initial=\hat{F},%
+	output/.initial=\listvar{w},%
+	transition/.initial=\listvar{t},%
+	dom/.initial=,%
+	cod/.initial=,%
+	trace/.initial=%
+}%

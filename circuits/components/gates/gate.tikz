@@ -1,11 +1,3 @@
-\pgfkeys{%
-	/tikzit,
-	gate/.initial=g,%
-	colour/.initial=comb,%
-	dom/.initial=,%
-	cod/.initial=,%
-}%
-\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=wire label left] (9) at (-1, 0) {$\getvar{dom}$};

@@ -1,0 +1,9 @@
+\pgfkeys{%
+	/tikzit,%
+	core/.initial=\hat{F},%
+	state/.initial=\listvar{s},%
+	wave1/.initial=\listlistvar{v},%
+	wave2/.initial=\listlistvar{w},%
+	cod/.initial=,%
+	delay/.initial=%
+}%

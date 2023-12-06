@@ -1,0 +1,5 @@
+\pgfkeys{%
+	/tikzit,%
+	gate/.initial=p,%
+	dom/.initial=%
+}%

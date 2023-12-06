@@ -1,12 +1,3 @@
-\pgfkeys{%
-	/tikzit,%
-	box/.initial=F,%
-	colour/.initial=white,%
-	dom/.initial=,%
-	cod1/.initial=,%
-	cod2/.initial=%
-}%
-\activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=bproduct] (0) at (-1.5, 0) {};
