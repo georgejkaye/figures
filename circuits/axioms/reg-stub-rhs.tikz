@@ -1,0 +1,15 @@
+\pgfkeys{%
+	/tikzit,%
+	val/.initial=v%
+	width/.initial=%
+}%
+\activateargs%
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=wire label left] (6) at (-0.5, 0) {$\getvar{width}$};
+		\node [style=bproduct] (8) at (0.5, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (6) to (8);
+	\end{pgfonlayer}
+\end{tikzpicture}

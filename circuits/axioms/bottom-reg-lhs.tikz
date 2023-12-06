@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=delay] (0) at (0, 0) {};
+		\node [style=none] (1) at (-1, 0) {};
+		\node [style=none] (2) at (1, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (2.center) to (0);
+		\draw [style=wire] (1.center) to (0);
+	\end{pgfonlayer}
+\end{tikzpicture}

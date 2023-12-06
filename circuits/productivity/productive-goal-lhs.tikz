@@ -2,17 +2,18 @@
 	/tikzit,%
 	box/.initial=f,%
 	input/.initial=\listvar{v},%
+	colour/.initial=seq,%
 	dom/.initial=,%
 	cod/.initial=%
 }%
 \activateargs%
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (0) at (1.25, 0) {$\getvar{box}$};
+		\node [style=medium square box \getvar{colour}] (0) at (1.25, 0) {$\getvar{box}$};
 		\node [style=none] (2) at (0.75, 0) {};
 		\node [style=register] (4) at (-1, 0) {$\getvar{input}$};
 		\node [style=wire label right] (10) at (2.5, 0) {$\getvar{cod}$};
-		\node [style=wire label left] (11) at (-2.25, 0) {$\getvar{dom}$};
+		\node [style=wire label left] (11) at (-2, 0) {$\getvar{dom}$};
 		\node [style=none] (12) at (1.75, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
