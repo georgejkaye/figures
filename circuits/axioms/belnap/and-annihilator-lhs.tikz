@@ -5,7 +5,7 @@
 		\node [style=none] (4) at (-0.5, -0.33) {};
 		\node [style=dangling] (5) at (1.25, 0) {};
 		\node [style=dangling] (8) at (-5.5, 0.33) {};
-		\node [style=tiny signal seq] (14) at (-4, -1.25) {$\belnapfalse$};
+		\node [style=waveform] (14) at (-4, -1.25) {$\belnapfalse$};
 		\node [style=none] (15) at (-2.25, -1.75) {};
 		\node [style=none] (17) at (-5, -1.25) {};
 		\node [style=bproduct] (18) at (-3, -1.25) {};

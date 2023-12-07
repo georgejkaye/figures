@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny signal seq] (1) at (-0.75, 0) {$\overline{\underline{w}}$};
+		\node [style=waveform] (1) at (-0.75, 0) {$\overline{\underline{w}}$};
 		\node [style=port] (3) at (-0.75, 0) {};
 		\node [style=port] (4) at (-1, 0) {};
 		\node [style=dangling] (7) at (2.25, 0) {};

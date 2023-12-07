@@ -11,7 +11,7 @@
 		\node [style=register] (55) at (-0.25, 0) {$\getvar{state}$};
 		\node [style=port] (56) at (1.5, -1) {};
 		\node [style=port] (57) at (2, -1) {};
-		\node [style=tiny signal seq] (59) at (4, -1) {$\getvar{wave}$};
+		\node [style=waveform] (59) at (4, -1) {$\getvar{wave}$};
 		\node [style=wire label mid] (62) at (1.75, 1) {$\getvar{delay}$};
 		\node [style=wire label right] (63) at (5, -1) {$\getvar{cod}$};
 	\end{pgfonlayer}

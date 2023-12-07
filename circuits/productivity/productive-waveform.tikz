@@ -1,8 +1,8 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny signal seq] (12) at (0, 0) {$\overline{\underline{\tvara}}$};
+		\node [style=waveform] (12) at (0, 0) {$\overline{\underline{\tvara}}$};
 		\node [style=none] (22) at (1.5, -0.5) {};
-		\node [style=tiny signal seq] (23) at (3, -0.5) {$\overline{\underline{\tvarb}}$};
+		\node [style=waveform] (23) at (3, -0.5) {$\overline{\underline{\tvarb}}$};
 		\node [style=none] (24) at (-1, 0) {};
 		\node [style=bproduct] (25) at (1, 0) {};
 		\node [style=none] (26) at (1.5, 0.5) {};

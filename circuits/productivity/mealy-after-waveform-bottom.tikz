@@ -13,7 +13,7 @@
 		\node [style=wire label right] (11) at (5, -1) {$n$};
 		\node [style=none] (12) at (1.75, -1) {};
 		\node [style=wire label mid] (13) at (1.5, 1) {$x$};
-		\node [style=tiny signal seq] (14) at (3.75, -1) {$\overline{\underline{\tvarc}}$};
+		\node [style=waveform] (14) at (3.75, -1) {$\overline{\underline{\tvarc}}$};
 		\node [style=register] (15) at (-2.5, -1) {$\bullet$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

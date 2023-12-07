@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=tiny signal seq] (12) at (0, -0.5) {$\getvar{wave}$};
+		\node [style=waveform] (12) at (0, -0.5) {$\getvar{wave}$};
 		\node [style=none] (22) at (1.75, -1) {};
 		\node [style=wire label right] (23) at (2.75, -1) {$\getvar{cod}$};
 		\node [style=none] (24) at (-1, -0.5) {};

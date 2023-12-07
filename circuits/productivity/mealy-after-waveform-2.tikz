@@ -12,9 +12,9 @@
 		\node [style=bproduct] (10) at (-2.75, -1) {};
 		\node [style=none] (12) at (1.75, -1) {};
 		\node [style=wire label mid] (13) at (1.5, 1) {$\getvar{delay}$};
-		\node [style=tiny signal seq] (14) at (3.75, -1) {$\getvar{output1}$};
+		\node [style=waveform] (14) at (3.75, -1) {$\getvar{output1}$};
 		\node [style=wire label right] (15) at (7, -1) {$n$};
-		\node [style=tiny signal seq] (16) at (5.75, -1) {$\getvar{output2}$};
+		\node [style=waveform] (16) at (5.75, -1) {$\getvar{output2}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (1.center) to (3);

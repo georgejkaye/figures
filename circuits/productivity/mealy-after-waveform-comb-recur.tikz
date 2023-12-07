@@ -13,12 +13,12 @@
 		\node [style=wire label right] (11) at (7.25, -1) {$\getvar{cod}$};
 		\node [style=none] (12) at (1.75, -1) {};
 		\node [style=wire label mid] (13) at (1.5, 1.5) {$\getvar{trace}$};
-		\node [style=tiny signal seq] (14) at (4.5, -1) {$\getvar{wave1}$};
+		\node [style=waveform] (14) at (4.5, -1) {$\getvar{wave1}$};
 		\node [style=none] (15) at (-0.5, 0.75) {};
 		\node [style=none] (16) at (-0.5, -1.5) {};
 		\node [style=none] (17) at (2.75, -1.5) {};
 		\node [style=none] (18) at (2.75, 0.75) {};
-		\node [style=tiny signal seq] (19) at (6.25, -1) {$\getvar{wave2}$};
+		\node [style=waveform] (19) at (6.25, -1) {$\getvar{wave2}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=tile comb] (17.center)

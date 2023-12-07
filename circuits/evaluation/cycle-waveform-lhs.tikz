@@ -2,7 +2,7 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box seq] (0) at (1.25, 0) {$F$};
 		\node [style=none] (2) at (0.75, 0) {};
-		\node [style=tiny signal seq] (4) at (-0.5, 0) {$\overline{v}$};
+		\node [style=waveform] (4) at (-0.5, 0) {$\overline{v}$};
 		\node [style=wire label right] (10) at (2.5, 0) {$n$};
 		\node [style=bproduct] (11) at (-1.75, 0) {};
 		\node [style=none] (12) at (1.75, 0) {};

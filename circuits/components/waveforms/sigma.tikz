@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=wire label right] (10) at (0.5, 0) {$\getvar{width}$};
-		\node [style=tiny signal seq] (11) at (-0.25, 0) {$\getvar{wave}$};
+		\node [style=waveform] (11) at (-0.25, 0) {$\getvar{wave}$};
 		\node [style=none] (15) at (0, 0) {};
 		\node [style=wire label left] (16) at (-1.25, 0) {$\getvar{width}$};
 	\end{pgfonlayer}
