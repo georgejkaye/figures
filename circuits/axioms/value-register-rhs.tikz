@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=register] (0) at (-0.25, 0) {$\getvar{val}$};
+		\node [style=bproduct] (1) at (-1.25, 0) {};
+		\node [style=none] (2) at (1.25, 0) {};
+		\node [style=none] (3) at (0, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (1) to (0);
+		\draw [style=wire] (3.center) to (2.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
