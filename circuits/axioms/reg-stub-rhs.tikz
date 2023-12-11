@@ -1,9 +1,12 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=wire label left] (6) at (-0.5, 0) {$\getvar{width}$};
-		\node [style=bproduct] (8) at (0.5, 0) {};
+		\node [style=tiny box seq] (1) at (0, 0.5) {$v$};
+		\node [style=bproduct] (2) at (1.25, 0.5) {};
+		\node [style=bproduct] (3) at (1.25, -0.75) {};
+		\node [style=none] (4) at (-1.25, -0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire] (6) to (8);
+		\draw [style=wire] (2) to (1);
+		\draw [style=wire] (4.center) to (3);
 	\end{pgfonlayer}
 \end{tikzpicture}
