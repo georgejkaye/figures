@@ -1,17 +1,18 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=register] (6) at (-2.5, -0.025) {$\overline{s}$};
-		\node [style=port] (10) at (0, -1) {};
-		\node [style=medium square box comb] (13) at (0.25, -0.5) {$\mealytofunc[\gamma(f)]$};
-		\node [style=bport] (22) at (0.5, 0) {};
-		\node [style=none] (24) at (2.25, 0) {};
-		\node [style=none] (26) at (2.25, 1) {};
-		\node [style=none] (30) at (-3.5, 1) {};
-		\node [style=bport] (33) at (0.5, -1) {};
-		\node [style=wire label right] (34) at (3.25, -1) {$n$};
-		\node [style=none] (35) at (-3.5, 0) {};
-		\node [style=bport] (55) at (0, 0) {};
-		\node [style=wire label left] (57) at (-4.25, -1) {$m$};
+		\node [style=register] (6) at (-1.75, -0.025) {$\gamma_\leq(s)$};
+		\node [style=port] (10) at (1.75, -1) {};
+		\node [style=medium square box comb] (13) at (2, -0.5) {$\mealytofunc[\gamma_\leq(f)]$};
+		\node [style=bport] (22) at (2.25, 0) {};
+		\node [style=none] (24) at (4, 0) {};
+		\node [style=none] (26) at (4, 1) {};
+		\node [style=none] (30) at (-3.25, 1) {};
+		\node [style=bport] (33) at (2.25, -1) {};
+		\node [style=wire label right] (34) at (5, -1) {$n$};
+		\node [style=none] (35) at (-3.25, 0) {};
+		\node [style=bport] (55) at (1.75, 0) {};
+		\node [style=wire label left] (57) at (-4, -1) {$m$};
+		\node [style=none] (58) at (-1.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (22)
@@ -21,7 +22,7 @@
 			 to [bend right=90, looseness=1.25] (35.center)
 			 to (6);
 		\draw [style=wire] (33) to (34);
-		\draw [style=wire] (55) to (6);
 		\draw [style=wire] (10) to (57);
+		\draw [style=wire] (58.center) to (55);
 	\end{pgfonlayer}
 \end{tikzpicture}
