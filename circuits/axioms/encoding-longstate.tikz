@@ -1,0 +1,49 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=register] (0) at (-1.5, 0.5) {$\getvar{state}$};
+		\node [style=bproduct] (1) at (0.75, 0.5) {};
+		\node [style=bproduct] (2) at (0.75, -0.5) {};
+		\node [style=none] (3) at (1.75, 1.5) {};
+		\node [style=none] (4) at (1.75, -0.5) {};
+		\node [style=none] (5) at (1.75, 0.5) {};
+		\node [style=none] (6) at (1.75, -1.5) {};
+		\node [style=medium square box seq] (7) at (2.75, 1) {$\getvar{transition}$};
+		\node [style=medium square box seq] (8) at (2.75, -1) {$\getvar{output}$};
+		\node [style=none] (9) at (2.25, 1.5) {};
+		\node [style=none] (10) at (2.25, 0.5) {};
+		\node [style=none] (11) at (2.25, -0.5) {};
+		\node [style=none] (12) at (2.25, -1.5) {};
+		\node [style=wire label left] (13) at (-4, -0.5) {$\getvar{dom}$};
+		\node [style=none] (14) at (3.25, 1) {};
+		\node [style=none] (15) at (3.25, -1) {};
+		\node [style=none] (16) at (4, 1) {};
+		\node [style=wire label right] (17) at (4.75, -1) {$\getvar{cod}$};
+		\node [style=none] (18) at (-3.25, 2.25) {};
+		\node [style=none] (19) at (4, 2.25) {};
+		\node [style=none] (20) at (-3.25, 0.5) {};
+		\node [style=wire label mid] (21) at (1.25, 2.25) {$\getvar{delay}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (9.center)
+			 to (3.center)
+			 to [in=75, out=180] (1);
+		\draw [style=wire] (11.center)
+			 to (4.center)
+			 to [in=-75, out=-180] (1);
+		\draw [style=wire] (2)
+			 to [in=-180, out=75] (5.center)
+			 to (10.center);
+		\draw [style=wire, in=-75, out=180] (6.center) to (2);
+		\draw [style=wire] (12.center) to (6.center);
+		\draw [style=wire] (0) to (1);
+		\draw [style=wire] (2) to (13);
+		\draw [style=wire] (14.center)
+			 to (16.center)
+			 to [bend right=90, looseness=1.50] (19.center)
+			 to (21.center)
+			 to (18.center)
+			 to [bend right=90, looseness=1.25] (20.center)
+			 to (0);
+		\draw [style=wire] (17) to (15.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
