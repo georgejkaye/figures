@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=register] (0) at (-1.25, 0.5) {$\getvar{state}$};
+		\node [style=register] (0) at (-1.5, 0.5) {$\getvar{state}$};
 		\node [style=bproduct] (1) at (0, 0.5) {};
 		\node [style=bproduct] (2) at (0, -0.5) {};
 		\node [style=none] (3) at (1, 1.5) {};
@@ -13,14 +13,14 @@
 		\node [style=none] (10) at (1.5, 0.5) {};
 		\node [style=none] (11) at (1.5, -0.5) {};
 		\node [style=none] (12) at (1.5, -1.5) {};
-		\node [style=wire label left] (13) at (-3, -0.5) {$\getvar{dom}$};
+		\node [style=wire label left] (13) at (-3.25, -0.5) {$\getvar{dom}$};
 		\node [style=none] (14) at (2.5, 1) {};
 		\node [style=none] (15) at (2.5, -1) {};
 		\node [style=none] (16) at (3.25, 1) {};
 		\node [style=wire label right] (17) at (4, -1) {$\getvar{cod}$};
-		\node [style=none] (18) at (-2.25, 2.25) {};
+		\node [style=none] (18) at (-2.5, 2.25) {};
 		\node [style=none] (19) at (3.25, 2.25) {};
-		\node [style=none] (20) at (-2.25, 0.5) {};
+		\node [style=none] (20) at (-2.5, 0.5) {};
 		\node [style=wire label mid] (21) at (0.5, 2.25) {$\getvar{delay}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
