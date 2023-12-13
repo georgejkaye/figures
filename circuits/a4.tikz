@@ -1,9 +1,9 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=label] (0) at (0, 2) {$\top$};
-		\node [style=label] (1) at (2, 0) {$1$};
+		\node [style=label] (1) at (2, 0) {$\belnapfalse$};
 		\node [style=label] (2) at (0, -2) {$\bot$};
-		\node [style=label] (3) at (-2, 0) {$0$};
+		\node [style=label] (3) at (-2, 0) {$\belnaptrue$};
 		\node [style=none] (4) at (-0.5, -1.5) {};
 		\node [style=none] (5) at (-1.5, -0.5) {};
 		\node [style=none] (6) at (0.5, -1.5) {};
