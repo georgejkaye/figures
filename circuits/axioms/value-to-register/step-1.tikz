@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny box seq] (0) at (-1.25, 0.75) {$v$};
+		\node [style=none] (1) at (-0.5, 0.75) {};
+		\node [style=bproduct] (2) at (0.25, 0) {};
+		\node [style=none] (3) at (-0.5, -0.75) {};
+		\node [style=bproduct] (4) at (-1.25, -0.75) {};
+		\node [style=none] (5) at (1, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (2)
+			 to [in=0, out=105] (1.center)
+			 to (0);
+		\draw [style=wire] (4)
+			 to (3.center)
+			 to [in=-105, out=0] (2);
+		\draw [style=wire] (5.center) to (2);
+	\end{pgfonlayer}
+\end{tikzpicture}
