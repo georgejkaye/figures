@@ -1,27 +1,28 @@
 \begin{tikzpicture}[circuit logic US]
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=register] (0) at (-2.5, 0.25) {$\mathsf{t}$};
-		\node [style=none] (1) at (-8, -1) {};
-		\node [style=none] (4) at (3.75, -0.5) {};
-		\node [style=none] (6) at (4.75, -0.5) {};
-		\node [style=none] (7) at (4.75, -1) {};
-		\node [style=and] (8) at (5, -0.75) {};
-		\node [style=none] (14) at (4.25, 1) {};
-		\node [style=none] (15) at (4.25, 1.75) {};
-		\node [style=none] (16) at (-6.75, 0.25) {};
-		\node [style=none] (17) at (-6.75, 1.75) {};
-		\node [style=none] (18) at (6.5, -0.75) {};
-		\node [style=bproduct] (20) at (-1.25, 0.25) {};
-		\node [style=none] (21) at (-0.75, 0.6) {};
-		\node [style=none] (22) at (-0.75, -0.1) {};
-		\node [style=and] (23) at (1.75, 0.25) {};
-		\node [style=not] (24) at (-0.25, 0.6) {};
-		\node [style=none] (25) at (1.25, -0.1) {};
-		\node [style=bproduct] (32) at (3, 0.25) {};
-		\node [style=none] (33) at (3.75, 1) {};
-		\node [style=none] (37) at (1.25, 0.6) {};
-		\node [style=register] (38) at (-6, 0.25) {$\mathsf{f}$};
-		\node [style=not] (39) at (-4.5, 0.25) {};
+		\node [style=register] (0) at (-3, 0.25) {$\mathsf{t}$};
+		\node [style=none] (1) at (-8.5, -1) {};
+		\node [style=none] (4) at (3.5, -0.5) {};
+		\node [style=none] (6) at (4.5, -0.5) {};
+		\node [style=none] (7) at (4.5, -1) {};
+		\node [style=and] (8) at (4.75, -0.75) {};
+		\node [style=none] (14) at (4, 1) {};
+		\node [style=none] (15) at (4, 1.75) {};
+		\node [style=none] (16) at (-7.25, 0.25) {};
+		\node [style=none] (17) at (-7.25, 1.75) {};
+		\node [style=none] (18) at (6.25, -0.75) {};
+		\node [style=bproduct] (20) at (-1.5, 0.25) {};
+		\node [style=none] (21) at (-1, 0.6) {};
+		\node [style=none] (22) at (-1, -0.1) {};
+		\node [style=and] (23) at (1.5, 0.25) {};
+		\node [style=not] (24) at (-0.5, 0.6) {};
+		\node [style=none] (25) at (1, -0.1) {};
+		\node [style=bproduct] (32) at (2.75, 0.25) {};
+		\node [style=none] (33) at (3.5, 1) {};
+		\node [style=none] (37) at (1, 0.6) {};
+		\node [style=register] (38) at (-6.5, 0.25) {$\mathsf{f}$};
+		\node [style=not] (39) at (-4.75, 0.25) {};
+		\node [style=none] (40) at (-6.25, 0.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (32)
@@ -42,9 +43,8 @@
 		\draw [style=wire] (25.center)
 			 to (22.center)
 			 to [in=-75, out=-180] (20);
-		\draw [style=wire] (20) to (0);
 		\draw [style=wire] (23) to (32);
 		\draw [style=wire] (24) to (37.center);
-		\draw [style=wire] (38) to (0);
+		\draw [style=wire] (40.center) to (20);
 	\end{pgfonlayer}
 \end{tikzpicture}

@@ -1,20 +1,20 @@
 \begin{tikzpicture}[circuit logic US]
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=register] (0) at (-2, 0.25) {$\mathsf{f}$};
-		\node [style=none] (1) at (-4.25, -1) {};
+		\node [style=register] (0) at (-2.25, 0.25) {$\mathsf{f}$};
+		\node [style=none] (1) at (-4.5, -1) {};
 		\node [style=none] (4) at (1.75, -0.5) {};
 		\node [style=none] (6) at (2.75, -0.5) {};
 		\node [style=none] (7) at (2.75, -1) {};
 		\node [style=and] (8) at (3, -0.75) {};
 		\node [style=none] (14) at (3.25, 1) {};
 		\node [style=none] (15) at (3.25, 3.25) {};
-		\node [style=none] (16) at (-3.25, 0.25) {};
-		\node [style=none] (17) at (-3.25, 3.25) {};
+		\node [style=none] (16) at (-3, 0.25) {};
+		\node [style=none] (17) at (-3, 3.25) {};
 		\node [style=none] (18) at (4.5, -0.75) {};
 		\node [style=not] (23) at (-0.5, 0.25) {};
-		\node [style=register] (26) at (-2, 1.75) {$\mathsf{t}$};
-		\node [style=none] (27) at (-3.25, 1.75) {};
-		\node [style=none] (28) at (-3.25, 2.75) {};
+		\node [style=register] (26) at (-2.25, 1.75) {$\mathsf{t}$};
+		\node [style=none] (27) at (-3, 1.75) {};
+		\node [style=none] (28) at (-3, 2.75) {};
 		\node [style=none] (29) at (3.25, 2.75) {};
 		\node [style=none] (30) at (3.25, 1.75) {};
 		\node [style=none] (31) at (3, 1.75) {};
@@ -24,6 +24,8 @@
 		\node [style=none] (35) at (3, 1) {};
 		\node [style=none] (36) at (2.25, 1.75) {};
 		\node [style=not] (37) at (-0.5, 1.75) {};
+		\node [style=none] (38) at (-2, 1.75) {};
+		\node [style=none] (39) at (-2, 0.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (32)
@@ -37,7 +39,7 @@
 			 to [in=0, out=0, looseness=1.75] (14.center)
 			 to (35.center)
 			 to [in=0, out=-180] (36.center)
-			 to (26);
+			 to (38.center);
 		\draw [style=wire] (18.center) to (8);
 		\draw [style=wire] (32)
 			 to [in=180, out=75] (33.center)
@@ -49,6 +51,6 @@
 			 to [bend left=270, looseness=1.50] (27.center)
 			 to (26);
 		\draw [style=wire] (23) to (32);
-		\draw [style=wire] (0) to (23);
+		\draw [style=wire] (39.center) to (23);
 	\end{pgfonlayer}
 \end{tikzpicture}
