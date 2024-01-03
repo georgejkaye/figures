@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-2, -0.5) {};
+		\node [style=none] (2) at (-2, 0.5) {};
+		\node [style=medium square box comb] (3) at (-0.75, 0.5) {$\phi_{k}$};
+		\node [style=medium box comb] (6) at (1, 0) {$g$};
+		\node [style=none] (7) at (0.75, 0.5) {};
+		\node [style=none] (8) at (0.75, -0.5) {};
+		\node [style=none] (9) at (2, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (2.center) to (3);
+		\draw [style=wire] (7.center) to (3);
+		\draw [style=wire] (0.center) to (8.center);
+		\draw [style=wire] (9.center) to (6);
+	\end{pgfonlayer}
+\end{tikzpicture}
