@@ -1,0 +1,15 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=bproduct] (0) at (-1, -0.25) {};
+		\node [style=or] (1) at (0, 0) {};
+		\node [style=none] (2) at (1, 0) {};
+		\node [style=bproduct] (3) at (-1, 0.25) {};
+		\node [style=none] (4) at (-0.25, 0.25) {};
+		\node [style=none] (5) at (-0.25, -0.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (2.center) to (1);
+		\draw [style=wire] (5.center) to (0);
+		\draw [style=wire] (3) to (4.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,16 +1,16 @@
 \begin{tikzpicture}[circuit logic US]
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=or] (2) at (-0.5, -0.75) {};
+		\node [style=and] (2) at (-0.5, -0.75) {};
 		\node [style=dangling] (8) at (-3, -0.5) {};
 		\node [style=dangling] (11) at (-3, -1) {};
 		\node [style=none] (12) at (-1, -1) {};
 		\node [style=none] (13) at (-2.5, -0.5) {};
-		\node [style=and] (14) at (1.75, 0) {};
+		\node [style=or] (14) at (1.75, 0) {};
 		\node [style=none] (15) at (-1, -0.5) {};
 		\node [style=none] (17) at (1.25, -0.25) {};
 		\node [style=dangling] (19) at (3, 0) {};
 		\node [style=dangling] (20) at (-3, 0.25) {};
-		\node [style=or] (21) at (-0.5, 0.75) {};
+		\node [style=and] (21) at (-0.5, 0.75) {};
 		\node [style=none] (22) at (-1.5, 1) {};
 		\node [style=none] (23) at (-1.25, 0.5) {};
 		\node [style=none] (24) at (-1, 0.5) {};
