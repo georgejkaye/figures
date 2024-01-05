@@ -1,5 +1,5 @@
 \pgfkeys{%
 	/tikzit,%
-	val/.initial=\listvar{v},%
+	val/.initial=v,%
 	cod/.initial=%
 }%
