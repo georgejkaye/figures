@@ -1,0 +1,5 @@
+\pgfkeys{%
+    /tikzit,%
+    functor/.initial=F,%
+    object/.initial=A,
+}%
