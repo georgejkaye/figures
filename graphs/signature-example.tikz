@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=vertex] (0) at (0, 0) {};
+		\node [style=edge] (1) at (0, -1.5) {$\psi$};
+		\node [style=edge] (2) at (0, 1.75) {$\phi$};
+		\node [style=none] (3) at (-0.5, -1.5) {};
+		\node [style=none] (4) at (-0.5, 2) {};
+		\node [style=none] (5) at (-0.5, 1.5) {};
+		\node [style=none] (6) at (0.75, 1.75) {};
+		\node [style=none] (7) at (0.75, -1.25) {};
+		\node [style=none] (8) at (0.75, -1.75) {};
+		\node [style=none] (9) at (-2.5, 3) {};
+		\node [style=none] (10) at (-2.5, -2.75) {};
+		\node [style=none] (11) at (2.5, -2.75) {};
+		\node [style=none] (12) at (2.5, 3) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (11.center)
+			 to (12.center)
+			 to (9.center)
+			 to (10.center)
+			 to cycle;
+		\draw [style=tentacle, in=180, out=-180, looseness=2.25] (4.center) to (0);
+		\draw [style=tentacle, in=150, out=-180, looseness=1.75] (5.center) to (0);
+		\draw [style=tentacle, in=-180, out=-165, looseness=3.25] (0) to (3.center);
+		\draw [style=tentacle, in=0, out=30, looseness=1.50] (0) to (6.center);
+		\draw [style=tentacle, in=0, out=-15, looseness=2.00] (0) to (7.center);
+		\draw [style=tentacle, in=0, out=0, looseness=2.75] (0) to (8.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

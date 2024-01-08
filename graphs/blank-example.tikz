@@ -1,0 +1,42 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=edge] (0) at (-2.25, 0) {};
+		\node [style=vertex] (1) at (-4.25, 0) {};
+		\node [style=vertex] (2) at (-0.75, 0.25) {};
+		\node [style=vertex] (3) at (-1.25, -2) {};
+		\node [style=vertex] (4) at (-2, 1.75) {};
+		\node [style=none] (5) at (-2.5, 0.25) {};
+		\node [style=none] (6) at (-2.5, -0.25) {};
+		\node [style=none] (7) at (-2, 0) {};
+		\node [style=edge] (8) at (1, 1.5) {};
+		\node [style=none] (9) at (1.5, 1.75) {};
+		\node [style=edge] (10) at (1.5, -1) {};
+		\node [style=none] (11) at (1.25, -1.5) {};
+		\node [style=none] (12) at (1.75, -1) {};
+		\node [style=none] (13) at (0.75, 1.5) {};
+		\node [style=none] (14) at (1.25, -0.75) {};
+		\node [style=vertex] (15) at (3.5, 2) {};
+		\node [style=vertex] (16) at (3.25, -0.25) {};
+		\node [style=none] (17) at (1.5, 1.25) {};
+		\node [style=none] (18) at (-5, 3) {};
+		\node [style=none] (19) at (-5, -2.75) {};
+		\node [style=none] (20) at (4.25, -2.75) {};
+		\node [style=none] (21) at (4.25, 3) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (21.center)
+			 to (18.center)
+			 to (19.center)
+			 to (20.center)
+			 to cycle;
+		\draw [style=tentacle, in=165, out=0] (1) to (5.center);
+		\draw [style=tentacle, in=210, out=0] (7.center) to (2);
+		\draw [style=tentacle, in=-180, out=-165, looseness=3.00] (3) to (6.center);
+		\draw [style=tentacle, in=150, out=150, looseness=1.50] (3) to (11.center);
+		\draw [style=tentacle, in=180, out=15, looseness=1.25] (2) to (13.center);
+		\draw [style=tentacle, in=-180, out=-15, looseness=1.75] (2) to (14.center);
+		\draw [style=tentacle, in=0, out=165] (15) to (9.center);
+		\draw [style=tentacle, in=-15, out=-120, looseness=1.25] (16) to (12.center);
+		\draw [style=tentacle, in=120, out=-15] (17.center) to (16);
+	\end{pgfonlayer}
+\end{tikzpicture}
