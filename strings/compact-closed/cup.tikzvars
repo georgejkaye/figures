@@ -1,5 +1,6 @@
 \pgfkeys{%
     /tikzit,%
     colour/.initial=white,%
-    obj/.initial=%
+    obj1/.initial=,%
+    obj2/.initial=%
 }%

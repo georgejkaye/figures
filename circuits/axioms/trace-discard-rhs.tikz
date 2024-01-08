@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=wire label left] (7) at (-0.5, 0) {$\getvar{cod}$};
+		\node [style=wire label left] (7) at (-0.5, 0) {$\getvar{dom}$};
 		\node [style=bproduct] (8) at (0.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
