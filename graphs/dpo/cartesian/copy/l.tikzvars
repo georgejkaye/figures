@@ -1,0 +1,4 @@
+\pgfkeys{%
+    /tikzit,%
+    edge/.initial=e%
+}%
