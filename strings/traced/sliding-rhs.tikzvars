@@ -4,5 +4,6 @@
 	box2/.initial=g,%
 	colour/.initial=white,%
 	dom/.initial=,%
-	cod/.initial=%
+	cod/.initial=,%
+	trace/.initial=%
 }%
