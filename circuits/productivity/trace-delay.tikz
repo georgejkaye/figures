@@ -22,8 +22,8 @@
 		\node [style=wire label right] (53) at (3, -1.16) {$\getvar{cod}$};
 		\node [style=none] (55) at (-3.25, -0.25) {};
 		\node [style=delay] (56) at (-2, 0.25) {};
-		\node [style=wire label mid] (57) at (1, 1) {$\getvar{delay}$};
-		\node [style=wire label mid] (58) at (-1, 1.5) {$\getvar{trace}$};
+		\node [style=wire label mid] (57) at (1, 1) {$\getvar{trace}$};
+		\node [style=wire label mid] (58) at (-1, 1.5) {$\getvar{delay}$};
 		\node [style=none] (60) at (-1.25, 0.25) {};
 		\node [style=none] (61) at (-0.25, -0.25) {};
 		\node [style=wire label mid] (62) at (-1.25, -0.75) {$\getvar{valwidth}$};
