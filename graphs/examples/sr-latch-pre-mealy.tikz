@@ -53,10 +53,6 @@
 		\node [style=none] (66) at (-12.5, -0.5) {$1$};
 		\node [style=none] (67) at (-10.25, 0) {};
 		\node [style=none] (68) at (-11.25, 0) {};
-		\node [style=none] (69) at (-7, -2.75) {};
-		\node [style=none] (70) at (-7, 0.75) {};
-		\node [style=none] (71) at (4.5, 0.75) {};
-		\node [style=none] (74) at (4.5, -2.75) {};
 		\node [style=none] (75) at (-3.25, -2.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
@@ -64,11 +60,6 @@
 			 to (25.center)
 			 to (24.center)
 			 to (23.center)
-			 to cycle;
-		\draw [style=tile comb] (69.center)
-			 to (70.center)
-			 to (71.center)
-			 to (74.center)
 			 to cycle;
 		\draw [style=tentacle, in=-180, out=0] (6) to (7.center);
 		\draw [style=tentacle] (5) to (0);
