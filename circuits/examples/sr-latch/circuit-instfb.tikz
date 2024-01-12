@@ -152,6 +152,16 @@
 			 to (52.center)
 			 to (51.center)
 			 to cycle;
+		\draw [style=tile comb] (97.center)
+			 to (100.center)
+			 to (99.center)
+			 to (98.center)
+			 to cycle;
+		\draw [style=tile comb] (144.center)
+			 to (147.center)
+			 to (146.center)
+			 to (145.center)
+			 to cycle;
 		\draw [style=wire] (1.center)
 			 to (3.center)
 			 to [in=0, out=180] (6.center)
@@ -193,19 +203,19 @@
 			 to (34.center)
 			 to [in=180, out=0] (46.center)
 			 to (177);
-		\draw [style=wire] (40.center) to (36.center);
-		\draw [style=wire, bend right=90, looseness=1.75] (36.center) to (35.center);
-		\draw [style=wire] (35.center) to (33);
+		\draw [style=wire] (116)
+			 to (129.center)
+			 to [in=180, out=0] (140.center)
+			 to (134.center)
+			 to [in=0, out=0, looseness=1.75] (40.center)
+			 to (36.center)
+			 to [bend right=90, looseness=1.75] (35.center)
+			 to (33);
 		\draw [style=wire] (33) to (23);
 		\draw [style=wire] (38.center)
 			 to (43.center)
 			 to [in=180, out=0, looseness=1.25] (45.center)
 			 to (44.center);
-		\draw [style=tile comb] (97.center)
-			 to (100.center)
-			 to (99.center)
-			 to (98.center)
-			 to cycle;
 		\draw [style=wire] (55.center)
 			 to (56.center)
 			 to [in=0, out=180] (59.center)
@@ -237,11 +247,6 @@
 		\draw [style=wire] (65) to (64);
 		\draw [style=wire, in=180, out=0, looseness=1.25] (90.center) to (92.center);
 		\draw [style=wire] (92.center) to (91.center);
-		\draw [style=tile comb] (144.center)
-			 to (147.center)
-			 to (146.center)
-			 to (145.center)
-			 to cycle;
 		\draw [style=wire] (102.center) to (103.center);
 		\draw [style=wire, in=0, out=180] (103.center) to (106.center);
 		\draw [style=wire] (119)
@@ -267,12 +272,8 @@
 			 to [in=360, out=180] (121.center)
 			 to [in=-75, out=180] (119);
 		\draw [style=wire] (112) to (111);
-		\draw [style=wire] (116) to (129.center);
-		\draw [style=wire, in=180, out=0] (129.center) to (140.center);
-		\draw [style=wire] (140.center) to (134.center);
 		\draw [style=wire, in=180, out=0, looseness=1.25] (137.center) to (139.center);
 		\draw [style=wire] (139.center) to (138.center);
-		\draw [style=wire, in=0, out=0, looseness=1.75] (134.center) to (40.center);
 		\draw [style=wire] (149)
 			 to [in=-180, out=-75, looseness=0.75] (152.center)
 			 to (155.center)
