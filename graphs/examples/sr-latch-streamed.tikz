@@ -17,14 +17,14 @@
 		\node [style=none] (23) at (-11.25, -6) {};
 		\node [style=none] (24) at (14, -6) {};
 		\node [style=none] (25) at (13.75, 6) {};
-		\node [style=none] (41) at (17.25, 2.5) {};
-		\node [style=none] (42) at (15.25, 2.5) {};
-		\node [style=none] (43) at (15.25, -2.5) {};
-		\node [style=none] (44) at (17.25, -2.5) {};
-		\node [style=vertex] (45) at (16.25, -1.25) {};
-		\node [style=vertex] (46) at (16.25, 0.5) {};
-		\node [style=none] (47) at (16.25, 1.25) {$2$};
-		\node [style=none] (48) at (16.25, -0.5) {$3$};
+		\node [style=none] (41) at (17.25, 3.5) {};
+		\node [style=none] (42) at (15.25, 3.5) {};
+		\node [style=none] (43) at (15.25, -3.5) {};
+		\node [style=none] (44) at (17.25, -3.5) {};
+		\node [style=vertex] (45) at (16.25, -0.25) {};
+		\node [style=vertex] (46) at (16.25, 1.75) {};
+		\node [style=none] (47) at (16.25, 2.5) {$2$};
+		\node [style=none] (48) at (16.25, 0.5) {$3$};
 		\node [style=none] (49) at (14, 0) {};
 		\node [style=none] (50) at (15, 0) {};
 		\node [style=vertex] (51) at (-5.25, -4) {};
@@ -75,8 +75,11 @@
 		\node [style=none] (116) at (7.5, 3.75) {};
 		\node [style=none] (117) at (-2.5, 1.5) {};
 		\node [style=vertex] (118) at (-6.5, 1.75) {};
-		\node [style=edge] (119) at (-9.5, 1.75) {$\mathsf{f}$};
-		\node [style=edge] (120) at (-9.5, -0.75) {$\mathsf{t}$};
+		\node [style=edge] (119) at (-9.5, 1.75) {$\mathsf{t}$};
+		\node [style=edge] (120) at (-9.5, -0.75) {$\mathsf{f}$};
+		\node [style=none] (121) at (-5.25, -3.25) {$4$};
+		\node [style=vertex] (122) at (16.25, -2.25) {};
+		\node [style=none] (123) at (16.25, -1.5) {$4$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=graph] (22.center)

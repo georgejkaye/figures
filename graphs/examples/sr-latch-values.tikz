@@ -1,0 +1,57 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (22) at (-2.25, 3.75) {};
+		\node [style=none] (23) at (-2.25, -3.75) {};
+		\node [style=none] (24) at (2.5, -3.75) {};
+		\node [style=none] (25) at (2.5, 3.75) {};
+		\node [style=none] (59) at (-5.75, 2.25) {};
+		\node [style=none] (60) at (-3.75, 2.25) {};
+		\node [style=none] (61) at (-3.75, -2.25) {};
+		\node [style=none] (62) at (-5.75, -2.25) {};
+		\node [style=none] (67) at (-2.5, 0) {};
+		\node [style=none] (68) at (-3.5, 0) {};
+		\node [style=vertex] (161) at (1.25, 2.25) {};
+		\node [style=edge] (163) at (-0.5, 2.25) {$\mathsf{t}$};
+		\node [style=edge] (164) at (-0.5, -2.25) {$\bot$};
+		\node [style=vertex] (166) at (1.25, -2.25) {};
+		\node [style=vertex] (168) at (1.25, 0) {};
+		\node [style=edge] (169) at (-0.5, 0) {$\mathsf{f}$};
+		\node [style=none] (170) at (6, 3.5) {};
+		\node [style=none] (171) at (4, 3.5) {};
+		\node [style=none] (172) at (4, -3.5) {};
+		\node [style=none] (173) at (6, -3.5) {};
+		\node [style=vertex] (174) at (5, -0.25) {};
+		\node [style=vertex] (175) at (5, 1.75) {};
+		\node [style=none] (176) at (5, 2.5) {$2$};
+		\node [style=none] (177) at (5, 0.5) {$3$};
+		\node [style=vertex] (178) at (5, -2.25) {};
+		\node [style=none] (179) at (5, -1.5) {$4$};
+		\node [style=none] (182) at (2.75, 0) {};
+		\node [style=none] (183) at (3.75, 0) {};
+		\node [style=none] (184) at (1.25, 3) {$2$};
+		\node [style=none] (185) at (1.25, 0.75) {$3$};
+		\node [style=none] (186) at (1.25, -1.5) {$4$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (22.center)
+			 to (25.center)
+			 to (24.center)
+			 to (23.center)
+			 to cycle;
+		\draw [style=interface] (59.center)
+			 to (62.center)
+			 to (61.center)
+			 to (60.center)
+			 to cycle;
+		\draw [style=arrow] (67.center) to (68.center);
+		\draw [style=tentacle, in=0, out=-180] (161) to (163);
+		\draw [style=tentacle] (168) to (169);
+		\draw [style=tentacle] (164) to (166);
+		\draw [style=interface] (171.center)
+			 to (170.center)
+			 to (173.center)
+			 to (172.center)
+			 to cycle;
+		\draw [style=arrow] (182.center) to (183.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
