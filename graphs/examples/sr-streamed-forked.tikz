@@ -33,13 +33,13 @@
 		\node [style=none] (104) at (8.75, -3.25) {$2$};
 		\node [style=none] (108) at (15, -3.5) {$3$};
 		\node [style=none] (116) at (4.75, 3.5) {};
-		\node [style=edge] (126) at (1, 2.25) {$\mathsf{t}$};
+		\node [style=edge] (126) at (1, 2.25) {$\mathsf{f}$};
 		\node [style=edge] (128) at (-5.25, 5) {$\bot$};
 		\node [style=none] (129) at (-1.25, 3.75) {};
 		\node [style=vertex] (130) at (-3.5, 5) {};
 		\node [style=none] (131) at (-1.25, 4.25) {};
 		\node [style=vertex] (132) at (-3.5, 3) {};
-		\node [style=edge] (133) at (-5.25, 3) {$\mathsf{f}$};
+		\node [style=edge] (133) at (-5.25, 3) {$\mathsf{t}$};
 		\node [style=edge] (134) at (1.75, 0) {$\vee$};
 		\node [style=edge] (135) at (4.75, 0) {$\neg$};
 		\node [style=edge] (136) at (7.75, -0.25) {$\vee$};
@@ -51,13 +51,13 @@
 		\node [style=none] (142) at (7.5, 0) {};
 		\node [style=vertex] (143) at (5, -1.75) {};
 		\node [style=none] (144) at (7.25, -0.5) {};
-		\node [style=edge] (145) at (3.5, -1.75) {$\mathsf{t}$};
+		\node [style=edge] (145) at (3.5, -1.75) {$\mathsf{f}$};
 		\node [style=edge] (146) at (-2.75, 1) {$\bot$};
 		\node [style=none] (147) at (1.25, -0.25) {};
 		\node [style=vertex] (148) at (-1, 1) {};
 		\node [style=none] (149) at (1.25, 0.25) {};
 		\node [style=vertex] (150) at (-1, -1) {};
-		\node [style=edge] (151) at (-2.75, -1) {$\mathsf{f}$};
+		\node [style=edge] (151) at (-2.75, -1) {$\mathsf{t}$};
 		\node [style=edge] (152) at (4.25, -4) {$\vee$};
 		\node [style=edge] (153) at (7.25, -4) {$\neg$};
 		\node [style=edge] (154) at (10.25, -4.25) {$\vee$};
@@ -69,13 +69,13 @@
 		\node [style=none] (160) at (10, -4) {};
 		\node [style=vertex] (161) at (7.5, -5.75) {};
 		\node [style=none] (162) at (9.75, -4.5) {};
-		\node [style=edge] (163) at (6, -5.75) {$\mathsf{t}$};
+		\node [style=edge] (163) at (6, -5.75) {$\mathsf{f}$};
 		\node [style=edge] (164) at (-0.25, -3) {$\bot$};
 		\node [style=none] (165) at (3.75, -4.25) {};
 		\node [style=vertex] (166) at (1.5, -3) {};
 		\node [style=none] (167) at (3.75, -3.75) {};
 		\node [style=vertex] (168) at (1.5, -5) {};
-		\node [style=edge] (169) at (-0.25, -5) {$\mathsf{f}$};
+		\node [style=edge] (169) at (-0.25, -5) {$\mathsf{t}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=graph] (22.center)
