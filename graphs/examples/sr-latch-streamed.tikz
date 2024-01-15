@@ -1,85 +1,169 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=edge] (0) at (2, 4.25) {$\vee$};
-		\node [style=edge] (1) at (5, 4.25) {$\neg$};
-		\node [style=edge] (2) at (8, 4) {$\vee$};
-		\node [style=vertex] (5) at (3.5, 4.25) {};
-		\node [style=none] (7) at (1.75, 4) {};
-		\node [style=vertex] (8) at (6.5, 4.25) {};
-		\node [style=edge] (9) at (11, 4) {$\neg$};
-		\node [style=vertex] (10) at (9.5, 4) {};
-		\node [style=vertex] (11) at (12.75, 4) {};
-		\node [style=none] (12) at (7.75, 4.25) {};
-		\node [style=vertex] (13) at (-6.5, -0.75) {};
-		\node [style=none] (14) at (4.5, 2.75) {};
-		\node [style=none] (19) at (1.75, 4.5) {};
-		\node [style=none] (22) at (-11.25, 6) {};
-		\node [style=none] (23) at (-11.25, -6) {};
-		\node [style=none] (24) at (14, -6) {};
-		\node [style=none] (25) at (13.75, 6) {};
-		\node [style=none] (41) at (17.25, 3.5) {};
-		\node [style=none] (42) at (15.25, 3.5) {};
-		\node [style=none] (43) at (15.25, -3.5) {};
-		\node [style=none] (44) at (17.25, -3.5) {};
-		\node [style=vertex] (45) at (16.25, -0.25) {};
-		\node [style=vertex] (46) at (16.25, 1.75) {};
-		\node [style=none] (47) at (16.25, 2.5) {$2$};
-		\node [style=none] (48) at (16.25, 0.5) {$3$};
-		\node [style=none] (49) at (14, 0) {};
-		\node [style=none] (50) at (15, 0) {};
-		\node [style=vertex] (51) at (-5.25, -4) {};
-		\node [style=edge] (52) at (-7.25, -4) {$\bot$};
+		\node [style=edge] (0) at (2, 12.25) {$\vee$};
+		\node [style=edge] (1) at (5, 12.25) {$\neg$};
+		\node [style=edge] (2) at (8, 12) {$\vee$};
+		\node [style=vertex] (5) at (3.5, 12.25) {};
+		\node [style=none] (7) at (1.75, 12) {};
+		\node [style=vertex] (8) at (6.5, 12.25) {};
+		\node [style=edge] (9) at (11, 12) {$\neg$};
+		\node [style=vertex] (10) at (9.5, 12) {};
+		\node [style=vertex] (11) at (12.75, 12) {};
+		\node [style=none] (12) at (7.75, 12.25) {};
+		\node [style=vertex] (13) at (-6.5, 7.25) {};
+		\node [style=none] (14) at (4.5, 10.75) {};
+		\node [style=none] (19) at (1.75, 12.5) {};
+		\node [style=none] (22) at (-11.25, 14) {};
+		\node [style=none] (23) at (-11.25, -12) {};
+		\node [style=none] (24) at (22, -12) {};
+		\node [style=none] (25) at (21.75, 14) {};
+		\node [style=none] (41) at (25.25, 2.5) {};
+		\node [style=none] (42) at (23.25, 2.5) {};
+		\node [style=none] (43) at (23.25, -2.5) {};
+		\node [style=none] (44) at (25.25, -2.5) {};
+		\node [style=vertex] (45) at (24.25, -1.25) {};
+		\node [style=vertex] (46) at (24.25, 0.75) {};
+		\node [style=none] (47) at (24.25, 1.5) {$2$};
+		\node [style=none] (48) at (24.25, -0.5) {$3$};
+		\node [style=none] (49) at (22, 0) {};
+		\node [style=none] (50) at (23, 0) {};
+		\node [style=vertex] (51) at (-5.25, 4) {};
+		\node [style=edge] (52) at (-7, 4) {$\bot$};
 		\node [style=none] (59) at (-14.75, 2.5) {};
 		\node [style=none] (60) at (-12.75, 2.5) {};
 		\node [style=none] (61) at (-12.75, -2.5) {};
 		\node [style=none] (62) at (-14.75, -2.5) {};
 		\node [style=none] (67) at (-11.5, 0) {};
 		\node [style=none] (68) at (-12.5, 0) {};
-		\node [style=none] (75) at (4, 2.75) {};
-		\node [style=vertex] (76) at (-1.75, 4.5) {};
-		\node [style=edge] (77) at (-4.75, 4.5) {$\bot$};
-		\node [style=edge] (78) at (2, 1) {$\vee$};
-		\node [style=edge] (79) at (5, 1) {$\neg$};
-		\node [style=edge] (80) at (8, 0.75) {$\vee$};
-		\node [style=vertex] (81) at (3.5, 1) {};
-		\node [style=none] (82) at (1.75, 0.75) {};
-		\node [style=vertex] (83) at (6.5, 1) {};
-		\node [style=edge] (84) at (11, 0.75) {$\neg$};
-		\node [style=vertex] (85) at (9.5, 0.75) {};
-		\node [style=vertex] (86) at (12.75, 0.75) {};
-		\node [style=none] (87) at (7.75, 1) {};
-		\node [style=none] (88) at (7.5, 0.5) {};
-		\node [style=none] (89) at (0.5, 1.25) {};
-		\node [style=none] (91) at (0.5, -1.25) {};
-		\node [style=edge] (92) at (2, -3) {$\vee$};
-		\node [style=edge] (93) at (5, -3) {$\neg$};
-		\node [style=edge] (94) at (8, -3.25) {$\vee$};
-		\node [style=vertex] (95) at (3.5, -3) {};
-		\node [style=none] (96) at (1.75, -3.25) {};
-		\node [style=vertex] (97) at (6.5, -3) {};
-		\node [style=edge] (98) at (11, -3.25) {$\neg$};
-		\node [style=vertex] (99) at (9.5, -3.25) {};
-		\node [style=vertex] (100) at (12.75, -3.25) {};
-		\node [style=none] (101) at (7.75, -3) {};
-		\node [style=none] (102) at (7.5, -3.5) {};
-		\node [style=none] (103) at (0.75, -2.75) {};
-		\node [style=none] (104) at (6.5, -2.25) {$2$};
-		\node [style=none] (105) at (4.25, -5.25) {};
-		\node [style=none] (108) at (12.75, -2.5) {$3$};
-		\node [style=none] (110) at (2.5, -5.25) {};
-		\node [style=none] (111) at (-0.25, -3.5) {};
-		\node [style=none] (112) at (1.75, 1.25) {};
-		\node [style=none] (113) at (-1.5, 0.5) {};
-		\node [style=none] (114) at (4, -1) {};
-		\node [style=none] (115) at (1.75, -2.75) {};
-		\node [style=none] (116) at (7.5, 3.75) {};
-		\node [style=none] (117) at (-2.5, 1.5) {};
-		\node [style=vertex] (118) at (-6.5, 1.75) {};
-		\node [style=edge] (119) at (-9.5, 1.75) {$\mathsf{t}$};
-		\node [style=edge] (120) at (-9.5, -0.75) {$\mathsf{f}$};
-		\node [style=none] (121) at (-5.25, -3.25) {$4$};
-		\node [style=vertex] (122) at (16.25, -2.25) {};
-		\node [style=none] (123) at (16.25, -1.5) {$4$};
+		\node [style=none] (75) at (4, 10.75) {};
+		\node [style=vertex] (76) at (-0.25, 12.5) {};
+		\node [style=edge] (77) at (-2.75, 12.5) {$\bot$};
+		\node [style=edge] (78) at (2, 9) {$\vee$};
+		\node [style=edge] (79) at (5, 9) {$\neg$};
+		\node [style=edge] (80) at (8, 8.75) {$\vee$};
+		\node [style=vertex] (81) at (3.5, 9) {};
+		\node [style=none] (82) at (1.75, 8.75) {};
+		\node [style=vertex] (83) at (6.5, 9) {};
+		\node [style=edge] (84) at (11, 8.75) {$\neg$};
+		\node [style=vertex] (85) at (9.5, 8.75) {};
+		\node [style=vertex] (86) at (12.75, 8.75) {};
+		\node [style=none] (87) at (7.75, 9) {};
+		\node [style=none] (88) at (7.5, 8.5) {};
+		\node [style=none] (89) at (0.5, 9.25) {};
+		\node [style=none] (91) at (0.5, 6.75) {};
+		\node [style=edge] (92) at (2, 5) {$\vee$};
+		\node [style=edge] (93) at (5, 5) {$\neg$};
+		\node [style=edge] (94) at (8, 4.75) {$\vee$};
+		\node [style=vertex] (95) at (3.5, 5) {};
+		\node [style=none] (96) at (1.75, 4.75) {};
+		\node [style=vertex] (97) at (6.5, 5) {};
+		\node [style=edge] (98) at (11, 4.75) {$\neg$};
+		\node [style=vertex] (99) at (9.5, 4.75) {};
+		\node [style=vertex] (100) at (12.75, 4.75) {};
+		\node [style=none] (101) at (7.75, 5) {};
+		\node [style=none] (102) at (7.5, 4.5) {};
+		\node [style=none] (103) at (0.75, 5.25) {};
+		\node [style=none] (105) at (4.25, 2.75) {};
+		\node [style=none] (108) at (12.75, 5.5) {$3$};
+		\node [style=none] (110) at (2.5, 2.75) {};
+		\node [style=none] (111) at (-0.25, 4.5) {};
+		\node [style=none] (112) at (1.75, 9.25) {};
+		\node [style=none] (113) at (-1.5, 8.5) {};
+		\node [style=none] (114) at (4, 7) {};
+		\node [style=none] (115) at (1.75, 5.25) {};
+		\node [style=none] (116) at (7.5, 11.75) {};
+		\node [style=none] (117) at (-2.5, 9.5) {};
+		\node [style=vertex] (118) at (-6.5, 9.75) {};
+		\node [style=edge] (119) at (-8.5, 9.75) {$\mathsf{t}$};
+		\node [style=edge] (120) at (-8.5, 7.25) {$\mathsf{f}$};
+		\node [style=edge] (124) at (1.75, 0.5) {$\vee$};
+		\node [style=edge] (125) at (4.75, 0.5) {$\neg$};
+		\node [style=edge] (126) at (7.75, 0.25) {$\vee$};
+		\node [style=vertex] (127) at (3.25, 0.5) {};
+		\node [style=none] (128) at (1.5, 0.25) {};
+		\node [style=vertex] (129) at (6.25, 0.5) {};
+		\node [style=edge] (130) at (10.75, 0.25) {$\neg$};
+		\node [style=vertex] (131) at (9.25, 0.25) {};
+		\node [style=vertex] (132) at (12.5, 0.25) {};
+		\node [style=none] (133) at (7.5, 0.5) {};
+		\node [style=vertex] (134) at (-6.75, -4.5) {};
+		\node [style=none] (135) at (4.25, -1) {};
+		\node [style=none] (136) at (1.5, 0.75) {};
+		\node [style=vertex] (137) at (-5.5, -7.75) {};
+		\node [style=none] (139) at (3.75, -1) {};
+		\node [style=vertex] (140) at (-0.25, 0.75) {};
+		\node [style=edge] (141) at (-2.25, 0.75) {$\bot$};
+		\node [style=edge] (142) at (1.75, -2.75) {$\vee$};
+		\node [style=edge] (143) at (4.75, -2.75) {$\neg$};
+		\node [style=edge] (144) at (7.75, -3) {$\vee$};
+		\node [style=vertex] (145) at (3.25, -2.75) {};
+		\node [style=none] (146) at (1.5, -3) {};
+		\node [style=vertex] (147) at (6.25, -2.75) {};
+		\node [style=edge] (148) at (10.75, -3) {$\neg$};
+		\node [style=vertex] (149) at (9.25, -3) {};
+		\node [style=vertex] (150) at (12.5, -3) {};
+		\node [style=none] (151) at (7.5, -2.75) {};
+		\node [style=none] (152) at (7.25, -3.25) {};
+		\node [style=none] (153) at (0.25, -2.5) {};
+		\node [style=none] (154) at (0.25, -5) {};
+		\node [style=edge] (155) at (1.75, -6.75) {$\vee$};
+		\node [style=edge] (156) at (4.75, -6.75) {$\neg$};
+		\node [style=edge] (157) at (7.75, -7) {$\vee$};
+		\node [style=vertex] (158) at (3.25, -6.75) {};
+		\node [style=none] (159) at (1.5, -7) {};
+		\node [style=vertex] (160) at (6.25, -6.75) {};
+		\node [style=edge] (161) at (10.75, -7) {$\neg$};
+		\node [style=vertex] (162) at (9.25, -7) {};
+		\node [style=vertex] (163) at (12.5, -7) {};
+		\node [style=none] (164) at (7.5, -6.75) {};
+		\node [style=none] (165) at (7.25, -7.25) {};
+		\node [style=none] (166) at (0.5, -6.5) {};
+		\node [style=none] (167) at (20, 2.5) {$2$};
+		\node [style=none] (168) at (4, -9) {};
+		\node [style=none] (170) at (2.25, -9) {};
+		\node [style=none] (171) at (-0.5, -7.25) {};
+		\node [style=none] (172) at (1.5, -2.5) {};
+		\node [style=none] (173) at (-1.75, -3.25) {};
+		\node [style=none] (174) at (3.75, -4.75) {};
+		\node [style=none] (175) at (1.5, -6.5) {};
+		\node [style=none] (176) at (7.25, 0) {};
+		\node [style=none] (177) at (-2.75, -2.25) {};
+		\node [style=vertex] (178) at (-6.75, -2) {};
+		\node [style=edge] (183) at (18.75, -3.25) {$\nabla$};
+		\node [style=edge] (184) at (18.5, 6) {$\nabla$};
+		\node [style=edge] (185) at (18.5, 1.75) {$\nabla$};
+		\node [style=none] (187) at (5.75, 1.25) {};
+		\node [style=none] (188) at (18.25, -3) {};
+		\node [style=none] (189) at (18.25, -3.5) {};
+		\node [style=none] (190) at (19.75, -3.25) {};
+		\node [style=none] (191) at (16, -10) {};
+		\node [style=none] (192) at (-8, -10) {};
+		\node [style=none] (193) at (-8.25, -7.75) {};
+		\node [style=none] (194) at (3, -11) {};
+		\node [style=none] (195) at (12.75, -10) {};
+		\node [style=none] (196) at (18.25, 5.75) {};
+		\node [style=none] (197) at (18.25, 6.25) {};
+		\node [style=vertex] (198) at (20, 1.75) {};
+		\node [style=vertex] (199) at (20, 6) {};
+		\node [style=none] (200) at (18.25, 2) {};
+		\node [style=none] (201) at (18.25, 1.5) {};
+		\node [style=none] (202) at (12.25, 6.75) {};
+		\node [style=none] (203) at (11, -5.25) {};
+		\node [style=none] (204) at (13.5, -5.25) {};
+		\node [style=none] (205) at (1, -5.5) {};
+		\node [style=none] (206) at (3, -5.5) {};
+		\node [style=none] (207) at (12.75, -4) {};
+		\node [style=none] (208) at (0, 6) {};
+		\node [style=none] (209) at (12.25, 7.5) {};
+		\node [style=none] (210) at (4, 6) {};
+		\node [style=none] (211) at (9.25, 7.5) {};
+		\node [style=none] (212) at (20, 6.75) {$3$};
+		\node [style=vertex] (213) at (-13.75, -1.25) {};
+		\node [style=vertex] (214) at (-13.75, 0.75) {};
+		\node [style=none] (215) at (-13.75, 1.5) {$0$};
+		\node [style=none] (216) at (-13.75, -0.5) {$1$};
+		\node [style=none] (217) at (-6.75, -1.25) {$0$};
+		\node [style=none] (218) at (-6.75, -3.75) {$1$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=graph] (22.center)
@@ -120,7 +204,9 @@
 		\draw [style=tentacle] (85) to (80);
 		\draw [style=tentacle] (86) to (84);
 		\draw [style=tentacle, in=-180, out=0, looseness=3.00] (83) to (87.center);
-		\draw [style=tentacle, in=360, out=180] (112.center) to (89.center);
+		\draw [style=tentacle] (112.center)
+			 to [in=360, out=180] (89.center)
+			 to [in=45, out=180, looseness=0.75] (51);
 		\draw [style=tentacle] (13)
 			 to [in=180, out=0] (91.center)
 			 to (114.center)
@@ -144,7 +230,80 @@
 		\draw [style=tentacle, in=-45, out=-180, looseness=0.75] (111.center) to (118);
 		\draw [style=tentacle, in=180, out=-15] (118) to (113.center);
 		\draw [style=tentacle] (13) to (120);
-		\draw [style=tentacle, in=45, out=180] (89.center) to (51);
 		\draw [style=tentacle, in=180, out=0] (51) to (103.center);
+		\draw [style=tentacle] (127) to (124);
+		\draw [style=tentacle] (127) to (125);
+		\draw [style=tentacle] (129) to (125);
+		\draw [style=tentacle] (131) to (130);
+		\draw [style=tentacle] (131) to (126);
+		\draw [style=tentacle] (132) to (130);
+		\draw [style=tentacle, in=-180, out=0, looseness=3.00] (129) to (133.center);
+		\draw [style=tentacle] (176.center)
+			 to [in=0, out=180] (135.center)
+			 to [in=0, out=-180] (139.center)
+			 to [in=45, out=180, looseness=0.75] (134);
+		\draw [style=tentacle] (140) to (141);
+		\draw [style=tentacle, in=180, out=0, looseness=1.25] (140) to (136.center);
+		\draw [style=tentacle] (145) to (142);
+		\draw [style=tentacle] (145) to (143);
+		\draw [style=tentacle] (147) to (143);
+		\draw [style=tentacle] (149) to (148);
+		\draw [style=tentacle] (149) to (144);
+		\draw [style=tentacle] (150) to (148);
+		\draw [style=tentacle, in=-180, out=0, looseness=3.00] (147) to (151.center);
+		\draw [style=tentacle, in=360, out=180] (172.center) to (153.center);
+		\draw [style=tentacle] (134)
+			 to [in=180, out=0] (154.center)
+			 to (174.center)
+			 to [in=180, out=0, looseness=1.25] (152.center);
+		\draw [style=tentacle] (158) to (155);
+		\draw [style=tentacle] (158) to (156);
+		\draw [style=tentacle] (160) to (156);
+		\draw [style=tentacle] (162) to (161);
+		\draw [style=tentacle] (162) to (157);
+		\draw [style=tentacle] (163) to (161);
+		\draw [style=tentacle, in=-180, out=0, looseness=3.00] (160) to (164.center);
+		\draw [style=tentacle] (134)
+			 to [in=-180, out=-30] (170.center)
+			 to (168.center)
+			 to [in=-180, out=0] (165.center);
+		\draw [style=tentacle, in=-180, out=0, looseness=0.75] (166.center) to (175.center);
+		\draw [style=tentacle, in=0, out=-180] (159.center) to (171.center);
+		\draw [style=tentacle, in=180, out=0] (173.center) to (146.center);
+		\draw [style=tentacle, in=-180, out=0] (178) to (128.center);
+		\draw [style=tentacle, in=-45, out=-180, looseness=0.75] (171.center) to (178);
+		\draw [style=tentacle, in=180, out=-15] (178) to (173.center);
+		\draw [style=tentacle, in=45, out=180] (153.center) to (137);
+		\draw [style=tentacle, in=180, out=0] (137) to (166.center);
+		\draw [style=tentacle, in=180, out=0, looseness=0.50] (100) to (188.center);
+		\draw [style=tentacle, in=180, out=0, looseness=0.50] (163) to (189.center);
+		\draw [style=tentacle] (183)
+			 to (190.center)
+			 to [in=0, out=0, looseness=0.75] (191.center)
+			 to (195.center)
+			 to [in=0, out=-180] (194.center)
+			 to [in=0, out=180] (192.center)
+			 to [in=-180, out=-180, looseness=1.50] (193.center)
+			 to (137);
+		\draw [style=tentacle] (184) to (199);
+		\draw [style=tentacle] (185) to (198);
+		\draw [style=tentacle] (97)
+			 to [in=-180, out=75] (202.center)
+			 to [in=180, out=0] (200.center);
+		\draw [style=tentacle] (160)
+			 to [in=-180, out=60] (203.center)
+			 to [in=-180, out=0] (204.center)
+			 to [in=-180, out=0, looseness=0.75] (201.center);
+		\draw [style=tentacle] (137)
+			 to [in=-180, out=15] (205.center)
+			 to [in=180, out=0] (206.center)
+			 to [in=-180, out=0, looseness=0.50] (207.center)
+			 to [in=180, out=0, looseness=0.50] (196.center);
+		\draw [style=tentacle] (51)
+			 to [in=-180, out=30] (208.center)
+			 to (210.center)
+			 to [in=-180, out=0] (211.center)
+			 to (209.center)
+			 to [in=180, out=0] (197.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
