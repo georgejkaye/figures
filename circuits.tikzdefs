@@ -2,9 +2,8 @@
 \usetikzlibrary{circuits.logic.US, patterns, shapes}
 \definecolor{comb}{HTML}{ddf1fb}
 \definecolor{seq}{HTML}{6ae4a3}
-\definecolor{white}{HTML}{f8f8f2}
+\definecolor{neutral}{HTML}{f8f8f2}
 \definecolor{unit}{HTML}{b9b9b9}
-\definecolor{pure}{HTML}{ffffff}
 \newcommand{\thickness}{0.5mm}
 \newcommand{\stringwidth}{0.4mm}
 \newcommand{\mediumwidth}{7.5mm}
