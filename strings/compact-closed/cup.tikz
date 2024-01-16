@@ -6,8 +6,8 @@
 		\node [style=none] (6) at (-1, 0.75) {};
 		\node [style=none] (7) at (0, 0.75) {};
 		\node [style=none] (8) at (0, -0.75) {};
-		\node [style=wire label right] (9) at (1, -0.5) {$\getvar{obj2}$};
-		\node [style=wire label right] (10) at (1, 0.5) {$\getvar{obj1}$};
+		\node [style=wire label right] (9) at (0.75, -0.5) {$\getvar{obj2}$};
+		\node [style=wire label right] (10) at (0.75, 0.5) {$\getvar{obj1}$};
 		\node [style=none] (11) at (-1, 0) {};
 		\node [style=none] (12) at (-1, 0) {};
 		\node [style=none] (13) at (-0.75, 0) {};
