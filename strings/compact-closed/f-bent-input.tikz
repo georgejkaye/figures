@@ -10,7 +10,7 @@
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (7) to (6);
-		\draw (5)
+		\draw [style=wire] (5)
 			 to (8.center)
 			 to [bend left=90, looseness=1.75] (9.center)
 			 to (10);
