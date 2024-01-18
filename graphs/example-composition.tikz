@@ -1,0 +1,94 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=edge] (5) at (-11.75, 1) {$\psi$};
+		\node [style=port] (12) at (-12, 1.5) {};
+		\node [style=port] (13) at (-11.25, 1) {};
+		\node [style=vertex] (14) at (-13.5, 0.75) {};
+		\node [style=edge] (15) at (-10.5, -1) {$\phi$};
+		\node [style=vertex] (16) at (-8.25, 0.25) {};
+		\node [style=port] (19) at (-10, -1) {};
+		\node [style=port] (20) at (-10.75, -0.75) {};
+		\node [style=port] (21) at (-10.75, -1.25) {};
+		\node [style=vertex] (30) at (-17.5, 0.5) {};
+		\node [style=vertex] (41) at (-13, -1.25) {};
+		\node [style=none] (42) at (-12, 0.5) {};
+		\node [style=none] (48) at (-5.75, 1.25) {};
+		\node [style=none] (49) at (-3.75, 1.25) {};
+		\node [style=none] (50) at (-3.75, -1.5) {};
+		\node [style=none] (54) at (-5.75, -1.5) {};
+		\node [style=none] (63) at (-6, 0) {};
+		\node [style=none] (64) at (-6.75, 0) {};
+		\node [style=none] (66) at (-7.75, 0.25) {$8$};
+		\node [style=vertex] (70) at (-4.75, -0.25) {};
+		\node [style=none] (71) at (-4.75, 0.5) {$8$};
+		\node [style=none] (72) at (-22.25, 2.5) {};
+		\node [style=none] (73) at (-22.25, -2.5) {};
+		\node [style=none] (74) at (-7, -2.5) {};
+		\node [style=none] (75) at (-7, 2.5) {};
+		\node [style=edge] (76) at (-19, 0.5) {$\psi$};
+		\node [style=port] (77) at (-19.25, 1) {};
+		\node [style=port] (78) at (-18.5, 0.5) {};
+		\node [style=none] (79) at (-20, 0) {};
+		\node [style=edge] (80) at (-15.5, -0.5) {$\phi$};
+		\node [style=port] (82) at (-15, -0.5) {};
+		\node [style=port] (83) at (-15.75, 0) {};
+		\node [style=port] (84) at (-15.75, -1) {};
+		\node [style=none] (86) at (-20.25, 1) {};
+		\node [style=vertex] (87) at (-21, -0.75) {};
+		\node [style=none] (90) at (-17, 1.25) {};
+		\node [style=none] (91) at (-20, 1.75) {};
+		\node [style=none] (92) at (-19.5, -1.5) {};
+		\node [style=none] (93) at (-19.25, 0) {};
+		\node [style=none] (94) at (-25.5, 2.25) {};
+		\node [style=none] (95) at (-23.5, 2.25) {};
+		\node [style=none] (96) at (-23.5, -2.25) {};
+		\node [style=vertex] (97) at (-24.5, 0.5) {};
+		\node [style=vertex] (98) at (-24.5, -1.25) {};
+		\node [style=none] (106) at (-25.5, -2.25) {};
+		\node [style=none] (107) at (-24.5, 1.25) {$0$};
+		\node [style=none] (108) at (-24.5, -0.5) {$1$};
+		\node [style=none] (110) at (-22.5, 0) {};
+		\node [style=none] (111) at (-23.25, 0) {};
+		\node [style=none] (116) at (-13.5, -1.25) {$1$};
+		\node [style=none] (119) at (-21.5, -0.5) {$0$};
+		\node [style=none] (120) at (-21.5, -1.25) {$2$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (75.center)
+			 to (72.center)
+			 to (73.center)
+			 to (74.center)
+			 to cycle;
+		\draw [style=tentacle, in=15, out=135] (16) to (13);
+		\draw [style=tentacle, in=-30, out=-165] (42.center) to (14);
+		\draw [style=tentacle, in=180, out=60] (41) to (20);
+		\draw [style=interface] (48.center)
+			 to (49.center)
+			 to (50.center)
+			 to (54.center)
+			 to cycle;
+		\draw [style=arrow] (64.center) to (63.center);
+		\draw [style=tentacle, in=195, out=-45] (41) to (21);
+		\draw [style=tentacle, in=-120, out=0] (19) to (16);
+		\draw [style=tentacle, in=15, out=90, looseness=0.75] (90.center) to (91.center);
+		\draw [style=tentacle, in=180, out=-165, looseness=2.00] (91.center) to (86.center);
+		\draw [style=tentacle] (86.center) to (77);
+		\draw [style=tentacle] (93.center)
+			 to (79.center)
+			 to [in=75, out=-180] (87);
+		\draw [style=tentacle] (87)
+			 to [in=180, out=-60] (92.center)
+			 to [in=180, out=0, looseness=1.25] (83);
+		\draw [style=interface] (95.center)
+			 to (96.center)
+			 to (106.center)
+			 to (94.center)
+			 to cycle;
+		\draw [style=arrow] (110.center) to (111.center);
+		\draw [style=tentacle, in=-90, out=30] (30) to (90.center);
+		\draw [style=tentacle] (30) to (78);
+		\draw [style=tentacle, bend right=45, looseness=1.25] (30) to (84);
+		\draw [style=tentacle, in=-135, out=0, looseness=1.25] (82) to (14);
+		\draw [style=tentacle, in=180, out=60] (14) to (12);
+	\end{pgfonlayer}
+\end{tikzpicture}
