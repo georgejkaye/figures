@@ -2,7 +2,7 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=register] (6) at (-1.75, -0.025) {$\gamma_\leq(s)$};
 		\node [style=port] (10) at (1.75, -1) {};
-		\node [style=medium square box comb] (13) at (2, -0.5) {$\mealytofunc[\gamma_\leq(f)]$};
+		\node [style=medium square box seq] (13) at (2, -0.5) {$\mealytofunc[\gamma_\leq(f)]$};
 		\node [style=bport] (22) at (2.25, 0) {};
 		\node [style=none] (24) at (4, 0) {};
 		\node [style=none] (26) at (4, 1) {};
@@ -12,7 +12,7 @@
 		\node [style=none] (35) at (-3.25, 0) {};
 		\node [style=bport] (55) at (1.75, 0) {};
 		\node [style=wire label left] (57) at (-4, -1) {$m$};
-		\node [style=none] (58) at (-1.5, 0) {};
+		\node [style=none] (58) at (-0.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (22)
