@@ -52,6 +52,7 @@
 		\node [style=none] (116) at (-13.5, -1.25) {$1$};
 		\node [style=none] (119) at (-21.5, -0.5) {$0$};
 		\node [style=none] (120) at (-21.5, -1.25) {$2$};
+		\node [style=vertex] (121) at (-15, 1.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=graph] (75.center)
