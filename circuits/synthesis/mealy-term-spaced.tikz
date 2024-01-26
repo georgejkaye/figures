@@ -1,18 +1,18 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=register] (6) at (-2.5, -0.025) {$\gamma_\leq(s)$};
+		\node [style=register] (6) at (-3, -0.025) {$\gamma_\leq(s)$};
 		\node [style=port] (10) at (1.75, -1) {};
 		\node [style=medium square box seq] (13) at (2, -0.5) {$\mealytofunc[\gamma_\leq(f)]$};
 		\node [style=bport] (22) at (2.25, 0) {};
-		\node [style=none] (24) at (4.25, 0) {};
-		\node [style=none] (26) at (4.25, 1) {};
-		\node [style=none] (30) at (-4.25, 1) {};
+		\node [style=none] (24) at (4.75, 0) {};
+		\node [style=none] (26) at (4.75, 1.25) {};
+		\node [style=none] (30) at (-5, 1.25) {};
 		\node [style=bport] (33) at (2.25, -1) {};
-		\node [style=wire label right] (34) at (5.25, -1) {$n$};
-		\node [style=none] (35) at (-4.25, 0) {};
+		\node [style=wire label right] (34) at (5.75, -1) {$n$};
+		\node [style=none] (35) at (-5, 0) {};
 		\node [style=bport] (55) at (1.75, 0) {};
-		\node [style=wire label left] (57) at (-5, -1) {$m$};
-		\node [style=none] (58) at (-2, 0) {};
+		\node [style=wire label left] (57) at (-5.75, -1) {$m$};
+		\node [style=none] (58) at (-2.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (22)
