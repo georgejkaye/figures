@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny box seq] (0) at (-3, 0) {$\overline{v}$};
+		\node [style=long bundler] (1) at (0, 0) {};
+		\node [style=none] (2) at (0.25, 1.25) {};
+		\node [style=none] (3) at (0.25, -1.25) {};
+		\node [style=none] (4) at (1.25, 1.25) {};
+		\node [style=none] (5) at (1.25, -1.25) {};
+		\node [style=wire label mid] (8) at (-1.25, 0) {$m$};
+		\node [style=none] (9) at (-0.8, 0.2) {$\vdots$};
+		\node [style=wire label mid] (10) at (1.5, 0) {$m$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (4.center) to (2.center);
+		\draw [style=wire] (3.center) to (5.center);
+		\draw [style=wire] (1) to (8);
+		\draw [style=wire] (8) to (0);
+	\end{pgfonlayer}
+\end{tikzpicture}
