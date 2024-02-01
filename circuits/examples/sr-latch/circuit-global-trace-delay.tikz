@@ -6,9 +6,9 @@
 		\node [style=none] (4) at (-3.5, 0.5) {};
 		\node [style=none] (5) at (-4.5, 1.5) {};
 		\node [style=none] (6) at (-4.5, -0.75) {};
-		\node [style=none] (7) at (-9, 1.5) {};
-		\node [style=none] (8) at (-10.25, -0.75) {};
-		\node [style=none] (9) at (-9, 2.5) {};
+		\node [style=none] (7) at (-8, 1.5) {};
+		\node [style=none] (8) at (-9.25, -0.75) {};
+		\node [style=none] (9) at (-8, 2.5) {};
 		\node [style=none] (10) at (6.25, 2.5) {};
 		\node [style=not] (11) at (-1, 0.25) {};
 		\node [style=bproduct] (13) at (0.5, 0.25) {};
@@ -27,12 +27,12 @@
 		\node [style=none] (29) at (-3.75, 1.5) {};
 		\node [style=none] (30) at (6.25, 1.5) {};
 		\node [style=none] (31) at (7.75, -0.75) {};
-		\node [style=register] (33) at (-8, 0.5) {$\bot$};
+		\node [style=delay] (33) at (-7.5, 0.5) {};
 		\node [style=none] (34) at (4.5, -0.75) {};
-		\node [style=none] (35) at (-9, 0.5) {};
-		\node [style=none] (36) at (-9, 3) {};
+		\node [style=none] (35) at (-8, 0.5) {};
+		\node [style=none] (36) at (-8, 3) {};
 		\node [style=none] (37) at (-1.5, -1.75) {};
-		\node [style=none] (38) at (-10.25, -1.75) {};
+		\node [style=none] (38) at (-9.25, -1.75) {};
 		\node [style=none] (39) at (6.25, 0.75) {};
 		\node [style=none] (40) at (6.25, 3) {};
 		\node [style=none] (42) at (-3, 0.5) {};
@@ -47,7 +47,6 @@
 		\node [style=none] (51) at (-6.25, 2) {};
 		\node [style=none] (52) at (6.25, 2) {};
 		\node [style=none] (53) at (6.25, -2.25) {};
-		\node [style=none] (54) at (-7.75, 0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=tile comb] (50.center)
@@ -96,10 +95,10 @@
 			 to (36.center)
 			 to [bend right=90, looseness=1.75] (35.center)
 			 to (33);
+		\draw [style=wire] (33) to (23);
 		\draw [style=wire] (38.center)
 			 to (43.center)
 			 to [in=180, out=0, looseness=1.25] (45.center)
 			 to (44.center);
-		\draw [style=wire] (54.center) to (23);
 	\end{pgfonlayer}
 \end{tikzpicture}
