@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=wire label left] (0) at (-1, 0) {$\listvar{k}$};
+		\node [style=bproduct] (1) at (0, 0) {};
+		\node [style=medium square box seq] (2) at (2, 1) {$f_0$};
+		\node [style=medium square box seq] (3) at (2, -1) {$f_1$};
+		\node [style=none] (4) at (1, 1) {};
+		\node [style=none] (5) at (1, -1) {};
+		\node [style=wire label right] (6) at (3.25, 1) {$k$};
+		\node [style=wire label right] (7) at (3.25, -1) {$\listvar{p}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (0) to (1);
+		\draw [style=wire] (1)
+			 to [in=-180, out=75] (4.center)
+			 to (2);
+		\draw [style=wire] (3)
+			 to (5.center)
+			 to [in=-75, out=-180] (1);
+		\draw [style=wire, in=180, out=0] (3) to (7);
+		\draw [style=wire] (6) to (2);
+	\end{pgfonlayer}
+\end{tikzpicture}
