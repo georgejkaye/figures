@@ -1,0 +1,7 @@
+\pgfkeys{%
+	/tikzit,%
+	box/.initial=f,%
+	dom/.initial=,%
+	cod1/.initial=,%
+	cod2/.initial=%
+}%

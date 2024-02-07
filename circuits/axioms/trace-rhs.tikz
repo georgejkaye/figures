@@ -1,0 +1,59 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=bproduct] (0) at (-4.25, 0) {};
+		\node [style=wire label left] (1) at (-5, 0) {$\getvar{dom}$};
+		\node [style=none] (2) at (-3.25, 1) {};
+		\node [style=none] (3) at (-3.25, -1) {};
+		\node [style=medium square box seq] (4) at (-2.25, 1) {$\getvar{box}$};
+		\node [style=medium square box seq] (5) at (-2.25, -1) {$\getvar{box}$};
+		\node [style=none] (7) at (-1.75, 0.5) {};
+		\node [style=none] (8) at (-1.75, -0.75) {};
+		\node [style=none] (29) at (-1.75, 1.5) {};
+		\node [style=none] (30) at (-1.25, 1.5) {};
+		\node [style=none] (31) at (-1.25, 2) {};
+		\node [style=none] (32) at (-3.25, 2) {};
+		\node [style=none] (33) at (-2.75, 1.5) {};
+		\node [style=none] (34) at (-3.25, 1.5) {};
+		\node [style=none] (35) at (-1.75, -0.5) {};
+		\node [style=none] (36) at (-1.25, -0.5) {};
+		\node [style=none] (37) at (-1.25, 0) {};
+		\node [style=none] (38) at (-3.25, 0) {};
+		\node [style=none] (39) at (-2.75, -0.5) {};
+		\node [style=none] (40) at (-3.25, -0.5) {};
+		\node [style=none] (41) at (-1.75, 1.25) {};
+		\node [style=none] (42) at (-1, 0.5) {};
+		\node [style=none] (43) at (-1, -0.75) {};
+		\node [style=none] (44) at (-1.75, -1.5) {};
+		\node [style=wire label right] (45) at (0.25, -1.5) {$\getvar{cod2}$};
+		\node [style=wire label right] (46) at (0.25, 0.5) {$\getvar{cod2}$};
+		\node [style=wire label right] (47) at (0.25, -0.75) {$\getvar{cod1}$};
+		\node [style=wire label right] (48) at (0.25, 1.25) {$\getvar{cod1}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (1) to (0);
+		\draw [style=wire] (0)
+			 to [in=180, out=75] (2.center)
+			 to [in=180, out=0] (4);
+		\draw [style=wire] (0)
+			 to [in=180, out=-75] (3.center)
+			 to (5);
+		\draw [style=wire] (33.center)
+			 to (34.center)
+			 to [bend right=270, looseness=2.00] (32.center)
+			 to (31.center)
+			 to [bend left=90, looseness=2.00] (30.center)
+			 to (29.center);
+		\draw [style=wire] (39.center)
+			 to (40.center)
+			 to [bend right=270, looseness=2.00] (38.center)
+			 to (37.center)
+			 to [bend left=90, looseness=2.00] (36.center)
+			 to (35.center);
+		\draw [style=wire] (44.center) to (45);
+		\draw [style=wire] (47) to (43.center);
+		\draw [style=wire] (42.center) to (46);
+		\draw [style=wire] (48) to (41.center);
+		\draw [style=wire] (7.center) to (42.center);
+		\draw [style=wire] (8.center) to (43.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
