@@ -1,0 +1,141 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=bproduct] (0) at (-8.75, -1.5) {};
+		\node [style=wire label left] (1) at (-10.25, -1.5) {$\getvar{dom}$};
+		\node [style=none] (2) at (-8, -0.75) {};
+		\node [style=none] (3) at (-8, -2.25) {};
+		\node [style=medium square box seq] (4) at (-5, 0.25) {$\getvar{box}$};
+		\node [style=medium square box seq] (5) at (-5, -1.75) {$\getvar{box}$};
+		\node [style=none] (6) at (-3.25, 0.75) {};
+		\node [style=none] (7) at (-4.5, -0.25) {};
+		\node [style=none] (9) at (-4.5, -2.25) {};
+		\node [style=none] (10) at (-2.75, -0.25) {};
+		\node [style=none] (12) at (4, -0.25) {};
+		\node [style=none] (13) at (-1.25, -1.75) {};
+		\node [style=wire label right] (14) at (8.25, -2.25) {$\getvar{cod2}$};
+		\node [style=none] (15) at (2.25, -1.75) {};
+		\node [style=wire label right] (16) at (8.25, -1) {$\getvar{cod2}$};
+		\node [style=none] (17) at (1.75, 0.75) {};
+		\node [style=none] (19) at (-0.75, -0.25) {};
+		\node [style=none] (20) at (-0.5, -0.25) {};
+		\node [style=bproduct] (21) at (0.25, 0.25) {};
+		\node [style=bproduct] (22) at (1, 0.25) {};
+		\node [style=none] (23) at (-0.5, 0.75) {};
+		\node [style=none] (24) at (1.75, -0.25) {};
+		\node [style=none] (25) at (2, -0.25) {};
+		\node [style=wire label right] (27) at (8.25, -1.75) {$\getvar{cod1}$};
+		\node [style=wire label right] (28) at (8.25, -0.25) {$\getvar{cod1}$};
+		\node [style=none] (29) at (-4.5, 0.75) {};
+		\node [style=none] (31) at (7.5, 1.75) {};
+		\node [style=none] (32) at (-6, 1.75) {};
+		\node [style=none] (33) at (-5.5, 0.75) {};
+		\node [style=none] (34) at (-6, 0.75) {};
+		\node [style=none] (35) at (-2, -2) {};
+		\node [style=none] (37) at (7.5, 2.25) {};
+		\node [style=none] (38) at (-7.75, 2.25) {};
+		\node [style=none] (39) at (-5.5, -1.25) {};
+		\node [style=none] (40) at (-6, -1.25) {};
+		\node [style=none] (42) at (3, -2) {};
+		\node [style=none] (43) at (4.25, -1) {};
+		\node [style=none] (44) at (4.5, -1.75) {};
+		\node [style=none] (46) at (5, -0.25) {};
+		\node [style=none] (47) at (5, -1) {};
+		\node [style=none] (48) at (6, -0.25) {};
+		\node [style=none] (49) at (6, -1) {};
+		\node [style=none] (51) at (6.5, -0.25) {};
+		\node [style=none] (53) at (6.25, 0.75) {};
+		\node [style=none] (54) at (7.5, -0.25) {};
+		\node [style=none] (55) at (7.5, 0.5) {};
+		\node [style=none] (57) at (-4, 0.75) {};
+		\node [style=none] (58) at (-4, 0.25) {};
+		\node [style=none] (59) at (-4.5, 0.25) {};
+		\node [style=none] (60) at (-3.25, 0.25) {};
+		\node [style=none] (61) at (-2.25, 0.25) {};
+		\node [style=none] (62) at (-0.75, -1.25) {};
+		\node [style=none] (63) at (1.75, -1.25) {};
+		\node [style=none] (64) at (3.5, 0.25) {};
+		\node [style=none] (66) at (6.25, 0.25) {};
+		\node [style=none] (67) at (7, 1) {};
+		\node [style=none] (68) at (7.5, 1) {};
+		\node [style=none] (69) at (-3, -1) {};
+		\node [style=none] (70) at (-3, -1.5) {};
+		\node [style=none] (71) at (-4.5, -1) {};
+		\node [style=none] (72) at (-4.5, -1.5) {};
+		\node [style=none] (73) at (-7.5, 0.75) {};
+		\node [style=none] (74) at (-7.75, 0.75) {};
+		\node [style=none] (75) at (-7.25, -0.75) {};
+		\node [style=none] (76) at (-6, 0) {};
+		\node [style=none] (77) at (-5.25, 0) {};
+		\node [style=none] (78) at (-5.5, -2.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (59.center)
+			 to (58.center)
+			 to [in=180, out=0, looseness=0.75] (6.center)
+			 to (23.center)
+			 to [in=120, out=0] (21);
+		\draw [style=wire] (1) to (0);
+		\draw [style=wire] (77.center)
+			 to (76.center)
+			 to [in=0, out=180, looseness=1.25] (75.center)
+			 to (2.center)
+			 to [in=75, out=180] (0);
+		\draw [style=wire] (0)
+			 to [in=180, out=-75] (3.center)
+			 to (78.center);
+		\draw [style=wire] (7.center)
+			 to (10.center)
+			 to [in=-180, out=0, looseness=0.75] (13.center)
+			 to (15.center)
+			 to [in=-180, out=0] (12.center)
+			 to (46.center)
+			 to [in=-180, out=0] (49.center)
+			 to (16);
+		\draw [style=wire] (72.center)
+			 to (70.center)
+			 to [in=-180, out=0, looseness=0.75] (19.center)
+			 to (20.center)
+			 to [in=-120, out=0] (21);
+		\draw [style=wire] (21) to (22);
+		\draw [style=wire] (28)
+			 to (54.center)
+			 to [in=0, out=-180, looseness=0.50] (53.center)
+			 to (17.center)
+			 to [in=60, out=-180] (22);
+		\draw [style=wire] (22)
+			 to [in=-180, out=-60] (24.center)
+			 to (25.center)
+			 to [in=-180, out=0] (44.center)
+			 to (27);
+		\draw [style=wire] (9.center) to (14);
+		\draw [style=wire] (33.center)
+			 to (34.center)
+			 to [bend right=270, looseness=2.00] (32.center)
+			 to (31.center)
+			 to [bend left=90, looseness=2.00] (68.center)
+			 to (67.center)
+			 to [in=0, out=-180] (66.center)
+			 to (64.center)
+			 to [in=0, out=180] (63.center)
+			 to (62.center)
+			 to [in=0, out=-180, looseness=0.75] (61.center)
+			 to (60.center)
+			 to [in=0, out=-180] (57.center)
+			 to (29.center);
+		\draw [style=wire] (71.center)
+			 to (69.center)
+			 to [in=180, out=0, looseness=0.75] (35.center)
+			 to (42.center)
+			 to [in=-180, out=0, looseness=1.25] (43.center)
+			 to (47.center)
+			 to [in=-180, out=0] (48.center)
+			 to (51.center)
+			 to [in=-180, out=0, looseness=1.25] (55.center)
+			 to [bend right=90, looseness=1.75] (37.center)
+			 to (38.center)
+			 to [bend left=270, looseness=1.50] (74.center)
+			 to (73.center)
+			 to [in=180, out=0, looseness=0.75] (40.center)
+			 to (39.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
