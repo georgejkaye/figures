@@ -1,25 +1,25 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box white] (0) at (0.25, 1) {$F$};
-		\node [style=wire label left] (1) at (-2.25, 0) {$m$};
+		\node [style=medium square box white] (0) at (0.25, 1) {$\getvar{box}$};
+		\node [style=wire label left] (1) at (-2.25, 0) {$\getvar{dom}$};
 		\node [style=none] (6) at (1, 1.5) {};
 		\node [style=none] (7) at (1, 0.5) {};
 		\node [style=none] (8) at (1, -0.5) {};
 		\node [style=none] (9) at (1, -1.5) {};
-		\node [style=wire label right] (10) at (2, -1.5) {$n$};
+		\node [style=wire label right] (10) at (2, -1.5) {$\getvar{cod2}$};
 		\node [style=bproduct] (11) at (1.5, -0.5) {};
 		\node [style=bproduct] (12) at (1.5, 0.5) {};
-		\node [style=none] (13) at (2, 1.5) {};
+		\node [style=wire label right] (13) at (2, 1.5) {$\getvar{cod1}$};
 		\node [style=bproduct] (14) at (-1.5, 0) {};
 		\node [style=none] (15) at (-0.75, 1) {};
-		\node [style=medium square box white] (17) at (0.25, -1) {$F$};
+		\node [style=medium square box white] (17) at (0.25, -1) {$\getvar{box}$};
 		\node [style=none] (18) at (-0.75, -1) {};
 		\node [style=none] (19) at (0, 1) {};
 		\node [style=none] (20) at (0, -1) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (11) to (8.center);
-		\draw [style=wire] (13.center) to (6.center);
+		\draw [style=wire] (13) to (6.center);
 		\draw [style=wire] (7.center) to (12);
 		\draw [style=wire] (9.center) to (10);
 		\draw [style=wire] (1) to (14);

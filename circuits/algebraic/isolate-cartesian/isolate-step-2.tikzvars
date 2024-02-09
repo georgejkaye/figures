@@ -2,6 +2,7 @@
 	/tikzit,%
 	box/.initial=F,%
 	colour/.initial=white,%
-	dom/.initial=m,%
-	cod/.initial=n%
+	dom/.initial=,%
+	cod1/.initial=,%
+	cod2/.initial=%
 }%
