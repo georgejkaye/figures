@@ -12,18 +12,18 @@
 		\node [style=vertex] (16) at (1, 0) {};
 		\node [style=port] (19) at (-0.5, -0.75) {};
 		\node [style=port] (21) at (-1.5, -1) {};
-		\node [style=vertex] (30) at (-3.75, 1.25) {};
-		\node [style=vertex] (41) at (-3.25, -1.25) {};
+		\node [style=red vertex] (30) at (-3.75, 1.25) {};
+		\node [style=red vertex] (41) at (-3.25, -1.25) {};
 		\node [style=none] (42) at (-2.25, 0.25) {};
 		\node [style=none] (43) at (-8.25, 2.75) {};
 		\node [style=none] (44) at (-6.25, 2.75) {};
 		\node [style=none] (45) at (-6.25, -2.75) {};
-		\node [style=vertex] (46) at (-7.25, 1.5) {};
+		\node [style=red vertex] (46) at (-7.25, 1.5) {};
 		\node [style=vertex] (47) at (-7.25, -0.25) {};
 		\node [style=none] (48) at (3.5, 1.5) {};
 		\node [style=none] (49) at (5.5, 1.5) {};
 		\node [style=none] (50) at (5.5, -1.5) {};
-		\node [style=vertex] (53) at (-7.25, -2) {};
+		\node [style=red vertex] (53) at (-7.25, -2) {};
 		\node [style=none] (54) at (3.5, -1.5) {};
 		\node [style=none] (55) at (-8.25, -2.75) {};
 		\node [style=none] (56) at (-7.25, 2.25) {$6$};
@@ -40,7 +40,7 @@
 		\node [style=vertex] (70) at (4.5, -0.25) {};
 		\node [style=none] (71) at (4.5, 0.5) {$9$};
 		\node [style=port] (72) at (-0.5, -1.25) {};
-		\node [style=vertex] (73) at (1, -1.5) {};
+		\node [style=red vertex] (73) at (1, -1.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=graph] (4.center)

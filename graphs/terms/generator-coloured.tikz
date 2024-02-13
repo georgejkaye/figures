@@ -1,0 +1,36 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-3.75, 2) {};
+		\node [style=none] (1) at (-3.75, -2) {};
+		\node [style=none] (2) at (3, -2) {};
+		\node [style=none] (4) at (3, 2) {};
+		\node [style=edge] (5) at (0, 0) {$\phi$};
+		\node [style=vertex] (11) at (-2, 1) {};
+		\node [style=port] (12) at (-0.5, 0) {};
+		\node [style=vertex] (17) at (-2, -1) {};
+		\node [style=port] (18) at (-0.5, 0) {};
+		\node [style=vertex] (19) at (2, 1) {};
+		\node [style=port] (20) at (0.5, 0) {};
+		\node [style=vertex] (21) at (2, -1) {};
+		\node [style=port] (22) at (0.5, 0) {};
+		\node [style=none] (23) at (-2, 0.25) {$\vdots$};
+		\node [style=none] (24) at (2, 0.25) {$\vdots$};
+		\node [style=none] (41) at (-1.5, 0) {$m$};
+		\node [style=none] (43) at (1.5, 0) {$n$};
+		\node [style=none] (44) at (-2, 1.5) {$\listvar{m}(0)$};
+		\node [style=none] (45) at (-2, -1.5) {$\listvar{m}(m-1)$};
+		\node [style=none] (46) at (2, 1.5) {$\listvar{n}(0)$};
+		\node [style=none] (47) at (2, -1.5) {$\listvar{n}(n-1)$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (4.center)
+			 to (0.center)
+			 to (1.center)
+			 to (2.center)
+			 to cycle;
+		\draw [style=tentacle, in=-120, out=0] (17) to (12);
+		\draw [style=tentacle, in=0, out=120] (18) to (11);
+		\draw [style=tentacle, in=-60, out=180] (21) to (20);
+		\draw [style=tentacle, in=180, out=60] (22) to (19);
+	\end{pgfonlayer}
+\end{tikzpicture}

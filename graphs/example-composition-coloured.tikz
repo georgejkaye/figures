@@ -15,7 +15,7 @@
 		\node [style=none] (94) at (-12.25, 2.25) {};
 		\node [style=none] (95) at (-10.25, 2.25) {};
 		\node [style=none] (96) at (-10.25, -2.25) {};
-		\node [style=vertex] (97) at (-11.25, 0.5) {};
+		\node [style=red vertex] (97) at (-11.25, 0.5) {};
 		\node [style=vertex] (98) at (-11.25, -1.25) {};
 		\node [style=none] (106) at (-12.25, -2.25) {};
 		\node [style=none] (107) at (-11.25, 1.25) {$0$};
@@ -23,8 +23,8 @@
 		\node [style=none] (110) at (-9.25, 0) {};
 		\node [style=none] (111) at (-10, 0) {};
 		\node [style=edge] (122) at (-5.75, 0) {$\phi$};
-		\node [style=vertex] (123) at (-7.75, 0) {};
-		\node [style=vertex] (124) at (-4.25, 0.25) {};
+		\node [style=red vertex] (123) at (-7.75, 0) {};
+		\node [style=red vertex] (124) at (-4.25, 0.25) {};
 		\node [style=vertex] (125) at (-4.75, -2) {};
 		\node [style=none] (127) at (-6, 0.25) {};
 		\node [style=none] (128) at (-6, -0.25) {};
@@ -48,11 +48,11 @@
 		\node [style=vertex] (150) at (6, 0.5) {};
 		\node [style=port] (151) at (4.5, -0.25) {};
 		\node [style=port] (152) at (3.5, -0.5) {};
-		\node [style=vertex] (153) at (-0.25, -0.25) {};
+		\node [style=red vertex] (153) at (-0.25, -0.25) {};
 		\node [style=none] (155) at (2.75, 0.75) {};
 		\node [style=none] (157) at (6.5, 0.5) {$9$};
 		\node [style=port] (160) at (4.5, -0.75) {};
-		\node [style=vertex] (161) at (6, -1) {};
+		\node [style=red vertex] (161) at (6, -1) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=graph] (75.center)
