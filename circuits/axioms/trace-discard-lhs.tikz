@@ -13,7 +13,7 @@
 		\node [style=delay] (12) at (-1.75, 0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw (2.center)
+		\draw [style=wire] (2.center)
 			 to (6.center)
 			 to [bend left=90, looseness=2.00] (5.center)
 			 to (11.center)
