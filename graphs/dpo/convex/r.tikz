@@ -1,0 +1,29 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (54) at (-3.25, 2) {};
+		\node [style=none] (55) at (-3.25, -2.25) {};
+		\node [style=none] (56) at (3, -2.25) {};
+		\node [style=none] (57) at (3, 2) {};
+		\node [style=edge] (58) at (0.5, 0.75) {$e_4$};
+		\node [style=edge] (59) at (0.5, -1.25) {$e_4$};
+		\node [style=vertex] (60) at (-2.5, 0.75) {};
+		\node [style=vertex] (62) at (-2.5, -1.25) {};
+		\node [style=vertex] (63) at (2.25, -1.25) {};
+		\node [style=small label] (64) at (-2.5, -0.5) {$1$};
+		\node [style=small label] (65) at (2.25, -0.5) {$3$};
+		\node [style=vertex] (66) at (2.25, 0.75) {};
+		\node [style=small label] (71) at (2.25, 1.5) {$2$};
+		\node [style=small label] (72) at (-2.5, 1.5) {$0$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (55.center)
+			 to (54.center)
+			 to (57.center)
+			 to (56.center)
+			 to cycle;
+		\draw [style=tentacle, in=-180, out=0] (62) to (58);
+		\draw [style=tentacle] (63) to (59);
+		\draw [style=tentacle, in=0, out=180] (59) to (60);
+		\draw [style=tentacle] (58) to (66);
+	\end{pgfonlayer}
+\end{tikzpicture}

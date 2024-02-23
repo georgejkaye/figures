@@ -15,8 +15,8 @@
 		\node [style=none] (14) at (0.5, 1.5) {};
 		\node [style=none] (15) at (-0.75, 0.5) {};
 		\node [style=none] (16) at (3, 1.5) {};
-		\node [style=none] (17) at (3, 2.5) {};
-		\node [style=none] (18) at (-5, 2.5) {};
+		\node [style=none] (17) at (3, 2.75) {};
+		\node [style=none] (18) at (-5, 2.75) {};
 		\node [style=none] (19) at (-5, 1.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

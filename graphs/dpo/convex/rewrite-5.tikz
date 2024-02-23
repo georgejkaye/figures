@@ -1,11 +1,11 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=small square box white] (2) at (-4.25, 0.5) {$e_3$};
+		\node [style=small square box white] (2) at (-4.75, 0.5) {$e_3$};
 		\node [style=none] (5) at (3.75, -1.25) {};
 		\node [style=none] (16) at (3, 0.5) {};
-		\node [style=none] (17) at (3, 2) {};
-		\node [style=none] (18) at (-5, 2) {};
-		\node [style=none] (19) at (-5, 0.5) {};
+		\node [style=none] (17) at (3, 2.25) {};
+		\node [style=none] (18) at (-6, 2.25) {};
+		\node [style=none] (19) at (-6, 0.5) {};
 		\node [style=none] (20) at (-3.25, 1.5) {};
 		\node [style=none] (21) at (-3.25, -2.25) {};
 		\node [style=none] (22) at (3, -2.25) {};
@@ -21,11 +21,11 @@
 		\node [style=none] (32) at (-0.75, -1.25) {};
 		\node [style=none] (33) at (0.25, 0.5) {};
 		\node [style=none] (34) at (1.75, 0.5) {};
-		\node [style=none] (35) at (-3.75, 0.5) {};
-		\node [style=none] (36) at (-4.5, 0.5) {};
+		\node [style=none] (35) at (-4.25, 0.5) {};
+		\node [style=none] (36) at (-5, 0.5) {};
 		\node [style=none] (37) at (-3.25, 0.5) {};
 		\node [style=none] (38) at (-3.25, -1.25) {};
-		\node [style=none] (39) at (-6, -1.25) {};
+		\node [style=none] (39) at (-7, -1.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire, bend right=90, looseness=1.75] (16.center) to (17.center);

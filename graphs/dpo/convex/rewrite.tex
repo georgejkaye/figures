@@ -1,0 +1,28 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+\usepackage{tikzit}
+\input{figures/circuits.tikzstyles}
+\input{figures/circuits.tikzdefs}
+
+\begin{document}
+\begin{tikzcd}[column sep = small, row sep = small]
+    \iltikzfig{graphs/dpo/convex/l}
+    \arrow{d}
+    &
+    \arrow{l}
+    \iltikzfig{graphs/dpo/convex/k}
+    \arrow{d}
+    \arrow{r}
+    &
+    \iltikzfig{graphs/dpo/convex/r}
+    \arrow{d}
+    \\
+    \iltikzfig{graphs/dpo/convex/g}
+    &
+    \arrow{l}
+    \iltikzfig{graphs/dpo/convex/c}
+    \arrow{r}
+    &
+    \iltikzfig{graphs/dpo/convex/h}
+\end{tikzcd}
+\end{document}

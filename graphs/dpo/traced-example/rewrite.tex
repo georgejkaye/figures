@@ -1,0 +1,28 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+\usepackage{tikzit}
+\input{figures/circuits.tikzstyles}
+\input{figures/circuits.tikzdefs}
+
+\begin{document}
+\begin{tikzcd}[column sep = small, row sep = small]
+    \iltikzfig{graphs/dpo/traced-example/l}
+    \arrow{d}
+    &
+    \arrow{l}
+    \iltikzfig{graphs/dpo/traced-example/k}
+    \arrow{d}
+    \arrow{r}
+    &
+    \iltikzfig{graphs/dpo/traced-example/r}
+    \arrow{d}
+    \\
+    \iltikzfig{graphs/dpo/traced-example/g}
+    &
+    \arrow{l}
+    \iltikzfig{graphs/dpo/traced-example/c}
+    \arrow{r}
+    &
+    \iltikzfig{graphs/dpo/traced-example/h}
+\end{tikzcd}
+\end{document}

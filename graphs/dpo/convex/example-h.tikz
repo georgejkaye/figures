@@ -1,10 +1,10 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=dangling] (0) at (-3.25, 0) {};
+		\node [style=dangling] (0) at (-3.5, 0) {};
 		\node [style=small square box white] (1) at (-2, 0) {$e_4$};
 		\node [style=small square box white] (2) at (0, 0) {$e_3$};
 		\node [style=small square box white] (3) at (2, 0) {$e_4$};
-		\node [style=dangling] (4) at (3.25, 0) {};
+		\node [style=dangling] (4) at (3.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (3) to (2);
