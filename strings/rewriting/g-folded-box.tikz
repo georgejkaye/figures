@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box white] (0) at (-0.25, -0.5) {$g$};
+		\node [style=none] (4) at (-1, -0.5) {};
+		\node [style=port] (8) at (-0.5, -0.5) {};
+		\node [style=port] (25) at (0, -0.5) {};
+		\node [style=dangling] (26) at (1, -0.5) {};
+		\node [style=none] (28) at (-1, 0.75) {};
+		\node [style=dangling] (30) at (1, 0.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (30)
+			 to (28.center)
+			 to [bend left=270, looseness=2.00] (4.center)
+			 to [in=180, out=0] (8);
+		\draw [style=wire] (26) to (25);
+	\end{pgfonlayer}
+\end{tikzpicture}
