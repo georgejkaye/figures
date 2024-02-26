@@ -7,8 +7,8 @@
 		\node [style=port] (9) at (1.5, -1.25) {};
 		\node [style=port] (10) at (1.5, -1.25) {};
 		\node [style=none] (12) at (2.5, 1.25) {};
-		\node [style=wire label left] (13) at (-3.5, 1.25) {$m$};
-		\node [style=wire label right] (17) at (3.75, -1.25) {$n$};
+		\node [style=wire label left] (13) at (-3.5, 1.25) {$\listvar{m}$};
+		\node [style=wire label right] (17) at (3.75, -1.25) {$\listvar{n}$};
 		\node [style=medium square box white] (18) at (-1.25, -1.25) {$l$};
 		\node [style=none] (21) at (1, -0.25) {};
 		\node [style=port] (23) at (-1, -1.25) {};
@@ -21,16 +21,16 @@
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (13)
-			 to (12.center)
-			 to [bend left=90, looseness=1.50] (7.center)
-			 to (6);
+		to (12.center)
+		to [bend left=90, looseness=1.50] (7.center)
+		to (6);
 		\draw [style=wire] (23) to (24.center);
 		\draw [style=wire] (29.center)
-			 to (25.center)
-			 to [bend left=90, looseness=1.75] (26.center)
-			 to (27.center)
-			 to [in=180, out=0, looseness=1.25] (28.center)
-			 to (21.center);
+		to (25.center)
+		to [bend left=90, looseness=1.75] (26.center)
+		to (27.center)
+		to [in=180, out=0, looseness=1.25] (28.center)
+		to (21.center);
 		\draw [style=wire] (10) to (17);
 	\end{pgfonlayer}
 \end{tikzpicture}

@@ -1,12 +1,12 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=small square box white] (0) at (-0.25, -0.5) {$l$};
-		\node [style=none] (4) at (-1, -0.5) {};
-		\node [style=port] (8) at (-0.5, -0.5) {};
-		\node [style=port] (25) at (0, -0.5) {};
-		\node [style=dangling] (26) at (1, -0.5) {};
-		\node [style=none] (28) at (-1, 0.5) {};
-		\node [style=dangling] (30) at (1, 0.5) {};
+		\node [style=medium square box white] (0) at (0, -0.5) {$l$};
+		\node [style=none] (4) at (-0.75, -0.5) {};
+		\node [style=port] (8) at (-0.25, -0.5) {};
+		\node [style=port] (25) at (0.25, -0.5) {};
+		\node [style=dangling] (26) at (1.25, -0.5) {};
+		\node [style=none] (28) at (-0.75, 0.75) {};
+		\node [style=dangling] (30) at (1.25, 0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (30)

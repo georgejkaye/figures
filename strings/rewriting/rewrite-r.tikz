@@ -1,17 +1,17 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=small square box white] (0) at (-3, 0) {$r$};
+		\node [style=medium square box white] (0) at (-3.25, 0) {$r$};
 		\node [style=medium square box white] (1) at (-1, -0.5) {$c$};
 		\node [style=port] (3) at (-1.25, -1) {};
 		\node [style=port] (4) at (-1.25, 0) {};
-		\node [style=wire label left] (5) at (-4.5, -1) {$\tvara$};
-		\node [style=port] (8) at (-2.75, 0) {};
+		\node [style=wire label left] (5) at (-4.75, -1) {$\getvar{dom}$};
+		\node [style=port] (8) at (-3, 0) {};
 		\node [style=port] (10) at (-0.75, -1) {};
-		\node [style=wire label right] (12) at (0.5, -1) {$\tvarb$};
-		\node [style=port] (25) at (-3.25, 0) {};
-		\node [style=none] (26) at (-4, 0) {};
-		\node [style=none] (27) at (-4, 1) {};
-		\node [style=none] (28) at (0, 1) {};
+		\node [style=wire label right] (12) at (0.5, -1) {$\getvar{cod}$};
+		\node [style=port] (25) at (-3.5, 0) {};
+		\node [style=none] (26) at (-4.25, 0) {};
+		\node [style=none] (27) at (-4.25, 1.25) {};
+		\node [style=none] (28) at (0, 1.25) {};
 		\node [style=none] (29) at (0, 0) {};
 		\node [style=port] (30) at (-0.75, 0) {};
 	\end{pgfonlayer}
@@ -20,10 +20,10 @@
 		\draw [style=wire, in=0, out=180] (4) to (8);
 		\draw [style=wire] (12) to (10);
 		\draw [style=wire] (30)
-			 to (29.center)
-			 to [bend right=90, looseness=1.25] (28.center)
-			 to (27.center)
-			 to [bend right=90, looseness=1.25] (26.center)
-			 to (25);
+		to (29.center)
+		to [bend right=90, looseness=1.25] (28.center)
+		to (27.center)
+		to [bend right=90, looseness=1.25] (26.center)
+		to (25);
 	\end{pgfonlayer}
 \end{tikzpicture}

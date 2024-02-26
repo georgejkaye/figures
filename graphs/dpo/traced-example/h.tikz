@@ -15,6 +15,6 @@
 			 to (0.center)
 			 to cycle;
 		\draw [style=tentacle, in=-180, out=-180, looseness=2.00] (8) to (12);
-		\draw [bend right=90, looseness=2.00] (8) to (12);
+		\draw [style=wire, in=360, out=0, looseness=2.00] (8) to (12);
 	\end{pgfonlayer}
 \end{tikzpicture}
