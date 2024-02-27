@@ -10,8 +10,8 @@
 		\node [style=small label] (11) at (1.5, -1.08) {$2\ 3$};
 		\node [style=edge] (12) at (-1.25, -0.75) {$e$};
 		\node [style=none] (13) at (-1.5, -0.75) {};
-		\node [style=none] (14) at (-1, -1) {};
-		\node [style=none] (15) at (-1, -0.5) {};
+		\node [style=none] (14) at (-0.75, -1.25) {};
+		\node [style=none] (15) at (-0.75, -0.25) {};
 		\node [style=none] (17) at (-2, -0.75) {};
 		\node [style=none] (18) at (0.5, 2) {};
 	\end{pgfonlayer}
