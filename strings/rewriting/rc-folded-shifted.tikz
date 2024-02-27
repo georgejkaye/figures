@@ -11,7 +11,7 @@
 		\node [style=dangling] (37) at (3.5, -1.5) {};
 		\node [style=none] (38) at (2.25, -0.75) {};
 		\node [style=none] (39) at (2.25, 0.75) {};
-		\node [style=medium square box white] (45) at (-1.25, -0.5) {$l$};
+		\node [style=medium square box white] (45) at (-1.25, -0.5) {$r$};
 		\node [style=none] (46) at (-2, -0.5) {};
 		\node [style=port] (47) at (-1.5, -0.5) {};
 		\node [style=port] (48) at (-1, -0.5) {};
