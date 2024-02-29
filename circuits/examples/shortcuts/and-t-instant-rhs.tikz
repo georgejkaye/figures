@@ -1,0 +1,12 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box comb] (0) at (0, 0) {$f$};
+		\node [style=wire label right] (6) at (1.25, 0) {};
+		\node [style=tiny box seq] (11) at (-2, 0) {$v$};
+		\node [style=none] (12) at (-1.75, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (6) to (0);
+		\draw [style=wire] (0) to (12.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

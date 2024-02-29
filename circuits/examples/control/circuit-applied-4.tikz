@@ -1,0 +1,20 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box comb] (12) at (-0.5, -1) {$g$};
+		\node [style=medium square box comb] (13) at (-0.5, 1) {$f$};
+		\node [style=none] (14) at (-0.25, 1) {};
+		\node [style=none] (16) at (-0.25, -1) {};
+		\node [style=bproduct] (17) at (1, -1) {};
+		\node [style=none] (18) at (-0.75, 1) {};
+		\node [style=none] (19) at (-0.75, -1) {};
+		\node [style=none] (20) at (-1.75, 1) {};
+		\node [style=none] (21) at (-1.75, -1) {};
+		\node [style=none] (32) at (1.5, 1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (17) to (16.center);
+		\draw [style=wire] (20.center) to (18.center);
+		\draw [style=wire] (21.center) to (19.center);
+		\draw [style=wire] (14.center) to (32.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
