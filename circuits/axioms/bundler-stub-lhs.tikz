@@ -1,8 +1,8 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=wire label left] (0) at (-1, 0) {};
-		\node [style=bproduct] (1) at (1, 0) {};
-		\node [style=delay] (2) at (-0.25, 0) {};
+		\node [style=bproduct] (1) at (1.25, 0) {};
+		\node [style=bundler] (2) at (0, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (0) to (2);

@@ -1,0 +1,7 @@
+\pgfkeys{%
+    /tikzit,%
+    box/.initial=F,%
+    colour/.initial=comb,%
+    state/.initial=\listvar{s},%
+    dom/.initial=%
+}%

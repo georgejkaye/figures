@@ -1,0 +1,5 @@
+\pgfkeys{%
+    /tikzit,%
+    val1/.initial=\listvar{v},%
+    val2/.initial=\listvar{w}%
+}%

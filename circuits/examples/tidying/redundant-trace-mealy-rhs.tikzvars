@@ -1,0 +1,11 @@
+\pgfkeys{%
+    /tikzit,%
+    core1/.initial=F,%
+    core2/.initial=G,%
+    colour/.initial=comb,%
+    state1/.initial=\listvar{s},%
+    state2/.initial=\listvar{t},%
+    dom/.initial=,%
+    cod/.initial=,%
+    delay/.initial=%
+}%
