@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (17) at (0.75, 0.5) {};
+		\node [style=none] (18) at (0.75, -0.5) {};
+		\node [style=none] (19) at (1.25, 0.5) {};
+		\node [style=none] (20) at (1.25, -0.5) {};
+		\node [style=tiny box seq] (21) at (-1.25, 0) {$\getvar{val}$};
+		\node [style=bproduct] (29) at (0.25, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (20.center) to (18.center);
+		\draw [style=wire] (17.center) to (19.center);
+		\draw [style=wire, in=-75, out=180] (18.center) to (29);
+		\draw [style=wire, in=-180, out=75] (29) to (17.center);
+		\draw [style=wire] (29) to (21);
+	\end{pgfonlayer}
+\end{tikzpicture}

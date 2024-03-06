@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny box seq] (0) at (-1.75, 0) {$\getvar{val}$};
+		\node [style=medium box comb] (15) at (0.25, 0) {$\getvar{gate}$};
+		\node [style=wire label right] (17) at (1.25, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (17) to (15);
+		\draw [style=wire] (15) to (0);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny box seq] (0) at (-2, 0) {$\left\llbracket\getvar{gate}\right\rrbracket^\star(\getvar{val})$};
+		\node [style=wire label right] (15) at (1.75, 0) {$\getvar{width}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (15) to (0);
+	\end{pgfonlayer}
+\end{tikzpicture}

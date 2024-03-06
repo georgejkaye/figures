@@ -1,23 +1,23 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=register] (17) at (-1, -2) {$\getvar{val2}$};
+		\node [style=register] (17) at (-1.5, -2) {$\getvar{val2}$};
 		\node [style=bproduct] (18) at (0.75, -2) {};
 		\node [style=none] (19) at (1.25, -1.5) {};
-		\node [style=none] (20) at (-1.75, -0.5) {};
+		\node [style=none] (20) at (-2.5, -0.5) {};
 		\node [style=none] (21) at (1.5, -0.5) {};
 		\node [style=none] (22) at (1.25, -2.5) {};
-		\node [style=none] (23) at (-1, -2) {};
-		\node [style=none] (24) at (-1.75, -2) {};
+		\node [style=none] (23) at (-1.5, -2) {};
+		\node [style=none] (24) at (-2.5, -2) {};
 		\node [style=none] (25) at (2.5, -2.5) {};
 		\node [style=none] (26) at (1.5, -1.5) {};
-		\node [style=register] (27) at (-1, 1) {$\getvar{val1}$};
+		\node [style=register] (27) at (-1.5, 1) {$\getvar{val1}$};
 		\node [style=bproduct] (28) at (0.75, 1) {};
 		\node [style=none] (29) at (1.25, 1.5) {};
-		\node [style=none] (30) at (-1.75, 2.5) {};
+		\node [style=none] (30) at (-2.5, 2.5) {};
 		\node [style=none] (31) at (1.5, 2.5) {};
 		\node [style=none] (32) at (1.25, 0.5) {};
-		\node [style=none] (33) at (-1, 1) {};
-		\node [style=none] (34) at (-1.75, 1) {};
+		\node [style=none] (33) at (-1.5, 1) {};
+		\node [style=none] (34) at (-2.5, 1) {};
 		\node [style=none] (35) at (2.5, 0.5) {};
 		\node [style=none] (36) at (1.5, 1.5) {};
 		\node [style=bproduct] (37) at (4.25, -1) {};

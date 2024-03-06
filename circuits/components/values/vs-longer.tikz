@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-0.75, 0) {};
+		\node [style=wire label right] (3) at (0.75, 0) {$\getvar{width}$};
+		\node [style=tiny box seq] (15) at (-0.75, 0) {$\getvar{val}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (0.center) to (3);
+	\end{pgfonlayer}
+\end{tikzpicture}

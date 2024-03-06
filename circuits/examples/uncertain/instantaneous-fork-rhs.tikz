@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (19) at (1, 1.25) {};
+		\node [style=none] (20) at (1, -1.25) {};
+		\node [style=tiny box seq] (21) at (-0.5, 1.25) {$\getvar{val}$};
+		\node [style=tiny box seq] (22) at (-0.5, -1.25) {$\getvar{val}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (21) to (19.center);
+		\draw [style=wire] (20.center) to (22);
+	\end{pgfonlayer}
+\end{tikzpicture}
