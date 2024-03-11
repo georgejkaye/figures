@@ -1,28 +1,28 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (14) at (3, -0.5) {};
-		\node [style=none] (15) at (3, 1.75) {};
-		\node [style=none] (16) at (-3, 1.75) {};
-		\node [style=none] (17) at (-3, -1.5) {};
-		\node [style=medium square box comb] (41) at (-2, -2) {$\getvar{core}$};
-		\node [style=port] (43) at (-2.25, -1.5) {};
-		\node [style=port] (56) at (-2.25, -2.5) {};
-		\node [style=none] (57) at (1.5, -2.5) {};
-		\node [style=wire label right] (59) at (4.75, -1.5) {$\getvar{cod}$};
-		\node [style=wire label mid] (62) at (-1, 1.75) {$\getvar{delay}$};
-		\node [style=wire label left] (64) at (-4, -2.5) {$\getvar{dom}$};
-		\node [style=none] (67) at (1.5, 0.5) {};
-		\node [style=none] (69) at (1.5, -0.5) {};
-		\node [style=tiny box seq] (70) at (0.5, 0.5) {$\getvar{transition}$};
-		\node [style=tiny box seq] (71) at (-1, -0.5) {$\getvar{output}$};
-		\node [style=bproduct] (72) at (2.5, -0.5) {};
-		\node [style=bproduct] (73) at (2.5, -1.5) {};
-		\node [style=none] (74) at (1.5, -1.5) {};
-		\node [style=delay] (77) at (0.75, -1.5) {};
-		\node [style=delay] (78) at (0.75, -2.5) {};
-		\node [style=none] (79) at (-1.75, -1.5) {};
-		\node [style=none] (80) at (-1.75, -2.5) {};
-		\node [style=none] (81) at (3, -0.5) {};
+		\node [style=none] (14) at (3, 0) {};
+		\node [style=none] (15) at (3, 2) {};
+		\node [style=none] (16) at (-3.75, 2) {};
+		\node [style=none] (17) at (-3.75, -1) {};
+		\node [style=medium square box comb] (41) at (-2.75, -1.5) {$\getvar{core}$};
+		\node [style=port] (43) at (-3, -1) {};
+		\node [style=port] (56) at (-3, -2) {};
+		\node [style=none] (57) at (1.5, -2) {};
+		\node [style=wire label right] (59) at (4.75, -1) {$\getvar{cod}$};
+		\node [style=wire label mid] (62) at (-1, 2) {$\getvar{delay}$};
+		\node [style=wire label left] (64) at (-4.75, -2) {$\getvar{dom}$};
+		\node [style=none] (67) at (1.5, 1) {};
+		\node [style=none] (69) at (1.5, 0) {};
+		\node [style=tiny box seq] (70) at (0.5, 1) {$\getvar{transition}$};
+		\node [style=tiny box seq] (71) at (-1, 0) {$\getvar{output}$};
+		\node [style=bproduct] (72) at (2.5, 0) {};
+		\node [style=bproduct] (73) at (2.5, -1) {};
+		\node [style=none] (74) at (1.5, -1) {};
+		\node [style=delay] (77) at (0.75, -1) {};
+		\node [style=delay] (78) at (0.75, -2) {};
+		\node [style=none] (79) at (-2.5, -1) {};
+		\node [style=none] (80) at (-2.5, -2) {};
+		\node [style=none] (81) at (3, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (72)

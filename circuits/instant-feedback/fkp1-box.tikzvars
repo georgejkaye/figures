@@ -1,5 +1,6 @@
 \pgfkeys{%
 	/tikzit,%
+	box/.initial=f,%
 	dom/.initial=,%
 	cod/.initial=,%
 	trace/.initial=%
