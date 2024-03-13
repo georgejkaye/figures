@@ -1,32 +1,32 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (14) at (5.75, 0) {};
-		\node [style=none] (15) at (5.75, 1.25) {};
+		\node [style=none] (14) at (5.5, 0) {};
+		\node [style=none] (15) at (5.5, 1.25) {};
 		\node [style=none] (16) at (-6.25, 1.25) {};
 		\node [style=none] (17) at (-6.25, 0) {};
-		\node [style=medium square box comb] (41) at (1.75, -0.5) {$\getvar{core}$};
-		\node [style=port] (43) at (1.5, 0) {};
-		\node [style=port] (47) at (2, 0) {};
-		\node [style=register] (55) at (-4.75, 0) {$\gamma(\getvar{state})$};
-		\node [style=port] (56) at (1.5, -1) {};
-		\node [style=port] (57) at (2, -1) {};
-		\node [style=wire label right] (59) at (6.5, -1) {$\getvar{cod}$};
+		\node [style=medium square box seq] (41) at (4, -0.5) {$\getvar{core}$};
+		\node [style=port] (43) at (3.75, 0) {};
+		\node [style=port] (47) at (4.25, 0) {};
+		\node [style=register] (55) at (-5.25, 0) {$\getvar{state}$};
+		\node [style=port] (56) at (3.75, -1) {};
+		\node [style=port] (57) at (4.25, -1) {};
+		\node [style=wire label right] (59) at (6.25, -1) {$\getvar{cod}$};
 		\node [style=wire label left] (61) at (-7, -1) {$\getvar{dom}$};
-		\node [style=wire label mid] (62) at (1.75, 1.25) {$\getvar{delay}$};
-		\node [style=none] (63) at (-4.75, 0) {};
-		\node [style=medium box comb] (64) at (-1, 0) {$|\gamma^{-1}|$};
-		\node [style=medium box comb] (65) at (4, 0) {$|\gamma|$};
+		\node [style=wire label mid] (62) at (4, 1.25) {$\getvar{delay}$};
+		\node [style=none] (63) at (-5.25, 0) {};
+		\node [style=medium square box seq] (64) at (-2.25, 0) {$\mathsf{enc}_\mathsf{m}$};
+		\node [style=medium square box seq] (65) at (1, 0) {$\mathsf{dec}_\mathsf{m}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (47)
-			 to (14.center)
-			 to [bend right=90, looseness=1.50] (15.center)
-			 to (62.center)
-			 to (16.center)
-			 to [bend left=270, looseness=1.50] (17.center)
-			 to (55);
+		to (14.center)
+		to [bend right=90, looseness=1.50] (15.center)
+		to (62.center)
+		to (16.center)
+		to [bend left=270, looseness=1.50] (17.center)
+		to (55);
 		\draw [style=wire] (59) to (57);
 		\draw [style=wire] (56) to (61);
-		\draw [style=wire] (63.center) to (43);
+		\draw [style=wire, in=180, out=0] (63.center) to (43);
 	\end{pgfonlayer}
 \end{tikzpicture}
