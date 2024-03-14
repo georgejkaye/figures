@@ -1,35 +1,35 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box comb] (0) at (1.25, -0.75) {$\getvar{box}$};
-		\node [style=register] (1) at (-2.25, 0.25) {$\getvar{values}$};
+		\node [style=register] (1) at (-2.5, 0.25) {$\getvar{values}$};
 		\node [style=bproduct] (2) at (-0.75, 0.25) {};
-		\node [style=none] (3) at (-3, 0.25) {};
+		\node [style=none] (3) at (-3.25, 0.25) {};
 		\node [style=none] (4) at (0, 0.75) {};
 		\node [style=none] (5) at (1.5, 0.75) {};
 		\node [style=none] (6) at (0, -0.25) {};
 		\node [style=none] (7) at (1, -0.25) {};
 		\node [style=none] (8) at (1.5, 1.5) {};
-		\node [style=none] (9) at (-3, 1.5) {};
-		\node [style=none] (10) at (-2.25, 0.25) {};
-		\node [style=wire label left] (11) at (-6.25, -1.25) {$\getvar{dom}$};
+		\node [style=none] (9) at (-3.25, 1.5) {};
+		\node [style=none] (10) at (-2.5, 0.25) {};
+		\node [style=wire label left] (11) at (-6.5, -1.25) {$\getvar{dom}$};
 		\node [style=none] (12) at (1, -1.25) {};
 		\node [style=none] (13) at (1.75, -0.75) {};
 		\node [style=wire label right] (14) at (2.5, -0.75) {$\getvar{cod}$};
 		\node [style=wire label mid] (15) at (-0.25, 1.5) {$\getvar{valwidth}$};
-		\node [style=register] (16) at (-4.25, -1.25) {$\getvar{state}$};
+		\node [style=register] (16) at (-4.5, -1.25) {$\getvar{state}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (10.center)
-		to (3.center)
-		to [bend left=90, looseness=1.50] (9.center)
-		to (15.center)
-		to (8.center)
-		to [bend left=90, looseness=2.00] (5.center)
-		to (4.center)
-		to [in=60, out=180] (2);
+			 to (3.center)
+			 to [bend left=90, looseness=1.50] (9.center)
+			 to (15.center)
+			 to (8.center)
+			 to [bend left=90, looseness=2.00] (5.center)
+			 to (4.center)
+			 to [in=60, out=180] (2);
 		\draw [style=wire] (7.center)
-		to (6.center)
-		to [in=-60, out=-180] (2);
+			 to (6.center)
+			 to [in=-60, out=-180] (2);
 		\draw [style=wire] (2) to (10.center);
 		\draw [style=wire] (12.center) to (11);
 		\draw [style=wire] (14) to (13.center);
