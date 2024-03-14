@@ -1,0 +1,29 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=register] (0) at (-0.75, 0) {$\getvar{value}$};
+		\node [style=none] (4) at (0.5, 0) {};
+		\node [style=none] (5) at (1.5, -1.5) {};
+		\node [style=none] (6) at (0.5, 1) {};
+		\node [style=none] (7) at (-2.75, 1) {};
+		\node [style=none] (8) at (-2.75, -0.75) {};
+		\node [style=bproduct] (14) at (-2.25, -0.75) {};
+		\node [style=none] (19) at (-1.5, -1.5) {};
+		\node [style=none] (21) at (-1.5, 0) {};
+		\node [style=register] (25) at (-0.75, -1.5) {$\getvar{value}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (14)
+			 to (8.center)
+			 to [bend left=90, looseness=1.50] (7.center)
+			 to (6.center)
+			 to [bend left=90, looseness=1.50] (4.center)
+			 to (0);
+		\draw [style=wire] (25)
+			 to (19.center)
+			 to [in=-75, out=-180] (14);
+		\draw [style=wire] (14)
+			 to [in=180, out=75] (21.center)
+			 to (0);
+		\draw [style=wire] (5.center) to (25);
+	\end{pgfonlayer}
+\end{tikzpicture}
