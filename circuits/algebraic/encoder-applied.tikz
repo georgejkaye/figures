@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box seq] (0) at (0.5, 0) {$|\mathsf{enc}_\mathsf{m}|$};
+		\node [style=tiny box seq] (1) at (-2.25, 0) {$\getvar{state}$};
+		\node [style=none] (2) at (2.5, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (2.center) to (0);
+		\draw [style=wire] (0) to (1);
+	\end{pgfonlayer}
+\end{tikzpicture}
