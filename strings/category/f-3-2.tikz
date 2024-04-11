@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style={medium square box \getvar{colour}}] (0) at (0, 0) {$\getvar{box}$};
+		\node [style=wire label left] (1) at (-1.25, 0) {$\getvar{dom2}$};
+		\node [style=port] (5) at (0, 0) {};
+		\node [style=port] (6) at (0, 0) {};
+		\node [style=wire label left] (8) at (-1.25, -0.5) {$\getvar{dom3}$};
+		\node [style=port] (9) at (0, -0.5) {};
+		\node [style=port] (10) at (0, -0.5) {};
+		\node [style=wire label right] (11) at (1.25, -0.5) {$\getvar{cod2}$};
+		\node [style=wire label left] (12) at (-1.25, 0.5) {$\getvar{dom1}$};
+		\node [style=port] (13) at (0, 0.5) {};
+		\node [style=port] (14) at (0, 0.5) {};
+		\node [style=wire label right] (15) at (1.25, 0.5) {$\getvar{cod1}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire, in=180, out=0] (1) to (5);
+		\draw [style=wire] (8) to (9);
+		\draw [style=wire] (11) to (10);
+		\draw [style=wire] (15) to (14);
+		\draw [style=wire, in=180, out=0] (12) to (13);
+	\end{pgfonlayer}
+\end{tikzpicture}

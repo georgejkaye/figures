@@ -1,0 +1,58 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=register] (6) at (-3, -1.025) {$\gamma_\leq(s)$};
+		\node [style=port] (10) at (1.75, -1.5) {};
+		\node [style=medium square box comb] (13) at (2, -1) {$g$};
+		\node [style=bport] (22) at (2.25, -0.5) {};
+		\node [style=none] (24) at (3.25, -0.5) {};
+		\node [style=none] (26) at (3.25, 2.5) {};
+		\node [style=none] (30) at (-5, 2.5) {};
+		\node [style=bport] (33) at (2.25, -1.5) {};
+		\node [style=wire label right] (34) at (4.25, -1.5) {$\getvar{cod}$};
+		\node [style=none] (35) at (-5, -1) {};
+		\node [style=bport] (55) at (1.75, -1) {};
+		\node [style=wire label left] (57) at (-6.75, -2.5) {$\getvar{dom}$};
+		\node [style=none] (58) at (-2.5, -1) {};
+		\node [style=wire label mid] (59) at (2, 2.5) {$\getvar{trace}$};
+		\node [style=register] (60) at (-3, 0.725) {$\listvar{v}$};
+		\node [style=bproduct] (61) at (-1, 0.75) {};
+		\node [style=none] (62) at (-0.5, 1.25) {};
+		\node [style=bport] (63) at (1.75, -0.5) {};
+		\node [style=none] (64) at (-0.5, 0.25) {};
+		\node [style=none] (65) at (1, -0.5) {};
+		\node [style=none] (67) at (1, -1) {};
+		\node [style=none] (68) at (3.25, 1.25) {};
+		\node [style=none] (69) at (3.25, 2) {};
+		\node [style=none] (70) at (-4, 0.75) {};
+		\node [style=none] (71) at (-4, 2) {};
+		\node [style=none] (72) at (1, -1.5) {};
+		\node [style=none] (73) at (-1.75, -2.5) {};
+		\node [style=none] (74) at (-2.75, 0.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (22)
+			 to (24.center)
+			 to [bend right=90, looseness=1.25] (26.center)
+			 to (59.center)
+			 to (30.center)
+			 to [bend right=90, looseness=1.25] (35.center)
+			 to (6);
+		\draw [style=wire] (33) to (34);
+		\draw (60)
+			 to (70.center)
+			 to [bend left=90, looseness=1.50] (71.center)
+			 to (69.center)
+			 to [bend left=90, looseness=1.75] (68.center)
+			 to (62.center)
+			 to [in=75, out=180] (61);
+		\draw [in=-180, out=-75] (61) to (64.center);
+		\draw (63) to (65.center);
+		\draw [in=0, out=-180] (65.center) to (64.center);
+		\draw (55) to (67.center);
+		\draw (10) to (72.center);
+		\draw [in=0, out=180] (72.center) to (73.center);
+		\draw (73.center) to (57);
+		\draw (58.center) to (67.center);
+		\draw (61) to (74.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
