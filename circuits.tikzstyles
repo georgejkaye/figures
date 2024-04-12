@@ -6,8 +6,10 @@
 % Node styles
 \tikzstyle{none}=[anchor=center]
 \tikzstyle{vertex}=[anchor=center, fill=black, draw=black, shape=circle, minimum size=2.5mm, tikzit category=hypergraph, inner sep=0]
+\tikzstyle{red outline vertex}=[anchor=center, fill=black, draw=red, shape=circle, minimum size=2.5mm, tikzit category=hypergraph, inner sep=0, line width={\stringwidth}]
 \tikzstyle{red vertex}=[anchor=center, fill=red, draw=black, shape=circle, minimum size=2.5mm, tikzit category=hypergraph, inner sep=0, line width={\stringwidth}]
 \tikzstyle{edge}=[anchor=center, fill=neutral, draw=black, shape=rectangle, font={\boxsize}, tikzit category=hypergraph, minimum width=8mm, minimum height=8mm, rounded corners=3mm, very thick, anchor=center]
+\tikzstyle{red outline edge}=[anchor=center, fill=neutral, draw=red, shape=rectangle, font={\boxsize}, tikzit category=hypergraph, minimum width=8mm, minimum height=8mm, rounded corners=3mm, very thick, anchor=center]
 \tikzstyle{edge subgraph}=[fill=neutral, draw=black, shape=rectangle, font={\boxsize}, tikzit category=hypergraph, minimum width=8mm, minimum height=8mm, rounded corners=3mm, very thick, dashed]
 \tikzstyle{port}=[minimum size=2.5mm, fill=none, draw=none, shape=circle, tikzit draw={rgb,255: red,154; green,154; blue,154}, anchor=center, tikzit fill=neutral]
 \tikzstyle{product}=[fill=neutral, draw=black, shape=circle, scale=0.66, tikzit category=string diagram]
@@ -66,6 +68,8 @@
 \tikzstyle{interface}=[-, fill={rgb,255: red,238; green,238; blue,255}, dashed, draw={rgb,255: red,170; green,170; blue,225}, ultra thick]
 \tikzstyle{graph}=[-, fill={rgb,255: red,238; green,238; blue,238}, draw={rgb,255: red,191; green,191; blue,191}, dashed, ultra thick, anchor=center]
 \tikzstyle{tentacle}=[-, very thick]
+\tikzstyle{red tentacle}=[-, draw=red,
+very thick]
 \tikzstyle{wire}=[-, tikzit category=string diagram, line width={\stringwidth}]
 \tikzstyle{empty}=[-, densely dashed, {\corners}, dash pattern=on 0pt off 1.25pt on 1.25pt, line width={\stringwidth}]
 \tikzstyle{transition}=[->]
@@ -73,8 +77,8 @@
 \tikzstyle{gate}=[-, fill=neutral]
 \tikzstyle{thicc}=[-, line width=1]
 \tikzstyle{strikethrough}=[-, decoration={markings, mark=at position 0.5 with {
-        \draw [blue, thick, - ] (-0.15,-0.15);
-    }}, postaction=decorate]
+                \draw [blue, thick, - ] (-0.15,-0.15);
+            }}, postaction=decorate]
 \tikzstyle{traced}=[-, densely dashed, draw=gray]
 \tikzstyle{arrow}=[<-, line width={\stringwidth}]
 \tikzstyle{arrow up}=[->, line width={\stringwidth}]
@@ -93,3 +97,4 @@
 \tikzstyle{juxtaposition}=[-, draw={rgb,255: red,128; green,128; blue,128}, densely dashed, line width={\stringwidth}]
 \tikzstyle{functor box}=[-, thick, draw={rgb,255: red,83; green,83; blue,83}]
 \tikzstyle{boundary box}=[-, draw=none, tikzit draw={rgb,255: red,255; green,0; blue,4}]
+\tikzstyle{hom image}=[-, draw={rgb,255: red,191; green,191; blue,191}, fill={rgb,255: red,238; green,238; blue,238}, ultra thick, dashed]
