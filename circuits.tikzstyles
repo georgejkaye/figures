@@ -32,7 +32,6 @@
 \tikzstyle{large square box comb}=[{\corners}, font={\boxsize}, fill=comb, draw=black, shape=rectangle, tikzit category=string diagram, minimum width=12mm, minimum height=12mm, line width={\stringwidth}, tikzit fill=comb, inner sep={\innersep}]
 \tikzstyle{huge box}=[{\corners}, fill=neutral, draw=black, shape=rectangle, minimum height=40mm, minimum width=15mm, anchor=center, tikzit category=string diagram, line width={\stringwidth}, tikzit fill=neutral, inner sep={\innersep}]
 \tikzstyle{output-node}=[fill=neutral, draw=black, shape=circle, anchor=west, inner sep=0.5]
-% \tikzstyle{state}=[fill=neutral, draw=none, shape=rectangle, minimum height=10mm, minimum width=10mm]
 \tikzstyle{delay}=[fill=neutral, draw=black, font={\boxsize}, shape=signal, tikzit category=string diagram, line width={\stringwidth}, minimum height={\tinywidth}, minimum width={\tinywidth}, inner sep=0.5mm, outer sep=0mm, minimum height=1em, minimum width=1em]
 \tikzstyle{register}=[fill=seq, draw=black, font={\boxsize}, shape=signal, tikzit category=string diagram, line width={\stringwidth}, minimum width=1.5em, align=center, anchor=center, inner xsep=1mm, inner ysep=1mm, outer xsep=0mm]
 \tikzstyle{waveform}=[fill=seq, draw=black, font={\boxsize}, shape=signal, signal from=west, signal to=east, tikzit category=string diagram, line width={\stringwidth}, minimum height=2em, minimum width=1.5em, align=center, anchor=center, inner xsep=1mm, inner ysep=-1mm, outer xsep=0mm]
@@ -61,6 +60,7 @@
 \tikzstyle{west}=[fill=none, draw=none, shape=circle, anchor=west]
 \tikzstyle{bundler}=[fill=neutral, draw=black, shape=rounded rectangle, minimum width=3em, rounded rectangle arc length=180, rotate=90, line width={\stringwidth}]
 \tikzstyle{long bundler}=[fill=neutral, draw=black, shape=rounded rectangle, minimum width=5em, rounded rectangle arc length=180, rotate=90, line width={\stringwidth}]
+\tikzstyle{box vertex}=[fill=white, draw=black, shape=circle, line width={\stringwidth}]
 
 % Edge styles
 \tikzstyle{interface}=[-, fill={rgb,255: red,238; green,238; blue,255}, dashed, draw={rgb,255: red,170; green,170; blue,225}, ultra thick]
@@ -78,7 +78,7 @@
 \tikzstyle{traced}=[-, densely dashed, draw=gray]
 \tikzstyle{arrow}=[<-, line width={\stringwidth}]
 \tikzstyle{arrow up}=[->, line width={\stringwidth}]
-\tikzstyle{dashed arrow}=[<-, dashed]
+\tikzstyle{dashed arrow}=[<-, dashed, line width={\stringwidth}]
 \tikzstyle{unit wire}=[-, fill=none, draw=unit, line width={\stringwidth}]
 \tikzstyle{interfacearrow}=[->, very thick, dashed]
 \tikzstyle{tile none}=[-, draw=none, {\corners}, fill=none, line width={\stringwidth}]

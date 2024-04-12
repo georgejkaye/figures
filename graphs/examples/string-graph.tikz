@@ -1,0 +1,81 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=vertex] (0) at (-7.25, 0.75) {};
+		\node [style=vertex] (1) at (-5.5, -1.25) {};
+		\node [style=box vertex] (2) at (-4.25, -0.25) {$\phi$};
+		\node [style=vertex] (4) at (-7.25, -0.75) {};
+		\node [style=vertex] (6) at (-4.25, 2.25) {};
+		\node [style=vertex] (8) at (13.75, 2.25) {};
+		\node [style=vertex] (9) at (-2.25, -2.75) {};
+		\node [style=box vertex] (10) at (2.25, -2.75) {$\phi$};
+		\node [style=vertex] (11) at (-2, -0.25) {};
+		\node [style=box vertex] (12) at (-0.25, -0.25) {$\prec$};
+		\node [style=box vertex] (13) at (2.5, -0.25) {$\psi$};
+		\node [style=vertex] (14) at (4.75, -2.75) {};
+		\node [style=box vertex] (15) at (7.5, -1.25) {$\succ$};
+		\node [style=vertex] (16) at (4.75, -1.25) {};
+		\node [style=vertex] (17) at (9.5, -1.25) {};
+		\node [style=vertex] (18) at (4.75, 0.75) {};
+		\node [style=none] (21) at (-8.5, 3.75) {};
+		\node [style=none] (22) at (-8.5, -4.25) {};
+		\node [style=none] (23) at (15.5, -4.25) {};
+		\node [style=none] (24) at (15.5, 3.75) {};
+		\node [style=none] (25) at (-12, 2.25) {};
+		\node [style=none] (26) at (-10, 2.25) {};
+		\node [style=none] (27) at (-10, -2.25) {};
+		\node [style=vertex] (28) at (-11, 1) {};
+		\node [style=vertex] (29) at (-11, -1) {};
+		\node [style=none] (30) at (-12, -2.25) {};
+		\node [style=box vertex] (31) at (11, -1.25) {$\prec$};
+		\node [style=vertex] (32) at (13.75, -0.25) {};
+		\node [style=vertex] (33) at (13.75, -2) {};
+		\node [style=none] (34) at (17, 3) {};
+		\node [style=none] (35) at (19, 3) {};
+		\node [style=none] (36) at (19, -3) {};
+		\node [style=vertex] (37) at (18, 0) {};
+		\node [style=vertex] (38) at (18, -2) {};
+		\node [style=none] (39) at (17, -3) {};
+		\node [style=vertex] (40) at (18, 2) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (24.center)
+			 to (21.center)
+			 to (22.center)
+			 to (23.center)
+			 to cycle;
+		\draw [style=arrow up] (0) to (2);
+		\draw [style=arrow up] (1) to (2);
+		\draw [style=arrow] (8) to (6);
+		\draw [style=arrow up] (4) to (6);
+		\draw [style=arrow up] (9) to (1);
+		\draw [style=arrow up] (9) to (10);
+		\draw [style=arrow up] (2) to (11);
+		\draw [style=arrow up] (11) to (12);
+		\draw [style=arrow up] (12) to (13);
+		\draw [style=arrow up] (12) to (10);
+		\draw [style=arrow up] (10) to (14);
+		\draw [style=arrow up] (14) to (15);
+		\draw [style=arrow up] (13) to (16);
+		\draw [style=arrow up] (16) to (15);
+		\draw [style=arrow up] (15) to (17);
+		\draw [style=arrow up] (13) to (18);
+		\draw [style=interface] (26.center)
+			 to (27.center)
+			 to (30.center)
+			 to (25.center)
+			 to cycle;
+		\draw [style=dashed arrow] (4) to (28);
+		\draw [style=dashed arrow] (0) to (29);
+		\draw [style=arrow up] (17) to (31);
+		\draw [style=arrow up] (31) to (32);
+		\draw [style=arrow up] (31) to (33);
+		\draw [style=interface] (36.center)
+			 to (39.center)
+			 to (34.center)
+			 to (35.center)
+			 to cycle;
+		\draw [style=dashed arrow] (32) to (40);
+		\draw [style=dashed arrow] (8) to (37);
+		\draw [style=dashed arrow] (33) to (38);
+	\end{pgfonlayer}
+\end{tikzpicture}
