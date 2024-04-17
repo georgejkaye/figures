@@ -1,0 +1,49 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (43) at (-5.25, 2.25) {};
+		\node [style=none] (44) at (-3.25, 2.25) {};
+		\node [style=none] (45) at (-3.25, -2.25) {};
+		\node [style=vertex] (46) at (-4.25, 0.75) {};
+		\node [style=vertex] (47) at (-4.25, -1.25) {};
+		\node [style=none] (55) at (-5.25, -2.25) {};
+		\node [style=none] (56) at (-4.25, 1.5) {$0$};
+		\node [style=none] (57) at (-4.25, -0.5) {$1$};
+		\node [style=none] (59) at (-2.25, 0) {};
+		\node [style=none] (60) at (-3, 0) {};
+		\node [style=none] (63) at (3, 0) {};
+		\node [style=none] (64) at (2.25, 0) {};
+		\node [style=none] (90) at (-2, 1.5) {};
+		\node [style=none] (91) at (-2, -1.5) {};
+		\node [style=none] (92) at (2, -1.5) {};
+		\node [style=none] (93) at (2, 1.5) {};
+		\node [style=vertex] (95) at (0, -0.25) {};
+		\node [style=none] (96) at (3.25, 2.25) {};
+		\node [style=none] (97) at (5.25, 2.25) {};
+		\node [style=none] (98) at (5.25, -2.25) {};
+		\node [style=vertex] (99) at (4.25, 0.75) {};
+		\node [style=vertex] (100) at (4.25, -1.25) {};
+		\node [style=none] (101) at (3.25, -2.25) {};
+		\node [style=none] (102) at (4.25, 1.5) {$2$};
+		\node [style=none] (103) at (4.25, -0.5) {$3$};
+		\node [style=none] (104) at (0, 0.5) {0\ 1\ 2\ 3};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=interface] (44.center)
+			 to (45.center)
+			 to (55.center)
+			 to (43.center)
+			 to cycle;
+		\draw [style=arrow] (59.center) to (60.center);
+		\draw [style=arrow] (64.center) to (63.center);
+		\draw [style=graph] (93.center)
+			 to (90.center)
+			 to (91.center)
+			 to (92.center)
+			 to cycle;
+		\draw [style=interface] (97.center)
+			 to (98.center)
+			 to (101.center)
+			 to (96.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}
