@@ -1,0 +1,43 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=wire label right] (8) at (2.5, 0.25) {};
+		\node [style=wire label left] (9) at (-2, 1) {};
+		\node [style=wire label left] (10) at (-2, -0.5) {};
+		\node [style=wire label right] (15) at (2.5, -0.75) {};
+		\node [style=bproduct] (17) at (-1.5, -0.5) {};
+		\node [style=none] (20) at (-1, 0) {};
+		\node [style=none] (23) at (-1, -1) {};
+		\node [style=none] (35) at (-0.5, 1) {};
+		\node [style=bproduct] (38) at (0, 0.5) {};
+		\node [style=none] (40) at (0.5, -1) {};
+		\node [style=none] (41) at (0.5, 0.5) {};
+		\node [style=bproduct] (42) at (1.25, -0.25) {};
+		\node [style=bproduct] (43) at (1.75, -0.25) {};
+		\node [style=none] (44) at (2.25, 0.25) {};
+		\node [style=none] (45) at (2.25, -0.75) {};
+		\node [style=none] (47) at (-0.5, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=thicc] (38)
+			 to [in=0, out=-105] (47.center)
+			 to (20.center)
+			 to [in=75, out=180] (17);
+		\draw [style=thicc] (42)
+			 to [in=0, out=-105] (40.center)
+			 to (23.center)
+			 to [in=-75, out=-180] (17);
+		\draw [style=wire] (17) to (10);
+		\draw [style=thicc] (35.center) to (9);
+		\draw [style=thicc] (42)
+			 to [in=0, out=105] (41.center)
+			 to (38);
+		\draw [style=thicc] (42) to (43);
+		\draw [style=thicc] (8)
+			 to (44.center)
+			 to [in=75, out=-180] (43);
+		\draw [style=thicc] (15)
+			 to (45.center)
+			 to [in=-75, out=180] (43);
+		\draw [style=thicc, in=0, out=105] (38) to (35.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
