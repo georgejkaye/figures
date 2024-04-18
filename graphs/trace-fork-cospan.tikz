@@ -18,8 +18,8 @@
 		\node [style=none] (59) at (1.25, 0) {};
 		\node [style=vertex] (60) at (0, -0.25) {};
 		\node [style=vertex] (61) at (3.5, -0.25) {};
-		\node [style=label] (62) at (0, 0.5) {$0$};
-		\node [style=label] (63) at (3.5, 0.5) {$0$};
+		\node [style=label] (62) at (0, 0.5) {$2$};
+		\node [style=label] (63) at (3.5, 0.5) {$2$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=graph] (4.center)
