@@ -6,18 +6,18 @@
 \input{../macros/category}
 \input{../macros/graphs}
 \begin{document}
-    \begin{tikzcd}[column sep = large, row sep = large]
-        \permspropwithnat
-        \arrow{r}{!_2}
-        \arrow[swap]{d}{!_1}
-        &
-        \frobc
-        \arrow{d}{\frobtohypsigmac}
-        \\
-        \smcsigmac
-        \arrow[swap]{r}{\termtohypsigmac}
-        &
-        \smcsigmac + \frobc
-        \arrow[pos=0.125, draw=none]{ul}[description]{\hspace{1.5em}\scalebox{1.5}{\(\ulcorner\)}}
-    \end{tikzcd}
+\begin{tikzcd}[column sep = large, row sep = large]
+    \permsprop
+    \arrow{r}{!_2}
+    \arrow[swap]{d}{!_1}
+    &
+    \frob
+    \arrow{d}{\frobtohypsigma}
+    \\
+    \smcsigma
+    \arrow[swap]{r}{\termtohypsigma}
+    &
+    \smcsigma + \frob
+    \arrow[pos=0.125, draw=none]{ul}[description]{\hspace{1.5em}\scalebox{1.5}{\(\ulcorner\)}}
+\end{tikzcd}
 \end{document}
