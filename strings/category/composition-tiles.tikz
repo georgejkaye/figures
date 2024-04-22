@@ -1,0 +1,36 @@
+\begin{tikzpicture}
+    \begin{pgfonlayer}{nodelayer}
+        \node [style=medium square box \getvar{colour}] (8) at (2, 0) {$\getvar{box1}$};
+        \node [style=port] (11) at (-4, 0.5) {};
+        \node [style={medium box \getvar{colour}}] (12) at (-2, 0) {$\getvar{box}$};
+        \node [style=none] (13) at (-2.85, 0) {\raisebox{0.5em}{\scalebox{0.75}{$\vdots$}}};
+        \node [style=wire label right] (14) at (-1, 0) {$\getvar{cod1}$};
+        \node [style=wire label left] (15) at (-3, 0) {$\getvar{dom1}$};
+        \node [style=none] (16) at (-1.15, 0) {\raisebox{0.5em}{\scalebox{0.75}{$\vdots$}}};
+        \node [style=port] (18) at (-4, -0.5) {};
+        \node [style=port] (20) at (4, 0.5) {};
+        \node [style=port] (21) at (4, -0.5) {};
+        \node [style=none] (22) at (-4, 1) {};
+        \node [style=wire label right] (23) at (2.9, 0) {$\getvar{cod2}$};
+        \node [style=none] (24) at (2.75, 0) {\raisebox{0.5em}{\scalebox{0.75}{$\vdots$}}};
+        \node [style=none] (25) at (-4, -1) {};
+        \node [style=none] (26) at (0, 1) {};
+        \node [style=none] (27) at (0, -1) {};
+        \node [style=none] (28) at (4, -1) {};
+        \node [style=none] (29) at (4, 1) {};
+        \node [style=none] (30) at (1.15, 0) {\raisebox{0.5em}{\scalebox{0.75}{$\vdots$}}};
+        \node [style=wire label left] (31) at (1, 0) {$\getvar{dom2}$};
+    \end{pgfonlayer}
+    \begin{pgfonlayer}{edgelayer}
+        \draw (20) to (11);
+        \draw (21) to (18);
+        \draw [style=wire] (27.center)
+        to (28.center)
+        to (29.center)
+        to (26.center)
+        to cycle
+        to (25.center)
+        to (22.center)
+        to (26.center);
+    \end{pgfonlayer}
+\end{tikzpicture}
