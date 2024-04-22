@@ -61,6 +61,7 @@
 \tikzstyle{xor}=[fill=neutral, draw=black, xor gate, scale=1.75, line width={\stringwidth}, tikzit category=circuits]
 \tikzstyle{xnor}=[fill=neutral, draw=black, xnor gate, scale=1.75, line width={\stringwidth}, tikzit category=circuits]
 \tikzstyle{west}=[fill=none, draw=none, shape=circle, anchor=west]
+\tikzstyle{short bundler}=[fill=neutral, draw=black, shape=rounded rectangle, minimum width=2.5em, rounded rectangle arc length=180, rotate=90, line width={\stringwidth}]
 \tikzstyle{bundler}=[fill=neutral, draw=black, shape=rounded rectangle, minimum width=3em, rounded rectangle arc length=180, rotate=90, line width={\stringwidth}]
 \tikzstyle{long bundler}=[fill=neutral, draw=black, shape=rounded rectangle, minimum width=5em, rounded rectangle arc length=180, rotate=90, line width={\stringwidth}]
 \tikzstyle{box vertex}=[fill=white, draw=black, shape=circle, line width={\stringwidth}]
@@ -69,8 +70,7 @@
 \tikzstyle{interface}=[-, fill={rgb,255: red,238; green,238; blue,255}, dashed, draw={rgb,255: red,170; green,170; blue,225}, ultra thick]
 \tikzstyle{graph}=[-, fill={rgb,255: red,238; green,238; blue,238}, draw={rgb,255: red,191; green,191; blue,191}, dashed, ultra thick, anchor=center]
 \tikzstyle{tentacle}=[-, very thick]
-\tikzstyle{red tentacle}=[-, draw=red,
-very thick]
+\tikzstyle{red tentacle}=[-, draw=red, very thick]
 \tikzstyle{wire}=[-, tikzit category=string diagram, line width={\stringwidth}]
 \tikzstyle{red wire}=[-, draw=red, tikzit category=string diagram, line width={\stringwidth}]
 \tikzstyle{empty}=[-, densely dashed, {\corners}, dash pattern=on 0pt off 1.25pt on 1.25pt, line width={\stringwidth}]
