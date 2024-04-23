@@ -1,24 +1,24 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=wire label left] (1) at (-1.25, 0.5) {};
+		\node [style=wire label left] (1) at (-2.25, 0.5) {};
 		\node [style=port] (6) at (0, 0.5) {};
-		\node [style=wire label right] (7) at (1.25, 0.5) {};
-		\node [style=wire label left] (8) at (-1.25, -0.5) {};
-		\node [style=none] (10) at (-1.25, 1) {};
-		\node [style=none] (11) at (-1.25, -1) {};
-		\node [style=none] (12) at (1.25, -1) {};
+		\node [style=wire label right] (7) at (2.25, 0.5) {};
+		\node [style=wire label left] (8) at (-2.25, -0.5) {};
+		\node [style=none] (10) at (-2.25, 1) {};
+		\node [style=none] (11) at (-2.25, -1) {};
+		\node [style=none] (12) at (2.25, -1) {};
 		\node [style=port] (13) at (0, -0.5) {};
-		\node [style=wire label right] (14) at (1.25, -0.5) {};
-		\node [style=none] (15) at (1.25, 1) {};
+		\node [style=wire label right] (14) at (2.25, -0.5) {};
+		\node [style=none] (15) at (2.25, 1) {};
 		\node [style={medium square box \getvar{colour}}] (17) at (0, 0) {$\getvar{box}$};
-		\node [style=none] (18) at (-0.85, 0) {\raisebox{0.5em}{\scalebox{0.75}{$\vdots$}}};
-		\node [style=wire label right] (19) at (1, 0) {$\getvar{cod}$};
-		\node [style=wire label left] (20) at (-1, 0) {$\getvar{dom}$};
-		\node [style=none] (21) at (0.85, 0) {\raisebox{0.5em}{\scalebox{0.75}{$\vdots$}}};
+		\node [style=none] (18) at (-1.1, 0) {\raisebox{0.5em}{\scalebox{0.75}{$\vdots$}}};
+		\node [style=label] (19) at (1.5, 0) {$\getvar{cod}$};
+		\node [style=label] (20) at (-1.5, 0) {$\getvar{dom}$};
+		\node [style=none] (21) at (1.1, 0) {\raisebox{0.5em}{\scalebox{0.75}{$\vdots$}}};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (7) to (6);
-		\draw [style=wire] (12.center)
+		\draw [style=tile boundary] (12.center)
 			 to (15.center)
 			 to (10.center)
 			 to (11.center)

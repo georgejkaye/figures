@@ -55,6 +55,7 @@
 \tikzstyle{commuting label}=[fill=none, draw=none, shape=circle, scale=0.5]
 \tikzstyle{and}=[fill=neutral, draw=black, shape=and gate, line width={\stringwidth}, and gate, scale=1.75, tikzit category=circuits]
 \tikzstyle{or}=[fill=neutral, draw=black, or gate, scale=1.75, line width={\stringwidth}, tikzit category=circuits]
+\tikzstyle{red or}=[fill=neutral, draw=red, or gate, scale=1.75, line width={\stringwidth}, tikzit category=circuits]
 \tikzstyle{not}=[fill=neutral, draw=black, not gate, scale=1.5, line width={\stringwidth}, tikzit category=circuits]
 \tikzstyle{nor}=[fill=neutral, draw=black, nor gate, scale=1.75, line width={\stringwidth}, tikzit category=circuits]
 \tikzstyle{nand}=[fill=neutral, draw=black, nand gate, scale=1.75, line width={\stringwidth}, tikzit category=circuits]
@@ -100,3 +101,4 @@
 \tikzstyle{functor box}=[-, thick, draw={rgb,255: red,83; green,83; blue,83}]
 \tikzstyle{boundary box}=[-, draw=none, tikzit draw={rgb,255: red,255; green,0; blue,4}]
 \tikzstyle{hom image}=[-, draw={rgb,255: red,191; green,191; blue,191}, fill={rgb,255: red,238; green,238; blue,238}, ultra thick, dashed]
+\tikzstyle{tile boundary}=[-]

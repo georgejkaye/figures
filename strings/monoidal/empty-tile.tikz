@@ -2,7 +2,6 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (0) at (-0.75, 0.75) {};
 		\node [style=none] (2) at (0.75, 0) {};
-		\node [style=none] (3) at (-0.75, 0) {};
 		\node [style=none] (4) at (0.75, 0.75) {};
 		\node [style=none] (5) at (0.75, -0.75) {};
 		\node [style=none] (6) at (-0.75, 0) {};
@@ -10,13 +9,12 @@
 		\node [style=none] (8) at (-0.75, -0.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire] (3.center)
+		\draw [style=tile boundary] (7.center)
+			 to (5.center)
+			 to (8.center)
+			 to (6.center)
 			 to (0.center)
 			 to (4.center)
 			 to (2.center);
-		\draw [style=wire] (7.center)
-			 to (5.center)
-			 to (8.center)
-			 to (6.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

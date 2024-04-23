@@ -9,7 +9,7 @@
 		\node [style=none] (13) at (0.5, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style={tile \getvar{colour}}] (12.center)
+		\draw [style=tile boundary] (12.center)
 			 to (6.center)
 			 to (7.center)
 			 to (8.center)
