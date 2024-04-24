@@ -101,4 +101,4 @@
 \tikzstyle{functor box}=[-, thick, draw={rgb,255: red,83; green,83; blue,83}]
 \tikzstyle{boundary box}=[-, draw=none, tikzit draw={rgb,255: red,255; green,0; blue,4}]
 \tikzstyle{hom image}=[-, draw={rgb,255: red,191; green,191; blue,191}, fill={rgb,255: red,238; green,238; blue,238}, ultra thick, dashed]
-\tikzstyle{tile boundary}=[-]
+\tikzstyle{tile boundary}=[-, draw={rgb,255: red,128; green,128; blue,128}]

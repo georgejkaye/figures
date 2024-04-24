@@ -112,13 +112,14 @@
 		\draw [style=tile boundary] (60.center) to (59.center);
 		\draw [style=tile boundary] (59.center) to (45.center);
 		\draw [style=tile boundary] (45.center) to (44.center);
-		\draw [style=tile boundary] (92.center)
+		\draw [style=tile boundary] (68.center)
+			 to (92.center)
 			 to (88.center)
 			 to (89.center)
 			 to (66.center)
 			 to (67.center)
-			 to (68.center)
-			 to cycle;
+			 to cycle
+			 to (89.center);
 		\draw [style=tile white] (87.center)
 			 to (81.center)
 			 to (82.center)
@@ -139,7 +140,6 @@
 		\draw [style=tile boundary] (99.center) to (98.center);
 		\draw [style=tile boundary] (98.center) to (97.center);
 		\draw [style=wire] (76) to (93.center);
-		\draw (89.center) to (68.center);
 		\draw [style=wire, in=-180, out=0, looseness=1.25] (103.center) to (84.center);
 		\draw [style=wire] (103.center) to (102.center);
 		\draw [style=tile boundary] (106.center)

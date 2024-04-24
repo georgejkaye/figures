@@ -137,7 +137,7 @@
 		\draw [style=tile boundary] (96.center) to (99.center);
 		\draw [style=tile boundary] (99.center) to (98.center);
 		\draw [style=tile boundary] (98.center) to (97.center);
-		\draw (102.center)
+		\draw [style=tile boundary] (102.center)
 			 to (105.center)
 			 to (104.center)
 			 to (101.center)

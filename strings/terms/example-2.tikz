@@ -102,7 +102,7 @@
 		\draw [style=wire, in=0, out=-180] (26.center) to (35.center);
 		\draw [style=wire] (35.center) to (33);
 		\draw [style=wire] (34.center) to (40.center);
-		\draw (58.center)
+		\draw [style=tile boundary] (58.center)
 			 to (112.center)
 			 to (113.center)
 			 to (59.center)
@@ -118,11 +118,14 @@
 			 to (106.center)
 			 to [in=180, out=0] (85.center)
 			 to (78.center);
-		\draw [style=tile boundary] (97.center)
-			 to (96.center)
+		\draw [style=tile boundary] (96.center)
 			 to (94.center)
 			 to (95.center)
-			 to cycle;
+			 to (97.center)
+			 to cycle
+			 to (125.center)
+			 to (124.center)
+			 to (97.center);
 		\draw [style=wire] (76) to (93.center);
 		\draw [style=tile boundary] (100.center)
 			 to (101.center)
@@ -132,25 +135,22 @@
 			 to (103.center)
 			 to (102.center)
 			 to (99.center);
-		\draw (117.center)
-			 to (116.center)
-			 to (115.center)
-			 to (114.center)
-			 to cycle
+		\draw [style=tile boundary] (116.center)
+			 to (117.center)
 			 to (111.center)
 			 to (108.center)
-			 to (114.center);
-		\draw (117.center) to (114.center);
+			 to (114.center)
+			 to (117.center)
+			 to (114.center)
+			 to (115.center)
+			 to cycle;
 		\draw (118.center)
 			 to (119.center)
 			 to (120.center)
 			 to (121.center)
 			 to cycle;
 		\draw (122.center) to (123.center);
-		\draw (125.center) to (96.center);
-		\draw (97.center) to (124.center);
-		\draw (124.center) to (125.center);
-		\draw (127.center)
+		\draw [style=tile boundary] (127.center)
 			 to (128.center)
 			 to (129.center)
 			 to (126.center)

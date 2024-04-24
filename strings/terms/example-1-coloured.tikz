@@ -138,7 +138,6 @@
 		\draw [style=tile boundary] (99.center) to (98.center);
 		\draw [style=tile boundary] (98.center) to (97.center);
 		\draw [style=red wire] (76) to (93.center);
-		\draw (89.center) to (68.center);
 		\draw [style=tile boundary] (106.center)
 			 to (107.center)
 			 to (104.center)
