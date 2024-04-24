@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box white] (8) at (2.25, 0) {$\getvar{box1}$};
+		\node [style=medium square box white] (8) at (2.25, 0) {$\getvar{box2}$};
 		\node [style=none] (11) at (-4.5, 0.5) {};
 		\node [style=medium square box white] (12) at (-2.25, 0) {$\getvar{box1}$};
 		\node [style=none] (13) at (-3.35, 0) {\raisebox{0.5em}{\scalebox{0.75}{$\vdots$}}};
@@ -25,12 +25,12 @@
 		\draw [style=wire] (20.center) to (11.center);
 		\draw [style=wire] (21.center) to (18.center);
 		\draw [style=tile boundary] (27.center)
-			 to (28.center)
-			 to (29.center)
-			 to (26.center)
-			 to cycle
-			 to (25.center)
-			 to (22.center)
-			 to (26.center);
+		to (28.center)
+		to (29.center)
+		to (26.center)
+		to cycle
+		to (25.center)
+		to (22.center)
+		to (26.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
