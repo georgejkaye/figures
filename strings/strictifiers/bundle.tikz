@@ -11,11 +11,11 @@
 		\node [style=wire label right] (12) at (1.25, 0) {$\getvar{cod}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=tile white] (1.center)
-			 to (3.center)
-			 to (2.center)
-			 to (4.center)
-			 to cycle;
+		\draw [style=tile \getvar{colour}] (1.center)
+		to (3.center)
+		to (2.center)
+		to (4.center)
+		to cycle;
 		\draw [style=wire, in=360, out=180] (8.center) to (5);
 		\draw [style=wire] (12) to (9.center);
 	\end{pgfonlayer}

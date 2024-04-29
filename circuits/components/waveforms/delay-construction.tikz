@@ -1,0 +1,40 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=delay] (0) at (-0.2, 1) {};
+		\node [style=wire label right] (3) at (1.25, 1) {};
+		\node [style=none] (9) at (0.75, 1.75) {};
+		\node [style=none] (10) at (0.75, 0.25) {};
+		\node [style=none] (11) at (-0.75, 0.25) {};
+		\node [style=none] (12) at (-0.75, 1.75) {};
+		\node [style=none] (13) at (0.75, 1) {};
+		\node [style=none] (14) at (0.75, 1) {};
+		\node [style=wire label left] (15) at (-1.25, 1) {};
+		\node [style=delay] (16) at (-0.2, -1) {};
+		\node [style=wire label right] (17) at (1.25, -1) {$n$};
+		\node [style=none] (18) at (0.75, -0.25) {};
+		\node [style=none] (19) at (0.75, -1.75) {};
+		\node [style=none] (20) at (-0.75, -1.75) {};
+		\node [style=none] (21) at (-0.75, -0.25) {};
+		\node [style=none] (22) at (0.75, -1) {};
+		\node [style=none] (23) at (0.75, -1) {};
+		\node [style=wire label left] (24) at (-1.25, -1) {$n$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=tile seq] (14.center)
+			 to (10.center)
+			 to (11.center)
+			 to (12.center)
+			 to (9.center)
+			 to (13.center);
+		\draw [style=wire] (0) to (3);
+		\draw [style=wire] (15) to (0);
+		\draw [style=tile seq] (23.center)
+			 to (19.center)
+			 to (20.center)
+			 to (21.center)
+			 to (18.center)
+			 to (22.center);
+		\draw [style=wire] (16) to (17);
+		\draw [style=wire] (24) to (16);
+	\end{pgfonlayer}
+\end{tikzpicture}

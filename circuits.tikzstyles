@@ -35,6 +35,7 @@
 \tikzstyle{huge box}=[{\corners}, fill=neutral, draw=black, shape=rectangle, minimum height=40mm, minimum width=15mm, anchor=center, tikzit category=string diagram, line width={\stringwidth}, tikzit fill=neutral, inner sep={\innersep}]
 \tikzstyle{output-node}=[fill=neutral, draw=black, shape=circle, anchor=west, inner sep=0.5]
 \tikzstyle{delay}=[fill=neutral, draw=black, font={\boxsize}, shape=signal, tikzit category=string diagram, line width={\stringwidth}, minimum height={\tinywidth}, minimum width={\tinywidth}, inner sep=0.5mm, outer sep=0mm, minimum height=1em, minimum width=1em]
+\tikzstyle{unit delay}=[fill=neutral, draw=unit, font={\boxsize}, shape=signal, tikzit category=string diagram, line width={\stringwidth}, minimum height={\tinywidth}, minimum width={\tinywidth}, inner sep=0.5mm, outer sep=0mm, minimum height=1em, minimum width=1em]
 \tikzstyle{register}=[fill=seq, draw=black, font={\boxsize}, shape=signal, tikzit category=string diagram, line width={\stringwidth}, minimum width=1.5em, align=center, anchor=center, inner xsep=1mm, inner ysep=1mm, outer xsep=0mm]
 \tikzstyle{waveform}=[fill=seq, draw=black, font={\boxsize}, shape=signal, signal from=west, signal to=east, tikzit category=string diagram, line width={\stringwidth}, minimum height=2em, minimum width=1.5em, align=center, anchor=center, inner xsep=1mm, inner ysep=-1mm, outer xsep=0mm]
 \tikzstyle{bproduct}=[fill=black, draw=black, shape=circle, scale=0.5, tikzit category=string diagram]
