@@ -1,0 +1,37 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=wire label left] (0) at (-3, 1.5) {$\mathsf{A}$};
+		\node [style=none] (1) at (-0.25, 1.5) {};
+		\node [style=wire label left] (2) at (-3, 0.75) {$\mathsf{B}$};
+		\node [style=fork] (3) at (-1.25, 1.5) {};
+		\node [style=fork] (4) at (-2, 0.75) {};
+		\node [style=none] (5) at (-1.5, 0.75) {};
+		\node [style=none] (6) at (-1, 0.75) {};
+		\node [style=none] (7) at (-0.25, 0.75) {};
+		\node [style=none] (8) at (-1.25, -0.75) {};
+		\node [style=none] (9) at (-2, -1.5) {};
+		\node [style=none] (10) at (0, -1.5) {};
+		\node [style=none] (11) at (0, -0.75) {};
+		\node [style=xor] (12) at (0.45, 1.15) {};
+		\node [style=and] (13) at (0.45, -1.12) {};
+		\node [style=wire label right] (16) at (1.75, 1.15) {$\mathsf{S}$};
+		\node [style=wire label right] (17) at (1.75, -1.12) {$\mathsf{C}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (2) to (4);
+		\draw [style=wire] (4)
+			 to (5.center)
+			 to [bend left=90, looseness=1.75] (6.center)
+			 to (7.center);
+		\draw [style=wire] (11.center)
+			 to (8.center)
+			 to (3);
+		\draw [style=wire] (3) to (0);
+		\draw [style=wire] (4)
+			 to (9.center)
+			 to (10.center);
+		\draw [style=wire] (1.center) to (3);
+		\draw [style=wire] (16) to (12);
+		\draw [style=wire] (17) to (13);
+	\end{pgfonlayer}
+\end{tikzpicture}
