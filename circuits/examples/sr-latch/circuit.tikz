@@ -12,13 +12,13 @@
 		\node [style=none] (9) at (-6.5, 1.25) {};
 		\node [style=none] (10) at (6.25, 1.25) {};
 		\node [style=not] (11) at (-2.5, 0) {};
-		\node [style=bproduct] (13) at (-1, 0) {};
-		\node [style=none] (14) at (-0.5, 0.5) {};
-		\node [style=none] (15) at (-0.5, -0.5) {};
-		\node [style=or] (16) at (0.25, -0.75) {};
-		\node [style=not] (17) at (1.75, -0.75) {};
-		\node [style=none] (19) at (0, -0.5) {};
-		\node [style=none] (20) at (0, -1) {};
+		\node [style=bproduct] (13) at (0.25, 0) {};
+		\node [style=none] (14) at (0.75, 0.5) {};
+		\node [style=none] (15) at (0.75, -0.5) {};
+		\node [style=or] (16) at (1.5, -0.75) {};
+		\node [style=not] (17) at (3, -0.75) {};
+		\node [style=none] (19) at (1.25, -0.5) {};
+		\node [style=none] (20) at (1.25, -1) {};
 		\node [style=none] (21) at (-7.25, -1) {};
 		\node [style=bproduct] (23) at (4.5, -0.75) {};
 		\node [style=none] (24) at (5, -0.25) {};
@@ -30,7 +30,7 @@
 		\node [style=none] (30) at (6.25, 0.5) {};
 		\node [style=none] (31) at (7, -0.25) {};
 		\node [style=none] (32) at (7, -1.25) {};
-		\node [style=delay] (33) at (3.25, -0.75) {};
+		\node [style=delay] (33) at (-1, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (1.center)
