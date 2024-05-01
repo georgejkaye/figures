@@ -5,23 +5,21 @@
 
 \begin{document}
 \begin{tikzpicture}[
-        ->,
-        >=stealth,
-        node distance=0.25cm,
-        every state/.style={font=\large, thick, fill=gray!10},
-        initial text=$ $,
-        initial distance=1.5cm,
-        every initial by arrow/.style={*->},
-        every edge/.append style={},
-        yscale=-1,
-        x=20pt,
-        y=20pt
-    ]
-    \node[state, initial] (v) {\(s_v\)};
-    \node[state, right of=v] (bot) {\(s_\bot\)};
+    ->,
+    >=stealth,
+    node distance=0.25cm,
+    every node/.style={font=\scriptsize},w
+    every state/.style={font=\normalsize, thick, fill=gray!10},
+    initial text=$ $,
+    initial distance=0.5cm,
+    every initial by arrow/.style={*->},
+    x=20pt,
+    y=20pt
+]
+    \node[state, initial] (v) at (0,0) {\(s_v\)};
+    \node[state] (bot) at (5,0) {\(s_\bot\)};
 
-    \draw (v) edge[above] node{\( () \,|\, v\)} (bot)
-    (bot) edge[loop right] node{\( () \,|\, \bot\)} (bot)
-    ;
+    \draw (v) edge[above] node{\( () \,|\, v\)} (bot);
+    \draw (bot) edge[loop right, out=40, in=320, distance=1.5cm] node{\( () \,|\, \bot\)} (bot);
 \end{tikzpicture}
 \end{document}

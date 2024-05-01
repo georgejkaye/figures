@@ -7,15 +7,15 @@
 
 \begin{document}
 \begin{tikzpicture}[
+        % bezier bounding box=true,
         ->,
         >=stealth,
         node distance=0.25cm,
-        every state/.style={font=\Large, thick, fill=gray!10},
+        every node/.style={font=\scriptsize},
+        every state/.style={font=\normalsize, thick, fill=gray!10},
         initial text=$ $,
-        initial distance=1.5cm,
+        initial distance=0.5cm,
         every initial by arrow/.style={*->},
-        every edge/.append style={},
-        yscale=-1,
         x=20pt,
         y=20pt
     ]
