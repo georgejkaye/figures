@@ -11,9 +11,9 @@
 		\node [style=none] (80) at (-1.75, 1.25) {};
 		\node [style=none] (81) at (-1.25, 1.5) {};
 		\node [style=none] (82) at (-1.25, -1.5) {};
-		\node [style=none] (83) at (0.75, -1.5) {};
-		\node [style=none] (84) at (0.75, 1.5) {};
-		\node [style=none] (85) at (1.25, -0.25) {};
+		\node [style=none] (83) at (1, -1.5) {};
+		\node [style=none] (84) at (1, 1.5) {};
+		\node [style=none] (85) at (1.5, -0.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=tile comb] (84.center)
