@@ -11,7 +11,7 @@
 		\node [style=wire label right] (12) at (1.25, 0) {$\getvar{cod}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=tile \getvar{colour}] (1.center)
+		\draw [style=tile comb] (1.center)
 		to (3.center)
 		to (2.center)
 		to (4.center)
