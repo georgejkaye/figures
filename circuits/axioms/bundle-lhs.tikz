@@ -1,19 +1,17 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (0) at (0.5, 0) {};
 		\node [style=long bundler] (1) at (-1.75, 0) {};
 		\node [style=none] (2) at (-2, 1.25) {};
 		\node [style=none] (3) at (-2, -1.25) {};
 		\node [style=tiny box seq] (4) at (-4.75, 1.25) {$v_0$};
 		\node [style=tiny box seq] (5) at (-4.75, -1.25) {$v_{m-1}$};
-		\node [style=wire label mid] (8) at (-0.25, 0) {$m$};
+		\node [style=wire label left] (8) at (-0.25, 0) {$m$};
 		\node [style=none] (9) at (-2.5, 0.15) {$\vdots$};
-		\node [style=wire label mid] (10) at (-3, 0) {$m$};
+		\node [style=wire label mid] (10) at (-3.25, -0.1) {$m$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (4) to (2.center);
 		\draw [style=wire] (3.center) to (5);
 		\draw [style=wire] (1) to (8);
-		\draw [style=wire] (8) to (0.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

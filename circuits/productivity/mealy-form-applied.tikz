@@ -12,8 +12,8 @@
 		\node [style=port] (57) at (2, -1) {};
 		\node [style=wire label right] (59) at (3.5, -1) {$\getvar{cod}$};
 		\node [style=wire label mid] (62) at (1.75, 1) {$\getvar{delay}$};
-		\node [style=register] (63) at (-1.5, -1) {$\getvar{input}$};
-		\node [style=wire label left] (64) at (-3.25, -1) {$\getvar{dom}$};
+		\node [style=register] (63) at (-2, -1) {$\getvar{input}$};
+		\node [style=wire label left] (64) at (-3.75, -1) {$\getvar{dom}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (47)
