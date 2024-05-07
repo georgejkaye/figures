@@ -3,13 +3,14 @@
 		\node [style=medium square box \getvar{colour}] (0) at (-1, 0) {$\getvar{box}$};
 		\node [style=none] (2) at (-0.5, 0) {};
 		\node [style=register] (4) at (1, 0) {$\getvar{output}$};
-		\node [style=wire label right] (10) at (2.5, 0) {$\getvar{cod}$};
+		\node [style=wire label right] (10) at (2.75, 0) {$\getvar{cod}$};
 		\node [style=wire label left] (11) at (-2.25, 0) {$\getvar{dom}$};
 		\node [style=none] (12) at (-1.5, 0) {};
+		\node [style=none] (13) at (1.25, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (2.center) to (4);
-		\draw [style=wire] (10) to (4);
 		\draw [style=wire] (12.center) to (11);
+		\draw [style=wire] (13.center) to (10);
 	\end{pgfonlayer}
 \end{tikzpicture}

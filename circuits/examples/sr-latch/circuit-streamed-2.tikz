@@ -9,7 +9,7 @@
 		\node [style=none] (6) at (-14, 0.25) {};
 		\node [style=none] (7) at (-20.25, -0.25) {};
 		\node [style=none] (9) at (-19.25, 13) {};
-		\node [style=none] (10) at (49.5, 13) {};
+		\node [style=none] (10) at (47.75, 13) {};
 		\node [style=not] (11) at (-10.75, 0.5) {};
 		\node [style=bproduct] (13) at (-7, 0.25) {};
 		\node [style=none] (14) at (-6.5, 0.75) {};
@@ -311,16 +311,16 @@
 		\node [style=bproduct] (447) at (39.5, 7.5) {};
 		\node [style=bproduct] (448) at (39.5, 7.5) {};
 		\node [style=none] (449) at (23.5, 6.5) {};
-		\node [style=bproduct] (450) at (48.25, 3.25) {};
-		\node [style=bproduct] (451) at (48.25, 1.75) {};
-		\node [style=bproduct] (452) at (48.25, 0) {};
+		\node [style=bproduct] (450) at (46.5, 3) {};
+		\node [style=bproduct] (451) at (46.5, 1.5) {};
+		\node [style=bproduct] (452) at (46.5, -0.25) {};
 		\node [style=none] (453) at (40.25, -2.25) {};
-		\node [style=none] (454) at (49.5, 3.25) {};
+		\node [style=none] (454) at (47.75, 3) {};
 		\node [style=delay] (455) at (39.75, -2.25) {};
 		\node [style=delay] (456) at (39.75, -3) {};
 		\node [style=delay] (457) at (39.75, -4) {};
-		\node [style=none] (458) at (54.25, 1.75) {};
-		\node [style=none] (459) at (54.25, 0) {};
+		\node [style=none] (458) at (52.5, 1.5) {};
+		\node [style=none] (459) at (52.5, -0.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (195)
@@ -685,7 +685,7 @@
 			 to (419.center)
 			 to [in=-75, out=180] (417);
 		\draw [style=wire] (451)
-			 to [in=0, out=120] (432.center)
+			 to [in=0, out=105] (432.center)
 			 to (429.center)
 			 to [in=0, out=-180] (428.center)
 			 to (418.center)
@@ -694,7 +694,7 @@
 		\draw [style=wire] (424)
 			 to [in=180, out=-75] (426.center)
 			 to (433.center)
-			 to [in=120, out=0] (452);
+			 to [in=105, out=0] (452);
 		\draw [style=wire] (424) to (421);
 		\draw [style=wire] (458.center) to (451);
 		\draw [style=wire] (452) to (459.center);
