@@ -1,0 +1,6 @@
+\pgfkeys{%
+    /tikzit,%
+    box/.initial=f,%
+    input1/.initial=\listvar{v},%
+    input2/.initial=\listvar{w}%
+}%

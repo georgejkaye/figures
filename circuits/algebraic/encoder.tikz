@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (0) at (0, 0) {$|\mathsf{enc}_\mathsf{m}|$};
+		\node [style=medium square box seq] (0) at (0, 0) {$\mealytofunc[\mathsf{enc}_\mathsf{m}]$};
 		\node [style=none] (1) at (-2.5, 0) {};
 		\node [style=none] (2) at (2.5, 0) {};
 	\end{pgfonlayer}

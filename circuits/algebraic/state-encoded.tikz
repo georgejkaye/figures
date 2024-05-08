@@ -7,13 +7,13 @@
 		\node [style=medium square box seq] (41) at (4, -0.5) {$\getvar{core}$};
 		\node [style=port] (43) at (3.75, 0) {};
 		\node [style=port] (47) at (4.25, 0) {};
-		\node [style=register] (55) at (-6.25, 0) {$\mathsf{enc}_\mathsf{m}(\getvar{state})$};
+		\node [style=register] (55) at (-6, 0) {$\mathsf{enc}_\mathsf{m}(\getvar{state})$};
 		\node [style=port] (56) at (3.75, -1) {};
 		\node [style=port] (57) at (4.25, -1) {};
 		\node [style=wire label right] (59) at (11.5, -1) {$\getvar{cod}$};
 		\node [style=wire label left] (61) at (-9.25, -1) {$\getvar{dom}$};
 		\node [style=wire label mid] (62) at (4, 1.25) {$\getvar{delay}$};
-		\node [style=none] (63) at (-6.25, 0) {};
+		\node [style=none] (63) at (-6, 0) {};
 		\node [style=medium square box seq] (64) at (8, 0) {$\mealytofunc[\mathsf{enc}_\mathsf{m}]$};
 		\node [style=medium square box seq] (65) at (-0.25, 0) {$\mealytofunc[\mathsf{dec}_\mathsf{m}]$};
 	\end{pgfonlayer}

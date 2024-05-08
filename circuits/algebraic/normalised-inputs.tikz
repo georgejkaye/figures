@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny box seq] (0) at (0, 0.5) {$\getvar{input1}$};
+		\node [style=tiny box seq] (1) at (-1.75, -0.5) {$\getvar{input2}$};
+		\node [style=none] (2) at (1.75, 0.5) {};
+		\node [style=none] (3) at (1.75, -0.5) {};
+		\node [style=medium square box comb] (4) at (2, 0) {$\getvar{box}$};
+		\node [style=wire label right] (5) at (3.25, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (0) to (2.center);
+		\draw [style=wire] (3.center) to (1);
+		\draw [style=wire] (5) to (4);
+	\end{pgfonlayer}
+\end{tikzpicture}

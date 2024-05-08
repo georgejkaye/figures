@@ -1,10 +1,10 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style={medium square box \getvar{colour}}] (0) at (0, 0) {$\getvar{box}$};
-		\node [style=wire label left] (1) at (-1.5, 0) {$\getvar{dom}$};
+		\node [style=wire label left] (1) at (-1.75, 0) {$\getvar{dom}$};
 		\node [style=port] (5) at (-0.25, 0) {};
 		\node [style=port] (6) at (0.25, 0) {};
-		\node [style=wire label right] (7) at (1.5, 0) {$\getvar{cod}$};
+		\node [style=wire label right] (7) at (1.75, 0) {$\getvar{cod}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (7) to (6);
