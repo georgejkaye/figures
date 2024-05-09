@@ -1,0 +1,28 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+\usepackage{amssymb}
+\begin{document}
+\begin{tikzcd}
+    A
+    \arrow{r}{f}
+    \arrow[swap]{d}{g}
+    &
+    B
+    \arrow{d}{h}
+    \arrow[bend left=20]{rdd}{h^\prime}
+    &
+    \\
+    C
+    \arrow[swap]{r}{k}
+    \arrow[swap, bend right=20]{drr}{k^\prime}
+    &
+    D
+    \arrow[dashed]{rd}{u}
+    \arrow[pos=0.125, draw=none]{ul}[description]{\hspace{0.5em}\rotatebox{90}{\scalebox{1.5}{\(\urcorner\)}}}
+    &
+    \\
+    &
+    &
+    Z
+\end{tikzcd}
+\end{document}
