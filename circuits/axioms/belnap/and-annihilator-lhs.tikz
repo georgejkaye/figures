@@ -1,30 +1,31 @@
 \begin{tikzpicture}[circuit logic US]
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=and] (2) at (0, 0) {};
-		\node [style=none] (3) at (-0.5, 0.33) {};
-		\node [style=none] (4) at (-0.5, -0.33) {};
-		\node [style=dangling] (5) at (1.25, 0) {};
-		\node [style=dangling] (8) at (-5.5, 0.33) {};
-		\node [style=waveform] (14) at (-4, -1.25) {$\belnapfalse$};
-		\node [style=none] (15) at (-2.25, -1.75) {};
-		\node [style=none] (17) at (-5, -1.25) {};
-		\node [style=bproduct] (18) at (-3, -1.25) {};
-		\node [style=none] (19) at (-2.5, -0.75) {};
-		\node [style=none] (20) at (-2.5, -0.25) {};
-		\node [style=none] (21) at (-5, -0.25) {};
-		\node [style=none] (22) at (-4, -1.25) {};
+		\node [style=and] (2) at (-0.25, -0.25) {};
+		\node [style=none] (3) at (-0.75, -0.5) {};
+		\node [style=wire label right] (5) at (1, -0.25) {};
+		\node [style=wire label left] (8) at (-4.75, -0.5) {};
+		\node [style=none] (26) at (-1.25, 1) {};
+		\node [style=none] (27) at (-3.75, 1.5) {};
+		\node [style=none] (28) at (-1, 1.5) {};
+		\node [style=none] (29) at (-1.25, 0) {};
+		\node [style=register] (30) at (-3.25, 0.5) {$\mathsf{f}$};
+		\node [style=none] (31) at (-3.75, 0.5) {};
+		\node [style=none] (32) at (-0.75, 0) {};
+		\node [style=none] (33) at (-1, 1) {};
+		\node [style=bproduct] (34) at (-1.75, 0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (2) to (5);
 		\draw [style=wire] (3.center) to (8);
-		\draw [style=wire, bend left] (15.center) to (18);
-		\draw [style=wire] (18)
-			 to [in=-180, out=75] (19.center)
-			 to [bend right=90, looseness=1.50] (20.center)
-			 to (21.center)
-			 to [bend left=270, looseness=1.25] (17.center)
-			 to (22.center);
-		\draw [style=wire] (14) to (18);
-		\draw [style=wire, in=-180, out=0] (15.center) to (4.center);
+		\draw [style=wire] (33.center)
+			 to [bend right=90, looseness=1.75] (28.center)
+			 to (27.center)
+			 to [bend right=90, looseness=1.50] (31.center)
+			 to (34.center)
+			 to [in=-180, out=75, looseness=1.25] (26.center)
+			 to cycle;
+		\draw [style=wire] (32.center)
+			 to (29.center)
+			 to [in=-75, out=-180] (34);
 	\end{pgfonlayer}
 \end{tikzpicture}

@@ -1,0 +1,9 @@
+\pgfkeys{%
+    /tikzit,%
+    box1/.initial=f,%
+    box2/.initial=g,%
+    val/.initial=\listvar{v},%
+    dom/.initial=,%
+    cod/.initial=,%
+    valwidth/.initial=%
+}%
