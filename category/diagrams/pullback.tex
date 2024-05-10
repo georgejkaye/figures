@@ -3,26 +3,26 @@
 \usepackage{amssymb}
 \begin{document}
 \begin{tikzcd}
-    A
-    \arrow{r}{f}
-    \arrow[swap]{d}{g}
+    Z
+    \arrow[dashed]{rd}{u}
+    \arrow[bend left=20]{drr}{k^\prime}
+    \arrow[swap, bend right=20]{ddr}{h^\prime}
     &
-    B
-    \arrow{d}{h}
-    \arrow[bend left=20]{rdd}{h^\prime}
     &
     \\
-    C
-    \arrow[swap]{r}{k}
-    \arrow[swap, bend right=20]{drr}{k^\prime}
     &
     D
-    \arrow[dashed]{rd}{u}
-    \arrow[pos=0.125, draw=none]{ul}[description]{\hspace{0.5em}\rotatebox{90}{\scalebox{1.5}{\(\urcorner\)}}}
+    \arrow[swap]{d}{h}
+    \arrow{r}{k}
+    \arrow[pos=0.125, draw=none]{dr}[description]{\hspace{-0.5em}\rotatebox{270}{\scalebox{1.5}{\(\urcorner\)}}}
     &
+    C
+    \arrow{d}{g}
     \\
     &
+    B
+    \arrow[swap]{r}{f}
     &
-    Z
+    A
 \end{tikzcd}
 \end{document}
