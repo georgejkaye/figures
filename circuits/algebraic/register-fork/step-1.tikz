@@ -1,0 +1,31 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=bproduct] (1) at (-0.25, 0) {};
+		\node [style=none] (2) at (0.25, 0.5) {};
+		\node [style=none] (3) at (0.25, -0.5) {};
+		\node [style=none] (5) at (0.5, 0.5) {};
+		\node [style=none] (6) at (0.5, -0.5) {};
+		\node [style=bproduct] (7) at (-1.25, 0) {};
+		\node [style=none] (8) at (-2, 0.75) {};
+		\node [style=none] (9) at (-2, -0.75) {};
+		\node [style=none] (10) at (-2.25, 0.75) {};
+		\node [style=tiny box seq] (12) at (-2.75, 0.75) {$v$};
+		\node [style=delay] (13) at (-2.9, -0.75) {};
+		\node [style=none] (14) at (-3.75, -0.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (1)
+			 to [in=180, out=75] (2.center)
+			 to (5.center);
+		\draw [style=wire] (6.center)
+			 to (3.center)
+			 to [in=-75, out=-180] (1);
+		\draw [style=wire] (7)
+			 to [in=0, out=105] (8.center)
+			 to (10.center);
+		\draw [style=wire, in=-105, out=0] (9.center) to (7);
+		\draw [style=wire] (7) to (1);
+		\draw [style=wire] (14.center) to (13);
+		\draw [style=wire] (13) to (9.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

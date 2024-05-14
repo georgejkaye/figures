@@ -1,0 +1,41 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny box seq] (12) at (0.75, 1.5) {$v$};
+		\node [style=none] (14) at (-3.25, -1.5) {};
+		\node [style=none] (16) at (1.25, 1.5) {};
+		\node [style=bproduct] (20) at (-1.5, -1.5) {};
+		\node [style=none] (21) at (0.25, 0) {};
+		\node [style=none] (22) at (0.25, -3) {};
+		\node [style=none] (25) at (1.25, -1.5) {};
+		\node [style=bproduct] (29) at (2.25, 0.75) {};
+		\node [style=none] (30) at (1.5, 1.5) {};
+		\node [style=none] (31) at (1.5, 0) {};
+		\node [style=bproduct] (32) at (2.25, -2.25) {};
+		\node [style=none] (33) at (1.5, -1.5) {};
+		\node [style=none] (34) at (1.5, -3) {};
+		\node [style=none] (35) at (3, -2.25) {};
+		\node [style=none] (36) at (3, 0.75) {};
+		\node [style=tiny box seq] (37) at (0.75, -1.5) {$v$};
+		\node [style=delay] (38) at (0.65, 0) {};
+		\node [style=delay] (39) at (0.65, -3) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (16.center)
+			 to (30.center)
+			 to [in=105, out=0] (29);
+		\draw [style=wire] (32)
+			 to [in=0, out=105] (33.center)
+			 to (25.center);
+		\draw [style=wire] (20)
+			 to [in=180, out=75] (21.center)
+			 to (31.center)
+			 to [in=-105, out=0] (29);
+		\draw [style=wire] (20)
+			 to [in=-180, out=-75] (22.center)
+			 to (34.center)
+			 to [in=-105, out=0] (32);
+		\draw [style=wire] (36.center) to (29);
+		\draw [style=wire] (35.center) to (32);
+		\draw [style=wire] (14.center) to (20);
+	\end{pgfonlayer}
+\end{tikzpicture}
