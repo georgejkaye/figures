@@ -1,39 +1,111 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box comb] (0) at (-5.5, 0.25) {$\Delta_{m,n}$};
-		\node [style=wire label left] (2) at (-7.25, 0.25) {$m$};
-		\node [style=none] (5) at (-1.25, 2.25) {};
-		\node [style=none] (6) at (0.5, 0.5) {};
-		\node [style=medium square box seq] (10) at (0.75, 2.25) {$h_0$};
-		\node [style=medium square box seq] (11) at (0.75, 0.5) {$h_1$};
-		\node [style=none] (12) at (0.25, -2) {};
-		\node [style=medium square box seq] (13) at (0.75, -2) {$h_{n-1}$};
-		\node [style=none] (15) at (-1.25, -2) {};
+		\node [style=medium square box comb] (0) at (-9, -0.25) {$\Delta_{m,n}$};
+		\node [style=wire label left] (2) at (-12, -0.25) {$m$};
+		\node [style=none] (5) at (-0.75, 1.75) {};
+		\node [style=none] (6) at (0.5, 0) {};
+		\node [style=medium square box comb] (10) at (0.75, 2.25) {$h_0$};
+		\node [style=medium square box comb] (11) at (0.75, 0.5) {$h_1$};
+		\node [style=none] (12) at (0.25, -2.5) {};
+		\node [style=medium square box comb] (13) at (0.75, -2) {$h_{n-1}$};
+		\node [style=none] (15) at (-1.25, -2.5) {};
 		\node [style=none] (16) at (0.75, -0.6) {\scalebox{0.75}{$\vdots$}};
-		\node [style=none] (25) at (-5, 0.75) {};
-		\node [style=none] (26) at (-5, 0.5) {};
-		\node [style=none] (28) at (-5, -0.25) {};
-		\node [style=none] (29) at (-3.5, 0.75) {};
-		\node [style=none] (30) at (0.5, 2.25) {};
-		\node [style=none] (32) at (-3.5, -0.25) {};
-		\node [style=none] (33) at (-3.75, 0.275) {\scalebox{0.75}{$\vdots$}};
+		\node [style=none] (25) at (-8.5, 0.25) {};
+		\node [style=none] (26) at (-8.5, 0) {};
+		\node [style=none] (28) at (-8.5, -0.75) {};
+		\node [style=none] (29) at (-3.5, 0.25) {};
+		\node [style=none] (30) at (0.5, 1.75) {};
+		\node [style=none] (32) at (-3.5, -0.75) {};
+		\node [style=none] (33) at (-4.25, -0.225) {\scalebox{0.75}{$\vdots$}};
 		\node [style=wire label right] (34) at (2.5, 2.25) {$1$};
 		\node [style=wire label right] (35) at (2.5, 0.5) {$1$};
 		\node [style=wire label right] (36) at (2.5, -2) {$1$};
+		\node [style=register] (37) at (-2.5, 3.25) {$\mathsf{f}$};
+		\node [style=bproduct] (38) at (-1, 3.25) {};
+		\node [style=none] (39) at (-0.5, 3.75) {};
+		\node [style=none] (40) at (-3.25, 4.25) {};
+		\node [style=none] (41) at (-0.25, 4.25) {};
+		\node [style=none] (42) at (-0.5, 2.75) {};
+		\node [style=none] (43) at (-2.5, 3.25) {};
+		\node [style=none] (44) at (-3.25, 3.25) {};
+		\node [style=none] (46) at (-0.25, 3.75) {};
+		\node [style=none] (48) at (-0.5, 2.75) {};
+		\node [style=none] (50) at (-9, 1.75) {};
+		\node [style=none] (51) at (0.5, 2.75) {};
+		\node [style=none] (52) at (-4.25, 1.75) {};
+		\node [style=none] (53) at (0.25, -1.5) {};
+		\node [style=none] (54) at (-1, -1.5) {};
+		\node [style=none] (55) at (0.5, 1) {};
+		\node [style=none] (56) at (-4, 2.5) {};
+		\node [style=none] (57) at (-1.25, 1) {};
+		\node [style=none] (58) at (-4.75, 2.275) {\scalebox{0.75}{$\vdots$}};
+		\node [style=register] (59) at (-6.75, 3) {$\mathsf{f}$};
+		\node [style=bproduct] (60) at (-5.25, 3) {};
+		\node [style=none] (61) at (-4.75, 3.5) {};
+		\node [style=none] (62) at (-7.5, 4) {};
+		\node [style=none] (63) at (-4.5, 4) {};
+		\node [style=none] (65) at (-6.75, 3) {};
+		\node [style=none] (66) at (-7.5, 3) {};
+		\node [style=none] (67) at (-4.5, 3.5) {};
+		\node [style=none] (68) at (-4.75, 2.5) {};
+		\node [style=register] (69) at (-11, 2.25) {$\mathsf{f}$};
+		\node [style=bproduct] (70) at (-9.5, 2.25) {};
+		\node [style=none] (71) at (-9, 2.75) {};
+		\node [style=none] (72) at (-11.75, 3.25) {};
+		\node [style=none] (73) at (-8.75, 3.25) {};
+		\node [style=none] (75) at (-11, 2.25) {};
+		\node [style=none] (76) at (-11.75, 2.25) {};
+		\node [style=none] (77) at (-8.75, 2.75) {};
+		\node [style=medium square box comb] (78) at (-5.5, -0.25) {$g$};
+		\node [style=none] (79) at (-7, -0.225) {\scalebox{0.75}{$\vdots$}};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (2) to (0);
 		\draw [style=wire] (6.center) to (26.center);
 		\draw [style=wire] (28.center)
-		to (32.center)
-		to [in=-180, out=0] (15.center)
-		to (12.center);
+			 to (32.center)
+			 to [in=-180, out=0] (15.center)
+			 to (12.center);
 		\draw [style=wire] (30.center)
-		to (5.center)
-		to [in=0, out=-180, looseness=1.25] (29.center)
-		to (25.center);
+			 to (5.center)
+			 to [in=0, out=-180, looseness=1.25] (29.center)
+			 to (25.center);
 		\draw [style=wire] (36) to (13);
 		\draw [style=wire] (35) to (11);
 		\draw [style=wire] (34) to (10);
+		\draw [style=wire] (38)
+			 to [in=180, out=75] (39.center)
+			 to (46.center)
+			 to [bend right=90, looseness=1.75] (41.center)
+			 to (40.center)
+			 to [bend right=90, looseness=1.50] (44.center)
+			 to (43.center);
+		\draw [style=wire, in=-75, out=180] (42.center) to (38);
+		\draw [style=wire] (38) to (43.center);
+		\draw [style=wire] (51.center) to (48.center);
+		\draw [style=wire] (53.center)
+			 to (54.center)
+			 to [in=0, out=-180, looseness=0.75] (52.center)
+			 to (50.center)
+			 to [in=-75, out=180] (70);
+		\draw [style=wire] (60)
+			 to [in=180, out=-75] (68.center)
+			 to (56.center)
+			 to [in=-180, out=0] (57.center)
+			 to (55.center);
+		\draw [style=wire, in=180, out=75] (60) to (61.center);
+		\draw [style=wire] (61.center) to (67.center);
+		\draw [style=wire, bend right=90, looseness=1.75] (67.center) to (63.center);
+		\draw [style=wire] (63.center) to (62.center);
+		\draw [style=wire, bend right=90, looseness=1.50] (62.center) to (66.center);
+		\draw [style=wire] (66.center) to (65.center);
+		\draw [style=wire] (60) to (65.center);
+		\draw [style=wire, in=180, out=75] (70) to (71.center);
+		\draw [style=wire] (71.center) to (77.center);
+		\draw [style=wire, bend right=90, looseness=1.75] (77.center) to (73.center);
+		\draw [style=wire] (73.center) to (72.center);
+		\draw [style=wire, bend right=90, looseness=1.50] (72.center) to (76.center);
+		\draw [style=wire] (76.center) to (75.center);
+		\draw [style=wire] (70) to (75.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
