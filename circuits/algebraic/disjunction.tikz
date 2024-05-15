@@ -1,7 +1,7 @@
 \begin{tikzpicture}[circuit logic US]
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=or] (0) at (0, 0) {};
-		\node [style=medium square box seq] (1) at (-3, 1) {$f$};
+		\node [style=medium square box \getvar{dcolour}] (1) at (-3, 1) {$f$};
 		\node [style=wire label left] (2) at (-4.25, -0.25) {};
 		\node [style=none] (3) at (-0.5, -0.25) {};
 		\node [style=none] (4) at (-0.5, 0.25) {};
@@ -14,9 +14,9 @@
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (6) to (5.center);
 		\draw [style=wire] (1)
-			 to (7.center)
-			 to [in=-180, out=0] (8.center)
-			 to (4.center);
+		to (7.center)
+		to [in=-180, out=0] (8.center)
+		to (4.center);
 		\draw [style=wire] (3.center) to (2);
 		\draw [style=wire] (9) to (1);
 	\end{pgfonlayer}
