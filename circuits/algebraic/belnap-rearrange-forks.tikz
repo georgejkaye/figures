@@ -20,7 +20,7 @@
 		\node [style=wire label right] (34) at (2.5, 2.25) {$1$};
 		\node [style=wire label right] (35) at (2.5, 0.5) {$1$};
 		\node [style=wire label right] (36) at (2.5, -2) {$1$};
-		\node [style=register] (37) at (-2.5, 3.25) {$\mathsf{f}$};
+		\node [style=register] (37) at (-2.5, 3.25) {$\mathsf{t}$};
 		\node [style=bproduct] (38) at (-1, 3.25) {};
 		\node [style=none] (39) at (-0.5, 3.75) {};
 		\node [style=none] (40) at (-3.25, 4.25) {};
@@ -39,7 +39,7 @@
 		\node [style=none] (56) at (-4, 2.5) {};
 		\node [style=none] (57) at (-1.25, 1) {};
 		\node [style=none] (58) at (-4.75, 2.275) {\scalebox{0.75}{$\vdots$}};
-		\node [style=register] (59) at (-6.75, 3) {$\mathsf{f}$};
+		\node [style=register] (59) at (-6.75, 3) {$\mathsf{t}$};
 		\node [style=bproduct] (60) at (-5.25, 3) {};
 		\node [style=none] (61) at (-4.75, 3.5) {};
 		\node [style=none] (62) at (-7.5, 4) {};
@@ -48,7 +48,7 @@
 		\node [style=none] (66) at (-7.5, 3) {};
 		\node [style=none] (67) at (-4.5, 3.5) {};
 		\node [style=none] (68) at (-4.75, 2.5) {};
-		\node [style=register] (69) at (-11, 2.25) {$\mathsf{f}$};
+		\node [style=register] (69) at (-11, 2.25) {$\mathsf{t}$};
 		\node [style=bproduct] (70) at (-9.5, 2.25) {};
 		\node [style=none] (71) at (-9, 2.75) {};
 		\node [style=none] (72) at (-11.75, 3.25) {};
@@ -63,36 +63,36 @@
 		\draw [style=wire] (2) to (0);
 		\draw [style=wire] (6.center) to (26.center);
 		\draw [style=wire] (28.center)
-			 to (32.center)
-			 to [in=-180, out=0] (15.center)
-			 to (12.center);
+		to (32.center)
+		to [in=-180, out=0] (15.center)
+		to (12.center);
 		\draw [style=wire] (30.center)
-			 to (5.center)
-			 to [in=0, out=-180, looseness=1.25] (29.center)
-			 to (25.center);
+		to (5.center)
+		to [in=0, out=-180, looseness=1.25] (29.center)
+		to (25.center);
 		\draw [style=wire] (36) to (13);
 		\draw [style=wire] (35) to (11);
 		\draw [style=wire] (34) to (10);
 		\draw [style=wire] (38)
-			 to [in=180, out=75] (39.center)
-			 to (46.center)
-			 to [bend right=90, looseness=1.75] (41.center)
-			 to (40.center)
-			 to [bend right=90, looseness=1.50] (44.center)
-			 to (43.center);
+		to [in=180, out=75] (39.center)
+		to (46.center)
+		to [bend right=90, looseness=1.75] (41.center)
+		to (40.center)
+		to [bend right=90, looseness=1.50] (44.center)
+		to (43.center);
 		\draw [style=wire, in=-75, out=180] (42.center) to (38);
 		\draw [style=wire] (38) to (43.center);
 		\draw [style=wire] (51.center) to (48.center);
 		\draw [style=wire] (53.center)
-			 to (54.center)
-			 to [in=0, out=-180, looseness=0.75] (52.center)
-			 to (50.center)
-			 to [in=-75, out=180] (70);
+		to (54.center)
+		to [in=0, out=-180, looseness=0.75] (52.center)
+		to (50.center)
+		to [in=-75, out=180] (70);
 		\draw [style=wire] (60)
-			 to [in=180, out=-75] (68.center)
-			 to (56.center)
-			 to [in=-180, out=0] (57.center)
-			 to (55.center);
+		to [in=180, out=-75] (68.center)
+		to (56.center)
+		to [in=-180, out=0] (57.center)
+		to (55.center);
 		\draw [style=wire, in=180, out=75] (60) to (61.center);
 		\draw [style=wire] (61.center) to (67.center);
 		\draw [style=wire, bend right=90, looseness=1.75] (67.center) to (63.center);
