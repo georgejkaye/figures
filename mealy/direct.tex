@@ -1,13 +1,13 @@
 \documentclass{standalone}
 
 \usepackage{ tikz }
-\usetikzlibrary{automata, positioning, arrows}
+\usetikzlibrary{automata, positioning, arrows, bbox}
 
 \newcommand{\trs}[2]{#1 \,|\, #2}
 
 \begin{document}
 \begin{tikzpicture}[
-        % bezier bounding box=true,
+        bezier bounding box=true,
         ->,
         >=stealth,
         node distance=0.25cm,
