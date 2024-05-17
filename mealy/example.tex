@@ -1,0 +1,35 @@
+\documentclass{standalone}
+
+\usepackage{ tikz }
+\usetikzlibrary{automata, positioning, arrows}
+
+\newcommand{\trs}[2]{#1 \,|\, #2}
+
+\begin{document}
+\begin{tikzpicture}[
+        % bezier bounding box=true,
+        ->,
+        >=stealth,
+        node distance=0.25cm,
+        every node/.style={font=\scriptsize},
+        every state/.style={font=\normalsize, thick, fill=gray!10},
+        initial text=$ $,
+        initial distance=0.5cm,
+        every initial by arrow/.style={*->},
+        x=20pt,
+        y=20pt
+    ]
+    \node[state] (s0) at (0,0) {\(s_0\)};
+    \node[state] (s1) at (3,0) {\(s_1\)};
+
+    \draw (s0) edge[bend left, above] node{\(\trs{\mathsf{t}}{\mathsf{t}}\)} (s1);
+    \draw (s0) edge[out=135, in=225, loop, distance=1cm] node[left]{
+            \(\trs{\mathsf{f}}{\mathsf{f}}\)
+        } (s0);
+
+    \draw (s1) edge[bend left, below] node{\(\trs{\mathsf{t}}{\mathsf{f}}\)} (s0);
+    \draw (s1) edge[out=315, in=45, loop, distance=1cm] node[right]{
+            \(\trs{\mathsf{f}}{\mathsf{t}}\)
+        } (s1);
+\end{tikzpicture}
+\end{document}
