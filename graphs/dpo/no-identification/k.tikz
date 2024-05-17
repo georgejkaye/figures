@@ -5,9 +5,9 @@
 		\node [style=none] (10) at (1.75, -1.5) {};
 		\node [style=none] (11) at (1.75, 1.75) {};
 		\node [style=vertex] (25) at (-0.75, 0) {};
-		\node [style=small label] (53) at (-0.75, 0.75) {$2$};
+		\node [style=small label] (53) at (-0.75, 0.75) {$0$};
 		\node [style=vertex] (60) at (0.75, 0) {};
-		\node [style=small label] (63) at (0.75, 0.75) {$3$};
+		\node [style=small label] (63) at (0.75, 0.75) {$1$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=interface] (9.center)

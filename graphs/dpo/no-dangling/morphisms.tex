@@ -1,0 +1,17 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+\usepackage{tikzit}
+\input{figures/circuits.tikzstyles}
+\input{figures/circuits.tikzdefs}
+
+\begin{document}
+\begin{tikzcd}[column sep = small, row sep = small]
+    \iltikzfig{graphs/dpo/no-dangling/i}
+    &
+    \arrow{l}
+    \iltikzfig{graphs/dpo/no-dangling/l}
+    \arrow{r}
+    &
+    \iltikzfig{graphs/dpo/no-dangling/r}
+\end{tikzcd}
+\end{document}
