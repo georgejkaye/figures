@@ -1,0 +1,52 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium box] (0) at (-2.75, -1.5) {$e_2$};
+		\node [style=none] (2) at (-1.25, -1.5) {};
+		\node [style=bproduct] (5) at (-3.5, 0.75) {};
+		\node [style=none] (18) at (-2, 0) {};
+		\node [style=none] (19) at (-2, 1.5) {};
+		\node [style=bproduct] (20) at (-2.75, 0.75) {};
+		\node [style=none] (22) at (-1.25, 0) {};
+		\node [style=bproduct] (23) at (-0.5, -0.75) {};
+		\node [style=medium box] (25) at (2.75, -1.5) {$e_3$};
+		\node [style=none] (26) at (1.25, -1.5) {};
+		\node [style=bproduct] (27) at (3.5, 0.75) {};
+		\node [style=none] (28) at (2, 0) {};
+		\node [style=none] (29) at (2, 1.5) {};
+		\node [style=bproduct] (30) at (2.75, 0.75) {};
+		\node [style=none] (31) at (1.25, 0) {};
+		\node [style=bproduct] (32) at (0.5, -0.75) {};
+		\node [style=none] (33) at (1, 2.5) {};
+		\node [style=none] (34) at (1, 0.5) {};
+		\node [style=none] (35) at (-1, 2.5) {};
+		\node [style=none] (36) at (-1, 0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (0)
+			 to (2.center)
+			 to [in=-105, out=0] (23);
+		\draw [style=wire] (20)
+			 to [in=180, out=75] (19.center)
+			 to (29.center)
+			 to [in=105, out=0] (30);
+		\draw [style=wire] (20)
+			 to [in=180, out=-75] (18.center)
+			 to (22.center)
+			 to [in=105, out=0] (23);
+		\draw [style=wire] (20) to (5);
+		\draw [style=wire] (25)
+			 to (26.center)
+			 to [in=-75, out=180] (32);
+		\draw [style=wire] (32)
+			 to [in=180, out=75] (31.center)
+			 to (28.center)
+			 to [in=-105, out=0] (30);
+		\draw [style=wire] (30) to (27);
+		\draw [style=wire] (23) to (32);
+		\draw [style=dashed arrow] (34.center)
+			 to (33.center)
+			 to (35.center)
+			 to (36.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}

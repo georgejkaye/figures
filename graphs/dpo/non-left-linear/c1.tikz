@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (4) at (-4.25, 1.25) {};
+		\node [style=none] (9) at (-4.25, -1.75) {};
+		\node [style=none] (10) at (4.25, -1.75) {};
+		\node [style=none] (11) at (4.25, 1.25) {};
+		\node [style=edge] (64) at (2.75, -0.25) {$e_3$};
+		\node [style=vertex] (67) at (-0.75, -0.25) {};
+		\node [style=small label] (68) at (-0.75, 0.5) {$0$};
+		\node [style=edge] (69) at (-2.75, -0.25) {$e_2$};
+		\node [style=vertex] (70) at (0.75, -0.25) {};
+		\node [style=small label] (71) at (0.75, 0.5) {$1$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (9.center)
+			 to (4.center)
+			 to (11.center)
+			 to (10.center)
+			 to cycle;
+		\draw [style=tentacle] (69) to (67);
+		\draw [style=wire] (70) to (64);
+	\end{pgfonlayer}
+\end{tikzpicture}

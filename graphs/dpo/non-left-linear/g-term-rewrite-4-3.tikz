@@ -1,0 +1,20 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium box] (0) at (-1.25, -0.5) {$e_3$};
+		\node [style=medium box] (1) at (-4.5, 0.5) {$e_2$};
+		\node [style=none] (2) at (-2, -0.5) {};
+		\node [style=none] (3) at (-2, 1.5) {};
+		\node [style=bproduct] (4) at (-3.25, 0.5) {};
+		\node [style=bproduct] (5) at (0, 1.5) {};
+		\node [style=medium box] (10) at (-1.25, 1.5) {$e_1$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (0)
+			 to (2.center)
+			 to [in=-75, out=180] (4);
+		\draw [style=wire] (4)
+			 to [in=180, out=75] (3.center)
+			 to (5);
+		\draw [style=wire] (1) to (4);
+	\end{pgfonlayer}
+\end{tikzpicture}
