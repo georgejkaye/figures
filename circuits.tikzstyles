@@ -48,7 +48,7 @@
 \tikzstyle{box}=[fill=neutral, draw=black, shape=rectangle, tikzit category=circuits]
 \tikzstyle{dangling}=[fill=none, draw=none, shape=circle, anchor=east, scale=0.01, tikzit category=string diagram, tikzit fill={rgb,255: red,162; green,76; blue,77}]
 \tikzstyle{label}=[fill=none, draw=none, shape=circle, align=center, inner sep=0, outer sep=0]
-\tikzstyle{small label}=[scale=0.75, fill=none, draw=none, shape=circle, outer sep=0, inner sep=0, anchor=center]
+\tikzstyle{small label}=[scale=1.25, fill=none, draw=none, shape=circle, outer sep=0, inner sep=0, anchor=center]
 \tikzstyle{wire label left}=[scale=1.25, fill=none, draw=none, shape=rectangle, outer sep=0, inner sep=0, anchor=east]
 \tikzstyle{wire label right}=[scale=1.25, fill=none, draw=none, shape=rectangle, outer sep=0, inner sep=0, anchor=west]
 \tikzstyle{wire label mid}=[scale=1.25, fill={\bgcolour}, shape=rectangle, outer sep=0, inner sep=0, shape=circle, minimum size=0]
