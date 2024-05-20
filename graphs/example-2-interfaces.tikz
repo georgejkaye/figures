@@ -44,24 +44,24 @@
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=graph] (4.center)
-			 to (0.center)
-			 to (1.center)
-			 to (2.center)
-			 to cycle;
+		to (0.center)
+		to (1.center)
+		to (2.center)
+		to cycle;
 		\draw [style=tentacle, in=165, out=0] (30) to (12);
 		\draw [style=tentacle, in=15, out=135] (16) to (13);
 		\draw [style=tentacle, in=0, out=-165] (42.center) to (14);
 		\draw [style=interface] (44.center)
-			 to (45.center)
-			 to (55.center)
-			 to (43.center)
-			 to cycle;
+		to (45.center)
+		to (55.center)
+		to (43.center)
+		to cycle;
 		\draw [style=arrow] (59.center) to (60.center);
 		\draw [style=interface] (48.center)
-			 to (49.center)
-			 to (50.center)
-			 to (54.center)
-			 to cycle;
+		to (49.center)
+		to (50.center)
+		to (54.center)
+		to cycle;
 		\draw [style=arrow] (64.center) to (63.center);
 		\draw [style=tentacle, in=180, out=0] (41) to (21);
 		\draw [style=tentacle, in=-120, out=0] (19) to (16);
