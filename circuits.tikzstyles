@@ -7,7 +7,7 @@
 \tikzstyle{none}=[anchor=center]
 \tikzstyle{vertex}=[anchor=center, fill=black, draw=black, shape=circle, minimum size=2.5mm, tikzit category=hypergraph, inner sep=0]
 \tikzstyle{red outline vertex}=[anchor=center, fill=black, draw=red, shape=circle, minimum size=2.5mm, tikzit category=hypergraph, inner sep=0, line width={\stringwidth}]
-\tikzstyle{red vertex}=[anchor=center, fill=red, draw=black, shape=circle, minimum size=2.5mm, tikzit category=hypergraph, inner sep=0, line width={\stringwidth}]
+\tikzstyle{red vertex}=[anchor=center, fill=red, draw=red, shape=circle, minimum size=2.5mm, tikzit category=hypergraph, inner sep=0, line width={\stringwidth}]
 \tikzstyle{edge}=[anchor=center, fill=neutral, draw=black, shape=rectangle, font={\boxsize}, tikzit category=hypergraph, minimum width=8mm, minimum height=8mm, rounded corners=3mm, very thick, anchor=center]
 \tikzstyle{red outline edge}=[anchor=center, fill=neutral, draw=red, shape=rectangle, font={\boxsize}, tikzit category=hypergraph, minimum width=8mm, minimum height=8mm, rounded corners=3mm, very thick, anchor=center]
 \tikzstyle{edge subgraph}=[fill=neutral, draw=black, shape=rectangle, font={\boxsize}, tikzit category=hypergraph, minimum width=8mm, minimum height=8mm, rounded corners=3mm, very thick, dashed]

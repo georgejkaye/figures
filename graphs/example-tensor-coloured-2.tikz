@@ -1,0 +1,105 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-4.75, 5.5) {};
+		\node [style=none] (1) at (-4.75, -4.75) {};
+		\node [style=none] (2) at (3, -4.75) {};
+		\node [style=none] (4) at (3, 5.5) {};
+		\node [style=none] (43) at (-8, 5.25) {};
+		\node [style=none] (44) at (-6, 5.25) {};
+		\node [style=none] (45) at (-6, -4.5) {};
+		\node [style=vertex] (46) at (-7, 3.5) {};
+		\node [style=red vertex] (47) at (-7, 1.75) {};
+		\node [style=none] (48) at (4.25, 4) {};
+		\node [style=none] (49) at (6.25, 4) {};
+		\node [style=none] (50) at (6.25, -4) {};
+		\node [style=red vertex] (51) at (5.25, 2.5) {};
+		\node [style=vertex] (52) at (5.25, 0.75) {};
+		\node [style=none] (54) at (4.25, -4) {};
+		\node [style=none] (55) at (-8, -4.5) {};
+		\node [style=small label] (56) at (-7, 4.25) {$0$};
+		\node [style=small label] (57) at (-7, 2.5) {$1$};
+		\node [style=none] (59) at (-5, 0) {};
+		\node [style=none] (60) at (-5.75, 0) {};
+		\node [style=small label] (61) at (5.25, 3.25) {$2$};
+		\node [style=small label] (62) at (5.25, 1.5) {$3$};
+		\node [style=none] (63) at (4, 0) {};
+		\node [style=none] (64) at (3.25, 0) {};
+		\node [style=red vertex] (70) at (5.25, -1) {};
+		\node [style=small label] (71) at (5.25, -0.25) {$4$};
+		\node [style=red vertex] (89) at (-7, 0) {};
+		\node [style=vertex] (90) at (-7, -1.75) {};
+		\node [style=red vertex] (91) at (-7, -3.5) {};
+		\node [style=small label] (92) at (-7, 0.75) {$5$};
+		\node [style=small label] (93) at (-7, -1) {$6$};
+		\node [style=small label] (94) at (-7, -2.75) {$7$};
+		\node [style=vertex] (95) at (5.25, -2.75) {};
+		\node [style=small label] (96) at (5.25, -2) {$8$};
+		\node [style=edge] (137) at (-1.5, 2.5) {$\phi$};
+		\node [style=red vertex] (138) at (-3.75, 1.75) {};
+		\node [style=red vertex] (139) at (0.5, 3) {};
+		\node [style=none] (140) at (-2.25, 2) {};
+		\node [style=none] (141) at (-2.25, 3) {};
+		\node [style=none] (142) at (-1.25, 2.5) {};
+		\node [style=edge] (143) at (0.25, 1.25) {$\psi$};
+		\node [style=none] (144) at (-0.25, 1.25) {};
+		\node [style=vertex] (145) at (-3.75, 3.5) {};
+		\node [style=none] (146) at (0.75, 1.5) {};
+		\node [style=vertex] (147) at (2, 0.5) {};
+		\node [style=red vertex] (148) at (-0.5, 4) {};
+		\node [style=none] (149) at (0.75, 1) {};
+		\node [style=red vertex] (150) at (2, 2.25) {};
+		\node [style=small label] (151) at (-3.75, 4.25) {$0$};
+		\node [style=small label] (152) at (-3.75, 2.5) {$1$};
+		\node [style=small label] (153) at (-0.5, 4.75) {$3$};
+		\node [style=small label] (154) at (2, 3) {$2$};
+		\node [style=small label] (155) at (2, 1.25) {$4$};
+		\node [style=edge] (156) at (-1.5, -1) {$\phi$};
+		\node [style=port] (157) at (-1.75, -0.5) {};
+		\node [style=port] (158) at (-1, -1) {};
+		\node [style=vertex] (159) at (-3.75, -1.75) {};
+		\node [style=edge] (160) at (-0.5, -2.75) {$\psi$};
+		\node [style=vertex] (161) at (2, -1.5) {};
+		\node [style=port] (162) at (0, -2.5) {};
+		\node [style=port] (163) at (-1, -2.75) {};
+		\node [style=red vertex] (164) at (-3.75, 0) {};
+		\node [style=red vertex] (165) at (-3.75, -3.5) {};
+		\node [style=none] (166) at (-1.75, -1.5) {};
+		\node [style=small label] (167) at (-3.75, -1) {$6$};
+		\node [style=small label] (168) at (2, -0.75) {$8$};
+		\node [style=small label] (169) at (-3.75, 0.75) {$7$};
+		\node [style=small label] (170) at (-3.75, -2.75) {$5$};
+		\node [style=port] (171) at (0, -3) {};
+		\node [style=red vertex] (172) at (1.5, -3.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (4.center)
+			 to (0.center)
+			 to (1.center)
+			 to (2.center)
+			 to cycle;
+		\draw [style=interface] (44.center)
+			 to (45.center)
+			 to (55.center)
+			 to (43.center)
+			 to cycle;
+		\draw [style=arrow] (59.center) to (60.center);
+		\draw [style=interface] (48.center)
+			 to (49.center)
+			 to (50.center)
+			 to (54.center)
+			 to cycle;
+		\draw [style=arrow] (64.center) to (63.center);
+		\draw [style=red tentacle, in=180, out=30, looseness=0.75] (142.center) to (139);
+		\draw [style=red tentacle, in=165, out=45, looseness=0.75] (138) to (141.center);
+		\draw [style=red tentacle, in=180, out=-30, looseness=0.75] (138) to (144.center);
+		\draw [style=tentacle, in=0, out=180] (140.center) to (145);
+		\draw [style=tentacle, in=180, out=0] (149.center) to (147);
+		\draw [style=red tentacle, in=0, out=-165] (150) to (146.center);
+		\draw [style=red tentacle, in=165, out=0] (164) to (157);
+		\draw [style=tentacle, in=15, out=135] (161) to (158);
+		\draw [style=tentacle, in=0, out=-165] (166.center) to (159);
+		\draw [style=red tentacle, in=180, out=0] (165) to (163);
+		\draw [style=tentacle, in=-120, out=0] (162) to (161);
+		\draw [style=red tentacle, in=0, out=165] (172) to (171);
+	\end{pgfonlayer}
+\end{tikzpicture}

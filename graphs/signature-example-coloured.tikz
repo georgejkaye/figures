@@ -22,10 +22,10 @@
 			 to (10.center)
 			 to cycle;
 		\draw [style=tentacle, in=-180, out=-165, looseness=2.00] (5.center) to (0);
-		\draw [style=tentacle, in=-150, out=180, looseness=2.25] (3.center) to (13);
-		\draw [style=tentacle, in=0, out=0, looseness=1.50] (6.center) to (13);
-		\draw [style=tentacle, in=150, out=-180, looseness=1.25] (4.center) to (13);
+		\draw [style=red tentacle, in=-150, out=180, looseness=2.25] (3.center) to (13);
+		\draw [style=red tentacle, in=0, out=0, looseness=1.50] (6.center) to (13);
+		\draw [style=red tentacle, in=150, out=-180, looseness=1.25] (4.center) to (13);
 		\draw [style=tentacle, in=-15, out=0] (7.center) to (0);
-		\draw [style=tentacle, in=-15, out=15, looseness=2.50] (8.center) to (13);
+		\draw [style=red tentacle, in=-15, out=15, looseness=2.50] (8.center) to (13);
 	\end{pgfonlayer}
 \end{tikzpicture}
