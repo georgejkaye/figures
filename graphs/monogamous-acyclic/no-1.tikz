@@ -1,0 +1,69 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-2.5, 2.25) {};
+		\node [style=none] (1) at (5.5, 2.25) {};
+		\node [style=none] (2) at (5.5, -2.25) {};
+		\node [style=none] (3) at (-2.5, -2.25) {};
+		\node [style=edge] (4) at (0, 0) {$e$};
+		\node [style=vertex] (7) at (4.5, -0.25) {};
+		\node [style=none] (10) at (-5, 2.25) {};
+		\node [style=none] (11) at (-3.5, 2.25) {};
+		\node [style=none] (12) at (-3.5, -2.25) {};
+		\node [style=none] (13) at (-5, -2.25) {};
+		\node [style=vertex] (14) at (-4.25, -0.25) {};
+		\node [style=none] (15) at (-2, -0.25) {};
+		\node [style=none] (16) at (-3.75, -0.25) {};
+		\node [style=none] (17) at (8, 2.25) {};
+		\node [style=none] (18) at (6.5, 2.25) {};
+		\node [style=none] (19) at (6.5, -2.25) {};
+		\node [style=none] (20) at (8, -2.25) {};
+		\node [style=vertex] (21) at (7.25, -0.25) {};
+		\node [style=none] (22) at (5, -0.25) {};
+		\node [style=none] (23) at (6.75, -0.25) {};
+		\node [style=vertex] (27) at (1.5, -1.5) {};
+		\node [style=vertex] (28) at (-4.25, -1.5) {};
+		\node [style=none] (29) at (1, -1.5) {};
+		\node [style=none] (30) at (-3.75, -1.5) {};
+		\node [style=none] (35) at (-0.25, 0.25) {};
+		\node [style=none] (36) at (-0.25, -0.25) {};
+		\node [style=vertex] (43) at (-1.5, -0.25) {};
+		\node [style=vertex] (50) at (7.25, -1.5) {};
+		\node [style=none] (51) at (2, -1.5) {};
+		\node [style=none] (52) at (6.75, -1.5) {};
+		\node [style=edge] (53) at (3, 0) {$e$};
+		\node [style=none] (54) at (3.25, 0.25) {};
+		\node [style=none] (55) at (3.25, -0.25) {};
+		\node [style=vertex] (58) at (1.5, 0) {};
+		\node [style=vertex] (59) at (1.5, 1.5) {};
+		\node [style=vertex] (60) at (7.25, 1) {};
+		\node [style=none] (61) at (5, 0.25) {};
+		\node [style=none] (62) at (6.75, 1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (1.center)
+			 to (2.center)
+			 to (3.center)
+			 to (0.center)
+			 to cycle;
+		\draw [style=interface] (10.center)
+			 to (13.center)
+			 to (12.center)
+			 to (11.center)
+			 to cycle;
+		\draw [style=arrow] (15.center) to (16.center);
+		\draw [style=interface] (17.center)
+			 to (20.center)
+			 to (19.center)
+			 to (18.center)
+			 to cycle;
+		\draw [style=arrow] (22.center) to (23.center);
+		\draw [style=arrow] (29.center) to (30.center);
+		\draw [style=wire, in=-180, out=0, looseness=0.75] (43) to (36.center);
+		\draw [style=arrow] (51.center) to (52.center);
+		\draw [style=tentacle] (4) to (53);
+		\draw [style=tentacle, in=-180, out=165, looseness=2.75] (35.center) to (59);
+		\draw [style=tentacle, in=0, out=15, looseness=2.50] (54.center) to (59);
+		\draw [style=tentacle] (55.center) to (7);
+		\draw [style=arrow] (61.center) to (62.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
