@@ -1,0 +1,24 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+\usepackage{amssymb}
+\begin{document}
+\begin{tikzcd}
+    &
+    N
+    \\
+    &
+    L
+    \arrow[dashed]{u}{u}
+    &
+    \\
+    FX
+    \arrow[bend left]{uur}{\psi_X}
+    \arrow{ur}{\phi_X}
+    \arrow[swap]{rr}{Ff}
+    &
+    &
+    FY
+    \arrow[swap,bend right]{uul}{\psi_Y}
+    \arrow[swap]{ul}{\phi_Y}
+\end{tikzcd}
+\end{document}
