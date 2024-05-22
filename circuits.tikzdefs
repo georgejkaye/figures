@@ -5,7 +5,7 @@
 \definecolor{neutral}{HTML}{f8f8f2}
 \definecolor{unit}{HTML}{b9b9b9}
 \newcommand{\thickness}{0.5mm}
-\newcommand{\stringwidth}{0.4mm}
+\newcommand{\stringwidth}{0.2mm}
 \newcommand{\mediumwidth}{7.5mm}
 \newcommand{\smallwidth}{5mm}
 \newcommand{\tinywidth}{5.75mm}
