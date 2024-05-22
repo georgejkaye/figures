@@ -1,0 +1,54 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, -0.75) {};
+		\node [style=none] (2) at (-0.75, 0) {};
+		\node [style=none] (3) at (0, 0.75) {};
+		\node [style=none] (4) at (-1.75, 0) {};
+		\node [style=tiny box white] (5) at (1.25, 0.77) {$e$};
+		\node [style=none] (7) at (0.015, 0.765) {};
+		\node [style=none] (8) at (0, -0.765) {};
+		\node [style=none] (9) at (4.25, -0.765) {};
+		\node [style=none] (10) at (1, -0.5) {};
+		\node [style=none] (11) at (1, -1) {};
+		\node [style=none] (12) at (1.5, -1) {};
+		\node [style=none] (13) at (1.5, -0.5) {};
+		\node [style=none] (14) at (2.5, 0.75) {};
+		\node [style=none] (15) at (3.25, 0) {};
+		\node [style=none] (17) at (3.25, 1.5) {};
+		\node [style=none] (19) at (3.265, 1.515) {};
+		\node [style=none] (20) at (3.25, -0.015) {};
+		\node [style=bproduct] (21) at (4.5, 1.515) {};
+		\node [style=none] (22) at (4.265, -0.75) {};
+		\node [style=none] (23) at (5.015, -0.375) {};
+		\node [style=none] (24) at (4.265, -0.015) {};
+		\node [style=none] (25) at (4.25, -0.015) {};
+		\node [style=none] (26) at (5.765, -0.375) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=lafont fork] (0.center)
+			 to (3.center)
+			 to (2.center)
+			 to cycle;
+		\draw [style=wire] (4.center) to (2.center);
+		\draw [style=wire] (7.center) to (5);
+		\draw [style=wire] (9.center) to (8.center);
+		\draw [style=lafont fork] (12.center)
+			 to (13.center)
+			 to (10.center)
+			 to (11.center)
+			 to cycle;
+		\draw [style=wire] (14.center) to (5);
+		\draw [style=lafont fork] (15.center)
+			 to (17.center)
+			 to (14.center)
+			 to cycle;
+		\draw [style=wire] (21) to (19.center);
+		\draw [style=lafont fork] (22.center)
+			 to (24.center)
+			 to (23.center)
+			 to cycle;
+		\draw [style=wire] (20.center) to (25.center);
+		\draw [style=wire] (22.center) to (9.center);
+		\draw [style=wire] (26.center) to (23.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
