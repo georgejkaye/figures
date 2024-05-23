@@ -1,0 +1,40 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box white] (0) at (0, -0.5) {$f$};
+		\node [style=none] (1) at (-1.25, 0) {};
+		\node [style=none] (2) at (-0.5, -1) {};
+		\node [style=none] (3) at (0.5, -0.5) {};
+		\node [style=none] (5) at (1.75, 0) {};
+		\node [style=none] (6) at (2, 0) {};
+		\node [style=none] (7) at (2, 0.75) {};
+		\node [style=none] (8) at (-1.25, 0.75) {};
+		\node [style=none] (9) at (-0.5, 0) {};
+		\node [style=wire label left] (10) at (-2.5, -1) {};
+		\node [style=bproduct] (11) at (1.25, -0.5) {};
+		\node [style=none] (12) at (1.75, -1) {};
+		\node [style=wire label right] (13) at (3.25, -1) {};
+		\node [style=none] (14) at (-2, 1.25) {};
+		\node [style=none] (15) at (-2, -1.75) {};
+		\node [style=none] (16) at (2.75, 1.25) {};
+		\node [style=none] (17) at (2.75, -1.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (11)
+			 to [in=180, out=75] (5.center)
+			 to (6.center)
+			 to [bend right=90, looseness=1.75] (7.center)
+			 to (8.center)
+			 to [bend right=90, looseness=1.75] (1.center)
+			 to (9.center);
+		\draw [style=wire] (10) to (2.center);
+		\draw [style=wire] (11)
+			 to [in=-180, out=-75] (12.center)
+			 to (13);
+		\draw [style=wire] (11) to (3.center);
+		\draw [style=traced] (14.center)
+			 to (15.center)
+			 to (17.center)
+			 to (16.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,57 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box white] (0) at (-0.5, -1) {$g$};
+		\node [style=none] (1) at (-5, 0.5) {};
+		\node [style=none] (3) at (0, -1) {};
+		\node [style=none] (5) at (1.25, -0.5) {};
+		\node [style=none] (6) at (1.5, -0.5) {};
+		\node [style=none] (7) at (1.5, 1.25) {};
+		\node [style=none] (8) at (-5, 1.25) {};
+		\node [style=none] (9) at (-3.5, 0.5) {};
+		\node [style=bproduct] (11) at (0.75, -1) {};
+		\node [style=none] (12) at (1.25, -1.5) {};
+		\node [style=wire label right] (13) at (3.25, -1.5) {};
+		\node [style=medium square box white] (14) at (-3.25, 0) {$f$};
+		\node [style=wire label left] (15) at (-6.25, -1) {};
+		\node [style=none] (16) at (-4.25, -0.5) {};
+		\node [style=bproduct] (17) at (-4.75, -1) {};
+		\node [style=none] (18) at (-4.25, -1.5) {};
+		\node [style=none] (19) at (-3.5, -0.5) {};
+		\node [style=none] (20) at (-2.75, 0) {};
+		\node [style=none] (21) at (-2.5, 0) {};
+		\node [style=none] (22) at (-0.75, -1.5) {};
+		\node [style=none] (23) at (-1.25, -0.5) {};
+		\node [style=none] (24) at (-0.75, -0.5) {};
+		\node [style=none] (25) at (-5.75, 1.75) {};
+		\node [style=none] (26) at (-5.75, -2.25) {};
+		\node [style=none] (27) at (2.75, -2.25) {};
+		\node [style=none] (28) at (2.75, 1.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (11)
+			 to [in=180, out=75] (5.center)
+			 to (6.center)
+			 to [bend right=90, looseness=1.75] (7.center)
+			 to (8.center)
+			 to [bend right=90, looseness=1.75] (1.center)
+			 to (9.center);
+		\draw [style=wire] (11)
+			 to [in=-180, out=-75] (12.center)
+			 to (13);
+		\draw [style=wire] (11) to (3.center);
+		\draw [style=wire] (19.center)
+			 to (16.center)
+			 to [in=75, out=180] (17);
+		\draw [style=wire, in=-180, out=-75] (17) to (18.center);
+		\draw [style=wire] (17) to (15);
+		\draw [style=wire] (24.center)
+			 to (23.center)
+			 to [in=0, out=180, looseness=1.25] (21.center)
+			 to (20.center);
+		\draw [style=wire] (22.center) to (18.center);
+		\draw [style=traced] (26.center) to (27.center);
+		\draw [style=traced] (27.center) to (28.center);
+		\draw [style=traced] (28.center) to (25.center);
+		\draw [style=traced] (25.center) to (26.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
