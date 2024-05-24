@@ -5,29 +5,29 @@
 \input{figures/circuits.tikzdefs}
 
 \begin{document}
-\begin{tikzcd}[column sep = small, row sep = small, bezier bounding box=true]
-    \iltikzfig{graphs/dpo/unfolding/l}
+\begin{tikzcd}[column sep = small, row sep = small]
+    \iltikzfig{graphs/circuits/unroll/l}
     \arrow{d}
     &
     \arrow{l}
-    \iltikzfig{graphs/dpo/unfolding/k}
+    \iltikzfig{graphs/circuits/unroll/k}
     \arrow{d}
     \arrow{r}
     &
-    \iltikzfig{graphs/dpo/unfolding/r}
+    \iltikzfig{graphs/circuits/unroll/r}
     \arrow{d}
     \\
-    \iltikzfig{graphs/dpo/unfolding/g}
+    \iltikzfig{graphs/circuits/unroll/g}
     &
     \arrow{l}
-    \iltikzfig{graphs/dpo/unfolding/c-1}
+    \iltikzfig{graphs/circuits/unroll/c}
     \arrow{r}
     &
-    \iltikzfig{graphs/dpo/unfolding/h-1}
+    \iltikzfig{graphs/circuits/unroll/h}
     \\
     &
     \arrow{ul}
-    \iltikzfig{graphs/dpo/unfolding/j-1}
+    \iltikzfig{graphs/circuits/unroll/j}
     \arrow{u}
     \arrow{ur}
 \end{tikzcd}

@@ -1,0 +1,19 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (26) at (-1, 2.5) {};
+		\node [style=none] (27) at (1, 2.5) {};
+		\node [style=none] (28) at (1, -2.25) {};
+		\node [style=none] (29) at (-1, -2.25) {};
+		\node [style=vertex] (30) at (0, 1) {};
+		\node [style=label] (31) at (0, 1.75) {$2$};
+		\node [style=vertex] (32) at (0, -1) {};
+		\node [style=label] (33) at (0, -0.25) {$3$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=interface] (29.center)
+			 to (28.center)
+			 to (27.center)
+			 to (26.center)
+			 to [in=90, out=-90] cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}

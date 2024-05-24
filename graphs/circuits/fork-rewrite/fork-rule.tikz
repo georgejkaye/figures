@@ -1,0 +1,55 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (4) at (-6.75, 1.5) {};
+		\node [style=none] (5) at (-6.75, -1.5) {};
+		\node [style=none] (6) at (-2, -1.5) {};
+		\node [style=none] (7) at (-2, 1.5) {};
+		\node [style=edge] (8) at (-5, 0) {$v$};
+		\node [style=vertex] (9) at (-3, 0) {};
+		\node [style=label] (10) at (-3, 0.75) {$0\ 1$};
+		\node [style=none] (13) at (-1.75, 0) {};
+		\node [style=none] (14) at (-1, 0) {};
+		\node [style=none] (15) at (-0.75, 2.25) {};
+		\node [style=none] (16) at (-0.75, -2.25) {};
+		\node [style=none] (17) at (1.25, -2.25) {};
+		\node [style=none] (18) at (1.25, 2.25) {};
+		\node [style=vertex] (20) at (0.25, 0.75) {};
+		\node [style=vertex] (21) at (0.25, -1.25) {};
+		\node [style=label] (22) at (0.25, 1.5) {$0$};
+		\node [style=label] (23) at (0.25, -0.5) {$1$};
+		\node [style=none] (24) at (7.5, 2.75) {};
+		\node [style=none] (25) at (7.5, -2.75) {};
+		\node [style=none] (26) at (2.5, -2.75) {};
+		\node [style=none] (27) at (2.5, 2.75) {};
+		\node [style=edge] (28) at (4.25, 1) {$v$};
+		\node [style=vertex] (29) at (6.25, 1) {};
+		\node [style=label] (30) at (6.25, 1.75) {$0$};
+		\node [style=none] (31) at (2.25, 0) {};
+		\node [style=none] (32) at (1.5, 0) {};
+		\node [style=edge] (33) at (4.25, -1.25) {$v$};
+		\node [style=vertex] (34) at (6.25, -1.25) {};
+		\node [style=label] (35) at (6.25, -0.5) {$1$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=graph] (5.center)
+			 to (6.center)
+			 to (7.center)
+			 to (4.center)
+			 to cycle;
+		\draw [style=tentacle] (9) to (8);
+		\draw [style=arrow] (13.center) to (14.center);
+		\draw [style=interface] (16.center)
+			 to (17.center)
+			 to (18.center)
+			 to (15.center)
+			 to cycle;
+		\draw [style=graph] (25.center)
+			 to (26.center)
+			 to (27.center)
+			 to (24.center)
+			 to cycle;
+		\draw [style=tentacle] (29) to (28);
+		\draw [style=arrow] (31.center) to (32.center);
+		\draw [style=tentacle] (34) to (33);
+	\end{pgfonlayer}
+\end{tikzpicture}

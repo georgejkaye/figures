@@ -1,0 +1,14 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny box seq] (0) at (-0.25, 1) {$v$};
+		\node [style=not] (1) at (1.25, -0.5) {};
+		\node [style=wire label right] (2) at (2.75, -0.5) {};
+		\node [style=bproduct] (6) at (1.25, 1) {};
+		\node [style=tiny box seq] (7) at (-0.25, -0.5) {$v$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (1) to (2);
+		\draw [style=wire] (6) to (0);
+		\draw [style=wire] (7) to (1);
+	\end{pgfonlayer}
+\end{tikzpicture}

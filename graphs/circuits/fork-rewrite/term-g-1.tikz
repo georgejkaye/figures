@@ -1,0 +1,20 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=tiny box seq] (0) at (-2, 0) {$v$};
+		\node [style=not] (1) at (1, -0.5) {};
+		\node [style=wire label right] (2) at (2.5, -0.5) {};
+		\node [style=bproduct] (3) at (-0.75, 0) {};
+		\node [style=none] (4) at (-0.25, 0.5) {};
+		\node [style=none] (5) at (-0.25, -0.5) {};
+		\node [style=bproduct] (6) at (0, 0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (1) to (2);
+		\draw [style=wire] (0) to (3);
+		\draw [style=wire, in=180, out=75] (3) to (4.center);
+		\draw [style=wire] (6) to (4.center);
+		\draw [style=wire] (3)
+			 to [in=180, out=-75] (5.center)
+			 to (1);
+	\end{pgfonlayer}
+\end{tikzpicture}
