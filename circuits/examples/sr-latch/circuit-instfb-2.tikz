@@ -9,7 +9,7 @@
 		\node [style=none] (6) at (-14, 0.25) {};
 		\node [style=none] (7) at (-21.25, -0.25) {};
 		\node [style=none] (9) at (-21.25, 3.5) {};
-		\node [style=none] (10) at (39.75, 3.75) {};
+		\node [style=none] (10) at (40.5, 3.75) {};
 		\node [style=not] (11) at (-10.75, 0.5) {};
 		\node [style=bproduct] (13) at (-7, 0.25) {};
 		\node [style=none] (14) at (-6.5, 0.75) {};
@@ -25,18 +25,13 @@
 		\node [style=none] (27) at (-2, 0.75) {};
 		\node [style=none] (28) at (-1.25, 0) {};
 		\node [style=none] (29) at (-1.25, 0.75) {};
-		\node [style=none] (30) at (-0.75, 0.75) {};
 		\node [style=bproduct] (31) at (0, 0) {};
 		\node [style=bproduct] (32) at (0, -1) {};
-		\node [style=none] (34) at (-7.25, 2) {};
+		\node [style=none] (34) at (-7.75, 2) {};
 		\node [style=none] (35) at (-9.25, 2) {};
 		\node [style=none] (36) at (-9.25, 0.5) {};
 		\node [style=bproduct] (37) at (-17.5, 2.25) {};
 		\node [style=none] (42) at (-7.75, 0.25) {};
-		\node [style=none] (43) at (-16.75, -1.5) {};
-		\node [style=none] (44) at (-16.75, 2.75) {};
-		\node [style=none] (45) at (-0.75, 2.75) {};
-		\node [style=none] (46) at (-0.75, -1.5) {};
 		\node [style=delay] (47) at (-20.75, -0.25) {};
 		\node [style=none] (48) at (-16.25, 1.25) {};
 		\node [style=none] (49) at (-15, 2) {};
@@ -44,8 +39,7 @@
 		\node [style=none] (51) at (-15, 0.75) {};
 		\node [style=none] (107) at (2.75, -4.75) {};
 		\node [style=none] (118) at (2.75, -5.75) {};
-		\node [style=none] (126) at (39.75, -2.25) {};
-		\node [style=bproduct] (146) at (0, 0.75) {};
+		\node [style=none] (126) at (40.5, -2.25) {};
 		\node [style=none] (148) at (2.75, -3.75) {};
 		\node [style=none] (150) at (-23.75, -1.25) {};
 		\node [style=none] (161) at (-23.75, -2.25) {};
@@ -55,10 +49,8 @@
 		\node [style=bproduct] (165) at (0.75, -3) {};
 		\node [style=bproduct] (166) at (0.75, -4) {};
 		\node [style=none] (167) at (2.75, -0.25) {};
-		\node [style=none] (172) at (3, 0.75) {};
-		\node [style=none] (173) at (-0.75, 2) {};
-		\node [style=none] (174) at (19, 0.5) {};
-		\node [style=none] (175) at (22.75, -0.75) {};
+		\node [style=none] (172) at (0.5, 2) {};
+		\node [style=none] (175) at (20.25, 0.5) {};
 		\node [style=bproduct] (186) at (23.5, -5.5) {};
 		\node [style=bproduct] (187) at (23.5, -6.5) {};
 		\node [style=bproduct] (188) at (23.5, -7.5) {};
@@ -94,29 +86,14 @@
 		\node [style=not] (219) at (15.5, -2) {};
 		\node [style=none] (220) at (13.75, -1.75) {};
 		\node [style=none] (221) at (13.75, -2.25) {};
-		\node [style=bproduct] (222) at (17, -2) {};
-		\node [style=none] (223) at (17.5, -1.5) {};
-		\node [style=none] (224) at (17.5, -2.5) {};
-		\node [style=none] (225) at (17.75, -1.5) {};
-		\node [style=none] (226) at (17.75, -0.75) {};
-		\node [style=none] (227) at (18.5, -1.5) {};
-		\node [style=none] (228) at (18.5, -0.75) {};
-		\node [style=none] (229) at (19, -0.75) {};
-		\node [style=bproduct] (230) at (19.75, -1.5) {};
-		\node [style=bproduct] (231) at (19.75, -2.5) {};
 		\node [style=none] (232) at (12, 0.5) {};
 		\node [style=none] (233) at (10.5, 0.5) {};
 		\node [style=none] (234) at (10.5, -1) {};
 		\node [style=none] (236) at (12, -1.25) {};
-		\node [style=none] (237) at (3, -3) {};
-		\node [style=none] (238) at (3, 1.25) {};
-		\node [style=none] (239) at (19, 1.25) {};
-		\node [style=none] (240) at (19, -3) {};
-		\node [style=none] (241) at (3.5, -0.25) {};
+		\node [style=none] (241) at (3.25, -0.25) {};
 		\node [style=none] (242) at (4.75, 0.5) {};
-		\node [style=none] (243) at (3.5, 0.75) {};
+		\node [style=none] (243) at (3, 2) {};
 		\node [style=none] (244) at (4.75, -0.75) {};
-		\node [style=bproduct] (245) at (19.75, -0.75) {};
 		\node [style=or] (248) at (27.25, -2.5) {};
 		\node [style=none] (249) at (26.75, -2.25) {};
 		\node [style=none] (250) at (26.75, -2.75) {};
@@ -132,52 +109,51 @@
 		\node [style=not] (260) at (35.25, -3.5) {};
 		\node [style=none] (261) at (33.5, -3.25) {};
 		\node [style=none] (262) at (33.5, -3.75) {};
-		\node [style=bproduct] (263) at (36.75, -3.5) {};
-		\node [style=none] (264) at (37.25, -3) {};
-		\node [style=none] (265) at (37.25, -4) {};
-		\node [style=none] (266) at (37.5, -3) {};
-		\node [style=none] (267) at (37.5, -2.25) {};
-		\node [style=none] (268) at (38.25, -3) {};
-		\node [style=none] (269) at (38.25, -2.25) {};
-		\node [style=none] (270) at (38.75, -2.25) {};
 		\node [style=none] (271) at (42.75, -3) {};
 		\node [style=none] (272) at (42.75, -4) {};
 		\node [style=none] (273) at (31.75, -1) {};
 		\node [style=none] (274) at (30.25, -1) {};
 		\node [style=none] (275) at (30.25, -2.5) {};
 		\node [style=none] (277) at (31.75, -2.75) {};
-		\node [style=none] (278) at (22.75, -4.5) {};
-		\node [style=none] (279) at (22.75, -0.25) {};
-		\node [style=none] (280) at (38.75, -0.25) {};
-		\node [style=none] (281) at (38.75, -4.5) {};
 		\node [style=none] (282) at (22.5, -2) {};
 		\node [style=none] (283) at (24.5, -1) {};
-		\node [style=none] (284) at (23.25, -0.75) {};
+		\node [style=none] (284) at (22.5, 0.5) {};
 		\node [style=none] (285) at (24.5, -2.25) {};
-		\node [style=none] (288) at (38.75, -1) {};
-		\node [style=bproduct] (289) at (39.5, -1) {};
-		\node [style=bproduct] (290) at (39.5, -1) {};
-		\node [style=none] (291) at (23.5, -2) {};
+		\node [style=bproduct] (289) at (40.75, -1) {};
+		\node [style=none] (291) at (23.25, -2) {};
+		\node [style=none] (292) at (-0.75, 0.75) {};
+		\node [style=none] (293) at (-0.75, 2) {};
+		\node [style=none] (294) at (0.5, 0.75) {};
+		\node [style=bproduct] (296) at (1, 0.75) {};
+		\node [style=bproduct] (297) at (17, -2) {};
+		\node [style=none] (298) at (17.5, -1.5) {};
+		\node [style=none] (299) at (17.5, -2.5) {};
+		\node [style=none] (300) at (17.75, -1.5) {};
+		\node [style=none] (301) at (17.75, -0.75) {};
+		\node [style=none] (302) at (18.5, -1.5) {};
+		\node [style=none] (303) at (18.5, -0.75) {};
+		\node [style=bproduct] (304) at (19.75, -1.5) {};
+		\node [style=bproduct] (305) at (19.75, -2.5) {};
+		\node [style=none] (308) at (19, -0.75) {};
+		\node [style=none] (309) at (19, 0.5) {};
+		\node [style=none] (310) at (20.25, -0.75) {};
+		\node [style=bproduct] (311) at (20.75, -0.75) {};
+		\node [style=none] (312) at (40, -1) {};
+		\node [style=bproduct] (313) at (36.75, -3.5) {};
+		\node [style=none] (314) at (37.25, -3) {};
+		\node [style=none] (315) at (37.25, -4) {};
+		\node [style=none] (316) at (37.5, -3) {};
+		\node [style=none] (317) at (37.5, -2.25) {};
+		\node [style=none] (318) at (38.25, -3) {};
+		\node [style=none] (319) at (38.25, -2.25) {};
+		\node [style=none] (322) at (38.75, -2.25) {};
+		\node [style=none] (323) at (38.75, -1) {};
+		\node [style=none] (324) at (39.75, -2.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (195)
 			 to [in=-180, out=-75] (189.center)
 			 to (187);
-		\draw [style=tile comb] (43.center)
-			 to (46.center)
-			 to (45.center)
-			 to (44.center)
-			 to cycle;
-		\draw [style=tile comb] (237.center)
-			 to (240.center)
-			 to (239.center)
-			 to (238.center)
-			 to cycle;
-		\draw [style=tile comb] (278.center)
-			 to (281.center)
-			 to (280.center)
-			 to (279.center)
-			 to cycle;
 		\draw [style=wire] (1.center)
 			 to (3.center)
 			 to [in=0, out=180] (6.center)
@@ -190,18 +166,17 @@
 			 to [in=0, out=-180] (48.center)
 			 to (206.center)
 			 to [in=75, out=180] (203);
-		\draw [style=wire] (47)
-			 to (7.center)
-			 to [bend left=90, looseness=1.75] (9.center)
-			 to (10.center)
-			 to [bend left=90, looseness=1.50] (126.center)
-			 to (270.center)
-			 to (269.center)
-			 to [in=0, out=-180] (266.center)
-			 to [in=0, out=180] (264.center)
-			 to [in=75, out=180] (263);
-		\draw [style=wire] (146)
-			 to (30.center)
+		\draw [style=wire] (47) to (7.center);
+		\draw [style=wire, bend left=90, looseness=1.75] (7.center) to (9.center);
+		\draw [style=wire] (9.center) to (10.center);
+		\draw [style=wire, bend left=90, looseness=1.50] (10.center) to (126.center);
+		\draw [style=wire] (209.center)
+			 to (211.center)
+			 to [in=0, out=180] (212.center)
+			 to (244.center)
+			 to [in=0, out=-180] (243.center)
+			 to (172.center)
+			 to [in=0, out=-180] (292.center)
 			 to (29.center)
 			 to [in=0, out=-180] (26.center)
 			 to [in=0, out=180] (24.center)
@@ -212,13 +187,9 @@
 			 to (51.center)
 			 to [in=0, out=-180] (50.center)
 			 to (37);
-		\draw [style=wire] (209.center)
-			 to (211.center)
-			 to [in=0, out=180] (212.center)
-			 to (244.center)
-			 to [in=0, out=-180] (243.center)
-			 to (172.center)
-			 to [in=0, out=180] (173.center)
+		\draw (296)
+			 to (294.center)
+			 to [in=0, out=-180] (293.center)
 			 to (34.center)
 			 to [in=0, out=180] (36.center)
 			 to (11);
@@ -251,13 +222,14 @@
 		\draw [style=wire] (166)
 			 to [in=-180, out=75] (163.center)
 			 to (221.center);
-		\draw [style=wire] (250.center)
-			 to (252.center)
-			 to [in=0, out=180] (253.center)
-			 to (285.center)
-			 to [in=0, out=-180] (284.center)
-			 to (175.center)
-			 to [in=0, out=-180] (174.center)
+		\draw [style=wire] (250.center) to (252.center);
+		\draw [style=wire, in=0, out=180] (252.center) to (253.center);
+		\draw [style=wire] (253.center) to (285.center);
+		\draw [style=wire, in=0, out=-180] (285.center) to (284.center);
+		\draw [style=wire] (284.center) to (175.center);
+		\draw (311)
+			 to (310.center)
+			 to [in=0, out=-180] (309.center)
 			 to (232.center)
 			 to [in=0, out=180] (234.center)
 			 to (214);
@@ -297,26 +269,12 @@
 		\draw [style=wire] (47) to (203);
 		\draw [style=wire] (150.center) to (204);
 		\draw [style=wire] (205) to (161.center);
-		\draw [style=wire] (245)
-			 to (229.center)
-			 to (228.center)
-			 to [in=0, out=-180] (225.center)
-			 to [in=0, out=180] (223.center)
-			 to [in=75, out=180] (222);
 		\draw [style=wire] (207) to (214);
 		\draw [style=wire] (220.center)
 			 to (217.center)
 			 to [in=-75, out=180] (215);
-		\draw [style=wire] (230)
-			 to (227.center)
-			 to [in=0, out=-180] (226.center)
-			 to (216.center)
-			 to [in=75, out=180] (215);
+		\draw [style=wire, in=75, out=180] (216.center) to (215);
 		\draw [style=wire] (218) to (219);
-		\draw [style=wire] (231)
-			 to (224.center)
-			 to [in=-75, out=180] (222);
-		\draw [style=wire] (222) to (219);
 		\draw [style=wire] (249.center) to (251.center);
 		\draw [style=wire, in=0, out=180] (251.center) to (254.center);
 		\draw [style=wire] (256)
@@ -326,24 +284,46 @@
 			 to [in=0, out=-180] (291.center)
 			 to (282.center)
 			 to [in=75, out=180] (194);
-		\draw [style=wire] (255)
-			 to (275.center)
-			 to [in=180, out=0] (273.center)
-			 to (288.center)
-			 to (290);
+		\draw [style=wire] (255) to (275.center);
+		\draw [style=wire, in=180, out=0] (275.center) to (273.center);
 		\draw [style=wire] (248) to (255);
 		\draw [style=wire] (261.center)
 			 to (258.center)
 			 to [in=-75, out=180] (256);
 		\draw [style=wire] (271.center)
-			 to (268.center)
-			 to [in=0, out=-180] (267.center)
+			 to (318.center)
+			 to [in=0, out=-180] (317.center)
 			 to (257.center)
 			 to [in=75, out=180] (256);
 		\draw [style=wire] (259) to (260);
+		\draw [style=wire, in=0, out=-180] (303.center) to (300.center);
+		\draw [style=wire, in=0, out=180] (300.center) to (298.center);
+		\draw [style=wire, in=75, out=180] (298.center) to (297);
+		\draw [style=wire] (304) to (302.center);
+		\draw [style=wire, in=0, out=-180] (302.center) to (301.center);
+		\draw [style=wire] (305)
+			 to (299.center)
+			 to [in=-75, out=180] (297);
+		\draw [style=wire] (308.center) to (303.center);
+		\draw [style=wire] (301.center) to (216.center);
+		\draw [style=wire] (297) to (219);
+		\draw [style=wire, in=0, out=-180] (175.center) to (308.center);
+		\draw (289)
+			 to (312.center)
+			 to [in=0, out=-180] (322.center)
+			 to (319.center)
+			 to [in=0, out=-180] (316.center)
+			 to [in=0, out=180] (314.center)
+			 to [in=75, out=180] (313);
+		\draw [style=wire, in=0, out=180] (316.center) to (314.center);
+		\draw [style=wire, in=-75, out=180] (315.center) to (313);
+		\draw [style=wire, in=0, out=-180] (324.center) to (323.center);
+		\draw [style=wire] (322.center) to (319.center);
 		\draw [style=wire] (272.center)
-			 to (265.center)
-			 to [in=-75, out=180] (263);
-		\draw [style=wire] (263) to (260);
+			 to (315.center)
+			 to [in=-75, out=180] (313);
+		\draw [style=wire] (273.center) to (323.center);
+		\draw [style=wire] (313) to (260);
+		\draw (324.center) to (126.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

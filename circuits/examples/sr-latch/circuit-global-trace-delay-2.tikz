@@ -36,7 +36,7 @@
 		\node [style=none] (39) at (9.5, 1.75) {};
 		\node [style=none] (40) at (-7.5, 1.75) {};
 		\node [style=none] (42) at (1.5, -0.75) {};
-		\node [style=register] (47) at (-7, -0.25) {};
+		\node [style=delay] (47) at (-7, -0.25) {};
 		\node [style=none] (48) at (-6.25, -0.25) {};
 		\node [style=none] (49) at (-5, 0.75) {};
 		\node [style=none] (50) at (-6.25, 0.75) {};
@@ -50,53 +50,53 @@
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (1.center)
-			 to (3.center)
-			 to [in=0, out=180] (6.center)
-			 to (8.center);
+		to (3.center)
+		to [in=0, out=180] (6.center)
+		to (8.center);
 		\draw [style=wire] (13) to (42.center);
 		\draw [style=wire, in=0, out=-180] (42.center) to (35.center);
 		\draw [style=wire] (35.center) to (49.center);
 		\draw [style=wire, in=0, out=-180] (49.center) to (48.center);
 		\draw [style=wire] (48.center) to (47);
 		\draw [style=wire] (47)
-			 to (7.center)
-			 to [bend left=90, looseness=1.75] (9.center)
-			 to (10.center)
-			 to [bend left=90, looseness=1.50] (58.center)
-			 to (54.center)
-			 to [in=0, out=-180] (53.center)
-			 to (34.center)
-			 to [in=0, out=180] (36.center)
-			 to (11);
+		to (7.center)
+		to [bend left=90, looseness=1.75] (9.center)
+		to (10.center)
+		to [bend left=90, looseness=1.50] (58.center)
+		to (54.center)
+		to [in=0, out=-180] (53.center)
+		to (34.center)
+		to [in=0, out=180] (36.center)
+		to (11);
 		\draw [style=wire] (2.center)
-			 to (4.center)
-			 to [in=0, out=180] (5.center)
-			 to (51.center)
-			 to [in=0, out=-180] (50.center)
-			 to (37.center)
-			 to [bend left=90, looseness=1.75] (40.center)
-			 to (39.center)
-			 to [bend left=90, looseness=1.75] (55.center)
-			 to (57.center)
-			 to [in=0, out=-180, looseness=0.75] (52.center)
-			 to (29.center)
-			 to [in=0, out=-180] (26.center)
-			 to [in=0, out=180] (24.center)
-			 to [in=75, out=180] (23);
+		to (4.center)
+		to [in=0, out=180] (5.center)
+		to (51.center)
+		to [in=0, out=-180] (50.center)
+		to (37.center)
+		to [bend left=90, looseness=1.75] (40.center)
+		to (39.center)
+		to [bend left=90, looseness=1.75] (55.center)
+		to (57.center)
+		to [in=0, out=-180, looseness=0.75] (52.center)
+		to (29.center)
+		to [in=0, out=-180] (26.center)
+		to [in=0, out=180] (24.center)
+		to [in=75, out=180] (23);
 		\draw [style=wire] (0) to (11);
 		\draw [style=wire] (19.center)
-			 to (15.center)
-			 to [in=-75, out=180] (13);
+		to (15.center)
+		to [in=-75, out=180] (13);
 		\draw [style=wire] (31.center)
-			 to (28.center)
-			 to [in=0, out=-180] (27.center)
-			 to (14.center)
-			 to [in=75, out=180] (13);
+		to (28.center)
+		to [in=0, out=-180] (27.center)
+		to (14.center)
+		to [in=75, out=180] (13);
 		\draw [style=wire] (16) to (17);
 		\draw [style=wire] (21.center) to (20.center);
 		\draw [style=wire] (32.center)
-			 to (25.center)
-			 to [in=-75, out=180] (23);
+		to (25.center)
+		to [in=-75, out=180] (23);
 		\draw [style=wire] (23) to (17);
 	\end{pgfonlayer}
 \end{tikzpicture}
