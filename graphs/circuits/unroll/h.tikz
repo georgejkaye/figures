@@ -1,4 +1,4 @@
-\begin{tikzpicture}
+\begin{tikzpicture}[bezier bounding box=true]
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (4) at (-10.25, 5) {};
 		\node [style=none] (5) at (-10.25, -4.25) {};
