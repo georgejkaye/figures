@@ -30,7 +30,7 @@
 		\draw [style=tentacle, in=-15, out=180, looseness=1.25] (22.center) to (13);
 		\draw [style=tentacle, in=0, out=-180, looseness=0.75] (23.center) to (9);
 		\draw [style=tentacle, in=0, out=0, looseness=2.50] (25.center) to (24);
-		\draw [style=tentacle, in=180, out=180, looseness=2.75] (21.center) to (24);
+		\draw [style=red tentacle, in=180, out=180, looseness=2.75] (21.center) to (24);
 		\draw [style=tentacle, in=-180, out=0] (26.center) to (17);
 		\draw [style=tentacle, in=180, out=-15] (27.center) to (12);
 	\end{pgfonlayer}

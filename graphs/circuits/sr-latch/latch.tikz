@@ -37,11 +37,11 @@
 		\draw [style=tentacle] (5) to (2);
 		\draw [style=tentacle, in=150, out=0] (5) to (7.center);
 		\draw [style=tentacle, in=-135, out=0] (10) to (8.center);
-		\draw [style=tentacle, in=150, out=180, looseness=1.25] (12.center) to (14.center);
+		\draw [style=red tentacle, in=150, out=180, looseness=1.25] (12.center) to (14.center);
 		\draw [style=tentacle, in=-150, out=0] (16) to (15.center);
 		\draw [style=tentacle] (19) to (9);
 		\draw [style=tentacle] (19) to (18);
 		\draw [style=tentacle] (18) to (20);
-		\draw [style=tentacle, in=0, out=45, looseness=0.75] (20) to (12.center);
+		\draw [style=red tentacle, in=0, out=45, looseness=0.75] (20) to (12.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
