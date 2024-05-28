@@ -1,0 +1,17 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+\usepackage{tikzit}
+\input{figures/circuits.tikzstyles}
+\input{figures/circuits.tikzdefs}
+
+\begin{document}
+\begin{tikzcd}[column sep = small, row sep = small]
+    \iltikzfig{graphs/circuits/join/l}
+    &
+    \arrow{l}
+    \iltikzfig{graphs/circuits/join/k}
+    \arrow{r}
+    &
+    \iltikzfig{graphs/circuits/join/r}
+\end{tikzcd}
+\end{document}

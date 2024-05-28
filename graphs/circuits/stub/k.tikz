@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (15) at (-1, 1.25) {};
+		\node [style=none] (16) at (-1, -1.25) {};
+		\node [style=none] (17) at (1, -1.25) {};
+		\node [style=none] (18) at (1, 1.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=interface] (16.center)
+			 to (17.center)
+			 to (18.center)
+			 to (15.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}
