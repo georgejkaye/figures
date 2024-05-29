@@ -60,7 +60,7 @@
 		\node [style=edge] (74) at (-7.75, -4.25) {$\delta$};
 		\node [style=vertex] (75) at (-5.5, -4.25) {};
 		\node [style=vertex] (76) at (-5.5, -2.25) {};
-		\node [style=edge] (77) at (-7.75, -2.25) {$\mathsf{f}$};
+		\node [style=edge] (77) at (-7.75, -2.25) {$\mathsf{t}$};
 		\node [style=edge] (78) at (-3.5, -3.25) {$\nabla$};
 		\node [style=none] (79) at (-3.75, -3.5) {};
 		\node [style=none] (80) at (-3.75, -3) {};
@@ -69,7 +69,7 @@
 		\node [style=edge] (83) at (6, -6) {$\delta$};
 		\node [style=vertex] (84) at (8.25, -6) {};
 		\node [style=vertex] (85) at (8.25, -4) {};
-		\node [style=edge] (86) at (6, -4) {$\mathsf{t}$};
+		\node [style=edge] (86) at (6, -4) {$\mathsf{f}$};
 		\node [style=edge] (87) at (10.25, -5) {$\nabla$};
 		\node [style=none] (88) at (10, -5.25) {};
 		\node [style=none] (89) at (10, -4.75) {};
@@ -77,17 +77,17 @@
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=graph] (24.center)
-			 to (22.center)
-			 to (23.center)
-			 to (25.center)
-			 to cycle;
+		to (22.center)
+		to (23.center)
+		to (25.center)
+		to cycle;
 		\draw [style=tentacle] (0) to (1);
 		\draw [style=tentacle] (19) to (9);
 		\draw [style=tentacle] (19) to (18);
 		\draw [style=tentacle] (18) to (20);
 		\draw [style=tentacle] (55)
-			 to [in=0, out=45, looseness=1.50] (26.center)
-			 to [in=165, out=-180, looseness=1.50] (2);
+		to [in=0, out=45, looseness=1.50] (26.center)
+		to [in=165, out=-180, looseness=1.50] (2);
 		\draw [style=tentacle] (4) to (1);
 		\draw [style=tentacle] (2) to (27);
 		\draw [style=tentacle, in=-135, out=0] (27) to (31.center);

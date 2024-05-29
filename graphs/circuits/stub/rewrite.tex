@@ -1,0 +1,34 @@
+\documentclass{standalone}
+\usepackage{tikz-cd}
+\usepackage{tikzit}
+\input{figures/circuits.tikzstyles}
+\input{figures/circuits.tikzdefs}
+
+\begin{document}
+\begin{tikzcd}[column sep = small, row sep = small]
+    \iltikzfig{graphs/circuits/stub/l}
+    \arrow{d}
+    &
+    \arrow{l}
+    \iltikzfig{graphs/circuits/stub/k}
+    \arrow{d}
+    \arrow{r}
+    &
+    \iltikzfig{graphs/circuits/stub/r}
+    \arrow{d}
+    \\
+    \iltikzfig{graphs/circuits/stub/g}
+    &
+    \arrow{l}
+    \iltikzfig{graphs/circuits/stub/r}
+    \arrow{r}
+    &
+    \iltikzfig{graphs/circuits/stub/r}
+    \\
+    &
+    \arrow{ul}
+    \iltikzfig{graphs/circuits/stub/j}
+    \arrow[draw=red]{u}
+    \arrow[draw=red]{ur}
+\end{tikzcd}
+\end{document}

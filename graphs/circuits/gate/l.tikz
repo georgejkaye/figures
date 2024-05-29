@@ -1,9 +1,9 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (24) at (6, 2.5) {};
-		\node [style=none] (25) at (6, -2.75) {};
-		\node [style=none] (26) at (-2, -2.75) {};
-		\node [style=none] (27) at (-2, 2.5) {};
+		\node [style=none] (24) at (6, 3) {};
+		\node [style=none] (25) at (6, -3.25) {};
+		\node [style=none] (26) at (-2.5, -3.25) {};
+		\node [style=none] (27) at (-2.5, 3) {};
 		\node [style=edge] (28) at (-0.5, 1.5) {$v_0$};
 		\node [style=vertex] (29) at (1.5, 1.5) {};
 		\node [style=label] (30) at (5, 0.75) {$0$};
@@ -13,7 +13,7 @@
 		\node [style=none] (37) at (3, 0.25) {};
 		\node [style=none] (38) at (3, -0.25) {};
 		\node [style=vertex] (39) at (5, 0) {};
-		\node [style=none] (40) at (-0.5, 0.25) {$\vdots$};
+		\node [style=none] (40) at (-0.5, 0) {$\vdots$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=graph] (25.center)
