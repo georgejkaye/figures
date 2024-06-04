@@ -2,36 +2,45 @@
 \usepackage{tikz-cd}
 \usepackage{stmaryrd}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \input{../../macros/circuits}
 \input{../../macros/streams}
 \input{../../macros/sets}
 \input{../../macros/letters}
 \begin{document}
-    \begin{tikzcd}[column sep=large]
-        \streami
-        \arrow[swap]{dd}{\streamtomealyi}
-        \arrow[<->]{rr}{\cong}
-        &
-        &
-        \scircsigmai
-        \\
-        &
-        \scircsigma
-        \arrow{ul}{\circuittostream{\interpretation}}
-        \arrow{dl}{\circuittomealy{\interpretation}}
-        \arrow{ur}{/ \approx}
-        \arrow{r}{/ \mce}
-        \arrow[swap]{dr}{/ \sim}
-        &
-        \scircsigmae
-        \arrow[<->]{u}{\cong}
-        \\
-        \mealyi
-        \arrow[bend left=60]{uu}{\mealytostream}
-        \arrow[bend right=60, swap]{ur}{\mealytocircuiti}
-        &
-        &
-        \scircsigmaobs
-        \arrow[<->]{u}{\cong}
-    \end{tikzcd}
+\begin{tikzcd}[column sep=large]
+    \streami
+    \arrow[swap]{dd}{\streamtomealyi}
+    \arrow[<->, bend left]{drr}{\cong}
+    &
+    \funci
+    \arrow{l}{\functostreami}
+    &
+    \\
+    &
+    \ccircsigma
+    \arrow[hookrightarrow]{d}
+    \arrow{u}
+    &
+    \scircsigmai
+    \\
+    \mealyi
+    \arrow[bend left=60]{uu}{\mealytostream}
+    \arrow[bend right=60, swap]{r}{\mealytocircuiti}
+    &
+    \scircsigma
+    \arrow{uul}{\circuittostream{\interpretation}}
+    \arrow{l}{\circuittomealy{\interpretation}}
+    \arrow{ur}{/ \approx}
+    \arrow{r}{/ \mce}
+    \arrow[swap]{dr}{/ \sim}
+    &
+    \scircsigmae
+    \arrow[<->]{u}{\cong}
+    \\
+    &
+    &
+    \scircsigmaobs
+    \arrow[<->]{u}{\cong}
+\end{tikzcd}
 \end{document}
