@@ -14,19 +14,47 @@
 
 
 \begin{document}
-    \begin{tikzcd}[column sep = large]
-        \ccomon \arrow{d} \arrow{r}{\comonoidtofrob}
-        &
-        \frob \arrow{d}\arrow{dr}{\frobtohyp{\Sigma}}
-        \\
-        \stmc{\Sigma} + \ccomon \arrow{r}{\tracedandcomonoidtofrob{\Sigma}}
-        &
-        \smc{\Sigma} + \frob \arrow{r}{\termandfrobtohypsigma}
-        &
-        \cspdhyp
-        \\
-        \stmc{\Sigma} \arrow{u}\arrow{ur}[swap]{\tracedtosymandfrob{\Sigma}}
-        &
-        \smc{\Sigma} \arrow{u}\arrow{ur}[swap]{\termtohypsigma}
-    \end{tikzcd}
+\begin{tikzcd}[column sep=0.6em]
+    \smcsigma
+    \arrow[hookrightarrow]{r}
+    \arrow{dd}{\termtohypsigma}
+    &
+    \stmcsigma
+    \arrow[hookrightarrow]{r}
+    \arrow[swap]{ddd}{\termandfrobtohypsigma \circ \tracedtosymandfrobsigma}
+    &
+    \stmcsigma + \ccomon
+    \arrow[hookrightarrow]{r}
+    \arrow[bend right=60, swap, start anchor={[xshift=-0.75em]}, end anchor={[xshift=-0.75em]}]{dd}{\termandfrobtohypsigma \circ \tracedtosymandfrobsigma}
+    &
+    \smcsigma + \frob
+    \arrow[bend left=75, swap, start anchor={[yshift=0.6em]}, end anchor={[yshift=-1em]}]{ddd}{\termandfrobtohypsigma}
+    \\
+    &
+    &
+    \ccomon
+    \arrow[hookrightarrow]{u}
+    \arrow{d}{\frobtohypsigma \circ \comonoidtofrob}
+    \arrow{r}{\comonoidtofrob}
+    &
+    \frob
+    \arrow{dd}{\frobtohypsigma}
+    \arrow[hookrightarrow]{u}
+    \\
+    \macspdhyp
+    \arrow[bend right, hookrightarrow, end anchor={[yshift=0.6em]}]{dr}
+    &
+    &
+    \plmcspdhyp
+    \arrow[bend right, hookrightarrow, end anchor={[yshift=0.6em]}]{dr}
+    &
+    &
+    \\
+    &
+    \pmcspdhyp
+    \arrow[bend right, hookrightarrow, start anchor={[yshift=0.5em]}]{ur}
+    &
+    &
+    \cspdhyp
+\end{tikzcd}
 \end{document}
