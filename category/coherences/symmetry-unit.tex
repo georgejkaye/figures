@@ -2,17 +2,17 @@
 \usepackage{ tikz-cd }
 
 \begin{document}
-    \begin{tikzcd}
-        A \tensor I
-        \arrow{rr}{\swap{A}{I}}
-        \arrow{rd}{\rightunitor{A}}
-        &
-        &
-        I \tensor A
-        \arrow{dl}{\leftunitor{B}}
-        \\
-        &
-        A
-        &
-    \end{tikzcd}
+\begin{tikzcd}
+    A \tensor I
+    \arrow{rr}{\swap{A}{I}}
+    \arrow[swap]{rd}{\rightunitor{A}}
+    &
+    &
+    I \tensor A
+    \arrow{dl}{\leftunitor{B}}
+    \\
+    &
+    A
+    &
+\end{tikzcd}
 \end{document}
