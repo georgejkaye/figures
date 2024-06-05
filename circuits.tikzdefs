@@ -1,5 +1,6 @@
 % \usepackage{stmaryrd}
 \usetikzlibrary{circuits.logic.US, patterns, shapes}
+\definecolor{palered}{HTML}{ff4747}
 \definecolor{comb}{HTML}{ddf1fb}
 \definecolor{seq}{HTML}{6ae4a3}
 \definecolor{neutral}{HTML}{f8f8f2}
