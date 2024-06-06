@@ -14,19 +14,19 @@
 		\node [style=wire label right] (14) at (4.5, -0.5) {$\getvar{cod}$};
 		\node [style=medium square box white] (15) at (2.25, -0.5) {$\getvar{box3}$};
 		\node [style=none] (16) at (-3.75, 2) {};
-		\node [style=none] (17) at (-3.75, -1.5) {};
-		\node [style=none] (18) at (4, -1.5) {};
+		\node [style=none] (17) at (-3.75, -1.75) {};
+		\node [style=none] (18) at (4, -1.75) {};
 		\node [style=none] (19) at (4, 2) {};
 		\node [style=wire label mid] (20) at (0, 1.5) {$\getvar{trace}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (8)
-		to (10.center)
-		to [bend right=90, looseness=1.50] (7.center)
-		to (20.center)
-		to (6.center)
-		to [bend right=90, looseness=1.50] (5.center)
-		to (2);
+			 to (10.center)
+			 to [bend right=90, looseness=1.50] (7.center)
+			 to (20.center)
+			 to (6.center)
+			 to [bend right=90, looseness=1.50] (5.center)
+			 to (2);
 		\draw [style=wire] (3) to (12);
 		\draw [style=wire] (4) to (12);
 		\draw [style=wire] (13) to (15);
