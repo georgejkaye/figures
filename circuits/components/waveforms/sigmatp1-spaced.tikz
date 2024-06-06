@@ -2,8 +2,8 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=waveform] (11) at (-0.25, 0) {$\overline{v} :: \overline{\underline{w}}$};
 		\node [style=none] (15) at (0, 0) {};
-		\node [style=wire label left] (17) at (-2.75, 0) {$n$};
-		\node [style=wire label right] (18) at (2.25, 0) {$n$};
+		\node [style=wire label left] (17) at (-3, 0) {$n$};
+		\node [style=wire label right] (18) at (2.75, 0) {$n$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (15.center) to (18);

@@ -2,27 +2,30 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box comb] (10) at (0, 0) {$\hat{F}$};
 		\node [style=none] (17) at (-0.75, 0.25) {};
-		\node [style=none] (18) at (0.75, 0.25) {};
 		\node [style=none] (19) at (-0.75, -0.6) {};
-		\node [style=none] (20) at (0.75, 0.6) {};
-		\node [style=wire label left] (23) at (-1.5, -0.75) {$\getvar{dom}$};
-		\node [style=wire label left] (24) at (-1.5, 0.25) {$\getvar{delay}$};
-		\node [style=wire label right] (25) at (1.5, 0.75) {$\getvar{trace}$};
-		\node [style=wire label right] (26) at (1.5, 0.25) {$\getvar{delay}$};
+		\node [style=wire label left] (23) at (-2.25, -1) {$\getvar{dom}$};
+		\node [style=wire label left] (24) at (-2.25, 0.5) {$\getvar{delay}$};
 		\node [style=none] (27) at (-0.75, -0.25) {};
-		\node [style=wire label left] (29) at (-1.5, -0.25) {$\getvar{values}$};
-		\node [style=none] (30) at (0.75, -0.6) {};
-		\node [style=wire label right] (32) at (1.5, -0.75) {$\getvar{cod}$};
+		\node [style=wire label left] (29) at (-2.25, -0.25) {$\getvar{values}$};
 		\node [style=none] (33) at (-0.75, 0.6) {};
-		\node [style=wire label left] (34) at (-1.5, 0.75) {$\getvar{trace}$};
+		\node [style=wire label left] (34) at (-2.25, 1.25) {$\getvar{trace}$};
+		\node [style=none] (35) at (0.75, 0.25) {};
+		\node [style=none] (36) at (0.75, -0.6) {};
+		\node [style=wire label right] (37) at (2.25, -1) {$\getvar{cod}$};
+		\node [style=wire label right] (38) at (2.25, 0.5) {$\getvar{delay}$};
+		\node [style=none] (39) at (0.75, -0.25) {};
+		\node [style=wire label right] (40) at (2.25, -0.25) {$\getvar{values}$};
+		\node [style=none] (41) at (0.75, 0.6) {};
+		\node [style=wire label right] (42) at (2.25, 1.25) {$\getvar{trace}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire] (29) to (27.center);
-		\draw [style=wire] (24) to (17.center);
+		\draw [style=wire, in=180, out=0] (29) to (27.center);
+		\draw [style=wire, in=180, out=0, looseness=0.75] (24) to (17.center);
 		\draw [style=wire, in=180, out=0] (23) to (19.center);
-		\draw [style=wire, in=-180, out=0] (20.center) to (25);
-		\draw [style=wire] (26) to (18.center);
-		\draw [style=wire, in=-180, out=0] (30.center) to (32);
 		\draw [style=wire, in=180, out=0] (34) to (33.center);
+		\draw [style=wire, in=0, out=180] (40) to (39.center);
+		\draw [style=wire, in=0, out=180, looseness=0.75] (38) to (35.center);
+		\draw [style=wire, in=0, out=180] (37) to (36.center);
+		\draw [style=wire, in=0, out=180] (42) to (41.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
