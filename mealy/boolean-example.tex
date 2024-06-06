@@ -22,12 +22,12 @@
     \node[state, initial below] (s0) at (0,0) {\(s_0\)};
     \node[state] (s1) at (3,0) {\(s_1\)};
 
-    \draw (s0) edge[bend left, below] node{\(\trs{\mathsf{f}}{\mathsf{t}}\)} (s1);
+    \draw (s0) edge[bend left, above] node{\(\trs{\mathsf{f}}{\mathsf{t}}\)} (s1);
     \draw (s0) edge[out=135, in=225, loop, distance=1cm] node[left]{
             \(\trs{\mathsf{t}}{\mathsf{f}}\)
         } (s0);
 
-    \draw (s1) edge[bend left, above] node{\(\trs{\mathsf{t}}{\mathsf{t}}\)} (s0);
+    \draw (s1) edge[bend left, below] node{\(\trs{\mathsf{t}}{\mathsf{t}}\)} (s0);
     \draw (s1) edge[out=315, in=45, loop, distance=1cm] node[right]{
             \(\trs{\mathsf{f}}{\mathsf{f}}\)
         } (s1);
