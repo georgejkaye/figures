@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (12) at (-1, 1.5) {};
+		\node [style=none] (13) at (-1, -1.5) {};
+		\node [style=none] (14) at (1, -1.5) {};
+		\node [style=none] (15) at (1, 1.5) {};
+		\node [style=vertex] (37) at (0, -0.5) {};
+		\node [style=label] (44) at (0, 0.5) {$0$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=interface] (12.center)
+			 to (13.center)
+			 to (14.center)
+			 to (15.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}
