@@ -10,11 +10,11 @@
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=graph] (1.center)
-			 to (2.center)
-			 to (3.center)
-			 to (0.center)
-			 to cycle;
+		to (2.center)
+		to (3.center)
+		to (0.center)
+		to cycle;
 		\draw [style=tentacle, in=-180, out=-180, looseness=2.00] (8) to (12);
-		\draw [style=wire, in=360, out=0, looseness=2.00] (8) to (12);
+		\draw [style=tentacle, in=360, out=0, looseness=2.00] (8) to (12);
 	\end{pgfonlayer}
 \end{tikzpicture}

@@ -9,7 +9,7 @@
 		\node [style=small label] (68) at (0.25, -0.25) {$1$};
 		\node [style=edge] (69) at (-2, -1) {$e_2$};
 		\node [style=vertex] (70) at (-3.75, 1) {};
-		\node [style=small label] (71) at (-3.75, 1.5) {$0$};
+		\node [style=small label] (71) at (-3.75, 1.75) {$0$};
 		\node [style=edge] (72) at (-2, 1) {$e_1$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

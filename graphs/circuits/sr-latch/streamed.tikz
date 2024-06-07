@@ -46,7 +46,7 @@
 		\node [style=edge] (72) at (13.75, 7.75) {$\bot$};
 		\node [style=edge] (73) at (20.25, -5.25) {$\vee$};
 		\node [style=edge] (74) at (23.75, -5.25) {$\neg$};
-		\node [style=vertex] (75) at (17.25, -4.75) {};
+		\node [style=vertex] (75) at (17.5, -4.75) {};
 		\node [style=vertex] (76) at (25.5, -5.25) {};
 		\node [style=none] (78) at (5.75, -4.25) {};
 		\node [style=none] (79) at (5.75, -4.75) {};
@@ -85,7 +85,7 @@
 		\node [style=edge] (112) at (9.75, -8.75) {$\neg$};
 		\node [style=vertex] (113) at (8, -8.75) {};
 		\node [style=vertex] (116) at (22, -5.25) {};
-		\node [style=edge] (117) at (15.5, -4.75) {$\bot$};
+		\node [style=edge] (117) at (16, -4.75) {$\bot$};
 		\node [style=edge] (118) at (3.5, -2.5) {$\delta$};
 		\node [style=vertex] (119) at (5.25, -2.5) {};
 		\node [style=none] (120) at (5.25, -0.5) {};
