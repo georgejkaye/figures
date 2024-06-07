@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+    \begin{pgfonlayer}{nodelayer}
+        \node [style=bproduct] (0) at (0, 0) {};
+        \node [style=none] (1) at (0.5, 0.5) {};
+        \node [style=none] (2) at (0.5, -0.5) {};
+        \node [style=wire label left] (3) at (-1, 0) {$\getvar{obj}$};
+        \node [style=none] (5) at (-0.5, 0.75) {};
+        \node [style=none] (6) at (-0.5, -0.75) {};
+        \node [style=none] (7) at (0.5, -0.75) {};
+        \node [style=none] (8) at (0.5, 0.75) {};
+        \node [style=wire label right] (9) at (1, 0.5) {$\getvar{obj}$};
+        \node [style=wire label right] (10) at (1, -0.5) {$\getvar{obj}$};
+        \node [style=none] (11) at (-0.5, 0) {};
+        \node [style=none] (12) at (-0.5, 0) {};
+    \end{pgfonlayer}
+    \begin{pgfonlayer}{edgelayer}
+        \draw [style=wire] (0)
+        to [in=180, out=75] (1.center)
+        to (9);
+        \draw [style=wire] (0) to (3);
+        \draw [style=wire] (0)
+        to [in=180, out=-75] (2.center)
+        to (10);
+    \end{pgfonlayer}
+\end{tikzpicture}
