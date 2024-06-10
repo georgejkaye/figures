@@ -17,14 +17,14 @@
         initial distance=0.5cm,
         every initial by arrow/.style={*->},
         x=20pt,
-        y=20pt
+        y=15pt
     ]
     \node[state] (bot) at (0,0) {\(s_\bot\)};
     \node[state] (f) at (0,-5) {\(s_\mathsf{f}\)};
     \node[state] (t) at (-5,-5) {\(s_\mathsf{t}\)};
     \node[state] (top) at (5,-5) {\(s_\top\)};
 
-    \node[shape=circle,fill=black,inner sep=1.75pt,outer sep=0pt] (x) at (-1.5,2) {};
+    \node[shape=circle,fill=black,inner sep=1.75pt,outer sep=0pt] (x) at (-1,2) {};
 
     \draw (bot) edge[bend right, pos=0.25, above] node{$ \mathsf{t} \,|\, \bot$} (t)
     (bot) edge[bend right, pos=0.25, left] node {$ \mathsf{f} \,|\, \bot$} (f)

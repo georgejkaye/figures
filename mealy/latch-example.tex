@@ -19,16 +19,16 @@
         every edge/.append style={},
         yscale=-1,
         x=20pt,
-        y=20pt
+        y=17pt
     ]
     \node[state, initial below] (bot) at (0,0) {\(\bot\)};
     \node[state] (true) at (-5,5) {\(\mathsf{t}\)};
     \node[state] (top) at (5,5) {\(\top\)};
     \node[state] (false) at (0,10) {\(\mathsf{f}\)};
-    \draw (bot) edge[loop, out=300, in=240, distance=2.5cm] node[above]{
+    \draw (bot) edge[loop, out=300, in=240, distance=2.1cm] node[above]{
             \(\trs{\bot\mathsf{t},\bot\top}{\bot\mathsf{f}}\)
         } (bot);
-    \draw (bot) edge[loop, out=315, in=225, distance=4.5cm] node[above] {
+    \draw (bot) edge[loop, out=315, in=225, distance=3.6cm] node[above] {
             \(\trs{\bot\bot,\bot\mathsf{t},\mathsf{f}\bot,\mathsf{f}\mathsf{f}}{\bot\bot}\)
         } (bot);
     \draw (bot) edge node[right]{
@@ -76,14 +76,14 @@
             \(\trs{\mathsf{t}\bot,\mathsf{t}\mathsf{t}}{\top\mathsf{f}}\)
         } (false);
 
-    \draw (false) edge[loop, distance=1.5cm, out=80, in=100] node[below]{
+    \draw (false) edge[loop, distance=1.25cm, out=80, in=100] node[below, yshift=0.1cm]{
             \(\trs{\mathsf{f}\mathsf{f}}{\mathsf{t}\mathsf{t}}\)
         } (false);
-    \draw (false) edge[loop, distance=2.5cm, out=65, in=115] node[below]{
+    \draw (false) edge[loop, distance=2cm, out=65, in=115] node[below, yshift=0.1cm]{
             \(\trs{\bot\mathsf{f},\mathsf{f}\mathsf{f},\mathsf{t}\mathsf{f},\top\mathsf{t}}{\mathsf{f}\mathsf{t}}\)
         } (false);
-    \draw (false) edge[loop, distance=4.5cm] node[below]{
-            \(\trs{\bot\top\mathsf{f}\top,\mathsf{t}\top,\top\top}{\mathsf{f}\top}\)
+    \draw (false) edge[loop, distance=3.6cm] node[below]{
+            \(\trs{\bot\top,\mathsf{f}\top,\mathsf{t}\top,\top\top}{\mathsf{f}\top}\)
         } (false);
     \draw (false) edge node[left]{
             \(\trs{\mathsf{f}\mathsf{t}}{\mathsf{f}\mathsf{f}}\)
