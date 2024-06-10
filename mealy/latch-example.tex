@@ -37,10 +37,10 @@
     \draw (bot) edge[bend right] node[right] {
             \(\trs{\top\mathsf{t},\top\top}{\mathsf{f}\mathsf{f}}\)
         } (top);
-    \draw (bot) edge[distance=7cm, out=0, in=0] node[very near start, above]{
+    \draw (bot) edge[distance=8cm, out=0, in=0] node[very near start, above]{
             \(\trs{\mathsf{t}\mathsf{t},\mathsf{t}\top}{\bot\mathsf{f}}\)
         } (false);
-    \draw (bot) edge[distance=9cm, out=340, in=20] node[near start, above]{
+    \draw (bot) edge[distance=9cm, out=340, in=20] node[near start, above,yshift=0.5cm]{
             \(\trs{\mathsf{t}\bot,\mathsf{f}\mathsf{f},\top\bot,\top\mathsf{f}}{\bot\bot}\)
         } (false);
     \draw (true) edge[loop left, distance=1cm, out=135, in=225] node[left]{
@@ -57,10 +57,10 @@
         } (top);
 
 
-    \draw (top) edge[loop right, distance=1cm, out=45, in=315] node{
+    \draw (top) edge[loop right, distance=1cm, out=45, in=315] node[near start,yshift=-0.25cm,xshift=-0.25cm]{
             \(\trs{\top\bot,\top\mathsf{t}}{\top\mathsf{f}}\)
         } (top);
-    \draw (top) edge[loop right, distance=3cm, out=55, in=305] node[below, yshift=-0.75cm]{
+    \draw (top) edge[loop right, distance=4.5cm, out=55, in=305] node[near start, below, xshift=-0.5cm]{
             \(\trs{\mathsf{f}\mathsf{f},\mathsf{f}\top,\top\mathsf{f},\top\top}{\top\top}\)
         } (top);
     \draw (top) edge[bend left] node[below] {
@@ -69,7 +69,7 @@
     \draw (top) edge[left] node{
             \(\trs{\bot\bot,\bot\mathsf{t}}{\top\mathsf{f}}\)
         } (bot);
-    \draw (top) edge[bend left] node[right]{
+    \draw (top) edge[out=155,in=270,distance=3cm] node[left,near start,yshift=0.1cm]{
             \(\trs{\bot\mathsf{f},\bot\top,\mathsf{t}\mathsf{f},\mathsf{f}\top}{\top\top}\)
         } (false);
     \draw (top) edge[bend right] node[right]{
