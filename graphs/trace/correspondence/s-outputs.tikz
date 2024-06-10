@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (12) at (-1.25, 6) {};
+		\node [style=none] (13) at (-1.25, -5.75) {};
+		\node [style=none] (14) at (1.25, -5.75) {};
+		\node [style=none] (15) at (1.25, 6) {};
+		\node [style=vertex] (36) at (0, 0) {};
+		\node [style=vertex] (37) at (0, 4.25) {};
+		\node [style=label] (40) at (0, 0.75) {$7$};
+		\node [style=vertex] (41) at (0, -2.25) {};
+		\node [style=label] (43) at (0, -1.5) {$8$};
+		\node [style=label] (44) at (0, 5) {$5$};
+		\node [style=vertex] (45) at (0, 2) {};
+		\node [style=label] (46) at (0, 2.75) {$6$};
+		\node [style=vertex] (47) at (0, -4.5) {};
+		\node [style=label] (48) at (0, -3.75) {$9$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=interface] (12.center)
+			 to (13.center)
+			 to (14.center)
+			 to (15.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}
