@@ -1,0 +1,51 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-3.25, 0.5) {};
+		\node [style=fork] (1) at (-1.75, 0.5) {};
+		\node [style=none] (2) at (-1.75, 1.5) {};
+		\node [style=none] (3) at (-1.75, -0.5) {};
+		\node [style=fork] (5) at (0.75, 1.5) {};
+		\node [style=fork] (7) at (-0.75, -0.5) {};
+		\node [style=none] (8) at (-0.75, 0.5) {};
+		\node [style=none] (9) at (0.75, 0.5) {};
+		\node [style=none] (10) at (2.25, 1.5) {};
+		\node [style=none] (12) at (-0.75, -1.5) {};
+		\node [style=none] (13) at (2.25, -1.5) {};
+		\node [style=fork] (14) at (2.25, -0.5) {};
+		\node [style=fork] (15) at (3.5, -0.5) {};
+		\node [style=none] (16) at (-3.25, -2.25) {};
+		\node [style=none] (17) at (0.5, -2.25) {};
+		\node [style=fork] (18) at (0.5, -1.5) {};
+		\node [style=none] (19) at (3.5, 0.25) {};
+		\node [style=none] (20) at (5, 0.25) {};
+		\node [style=none] (21) at (5, -0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (0.center) to (1);
+		\draw [style=wire] (7)
+			 to (3.center)
+			 to (1);
+		\draw [style=wire] (1)
+			 to (2.center)
+			 to (5);
+		\draw [style=wire] (7)
+			 to (8.center)
+			 to (9.center)
+			 to (5);
+		\draw [style=wire] (14)
+			 to (10.center)
+			 to (5);
+		\draw [style=wire] (7)
+			 to (12.center)
+			 to (13.center)
+			 to (14);
+		\draw [style=wire] (15) to (14);
+		\draw [style=wire] (18)
+			 to (17.center)
+			 to (16.center);
+		\draw [style=wire] (21.center) to (15);
+		\draw [style=wire] (15)
+			 to (19.center)
+			 to (20.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
