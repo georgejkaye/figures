@@ -21,8 +21,8 @@
 		\node [style=none] (19) at (1.5, -1.5) {};
 		\node [style=none] (20) at (0, 1.5) {};
 		\node [style=none] (21) at (1.5, 1.5) {};
-		\node [style=none] (23) at (-1, 0.5) {$g$};
-		\node [style=none] (30) at (0.75, 0) {$h$};
+		\node [style=label] (23) at (-1, 0.5) {$g$};
+		\node [style=label] (30) at (0.75, 0) {$h$};
 		\node [style=none] (31) at (-0.5, 0) {};
 		\node [style=none] (32) at (0, 0) {};
 		\node [style=none] (33) at (-0.5, 1) {};
@@ -30,24 +30,24 @@
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=tile white] (2.center)
-			 to (3.center)
-			 to (0.center)
-			 to (1.center)
-			 to cycle;
+		to (3.center)
+		to (0.center)
+		to (1.center)
+		to cycle;
 		\draw [style=wire] (7.center) to (6.center);
 		\draw [style=wire] (4.center) to (5.center);
 		\draw [style=wire] (8.center) to (9.center);
 		\draw [style=wire] (10.center) to (11.center);
 		\draw [style=wire] (13.center)
-			 to (12.center)
-			 to (14.center)
-			 to (15.center)
-			 to cycle;
+		to (12.center)
+		to (14.center)
+		to (15.center)
+		to cycle;
 		\draw [style=wire] (20.center)
-			 to (18.center)
-			 to (19.center)
-			 to (21.center)
-			 to cycle;
+		to (18.center)
+		to (19.center)
+		to (21.center)
+		to cycle;
 		\draw (32.center) to (31.center);
 		\draw (34.center) to (33.center);
 	\end{pgfonlayer}

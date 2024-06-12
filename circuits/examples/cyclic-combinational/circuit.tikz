@@ -1,52 +1,49 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=mux] (0) at (-1.25, -2.5) {};
-		\node [style=none] (3) at (-1.5, -3) {};
-		\node [style=none] (4) at (-3, -3) {};
-		\node [style=none] (5) at (-1.25, -2) {};
-		\node [style=none] (6) at (-1.25, -1.25) {};
-		\node [style=mux] (10) at (-1.25, 2.5) {};
-		\node [style=none] (12) at (-1.5, 3) {};
-		\node [style=none] (13) at (-3, 3) {};
-		\node [style=none] (16) at (-1.5, 2) {};
-		\node [style=fork] (27) at (2.25, -2.5) {};
-		\node [style=fork] (28) at (2.25, 2.5) {};
-		\node [style=none] (29) at (-2.5, 0.5) {};
-		\node [style=none] (30) at (-2.5, 2) {};
-		\node [style=none] (32) at (2.25, 1) {};
-		\node [style=mux] (35) at (5.5, 0) {};
-		\node [style=none] (37) at (5.5, 0.5) {};
-		\node [style=none] (38) at (5.5, 1.25) {};
-		\node [style=none] (39) at (4, -1) {};
-		\node [style=none] (40) at (3, 2.5) {};
-		\node [style=none] (42) at (4, -2.5) {};
-		\node [style=none] (45) at (6.75, 0) {};
-		\node [style=none] (46) at (-1.25, 4.25) {$\mathsf{C}$};
-		\node [style=none] (47) at (-1.25, 3) {};
-		\node [style=none] (48) at (-1.25, 3.75) {};
-		\node [style=none] (49) at (-3.25, 3) {$\mathsf{X}$};
-		\node [style=none] (51) at (-3.25, -3) {$\mathsf{X}$};
-		\node [style=medium square box comb] (52) at (0.5, 2.5) {$f$};
-		\node [style=medium square box comb] (53) at (0.5, -2.5) {$g$};
-		\node [style=none] (63) at (-1.5, -2) {};
-		\node [style=none] (64) at (-2.5, -2) {};
-		\node [style=none] (65) at (5.5, 0) {};
-		\node [style=none] (66) at (-1.25, -2.5) {};
-		\node [style=none] (67) at (-1.25, 2.5) {};
-		\node [style=none] (68) at (4, 0.5) {};
-		\node [style=none] (69) at (3, -0.5) {};
-		\node [style=none] (70) at (3.75, -0.5) {};
-		\node [style=none] (71) at (5, 0.5) {};
-		\node [style=none] (72) at (-1.25, -0.75) {$\mathsf{C}$};
-		\node [style=none] (73) at (5.5, 1.75) {$\mathsf{C}$};
-		\node [style=none] (74) at (-0.25, 0.5) {};
-		\node [style=none] (75) at (-2.5, 0) {};
-		\node [style=none] (76) at (0, 0) {};
-		\node [style=none] (77) at (0, 1) {};
-		\node [style=none] (78) at (0.25, 0.5) {};
-		\node [style=none] (79) at (2.25, 0.5) {};
-		\node [style=none] (80) at (4.25, -0.5) {};
-		\node [style=none] (81) at (5, -0.5) {};
+		\node [style=mux] (0) at (-1.25, -3) {};
+		\node [style=none] (3) at (-1.5, -3.5) {};
+		\node [style=none] (4) at (-3, -3.5) {};
+		\node [style=none] (5) at (-1.25, -2.5) {};
+		\node [style=none] (6) at (-1.25, -1.75) {};
+		\node [style=mux] (10) at (-1.25, 3) {};
+		\node [style=none] (12) at (-1.5, 3.5) {};
+		\node [style=none] (13) at (-3, 3.5) {};
+		\node [style=none] (16) at (-1.5, 2.5) {};
+		\node [style=fork] (27) at (2.25, -3) {};
+		\node [style=fork] (28) at (2.25, 3) {};
+		\node [style=none] (29) at (-2.5, 1.75) {};
+		\node [style=none] (30) at (-2.5, 2.5) {};
+		\node [style=none] (32) at (2.25, 2) {};
+		\node [style=mux] (35) at (7, 0) {};
+		\node [style=none] (37) at (7, 0.5) {};
+		\node [style=none] (38) at (7, 1.25) {};
+		\node [style=none] (40) at (3.5, 3) {};
+		\node [style=none] (42) at (3.5, -3) {};
+		\node [style=none] (45) at (8.25, 0) {};
+		\node [style=none] (46) at (-1.25, 4.75) {$\mathsf{C}$};
+		\node [style=none] (47) at (-1.25, 3.5) {};
+		\node [style=none] (48) at (-1.25, 4.25) {};
+		\node [style=none] (49) at (-3.25, 3.5) {$\mathsf{X}$};
+		\node [style=none] (51) at (-3.25, -3.5) {$\mathsf{X}$};
+		\node [style=medium square box white] (52) at (0.5, 3) {$f$};
+		\node [style=medium square box white] (53) at (0.5, -3) {$g$};
+		\node [style=none] (63) at (-1.5, -2.5) {};
+		\node [style=none] (64) at (-2.5, -2.5) {};
+		\node [style=none] (65) at (7, 0) {};
+		\node [style=none] (66) at (-1.25, -3) {};
+		\node [style=none] (67) at (-1.25, 3) {};
+		\node [style=none] (69) at (3.5, 1.25) {};
+		\node [style=none] (70) at (4.5, 1.25) {};
+		\node [style=none] (71) at (6.75, 0.5) {};
+		\node [style=none] (72) at (-1.25, -1.25) {$\mathsf{C}$};
+		\node [style=none] (73) at (7, 1.75) {$\mathsf{C}$};
+		\node [style=none] (75) at (-2.5, -1.25) {};
+		\node [style=none] (79) at (2.25, -1.5) {};
+		\node [style=none] (81) at (6.75, -0.5) {};
+		\node [style=none] (84) at (3.5, -1.25) {};
+		\node [style=none] (85) at (4.5, -1.25) {};
+		\node [style=none] (86) at (6, 0.5) {};
+		\node [style=none] (87) at (6, -0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (4.center) to (3.center);
@@ -54,33 +51,32 @@
 		\draw [style=wire] (63.center)
 			 to (64.center)
 			 to (75.center)
-			 to (76.center)
-			 to (77.center)
 			 to (32.center)
 			 to (28);
 		\draw [style=wire] (13.center) to (12.center);
 		\draw [style=wire] (27)
 			 to (79.center)
-			 to (78.center)
-			 to [bend left=270, looseness=1.75] (74.center)
 			 to (29.center)
 			 to (30.center)
 			 to (16.center);
 		\draw [style=wire] (38.center) to (37.center);
-		\draw [style=wire] (70.center) to (69.center);
-		\draw [style=wire] (40.center) to (28);
-		\draw [style=wire] (42.center) to (39.center);
-		\draw [style=wire] (39.center) to (68.center);
-		\draw [style=wire] (68.center) to (71.center);
+		\draw [style=wire] (28)
+			 to (40.center)
+			 to (69.center)
+			 to (70.center)
+			 to (87.center)
+			 to (81.center);
 		\draw [style=wire] (48.center) to (47.center);
 		\draw [style=wire] (52) to (28);
 		\draw [style=wire] (27) to (53);
 		\draw [style=wire] (45.center) to (65.center);
 		\draw [style=wire] (53) to (66.center);
 		\draw [style=wire] (52) to (67.center);
-		\draw [style=wire, bend left=90, looseness=1.75] (70.center) to (80.center);
-		\draw [style=wire] (81.center) to (80.center);
-		\draw [style=wire] (69.center) to (40.center);
-		\draw [style=wire] (27) to (42.center);
+		\draw [style=wire] (27)
+			 to (42.center)
+			 to (84.center)
+			 to (85.center)
+			 to (86.center)
+			 to (71.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
