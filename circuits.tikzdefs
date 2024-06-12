@@ -10,6 +10,6 @@
 \newcommand{\mediumwidth}{7.5mm}
 \newcommand{\smallwidth}{5mm}
 \newcommand{\tinywidth}{5.75mm}
-\newcommand{\boxsize}{\Large}
+\newcommand{\boxsize}{\large}
 \newcommand{\corners}{}
 \newcommand{\innersep}{1mm}
