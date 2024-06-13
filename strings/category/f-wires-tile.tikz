@@ -13,16 +13,16 @@
 		\node [style={medium square box \getvar{colour}}] (17) at (0, 0) {$\getvar{box}$};
 		\node [style=none] (18) at (-1.1, 0) {\raisebox{0.5em}{\scalebox{0.75}{$\vdots$}}};
 		\node [style=label] (19) at (1.5, 0) {$\getvar{cod}$};
-		\node [style=label] (20) at (-1.5, 0) {$\getvar{dom}$};
+		\node [style=label] (20) at (-1.6, 0) {$\getvar{dom}$};
 		\node [style=none] (21) at (1.1, 0) {\raisebox{0.5em}{\scalebox{0.75}{$\vdots$}}};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (7) to (6);
 		\draw [style=tile boundary] (12.center)
-			 to (15.center)
-			 to (10.center)
-			 to (11.center)
-			 to cycle;
+		to (15.center)
+		to (10.center)
+		to (11.center)
+		to cycle;
 		\draw [style=wire] (14) to (13);
 		\draw [style=wire] (8) to (13);
 		\draw [style=wire] (1) to (6);
