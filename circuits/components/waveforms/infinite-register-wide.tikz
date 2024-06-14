@@ -1,15 +1,15 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=register] (0) at (-2, -0.25) {$\getvar{val}$};
-		\node [style=bproduct] (4) at (0.75, -0.25) {};
-		\node [style=none] (5) at (1.25, 0.25) {};
-		\node [style=none] (7) at (-4, 0.75) {};
-		\node [style=none] (8) at (1.5, 0.75) {};
-		\node [style=none] (10) at (1.25, -0.75) {};
+		\node [style=bproduct] (4) at (0.25, -0.25) {};
+		\node [style=none] (5) at (0.75, 0.25) {};
+		\node [style=none] (7) at (-3.5, 0.75) {};
+		\node [style=none] (8) at (1, 0.75) {};
+		\node [style=none] (10) at (0.75, -0.75) {};
 		\node [style=none] (11) at (-2, -0.25) {};
-		\node [style=none] (12) at (-4, -0.25) {};
-		\node [style=wire label right] (15) at (2.25, -0.75) {$\getvar{width}$};
-		\node [style=none] (16) at (1.5, 0.25) {};
+		\node [style=none] (12) at (-3.5, -0.25) {};
+		\node [style=wire label right] (15) at (1.75, -0.75) {$\getvar{width}$};
+		\node [style=none] (16) at (1, 0.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (4)
