@@ -10,7 +10,7 @@
 		\node [style=register] (55) at (-0.5, 0) {$\getvar{state}$};
 		\node [style=port] (56) at (1.5, -1) {};
 		\node [style=port] (57) at (2, -1) {};
-		\node [style=wire label right] (59) at (6.25, -1) {$\getvar{cod}$};
+		\node [style=wire label right] (59) at (6.5, -1) {$\getvar{cod}$};
 		\node [style=wire label mid] (62) at (1.75, 1) {$\getvar{delay}$};
 		\node [style=waveform] (63) at (-2.5, -1) {$\getvar{input}$};
 		\node [style=wire label left] (64) at (-4.25, -1) {$\getvar{dom}$};
