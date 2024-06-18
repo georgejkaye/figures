@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box white] (1) at (0, 0) {$f$};
+		\node [style=medium square box \getvar{colour}] (1) at (0, 0) {$\getvar{box}$};
 		\node [style=wire label left] (2) at (-3, -0.5) {};
 		\node [style=port] (3) at (-0.25, 0.25) {};
 		\node [style=port] (4) at (-0.25, -0.5) {};
@@ -18,8 +18,8 @@
 		\draw [style=wire] (4) to (2);
 		\draw [style=wire] (6) to (8);
 		\draw [style=wire] (12)
-			 to [bend left] (7.center)
-			 to (5);
+		to [bend left] (7.center)
+		to (5);
 		\draw [style=wire, bend left] (10.center) to (12);
 		\draw [style=wire] (12) to (13);
 		\draw [style=wire] (15) to (3);
