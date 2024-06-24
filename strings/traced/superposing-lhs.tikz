@@ -1,6 +1,6 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box \getvar{colour}] (0) at (0, 0.25) {$\getvar{box1}$};
+		\node [style=medium square box white] (0) at (0, 0.25) {$\getvar{box1}$};
 		\node [style=port] (2) at (-0.25, 0.75) {};
 		\node [style=port] (3) at (-0.25, -0.25) {};
 		\node [style=wire label left] (4) at (-2.75, -0.25) {$\getvar{dom1}$};
@@ -13,7 +13,7 @@
 		\node [style=wire label right] (11) at (3, -0.25) {$\getvar{cod1}$};
 		\node [style=wire label left] (12) at (-2.75, -2.5) {$\getvar{dom2}$};
 		\node [style=wire label right] (13) at (3, -2.5) {$\getvar{cod2}$};
-		\node [style=medium square box \getvar{colour}] (14) at (0, -2.5) {$\getvar{box2}$};
+		\node [style=medium square box white] (14) at (0, -2.5) {$\getvar{box2}$};
 		\node [style=none] (15) at (-2.25, 2.5) {};
 		\node [style=none] (16) at (-2.25, -1.25) {};
 		\node [style=none] (17) at (2.25, -1.25) {};
@@ -22,20 +22,20 @@
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (2)
-		to (5.center)
-		to [bend left=90, looseness=1.50] (6.center)
-		to (19.center)
-		to (7.center)
-		to [bend left=90, looseness=1.50] (10.center)
-		to (8);
+			 to (5.center)
+			 to [bend left=90, looseness=1.50] (6.center)
+			 to (19.center)
+			 to (7.center)
+			 to [bend left=90, looseness=1.50] (10.center)
+			 to (8);
 		\draw [style=wire] (11) to (9);
 		\draw [style=wire] (3) to (4);
 		\draw [style=wire] (14) to (12);
 		\draw [style=wire] (14) to (13);
 		\draw [style=traced] (18.center)
-		to (17.center)
-		to (16.center)
-		to (15.center)
-		to cycle;
+			 to (17.center)
+			 to (16.center)
+			 to (15.center)
+			 to cycle;
 	\end{pgfonlayer}
 \end{tikzpicture}
