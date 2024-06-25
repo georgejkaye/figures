@@ -1,9 +1,9 @@
 \begin{tikzpicture}[circuit logic US]
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=wire label left] (0) at (-6.5, 0) {$\getvar{dom}$};
-		\node [style=bproduct] (1) at (-5.5, 0) {};
-		\node [style=none] (2) at (-3.5, 2) {};
-		\node [style=none] (3) at (-3.5, -2) {};
+		\node [style=wire label left] (0) at (-5.5, 0) {$\getvar{dom}$};
+		\node [style=bproduct] (1) at (-4.5, 0) {};
+		\node [style=none] (2) at (-3.25, 2) {};
+		\node [style=none] (3) at (-3.25, -2) {};
 		\node [style=bproduct] (4) at (-3, -2) {};
 		\node [style=bproduct] (5) at (-3, 2) {};
 		\node [style=none] (8) at (-2, 3) {};
@@ -42,10 +42,10 @@
 		\node [style=none] (43) at (3, -2.25) {};
 		\node [style=none] (44) at (6.75, -2.25) {};
 		\node [style=none] (45) at (6.75, -1.75) {};
-		\node [style=none] (46) at (8.5, 2.25) {};
-		\node [style=none] (47) at (8.5, -1.75) {};
-		\node [style=bproduct] (48) at (11, 0.25) {};
-		\node [style=wire label right] (49) at (12, 0.25) {$\getvar{cod}$};
+		\node [style=none] (46) at (8.25, 2.25) {};
+		\node [style=none] (47) at (8.25, -1.75) {};
+		\node [style=bproduct] (48) at (9.75, 0.25) {};
+		\node [style=wire label right] (49) at (10.75, 0.25) {$\getvar{cod}$};
 		\node [style=register] (60) at (3.5, -0.5) {$\mathsf{t}$};
 		\node [style=bproduct] (61) at (5, -0.5) {};
 		\node [style=none] (62) at (5.5, 0) {};
@@ -70,11 +70,11 @@
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (0) to (1);
 		\draw [style=wire] (1)
-			 to [in=180, out=75] (2.center)
+			 to [in=180, out=75, looseness=0.75] (2.center)
 			 to (5);
 		\draw [style=wire] (4)
 			 to (3.center)
-			 to [in=-75, out=180] (1);
+			 to [in=-75, out=180, looseness=0.75] (1);
 		\draw [style=wire] (4)
 			 to [in=-180, out=-75] (15.center)
 			 to (11.center);

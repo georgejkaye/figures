@@ -1,10 +1,10 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box seq] (0) at (1.5, 0) {$\mealytofunc[\mathsf{enc}_\mathsf{m}]$};
-		\node [style=wire label left] (11) at (-3.5, 0) {$\getvar{dom}$};
+		\node [style=wire label left] (11) at (-3.25, 0) {$\getvar{dom}$};
 		\node [style=none] (12) at (4.25, 0) {};
 		\node [style=wire label right] (14) at (4.25, 0) {$\getvar{cod}$};
-		\node [style=register] (18) at (-2.25, 0) {$\getvar{state}$};
+		\node [style=register] (18) at (-2, 0) {$\getvar{state}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (12.center) to (11);

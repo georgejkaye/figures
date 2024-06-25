@@ -1,9 +1,9 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=medium square box seq] (0) at (-3.5, 0) {$\mealytofunc[\mathsf{enc}_\mathsf{m}]$};
-		\node [style=wire label left] (11) at (-6.25, 0) {$\getvar{dom}$};
+		\node [style=medium square box seq] (0) at (-3, 0) {$\mealytofunc[\mathsf{enc}_\mathsf{m}]$};
+		\node [style=wire label left] (11) at (-5.5, 0) {$\getvar{dom}$};
 		\node [style=none] (12) at (1.75, 0) {};
-		\node [style=wire label right] (14) at (5.25, 0) {$\getvar{cod}$};
+		\node [style=wire label right] (14) at (5, 0) {$\getvar{cod}$};
 		\node [style=register] (18) at (1.75, 0) {$\mathsf{enc}_\mathsf{m}(\getvar{state})$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}

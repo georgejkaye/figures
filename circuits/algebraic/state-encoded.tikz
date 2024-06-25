@@ -1,21 +1,21 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (14) at (10.75, 0) {};
-		\node [style=none] (15) at (10.75, 1.25) {};
-		\node [style=none] (16) at (-5, 1.25) {};
-		\node [style=none] (17) at (-5, 0) {};
+		\node [style=none] (14) at (11.25, 0) {};
+		\node [style=none] (15) at (11.25, 1.25) {};
+		\node [style=none] (16) at (-5.25, 1.25) {};
+		\node [style=none] (17) at (-5.25, 0) {};
 		\node [style=medium square box seq] (41) at (5.5, -0.5) {$\getvar{core}$};
 		\node [style=port] (43) at (5.25, 0) {};
 		\node [style=port] (47) at (5.75, 0) {};
-		\node [style=register] (55) at (-2.5, 0) {$\mathsf{enc}_\mathsf{m}(\getvar{state})$};
+		\node [style=register] (55) at (-2.75, 0) {$\mathsf{enc}_\mathsf{m}(\getvar{state})$};
 		\node [style=port] (56) at (5.25, -1) {};
 		\node [style=port] (57) at (5.75, -1) {};
-		\node [style=wire label right] (59) at (11.5, -1) {$\getvar{cod}$};
-		\node [style=wire label left] (61) at (-5.75, -1) {$\getvar{dom}$};
+		\node [style=wire label right] (59) at (12, -1) {$\getvar{cod}$};
+		\node [style=wire label left] (61) at (-6, -1) {$\getvar{dom}$};
 		\node [style=wire label mid] (62) at (5.5, 1.25) {$\getvar{delay}$};
-		\node [style=none] (63) at (-2.5, 0) {};
-		\node [style=medium square box seq] (64) at (8.5, 0) {$\mealytofunc[\mathsf{enc}_\mathsf{m}]$};
-		\node [style=medium square box seq] (65) at (2.25, 0) {$\mealytofunc[\mathsf{dec}_\mathsf{m}]$};
+		\node [style=none] (63) at (-2.75, 0) {};
+		\node [style=medium square box seq] (64) at (9, 0) {$\mealytofunc[\mathsf{enc}_\mathsf{m}]$};
+		\node [style=medium square box seq] (65) at (2, 0) {$\mealytofunc[\mathsf{dec}_\mathsf{m}]$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (47)
