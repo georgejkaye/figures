@@ -1,0 +1,10 @@
+\begin{tikzpicture}[circuit logic US]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (17) at (-0.75, 0) {};
+		\node [style=none] (31) at (1, 0) {};
+		\node [style=delay] (32) at (0, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (31.center) to (17.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

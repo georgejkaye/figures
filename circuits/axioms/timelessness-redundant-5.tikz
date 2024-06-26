@@ -2,8 +2,8 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium box comb] (0) at (-0.75, 0) {$g$};
 		\node [style=delay] (1) at (0.75, 0) {};
-		\node [style=port] (2) at (-0.5, 0) {};
-		\node [style=port] (3) at (-1, 0) {};
+		\node [style=port] (2) at (-0.75, 0) {};
+		\node [style=port] (3) at (-0.75, 0) {};
 		\node [style=dangling] (4) at (1.75, 0) {};
 		\node [style=dangling] (5) at (-2, 0) {};
 	\end{pgfonlayer}
