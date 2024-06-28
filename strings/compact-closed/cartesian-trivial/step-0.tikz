@@ -1,0 +1,26 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0.25, 0.5) {};
+		\node [style=none] (1) at (0.25, -0.5) {};
+		\node [style=none] (2) at (-2, 0) {};
+		\node [style=bproduct] (3) at (-1, 0) {};
+		\node [style=bproduct] (4) at (1.25, 0.5) {};
+		\node [style=none] (5) at (1.75, -0.5) {};
+		\node [style=none] (6) at (0.75, 0.5) {};
+		\node [style=none] (7) at (0.5, 0.5) {};
+		\node [style=none] (8) at (0.5, -0.5) {};
+		\node [style=none] (9) at (0.75, -0.5) {};
+		\node [style=none] (10) at (-1.75, 0) {};
+		\node [style=none] (11) at (-1.5, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (4)
+			 to (0.center)
+			 to [bend left=270, looseness=2.25] (1.center)
+			 to (5.center);
+		\draw [style=wire] (2.center) to (3);
+		\draw [style=arrow] (7.center) to (6.center);
+		\draw [style=arrow] (9.center) to (8.center);
+		\draw [style=arrow] (11.center) to (10.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
