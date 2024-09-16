@@ -31,24 +31,24 @@
 		\node [style=edge] (100) at (0.25, -0.75) {$\psi$};
 		\node [style=none] (101) at (-0.25, -0.75) {};
 		\node [style=vertex] (102) at (-4, 1.25) {};
-		\node [style=none] (103) at (0.75, -0.5) {};
-		\node [style=none] (106) at (0.75, -1) {};
+		\node [style=none] (103) at (0.75, -0.25) {};
+		\node [style=none] (106) at (0.75, -1.25) {};
 		\node [style=small label] (108) at (-4, 2) {$0$};
 		\node [style=small label] (109) at (-4, 0.25) {$1$};
 		\node [style=edge] (113) at (5.5, 0.75) {$\phi$};
-		\node [style=port] (114) at (5.25, 1.25) {};
+		\node [style=port] (114) at (5.25, 0.5) {};
 		\node [style=port] (115) at (6, 0.75) {};
-		\node [style=vertex] (116) at (4.25, 0.25) {};
 		\node [style=edge] (117) at (6.5, -1) {$\psi$};
 		\node [style=vertex] (118) at (8.5, 0) {};
 		\node [style=port] (119) at (7, -0.75) {};
-		\node [style=port] (120) at (6, -1) {};
-		\node [style=vertex] (121) at (2, -1.5) {};
-		\node [style=vertex] (122) at (2, 0) {};
-		\node [style=none] (123) at (5.25, 0.25) {};
+		\node [style=vertex] (121) at (3, -0.75) {};
+		\node [style=vertex] (122) at (2.5, 0.5) {};
+		\node [style=none] (123) at (5.25, 1.25) {};
 		\node [style=small label] (125) at (8.5, 0.75) {$8$};
 		\node [style=port] (128) at (7, -1.25) {};
 		\node [style=vertex] (129) at (8.5, -1.5) {};
+		\node [style=vertex] (130) at (4.75, -1) {};
+		\node [style=none] (131) at (6, -1) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=interface] (44.center)
@@ -72,13 +72,13 @@
 		\draw [style=tentacle, in=165, out=45, looseness=0.75] (95) to (98.center);
 		\draw [style=tentacle, in=180, out=-30, looseness=0.75] (95) to (101.center);
 		\draw [style=tentacle, in=0, out=180] (97.center) to (102);
-		\draw [style=tentacle, in=165, out=0] (121) to (114);
+		\draw [style=tentacle, in=-165, out=0] (121) to (114);
 		\draw [style=tentacle, in=15, out=135] (118) to (115);
-		\draw [style=tentacle, in=0, out=-165] (123.center) to (116);
-		\draw [style=tentacle, in=180, out=0] (122) to (120);
 		\draw [style=tentacle, in=-120, out=0] (119) to (118);
 		\draw [style=tentacle, in=0, out=165] (129) to (128);
 		\draw [style=tentacle, in=180, out=0] (106.center) to (121);
 		\draw [style=tentacle, in=0, out=-165] (122) to (103.center);
+		\draw [style=tentacle, in=0, out=180] (123.center) to (122);
+		\draw [style=tentacle, in=0, out=-180] (131.center) to (130);
 	\end{pgfonlayer}
 \end{tikzpicture}

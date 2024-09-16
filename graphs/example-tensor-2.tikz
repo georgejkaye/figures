@@ -50,9 +50,9 @@
 		\node [style=vertex] (150) at (2, 2.25) {};
 		\node [style=small label] (151) at (-3.75, 4.25) {$0$};
 		\node [style=small label] (152) at (-3.75, 2.5) {$1$};
-		\node [style=small label] (153) at (-0.75, 4.5) {$3$};
+		\node [style=small label] (153) at (-0.75, 4.5) {$4$};
 		\node [style=small label] (154) at (2, 3) {$2$};
-		\node [style=small label] (155) at (2, 1.25) {$4$};
+		\node [style=small label] (155) at (2, 1.25) {$3$};
 		\node [style=edge] (156) at (-1.5, -1) {$\phi$};
 		\node [style=port] (157) at (-1.75, -0.5) {};
 		\node [style=port] (158) at (-1, -1) {};
@@ -64,10 +64,10 @@
 		\node [style=vertex] (164) at (-3.75, 0) {};
 		\node [style=vertex] (165) at (-3.75, -3.5) {};
 		\node [style=none] (166) at (-1.75, -1.5) {};
-		\node [style=small label] (167) at (-3.75, -1) {$5$};
+		\node [style=small label] (167) at (-3.75, -1) {$6$};
 		\node [style=small label] (168) at (2, -0.75) {$8$};
-		\node [style=small label] (169) at (-3.75, 0.75) {$7$};
-		\node [style=small label] (170) at (-3.75, -2.75) {$5$};
+		\node [style=small label] (169) at (-3.75, 0.75) {$5$};
+		\node [style=small label] (170) at (-3.75, -2.75) {$7$};
 		\node [style=port] (171) at (0, -3) {};
 		\node [style=vertex] (172) at (1.5, -3.25) {};
 	\end{pgfonlayer}

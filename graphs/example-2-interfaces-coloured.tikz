@@ -9,7 +9,7 @@
 		\node [style=port] (13) at (-1.5, 0.25) {};
 		\node [style=vertex] (14) at (-4, -0.5) {};
 		\node [style=edge] (15) at (-1, -1.5) {$\psi$};
-		\node [style=vertex] (16) at (1, -0.5) {};
+		\node [style=red vertex] (16) at (1, -0.5) {};
 		\node [style=port] (19) at (-0.5, -1.25) {};
 		\node [style=port] (21) at (-1.5, -1.5) {};
 		\node [style=red vertex] (30) at (-4, 1.25) {};
@@ -35,36 +35,36 @@
 		\node [style=none] (64) at (2, 0) {};
 		\node [style=small label] (65) at (-4, 0.25) {$6$};
 		\node [style=small label] (66) at (1, 0.25) {$8$};
-		\node [style=small label] (68) at (-4, 2) {$7$};
-		\node [style=small label] (69) at (-3.5, -1.25) {$5$};
-		\node [style=vertex] (70) at (4, -0.25) {};
+		\node [style=small label] (68) at (-4, 2) {$5$};
+		\node [style=small label] (69) at (-3.5, -1.25) {$7$};
+		\node [style=red vertex] (70) at (4, -0.25) {};
 		\node [style=small label] (71) at (4, 0.5) {$8$};
 		\node [style=port] (72) at (-0.5, -1.75) {};
-		\node [style=red vertex] (73) at (1, -2) {};
+		\node [style=vertex] (73) at (1, -2) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=graph] (4.center)
-		to (0.center)
-		to (1.center)
-		to (2.center)
-		to cycle;
+			 to (0.center)
+			 to (1.center)
+			 to (2.center)
+			 to cycle;
 		\draw [style=red tentacle, in=165, out=0] (30) to (12);
-		\draw [style=tentacle, in=15, out=135] (16) to (13);
+		\draw [style=red tentacle, in=15, out=135] (16) to (13);
 		\draw [style=tentacle, in=0, out=-165] (42.center) to (14);
 		\draw [style=interface] (44.center)
-		to (45.center)
-		to (55.center)
-		to (43.center)
-		to cycle;
+			 to (45.center)
+			 to (55.center)
+			 to (43.center)
+			 to cycle;
 		\draw [style=arrow] (59.center) to (60.center);
 		\draw [style=interface] (48.center)
-		to (49.center)
-		to (50.center)
-		to (54.center)
-		to cycle;
+			 to (49.center)
+			 to (50.center)
+			 to (54.center)
+			 to cycle;
 		\draw [style=arrow] (64.center) to (63.center);
 		\draw [style=red tentacle, in=180, out=0] (41) to (21);
-		\draw [style=tentacle, in=-120, out=0] (19) to (16);
-		\draw [style=red tentacle, in=0, out=165] (73) to (72);
+		\draw [style=red tentacle, in=-120, out=0] (19) to (16);
+		\draw [style=tentacle, in=0, out=165] (73) to (72);
 	\end{pgfonlayer}
 \end{tikzpicture}
