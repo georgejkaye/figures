@@ -61,8 +61,8 @@
 		\draw [style=arrow] (22.center) to (23.center);
 		\draw [style=arrow] (25.center) to (26.center);
 		\draw [style=arrow] (29.center) to (30.center);
-		\draw [style=wire, in=-180, out=60] (5) to (35.center);
-		\draw [style=wire, in=-60, out=180] (36.center) to (5);
+		\draw [style=tentacle, in=-180, out=60] (5) to (35.center);
+		\draw [style=tentacle, in=-60, out=180] (36.center) to (5);
 		\draw [style=arrow] (37.center) to (38.center);
 		\draw [style=arrow] (41.center) to (42.center);
 		\draw [style=tentacle, in=0, out=120] (7) to (8.center);

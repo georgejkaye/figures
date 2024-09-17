@@ -60,10 +60,10 @@
 			 to cycle;
 		\draw [style=arrow] (22.center) to (23.center);
 		\draw [style=arrow] (29.center) to (30.center);
-		\draw [style=wire, in=45, out=180] (35.center) to (43);
+		\draw [style=tentacle, in=45, out=180] (35.center) to (43);
 		\draw [style=wire, in=135, out=0] (8.center) to (7);
 		\draw [style=arrow] (45.center) to (46.center);
-		\draw [style=wire, in=-180, out=-45] (43) to (36.center);
+		\draw [style=tentacle, in=-180, out=-45] (43) to (36.center);
 		\draw [style=arrow] (48.center) to (49.center);
 		\draw [style=arrow] (51.center) to (52.center);
 	\end{pgfonlayer}

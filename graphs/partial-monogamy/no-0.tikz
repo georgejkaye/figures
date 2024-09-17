@@ -59,8 +59,8 @@
 			 to cycle;
 		\draw [style=arrow] (22.center) to (23.center);
 		\draw [style=arrow] (29.center) to (30.center);
-		\draw [style=wire] (5) to (36.center);
-		\draw [style=wire, in=180, out=180, looseness=2.75] (6) to (35.center);
+		\draw [style=tentacle] (5) to (36.center);
+		\draw [style=tentacle, in=180, out=180, looseness=2.75] (6) to (35.center);
 		\draw [style=arrow] (38.center) to (39.center);
 		\draw [style=arrow] (41.center) to (42.center);
 	\end{pgfonlayer}

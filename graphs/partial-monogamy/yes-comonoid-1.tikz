@@ -61,8 +61,8 @@
 		\draw [style=arrow] (25.center) to (26.center);
 		\draw [style=arrow] (29.center) to (30.center);
 		\draw [style=arrow] (32.center) to (33.center);
-		\draw [style=wire] (36.center) to (5);
-		\draw [style=wire] (6)
+		\draw [style=tentacle] (36.center) to (5);
+		\draw [style=tentacle] (6)
 			 to [in=0, out=60, looseness=1.50] (41.center)
 			 to [in=-180, out=180, looseness=2.50] (35.center);
 	\end{pgfonlayer}

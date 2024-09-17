@@ -64,8 +64,8 @@
 		\draw [style=arrow] (25.center) to (26.center);
 		\draw [style=arrow] (29.center) to (30.center);
 		\draw [style=arrow] (32.center) to (33.center);
-		\draw [style=wire, in=-180, out=60] (5) to (35.center);
-		\draw [style=wire, in=-60, out=180] (36.center) to (5);
+		\draw [style=tentacle, in=-180, out=60] (5) to (35.center);
+		\draw [style=tentacle, in=-60, out=180] (36.center) to (5);
 		\draw [style=arrow] (37.center) to (38.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
