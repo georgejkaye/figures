@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (14) at (10, 0) {};
+		\node [style=none] (15) at (10, 1.25) {};
+		\node [style=none] (16) at (-2, 1.25) {};
+		\node [style=none] (17) at (-2, 0) {};
+		\node [style=medium square box seq] (41) at (5.5, -0.5) {$\mealytofunc[\hat{f}]$};
+		\node [style=port] (43) at (5.25, 0) {};
+		\node [style=port] (47) at (5.75, 0) {};
+		\node [style=register] (55) at (-0.5, 0) {$\phi(\overline{s})$};
+		\node [style=port] (56) at (5.25, -1) {};
+		\node [style=port] (57) at (5.75, -1) {};
+		\node [style=wire label right] (59) at (10.75, -1) {$\getvar{cod}$};
+		\node [style=wire label left] (61) at (-2.75, -1) {$\getvar{dom}$};
+		\node [style=wire label mid] (62) at (5.5, 1.25) {$\getvar{delay}$};
+		\node [style=none] (63) at (-0.5, 0) {};
+		\node [style=medium square box seq] (64) at (8.25, 0) {$\mealytofunc[\phi]$};
+		\node [style=medium square box seq] (65) at (2.75, 0) {$\mealytofunc[\psi]$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (47)
+			 to (14.center)
+			 to [bend right=90, looseness=1.50] (15.center)
+			 to (62.center)
+			 to (16.center)
+			 to [bend left=270, looseness=1.50] (17.center)
+			 to (55);
+		\draw [style=wire] (59) to (57);
+		\draw [style=wire] (56) to (61);
+		\draw [style=wire, in=180, out=0] (63.center) to (43);
+	\end{pgfonlayer}
+\end{tikzpicture}
