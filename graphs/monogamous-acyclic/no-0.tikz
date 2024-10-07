@@ -39,27 +39,27 @@
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=graph] (1.center)
-			 to (2.center)
-			 to (3.center)
-			 to (0.center)
-			 to cycle;
+		to (2.center)
+		to (3.center)
+		to (0.center)
+		to cycle;
 		\draw [style=tentacle, in=0, out=180] (7) to (9.center);
 		\draw [style=tentacle, in=0, out=0, looseness=2.50] (6) to (8.center);
 		\draw [style=interface] (10.center)
-			 to (13.center)
-			 to (12.center)
-			 to (11.center)
-			 to cycle;
+		to (13.center)
+		to (12.center)
+		to (11.center)
+		to cycle;
 		\draw [style=arrow] (15.center) to (16.center);
 		\draw [style=interface] (17.center)
-			 to (20.center)
-			 to (19.center)
-			 to (18.center)
-			 to cycle;
+		to (20.center)
+		to (19.center)
+		to (18.center)
+		to cycle;
 		\draw [style=arrow] (22.center) to (23.center);
 		\draw [style=arrow] (29.center) to (30.center);
-		\draw [style=wire] (5) to (36.center);
-		\draw [style=wire, in=180, out=180, looseness=2.75] (6) to (35.center);
+		\draw [style=tentacle] (5) to (36.center);
+		\draw [style=tentacle, in=180, out=180, looseness=2.75] (6) to (35.center);
 		\draw [style=arrow] (42.center) to (43.center);
 		\draw [style=arrow] (45.center) to (46.center);
 	\end{pgfonlayer}
