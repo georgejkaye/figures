@@ -7,7 +7,7 @@
 
 \begin{document}%
 \activateargs%
-\begin{tikzpicture}[->, >=stealth, node distance=3cm, every state/.style={thick, fill=gray!10}, initial text=$ $, every edge/.append style={font=\tiny}, yscale=-1, x=100pt, y=30pt]
+\begin{tikzpicture}[->, >=stealth, node distance=3cm, every state/.style={thick, fill=gray!10, minimum size=2pt, ellipse}, initial text=$ $, every edge/.append style={font=\tiny}, yscale=-1, x=100pt, y=30pt]
     \node[state, accepting] (s0) at (0,0) {\(g\)};
     \node[state] (s1) at (1,-3) {\(g_\bot\)};
     \node[state] (s2) at (1,-1) {\(g_\belnapfalse\)};

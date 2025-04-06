@@ -6,11 +6,11 @@
 \newcommand{\trs}[2]{#1 \,|\, #2}
 
 \begin{document}
-    \begin{tikzpicture}[
+\begin{tikzpicture}[
         ->,
         >=stealth,
         node distance=0.25cm,
-        every state/.style={font=\Large, thick, fill=gray!10},
+        every state/.style={font=\Large, thick, fill=gray!10, minimum size=2pt, ellipse},
         initial text=$ $,
         initial distance=3cm,
         every initial by arrow/.style={*->},
@@ -19,29 +19,29 @@
         x=50pt,
         y=20pt
     ]
-        \node[state, initial below] (s0) at (0,0) {\(s_0\)};
-        \node[state] (s1) at (1,-2) {\(s_1\)};
-        \node[state] (s2) at (1,2) {\(s_2\)};
-        \node[state] (s3) at (2,0) {\(s_3\)};
+    \node[state, initial below] (s0) at (0,0) {\(s_0\)};
+    \node[state] (s1) at (1,-2) {\(s_1\)};
+    \node[state] (s2) at (1,2) {\(s_2\)};
+    \node[state] (s3) at (2,0) {\(s_3\)};
 
-        \draw (s0) edge[above] node[yshift=0.2cm, near start, pos=0.25]{\(\trs{\bot}{\bot}\)} (s1);
-        \draw (s0) edge[above] node[near start]{\(\trs{0}{0}\)} (s3);
-        \draw (s0) edge[below] node[yshift=-0.2cm, pos=0.25]{\(\trs{\top}{\top}\)} (s2);
-        \draw (s0) edge[out=225, in=135, loop, distance=4cm] node[right]{
+    \draw (s0) edge[above] node[yshift=0.2cm, near start, pos=0.25]{\(\trs{\bot}{\bot}\)} (s1);
+    \draw (s0) edge[above] node[near start]{\(\trs{0}{0}\)} (s3);
+    \draw (s0) edge[below] node[yshift=-0.2cm, pos=0.25]{\(\trs{\top}{\top}\)} (s2);
+    \draw (s0) edge[out=225, in=135, loop, distance=4cm] node[right]{
             \(\trs{1}{1}\)
         } (s0);
 
-        \draw (s1) edge node[xshift=0.4cm, yshift=0.2cm, pos=0.25]{\(\trs{0, \bot}{0}\)} (s3);
-        \draw (s1) edge[out=315, in=225, loop, distance=4cm] node[below]{
+    \draw (s1) edge node[xshift=0.4cm, yshift=0.2cm, pos=0.25]{\(\trs{0, \bot}{0}\)} (s3);
+    \draw (s1) edge[out=315, in=225, loop, distance=4cm] node[below]{
             \(\trs{1, \top}{\top}\)
         } (s1);
 
-        \draw (s2) edge node[xshift=0.4cm, yshift=-0.2cm, pos=0.25]{\(\trs{0, \top}{0}\)} (s3);
-        \draw (s2) edge[out=45, in=135, loop, distance=4cm] node[above]{
+    \draw (s2) edge node[xshift=0.4cm, yshift=-0.2cm, pos=0.25]{\(\trs{0, \top}{0}\)} (s3);
+    \draw (s2) edge[out=45, in=135, loop, distance=4cm] node[above]{
             \(\trs{1, \bot}{\bot}\)
         } (s2);
 
-        \draw (s3) edge[out=315, in=45, loop, distance=4cm] node[left]{
+    \draw (s3) edge[out=315, in=45, loop, distance=4cm] node[left]{
             \(\trs{-}{0}\)
         } (s3);
-    \end{tikzpicture}\end{document}
+\end{tikzpicture}\end{document}
