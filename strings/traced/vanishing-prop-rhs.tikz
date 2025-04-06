@@ -1,0 +1,38 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=medium square box \getvar{colour}] (0) at (0, -0.5) {$\getvar{box}$};
+		\node [style=port] (3) at (0.25, -1) {};
+		\node [style=wire label right] (4) at (3.25, -1) {$\getvar{cod}$};
+		\node [style=port] (9) at (-0.25, -1) {};
+		\node [style=wire label left] (11) at (-3.25, -1) {$\getvar{dom}$};
+		\node [style=port] (12) at (0.25, 0) {};
+		\node [style=port] (13) at (-0.25, 0) {};
+		\node [style=none] (14) at (-1.75, 0) {};
+		\node [style=none] (15) at (1.75, 0) {};
+		\node [style=none] (16) at (1.75, 1) {};
+		\node [style=none] (17) at (-1.75, 1) {};
+		\node [style=none] (22) at (-2.75, 1.75) {};
+		\node [style=none] (23) at (-2.75, -1.75) {};
+		\node [style=none] (24) at (2.75, -1.75) {};
+		\node [style=none] (25) at (2.75, 1.75) {};
+		\node [style=none] (26) at (0, 1) {$\getvar{trace1} + \getvar{trace2}$};
+		\node [style=none] (27) at (1, 1) {};
+		\node [style=none] (28) at (-1, 1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=wire] (3) to (4);
+		\draw [style=wire] (11) to (9);
+		\draw [style=wire] (13)
+		to (14.center)
+		to [bend left=90, looseness=2.00] (17.center)
+		to (28.center);
+		\draw [style=wire] (27.center)
+		to (16.center)
+		to [bend left=90, looseness=2.00] (15.center)
+		to (12);
+		\draw [style=traced] (25.center) to (22.center);
+		\draw [style=traced] (22.center) to (23.center);
+		\draw [style=traced] (23.center) to (24.center);
+		\draw [style=traced] (24.center) to (25.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
