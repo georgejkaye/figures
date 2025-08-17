@@ -6,8 +6,8 @@
 		\node [style=none] (7) at (0.25, 0.5) {};
 		\node [style=port] (9) at (-0.75, -0.5) {};
 		\node [style=none] (12) at (0.25, 1.5) {};
-		\node [style=wire label left] (13) at (-2, 1.5) {$\listvar{m}$};
-		\node [style=wire label left] (14) at (1.5, -0.5) {$\listvar{n}$};
+		\node [style=wire label left] (13) at (-2, 1.5) {$m$};
+		\node [style=wire label left] (14) at (1.5, -0.5) {$n$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire, bend left=90, looseness=1.50] (12.center) to (7.center);

@@ -8,7 +8,7 @@
 		\node [style=none] (5) at (-1.25, -1.25) {};
 		\node [style=none] (6) at (-1.25, -0.25) {};
 		\node [style=none] (7) at (3, 0.5) {};
-		\node [style=wire label right] (8) at (3.75, -1.25) {$\listvar{n}$};
+		\node [style=wire label right] (8) at (3.75, -1.25) {$n$};
 		\node [style=none] (9) at (3, 1.25) {};
 		\node [style=none] (11) at (-2.5, -0.25) {};
 		\node [style=none] (13) at (-3.5, 1.25) {};
@@ -16,35 +16,35 @@
 		\node [style=none] (15) at (-3.25, 0.5) {};
 		\node [style=none] (16) at (1.25, 0.5) {};
 		\node [style=none] (17) at (2.25, -0.25) {};
-		\node [style=wire label right] (18) at (3.75, -0.25) {$\listvar{m}$};
+		\node [style=wire label right] (18) at (3.75, -0.25) {$m$};
 		\node [style=none] (19) at (-5.25, -0.25) {};
 		\node [style=none] (20) at (-2.5, -1.25) {};
-		\node [style=wire label left] (21) at (-5.75, -0.25) {$\listvar{i}$};
-		\node [style=wire label left] (22) at (-5.75, -1.25) {$\listvar{j}$};
+		\node [style=wire label left] (21) at (-5.75, -0.25) {$i$};
+		\node [style=wire label left] (22) at (-5.75, -1.25) {$j$};
 		\node [style=none] (23) at (1.25, -0.25) {};
 		\node [style=none] (24) at (2.25, 0.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (8) to (4);
 		\draw [style=wire] (2)
-			 to (6.center)
-			 to [in=0, out=-180] (20.center)
-			 to (22);
+		to (6.center)
+		to [in=0, out=-180] (20.center)
+		to (22);
 		\draw [style=wire] (18)
-			 to (17.center)
-			 to [in=0, out=-180] (16.center)
-			 to (15.center)
-			 to [bend right=90, looseness=1.75] (14.center)
-			 to (11.center)
-			 to [in=180, out=0] (5.center)
-			 to (1);
+		to (17.center)
+		to [in=0, out=-180] (16.center)
+		to (15.center)
+		to [bend right=90, looseness=1.75] (14.center)
+		to (11.center)
+		to [in=180, out=0] (5.center)
+		to (1);
 		\draw [style=wire] (21)
-			 to (19.center)
-			 to [in=180, out=0] (13.center)
-			 to (9.center)
-			 to [bend left=90, looseness=1.75] (7.center)
-			 to (24.center)
-			 to [in=0, out=-180, looseness=0.75] (23.center)
-			 to (3);
+		to (19.center)
+		to [in=180, out=0] (13.center)
+		to (9.center)
+		to [bend left=90, looseness=1.75] (7.center)
+		to (24.center)
+		to [in=0, out=-180, looseness=0.75] (23.center)
+		to (3);
 	\end{pgfonlayer}
 \end{tikzpicture}
