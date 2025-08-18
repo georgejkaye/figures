@@ -1,12 +1,14 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=bproduct] (0) at (0.5, -0.5) {};
-		\node [style=wire label left] (1) at (-0.5, -0.5) {$Y$};
+		\node [style=none] (1) at (-0.5, -0.5) {};
 		\node [style=bproduct] (2) at (0.5, 0.5) {};
-		\node [style=wire label left] (3) at (-0.5, 0.5) {$X$};
+		\node [style=none] (3) at (-0.5, 0.5) {};
+		\node [style=wire label left] (4) at (-0.75, -0.5) {$\getvar{obj2}$};
+		\node [style=wire label left] (5) at (-0.75, 0.5) {$\getvar{obj1}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire] (0) to (1);
-		\draw [style=wire] (2) to (3);
+		\draw [style=wire] (0) to (1.center);
+		\draw [style=wire] (2) to (3.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
