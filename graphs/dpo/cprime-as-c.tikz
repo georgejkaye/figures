@@ -8,7 +8,7 @@
 		\node [style=none] (5) at (-1.25, -1.25) {};
 		\node [style=none] (6) at (-1.25, -0.25) {};
 		\node [style=none] (7) at (3, 0.5) {};
-		\node [style=wire label right] (8) at (3.75, -1.25) {$\listvar{n}$};
+		\node [style=wire label right] (8) at (3.75, -1.25) {$n$};
 		\node [style=none] (9) at (3, 1.25) {};
 		\node [style=none] (11) at (-2.5, -0.25) {};
 		\node [style=none] (13) at (-3.5, 1.25) {};
@@ -16,11 +16,11 @@
 		\node [style=none] (15) at (-3.25, 0.5) {};
 		\node [style=none] (16) at (1.25, 0.5) {};
 		\node [style=none] (17) at (2.25, -0.25) {};
-		\node [style=wire label right] (18) at (3.75, -0.25) {$\listvar{m}$};
-		\node [style=none] (19) at (-5.25, -0.5) {};
+		\node [style=wire label right] (18) at (3.75, -0.25) {$m$};
+		\node [style=none] (19) at (-5.25, -0.25) {};
 		\node [style=none] (20) at (-2.5, -1.25) {};
-		\node [style=wire label left] (21) at (-5.75, -0.5) {$\listvar{i}$};
-		\node [style=wire label left] (22) at (-5.75, -1.25) {$\listvar{j}$};
+		\node [style=wire label left] (21) at (-5.75, -0.25) {$i$};
+		\node [style=wire label left] (22) at (-5.75, -1.25) {$j$};
 		\node [style=none] (23) at (1.25, -0.25) {};
 		\node [style=none] (24) at (2.25, 0.5) {};
 	\end{pgfonlayer}

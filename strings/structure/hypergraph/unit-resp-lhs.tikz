@@ -1,9 +1,10 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=bproduct] (0) at (-0.5, 0) {};
-		\node [style=wire label right] (1) at (0.5, 0) {$X \tensor Y$};
+		\node [style=none] (1) at (0.5, 0) {};
+		\node [style=wire label right] (2) at (0.75, 0) {$\getvar{obj1} \getvar{tensor} \getvar{obj2}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire] (0) to (1);
+		\draw [style=wire] (0) to (1.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

@@ -1,0 +1,6 @@
+\pgfkeys{%
+	/tikzit,%
+	obj1/.initial=,%
+	obj2/.initial=,
+	tensor/.initial=\tensor%
+}%
