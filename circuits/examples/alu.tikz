@@ -28,7 +28,7 @@
 		\node [style=none] (38) at (5, -1) {};
 		\node [style=or] (39) at (8, -1) {};
 		\node [style=wire label mid] (40) at (6.25, 1.5) {$4$};
-		\node [style=none] (41) at (4.75, -2.5) {};
+		\node [style=none] (41) at (4.5, -2.5) {};
 		\node [style=wire label mid] (43) at (9.75, -2.5) {$1$};
 		\node [style=wire label right] (45) at (13.75, -2.5) {$1$};
 		\node [style=not] (46) at (11.5, -1) {};
@@ -68,12 +68,13 @@
 		\node [style=bproduct] (95) at (-0.75, 3.75) {};
 		\node [style=none] (96) at (0, 4.25) {};
 		\node [style=none] (97) at (0, 3.25) {};
-		\node [style=none] (98) at (4.75, -3) {};
+		\node [style=none] (98) at (4.5, -3) {};
 		\node [style=bproduct] (99) at (6.5, -3) {};
-		\node [style=none] (100) at (4.75, -3.5) {};
+		\node [style=none] (100) at (4.5, -3.5) {};
 		\node [style=bproduct] (101) at (6.5, -3.5) {};
-		\node [style=none] (102) at (4.75, -4) {};
+		\node [style=none] (102) at (4.5, -4) {};
 		\node [style=bproduct] (103) at (6.5, -4) {};
+		\node [style=none] (104) at (8, -1) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=wire] (36)
@@ -82,14 +83,18 @@
 			 to (67.center);
 		\draw [style=wire] (2) to (4);
 		\draw [style=wire] (3) to (5);
-		\draw [style=wire, in=-180, out=-75] (4) to (6.center);
-		\draw [style=wire, in=75, out=180] (7.center) to (4);
-		\draw [style=wire, in=-180, out=-75] (8) to (10.center);
-		\draw [style=wire, in=75, out=180] (11.center) to (8);
-		\draw [style=wire] (17.center) to (11.center);
-		\draw [style=wire] (16.center) to (7.center);
-		\draw [style=wire] (10.center) to (15.center);
-		\draw [style=wire] (6.center) to (14.center);
+		\draw [style=wire] (4)
+			 to [in=-180, out=-75] (6.center)
+			 to (14.center);
+		\draw [style=wire] (16.center)
+			 to (7.center)
+			 to [in=75, out=180] (4);
+		\draw [style=wire] (8)
+			 to [in=-180, out=-75] (10.center)
+			 to (15.center);
+		\draw [style=wire] (17.center)
+			 to (11.center)
+			 to [in=75, out=180] (8);
 		\draw [style=wire] (24) to (22.center);
 		\draw [style=wire] (24) to (30);
 		\draw [style=wire] (35)
@@ -100,8 +105,8 @@
 			 to (36);
 		\draw [style=wire] (36)
 			 to [in=-180, out=-75] (38.center)
-			 to (82.center)
-			 to (39);
+			 to (82);
+		\draw [style=wire] (82) to (39);
 		\draw [style=wire] (45)
 			 to (43.center)
 			 to (41.center);
@@ -131,7 +136,6 @@
 			 to (76.center);
 		\draw [style=wire] (79) to (72);
 		\draw [style=wire] (81) to (56);
-		\draw [style=wire] (39) to (83);
 		\draw [style=wire] (83) to (46);
 		\draw [style=wire, in=180, out=-75] (85) to (87.center);
 		\draw [style=wire, in=180, out=75] (85) to (86.center);
@@ -143,5 +147,6 @@
 		\draw [style=wire, in=0, out=180] (99) to (98.center);
 		\draw [style=wire, in=0, out=180] (101) to (100.center);
 		\draw [style=wire, in=0, out=180] (103) to (102.center);
+		\draw [style=wire] (104.center) to (83);
 	\end{pgfonlayer}
 \end{tikzpicture}

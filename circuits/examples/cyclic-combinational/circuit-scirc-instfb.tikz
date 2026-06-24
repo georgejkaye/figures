@@ -165,7 +165,7 @@
 		\node [style=none] (176) at (45.75, -3.75) {};
 		\node [style=none] (177) at (45.75, -4.75) {};
 		\node [style=none] (178) at (47.75, -5.5) {};
-		\node [style=none] (179) at (46, -4.75) {};
+		\node [style=none] (179) at (46.25, -4.75) {};
 		\node [style=none] (180) at (39.5, -5.75) {};
 		\node [style=none] (181) at (48, -5) {};
 		\node [style=none] (182) at (46, -5.75) {};
@@ -386,37 +386,43 @@
 		\draw [style=wire] (167.center) to (168.center);
 		\draw [style=wire, in=180, out=0] (168.center) to (163.center);
 		\draw [style=wire] (163.center) to (164);
-		\draw [style=wire, in=180, out=90] (192) to (193.center);
-		\draw [style=wire] (193.center) to (199.center);
-		\draw [style=wire, in=180, out=0, looseness=0.75] (199.center) to (200.center);
-		\draw [style=wire] (200.center) to (198);
-		\draw [style=wire] (172.center) to (160.center);
-		\draw [style=wire, in=0, out=180, looseness=0.75] (160.center) to (214.center);
-		\draw [style=wire] (214.center) to (171.center);
-		\draw [style=wire, in=75, out=180, looseness=1.25] (171.center) to (165);
+		\draw [style=wire] (192)
+			 to [in=180, out=90] (193.center)
+			 to (199.center)
+			 to [in=180, out=0, looseness=0.75] (200.center)
+			 to (198);
+		\draw [style=wire] (172.center)
+			 to (160.center)
+			 to [in=0, out=180, looseness=0.75] (214.center)
+			 to (171.center)
+			 to [in=75, out=180, looseness=1.25] (165);
 		\draw [style=wire] (173.center) to (158);
 		\draw [style=wire] (154) to (174.center);
 		\draw [style=wire] (175) to (158);
-		\draw [style=wire, in=180, out=75] (175) to (176.center);
-		\draw [style=wire] (176.center) to (201.center);
-		\draw [style=wire, in=180, out=0, looseness=0.75] (201.center) to (202.center);
-		\draw [style=wire] (202.center) to (204.center);
-		\draw [style=wire, in=-180, out=-75] (175) to (177.center);
-		\draw [style=wire] (177.center) to (179.center);
-		\draw [style=wire, in=180, out=0] (179.center) to (213.center);
-		\draw [style=wire] (213.center) to (178.center);
-		\draw [style=wire, in=180, out=-75, looseness=1.25] (166) to (215.center);
-		\draw [style=wire] (215.center) to (216.center);
-		\draw [style=wire, in=-180, out=0, looseness=1.25] (216.center) to (180.center);
-		\draw [style=wire] (180.center) to (182.center);
-		\draw [style=wire, in=180, out=0, looseness=0.75] (182.center) to (183.center);
-		\draw [style=wire] (183.center) to (185.center);
-		\draw [style=wire, in=90, out=0] (185.center) to (181.center);
-		\draw [style=wire] (181.center) to (184.center);
-		\draw [style=wire, in=180, out=-75, looseness=1.25] (165) to (186.center);
-		\draw [style=wire] (186.center) to (188.center);
-		\draw [style=wire] (188.center) to (189.center);
-		\draw [style=wire] (189.center) to (187.center);
+		\draw [style=wire] (175)
+			 to [in=180, out=75] (176.center)
+			 to (201.center)
+			 to [in=180, out=0, looseness=0.75] (202.center)
+			 to (204.center);
+		\draw [style=wire] (175)
+			 to [in=-180, out=-75] (177.center)
+			 to (179.center)
+			 to [in=180, out=0] (213.center)
+			 to (178.center);
+		\draw [style=wire] (166)
+			 to [in=180, out=-75, looseness=1.25] (215.center)
+			 to (216.center)
+			 to [in=-180, out=0, looseness=1.25] (180.center)
+			 to (182.center)
+			 to [in=180, out=0, looseness=0.75] (183.center)
+			 to (185.center)
+			 to [in=90, out=0] (181.center)
+			 to (184.center);
+		\draw [style=wire] (165)
+			 to [in=180, out=-75, looseness=1.25] (186.center)
+			 to (188.center)
+			 to (189.center)
+			 to (187.center);
 		\draw [style=wire] (154) to (191.center);
 		\draw [style=wire] (191.center) to (190.center);
 		\draw [style=wire] (190.center) to (192);

@@ -50,14 +50,16 @@
 			 to (27.center)
 			 to (28.center)
 			 to cycle;
-		\draw [style=wire, in=180, out=75] (32) to (34.center);
-		\draw [style=wire] (34.center) to (33.center);
-		\draw [style=wire, in=-75, out=-180] (35.center) to (32);
+		\draw [style=wire] (32)
+			 to [in=180, out=75] (34.center)
+			 to (33.center);
+		\draw [style=wire] (32)
+			 to [in=-180, out=-75] (35.center)
+			 to (36.center);
 		\draw [style=wire] (41.center)
 			 to (39.center)
 			 to [in=180, out=0, looseness=1.25] (40.center)
 			 to (42.center);
-		\draw [style=wire] (35.center) to (36.center);
 		\draw [style=functor box] (46.center)
 			 to (43.center)
 			 to (44.center)
