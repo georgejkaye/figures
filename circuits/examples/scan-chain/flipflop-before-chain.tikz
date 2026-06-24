@@ -36,16 +36,17 @@
 		\draw [style=wire] (19.center) to (22);
 		\draw [style=wire] (25.center) to (27);
 		\draw [style=wire] (26.center) to (29);
-		\draw [style=wire, in=-180, out=-60] (1) to (31.center);
-		\draw [style=wire] (31.center) to (32.center);
-		\draw [style=wire, in=-180, out=0] (32.center) to (33.center);
+		\draw [style=wire] (1)
+			 to [in=-180, out=-60] (31.center)
+			 to (32.center)
+			 to [in=-180, out=0] (33.center)
+			 to (39);
 		\draw [style=wire] (1) to (30.center);
 		\draw [style=wire] (39)
 			 to [in=-180, out=-60] (40.center)
 			 to (41.center)
 			 to [in=-180, out=0] (42.center)
 			 to (24.center);
-		\draw [style=wire] (33.center) to (39);
 		\draw [style=wire] (17.center) to (39);
 	\end{pgfonlayer}
 \end{tikzpicture}

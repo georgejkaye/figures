@@ -83,7 +83,9 @@
 			 to [in=-180, out=0] (25.center)
 			 to (24.center);
 		\draw [style=wire] (31) to (30.center);
-		\draw [style=wire, in=-60, out=-180] (32.center) to (31);
+		\draw [style=wire] (83.center)
+			 to (32.center)
+			 to [in=-60, out=-180] (31);
 		\draw [style=wire] (25)
 			 to [in=-180, out=-90] (52.center)
 			 to (39.center)
@@ -96,7 +98,6 @@
 			 to (108);
 		\draw [style=wire] (72.center) to (74.center);
 		\draw [style=wire] (77.center) to (75.center);
-		\draw [style=wire] (32.center) to (83.center);
 		\draw [style=wire] (88)
 			 to [in=180, out=90, looseness=0.75] (86.center)
 			 to (87);

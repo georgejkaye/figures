@@ -64,7 +64,9 @@
 			 to [in=0, out=-180] (32.center)
 			 to (30);
 		\draw [style=wire] (34) to (39.center);
-		\draw [style=wire] (42.center) to (40.center);
+		\draw [style=wire] (56)
+			 to [in=180, out=-75] (40.center)
+			 to (42.center);
 		\draw [style=wire] (45)
 			 to [in=180, out=75] (46.center)
 			 to (47.center)
@@ -85,6 +87,5 @@
 			 to [in=-180, out=-180, looseness=1.50] (61.center)
 			 to (62);
 		\draw [style=wire] (56) to (63.center);
-		\draw [style=wire, in=180, out=-75] (56) to (40.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

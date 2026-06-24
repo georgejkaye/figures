@@ -48,8 +48,9 @@
 			 to [in=-180, out=0, looseness=1.25] (14.center)
 			 to (16.center);
 		\draw [style=wire] (21) to (2);
-		\draw [style=wire, in=-180, out=-75] (21) to (23.center);
-		\draw [style=wire] (25.center) to (23.center);
+		\draw [style=wire] (25.center)
+			 to (23.center)
+			 to [in=-75, out=-180] (21);
 		\draw (5.center)
 			 to (37.center)
 			 to [in=-75, out=180] (33);

@@ -16,18 +16,22 @@
 		\node [style=none] (30) at (-0.5, 0.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=wire] (20.center) to (18.center);
-		\draw [style=wire] (17.center) to (19.center);
-		\draw [style=wire, in=180, out=75] (22) to (23.center);
-		\draw [style=wire] (23.center) to (30.center);
-		\draw [style=wire, bend right=90, looseness=1.75] (30.center) to (25.center);
-		\draw [style=wire] (25.center) to (24.center);
-		\draw [style=wire, bend right=90, looseness=1.50] (24.center) to (28.center);
-		\draw [style=wire] (28.center) to (27.center);
-		\draw [style=wire, in=-75, out=180] (26.center) to (22);
+		\draw [style=wire] (20.center)
+			 to (18.center)
+			 to [in=-75, out=180] (29);
+		\draw [style=wire] (29)
+			 to [in=-180, out=75] (17.center)
+			 to (19.center);
+		\draw [style=wire] (22)
+			 to [in=180, out=75] (23.center)
+			 to (30.center)
+			 to [bend right=90, looseness=1.75] (25.center)
+			 to (24.center)
+			 to [bend right=90, looseness=1.50] (28.center)
+			 to (27.center);
+		\draw [style=wire] (29)
+			 to (26.center)
+			 to [in=-75, out=180] (22);
 		\draw [style=wire] (22) to (27.center);
-		\draw [style=wire] (29) to (26.center);
-		\draw [style=wire, in=-75, out=180] (18.center) to (29);
-		\draw [style=wire, in=-180, out=75] (29) to (17.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

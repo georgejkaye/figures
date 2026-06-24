@@ -27,8 +27,9 @@
 			 to [in=180, out=-75] (14.center)
 			 to (16.center);
 		\draw [style=wire] (21) to (2);
-		\draw [style=wire, in=-180, out=-75] (21) to (23.center);
-		\draw [style=wire] (25.center) to (23.center);
+		\draw [style=wire] (25.center)
+			 to (23.center)
+			 to [in=-75, out=-180] (21);
 		\draw [style=wire] (33)
 			 to [in=180, out=75] (34.center)
 			 to (40.center)
