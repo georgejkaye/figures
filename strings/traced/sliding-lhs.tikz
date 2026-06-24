@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=medium square box \getvar{colour}] (0) at (-1.25, -0.25) {$\getvar{box1}$};
-		\node [style=tiny box \getvar{colour}] (1) at (1, 0.25) {$\getvar{box2}$};
+		\node [style=tiny rounded box \getvar{colour}] (1) at (1, 0.25) {$\getvar{box2}$};
 		\node [style=port] (2) at (-1, 0.25) {};
 		\node [style=port] (3) at (-1, -0.75) {};
 		\node [style=wire label right] (4) at (3.25, -0.75) {$\getvar{cod}$};
